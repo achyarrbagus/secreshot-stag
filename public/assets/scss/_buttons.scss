@@ -1,0 +1,130 @@
+.btn {
+    font-size: 14px;
+    font-weight: $regular;
+    border-radius: 100px;
+    border: none;
+    transition: all .2s ease-in-out;
+    align-items: center;
+    padding: 8px 32px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+
+    &-primary {
+        background: $primary;
+        color: $white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: lighten($primary, 10) !important;
+            border: none;
+            color: $white;
+        }
+    }
+
+    &-warning {
+        background: $warning;
+        color: $white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: lighten($warning, 10) !important;
+            border: none;
+            color: $white;
+        }
+    }
+
+    &-whatsapp {
+        background: #48C857;
+        color: $white;
+        border: 1px solid $white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: lighten(#48C857, 10) !important;
+            border: 1px solid $white;
+            color: $white;
+        }
+    }
+
+    &-telegram {
+        background: #039BE5;
+        color: $white;
+        border: 1px solid $white;
+        padding: 11px 32px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: lighten(#039BE5, 10) !important;
+            border: 1px solid $white;
+            color: $white;
+        }
+    }
+
+    &-secondary {
+        background: #EEEEEE;
+        color: #686868;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: darken(#EEEEEE, 10) !important;
+            border: none;
+            color: #686868;
+        }
+    }
+
+    &-white {
+        background: $white;
+        color: $dark;
+
+        &:hover {
+            background: darken($white, 10);
+            color: $dark;
+        }
+    }
+
+    &-outline-white {
+        background: $bg-form;
+        border: 1px solid $white;
+        color: $white;
+
+        &:hover {
+            background: darken($bg-form, 10);
+        }
+    }
+
+    .disabled {
+        opacity: .7;
+    }
+}
+
+.btn-float {
+    position: fixed;
+    bottom: 50px;
+    right: 24px;
+    z-index: 999;
+
+    .btn-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+
+        &.whatsapp {
+            background-color: #48C857;
+            margin-bottom: 12px;
+        }
+
+        &.telegram {
+            background-color: #039BE5;
+        }
+    }
+}

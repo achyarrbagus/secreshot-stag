@@ -1,0 +1,792 @@
+body {
+    background: $white;
+    font-family: $font-family;
+    font-size: 12px;
+    // padding-bottom: 70px;
+    overflow-x: hidden;
+    color: $dark;
+}
+
+.fs {
+    &-10 {
+        font-size: 10px;
+    }
+
+    &-12 {
+        font-size: 12px;
+    }
+
+    &-14 {
+        font-size: 14px;
+    }
+
+    &-16 {
+        font-size: 16px;
+    }
+
+    &-18 {
+        font-size: 18px;
+    }
+
+    &-20 {
+        font-size: 20px;
+    }
+
+    &-24 {
+        font-size: 24px;
+    }
+
+    &-32 {
+        font-size: 32px;
+    }
+
+    &-40 {
+        font-size: 40px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-soft {
+    background: $bg-soft;
+}
+
+.text {
+    &-dark {
+        color: $dark !important;
+    }
+
+    &-muted {
+        color: $muted !important;
+    }
+
+    &-primary {
+        color: $primary !important;
+    }
+
+    &-warning {
+        color: $warning !important;
+    }
+}
+
+.nav-top {
+    background: $white;
+    padding: 14px 0;
+
+    .nav-brand {
+        img {
+            width: 94px;
+        }
+    }
+}
+
+#loom-companion-mv3 {
+    display: none !important;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+.hero-banner {
+    background: url('../img/banner-homepage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(lg, max) {
+        height: 130vh;
+    }
+
+    @include breakpoint(sm, max) {
+        aspect-ratio: 414/284;
+        height: auto;
+    }
+
+    .text {
+        width: 55%;
+        color: $white;
+
+        .title {
+            font-weight: $bold;
+            font-size: 38px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
+            color: #F4FFC8;
+
+            @include breakpoint(sm, max) {
+                font-size: 18px;
+            }
+        }
+
+        .desc {
+            font-size: 18px;
+            margin-top: 32px;
+            margin-bottom: 54px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
+
+            @include breakpoint(sm, max) {
+                font-size: 12px;
+                margin-top: 12px;
+                margin-bottom: 14px;
+            }
+        }
+    }
+
+}
+
+.p-question {
+    padding: 100px 0 !important;
+
+    @include breakpoint(sm, max) {
+        padding-bottom: 50px !important;
+        padding-top: 24px !important;
+    }
+}
+
+section {
+    padding-bottom: 32px;
+
+    .title-section {
+        padding-top: 42px;
+        font-size: 24px;
+        font-weight: $bold;
+        text-align: center;
+        margin-bottom: 16px;
+
+        @include breakpoint(sm, max) {
+            font-size: 20px;
+        }
+    }
+
+    &.service {
+        background: $bg-soft;
+
+        .box-service {
+            padding: 10px;
+            background: $white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            color: $primary;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background: $primary;
+                color: $white;
+            }
+
+            i {
+                font-size: 74px;
+
+                @include breakpoint(sm, max) {
+                    font-size: 48px;
+                }
+            }
+
+            .title-service {
+                font-size: 14px;
+                text-align: center;
+
+                @include breakpoint(sm, max) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    &.why {
+        background: $primary;
+        background-image: url('../img/bg-why.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 24px 0;
+        color: $white;
+        position: relative;
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        @include breakpoint(lg, max) {
+            height: 100vh;
+        }
+
+        @include breakpoint(sm, max) {
+            height: auto;
+            background-image: url('../img/bg-why-mobile.png');
+        }
+
+        .text {
+            width: 60%;
+        }
+
+        h3 {
+            font-size: 48px;
+            font-weight: $bold;
+            margin-bottom: 24px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
+            color: #F4FFC8;
+
+            @include breakpoint(sm, max) {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .list-why {
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
+
+            .items-why {
+                display: flex;
+                align-items: start;
+                margin-bottom: 18px;
+
+                @include breakpoint(sm, max) {
+                    margin-bottom: 12px;
+                }
+
+                .img-list {
+                    width: 32px;
+
+                    @include breakpoint(sm, max) {
+                        width: 22px;
+                    }
+                }
+
+                span {
+                    margin-left: 8px;
+                    font-size: 24px;
+
+                    @include breakpoint(sm, max) {
+                        font-size: 14px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+
+        .img-bg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            @include breakpoint(md, max) {
+                right: -180px;
+            }
+
+            @include breakpoint(sm, max) {
+                right: -100px;
+            }
+
+            img {
+                height: 100%;
+
+                @include breakpoint(sm, max) {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &.banner-pages {
+        background: $primary;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 24px 0;
+        color: $white;
+        position: relative;
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        @include breakpoint(lg, max) {
+            height: 100vh;
+        }
+
+        @include breakpoint(md, max) {
+            height: auto;
+        }
+
+
+        .text {
+            width: 53%;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: $bold;
+            margin-bottom: 16px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
+            color: #F4FFC8;
+
+            @include breakpoint(sm, max) {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 32px;
+            margin-bottom: 54px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
+
+            @include breakpoint(sm, max) {
+                font-size: 12px;
+                margin-top: 12px;
+                margin-bottom: 14px;
+            }
+        }
+
+        .img-bg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            @include breakpoint(lg, max) {
+                right: -100px;
+            }
+
+            @include breakpoint(md, max) {
+                right: -80px;
+            }
+
+            @include breakpoint(sm, max) {
+                right: -50px;
+            }
+
+            img {
+                height: 500px;
+
+                @include breakpoint(sm, max) {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &.doctor {
+        background: $bg-soft;
+
+        &.nurse {
+            .items-doctor {
+                .name {
+                    min-height: 170px;
+                }
+            }
+        }
+
+        .items-doctor {
+
+            .img-doctor {
+                margin-bottom: -60px;
+                text-align: center;
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .name {
+                background: $white;
+                padding: 70px 8px 8px 8px;
+                text-align: center;
+                border-radius: 10px;
+                min-height: 170px;
+
+                @include breakpoint(sm, max) {
+                    min-height: 300px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    font-weight: $bold;
+
+                    @include breakpoint(sm, max) {
+                        font-size: 14px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &.article {
+        background: $bg-soft;
+        background-image: url('../img/bg-article.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 50%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    &.question {
+        background: $primary;
+        border-radius: 10px;
+        padding: 24px;
+        color: $white;
+        position: relative;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+
+        @include breakpoint(sm, max) {
+            min-height: auto;
+        }
+
+        .text {
+            width: 60%;
+            position: relative;
+            z-index: 4;
+        }
+
+        h5 {
+            font-size: 24px;
+            font-weight: $bold;
+
+            @include breakpoint(sm, max) {
+                font-size: 22px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+
+            @include breakpoint(sm, max) {
+                font-size: 14px;
+            }
+        }
+
+        .img-question {
+            position: absolute;
+            right: -10px;
+            bottom: 0;
+            width: 40%;
+
+            @include breakpoint(sm, max) {
+                width: 50%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &.faq {
+        background: $bg-soft;
+    }
+}
+
+.accordion-custom {
+    --bs-accordion-bg: transparent !important;
+    --bs-accordion-border-color: none !important;
+    margin-top: 24px;
+
+    .accordion-item {
+        margin-bottom: 14px;
+    }
+
+    .accordion-button {
+        color: $white;
+        font-weight: 500;
+        background: $primary;
+        border-radius: 10px;
+
+        &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .accordion-button::after {
+        background-image: url('../img/expand-arrow.png') !important;
+        background-size: 32px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background: $primary;
+        color: $white;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .accordion-body {
+        background: $white;
+        color: $dark;
+        border-radius: 0 0 10px 10px;
+        position: relative;
+        padding-bottom: 70px;
+    }
+
+    .list-data-faq {
+        color: $muted;
+
+        .items-data-faq {
+            display: flex;
+            align-items: start;
+            font-size: 14px;
+
+            .img-check {
+                margin-right: 10px;
+                width: 24px;
+            }
+        }
+
+        h6 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+
+        .price {
+            background: #01737F;
+            padding: 14px;
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            align-items: center;
+            color: $white;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+            .value-price {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+.swiper-pagination-bullets {
+    position: static;
+    margin-top: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background: $primary !important;
+    width: 30px;
+    border-radius: 100px;
+    transition: all .3s ease-in-out;
+}
+
+.swiper-article {
+
+    &:hover {
+        .swiper-button-next {
+            display: flex;
+        }
+
+        .swiper-button-prev {
+            display: flex;
+        }
+
+        @include breakpoint(sm, max) {
+            .swiper-button-next {
+                display: none;
+            }
+
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        content: "";
+    }
+
+    .swiper-button-next {
+        right: 30px;
+        top: 44%;
+        display: none;
+        transition: all 1s ease-in-out;
+    }
+
+    .swiper-button-prev {
+        left: 30px;
+        top: 44%;
+        display: none;
+        transition: all 1s ease-in-out;
+    }
+
+    .swiper-slide {
+        transition: all 200ms linear;
+
+
+        .card-slide-article {
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                aspect-ratio: 12/7;
+                object-fit: cover;
+            }
+
+            .name-article {
+                background: $white;
+                padding: 14px;
+                min-height: 200px;
+
+                @include breakpoint(sm, max) {
+                    min-height: 240px;
+                }
+
+                h6 {
+                    font-weight: $bold;
+                    color: $dark;
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $muted;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: $primary;
+    padding-top: 24px;
+
+    .logo {
+        width: 136px;
+    }
+
+    .logo-atensi {
+        width: 104px;
+    }
+
+    .footer-bottom {
+        margin-top: 24px;
+        background: $white;
+        color: $dark;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 12px;
+    }
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #E1E1E1;
+    --bs-tooltip-color: $dark;
+}
+
+.nav-content {
+    background: #F0F0F0;
+    padding: 14px 0;
+
+    .breadcrumb {
+        margin-bottom: 0;
+
+        a {
+            color: $primary;
+        }
+    }
+}
+
+.list-article {
+    .items-article {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 22px;
+
+        img {
+            width: 40%;
+            aspect-ratio: 175/105 auto;
+            border-radius: 8px;
+        }
+
+        .name {
+            h5 {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.detail-article {
+    h3.text-primary {
+        color: #00B2AE !important;
+    }
+}
+
+h3.text-primary {
+    color: $title-dark !important;
+
+    @include breakpoint(sm, max) {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.title-line {
+    position: relative;
+    font-size: 24px;
+    font-weight: $bold;
+    margin-bottom: 16px;
+
+    @include breakpoint(sm, max) {
+        font-size: 20px;
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        margin-top: 0;
+        position: absolute;
+        z-index: 0;
+        height: 0;
+        border-top: 2px dashed $muted;
+    }
+
+    span {
+        background: $white;
+        position: relative;
+        z-index: 1;
+        padding-right: 8px;
+        color: $muted;
+    }
+}
