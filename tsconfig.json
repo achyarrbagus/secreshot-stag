@@ -71,5 +71,8 @@
 =======
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/article/[artilceid]/page.jsx"],
 >>>>>>> c7a1ce90 (migrate to next js 14)
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/article/[articleId]/page.jsx"],
   "exclude": ["node_modules"]
 }
