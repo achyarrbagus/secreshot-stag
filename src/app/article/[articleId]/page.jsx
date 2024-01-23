@@ -76,17 +76,19 @@ function Article() {
                     {Articles &&
                       Articles.map((item, index) => (
                         <>
-                          <Link href={`/article/${index}`}>
-                            <div className="items-article" style={{ cursor: "pointer" }}>
-                              <img src={item.PathImg} alt="" />
-                              <div className="name">
-                                <h5>{item.Title}</h5>
-                                <a className="text-muted fs-14">
-                                  read more <i className="mdi mdi-arrow-right"></i>
-                                </a>
-                              </div>
+                          <div
+                            onClick={() => (window.location.href = `/article/${index}`)}
+                            className="items-article"
+                            style={{ cursor: "pointer" }}
+                          >
+                            <img src={item.PathImg} alt="" />
+                            <div className="name">
+                              <h5>{item.Title}</h5>
+                              <a className="text-muted fs-14">
+                                read more <i className="mdi mdi-arrow-right"></i>
+                              </a>
                             </div>
-                          </Link>
+                          </div>
                         </>
                       ))}
                   </div>
