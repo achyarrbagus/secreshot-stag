@@ -1,13 +1,13 @@
 "use client";
 
 const InHomeDiagnostic = () => {
-  const redirectWa = (e: any) => {
+  const redirectWa = (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name") as HTMLInputElement | null;
-    const address = document.getElementById("address") as HTMLInputElement | null;
+    const name = document.getElementById("name");
+    const address = document.getElementById("address");
 
-    const service = document.getElementById("service") as HTMLInputElement | null;
+    const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
 Hello Admin,
@@ -37,6 +37,12 @@ Service Name : ${service.value}`);
 
   const redirectTele = () => {
     window.location.href = "https://t.me/InfusionJakarta";
+  };
+
+  const handleBook = (serviceSelect) => {
+    let serviceOption = document.getElementById("service");
+    serviceOption.value = serviceSelect;
+    window.location.href = "#book";
   };
 
   return (
@@ -128,9 +134,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp889.000
                             </div>
-                            <a href="#book" id="teeth" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Teeth Whitening")}
+                              id="teeth"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -197,9 +207,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp2.499.000
                             </div>
-                            <a href="#book" id="secretome" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Secretome and Stem Cells Therapy")}
+                              id="secretome"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -261,7 +275,7 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp3.125.000
                             </div>
-                            <a href="#book" id="ozone" className="btn btn-warning fs-14 ms-auto">
+                            <a onClick={() => handleBook("Ozone Therapy")} id="ozone" className="btn btn-warning fs-14 ms-auto">
                               Book Now{" "}
                             </a>
                           </div>

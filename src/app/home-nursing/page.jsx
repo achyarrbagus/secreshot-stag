@@ -1,13 +1,13 @@
 "use client";
 
 const HomeNursing = () => {
-  const redirectWa = (e: any) => {
+  const redirectWa = (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name") as HTMLInputElement | null;
-    const address = document.getElementById("address") as HTMLInputElement | null;
+    const name = document.getElementById("name");
+    const address = document.getElementById("address");
 
-    const service = document.getElementById("service") as HTMLInputElement | null;
+    const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
 Hello Admin,
@@ -36,6 +36,12 @@ Service Name : ${service.value}`);
   };
   const redirectTele = () => {
     window.location.href = "https://t.me/InfusionJakarta";
+  };
+
+  const handleBook = (serviceSelect) => {
+    let serviceOption = document.getElementById("service");
+    serviceOption.value = serviceSelect;
+    window.location.href = "#book";
   };
   return (
     <>
@@ -121,9 +127,9 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp250.000
                             </div>
-                            <a href="#book" id="wound" className="btn btn-warning fs-14 ms-auto">
+                            <div onClick={() => handleBook("Wound Care")} id="wound" className="btn btn-warning fs-14 ms-auto">
                               Book Now
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -177,9 +183,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp200.000
                             </div>
-                            <a href="#book" id="monitoring" className="btn btn-warning fs-14 ms-auto">
+                            <div
+                              onClick={() => handleBook("Monitoring and Prevention")}
+                              id="monitoring"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>

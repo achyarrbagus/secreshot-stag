@@ -1,13 +1,13 @@
 "use client";
 
 const InHomeTherapy = () => {
-  const redirectWa = (e: any) => {
+  const redirectWa = (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name") as HTMLInputElement | null;
-    const address = document.getElementById("address") as HTMLInputElement | null;
+    const name = document.getElementById("name");
+    const address = document.getElementById("address");
 
-    const service = document.getElementById("service") as HTMLInputElement | null;
+    const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
 Hello Admin,
@@ -39,6 +39,12 @@ Service Name : ${service.value}`);
     window.location.href = "https://t.me/InfusionJakarta";
   };
 
+  const handleBook = (serviceSelect) => {
+    let serviceOption = document.getElementById("service");
+    serviceOption.value = serviceSelect;
+    window.location.href = "#book";
+  };
+
   return (
     <>
       <div className="content">
@@ -47,10 +53,10 @@ Service Name : ${service.value}`);
             <div className="text">
               <h3>In-Home IV Therapy & more</h3>
               <p>Receive vital intravenous treatments and medications, ensuring safety and comfort.</p>
-              <a href="#book" className="btn btn-warning fs-14">
+              <button href="#book" className="btn btn-warning fs-14">
                 {" "}
                 Book Now{" "}
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -120,10 +126,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from:<b> Rp1.890.000 </b>
                             </div>
-                            <a href="#book" id="bali" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Bali Belly Infusion")}
+                              id="bali"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -192,10 +202,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from:<b> Rp2.380.000</b>
                             </div>
-                            <a href="#book" id="super-bali" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Super Bali Belly IV")}
+                              id="super-bali"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -252,10 +266,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from: <b>Rp1.890.000</b>
                             </div>
-                            <a href="#book" id="basic" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Basic Immune Booster")}
+                              id="basic"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -313,10 +331,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from: <b>Rp2.075.000</b>
                             </div>
-                            <a href="#book" id="standard" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Standard Immune Booster")}
+                              id="standard"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -379,10 +401,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from: <b>Rp2.480.000</b>
                             </div>
-                            <a href="#book" id="super" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Super Immune Booster")}
+                              id="super"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -432,10 +458,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from: <b>Rp1.860.000</b>
                             </div>
-                            <a href="#book" id="hangover" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Hangover Infusion")}
+                              id="hangover"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -486,10 +516,15 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from: <b>Rp1.140.000</b>
                             </div>
-                            <a href="#book" id="fever" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Fever Infusion")}
+                              href="#book"
+                              id="fever"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -539,10 +574,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from: <b>Rp1.660.000</b>
                             </div>
-                            <a href="#book" id="gerd" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Gerd / Gastritis Infusion")}
+                              id="gerd"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -593,10 +632,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               Start from: <b>Rp1.590.000</b>
                             </div>
-                            <a href="#book" id="iron" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Iron Infusion")}
+                              id="iron"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
