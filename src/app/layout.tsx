@@ -123,6 +123,7 @@ export default function RootLayout({
         <script type="module" src="/src/main.tsx"></script>
         <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/assets/js/swiper-bundle.min.js"></script>
+        <script src="/assets/js/index.js"></script>
         <script
           src="https://code.jquery.com/jquery-3.6.0.min.js"
           integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

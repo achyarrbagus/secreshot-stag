@@ -4,9 +4,9 @@
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css";
-import Swiper from "swiper";
 import Articles from "../../public/assets/article/json/article.json";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // import { useSelector } from "react-redux";
 // import { useNavigate } from "react-router-dom";
@@ -25,32 +25,31 @@ const Home = () => {
 
   useEffect(() => {
     // Initialize Swiper
-    new Swiper(".swiper-article", {
-      loop: false,
-      slidesPerView: 3.5,
-      centeredSlides: false,
-      spaceBetween: 30,
-      speed: 800,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 1.5,
-        },
-        // when window width is >= 480px
-        480: {
-          slidesPerView: 2.5,
-        },
-        // when window width is >= 640px
-        768: {
-          slidesPerView: 3.5,
-        },
-      },
-    });
-
+    // new Swiper(".swiper-article", {
+    //   loop: true,
+    //   slidesPerView: 3.5,
+    //   centeredSlides: false,
+    //   spaceBetween: 30,
+    //   speed: 800,
+    //   autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    //   },
+    //   breakpoints: {
+    //     // when window width is >= 320px
+    //     320: {
+    //       slidesPerView: 1.5,
+    //     },
+    //     // when window width is >= 480px
+    //     480: {
+    //       slidesPerView: 2.5,
+    //     },
+    //     // when window width is >= 640px
+    //     768: {
+    //       slidesPerView: 3.5,
+    //     },
+    //   },
+    // });
     // Add your other logic here...
   }, []);
 
@@ -401,74 +400,76 @@ Service Name : ${service.value}`);
             </div>
           </div>
         </section>
+        {/* {/* loop: true,
+    //   slidesPerView: 3.5,
+    //   centeredSlides: false,
+    //   spaceBetween: 30,
+    //   speed: 800,
+    //   autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    //   },
+    //   breakpoints: {
+    //     // when window width is >= 320px
+    //     320: {
+    //       slidesPerView: 1.5,
+    //     },
+    //     // when window width is >= 480px
+    //     480: {
+    //       slidesPerView: 2.5,
+    //     },
+    //     // when window width is >= 640px
+    //     768: {
+    //       slidesPerView: 3.5,
+    //     },
+    //   }, */}
 
         <section className="article">
           <div className="container">
             <h3 className="title-section text-white"> Article </h3>
             <div className="swiper swiper-article mt-5">
               <div className="swiper-wrapper">
-                {Articles &&
-                  Articles.map((item: any, index: number) => (
-                    <>
-                      <div className="swiper-slide">
-                        <Link href={`/article/${index}`}>
-                          <div className="card-slide-article">
-                            <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
-                            <div className="name-article">
-                              <h6>{CutText(item.Title)}</h6>
-                              <p>{CutText(item.DescCard)}</p>
-                              <a href="article-detail.html" className="text-muted fs-14">
-                                read more <i className="mdi mdi-arrow-right"></i>
-                              </a>
+                <Swiper
+                  loop
+                  spaceBetween={30}
+                  slidesPerView={3.5}
+                  speed={800}
+                  autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: false,
+                  }}
+                  breakpoints={{
+                    320: {
+                      slidesPerView: 1.5,
+                    },
+                    480: {
+                      slidesPerView: 2.5,
+                    },
+                    768: {
+                      slidesPerView: 3.5,
+                    },
+                  }}
+                >
+                  {Articles &&
+                    Articles.map((item: any, index: number) => (
+                      <>
+                        <SwiperSlide>
+                          <Link href={`/article/${index}`}>
+                            <div className="card-slide-article">
+                              <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
+                              <div className="name-article">
+                                <h6>{CutText(item.Title)}</h6>
+                                <p>{CutText(item.DescCard)}</p>
+                                <a href="article-detail.html" className="text-muted fs-14">
+                                  read more <i className="mdi mdi-arrow-right"></i>
+                                </a>
+                              </div>
                             </div>
-                          </div>
-                        </Link>
-                      </div>
-                    </>
-                  ))}
-
-                {/* <div className="swiper-slide">
-                  <a href="article-detail.html">
-                    <div className="card-slide-article">
-                      <img src="assets/img/article/article02.jpg" alt="" />
-                      <div className="name-article">
-                        <h6>Don’t Underestimate Headache! These Are 7 Causes Back Headache</h6>
-                        <p>Headaches are one of the most common health problems for everyone.</p>
-                        <a href="article-detail.html" className="text-muted fs-14">
-                          read more <i className="mdi mdi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a href="article-detail.html">
-                    <div className="card-slide-article">
-                      <img src="assets/img/article/article03.jpg" alt="" />
-                      <div className="name-article">
-                        <h6>Causes of Back Pain and Tips to Overcome It</h6>
-                        <p>Are you sure that back pain is only experienced by the elderly? You are wrong.</p>
-                        <a href="article-detail.html" className="text-muted fs-14">
-                          read more <i className="mdi mdi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a href="article-detail.html">
-                    <div className="card-slide-article">
-                      <img src="assets/img/article/article04.jpg" alt="" />
-                      <div className="name-article">
-                        <h6>4 Most Common Symptoms of Too Much Stress</h6>
-                        <p>Stress is the body's reaction to certain conditions. Stress usually arises when a person faces</p>
-                        <a href="article-detail.html" className="text-muted fs-14">
-                          read more <i className="mdi mdi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </a>
-                </div> */}
+                          </Link>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                </Swiper>
               </div>
             </div>
           </div>
