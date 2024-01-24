@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import { useNavigate } from "react-router-dom";
 
 import { useEffect } from "react";
+import { Autoplay } from "swiper/modules";
 // import ArticleJson from ""
 
 const Home = () => {
@@ -431,6 +432,7 @@ Service Name : ${service.value}`);
               <div className="swiper-wrapper">
                 <Swiper
                   loop
+                  modules={[Autoplay]}
                   spaceBetween={30}
                   slidesPerView={3.5}
                   speed={800}
@@ -448,6 +450,8 @@ Service Name : ${service.value}`);
                     768: {
                       slidesPerView: 3.5,
                     },
+
+                    // modules={[Autoplay, Pagination, Navigation]}
                   }}
                 >
                   {Articles &&
