@@ -114,40 +114,40 @@ Service Name : ${service.value}`);
             <h3 className="title-section"> Our Services </h3>
             <div className="row g-3">
               <div className="col-4">
-                <a href="home-visit.html" className="box-service">
+                <Link href="/doctor-home-visit" className="box-service">
                   <i className="icon-menu-doctor-home"></i>
                   <span className="title-service"> Doctor Home Visit </span>
-                </a>
+                </Link>
               </div>
               <div className="col-4">
-                <a href="home-nursing.html" className="box-service">
+                <Link href="/home-nursing" className="box-service">
                   <i className="icon-menu-home-nursing"></i>
                   <span className="title-service"> Home Nursing and Wound Care </span>
-                </a>
+                </Link>
               </div>
               <div className="col-4">
-                <a href="telemedicine.html" className="box-service">
+                <Link href="/remote-telemedicine" className="box-service">
                   <i className="icon-menu-remote-telemedicine"></i>
                   <span className="title-service"> Remote Telemedicine </span>
-                </a>
+                </Link>
               </div>
               <div className="col-4">
-                <a href="holistic.html" className="box-service">
+                <Link href="/holistic-alternative" className="box-service">
                   <i className="icon-menu-holistic"></i>
                   <span className="title-service"> Holistic Alternative Therapies </span>
-                </a>
+                </Link>
               </div>
               <div className="col-4">
-                <a href="home-iv.html" className="box-service">
+                <Link href="/inhome-therapy" className="box-service">
                   <i className="icon-menu-in-home-iv"></i>
                   <span className="title-service"> In-Home IV Therapy & More </span>
-                </a>
+                </Link>
               </div>
               <div className="col-4">
-                <a href="alternative-telemedicine.html" className="box-service">
+                <Link href="/alternative-telemedicine" className="box-service">
                   <i className="icon-menu-alternative-telemedicine"></i>
                   <span className="title-service"> Alternative Telemedicine </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
