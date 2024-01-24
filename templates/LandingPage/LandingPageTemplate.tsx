@@ -9,130 +9,111 @@ import { Subtitle } from "./components/Subtitle";
 import { TechnologyGrid } from "./components/TechnologyGrid";
 import { H1, H2 } from "./components/headings";
 import { technologies } from "./technologies";
+import Head from "next/head";
+import React, { Children, ReactNode } from "react";
 
-const LandingPageTemplate = () => {
-  const onConfettiLoad = () => {
-    const key = "create-next-stack-hasShownConfetti-sacretome";
-    const hasShownConfetti = localStorage.getItem(key);
-    if (hasShownConfetti != null) return;
+type WrapperComponentProps = {
+  children: ReactNode;
+};
 
-    const duration = 10 * 1000;
-    const animationEnd = Date.now() + duration;
-
-    const randomInRange = (min: number, max: number) => {
-      return Math.random() * (max - min) + min;
-    };
-
-    (function frame() {
-      const timeLeft = animationEnd - Date.now();
-
-      (window as any).confetti({
-        particleCount: 1,
-        startVelocity: 0,
-        ticks: Math.max(200, 500 * (timeLeft / duration)),
-        origin: {
-          x: Math.random(),
-          y: Math.random() - 0.2,
-        },
-        colors: [
-          "#26ccff",
-          "#a25afd",
-          "#ff5e7e",
-          "#88ff5a",
-          "#fcff42",
-          "#ffa62d",
-          "#ff36ff",
-        ],
-        shapes: ["square", "circle"],
-        gravity: randomInRange(0.4, 0.6),
-        scalar: randomInRange(0.8, 1.2),
-        drift: randomInRange(-0.1, 0.1),
-      });
-
-      if (timeLeft > 0) {
-        requestAnimationFrame(frame);
-      }
-    })();
-
-    localStorage.setItem(key, "true");
-  };
-
+const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
   return (
-    <div className={styles.landingPageTemplate}>
-      <Script
-        src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.9.3/tsparticles.confetti.bundle.min.js"
-        onLoad={onConfettiLoad}
-      />
-      <style>
-        {`
-          * {
-            box-sizing: border-box;
-          }
-
-          html,
-          body {
-            padding: 0;
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-              sans-serif;
-            line-height: 1.5;
-          }
-        `}
-      </style>
-      <main>
-        <Section>
-          <Container center className={styles.headerSection}>
-            <H1>
-              <span className={styles.textGradient}>Your project is a go!</span>{" "}
-              🎉
-            </H1>
-            <Subtitle>
-              Get started by editing <InlineCode>pages/index.tsx</InlineCode>
-            </Subtitle>
-          </Container>
-        </Section>
-        <Section>
-          <Container className={styles.textContainer}>
-            <H2>Final steps</H2>
-            <Paragraph>
-              There are a few final steps that we were not able to perform
-              automatically. We have provided a complete list for you in the{" "}
-              <InlineCode>README.md</InlineCode> file. You should take care of
-              these before you can start developing your project.
-            </Paragraph>
-          </Container>
-        </Section>
-        <Section>
-          <Container className={styles.technologyGridIntro}>
-            <H2>Technologies</H2>
-            <Paragraph>
-              Below you will find an overview of your chosen technologies
-              providing you helpful links and simple usage examples to get you
-              started.
-            </Paragraph>
-          </Container>
-          <Container wide>
-            <TechnologyGrid
-              technologies={technologies}
-              className={styles.technologyGrid}
+    <>
+      <nav className="nav nav-top fixed-top">
+        <div className="container">
+          <div className="d-flex align-items-center">
+            <a href="/" className="nav-brand">
+              <img src="assets/img/logo.png" alt="" />
+            </a>
+            <div className="btn-group ms-auto">
+              <button
+                type="button"
+                className="btn btn-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i className="mdi mdi-earth me-2"></i> EN
+              </button>
+              <ul className="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button className="dropdown-item" type="button">
+                    English
+                  </button>
+                </li>
+                <li>
+                  <button className="dropdown-item" type="button">
+                    Indonesia
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      {children}
+      <footer className="footer">
+        <div className="container">
+          <div className="d-flex align-items-center">
+            <a href="/">
+              <img src="assets/img/logo-white.png" className="logo" alt="" />
+            </a>
+            <img
+              src="assets/img/logo-atensi.png"
+              className="logo-atensi ms-auto"
+              alt=""
             />
-          </Container>
-        </Section>
-      </main>
-      <footer>
-        <Section>
-          <Container center>
-            <Paragraph>
-              Generated by{" "}
-              <Link href="https://www.create-next-stack.com">
-                Create Next Stack
-              </Link>
-            </Paragraph>
-          </Container>
-        </Section>
+          </div>
+          <div className="row mt-4">
+            <div className="col-md-8 text-white">
+              <h4 className="fs-14">PT Cepat Sehat Indonesia</h4>
+              <p>
+                Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramat jati, Kota
+                Adm. Jakarta Timur, Provinsi DKI Jakarta 13510 <br />
+                sehatcepat.com
+              </p>
+            </div>
+            <div className="col-md-12">
+              <div className="d-flex align-items-center">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0"
+                  className="phone text-white fs-14 d-flex align-items-center"
+                >
+                  <i className="mdi mdi-phone me-2 fs-24"></i> 0822 1118 9009
+                </a>
+                <div className="sosmed list-inline ms-auto">
+                  <a href="#" className="list-inline-item text-white">
+                    <i className="mdi mdi-web fs-24"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/klinikcepatsehat"
+                    className="list-inline-item text-white"
+                  >
+                    <i className="mdi mdi-facebook fs-24"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/sehatcepat.mobi/ "
+                    className="list-inline-item text-white"
+                  >
+                    <i className="mdi mdi-instagram fs-24"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          Copyright © 2024 Cepat Sehat. All Rights Reserved.
+        </div>
       </footer>
-    </div>
+      <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossOrigin="anonymous"
+      ></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    </>
   );
 };
 
