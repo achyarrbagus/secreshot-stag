@@ -1,13 +1,14 @@
 "use client";
+import { useState } from "react";
 
 const DoctorHomeVisit = () => {
-  const redirectWa = (e: any) => {
+  const redirectWa = (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name") as HTMLInputElement | null;
-    const address = document.getElementById("address") as HTMLInputElement | null;
+    const name = document.getElementById("name");
+    const address = document.getElementById("address");
 
-    const service = document.getElementById("service") as HTMLInputElement | null;
+    const service = document.getElementById("service");
     console.log(service?.value);
     console.log(name?.value);
     console.log(address?.value);
@@ -40,6 +41,21 @@ Service Name : ${service.value}`);
   const redirectTele = () => {
     window.location.href = "https://t.me/InfusionJakarta";
   };
+
+  const [service, setService] = useState();
+
+  const handleBook = (serviceSelect) => {
+    let serviceOption = document.getElementById("service");
+    serviceOption.value = serviceSelect;
+    window.location.href = "#book";
+  };
+
+  // document.getElementById("doctor-visit").addEventListener("click", function () {
+  //   console.log("hello owlrd");
+  //   var serviceSelect = document.getElementById("serviceSelect");
+
+  //   serviceSelect.value = "doctor-visit";
+  // });
 
   return (
     <>
@@ -121,9 +137,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp250.000
                             </div>
-                            <a href="#book" id="doctor-visit" className="btn btn-warning fs-14 ms-auto">
+                            <div
+                              onClick={() => handleBook("Doctor Home Visit")}
+                              id="doctor-visit"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -185,9 +205,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp200.000
                             </div>
-                            <a href="#book" id="nurse-visit" className="btn btn-warning fs-14 ms-auto">
+                            <div
+                              onClick={() => handleBook("Nurse Home Visit")}
+                              id="nurse-visit"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -249,9 +273,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp300.000
                             </div>
-                            <a href="#book" id="child" className="btn btn-warning fs-14 ms-auto">
+                            <div
+                              onClick={() => handleBook("Child Vaccination")}
+                              id="child"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -318,9 +346,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp150.000
                             </div>
-                            <a href="#book" id="medical" className="btn btn-warning fs-14 ms-auto">
+                            <div
+                              onClick={() => handleBook("Medical Check Up")}
+                              id="medical"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -352,7 +384,7 @@ Service Name : ${service.value}`);
                     <option value="Doctor Home Visit">Doctor Home Visit</option>
                     <option value="Nurse Home Visit">Nurse Home Visit</option>
                     <option value="Child Vaccination">Child Vaccination</option>
-                    <option value="Medical Check Up">Medical Check Up</option>
+                    <option value=">Medical Check Up">Medical Check Up</option>
                   </select>
                 </div>
               </div>

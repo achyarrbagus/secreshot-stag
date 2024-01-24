@@ -6,13 +6,19 @@ const HolisticAlternative = () => {
   // const lang = useSelector((state: any) => state.lang.value);
   // console.log(lang);
 
-  const redirectWa = (e: any) => {
+  const handleBook = (serviceSelect) => {
+    let serviceOption = document.getElementById("service");
+    serviceOption.value = serviceSelect;
+    window.location.href = "#book";
+  };
+
+  const redirectWa = (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name") as HTMLInputElement | null;
-    const address = document.getElementById("address") as HTMLInputElement | null;
+    const name = document.getElementById("name");
+    const address = document.getElementById("address");
 
-    const service = document.getElementById("service") as HTMLInputElement | null;
+    const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
 Hello Admin,
@@ -120,10 +126,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp600.000
                             </div>
-                            <a href="#book" id="acupuncture" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Acupuncture")}
+                              id="acupuncture"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -185,10 +195,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp300.000
                             </div>
-                            <a href="#book" id="therapeutic" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Therapeutic Massage")}
+                              id="therapeutic"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -247,10 +261,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp400.000
                             </div>
-                            <a href="#book" id="energy" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Energy-Balancing Reiki")}
+                              id="energy"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -312,10 +330,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp400.000
                             </div>
-                            <a href="#book" id="yoga" className="btn btn-warning fs-14 ms-auto">
-                              {" "}
-                              Book Now{" "}
-                            </a>
+                            <button
+                              onClick={() => handleBook("Yoga Guidance and Sessions")}
+                              id="yoga"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
+                              Book Now
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -376,10 +397,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp400.000
                             </div>
-                            <a href="#book" id="meditation" className="btn btn-warning fs-14 ms-auto">
+                            <button
+                              onClick={() => handleBook("Meditation Practices")}
+                              id="meditation"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -444,10 +469,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp450.000
                             </div>
-                            <a href="#book" id="osteopathy" className="btn btn-warning fs-14 ms-auto">
+                            <div
+                              onClick={() => handleBook("Osteopathy and Chiropractic services")}
+                              id="osteopathy"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               {" "}
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -476,12 +505,12 @@ Service Name : ${service.value}`);
                   <label className="form-label">Service Name</label>
                   <select id="service" className="form-select form-control" aria-label="Default select example">
                     <option>Select Service</option>
-                    <option value="acupuncture">Acupuncture</option>
-                    <option value="therapeutic">Therapeutic Massage</option>
-                    <option value="energy">Energy-Balancing Reiki</option>
-                    <option value="yoga">Yoga Guidance and Sessions</option>
-                    <option value="meditation">Meditation Practices</option>
-                    <option value="osteopathy">Osteopathy and Chiropractic services</option>
+                    <option value="Acupuncture">Acupuncture</option>
+                    <option value="Therapeutic Massage">Therapeutic Massage</option>
+                    <option value="Energy-Balancing Reiki">Energy-Balancing Reiki</option>
+                    <option value="Yoga Guidance and Sessions">Yoga Guidance and Sessions</option>
+                    <option value="Meditation Practices">Meditation Practices</option>
+                    <option value="Osteopathy and Chiropractic services">Osteopathy and Chiropractic services</option>
                   </select>
                 </div>
               </div>

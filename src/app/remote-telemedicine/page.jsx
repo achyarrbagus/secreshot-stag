@@ -3,13 +3,13 @@
 import { useSelector } from "react-redux";
 
 const RemoteTelemedic = () => {
-  const redirectWa = (e: any) => {
+  const redirectWa = (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name") as HTMLInputElement | null;
-    const address = document.getElementById("address") as HTMLInputElement | null;
+    const name = document.getElementById("name");
+    const address = document.getElementById("address");
 
-    const service = document.getElementById("service") as HTMLInputElement | null;
+    const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
 Hello Admin,
@@ -39,6 +39,12 @@ Service Name : ${service.value}`);
 
   const redirectTele = () => {
     window.location.replace("https://t.me/InfusionJakarta");
+  };
+
+  const handleBook = (serviceSelect) => {
+    let serviceOption = document.getElementById("service");
+    serviceOption.value = serviceSelect;
+    window.location.href = "#book";
   };
 
   return (
@@ -133,9 +139,13 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp20.000
                             </div>
-                            <a href="#book" id="general" className="btn btn-warning fs-14 ms-auto">
+                            <div
+                              onClick={() => handleBook("General Practitioner Online Consultation")}
+                              id="general"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -198,9 +208,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp40.000
                             </div>
-                            <a href="#book" id="medical" className="btn btn-warning fs-14 ms-auto">
+
+                            <div
+                              onClick={() => handleBook("Medical Doctor Online Consultation")}
+                              id="medical"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -273,9 +288,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp40.000
                             </div>
-                            <a href="#book" id="prescription" className="btn btn-warning fs-14 ms-auto">
+
+                            <div
+                              onClick={() => handleBook("Online Medical Prescription")}
+                              id="prescription"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -351,9 +371,14 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Start from:</b> Rp75.000
                             </div>
-                            <a href="#book" id="certificate" className="btn btn-warning fs-14 ms-auto">
+
+                            <div
+                              onClick={() => handleBook("Online Medical Certificate")}
+                              id="certificate"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Book Now{" "}
-                            </a>
+                            </div>
                           </div>
                         </div>
                       </div>
