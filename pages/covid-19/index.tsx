@@ -2,6 +2,53 @@ import React from "react";
 import { NextPage } from "next";
 
 const Index: NextPage = () => {
+  const redirectWa = (e: any) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name") as HTMLInputElement | null;
+    const address = document.getElementById(
+      "address"
+    ) as HTMLInputElement | null;
+
+    const service = document.getElementById(
+      "service"
+    ) as HTMLInputElement | null;
+
+    if (name?.value && address?.value && service?.value) {
+      if (service?.value == "Select Service") {
+        return alert("please fill form correcly");
+      }
+      const wardingWa = encodeURIComponent(`
+Hello Admin,
+I want to book service with
+following information :
+
+Name : ${name.value}
+Address : ${address.value}
+Service Name : ${service.value}
+----------------------------------------------------------------------     
+Halo Admin,
+Saya ingin melakukan booking vaksin dengan keterangan 
+berikut:
+
+Nama : ${name.value}
+Alamat : ${address.value} 
+Service Name : ${service.value}`);
+      let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
+      window.location.href = url;
+
+      return;
+    } else {
+      alert("please fill form with correctly");
+    }
+  };
+
+  const redirectTele = (e: any) => {
+    e.preventDefault();
+
+    window.location.replace("https://t.me/InfusionJakarta");
+  };
+
   return (
     <>
       <div className="content">
@@ -111,7 +158,7 @@ const Index: NextPage = () => {
                   <input
                     type="text"
                     className="form-control"
-                    id=""
+                    id="name"
                     placeholder="Your Name"
                   />
                 </div>
@@ -120,39 +167,48 @@ const Index: NextPage = () => {
                   <input
                     type="text"
                     className="form-control"
-                    id=""
+                    id="address"
                     placeholder="Your Address"
                   />
                 </div>
                 <div className="col-md-4">
                   <label className="form-label">Service Name</label>
                   <select
+                    id="service"
                     className="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option>Select Service</option>
-                    <option value="acne">Acne</option>
-                    <option value="hairloss">Hair Loss</option>
-                    <option value="antiaging">Anti Aging</option>
-                    <option value="scars">Scars</option>
-                    <option value="arthritis">Arthritis</option>
-                    <option value="autoimmune">Auto Immune</option>
-                    <option selected value="covid">
+                    <option value="Acne">Acne</option>
+                    <option value="Hair Loss">Hair Loss</option>
+                    <option value="Anti Aging">Anti Aging</option>
+                    <option value="Scars">Scars</option>
+                    <option value="Arthritis">Arthritis</option>
+                    <option value="Auto Immune">Auto Immune</option>
+                    <option selected value="Covid-19">
                       Covid-19
                     </option>
-                    <option value="stroke">Stroke</option>
+                    <option value="Stroke">Stroke</option>
                   </select>
                 </div>
               </div>
               <div className="row g-3 justify-content-center">
                 <div className="col-6 col-md-3">
-                  <button type="submit" className="btn btn-whatsapp w-100">
+                  <button
+                    type="submit"
+                    onClick={redirectWa}
+                    className="btn btn-whatsapp w-100"
+                  >
                     <i className="mdi mdi-whatsapp fs-18 me-2"></i>
                     Whatsapp
                   </button>
                 </div>
                 <div className="col-6 col-md-3">
-                  <button type="submit" className="btn btn-telegram w-100">
+                  <button
+                    type="submit"
+                    onClick={redirectTele}
+                    className="btn btn-telegram w-100"
+                  >
                     <i className="fa-brands fa-telegram fs-18 me-2"></i>
                     Telegram
                   </button>
