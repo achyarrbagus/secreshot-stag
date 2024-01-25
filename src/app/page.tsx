@@ -1,10 +1,8 @@
 "use client";
 
-// import required modules
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css";
-import Articles from "../../public/assets/article/json/article.json";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,21 +11,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { useEffect, useState } from "react";
 import { Autoplay } from "swiper/modules";
-// import ArticleJson from ""
+import Articles from "../../public/assets/article/json/article.json";
 
 const Home = () => {
   const CutText = (text: string) => {
     let sentences = text.split("");
     // Mengambil 100 kalimat pertama
-    let first100Sentences = sentences.slice(0, 60);
+    let first100Sentences = sentences.slice(0, 40);
     let resultText = first100Sentences.join("");
     return resultText;
   };
 
-  const [article, setArticle] = useState<any>();
-
   useEffect(() => {
-    setArticle(Articles);
     // Initialize Swiper
     // new Swiper(".swiper-article", {
     //   loop: true,
@@ -117,40 +112,40 @@ Service Name : ${service.value}`);
             <h3 className="title-section"> Our Services </h3>
             <div className="row g-3">
               <div className="col-4">
-                <Link href="/doctor-home-visit" className="box-service">
+                <a href="home-visit.html" className="box-service">
                   <i className="icon-menu-doctor-home"></i>
                   <span className="title-service"> Doctor Home Visit </span>
-                </Link>
+                </a>
               </div>
               <div className="col-4">
-                <Link href="/home-nursing" className="box-service">
+                <a href="home-nursing.html" className="box-service">
                   <i className="icon-menu-home-nursing"></i>
                   <span className="title-service"> Home Nursing and Wound Care </span>
-                </Link>
+                </a>
               </div>
               <div className="col-4">
-                <Link href="/remote-telemedicine" className="box-service">
+                <a href="telemedicine.html" className="box-service">
                   <i className="icon-menu-remote-telemedicine"></i>
                   <span className="title-service"> Remote Telemedicine </span>
-                </Link>
+                </a>
               </div>
               <div className="col-4">
-                <Link href="/holistic-alternative" className="box-service">
+                <a href="holistic.html" className="box-service">
                   <i className="icon-menu-holistic"></i>
                   <span className="title-service"> Holistic Alternative Therapies </span>
-                </Link>
+                </a>
               </div>
               <div className="col-4">
-                <Link href="/inhome-therapy" className="box-service">
+                <a href="home-iv.html" className="box-service">
                   <i className="icon-menu-in-home-iv"></i>
                   <span className="title-service"> In-Home IV Therapy & More </span>
-                </Link>
+                </a>
               </div>
               <div className="col-4">
-                <Link href="/alternative-telemedicine" className="box-service">
+                <a href="alternative-telemedicine.html" className="box-service">
                   <i className="icon-menu-alternative-telemedicine"></i>
                   <span className="title-service"> Alternative Telemedicine </span>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -192,7 +187,7 @@ Service Name : ${service.value}`);
           <div className="container">
             <h3 className="title-section"> Our Doctors </h3>
             <div className="row justify-content-center">
-              <div className="col-md-8">
+              <div className="col-md-12 col-lg-8">
                 <div className="row g-3 g-md-5 justify-content-center">
                   <div className="col-6 col-md-4">
                     <div className="items-doctor">
@@ -331,7 +326,7 @@ Service Name : ${service.value}`);
           <div className="container">
             <h3 className="title-section"> Our Nurses </h3>
             <div className="row justify-content-center">
-              <div className="col-md-8">
+              <div className="col-md-12 col-lg-8">
                 <div className="row g-3 g-md-4 justify-content-center">
                   <div className="col-6 col-md-3">
                     <div className="items-doctor">
@@ -404,79 +399,56 @@ Service Name : ${service.value}`);
             </div>
           </div>
         </section>
-        {/* {/* loop: true,
-    //   slidesPerView: 3.5,
-    //   centeredSlides: false,
-    //   spaceBetween: 30,
-    //   speed: 800,
-    //   autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    //   },
-    //   breakpoints: {
-    //     // when window width is >= 320px
-    //     320: {
-    //       slidesPerView: 1.5,
-    //     },
-    //     // when window width is >= 480px
-    //     480: {
-    //       slidesPerView: 2.5,
-    //     },
-    //     // when window width is >= 640px
-    //     768: {
-    //       slidesPerView: 3.5,
-    //     },
-    //   }, */}
 
         <section className="article">
           <div className="container">
             <h3 className="title-section text-white"> Article </h3>
             <div className="swiper swiper-article mt-5">
               <div className="swiper-wrapper">
-                <Swiper
-                  loop
-                  modules={[Autoplay]}
-                  spaceBetween={30}
-                  slidesPerView={3.5}
-                  speed={1000}
-                  autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                  }}
-                  breakpoints={{
-                    320: {
-                      slidesPerView: 1.5,
-                    },
-                    480: {
-                      slidesPerView: 2.5,
-                    },
-                    768: {
-                      slidesPerView: 3.5,
-                    },
-
-                    // modules={[Autoplay, Pagination, Navigation]}
-                  }}
-                >
-                  {Articles &&
-                    Articles.map((item: any, index: number) => (
-                      <>
-                        <SwiperSlide>
-                          <Link href={`/article/${index}`}>
-                            <div className="card-slide-article">
-                              <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
-                              <div className="name-article">
-                                <h6>{CutText(item.Title)}</h6>
-                                <p>{CutText(item.DescCard)}</p>
-                                <a href="article-detail.html" className="text-muted fs-14">
-                                  read more <i className="mdi mdi-arrow-right"></i>
-                                </a>
+                <div className="swiper-wrapper">
+                  <Swiper
+                    loop
+                    modules={[Autoplay]}
+                    spaceBetween={30}
+                    slidesPerView={3.5}
+                    speed={1000}
+                    autoplay={{
+                      delay: 3000,
+                      disableOnInteraction: false,
+                    }}
+                    breakpoints={{
+                      320: {
+                        slidesPerView: 1.5,
+                      },
+                      480: {
+                        slidesPerView: 2.5,
+                      },
+                      768: {
+                        slidesPerView: 3.5,
+                      },
+                    }}
+                  >
+                    {Articles &&
+                      Articles.map((item: any, index: number) => (
+                        <>
+                          <SwiperSlide>
+                            <Link href={`/article/${index}`}>
+                              <div className="card-slide-article">
+                                <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
+                                <div className="name-article">
+                                  <h6>{CutText(item.Title)}</h6>
+                                  <p>{CutText(item.DescCard)}</p>
+                                  <a href="article-detail.html" className="text-muted fs-14">
+                                    read more <i className="mdi mdi-arrow-right"></i>
+                                  </a>
+                                </div>
                               </div>
-                            </div>
-                          </Link>
-                        </SwiperSlide>
-                      </>
-                    ))}
-                </Swiper>
+                            </Link>
+                          </SwiperSlide>
+                        </>
+                      ))}
+                  </Swiper>
+                </div>
               </div>
             </div>
           </div>
@@ -531,5 +503,3 @@ Service Name : ${service.value}`);
 };
 
 export default Home;
-
-// hello world
