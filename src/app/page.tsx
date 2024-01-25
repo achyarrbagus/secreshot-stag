@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import { useSelector } from "react-redux";
 // import { useNavigate } from "react-router-dom";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Autoplay } from "swiper/modules";
 // import ArticleJson from ""
 
@@ -24,7 +24,10 @@ const Home = () => {
     return resultText;
   };
 
+  const [article, setArticle] = useState<any>();
+
   useEffect(() => {
+    setArticle(Articles);
     // Initialize Swiper
     // new Swiper(".swiper-article", {
     //   loop: true,
