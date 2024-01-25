@@ -60,6 +60,9 @@ const Home = () => {
 
     const service = document.getElementById("service") as HTMLInputElement | null;
     if (name?.value && address?.value && service?.value) {
+      if (service.value == "Select Service") {
+        return alert("please fill form correcly");
+      }
       const wardingWa = encodeURIComponent(`
 Hello Admin,
 I want to book service with
@@ -461,34 +464,36 @@ Service Name : ${service.value}`);
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
                   <label className="form-label">Name</label>
-                  <input type="text" className="form-control" id="" placeholder="Your Name" />
+                  <input type="text" className="form-control" id="name" placeholder="Your Name" />
                 </div>
                 <div className="col-md-4">
                   <label className="form-label">Address</label>
-                  <input type="text" className="form-control" id="" placeholder="Your Address" />
+                  <input id="address" type="text" className="form-control" placeholder="Your Address" />
                 </div>
                 <div className="col-md-4">
                   <label className="form-label">Service</label>
-                  <select className="form-select form-control" aria-label="Default select example">
-                    <option selected>Select Service</option>
-                    <option value="1">Doctor Home Visit</option>
-                    <option value="2">Home Nursing and Wound Care</option>
-                    <option value="3">Remote Telemedicine</option>
-                    <option value="4">Holistic Alternative Therapies</option>
-                    <option value="5">In-Home IV Therapy & more</option>
-                    <option value="6">Alternative Telemedicine</option>
+                  <select id="service" className="form-select form-control" aria-label="Default select example">
+                    <option value="Select Service" selected>
+                      Select Service
+                    </option>
+                    <option value="Doctor Home Visit">Doctor Home Visit</option>
+                    <option value="Home Nursing and Wound Care">Home Nursing and Wound Care</option>
+                    <option value="Remote Telemedicine">Remote Telemedicine</option>
+                    <option value="Holistic Alternative Therapies">Holistic Alternative Therapies</option>
+                    <option value="In-Home IV Therapy & more">In-Home IV Therapy & more</option>
+                    <option value="Alternative Telemedicine">Alternative Telemedicine</option>
                   </select>
                 </div>
               </div>
               <div className="row g-3 justify-content-center align-items-stretch">
                 <div className="col-6 col-md-3">
-                  <button type="submit" className="btn btn-whatsapp w-100">
+                  <button type="submit" onClick={redirectWa} className="btn btn-whatsapp w-100">
                     <i className="mdi mdi-whatsapp fs-18 me-2"></i>
                     Whatsapp
                   </button>
                 </div>
                 <div className="col-6 col-md-3">
-                  <button type="submit" className="btn btn-telegram w-100">
+                  <button type="submit" onClick={redirectTele} className="btn btn-telegram w-100">
                     <i className="fa-brands fa-telegram fs-18 me-2"></i>
                     Telegram
                   </button>
