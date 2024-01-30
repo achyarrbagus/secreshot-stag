@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 
 const Index = () => {
   const redirectWa = (e: any) => {
@@ -92,25 +93,25 @@ Service Name : ${service.value}`);
             <div className="row g-3">
               <div className="col-6">
                 <Link href="/acne" className="button-menu blue">
-                  <img src="assets/img/icon/icon-acne.svg" alt="" />
+                  <Image src="assets/img/icon/icon-acne.svg" alt="" />
                   <h5>Acne</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href="/anti-aging" className="button-menu blue">
-                  <img src="assets/img/icon/icon-antiaging.svg" alt="" />
+                  <Image src="assets/img/icon/icon-antiaging.svg" alt="" />
                   <h5>Anti Aging</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href="/hair-loss" className="button-menu blue">
-                  <img src="assets/img/icon/icon-hairloss.svg" alt="" />
+                  <Image src="assets/img/icon/icon-hairloss.svg" alt="" />
                   <h5>Hair Loss</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href="/scars" className="button-menu blue">
-                  <img src="assets/img/icon/icon-scars.svg" alt="" />
+                  <Image src="assets/img/icon/icon-scars.svg" alt="" />
                   <h5>Scars</h5>
                 </Link>
               </div>
@@ -122,25 +123,25 @@ Service Name : ${service.value}`);
             <div className="row g-3">
               <div className="col-6">
                 <Link href="/arthritis" className="button-menu warning">
-                  <img src="assets/img/icon/icon-arthritis.svg" alt="" />
+                  <Image src="assets/img/icon/icon-arthritis.svg" alt="" />
                   <h5>Arthritis</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href="/auto-immune" className="button-menu warning">
-                  <img src="assets/img/icon/icon-autoimmune.svg" alt="" />
+                  <Image src="assets/img/icon/icon-autoimmune.svg" alt="" />
                   <h5>Auto Immune</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href="/covid-19" className="button-menu warning">
-                  <img src="assets/img/icon/icon-covid.svg" alt="" />
+                  <Image src="assets/img/icon/icon-covid.svg" alt="" />
                   <h5>Covid-19</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href="/stroke" className="button-menu warning">
-                  <img src="assets/img/icon/icon-stroke.svg" alt="" />
+                  <Image src="assets/img/icon/icon-stroke.svg" alt="" />
                   <h5>Stroke</h5>
                 </Link>
               </div>
@@ -154,7 +155,11 @@ Service Name : ${service.value}`);
               <span className="fw-normal">Potential Uses of</span> <br />
               <span className="text-primary">Secretome and Stem Cells</span>
             </h3>
-            <img src="assets/img/img-potential.png" className="w-100" alt="" />
+            <Image
+              src="assets/img/img-potential.png"
+              className="w-100"
+              alt=""
+            />
           </div>
         </section>
 
@@ -168,13 +173,13 @@ Service Name : ${service.value}`);
                 data-gallery="youtubevideos"
                 className="col-6 gallery-video"
               >
-                <img
+                <Image
                   alt="img"
                   src="https://img.youtube.com/vi/Ve2CL-eRlao/hqdefault.jpg"
                   className="thumbnail-yt"
                 />
                 <div className="play-button">
-                  <img src="assets/img/circle-play.png" alt="" />
+                  <Image src="assets/img/circle-play.png" alt="" />
                 </div>
               </a>
               <a
@@ -183,13 +188,13 @@ Service Name : ${service.value}`);
                 data-gallery="youtubevideos"
                 className="col-6 gallery-video"
               >
-                <img
+                <Image
                   alt="img"
                   src="https://i1.ytimg.com/vi/SM3cH7FU3Q8/mqdefault.jpg"
                   className="thumbnail-yt"
                 />
                 <div className="play-button">
-                  <img src="assets/img/circle-play.png" alt="" />
+                  <Image src="assets/img/circle-play.png" alt="" />
                 </div>
               </a>
               <a
@@ -198,13 +203,13 @@ Service Name : ${service.value}`);
                 data-gallery="youtubevideos"
                 className="col-6 gallery-video"
               >
-                <img
+                <Image
                   alt="img"
                   src="https://i1.ytimg.com/vi/GIZp_DS2WvE/mqdefault.jpg"
                   className="thumbnail-yt"
                 />
                 <div className="play-button">
-                  <img src="assets/img/circle-play.png" alt="" />
+                  <Image src="assets/img/circle-play.png" alt="" />
                 </div>
               </a>
               <a
@@ -213,13 +218,13 @@ Service Name : ${service.value}`);
                 data-gallery="youtubevideos"
                 className="col-6 gallery-video"
               >
-                <img
+                <Image
                   alt="img"
                   src="https://i1.ytimg.com/vi/t9kWCxu7MR4/mqdefault.jpg"
                   className="thumbnail-yt"
                 />
                 <div className="play-button">
-                  <img src="assets/img/circle-play.png" alt="" />
+                  <Image src="assets/img/circle-play.png" alt="" />
                 </div>
               </a>
             </div>
