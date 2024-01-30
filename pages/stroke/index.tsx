@@ -1,6 +1,5 @@
 import React from "react";
 import { NextPage } from "next";
-import Image from "next/image";
 
 const Index: NextPage = () => {
   return (
@@ -40,14 +39,14 @@ const Index: NextPage = () => {
         <section className="detail-pages">
           <div className="container">
             <div className="d-flex align-items-center mb-4">
-              <Image src="assets/img/icon_lamp.svg" className="me-3" alt="" />
+              <img src="assets/img/icon_lamp.svg" className="me-3" alt="" />
               <h6 className="title-line">
                 <span>How it works?</span>
               </h6>
             </div>
             <div className="row align-items-center gy-4">
               <div className="col-md-6">
-                <Image
+                <img
                   src="assets/img/stroke/stroke01.png"
                   className="w-100"
                   alt=""
@@ -64,7 +63,7 @@ const Index: NextPage = () => {
             </div>
             <div className="row align-items-stretch align-items-center g-0 mt-4">
               <div className="col-md-6">
-                <Image
+                <img
                   src="assets/img/stroke/stroke02.png"
                   className="w-100"
                   alt=""
@@ -73,7 +72,7 @@ const Index: NextPage = () => {
               <div className="col-md-6 order-last order-md-first">
                 <div className="rate">
                   <div className="file">
-                    <Image src="assets/img/icon_pdf.svg" alt="" />
+                    <img src="assets/img/icon_pdf.svg" alt="" />
                     <div className="name-file">
                       <h5>Stem Cells for Stroke Doc.PDF</h5>
                       <a href="#" className="me-4">
