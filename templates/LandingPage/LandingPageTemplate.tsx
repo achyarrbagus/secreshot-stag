@@ -12,6 +12,7 @@ import { H1, H2 } from "./components/headings";
 import { technologies } from "./technologies";
 import Head from "next/head";
 import React, { Children, ReactNode } from "react";
+import Image from "next/image";
 
 type WrapperComponentProps = {
   children: ReactNode;
@@ -40,7 +41,7 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
           referrerPolicy="no-referrer"
         />
 
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="assets/Image/favicon.svg" />
 
         <link rel="stylesheet" href="assets/fontello/css/csehat.css" />
 
@@ -54,7 +55,7 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
         <div className="container">
           <div className="d-flex align-items-center">
             <a href="/" className="nav-brand">
-              <img src="assets/img/logo.png" alt="" />
+              <Image src="assets/Image/logo.png" alt="" />
             </a>
             <div className="btn-group ms-auto">
               <button
@@ -86,10 +87,14 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
         <div className="container">
           <div className="d-flex align-items-center">
             <a href="/">
-              <img src="assets/img/logo-white.png" className="logo" alt="" />
+              <Image
+                src="assets/Image/logo-white.png"
+                className="logo"
+                alt=""
+              />
             </a>
-            <img
-              src="assets/img/logo-atensi.png"
+            <Image
+              src="assets/Image/logo-atensi.png"
               className="logo-atensi ms-auto"
               alt=""
             />

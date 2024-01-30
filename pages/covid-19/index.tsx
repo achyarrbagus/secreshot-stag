@@ -1,5 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
+import Image from "next/image";
 
 const Index: NextPage = () => {
   const redirectWa = (e: any) => {
@@ -55,7 +56,7 @@ Service Name : ${service.value}`);
         <section
           className="banner-pages"
           style={{
-            backgroundImage: "url('assets/img/covid/banner-covid.png')",
+            backgroundImage: "url('assets/Image/covid/banner-covid.png')",
           }}
         >
           <div className="container">
@@ -84,15 +85,15 @@ Service Name : ${service.value}`);
         <section className="detail-pages">
           <div className="container">
             <div className="d-flex align-items-center mb-4">
-              <img src="assets/img/icon_lamp.svg" className="me-3" alt="" />
+              <Image src="assets/Image/icon_lamp.svg" className="me-3" alt="" />
               <h6 className="title-line">
                 <span>How it works?</span>
               </h6>
             </div>
             <div className="row align-items-center gy-4">
               <div className="col-md-6">
-                <img
-                  src="assets/img/covid/covid01.png"
+                <Image
+                  src="assets/Image/covid/covid01.png"
                   className="w-100"
                   alt=""
                 />
@@ -106,8 +107,8 @@ Service Name : ${service.value}`);
             </div>
             <div className="row align-items-stretch align-items-center g-0 mt-4">
               <div className="col-md-6">
-                <img
-                  src="assets/img/covid/covid02.png"
+                <Image
+                  src="assets/Image/covid/covid02.png"
                   className="w-100"
                   alt=""
                 />
@@ -115,7 +116,7 @@ Service Name : ${service.value}`);
               <div className="col-md-6 order-last order-md-first">
                 <div className="rate">
                   <div className="file">
-                    <img src="assets/img/icon_pdf.svg" alt="" />
+                    <Image src="assets/Image/icon_pdf.svg" alt="" />
                     <div className="name-file">
                       <h5>Stem Cells for Covid-19 Doc.PDF</h5>
                       <a href="#" className="me-4">
