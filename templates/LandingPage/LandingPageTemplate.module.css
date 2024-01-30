@@ -11,7 +11,7 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to top right, #6838f1, #dc51f2);
+  background-img: linear-gradient(to top right, #6838f1, #dc51f2);
 }
 
 .headerSection {

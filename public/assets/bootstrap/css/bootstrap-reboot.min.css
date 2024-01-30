@@ -384,7 +384,7 @@ kbd kbd {
 figure {
   margin: 0 0 1rem;
 }
-Image,
+img,
 svg {
   vertical-align: middle;
 }

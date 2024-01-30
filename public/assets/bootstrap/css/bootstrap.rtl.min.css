@@ -402,7 +402,7 @@ kbd kbd {
 figure {
   margin: 0 0 1rem;
 }
-Image,
+img,
 svg {
   vertical-align: middle;
 }
@@ -658,11 +658,11 @@ progress {
 .blockquote-footer::before {
   content: "— ";
 }
-.Image-fluid {
+.img-fluid {
   max-width: 100%;
   height: auto;
 }
-.Image-thumbnail {
+.img-thumbnail {
   padding: 0.25rem;
   background-color: var(--bs-body-bg);
   border: var(--bs-border-width) solid var(--bs-border-color);
@@ -673,7 +673,7 @@ progress {
 .figure {
   display: inline-block;
 }
-.figure-Image {
+.figure-img {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
@@ -2200,7 +2200,7 @@ textarea.form-control-lg {
   height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
 }
 .form-select {
-  --bs-form-select-bg-Image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem 0.375rem 2.25rem;
@@ -2212,7 +2212,7 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   background-color: var(--bs-body-bg);
-  background-image: var(--bs-form-select-bg-Image),
+  background-image: var(--bs-form-select-bg-img),
     var(--bs-form-select-bg-icon, none);
   background-repeat: no-repeat;
   background-position: left 0.75rem center;
@@ -2258,7 +2258,7 @@ textarea.form-control-lg {
   border-radius: var(--bs-border-radius-lg);
 }
 [data-bs-theme="dark"] .form-select {
-  --bs-form-select-bg-Image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 .form-check {
   display: block;
@@ -4281,7 +4281,7 @@ fieldset:disabled .btn {
   --bs-card-height: ;
   --bs-card-color: ;
   --bs-card-bg: var(--bs-body-bg);
-  --bs-card-Image-overlay-padding: 1rem;
+  --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
   display: flex;
@@ -4372,27 +4372,27 @@ fieldset:disabled .btn {
   margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
   margin-right: calc(-0.5 * var(--bs-card-cap-padding-x));
 }
-.card-Image-overlay {
+.card-img-overlay {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  padding: var(--bs-card-Image-overlay-padding);
+  padding: var(--bs-card-img-overlay-padding);
   border-radius: var(--bs-card-inner-border-radius);
 }
-.card-Image,
-.card-Image-bottom,
-.card-Image-top {
+.card-img,
+.card-img-bottom,
+.card-img-top {
   width: 100%;
 }
-.card-Image,
-.card-Image-top {
+.card-img,
+.card-img-top {
   border-top-right-radius: var(--bs-card-inner-border-radius);
   border-top-left-radius: var(--bs-card-inner-border-radius);
 }
-.card-Image,
-.card-Image-bottom {
+.card-img,
+.card-img-bottom {
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
 }
@@ -4417,11 +4417,11 @@ fieldset:disabled .btn {
     border-bottom-left-radius: 0;
   }
   .card-group > .card:not(:last-child) .card-header,
-  .card-group > .card:not(:last-child) .card-Image-top {
+  .card-group > .card:not(:last-child) .card-img-top {
     border-top-left-radius: 0;
   }
   .card-group > .card:not(:last-child) .card-footer,
-  .card-group > .card:not(:last-child) .card-Image-bottom {
+  .card-group > .card:not(:last-child) .card-img-bottom {
     border-bottom-left-radius: 0;
   }
   .card-group > .card:not(:first-child) {
@@ -4429,11 +4429,11 @@ fieldset:disabled .btn {
     border-bottom-right-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-header,
-  .card-group > .card:not(:first-child) .card-Image-top {
+  .card-group > .card:not(:first-child) .card-img-top {
     border-top-right-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-footer,
-  .card-group > .card:not(:first-child) .card-Image-bottom {
+  .card-group > .card:not(:first-child) .card-img-bottom {
     border-bottom-right-radius: 0;
   }
 }

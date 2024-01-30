@@ -76,7 +76,7 @@ a {
   padding: 14px 0;
 
   .nav-brand {
-    Image {
+    img {
       width: 94px;
     }
   }
@@ -91,7 +91,7 @@ a {
 }
 
 .hero-banner {
-  background: url("../Image/banner-homepage.png");
+  background: url("../img/banner-homepage.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -210,7 +210,7 @@ section {
   }
 
   &.desc {
-    background-image: url("../Image/bg-desc.png");
+    background-image: url("../img/bg-desc.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -360,7 +360,7 @@ section {
           margin-bottom: 12px;
         }
 
-        .Image-list {
+        .img-list {
           width: 32px;
 
           @include breakpoint(sm, max) {
@@ -380,7 +380,7 @@ section {
       }
     }
 
-    .Image-bg {
+    .img-bg {
       position: absolute;
       right: 0;
       top: 0;
@@ -394,7 +394,7 @@ section {
         right: -100px;
       }
 
-      Image {
+      img {
         height: 100%;
 
         @include breakpoint(sm, max) {
@@ -419,7 +419,7 @@ section {
     align-items: center;
 
     &.homepage {
-      background-image: url("../Image/banner-homepage1.png");
+      background-image: url("../img/banner-homepage1.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -485,7 +485,7 @@ section {
       }
     }
 
-    .Image-bg {
+    .img-bg {
       position: absolute;
       right: 0;
       top: 0;
@@ -503,7 +503,7 @@ section {
         right: -50px;
       }
 
-      Image {
+      img {
         height: 500px;
 
         @include breakpoint(sm, max) {
@@ -515,7 +515,7 @@ section {
 
   &.banner-consult {
     background: $warning;
-    background-image: url("../Image/banner-homepage2.png");
+    background-image: url("../img/banner-homepage2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -607,7 +607,7 @@ section {
       }
     }
 
-    .Image-bg {
+    .img-bg {
       position: absolute;
       left: 0;
       top: 0;
@@ -625,7 +625,7 @@ section {
         right: -50px;
       }
 
-      Image {
+      img {
         height: 500px;
 
         @include breakpoint(sm, max) {
@@ -651,11 +651,11 @@ section {
     }
 
     .items-doctor {
-      .Image-doctor {
+      .img-doctor {
         margin-bottom: -60px;
         text-align: center;
 
-        Image {
+        img {
           width: 80%;
         }
       }
@@ -735,7 +735,7 @@ section {
       }
     }
 
-    .Image-question {
+    .img-question {
       position: absolute;
       right: -10px;
       bottom: 0;
@@ -745,7 +745,7 @@ section {
         width: 50%;
       }
 
-      Image {
+      img {
         width: 100%;
       }
     }
@@ -796,7 +796,7 @@ section {
       align-items: start;
       font-size: 14px;
 
-      .Image-check {
+      .img-check {
         margin-right: 10px;
         width: 24px;
       }
@@ -884,7 +884,7 @@ section {
       border-radius: 10px;
       overflow: hidden;
 
-      Image {
+      img {
         width: 100%;
         aspect-ratio: 12/7;
         object-fit: cover;
@@ -961,7 +961,7 @@ section {
     align-items: center;
     margin-bottom: 22px;
 
-    Image {
+    img {
       width: 40%;
       aspect-ratio: 175/105 auto;
       border-radius: 8px;
@@ -993,7 +993,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%) !important;
 
-    Image {
+    img {
       width: 100px;
     }
   }

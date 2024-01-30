@@ -123,7 +123,7 @@
 .button-menu:hover {
   opacity: 0.7;
 }
-.button-menu Image {
+.button-menu img {
   height: 54px;
   width: auto;
   margin-right: 12px;
@@ -256,7 +256,7 @@ a {
   background: #fff;
   padding: 14px 0;
 }
-.nav-top .nav-brand Image {
+.nav-top .nav-brand img {
   width: 94px;
 }
 #loom-companion-mv3 {
@@ -266,7 +266,7 @@ a {
   margin-top: 80px;
 }
 .hero-banner {
-  background: url("../Image/banner-homepage.png");
+  background: url("../img/banner-homepage.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -379,7 +379,7 @@ section .title-line span {
   padding-right: 14px;
 }
 section.desc {
-  background-image: url("../Image/bg-desc.png");
+  background-image: url("../img/bg-desc.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -523,11 +523,11 @@ section.why .list-why .items-why {
     margin-bottom: 12px;
   }
 }
-section.why .list-why .items-why .Image-list {
+section.why .list-why .items-why .img-list {
   width: 32px;
 }
 @media (max-width: 575.98px) {
-  section.why .list-why .items-why .Image-list {
+  section.why .list-why .items-why .img-list {
     width: 22px;
   }
 }
@@ -541,27 +541,27 @@ section.why .list-why .items-why span {
     margin-left: 4px;
   }
 }
-section.why .Image-bg {
+section.why .img-bg {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
 }
 @media (max-width: 767.98px) {
-  section.why .Image-bg {
+  section.why .img-bg {
     right: -180px;
   }
 }
 @media (max-width: 575.98px) {
-  section.why .Image-bg {
+  section.why .img-bg {
     right: -100px;
   }
 }
-section.why .Image-bg Image {
+section.why .img-bg img {
   height: 100%;
 }
 @media (max-width: 575.98px) {
-  section.why .Image-bg Image {
+  section.why .img-bg img {
     height: 100%;
   }
 }
@@ -580,7 +580,7 @@ section.banner-pages {
   align-items: center;
 }
 section.banner-pages.homepage {
-  background-image: url("../Image/banner-homepage1.png");
+  background-image: url("../img/banner-homepage1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -647,38 +647,38 @@ section.banner-pages p b {
     font-size: 20px;
   }
 }
-section.banner-pages .Image-bg {
+section.banner-pages .img-bg {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
 }
 @media (max-width: 991.98px) {
-  section.banner-pages .Image-bg {
+  section.banner-pages .img-bg {
     right: -100px;
   }
 }
 @media (max-width: 767.98px) {
-  section.banner-pages .Image-bg {
+  section.banner-pages .img-bg {
     right: -80px;
   }
 }
 @media (max-width: 575.98px) {
-  section.banner-pages .Image-bg {
+  section.banner-pages .img-bg {
     right: -50px;
   }
 }
-section.banner-pages .Image-bg Image {
+section.banner-pages .img-bg img {
   height: 500px;
 }
 @media (max-width: 575.98px) {
-  section.banner-pages .Image-bg Image {
+  section.banner-pages .img-bg img {
     height: 100%;
   }
 }
 section.banner-consult {
   background: #ff8a00;
-  background-image: url("../Image/banner-homepage2.png");
+  background-image: url("../img/banner-homepage2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -767,32 +767,32 @@ section.banner-consult p {
     margin-bottom: 14px;
   }
 }
-section.banner-consult .Image-bg {
+section.banner-consult .img-bg {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
 }
 @media (max-width: 991.98px) {
-  section.banner-consult .Image-bg {
+  section.banner-consult .img-bg {
     right: -100px;
   }
 }
 @media (max-width: 767.98px) {
-  section.banner-consult .Image-bg {
+  section.banner-consult .img-bg {
     right: -80px;
   }
 }
 @media (max-width: 575.98px) {
-  section.banner-consult .Image-bg {
+  section.banner-consult .img-bg {
     right: -50px;
   }
 }
-section.banner-consult .Image-bg Image {
+section.banner-consult .img-bg img {
   height: 500px;
 }
 @media (max-width: 575.98px) {
-  section.banner-consult .Image-bg Image {
+  section.banner-consult .img-bg img {
     height: 100%;
   }
 }
@@ -804,11 +804,11 @@ section.banner-consult .polygon {
 section.doctor.nurse .items-doctor .name {
   min-height: 170px;
 }
-section.doctor .items-doctor .Image-doctor {
+section.doctor .items-doctor .img-doctor {
   margin-bottom: -60px;
   text-align: center;
 }
-section.doctor .items-doctor .Image-doctor Image {
+section.doctor .items-doctor .img-doctor img {
   width: 80%;
 }
 section.doctor .items-doctor .name {
@@ -882,18 +882,18 @@ section.question p {
     font-size: 14px;
   }
 }
-section.question .Image-question {
+section.question .img-question {
   position: absolute;
   right: -10px;
   bottom: 0;
   width: 40%;
 }
 @media (max-width: 575.98px) {
-  section.question .Image-question {
+  section.question .img-question {
     width: 50%;
   }
 }
-section.question .Image-question Image {
+section.question .img-question img {
   width: 100%;
 }
 section.faq {
@@ -933,7 +933,7 @@ section.faq {
   align-items: start;
   font-size: 14px;
 }
-.accordion-custom .list-data-faq .items-data-faq .Image-check {
+.accordion-custom .list-data-faq .items-data-faq .img-check {
   margin-right: 10px;
   width: 24px;
 }
@@ -1001,7 +1001,7 @@ section.faq {
   border-radius: 10px;
   overflow: hidden;
 }
-.swiper-article .swiper-slide .card-slide-article Image {
+.swiper-article .swiper-slide .card-slide-article img {
   width: 100%;
   aspect-ratio: 12/7;
   object-fit: cover;
@@ -1063,7 +1063,7 @@ section.faq {
   align-items: center;
   margin-bottom: 22px;
 }
-.list-article .items-article Image {
+.list-article .items-article img {
   width: 40%;
   aspect-ratio: 175/105 auto;
   border-radius: 8px;
@@ -1088,7 +1088,7 @@ section.faq {
   left: 50%;
   transform: translate(-50%, -50%) !important;
 }
-.gallery-video .play-button Image {
+.gallery-video .play-button img {
   width: 100px;
 }
 .rate {

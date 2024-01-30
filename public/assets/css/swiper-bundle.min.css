@@ -450,7 +450,7 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 .swiper-zoom-container > canvas,
-.swiper-zoom-container > Image,
+.swiper-zoom-container > img,
 .swiper-zoom-container > svg {
   max-width: 100%;
   max-height: 100%;
