@@ -124,7 +124,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp600.000
                             </div>
                             <button
-                              onClick={() => handleBook("Acupuncture")}
+                              onClick={() => handleBook("Akupuntur")}
                               id="acupuncture"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -192,7 +192,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp300.000
                             </div>
                             <button
-                              onClick={() => handleBook("Therapeutic Massage")}
+                              onClick={() => handleBook("Pijat Terapi")}
                               id="therapeutic"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -258,7 +258,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp400.000
                             </div>
                             <button
-                              onClick={() => handleBook("Energy-Balancing Reiki")}
+                              onClick={() => handleBook("Penyeimbang Energi Reiki")}
                               id="energy"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -326,7 +326,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp400.000
                             </div>
                             <button
-                              onClick={() => handleBook("Yoga Guidance and Sessions")}
+                              onClick={() => handleBook("Bimbingan dan Sesi Yoga")}
                               id="yoga"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -391,7 +391,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp400.000
                             </div>
                             <button
-                              onClick={() => handleBook("Meditation Practices")}
+                              onClick={() => handleBook("Praktik Meditasi")}
                               id="meditation"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -463,7 +463,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp450.000
                             </div>
                             <div
-                              onClick={() => handleBook("Osteopathy and Chiropractic services")}
+                              onClick={() => handleBook("Osteopati dan Layanan Chiropraktik")}
                               id="osteopathy"
                               className="btn btn-warning fs-14 ms-auto"
                             >

@@ -138,7 +138,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp20.000
                             </div>
                             <div
-                              onClick={() => handleBook("General Practitioner Online Consultation")}
+                              onClick={() => handleBook("Konsultasi Online Dokter Umum")}
                               id="general"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -208,7 +208,7 @@ Service Name : ${service.value}`);
                             </div>
 
                             <div
-                              onClick={() => handleBook("Medical Doctor Online Consultation")}
+                              onClick={() => handleBook("Konsultasi Online Dokter Spesialis")}
                               id="medical"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -286,7 +286,7 @@ Service Name : ${service.value}`);
                             </div>
 
                             <div
-                              onClick={() => handleBook("Online Medical Prescription")}
+                              onClick={() => handleBook("Resep Medis Online")}
                               id="prescription"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -367,7 +367,7 @@ Service Name : ${service.value}`);
                             </div>
 
                             <div
-                              onClick={() => handleBook("Online Medical Certificate")}
+                              onClick={() => handleBook("Sertifikat Medis Online")}
                               id="certificate"
                               className="btn btn-warning fs-14 ms-auto"
                             >

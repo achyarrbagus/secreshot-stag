@@ -333,6 +333,13 @@ Service Name : ${service.value}`);
                               </span>
                             </li>
                             <li className="mb-2">
+                              <h6 className="mb-1">Pengukuran Tekanan Darah </h6>
+                              <span>
+                                Pengukuran Tekanan Darah Evaluasi tekanan darah arteri sebagai indikator penting kesehatan
+                                kardiovaskular.
+                              </span>
+                            </li>
+                            <li className="mb-2">
                               <h6 className="mb-1">Tes Kadar Zat Besi </h6>
                               <span>Mengukur jumlah zat besi dalam darah dan mendiagnosis kondisi seperti anemia.</span>
                             </li>

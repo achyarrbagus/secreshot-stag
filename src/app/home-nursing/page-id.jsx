@@ -129,7 +129,11 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Mulai dari:</b> Rp250.000
                             </div>
-                            <div onClick={() => handleBook("Wound Care")} id="wound" className="btn btn-warning fs-14 ms-auto">
+                            <div
+                              onClick={() => handleBook("Perawatan luka")}
+                              id="wound"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
                               Pesan
                             </div>
                           </div>
@@ -186,7 +190,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp200.000
                             </div>
                             <div
-                              onClick={() => handleBook("Monitoring and Prevention")}
+                              onClick={() => handleBook("Pemantauan & Pencegahan")}
                               id="monitoring"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -221,7 +225,7 @@ Service Name : ${service.value}`);
                   <select id="service" className="form-select form-control" aria-label="Default select example">
                     <option>Pilih Layanan</option>
                     <option value="Perawatan luka">Perawatan luka</option>
-                    <option value="Monitoring and Prevention">Monitoring and Prevention</option>
+                    <option value="Pemantauan & Pencegahan">Pemantauan & Pencegahan</option>
                   </select>
                 </div>
               </div>

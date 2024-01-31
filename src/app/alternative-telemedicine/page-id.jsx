@@ -138,7 +138,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp889.000
                             </div>
                             <button
-                              onClick={() => handleBook("Teeth Whitening")}
+                              onClick={() => handleBook("Pemutihan gigi")}
                               id="teeth"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -213,7 +213,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp2.499.000
                             </div>
                             <button
-                              onClick={() => handleBook("Secretome and Stem Cells Therapy")}
+                              onClick={() => handleBook("Terapi Sekretom dan Stem Cells")}
                               id="secretome"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -284,7 +284,7 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Mulai dari:</b> Rp3.125.000
                             </div>
-                            <a onClick={() => handleBook("Ozone Therapy")} id="ozone" className="btn btn-warning fs-14 ms-auto">
+                            <a onClick={() => handleBook("Terapi Ozon")} id="ozone" className="btn btn-warning fs-14 ms-auto">
                               Pesan{" "}
                             </a>
                           </div>
@@ -315,9 +315,9 @@ Service Name : ${service.value}`);
                   <label className="form-label">Nama Layanan</label>
                   <select id="service" className="form-select form-control" aria-label="Default select example">
                     <option>Pilihan Layanan</option>
-                    <option value="Teeth Whitening">Telemedis Alternatif</option>
-                    <option value="Secretome and Stem Cells Therapy">Terapi Sekretom dan Stem Cells</option>
-                    <option value="Ozone Therapy">Terapi Ozon</option>
+                    <option value="Telemedis Alternatif">Telemedis Alternatif</option>
+                    <option value="Terapi Sekretom dan Stem Cells">Terapi Sekretom dan Stem Cells</option>
+                    <option value="Terapi Ozon">Terapi Ozon</option>
                   </select>
                 </div>
               </div>

@@ -78,7 +78,7 @@ Service Name : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    <i className="icon-menu-icon-homeiv07 me-2 fs-32"></i> Infus Bali Belly
+                    <i className="icon-menu-icon-homeiv07 me-2 fs-32"></i>Infus Bali Belly
                   </button>
                 </h2>
                 <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -126,7 +126,7 @@ Service Name : ${service.value}`);
                               Mulai dari:<b> Rp1.890.000 </b>
                             </div>
                             <button
-                              onClick={() => handleBook("Bali Belly Infusion")}
+                              onClick={() => handleBook("Infus Bali Belly")}
                               id="bali"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -206,7 +206,6 @@ Service Name : ${service.value}`);
                               id="super-bali"
                               className="btn btn-warning fs-14 ms-auto"
                             >
-                              {" "}
                               Pesan{" "}
                             </button>
                           </div>
@@ -270,8 +269,7 @@ Service Name : ${service.value}`);
                               id="basic"
                               className="btn btn-warning fs-14 ms-auto"
                             >
-                              {" "}
-                              Pesan{" "}
+                              Pesan
                             </button>
                           </div>
                         </div>
@@ -666,7 +664,7 @@ Service Name : ${service.value}`);
                   <label className="form-label">Layanan</label>
                   <select id="service" className="form-select form-control" aria-label="Default select example">
                     <option>Pilih Layanan</option>
-                    <option value="Bali Belly Infusion">Bali Belly Infusion</option>
+                    <option value="Infus Bali Belly">Infus Bali Belly</option>
                     <option value="Super Bali Belly IV">Super Bali Belly IV</option>
                     <option value="Basic Immune Booster">Basic Immune Booster</option>
                     <option value="Standard Immune Booster">Standard Immune Booster</option>
