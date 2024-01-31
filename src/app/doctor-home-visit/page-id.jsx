@@ -131,7 +131,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp250.000
                             </div>
                             <div
-                              onClick={() => handleBook("Doctor Home Visit")}
+                              onClick={() => handleBook("Kunjungan Dokter ke Rumah")}
                               id="doctor-visit"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -203,7 +203,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp200.000
                             </div>
                             <div
-                              onClick={() => handleBook("Nurse Home Visit")}
+                              onClick={() => handleBook("Kunjungan Perawat ke Rumah")}
                               id="nurse-visit"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -273,7 +273,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp300.000
                             </div>
                             <div
-                              onClick={() => handleBook("Child Vaccination")}
+                              onClick={() => handleBook("Vaksinasi anak")}
                               id="child"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -349,7 +349,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp150.000
                             </div>
                             <div
-                              onClick={() => handleBook("Medical Check Up")}
+                              onClick={() => handleBook("Pemeriksaan Kesehatan")}
                               id="medical"
                               className="btn btn-warning fs-14 ms-auto"
                             >
