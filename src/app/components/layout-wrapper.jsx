@@ -11,6 +11,11 @@ function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
   const dispatch = useDispatch();
 
+  React.useEffect(() => {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+  }, []);
+
   return (
     <>
       <head>
@@ -117,23 +122,21 @@ function LayoutWrapper({ children }) {
         className="btn-float"
         data-bs-toggle="tooltip"
         data-bs-placement="left"
-        data-bs-title="Consult with Our Medical Team"
-        data-bs-custom-className="custom-tooltip"
+        data-bs-original-title="Consult with Our Medical Team"
+        data-bs-custom-class="custom-tooltip"
       >
         <div className="btn-circle whatsapp">
-          <Link
-            href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0"
-            className="text-white"
-          >
+          <a href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0" className="text-white">
             <i className="fs-24 fa-brands fa-whatsapp"></i>
-          </Link>
+          </a>
         </div>
         <div className="btn-circle telegram">
-          <Link href="https://t.me/InfusionJakarta" className="text-white">
+          <a href="https://t.me/unbanking" className="text-white">
             <i className="fs-24 fa-brands fa-telegram"></i>
-          </Link>
+          </a>
         </div>
       </div>
+
       <footer className="footer">
         <div className="container">
           <div className="d-flex align-items-center">
@@ -177,9 +180,9 @@ function LayoutWrapper({ children }) {
       </footer>
 
       <script type="module" src="/src/main.tsx"></script>
-      <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="/assets/js/swiper-bundle.min.js"></script>
-      <script src="/assets/js/index.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets/js/index.js"></script>
       <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
