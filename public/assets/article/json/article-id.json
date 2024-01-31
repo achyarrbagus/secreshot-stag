@@ -1,239 +1,121 @@
 [
   {
     "Id": 1,
-    "Title": "Bagaimana Pengaruh Puasa terhadap Jantung dan Tekanan Darah Anda?",
-    "Desc": "Bulan suci Ramadhan adalah bulan dimana umat muslim diwajibkan untuk melaksanakan ibadah puasa. Sesungguhnya puasa sangat berdampak pada kesehatan jantung dan tekanan darah setiap yang menjalankannya. Lalu, bisakah puasa mengurangi tekanan darah Anda? Apakah puasa sehat untuk jantung Anda? Atau mungkin dapat berbahaya dalam situasi tertentu? Apabila Anda mengalami keluhan selama menjalankan ibadah puasa, segera konsultasikan ke dokter. Kunjungi suratsakit.com atau whatsapp ke nomor 081291100600, untuk mendapatkan konsultasi gratis serta surat sakit secara praktis dan mudah. Ahli jantung dan endokrinologi Dennis Bruemmer, MD, PhD, melihat banyaknya keuntungan dari berpuasa. Meskipun begitu, tidak aman bagi semua orang untuk menjalankannya. Di bawah ini, Dr. Bruemmer menjawab pertanyaan tentang puasa dan menawarkan beberapa tips untuk menjalaninya.",
-    "PathImg": "/article/apa-pengaruh-puasa-terhadap-jantung-dan-tekanan-darah-anda.jpg",
+    "Title": "Kebiasaan Tanpa Disadari Menyebabkan Gangguan Lambung",
+    "Desc": "Harus Anda waspadai bila terjadi gangguan lambung maka hal ini akan sangat mengganggu aktivitas sehari-hari. Oleh karena itu, menjaga sistem pencernaan khususnya lambung merupakan hal yang perlu Anda perhatikan. Apalagi banyak juga penderita gangguan lambung seperti ini. Seperti dispepsia, asam lambung, atau sakit maag. Jika Anda mengidap penyakit ini, Anda harus benar-benar menjalankan pola hidup sehat. Namun, ada juga beberapa hal yang tanpa disadari bisa menyebabkan gangguan lambung. Apa saja kebiasaan tersebut, berikut beberapa kebiasaan yang bisa memicunya. gangguan lambung.",
+    "DescCard": "Harus Anda waspadai bila terjadi gangguan lambung maka hal ini akan sangat mengganggu aktivitas sehari-hari. Oleh karena itu, ",
+    "PathImg": "/assets/img/article/article01.jpg",
     "SubArticle": [
       {
-        "Title": "Bisakah berpuasa memperkuat jantung Anda?",
-        "Desc": "Penelitian menunjukkan bahwa puasa dapat membantu menurunkan tekanan darah, menurunkan kolesterol, mengontrol diabetes dan menurunkan berat badan.Empat dari risiko utama penyakit jantung adalah tekanan darah tinggi dan kolesterol, diabetes dan berat badan, jadi ada dampak sekundernya,kata Dr. Bruemmer. Jika kita menguranginya, kita bisa mengurangi risiko penyakit jantung.Beberapa penelitian juga menunjukkan bahwa puasa dapat membantu mencegah kanker atau meningkatkan efektivitas pengobatan kemoterapi",
-        "List": [
-          {
-            "Title": "Kapan puasa bukan ide yang baik?"
-          },
-          {
-            "Title": "Puasa tidak untuk semua orang — jadi konsultasikan dengan dokter Anda sebelum Anda berpuasa.Yang tidak bagus untuk berpuasa antara lain",
-            "List": [
-              "Wanita yang sedang hamil atau menyusui.",
-              "Anak-anak.",
-              "Orang yang memiliki diabetes tipe 1.",
-              "Mereka yang memiliki gangguan makan."
-            ]
-          },
-          {
-            "Title": "Tips berpuasa"
-          },
-          {
-            "Title": "Penting untuk memastikan bahwa Anda memiliki nutrisi yang cukup untuk menjalani puasa. Perbanyak makan makanan yang bergizi untuk mendukung tubuh anda berpuasa. Makanan sehat untuk dimakan sebelum puasa antara lain:",
-            "List": [
-              "Penting untuk memastikan bahwa Anda memiliki nutrisi yang cukup untuk menjalani puasa. Perbanyak makan makanan yang bergizi untuk mendukung tubuh anda berpuasa. Makanan sehat untuk dimakan sebelum puasa antara lain:",
-              "Anak-anak.",
-              "Makanan tinggi protein tanpa lemak, seperti ayam atau ikan.",
-              "Yogurt rendah lemak."
-            ]
-          }
-        ]
+        "Title": "Pola Makan Tidak Sehat",
+        "Desc": "Kebiasaan mengonsumsi makanan olahan, junk food, atau pola makan tinggi karbohidrat, gula, garam, makanan pedas, dan makanan berlemak penuh juga bisa menyebabkan sistem pencernaan tidak sehat. Pasalnya, jenis makanan tersebut rendah nutrisi, serat, dan air sehingga dapat memperlambat proses pencernaan dan membuat perut kembung serta menghasilkan banyak gas."
       },
       {
-        "Title": "",
-        "Desc": "Hindari makanan yang tinggi sodium atau yang dapat menyebabkan kembung, seperti sup kalengan dan pizza."
+        "Title": "Berbaring setelah makan",
+        "Desc": "Apakah Anda masih sering makan larut malam? Atau Anda suka berbaring setelah makan? Jika iya, mungkin hal ini bisa memicu asam lambung naik. Saat Anda berbaring, tubuh Anda tidak lagi mendapat manfaat dari gravitasi untuk membantu menjaga isi perut tetap pada tempatnya. Sehingga saat Anda berbaring, makanan yang Anda makan berisiko bocor melalui sfingter esofagus. Jadi, hindari makan sebelum tidur, apalagi jika Anda langsung berbaring setelah makan. Jika Anda harus berbaring, cobalah berbaring miring ke kiri atau angkat tubuh bagian atas untuk membantu menjaga usus tetap di tempatnya."
       },
       {
-        "Title": "",
-        "Desc": "Setelah itu, berbukalah secara perlahan. Jangan tiba-tiba mulai makan semua yang terlihat saat Anda selesai berpuasa. Pilihan terbaik adalah memulai dengan mengemil beberapa kurma atau buah kering lainnya, misalnya. Kemudian istirahat, lalu makan buah dan makanan ringan lainnya terlebih dahulu."
+        "Title": "Dehidrasi",
+        "Desc": "Dehidrasi menjadi salah satu penyebab utama gangguan sistem pencernaan karena dapat memicu sembelit, maag, dan naiknya asam lambung. Kondisi ini membuat lambung tidak memiliki cukup air untuk memproduksi asam pencernaan. Penelitian menunjukkan bahwa minum 8 hingga 10 gelas air per hari dapat membantu membatasi gejala serius penyakit asam lambung."
       },
       {
-        "Title": "",
-        "Desc": "Persiapkan diri Anda untuk mulai beraktivitas di New Normal. Pastikan Anda menjaga kesehatan dengan perilaku hidup sehat dan melakukan vaksinasi COVID-19 segera. Apabila Anda mengalami gejala atau keluhan setelah vaksin seperti demam, sesak nafas, ruam kulit, batuk, maupun gejala lainnya, segera informasikan ke dokter & beristirahat. Kunjungi suratsakit.com untuk meminta surat sakit dari dokter. Jelaskan gejala penyakit Anda, isi data diri, dokter akan memastikan gejala Anda via chat & surat sakit siap untuk dikirim."
+        "Title": "Tidak ada keseimbangan antara makan dan olahraga",
+        "Desc": "Bila melakukan olahraga secara teratur, Anda akan mendapatkan manfaat pada sistem pencernaan. Namun, jika salah melakukannya, justru bisa memicu masalah baru. Jika Anda tidak memiliki waktu antara makan dan berolahraga, hal ini dapat menyebabkan mulas, sakit perut, muntah, dan kelelahan. Anda membutuhkan setidaknya 2 jam sebelum berolahraga. Itu tergantung pada jumlah makan siang yang Anda konsumsi."
+      },
+      {
+        "Title": "Kurang tidur",
+        "Desc": "Kurang tidur ternyata bisa menyebabkan penyakit gastroesophageal reflux, sindrom iritasi usus besar, dan dispepsia fungsional. Penyakit ini berkaitan dengan sistem pencernaan yang tidak sehat. Kurang tidur akan berdampak sangat negatif pada mikrobioma usus yang pada akhirnya akan menyebabkan masalah pencernaan dan kesehatan secara umum."
       }
     ]
   },
   {
     "Id": 2,
-    "Title": "8 Mitos Umum Tentang HIV dan AIDS",
-    "Desc": "HIV selalu terbungkus dalam misinformasi dan stigma. Jadi apa yang salah orang tentang virus ini dan apa yang bisa kita lakukan untuk mengakhiri epidemi HIV? Spesialis Ob/Gyn dan penyakit menular reproduksi Oluwatosin Goje, MD, membahas beberapa kesalahpahaman umum tentang HIV dan bagaimana mereka yang hidup dengan HIV masih dapat menjalani kehidupan yang sangat memuaskan dan produktif. Apabila Anda mengalami gejala maupun mengidap HIV dan AIDS, segera konsultasikan ke doker dan beristirahatlah. Kunjungi suratsakit.com atau whatsapp ke nomor 081291100600, untuk mendapatkan konsultasi dan informasi gratis seputar kesehatan, serta surat sakit secara paraktis dan mudah.",
-    "PathImg": "/article/8-mitos-umum-tentang-hiv-dan-aids.jpg",
+    "Title": "Jangan Remehkan Sakit Kepala! Inilah 7 Penyebab Sakit Kepala Punggung",
+    "Desc": "Sakit kepala adalah salah satu masalah kesehatan yang paling umum dialami semua orang. Namun lokasi sakit kepala yang dialami cenderung berbeda. Ada beberapa titik lokasi yang sering terasa nyeri saat sakit kepala, seperti di bagian belakang kepala atau disebut juga sakit kepala punggung. Sakit kepala punggung bisa ringan atau berat. Jika kondisinya ringan, sakit kepala akan mereda dengan sendirinya. Namun pada kondisi yang lebih parah, sakit kepala biasanya tidak kunjung hilang dan diikuti gejala lainnya. Secara umum, berikut beberapa penyebab sakit kepala punggung yang perlu Anda ketahui.",
+    "DescCard": "Sakit kepala adalah salah satu masalah kesehatan yang paling umum dialami semua orang. Namun lokasi s",
+    "PathImg": "/assets/img/article/article02.jpg",
     "SubArticle": [
       {
-        "Title": "Apa itu HIV?",
-        "Desc": "Ketika tidak diobati, HIV adalah penyebab sindrom defisiensi imun (AIDS). Virus ini menyerang sistem kekebalan tubuh dan membuat tubuh lebih sulit melawan infeksi dan kanker. Hal ini terjadi karena virus menginfeksi dan membunuh sel T, sel yang membantu melindungi tubuh dari penyakit.Didiagnosis HIV tidak secara otomatis berarti seseorang mengidap AIDS. Dibutuhkan sekitar 10 tahun untuk HIV yang tidak diobati untuk berubah menjadi AIDS. Satu-satunya cara untuk mengetahui apakah Anda mengidap HIV adalah dengan melakukan tes. Ada kemungkinan untuk mengalami gejala seperti flu beberapa minggu atau dua bulan setelah tertular HIV. Ini disebut sebagai infeksi HIV akut dan gejalanya bisa termasuk kedinginan, kelelahan, demam, sariawan dan banyak lagi. Gejala-gejala ini cenderung hilang setelah seminggu atau sebulan. AIDS adalah stadium HIV yang paling parah (stadium tiga). Orang yang hidup dengan AIDS memiliki sistem kekebalan yang rusak parah sehingga mereka bisa mendapatkan peningkatan jumlah penyakit parah atau infeksi oportunistik (IO),” kata Dr. Goje"
+        "Title": "Sakit Kepala Saat Beraktivitas",
+        "Desc": "Sakit kepala jenis ini muncul karena dipicu oleh berbagai aktivitas fisik. Rasa sakitnya semakin parah saat melakukan aktivitas cukup berat, seperti berlari, berhubungan seks, batuk, atau mengejan saat buang air besar. Umumnya nyeri terjadi di bagian belakang kepala, di belakang mata, atau di seluruh kepala. Kondisi ini biasanya hanya berlangsung sekitar 20 menit dan bukan merupakan tanda penyakit serius."
       },
       {
-        "Title": "Mitos tentang infeksi HIV",
-        "Desc": "Banyak stigma seputar HIV berasal dari informasi yang salah atau orang yang tidak sepenuhnya memahami bagaimana virus mempengaruhi tubuh."
+        "Title": "Sakit Kepala Ketegangan",
+        "Desc": "Sakit kepala tegang juga bisa menjadi penyebab sakit kepala punggung. Pemicunya bermacam-macam, mulai dari kurang tidur, stres, ketegangan, atau rasa lapar. Rasa sakit akibat sakit kepala tegang umumnya tidak terlalu parah sehingga tidak mengganggu aktivitas. Gejalanya berupa rasa tegang atau tertekan pada dahi atau bagian belakang kepala dan leher selama kurang lebih 30 menit hingga beberapa hari."
       },
       {
-        "Title": "",
-        "Desc": "Dr. Goje sangat menyadari mitos yang beredar tentang HIV. Di sini, dia berbagi beberapa yang umum didengar."
+        "Title": "Sakit Kepala Harian Kronis",
+        "Desc": "Seperti namanya, sakit kepala kronis harian terjadi setiap hari selama tiga bulan dan lebih sering terjadi pada wanita. Mengalami cedera pada leher atau kelelahan bisa memicu sakit kepala jenis ini. Bila kambuh, Anda akan merasakan rasa tidak nyaman pada bagian leher dan belakang kepala akibat otot leher yang tegang. Fisioterapi adalah metode pengobatan yang direkomendasikan untuk penderita sakit kepala kronis setiap hari."
       },
       {
-        "Title": "Mitos 1: Anda dapat mengetahui bahwa seseorang hidup dengan HIV dengan melihatnya",
-        "Desc": "“Tidak, Anda tidak dapat mengidentifikasi orang yang hidup dengan HIV hanya dengan penampilan fisik. Anda tidak dapat mengidentifikasi orang HIV-positif dengan gejala yang mereka miliki. Mereka mungkin tidak memiliki gejala khusus atau memiliki gejala yang menunjukkan kondisi kesehatan lain,” kata Dr. Goje."
+        "Title": "Migrain Basilar",
+        "Desc": "Meskipun migrain umumnya hanya terjadi pada satu sisi kepala, migrain basilar akan menyebabkan nyeri di bagian belakang kepala. Menurut American Migraine Foundation, pada tahap awal, migrain basilar menimbulkan gejala, seperti penglihatan kabur, kebutaan sementara, pusing, telinga berdenging, dan kesulitan berbicara atau mendengar. Meski gejalanya cukup mengganggu, sakit kepala ini umumnya tidak membuat penderitanya lemas. Namun migrain basilar tidak boleh dianggap remeh karena pada kasus tertentu, penyakit ini berhubungan dengan stroke."
       },
       {
-        "Title": "Mitos 2: HIV hanya mempengaruhi orientasi seksual tertentu",
-        "Desc": "",
-        "List": [
-          {
-            "Title": "Siapapun bisa tertular HIV. Menurut Organisasi Kesehatan Dunia (WHO), perilaku dan kondisi yang menempatkan orang pada risiko yang lebih besar untuk tertular HIV meliputi:",
-            "List": [
-              "Seks anal atau vaginal tanpa pengaman",
-              "Memiliki infeksi menular seksual (IMS) lain seperti sifilis, herpes, klamidia, gonore dan vaginosis bakteri.",
-              "Berbagi jarum suntik yang terkontaminasi, alat suntik dan peralatan suntik lainnya serta larutan obat saat menyuntikkan obat.",
-              "Menerima suntikan yang tidak aman, transfusi darah dan transplantasi jaringan.",
-              "Prosedur yang melibatkan pemotongan atau penindikan yang tidak steril.",
-              "Cedera tertusuk jarum suntik yang tidak disengaja, termasuk di antara petugas kesehatan"
-            ]
-          },
-          {
-            "Title": "Berhubungan seks saat mabuk juga dapat membuat Anda berisiko tertular HIV. Alasan di balik ini adalah ketika orang mabuk atau mabuk, mereka cenderung terlibat dalam aktivitas seksual yang lebih berisiko"
-          }
-        ]
+        "Title": "Occipital Neuralgia",
+        "Desc": "Neuralgia oksipital juga merupakan salah satu penyebab sakit kepala punggung. Sakit kepala ini bisa terjadi ketika saraf oksipital yang berada di sekitar sumsum tulang belakang mulai dari pangkal leher hingga kepala mengalami gangguan. Saraf oksipital yang tertekan atau teriritasi dapat dipicu oleh pengalaman cedera, peradangan, atau saraf terjepit. Hal ini menyebabkan neuralgia oksipital."
       },
       {
-        "Title": "Mitos 3: HIV mempengaruhi persalinan dan kesuburan",
-        "Desc": "HIV tidak mempengaruhi kesuburan dan persalinan, terutama bagi perempuan yang mendapatkan pengobatan yang tepat dan memadai. Namun, tidak minum obat saat hamil dapat menyebabkan penularan dari ibu ke anak (MTCT)."
-      },
-      {
-        "Title": "",
-        "Desc": "Wanita hamil yang hidup dengan HIV harus melanjutkan pengobatan atau pengobatan seperti yang direkomendasikan. Ketika viral load seorang ibu tidak terdeteksi, ada kemungkinan kurang dari 1% untuk menginfeksi bayinya."
-      },
-      {
-        "Title": "Mitos 4: Jika Anda menggunakan PrPP, Anda tidak perlu menggunakan kondom",
-        "Desc": "Profilaksis pra pajanan (PrPP) membantu melindungi orang yang mungkin berisiko tinggi terkena HIV melalui seks atau penggunaan narkoba suntikan"
-      },
-      {
-        "Title": "",
-        "Desc": "“Mengkonsumsi obat PrPP sesuai resep mengurangi risiko tertular HIV melalui kontak seksual sekitar 99% dan mengurangi risiko tertular HIV setidaknya 74% di antara pengguna narkoba suntik. PrPP tidak mengurangi risiko PMS lain. Jadi kita harus terus tetap mengadvokasi PrPP dan penggunaan kondom yang konsisten dan benar,” jelas Dr. Goje."
-      },
-      {
-        "Title": "Mitos 5: Jika kedua pasangan HIV-positif, tidak perlu kondom",
-        "Desc": "Dr. Goje mengatakan ini tidak benar sama sekali. Orang yang hidup dengan HIV masih dapat berisiko terkena PMS atau IMS lainnya"
-      },
-      {
-        "Title": "",
-        "Desc": "“Jangan lewatkan penggunaan kondom karena Anda dapat tertular IMS lain seperti gonore, klamidia, trikomoniasis, sifilis atau bahkan herpes,” catatnya"
-      },
-      {
-        "Title": "Mitos 6: Obat HIV dapat menyembuhkan HIV",
-        "Desc": "Obat untuk HIV juga dikenal sebagai terapi antiretroviral (ART). Itu tidak menyembuhkan HIV, tetapi ketika diminum sesuai resep, ART dapat mengurangi jumlah virus dalam tubuh. CDC mengatakan kebanyakan orang bisa mengendalikan virus dalam waktu enam bulan. Hal lain yang perlu diingat adalah bahwa ART tidak akan mencegah penularan PMS atau IMS."
-      },
-      {
-        "Title": "Mitos 7: Anda bisa tertular HIV dari berbagi cangkir dan peralatan makan dengan seseorang yang hidup dengan virus",
-        "List": [
-          {
-            "Title": "Tidak benar. Anda hanya bisa ketularan HIV ketika cairan tubuh dari orang yang terinfeksi memasuki aliran darah Anda. Cairan tersebut antara lain",
-            "List": ["Darah", "ASI.", "Cairan dari anus.", "Air mani", "Cairan vagina"]
-          },
-          {
-            "Title": "HIV dapat masuk ke dalam darah melalui selaput di mulut, anus, penis dan vagina atau melalui kulit yang rusak atau terluka."
-          },
-          {
-            "Title": "Anda tidak dapat tertular HIV atau AIDS dari:",
-            "List": [
-              "Menyentuh atau memeluk seseorang yang mengidap HIV/AIDS",
-              "Menggunakan kamar mandi umum atau kolam renang",
-              "Berbagi cangkir, peralatan makan atau telepon dengan seseorang yang mengidap HIV/AIDS.",
-              "Gigitan serangga",
-              "Donor darah"
-            ]
-          }
-        ]
-      },
-      {
-        "Title": "Mitos 8: Mengidap HIV berarti hidup Anda sudah berakhir",
-        "Desc": "Tidak. Dengan diagnosis dini, pengawasan dan ART, mereka yang hidup dengan virus dapat menikmati hidup yang sehat dan terarah. Mereka juga dapat bekerja dan memiliki hubungan yang bermakna dengan pasangan, teman, dan keluarga."
-      },
-      {
-        "Desc": "Persiapkan diri Anda untuk mulai beraktivitas di New Normal. Pastikan Anda menjaga kesehatan dengan perilaku hidup sehat dan melakukan vaksinasi serta booster COVID-19 segera. Apabila Anda mengalami gejala atau keluhan setelah vaksin seperti demam, sesak nafas, ruam kulit, batuk, maupun gejala lainnya, segera informasikan ke dokter dan beristirahatlah. Kunjungi suratsakit.com untuk meminta surat sakit dari dokter. Jelaskan gejala penyakit Anda, isi data diri, dokter akan memastikan gejala Anda via chat dan surat sakit siap untuk dikirim."
+        "Title": "Cluster Headache",
+        "Desc": "Penyebab sakit kepala punggung lainnya adalah sakit kepala cluster. Pada kondisi ini, permasalahannya terjadi pada tulang belakang di area leher. Hal ini menyebabkan sakit punggung, terutama saat Anda berbaring."
       }
     ]
   },
   {
     "Id": 3,
-    "Title": "5 Manfaat Mendaki Gunung Bagi Kesehatan",
-    "Desc": "Mendaki gunung atau hiking merupakan cara yang bagus beraktivitas di luar ruangan, menggerakkan tubuh, dan menjelajahi tempat-tempat baru, serta dapat melihat pemandangan indah disekitar. Namun, mendaki gunung tidak hanya menjadi rekreasi, tapi juga dapat memberi efek positif bagi tubuh. Lalu apa saja manfaat mendaki gunung bagi kesehatan? Apabila Anda mengalami gejala sakit tertentu saat melakukan pendakian, segera konsultasikan ke dokter untuk memperoleh arahan penanganan lebih tepat. Kunjungi suratsakit.com atau whatsapp ke nomor 081291100600 untuk melakukan konsultasi online dengan dokter tersertifikasi dan dapatkan surat sakit resmi secara praktis dan mudah. Selain menjadi bentuk olahraga yang baik, berjalan-jalan di alam memiliki manfaat kesehatan lainnya seperti menurunkan tekanan darah, meningkatkan kualitas tidur, serta mengurangi depresi dan kecemasan. Namun sebelum melakukan pendakian, dokter kedokteran olahraga Matthew Kampert, DO, MS, menguraikan manfaat mendaki dan memberi kita beberapa tip untuk diikuti saat mendaki.",
-    "PathImg": "/article/5-manfaat-mendaki-gunung-bagi-kesehatan.jpg",
+    "Title": "Penyebab Sakit Punggung dan Tips Mengatasinya",
+    "Desc": "Yakin sakit punggung hanya dialami oleh orang lanjut usia? Anda salah. Banyak orang di usia produktif atau bahkan anak-anak yang harus menghadapi sakit pinggang. Bagaimana bisa? Penyebabnya beragam, mulai dari cedera hingga gerakan yang salah. Nah, berikut beberapa hal yang bisa menjadi penyebab sakit pinggang.",
+    "DescCard": "Yakin sakit punggung hanya dialami oleh orang lanjut usia? Anda salah. Banyak orang di usia produktif",
+    "PathImg": "/assets/img/article/article03.jpg",
     "SubArticle": [
       {
-        "Title": "Manfaat Mendaki Gunung/Hiking",
-        "List": [
-          {
-            "Title": "Mengurangi risiko penyakit jantung",
-            "List": [
-              "Seperti halnya semua olahraga, hiking juga memiliki manfaat kesehatan jantung. Penelitian telah menunjukkan bahwa olahraga dapat mengurangi risiko penyakit jantung. Dengan berolahraga, sirkulasi Anda meningkat dan jantung Anda menjadi lebih kuat",
-              "Dianjurkan agar setiap orang berolahraga setidaknya 150 menit dengan intensitas sedang setiap minggu. Ini semua dapat menunjukkan seberapa baik jantung Anda mendorong darah ke otot, dan seberapa efisien otot Anda dapat mengekstraksi oksigen dari sirkulasi darah Anda."
-            ]
-          },
-          {
-            "Title": "Menurunkan tekanan darah",
-            "List": [
-              "Anda bisa saja memiliki tekanan darah tinggi dan bahkan tidak mengetahuinya – itulah mengapa hipertensi terkadang disebut “pembunuh senyap”. Sulit untuk mendeteksi gejalanya, dan jika tidak ditangani, dapat menyebabkan masalah kesehatan yang serius seperti stroke atau serangan jantung.",
-              "Tetapi satu hal yang dapat Anda lakukan untuk membantu menurunkan tekanan darah Anda? Latihan.",
-              "Penelitian telah secara konsisten menunjukkan bahwa olahraga sama efektifnya dengan obat antihipertensi dosis penuh untuk menurunkan tekanan darah."
-            ]
-          },
-          {
-            "Title": "Memerangi diabetes",
-            "List": [
-              "Sekitar 1 dari 10 orang di AS menderita diabetes. Obat oral dan obat insulin dapat membantu mengobati kondisi medis umum ini.",
-              "Untuk itu, mendaki gunung juga dapat membantu mengontrol kadar gula darah dan meningkatkan sensitivitas tubuh terhadap insulin. Karena olahraga, Anda dapat memiliki efek yang sama dengan insulin. "
-            ]
-          },
-          {
-            "Title": "Mengatasi obesitas",
-            "List": ["Hiking yang bisa menjadi latihan seluruh tubuh, adalah cara yang bagus untuk membakar kalori"]
-          }
-        ]
+        "Title": "Gerakan Mengejutkan pada Kondisi Medis Tertentu",
+        "Desc": "Banyak orang mengalami sakit punggung, setidaknya sekali dalam hidupnya. Sakit punggung ini bisa terjadi di bagian punggung mana pun. Namun, area yang paling sering terkena adalah punggung bagian bawah. Pasalnya, punggung bagian bawah menopang sebagian besar berat badan kita. Lalu, bagaimana dengan penyebab sakit pinggang? Menurut para ahli di National Institutes of Health - MedlinePlus, seseorang bisa mengalami sakit punggung setelah mengangkat benda bergerak atau melakukan gerakan tiba-tiba (menghentak). Selain itu, duduk dalam satu posisi dalam waktu lama, cedera, atau kecelakaan juga bisa menyebabkan sakit punggung. Nyeri pinggang akut seringkali disebabkan oleh cedera mendadak, tepatnya pada otot dan ligamen penyangga punggung. Selain itu, ada juga beberapa penyebab sakit pinggang lainnya yang patut diwaspadai. Misalnya:"
+      },
+      {
+        "Title": "Tips Mengatasi Sakit Punggung",
+        "Desc": "Setidaknya ada beberapa upaya yang bisa kita lakukan untuk mengatasi sakit pinggang. Jadi, inilah beberapa hal yang perlu dipertimbangkan."
+      },
+      {
+        "Title": "Minumlah obat pereda nyeri",
+        "Desc": "Sama seperti penyakit lain yang berhubungan dengan sakit punggung atau nyeri, obat pereda nyeri terkadang bisa menjadi solusinya. Misalnya paracetamol yang bisa meredakan nyeri dan dijual bebas. Selain itu, Anda juga bisa mengonsumsi obat pereda nyeri yang diresepkan oleh dokter. Jangan lupa untuk memerhatikan efek samping obat yang dikonsumsi. Misalnya sakit maag, gangguan fungsi ginjal, atau alergi."
+      },
+      {
+        "Title": "Pertimbangkan Terapi Fisik",
+        "Desc": "Cara mengatasi sakit punggung juga bisa melalui terapi fisik. Seorang ahli terapi fisik akan mengajari kita peregangan untuk mengatasi sakit punggung. Selain itu, mereka juga akan mengajari kita beberapa latihan yang dapat meningkatkan keseimbangan tubuh yang mungkin menjadi penyebab sakit pinggang. Penting untuk diingat bahwa ahli terapi fisik juga dapat mendampingi dengan teknik pengobatan lain, seperti terapi ultrasonik atau stimulasi listrik. Namun, terapi ini dilakukan tergantung penyebab dan tingkat keparahan nyeri punggung Anda."
+      },
+      {
+        "Title": "Tetap Aktif dan Bergerak",
+        "Desc": "Umumnya orang yang menderita sakit punggung cenderung berbaring atau beristirahat hingga nyerinya mereda. Padahal, tetap aktif, atau melakukan aktivitas ringan bisa mempercepat waktu penyembuhan. Misalnya saja olahraga ringan seperti jalan kaki ternyata bisa membantu memulihkan sakit pinggang. Hal yang perlu diingat, hindari aktivitas berat, terutama yang dapat membebani punggung. Anda bisa kok bertanya pada dokter mengenai aktivitas ringan yang cocok untuk membantu mempercepat pemulihan sakit pinggang."
+      },
+      {
+        "Title": "Perhatikan posisi tidur",
+        "Desc": "Posisi tidur juga bisa membantu kita mengatasi sakit pinggang. Posisi tidur tertentu dapat mengurangi tekanan pada punggung. Misalnya, jika penderita sakit punggung terbiasa tidur telentang, coba letakkan bantal di bawah lututnya."
       }
     ]
   },
   {
     "Id": 4,
-    "Title": "Kenali 6 Tanda Awal Diabetes yang Harus Anda Sadari",
-    "Desc": "Gula darah tinggi dapat menyerang Anda tanpa gejala yang jelas. Faktanya, kebanyakan orang tidak tahu bahwa mereka memiliki gula darah tinggi sampai mereka didiagnosis menderita diabetes tipe 2 dan mereka mungkin sudah mengalaminya selama beberapa waktu.Apabila Anda mengalami gejala kesehatan tertentu yang tidak biasa, segera konsultasikan ke dokter dan beristirahatlah. Kunjungi suratsakit.com atau whatsapp ke nomor 081291100600, untuk melakukan konsultasi dengan dokter terpercaya dan dapatkan surat sakit online secara praktis dan mudah",
-    "PathImg": "/article/kenali-6-tanda-awal-diabetes-yang-harus-anda-sadari.jpg",
+    "Title": "Gejala Paling Umum dari Terlalu Banyak Stres",
+    "Desc": "Stres merupakan reaksi tubuh terhadap kondisi tertentu. Stres biasanya muncul ketika seseorang menghadapi ancaman, tekanan, atau sesuatu yang baru. Pada dasarnya gejala yang sering muncul sebagai tanda stres bisa berbeda-beda pada setiap orang, tergantung penyebab dan daya tahan tubuh. Ada empat hal yang bisa berubah dan menjadi tanda tubuh saat mengalami stres.",
+    "DescCard": "Stres merupakan reaksi tubuh terhadap kondisi tertentu. Stres biasanya muncul ketika seseorang menghadapi ancaman,",
+    "PathImg": "/assets/img/article/article04.jpg",
     "SubArticle": [
       {
-        "Title": "Bagaimana Anda tahu jika Anda menderita diabetes?",
-        "Desc": "Tanda-tanda diabetes tipe 2, seperti sering buang air kecil dan rasa haus yang berlebihan, seringkali tidak kentara, terutama sejak dini. Tetapi mengabaikannya dapat menyebabkan masalah kesehatan yang lebih buruk di kemudian hari.Bahkan peningkatan gula darah ringan dapat merusak saraf, ginjal, dan retina Anda. Semakin tinggi kadar gula darah Anda dan semakin lama Anda jalani tanpa pengobatan, semakin buruk kerusakannya.Ahli endokrinologi, Kevin Pantalone, mengatakan ada beberapa gejala yang bisa terjadi sejak dini dengan diabetes. Meskipun tidak kentara, hal-hal berikut layak untuk diwaspadai dan dikonsultasikan dengan dokter Anda.",
-        "List": [
-          {
-            "Title": "Sering buang air kecil",
-            "List": [
-              "Seringnya intensitas anda pergi ke kamar mandi untuk buang air kecil, terutama di malam hari, adalah tanda bahwa gula darah Anda mungkin rusak. "
-            ]
-          },
-          {
-            "Title": "Sering mengalami infeksi saluran kemih atau jamur",
-            "List": [
-              "Ketika gula darah Anda tinggi dan ginjal Anda tidak dapat menyaringnya dengan baik, gula berakhir di urin Anda. Lebih banyak gula di lingkungan yang hangat dan lembap dapat menyebabkan infeksi saluran kemih dan jamur, terutama pada wanita."
-            ]
-          },
-          {
-            "Title": "Mengalami penurunan berat badan",
-            "List": [
-              "Kadar gula yang tinggi dapat mendistorsi lensa di mata Anda sehingga memperburuk penglihatan Anda. Perubahan resep atau penglihatan kacamata Anda terkadang merupakan tanda diabetes."
-            ]
-          },
-          {
-            "Title": "Sering merasa lelah",
-            "List": [
-              "Beberapa penyebab kelelahan mungkin berhubungan dengan diabetes/kadar gula tinggi, termasuk dehidrasi (karena sering buang air kecil, yang dapat mengganggu tidur) dan kerusakan ginjal. Rasa lelah ini seringkali menetap dan dapat mengganggu aktivitas sehari-hari Anda."
-            ]
-          },
-          {
-            "Title": "Mengalami perubahan warna kulit",
-            "List": [
-              "Sesuatu yang Dr. Pantalone sering lihat pada orang sebelum diagnosis diabetes adalah kulit gelap di lipatan leher dan di atas buku-buku jari mereka. Resistensi insulin dapat menyebabkan kondisi ini, yang dikenal sebagai acanthosis nigricans"
-            ]
-          }
-        ]
+        "Title": "Perubahan Emosional",
+        "Desc": "Perubahan emosi adalah salah satu tanda paling umum yang terjadi pada penderita stres. Kondisi ini menyebabkan seseorang mudah kesal, frustasi, dan mood berubah-ubah. Orang yang mengalami stres umumnya sulit menenangkan pikiran, merasa rendah diri, kesepian, bingung, menghindari orang lain, sulit mengendalikan diri, hingga mengalami depresi."
       },
       {
-        "Title": "Cara mencegah diabetes tipe 2",
-        "Desc": "Sebagian besar pencegahan bermuara pada mengatur berat badan dan berolahraga secara teratur. Kehilangan hanya 5% dari berat badan Anda saat ini dapat membantu membalikkan pradiabetes, yaitu ketika Anda memiliki kadar gula darah yang lebih tinggi tetapi tidak cukup tinggi untuk didiagnosis menderita diabetes. Ini juga membantu mengurangi makanan olahan, alkohol, minuman manis, dan lemak trans. Konsumsilah biji-bijian, protein tanpa lemak, buah, sayuran non-tepung, air dan minuman tanpa pemanis sebagai gantinya.Persiapkan diri Anda untuk tetap beraktivitas di era new normal dan pancaroba. Pastikan Anda menjaga kesehatan dengan perilaku hidup sehat dan melakukan vaksinasi COVID-19 lengkap serta suntik vitamin C untuk menjaga daya tahan tubuh. Apabila Anda mengalami gejala atau keluhan pada kesehatan Anda, segera konsultasikan ke dokter dan beristirahatlah. Kunjungi suratsakit.com untuk melakukan konsultasi dengan dokter ahli serta meminta surat sakit online dari dokter secara praktis dan mudah. Jelaskan gejala penyakit Anda, isi data diri, dokter akan memastikan gejala Anda via chat dan surat sakit siap untuk dikirim."
+        "Title": "Gejala Fisik",
+        "Desc": "Perubahan kondisi fisik juga bisa menjadi tanda seseorang mengalami stres. Hal ini menyebabkan seseorang mudah merasa lemas, pusing, migrain, gangguan pencernaan, nyeri otot, dan jantung berdebar-debar. Stres juga kerap ditandai dengan sulit tidur malam, badan gemetar, kaki terasa dingin dan berkeringat, mulut kering, sulit menelan, dan gairah seksual menurun."
+      },
+      {
+        "Title": "Gejala Fisik",
+        "Desc": "Perubahan kondisi fisik juga bisa menjadi tanda seseorang mengalami stres. Hal ini menyebabkan seseorang mudah merasa lemas, pusing, migrain, gangguan pencernaan, nyeri otot, dan jantung berdebar-debar. Stres juga kerap ditandai dengan sulit tidur malam, badan gemetar, kaki terasa dingin dan berkeringat, mulut kering, sulit menelan, dan gairah seksual menurun."
+      },
+      {
+        "Title": "Perubahan Perilaku",
+        "Desc": "Dalam tingkat yang parah, perasaan tertekan dan stres dapat menyebabkan seseorang mengalami perubahan perilaku. Kondisi ini menyebabkan menurunnya nafsu makan dan fokus, menghindar dari tanggung jawab, gelisah, mudah marah, dan mencari pelampiasan misalnya dengan mengonsumsi alkohol dan merokok. Jangan anggap remeh stres yang berlangsung lama apalagi jika muncul berulang kali. Jika hal itu terjadi, segera periksakan diri ke dokter atau psikiater untuk mengatasi stresnya. Pemeriksaan diperlukan untuk mengetahui secara pasti apa penyebab munculnya gejala stres dan mencegah komplikasi yang tidak diinginkan."
       }
     ]
   }

@@ -2,8 +2,9 @@
 
 import React, { useEffect } from "react";
 import Articles from "../../../../public/assets/article/json/article.json";
-import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import ArticlesId from "../../../../public/assets/article/json/article-id.json";
+import { useSelector } from "react-redux";
+import { useRouter } from "next/navigation";
 
 function Article() {
   const navStyle = {
@@ -11,7 +12,11 @@ function Article() {
       "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E\")",
   };
 
-  const [article, setArticle] = React.useState();
+  const lang = useSelector((state) => state.lang.value);
+  const router = useRouter();
+
+  const [id, setId] = React.useState();
+  const [artcs, setArtcs] = React.useState();
 
   useEffect(() => {
     // Mendapatkan path URL setelah domain
@@ -20,15 +25,11 @@ function Article() {
     // Membagi path berdasarkan tanda /
     const pathSegments = path.split("/");
 
-    console.log(pathSegments);
-
     const articleId = pathSegments[2];
-    setArticle(articleId);
+    setId(articleId);
   }, []);
 
-  console.log(article);
-
-  const data = Articles[article];
+  const data = lang == "ID" ? ArticlesId[id] : Articles[id];
 
   return (
     data && (
@@ -69,29 +70,65 @@ function Article() {
                     </>
                   ))}
                 </div>
-                <div className="col-md-4">
-                  <h3 className="title-section text-start pt-0 fs-14"> More Article </h3>
-                  <div className="list-article">
-                    {Articles &&
-                      Articles.map((item, index) => (
+
+                {(() => {
+                  switch (lang) {
+                    case "ID":
+                      return (
                         <>
-                          <butoon
-                            onClick={() => (window.location.href = `/article/${index}`)}
-                            className="items-article"
-                            style={{ cursor: "pointer" }}
-                          >
-                            <img src={item.PathImg} alt="" />
-                            <div className="name">
-                              <h5>{item.Title}</h5>
-                              <a className="text-muted fs-14">
-                                read more <i className="mdi mdi-arrow-right"></i>
-                              </a>
+                          <div className="col-md-4">
+                            <h3 className="title-section text-start pt-0 fs-14"> More Article </h3>
+                            <div className="list-article">
+                              {ArticlesId &&
+                                ArticlesId.map((item, index) => (
+                                  <>
+                                    <butoon
+                                      onClick={() => router.push(`/article/${index}`)}
+                                      className="items-article"
+                                      style={{ cursor: "pointer" }}
+                                    >
+                                      <img src={item.PathImg} alt="" />
+                                      <div className="name">
+                                        <h5>{item.Title}</h5>
+                                        <a className="text-muted fs-14">
+                                          read more <i className="mdi mdi-arrow-right"></i>
+                                        </a>
+                                      </div>
+                                    </butoon>
+                                  </>
+                                ))}
                             </div>
-                          </butoon>
+                          </div>
                         </>
-                      ))}
-                  </div>
-                </div>
+                      );
+                    default:
+                      return (
+                        <div className="col-md-4">
+                          <h3 className="title-section text-start pt-0 fs-14"> More Article </h3>
+                          <div className="list-article">
+                            {Articles &&
+                              Articles.map((item, index) => (
+                                <>
+                                  <butoon
+                                    onClick={() => (window.location.href = `/article/${index}`)}
+                                    className="items-article"
+                                    style={{ cursor: "pointer" }}
+                                  >
+                                    <img src={item.PathImg} alt="" />
+                                    <div className="name">
+                                      <h5>{item.Title}</h5>
+                                      <a className="text-muted fs-14">
+                                        read more <i className="mdi mdi-arrow-right"></i>
+                                      </a>
+                                    </div>
+                                  </butoon>
+                                </>
+                              ))}
+                          </div>
+                        </div>
+                      );
+                  }
+                })()}
               </div>
             </div>
           </section>
