@@ -49,13 +49,13 @@ Service Name : ${service.value}`);
         <section className="banner-pages" style={{ backgroundImage: "url('assets/img/bg-home-nursing.png')" }}>
           <div className="container">
             <div className="text">
-              <h3>Perawatan di Rumah dan Perawatan Luka</h3>
+              <h3>Perawatan di Rumah & Perawatan Luka</h3>
               <p>
                 Dapatkan layanan keperawatan dan perawatan luka terbaik dalam kenyamanan hunian Anda, mulai dari dukungan
                 pemulihan hingga manajemen kondisi kronis.
               </p>
               <a href="#book" className="btn btn-warning fs-14">
-                Pesan Sekarang
+                Pesan
               </a>
             </div>
           </div>
@@ -65,7 +65,7 @@ Service Name : ${service.value}`);
           <div className="container">
             <div className="d-flex align-items-center">
               <img src="assets/img/plus-vector.svg" width="30px" alt="" />
-              <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">Layanan perawatan rumah dan perawatan luka kami meliputi :</h3>
+              <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">Layanan perawatan rumah & perawatan luka kami meliputi :</h3>
             </div>
             <div className="accordion accordion-custom row" id="accordionExample">
               <div className="accordion-item col-md-6">
@@ -130,7 +130,7 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp250.000
                             </div>
                             <div onClick={() => handleBook("Wound Care")} id="wound" className="btn btn-warning fs-14 ms-auto">
-                              Pesan Sekarang
+                              Pesan
                             </div>
                           </div>
                         </div>
@@ -150,7 +150,7 @@ Service Name : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseThree"
                   >
-                    <i className="icon-menu-icon-nursing-2 me-2 fs-32"></i> Monitoring and Prevention
+                    <i className="icon-menu-icon-nursing-2 me-2 fs-32"></i> Pemantauan & Pencegahan
                   </button>
                 </h2>
                 <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -162,23 +162,23 @@ Service Name : ${service.value}`);
                         </div>
                         <div className="col-12">
                           <p>
-                            Ensuring patient well-being through continuous vital sign monitoring and implementing preventive
-                            measures to curb the risk of infections.
+                            Memastikan kondisi pasien melalui pemantauan tanda-tanda vital secara terus menerus dan menerapkan
+                            tindakan pencegahan untuk mengurangi risiko infeksi.
                           </p>
                           <h6 className="title-line">
-                            <span> Benefit </span>
+                            <span> Keuntungan </span>
                           </h6>
                           <ul className="ps-3">
                             <li className="mb-2">
-                              <h6 className="mb-1">Vital Sign Monitoring</h6>
+                              <h6 className="mb-1">Pemantauan Tanda Vital</h6>
                               <span>
-                                Early intervention through regular monitoring detects health issues promptly, improving patient
-                                outcomes.
+                                Intervensi dini melalui pemantauan rutin dapat mendeteksi masalah kesehatan dengan cepat, sehingga
+                                meningkatkan kondisi pasien.
                               </span>
                             </li>
                             <li className="mb-2">
-                              <h6 className="mb-1">Infection Prevention</h6>
-                              <span> Minimized disease transmission, safeguarding patients and healthcare workers. </span>
+                              <h6 className="mb-1">Pencegahan Infeksi</h6>
+                              <span>Meminimalkan penularan penyakit, melindungi pasien dan petugas kesehatan. </span>
                             </li>
                           </ul>
                           <div className="price">
@@ -190,7 +190,7 @@ Service Name : ${service.value}`);
                               id="monitoring"
                               className="btn btn-warning fs-14 ms-auto"
                             >
-                              Pesan Sekarang
+                              Pesan
                             </div>
                           </div>
                         </div>
@@ -205,21 +205,21 @@ Service Name : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section">Pesan Sekarang</h3>
+            <h3 className="title-section">Pesan</h3>
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">Name</label>
-                  <input type="text" className="form-control" id="name" placeholder="Your Name" />
+                  <label className="form-label">Nama</label>
+                  <input type="text" className="form-control" id="name" placeholder="Nama Anda" />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Address</label>
-                  <input type="text" className="form-control" id="address" placeholder="Your Address" />
+                  <label className="form-label">Alamat</label>
+                  <input type="text" className="form-control" id="address" placeholder="Alamat Anda" />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Service Name</label>
+                  <label className="form-label">Layanan</label>
                   <select id="service" className="form-select form-control" aria-label="Default select example">
-                    <option>Select Service</option>
+                    <option>Pilih Layanan</option>
                     <option value="Perawatan luka">Perawatan luka</option>
                     <option value="Monitoring and Prevention">Monitoring and Prevention</option>
                   </select>

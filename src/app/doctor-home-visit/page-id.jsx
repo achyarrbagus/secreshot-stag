@@ -59,7 +59,7 @@ Service Name : ${service.value}`);
               <h3>Kunjungan Dokter ke Rumah</h3>
               <p>Rasakan kemudahan konsultasi dengan dokter langsung di rumah Anda. Dengan jaminan klinik.</p>
               <a href="#book" className="btn btn-warning fs-14">
-                Pesan Sekarang
+                Pesan
               </a>
             </div>
           </div>
@@ -69,7 +69,7 @@ Service Name : ${service.value}`);
           <div className="container">
             <div className="d-flex align-items-center">
               <img src="assets/img/plus-vector.svg" width="30px" alt="" />
-              <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">Keutamaan kunjungan dokter kami ke rumah anda meliputi :</h3>
+              <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">Keutamaan kunjungan dokter ke rumah anda meliputi :</h3>
             </div>
             <div className="accordion accordion-custom row" id="accordionExample">
               <div className="accordion-item col-md-6">
@@ -135,7 +135,7 @@ Service Name : ${service.value}`);
                               id="doctor-visit"
                               className="btn btn-warning fs-14 ms-auto"
                             >
-                              Pesan Sekarang
+                              Pesan
                             </div>
                           </div>
                         </div>
@@ -207,7 +207,7 @@ Service Name : ${service.value}`);
                               id="nurse-visit"
                               className="btn btn-warning fs-14 ms-auto"
                             >
-                              Pesan Sekarang
+                              Pesan
                             </div>
                           </div>
                         </div>
@@ -277,7 +277,7 @@ Service Name : ${service.value}`);
                               id="child"
                               className="btn btn-warning fs-14 ms-auto"
                             >
-                              Pesan Sekarang
+                              Pesan
                             </div>
                           </div>
                         </div>
@@ -346,7 +346,7 @@ Service Name : ${service.value}`);
                               id="medical"
                               className="btn btn-warning fs-14 ms-auto"
                             >
-                              Pesan Sekarang{" "}
+                              Pesan{" "}
                             </div>
                           </div>
                         </div>
@@ -361,21 +361,21 @@ Service Name : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section">Pesan Sekarang </h3>
+            <h3 className="title-section">Pesan </h3>
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">Name</label>
-                  <input type="text" className="form-control" id="name" placeholder="Your Name" />
+                  <label className="form-label">Nama</label>
+                  <input type="text" className="form-control" id="name" placeholder="Nama anda" />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Address</label>
-                  <input type="text" className="form-control" id="address" placeholder="Your Address" />
+                  <label className="form-label">Alamat</label>
+                  <input type="text" className="form-control" id="address" placeholder="Alamat anda" />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Service Name</label>
+                  <label className="form-label">Layanan</label>
                   <select id="service" className="form-select form-control" aria-label="Default select example">
-                    <option>Select Service</option>
+                    <option>Pilih Layanan</option>
                     <option value="Kunjungan Dokter ke Rumah">Kunjungan Dokter ke Rumah</option>
                     <option value="Kunjungan Perawat ke Rumah">Kunjungan Perawat ke Rumah</option>
                     <option value="Vaksinasi anak">Vaksinasi anak</option>

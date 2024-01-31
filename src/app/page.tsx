@@ -137,8 +137,13 @@ Service Name : ${service.value}`);
             <section className="why">
               <div className="container">
                 <div className="text">
-                  <h2 className="md:text-2xl text-xl">Why Choose Us?</h2>
-                  <h5 className="mb-3">More than 5000 patients well treated in 2023</h5>
+                  <h3>Why Choose Us?</h3>
+                  {/* <h6 className="md:text-lg text-sm ">More than 5000 patients well treated in 2023</h6> */}
+                  <div className="list-why">
+                    <div className="items-why">
+                      <span>More than 5000 patients well treated in 2023</span>
+                    </div>
+                  </div>
                   <div className="list-why">
                     <div className="items-why">
                       <img src="assets/img/Protect.png" className="img-list" alt="" />
@@ -420,8 +425,8 @@ Service Name : ${service.value}`);
                                   <div className="card-slide-article">
                                     <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
                                     <div className="name-article">
-                                      <h6>{CutText(item.Title)}</h6>
-                                      <p>{CutText(item.DescCard)}</p>
+                                      <h6>{CutText(item.Title)}...</h6>
+                                      <p>{CutText(item.DescCard)}...</p>
                                       <a href="article-detail.html" className="text-muted fs-14">
                                         read more <i className="mdi mdi-arrow-right"></i>
                                       </a>

@@ -68,13 +68,12 @@ Service Name : ${service.value}`);
         <div className="hero-banner">
           <div className="container">
             <div className="text">
-              <h3 className="title">Mitra Terpercaya Anda dalam Perawatan Kesehatan Pribadi di Rumah</h3>
+              <h3 className="title">Mitra Terpercaya Anda dalam Perawatan Kesehatan di Rumah</h3>
               <p className="desc">
-                Kami memberikan perawatan kesehatan personal dan penuh perhatian ke rumah Anda melalui para profesional
-                berpengalaman kami.
+                Kami memberikan perawatan kesehatan personal ke rumah Anda melalui para profesional berpengalaman kami.
               </p>
               <a href="#book" className="btn btn-warning">
-                Pesan Sekarang
+                Pesan
               </a>
             </div>
           </div>
@@ -93,7 +92,7 @@ Service Name : ${service.value}`);
               <div className="col-4">
                 <Link href="/home-nursing" className="box-service">
                   <i className="icon-menu-home-nursing"></i>
-                  <span className="title-service"> Perawatan di Rumah dan Perawatan Luka </span>
+                  <span className="title-service"> Perawatan di Rumah & Perawatan Luka </span>
                 </Link>
               </div>
               <div className="col-4">
@@ -127,8 +126,12 @@ Service Name : ${service.value}`);
         <section className="why">
           <div className="container">
             <div className="text">
-              <h2 className="md:text-2xl text-xl">Mengapa Memilih Kami?</h2>
-              <h5 className="mb-3 ">Sudah menangani 5000 pasien lebih pada tahun 2023</h5>
+              <h3 className="">Mengapa Memilih Kami?</h3>
+              {/* <div className="list-why">
+                <div className="items-why">
+                  <span>Sudah menangani 5000 pasien lebih di tahun 2023</span>
+                </div>
+              </div> */}
               <div className="list-why">
                 <div className="items-why">
                   <img src="assets/img/Protect.png" className="img-list" alt="" />
@@ -178,8 +181,8 @@ Service Name : ${service.value}`);
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
-                            <li>Mayapada Hospital Kuningan, Jakarta</li>
-                            <li>Eka Hospital, Bekasi</li>
+                            <li>RS Mayapada Kuningan, Jakarta</li>
+                            <li>RS Eka, Bekasi</li>
                           </ul>
                         </div>
                       </div>
@@ -200,7 +203,7 @@ Service Name : ${service.value}`);
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
-                            <li>Aysha Islamic Hospital, Bogor</li>
+                            <li>RS Islam Aysha, Bogor</li>
                           </ul>
                         </div>
                       </div>
@@ -221,7 +224,7 @@ Service Name : ${service.value}`);
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
-                            <li>Cepat Sehat Clinic, Jakarta</li>
+                            <li>Klinik Cepat Sehat, Jakarta</li>
                           </ul>
                         </div>
                       </div>
@@ -242,7 +245,7 @@ Service Name : ${service.value}`);
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
-                            <li>Cepat Sehat Clinic, Jakarta</li>
+                            <li>Klinik Cepat Sehat, Jakarta</li>
                           </ul>
                         </div>
                       </div>
@@ -263,7 +266,7 @@ Service Name : ${service.value}`);
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
-                            <li>Cepat Sehat Clinic, Jakarta</li>
+                            <li>Klinik Cepat Sehat, Jakarta</li>
                           </ul>
                         </div>
                       </div>
@@ -284,7 +287,7 @@ Service Name : ${service.value}`);
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
-                            <li>Cepat Sehat Clinic, Jakarta</li>
+                            <li>Klinik Cepat Sehat, Jakarta</li>
                           </ul>
                         </div>
                       </div>
@@ -410,10 +413,10 @@ Service Name : ${service.value}`);
                               <div className="card-slide-article">
                                 <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
                                 <div className="name-article">
-                                  <h6>{CutText(item.Title)}</h6>
-                                  <p>{CutText(item.DescCard)}</p>
+                                  <h6>{CutText(item.Title)}...</h6>
+                                  <p>{CutText(item.DescCard)}...</p>
                                   <a href="article-detail.html" className="text-muted fs-14">
-                                    read more <i className="mdi mdi-arrow-right"></i>
+                                    lebih lanjut <i className="mdi mdi-arrow-right"></i>
                                   </a>
                                 </div>
                               </div>
@@ -430,7 +433,7 @@ Service Name : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section"> Pesan Sekarang </h3>
+            <h3 className="title-section"> Pesan </h3>
             <form action="#">
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
