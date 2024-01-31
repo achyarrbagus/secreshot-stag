@@ -66,7 +66,7 @@ Service Name : ${service.value}`);
           <div className="container">
             <div className="d-flex align-items-center">
               <img src="assets/img/plus-vector.svg" width="30px" alt="" />
-              <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">Terapi alternatif holistik kami meliputi::</h3>
+              <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">Terapi alternatif holistik kami meliputi :</h3>
             </div>
             <div className="accordion accordion-custom row" id="accordionExample">
               <div className="accordion-item col-md-6">
@@ -100,11 +100,11 @@ Service Name : ${service.value}`);
                           <ul className="ps-3">
                             <li className="mb-2">
                               <h6 className="mb-1">Manajemen Rasa Sakit</h6>
-                              <span> Mengurangi berbagai jenis rasa sakit, termasuk kondisi kronis. . </span>
+                              <span> Mengurangi berbagai jenis rasa sakit, termasuk kondisi kronis.</span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">Pengurangan Stres</h6>
-                              <span> Relaksasi dan menyeimbangkan sistem saraf. . </span>
+                              <span> Relaksasi dan menyeimbangkan sistem saraf.</span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">Peningkatan Kualitas Tidur</h6>
