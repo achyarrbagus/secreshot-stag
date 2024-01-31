@@ -395,7 +395,7 @@ Service Name : ${service.value}`);
                         <option value="Doctor Home Visit">Doctor Home Visit</option>
                         <option value="Nurse Home Visit">Nurse Home Visit</option>
                         <option value="Child Vaccination">Child Vaccination</option>
-                        <option value=">Medical Check Up">Medical Check Up</option>
+                        <option value="Medical Check Up">Medical Check Up</option>
                       </select>
                     </div>
                   </div>
