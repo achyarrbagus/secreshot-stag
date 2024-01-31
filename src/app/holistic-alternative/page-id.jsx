@@ -168,7 +168,7 @@ Service Name : ${service.value}`);
                           <ul className="ps-3">
                             <li className="mb-2">
                               <h6 className="mb-1">Pereda Sakit</h6>
-                              <span> Menghilangkan ketegangan otot dan mengurangi ketidaknyamanan. . </span>
+                              <span> Menghilangkan ketegangan otot dan mengurangi ketidaknyamanan. </span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">Pengurangan Stres</h6>
@@ -180,7 +180,7 @@ Service Name : ${service.value}`);
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">Fleksibilitas dan Rentang Gerak</h6>
-                              <span>Membantu meningkatkan fleksibilitas dan mobilitas sendi. . </span>
+                              <span>Membantu meningkatkan fleksibilitas dan mobilitas sendi. </span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">Peningkatan Suasana Hati</h6>

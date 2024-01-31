@@ -315,7 +315,7 @@ Service Name : ${service.value}`);
                   <label className="form-label">Nama Layanan</label>
                   <select id="service" className="form-select form-control" aria-label="Default select example">
                     <option>Pilihan Layanan</option>
-                    <option value="Telemedis Alternatif">Telemedis Alternatif</option>
+                    <option value="Pemutihan gigi">Pemutihan gigi</option>
                     <option value="Terapi Sekretom dan Stem Cells">Terapi Sekretom dan Stem Cells</option>
                     <option value="Terapi Ozon">Terapi Ozon</option>
                   </select>
