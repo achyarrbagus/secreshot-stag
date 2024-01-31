@@ -106,11 +106,6 @@ function LayoutWrapper({ children }) {
                     Indonesia
                   </button>
                 </li>
-                <li>
-                  <button onClick={() => console.log(lang)} className="dropdown-item" type="button">
-                    Test Redux
-                  </button>
-                </li>
               </ul>
             </div>
           </div>
