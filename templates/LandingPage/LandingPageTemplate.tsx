@@ -1,15 +1,4 @@
 "use client";
-import Script from "next/script";
-import styles from "./LandingPageTemplate.module.css";
-import { Container } from "./components/Container";
-import { InlineCode } from "./components/InlineCode";
-import { Link } from "./components/Link";
-import { Paragraph } from "./components/Paragraph";
-import { Section } from "./components/Section";
-import { Subtitle } from "./components/Subtitle";
-import { TechnologyGrid } from "./components/TechnologyGrid";
-import { H1, H2 } from "./components/headings";
-import { technologies } from "./technologies";
 import Head from "next/head";
 import React, { Children, ReactNode } from "react";
 
@@ -21,7 +10,7 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Sacretome</title>
+        <title>Secretome</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 

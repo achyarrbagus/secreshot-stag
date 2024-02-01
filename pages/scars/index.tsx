@@ -30,7 +30,7 @@ Address : ${address.value}
 Service Name : ${service.value}
 ----------------------------------------------------------------------     
 Halo Admin,
-Saya ingin melakukan booking vaksin dengan keterangan 
+Saya ingin melakukan booking service dengan keterangan 
 berikut:
 
 Nama : ${name.value}
