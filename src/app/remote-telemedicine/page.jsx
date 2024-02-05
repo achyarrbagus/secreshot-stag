@@ -13,21 +13,12 @@ const RemoteTelemedic = () => {
     const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
-Hello Admin,
-I want to book service with
-following information :
+Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
 
-Name : ${name.value}
-Address : ${address.value}
-Service Name : ${service.value}
-----------------------------------------------------------------------     
-Halo Admin,
-Saya ingin melakukan booking service dengan keterangan 
-berikut:
-
-Nama : ${name.value}
-Alamat : ${address.value} 
-Service Name : ${service.value}`);
+Name :  ${name.value}
+Address : ${address.value} 
+Service : ${service.value}
+  `);
 
       let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
@@ -153,12 +144,21 @@ Service Name : ${service.value}`);
                                 <div className="value-price">
                                   <b>Start from:</b> Rp20.000
                                 </div>
-                                <div
-                                  onClick={() => handleBook("General Practitioner Online Consultation")}
-                                  id="general"
-                                  className="btn btn-warning fs-14 ms-auto"
-                                >
-                                  Book Now{" "}
+                                <div className="ms-auto d-flex gap-1">
+                                  <div
+                                    onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-ernita/")}
+                                    id="general"
+                                    className="btn btn-warning"
+                                  >
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                  </div>
+                                  <div
+                                    onClick={() => handleBook("General Practitioner Online Consultation")}
+                                    id="general"
+                                    className="btn btn-warning fs-14 ms-auto"
+                                  >
+                                    Book Now{" "}
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -227,12 +227,21 @@ Service Name : ${service.value}`);
                                   <b>Start from:</b> Rp40.000
                                 </div>
 
-                                <div
-                                  onClick={() => handleBook("Medical Doctor Online Consultation")}
-                                  id="medical"
-                                  className="btn btn-warning fs-14 ms-auto"
-                                >
-                                  Book Now{" "}
+                                <div className="d-flex gap-1 ms-auto">
+                                  <div
+                                    onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-lia/")}
+                                    id="general"
+                                    className="btn btn-warning"
+                                  >
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                  </div>
+                                  <div
+                                    onClick={() => handleBook("Medical Doctor Online Consultation")}
+                                    id="medical"
+                                    className="btn btn-warning fs-14 ms-auto"
+                                  >
+                                    Book Now
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -336,7 +345,7 @@ Service Name : ${service.value}`);
                         aria-expanded="true"
                         aria-controls="collapseFour"
                       >
-                        <i className="icon-menu-icon-remotetelemedicine04 me-2 fs-32"></i>Online Medical Certificate
+                        <i className="icon-menu-icon-remotetelemedicine04 me-2 fs-32"></i>Online Sick Leave Letter
                       </button>
                     </h2>
                     <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -352,8 +361,8 @@ Service Name : ${service.value}`);
                             </div>
                             <div className="col-12">
                               <p>
-                                Online medical certificates enables individuals to consult with healthcare professionals remotely
-                                to obtain the necessary certificates through digital platforms or websites.
+                                Online sick leave letter enables individuals to consult with healthcare professionals remotely to
+                                obtain the necessary sick leave letter through digital platforms or websites.
                               </p>
                               <h6 className="title-line">
                                 <span>Benefit</span>
@@ -362,22 +371,22 @@ Service Name : ${service.value}`);
                                 <li className="mb-2">
                                   <h6 className="mb-1">Convenience</h6>
                                   <span>
-                                    Allows individuals to obtain medical certificates from the comfort of their own homes,
-                                    reducing the need for in-person visits.
+                                    Allows individuals to obtain sick leave letter from the comfort of their own homes, reducing
+                                    the need for in-person visits.
                                   </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">Time Savings</h6>
                                   <span>
-                                    Streamlines the process, saving time compared to traditional methods of obtaining a medical
-                                    certificate.
+                                    Streamlines the process, saving time compared to traditional methods of obtaining a sick leave
+                                    letter.
                                   </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">Accessibility</h6>
                                   <span>
-                                    Provides access to medical certificates for individuals in remote locations or those with
-                                    limited mobility.
+                                    Provides access to sick leave letter for individuals in remote locations or those with limited
+                                    mobility.
                                   </span>
                                 </li>
                                 <li className="mb-2">

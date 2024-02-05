@@ -83,8 +83,7 @@ Service Name : ${service.value}`);
                     We deliver personalized and compassionate healthcare to your home through our experienced professionals.
                   </p>
                   <a href="#book" className="btn btn-warning">
-                    {" "}
-                    Book Now{" "}
+                    Book Now
                   </a>
                 </div>
               </div>
@@ -138,7 +137,6 @@ Service Name : ${service.value}`);
               <div className="container">
                 <div className="text">
                   <h3>Why Choose Us?</h3>
-                  {/* <h6 className="md:text-lg text-sm ">More than 5000 patients well treated in 2023</h6> */}
                   <div className="list-why">
                     <div className="items-why">
                       <span>More than 5000 patients well treated in 2023</span>

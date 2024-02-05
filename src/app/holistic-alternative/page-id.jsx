@@ -18,21 +18,11 @@ const HolisticAlternativeId = () => {
     const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
-Hello Admin,
-I want to book service with
-following information :
-
-Name : ${name.value}
-Address : ${address.value}
-Service Name : ${service.value}
-----------------------------------------------------------------------     
-Halo Admin,
-Saya ingin melakukan booking service dengan keterangan 
-berikut:
+Hallo CepatSehat.com by Klinik Cepat Sehat, saya ingin konsultasi
 
 Nama : ${name.value}
 Alamat : ${address.value} 
-Service Name : ${service.value}`);
+Layanan : ${service.value}`);
 
       let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;

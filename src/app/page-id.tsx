@@ -34,21 +34,12 @@ const HomeId = () => {
         return alert("please fill form correcly");
       }
       const wardingWa = encodeURIComponent(`
-Hello Admin,
-I want to book service with
-following information :
-
-Name : ${name.value}
-Address : ${address.value}
-Service Name : ${service.value}
-----------------------------------------------------------------------     
-Halo Admin,
-Saya ingin melakukan booking vaksin dengan keterangan 
-berikut:
+Hallo CepatSehat.com by Klinik Cepat Sehat, saya ingin konsultasi
 
 Nama : ${name.value}
 Alamat : ${address.value} 
-Service Name : ${service.value}`);
+Layanan : ${service.value}`);
+
       let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
 
@@ -126,12 +117,12 @@ Service Name : ${service.value}`);
         <section className="why">
           <div className="container">
             <div className="text">
-              <h3 className="">Mengapa Memilih Kami?</h3>
-              {/* <div className="list-why">
+              <h3>Mengapa Memilih Kami?</h3>
+              <div className="list-why">
                 <div className="items-why">
                   <span>Sudah menangani 5000 pasien lebih di tahun 2023</span>
                 </div>
-              </div> */}
+              </div>
               <div className="list-why">
                 <div className="items-why">
                   <img src="assets/img/Protect.png" className="img-list" alt="" />

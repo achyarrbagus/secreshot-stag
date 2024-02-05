@@ -10,21 +10,11 @@ const InHomeDiagnosticId = () => {
     const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
-Hello Admin,
-I want to book service with
-following information :
-
-Name : ${name.value}
-Address : ${address.value}
-Service Name : ${service.value}
-----------------------------------------------------------------------     
-Halo Admin,
-Saya ingin melakukan booking service dengan keterangan 
-berikut:
+Hallo CepatSehat.com by Klinik Cepat Sehat, saya ingin konsultasi
 
 Nama : ${name.value}
 Alamat : ${address.value} 
-Service Name : ${service.value}`);
+Layanan : ${service.value}`);
 
       let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
@@ -212,13 +202,23 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Mulai dari:</b> Rp2.499.000
                             </div>
-                            <button
-                              onClick={() => handleBook("Terapi Sekretom dan Stem Cells")}
-                              id="secretome"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan{" "}
-                            </button>
+
+                            <div className="d-flex gap-1 ms-auto">
+                              <div
+                                onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-ayu/")}
+                                id="general"
+                                className="btn btn-warning"
+                              >
+                                <i class="fa-solid fa-user-doctor"></i>
+                              </div>
+                              <button
+                                onClick={() => handleBook("Terapi Sekretom dan Stem Cells")}
+                                id="secretome"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Pesan{" "}
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>

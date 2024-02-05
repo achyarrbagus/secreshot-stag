@@ -12,21 +12,11 @@ const RemoteTelemedicId = () => {
     const service = document.getElementById("service");
     if (name?.value && address?.value && service?.value) {
       const wardingWa = encodeURIComponent(`
-Hello Admin,
-I want to book service with
-following information :
-
-Name : ${name.value}
-Address : ${address.value}
-Service Name : ${service.value}
-----------------------------------------------------------------------     
-Halo Admin,
-Saya ingin melakukan booking service dengan keterangan 
-berikut:
+Hallo CepatSehat.com by Klinik Cepat Sehat, saya ingin konsultasi
 
 Nama : ${name.value}
 Alamat : ${address.value} 
-Service Name : ${service.value}`);
+Layanan : ${service.value}`);
 
       let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
@@ -137,12 +127,22 @@ Service Name : ${service.value}`);
                             <div className="value-price">
                               <b>Mulai dari:</b> Rp20.000
                             </div>
-                            <div
-                              onClick={() => handleBook("Konsultasi Online Dokter Umum")}
-                              id="general"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan{" "}
+
+                            <div className="ms-auto d-flex gap-1">
+                              <div
+                                onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-ayu/")}
+                                id="general"
+                                className="btn btn-warning"
+                              >
+                                <i class="fa-solid fa-user-doctor"></i>
+                              </div>
+                              <div
+                                onClick={() => handleBook("Konsultasi Online Dokter Umum")}
+                                id="general"
+                                className="btn btn-warning fs-14"
+                              >
+                                Pesan{" "}
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -207,12 +207,21 @@ Service Name : ${service.value}`);
                               <b>Mulai dari:</b> Rp40.000
                             </div>
 
-                            <div
-                              onClick={() => handleBook("Konsultasi Online Dokter Spesialis")}
-                              id="medical"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan{" "}
+                            <div className="ms-auto d-flex gap-1">
+                              <div
+                                onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-lia/")}
+                                id="general"
+                                className="btn btn-warning"
+                              >
+                                <i class="fa-solid fa-user-doctor"></i>
+                              </div>
+                              <div
+                                onClick={() => handleBook("Konsultasi Online Dokter Spesialis")}
+                                id="medical"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Pesan{" "}
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -309,7 +318,7 @@ Service Name : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseFour"
                   >
-                    <i className="icon-menu-icon-remotetelemedicine04 me-2 fs-32"></i>Sertifikat Medis Online
+                    <i className="icon-menu-icon-remotetelemedicine04 me-2 fs-32"></i>Surat Sakit Online
                   </button>
                 </h2>
                 <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -321,8 +330,8 @@ Service Name : ${service.value}`);
                         </div>
                         <div className="col-12">
                           <p>
-                            Sertifikat medis online memungkinkan individu untuk berkonsultasi dengan profesional kesehatan dari
-                            jarak jauh untuk mendapatkan sertifikat yang diperlukan melalui platform digital atau situs web.
+                            Surat sakit online memungkinkan individu untuk berkonsultasi dengan profesional kesehatan dari jarak
+                            jauh untuk mendapatkan surat sakit yang diperlukan melalui platform digital atau situs web.
                           </p>
                           <h6 className="title-line">
                             <span>Keuntungan</span>
@@ -331,23 +340,23 @@ Service Name : ${service.value}`);
                             <li className="mb-2">
                               <h6 className="mb-1">Kenyamanan</h6>
                               <span>
-                                Memungkinkan individu untuk mendapatkan sertifikat medis dari rumah mereka, mengurangi kebutuhan
-                                untuk kunjungan langsung.
+                                Memungkinkan individu untuk mendapatkan surat sakit dari rumah mereka, mengurangi kebutuhan untuk
+                                kunjungan langsung.
                               </span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">Penghematan Waktu</h6>
                               <span>
                                 Merampingkan proses, menghemat waktu dibandingkan dengan metode tradisional untuk mendapatkan
-                                sertifikat medis.
+                                surat sakit.
                               </span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">Aksesibilitas</h6>
-                              <span>Memberikan akses sertifikat medis untuk individu yang memiliki mobilitas terbatas.</span>
+                              <span>Memberikan akses surat sakit untuk individu yang memiliki mobilitas terbatas.</span>
                             </li>
                             <li className="mb-2">
-                              <h6 className="mb-1">Efficiency</h6>
+                              <h6 className="mb-1">Efisiensi</h6>
                               <span>
                                 Memfasilitasi proses yang lebih cepat dalam memperoleh dokumentasi yang diperlukan untuk pekerjaan
                                 atau tujuan lain.
@@ -357,7 +366,7 @@ Service Name : ${service.value}`);
                               <h6 className="mb-1">Mengurangi Penularan</h6>
                               <span>
                                 Meminimalkan risiko paparan penyakit menular dengan menghindari kunjungan yang tidak perlu ke
-                                fasilitas perawatan kesehatan.
+                                fasilitas perawatan kesehatan
                               </span>
                             </li>
                           </ul>

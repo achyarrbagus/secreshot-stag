@@ -237,6 +237,7 @@ section {
 
         @include breakpoint(sm, max) {
             height: auto;
+            aspect-ratio: auto;
             background-image: url('../img/bg-why-mobile.png');
         }
 
