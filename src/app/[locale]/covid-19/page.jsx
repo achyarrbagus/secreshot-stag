@@ -10,6 +10,7 @@ import Helper from "../../../../lib/helper/helper";
 
 const Index = () => {
   const locales = useLocale();
+  const t = useTranslations("covid-19");
   // const isMobile = useSelector((state) => state.isMobile.value);
 
   const [formData, setFormData] = React.useState({
@@ -25,7 +26,7 @@ const Index = () => {
   const redirectWa = (e) => {
     e.preventDefault();
     const helper = new Helper();
-    helper.RedirectToWa(formData, locales, false);
+    helper.RedirectToWa(formData, locales, true);
   };
 
   const redirectTele = () => {
@@ -44,12 +45,12 @@ const Index = () => {
         >
           <div className="container">
             <div className="text">
-              <p>Ready to Beat</p>
+              {/* <p>Ready to Beat</p>
               <h3>COVID-19</h3>
-              <p>at Its Own Game?</p>
+              <p>at Its Own Game?</p> */}
+              <p>{t("title-slogan")}</p>
               <a href="#book" className="btn btn-warning fs-14">
-                {" "}
-                Book Now{" "}
+                {t("book-button")}
               </a>
             </div>
           </div>
@@ -57,11 +58,8 @@ const Index = () => {
 
         <section className="desc">
           <div className="container">
-            <h3>Exploring Hope in the Fight Against the Pandemic Covid-19</h3>
-            <p>
-              COVID-19 is an infectious respiratory illness caused by the novel
-              coronavirus, known as SARS-CoV-2
-            </p>
+            <h3>{t("revealing")}</h3>
+            <p>{t("revealing-slogan")}</p>
           </div>
         </section>
 
@@ -83,8 +81,7 @@ const Index = () => {
               </div>
               <div className="col-md-6">
                 <p className="text-center fs-20 text-dark fw-semibold mb-0 py-4">
-                  Discover how stem cell is contributing to our understanding of
-                  COVID-19 and the potential applications in pandemic response.
+                  {t("discover")}
                 </p>
               </div>
             </div>
@@ -137,26 +134,27 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="price">
-                    Start from: <b> Rp 1.500.000 </b> <small>/Treatment</small>
+                    {t("start-from")}: <b> Rp 1.500.000 </b>{" "}
+                    <small>/{t("treatment")}</small>
                   </div>
                   <div className="desc">
-                    <p>Treatment Procedure :</p>
+                    <p>{t("treatment-procedure")} :</p>
                     <ul>
-                      <li>Need 2 times treatment in a month</li>
+                      <li>{t("treatment-procedure-slogan")}</li>
                     </ul>
                   </div>
                   <div className="desc">
-                    <p>Benefit :</p>
+                    <p>{t("benefit")} :</p>
                     <ul>
-                      <li>Regeneration of lung injury</li>
-                      <li>Decreased B cell activation and proliferation</li>
-                      <li>Stimulates the production of regulatory T cells</li>
+                      <li>{t("benefit-list.1")}</li>
+                      <li>{t("benefit-list.2")}</li>
+                      <li>{t("benefit-list.3")}</li>
                     </ul>
                   </div>
                   <div className="w-100 d-flex justify-content-center">
                     <a href="#book" className="btn btn-warning mt-4">
                       {" "}
-                      Book Now{" "}
+                      {t("book-button")}
                     </a>
                   </div>
                 </div>
@@ -167,48 +165,46 @@ const Index = () => {
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section"> Book Now </h3>
-            <form action="#">
+            <h3 className="title-section"> {t("book-button")} </h3>
+            <form>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">Name</label>
+                  <label className="form-label">{t("form-book.name")}</label>
                   <input
                     type="text"
                     className="form-control"
                     id="name"
                     onChange={handleChange}
-                    placeholder="Your Name"
+                    placeholder={t("form-book.name-label")}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Address</label>
+                  <label className="form-label">{t("form-book.address")}</label>
                   <input
                     type="text"
                     className="form-control"
                     id="address"
                     onChange={handleChange}
-                    placeholder="Your Address"
+                    placeholder={t("form-book.address-label")}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Service Name</label>
+                  <label className="form-label">{t("form-book.service")}</label>
                   <select
                     id="service"
                     onChange={handleChange}
                     className="form-select form-control"
                     aria-label="Default select example"
                   >
-                    <option>Select Service</option>
-                    <option value="Acne">Acne</option>
-                    <option value="Hair Loss">Hair Loss</option>
-                    <option value="Anti Aging">Anti Aging</option>
-                    <option value="Scars">Scars</option>
-                    <option value="Arthritis">Arthritis</option>
-                    <option value="Auto Immune">Auto Immune</option>
-                    <option selected value="Covid-19">
-                      Covid-19
-                    </option>
-                    <option value="Stroke">Stroke</option>
+                    <option selected>{t("form-book.service-label")}</option>
+                    <option value="Acne">{t("service-menu.1")}</option>
+                    <option value="Hair Loss">{t("service-menu.2")}</option>
+                    <option value="Anti Aging">{t("service-menu.3")}</option>
+                    <option value="Scars">{t("service-menu.4")}</option>
+                    <option value="Arthritis">{t("service-menu.5")}</option>
+                    <option value="Auto Immune">{t("service-menu.6")}</option>
+                    <option value="Covid-19">{t("service-menu.7")}</option>
+                    <option value="Stroke">{t("service-menu.8")}</option>
                   </select>
                 </div>
               </div>

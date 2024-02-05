@@ -11,18 +11,30 @@
     "copyright": "Copyright © 2022 Cepat Sehat. All Rights Reserved"
   },
   "home": {
-    "title-banner": "Your Trusted Partner in Personalized Home Healthcare in",
-    "title-slogan": "We deliver personalized and compassionate healthcare to your home through our experienced professionals",
+    "title-banner": "Boost Your Body With",
+    "title-banner-2": "Stem Cells Theraphy",
+    "consult-for": "Consult For Free With Our Medical Team",
+    "or": "Or",
+    "imag-src": "/assets/img/img-potential.png",
     "book-button": "Book Now",
     "our-service": "Our Service",
+    "i-experience": "I Experience one of those Symptoms",
+    "aesthetic": "Aesthetic",
+    "fast-recovery": "Fast Recovery",
     "service-menu": {
-      "1": "Home Care Services",
-      "2": "Home Nursing And Wound Care",
-      "3": "Remote Telemedicine",
-      "4": "Holistic Alternative Therapies",
-      "5": "In-Home IV Therapy & More",
-      "6": "Alternative Medicine"
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
     },
+    "potential": "Potential Uses of",
+    "secretome-and": "Secretome and Stem Cells",
+    "stem-cells": "Stem Cells Review From Experts",
+    "stem-cells-review": "Stem Cells Review From Experts",
     "why": "Why Choose Us?",
     "why-slogan": "More than 5000 patients well treated in 2023",
     "why-menu": {
@@ -58,216 +70,118 @@
       "address-label": "Your Address"
     }
   },
-  "home-care-services": {
-    "title-banner": "Home Care Services",
-    "title-slogan": "Experience the convenience of consultations with doctors right in your place. With a guarantee of a clinic.",
+  "acne": {
+    "title-banner": "Acne",
+    "title-slogan": "Are you struggling to find effective remedies for",
     "benefit": "Benefit",
     "book-button": "Book Now",
-    "sub-title": "Our Primary physician home visits include :",
+    "revealing": "Revealing the Future of Acne Treatment",
+    "revealing-slogan": "Acne is a common skin condition that affects many people, causing blemishes and discomfort on the face and other body areas.",
+    "how-it-works": "How it works",
+    "discover": "Discover how cutting-edge treatments and skincare innovations are transforming the battle against acne.",
+    "pdf": "Stem Cells for Acne Doc.PD",
+    "view": "View",
+    "start-from": "Start From",
+    "start-from-price": "Rp 1.500.000",
+    "treatment": "Treatment",
+    "treatment-procedure": "Treatment Procedure",
+    "treatment-procedure-slogan": "Need 4 times treatment in a month",
+    "benefit-list": {
+      "1": "Improve pigmentation (dullness, spots)",
+      "2": "Improves collagen (large pores, wrinkle lines, acne,scars)",
+      "3": "Moisturizes skin",
+      "4": "Skin looks younger and brighter."
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "aysha-bogor": "Aysha Islamic Hospital, Bogor",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "cepat-sehat-jakarta": "Cepat Sehat Clinic, Jakarta",
+    "cepat-sehat-bali": "Cepat Sehat Clinic, Bali",
+    "cepat-sehat-lombok": "Cepat Sehat Clinic, lombok",
+    "our-nurse": "Our Nurses",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
     "service-menu": {
-      "1": {
-        "title": "Doctor Home Care",
-        "desc": "A Doctor Home Care brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp500.000",
-        "list-benefit": {
-          "1": {
-            "title": "Convenience",
-            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
-          },
-          "2": {
-            "title": "Personalized Care",
-            "desc": "Tailored treatment plans considering home environment and lifestyle."
-          },
-          "3": {
-            "title": "Timely Intervention",
-            "desc": "Early detection and action to prevent complications."
-          },
-          "4": {
-            "title": "Enhanced Relationship",
-            "desc": "In-home visits foster better communication and trust."
-          },
-          "5": {
-            "title": "Accessibility",
-            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
-          }
-        }
-      },
-      "2": {
-        "title": "Nurse Home Visit",
-        "desc": "A Nurse Home Visit brings healthcare to your door, offering personalized services like assessments, treatments, and health education",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp200.000",
-        "list-benefit": {
-          "1": {
-            "title": "Convenience",
-            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
-          },
-          "2": {
-            "title": "Personalized Care",
-            "desc": "Tailored treatment plans considering home environment and lifestyle."
-          },
-          "3": {
-            "title": "Timely Intervention",
-            "desc": "Early detection and action to prevent complications."
-          },
-          "4": {
-            "title": "Enhanced Relationship",
-            "desc": "In-home visits foster better communication and trust."
-          },
-          "5": {
-            "title": "Accessibility",
-            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
-          }
-        }
-      },
-      "3": {
-        "title": "In-Home Lab and Vaccine",
-        "desc": "In-Home Lab and Vaccine is a routine appointment with a healthcare professional to assess overall health through vital sign measurements, a physical examination, and, if necessary, additional screenings or tests.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp150.000",
-        "list-benefit": {
-          "1": {
-            "title": "Blood Glucose Level Tests",
-            "desc": "Check blood sugar levels to diagnose and manage diabetes and hypoglycemia."
-          },
-          "2": {
-            "title": "Cholesterol Testing",
-            "desc": "Assess LDL, HDL, and triglyceride levels to gauge cardiovascular risk."
-          },
-          "3": {
-            "title": "Uric Acid Test",
-            "desc": "Measure uric acid levels for kidney function evaluation and diagnosing conditions like gout."
-          },
-          "4": {
-            "title": "Blood Pressure Measurement",
-            "desc": "Evaluate arterial blood pressure as a crucial indicator of cardiovascular health."
-          },
-          "5": {
-            "title": "Iron Level Tests",
-            "desc": "Measure the amount of iron in the blood and diagnosing conditions like iron deficiency anemia"
-          }
-        }
-      },
-      "4": {
-        "title": "Vaksinasi Anak",
-        "desc": "Vaksinasi Anak adalah pemberian vaksin untuk melindungi anak dari penyakit seperti campak, gondongan, rubella, dan polio.",
-        "benefit": "Keuntungan",
-        "start-from": "Mulai dari",
-        "start-from-price": "Rp150.000",
-        "list-benefit": {
-          "1": {
-            "title": "Perlindungan Kesehatan",
-            "desc": "Vaksin melindungi anak-anak dari penyakit serius."
-          },
-          "2": {
-            "title": "Pertahanan Nasional",
-            "desc": "Vaksinasi menghemat biaya pengobatan dengan mencegah penyakit parah."
-          },
-          "3": {
-            "title": "Akses Sekolah",
-            "desc": "Vaksinasi yang diwajibkan menjamin akses terhadap pendidikan di lingkungan yang lebih aman."
-          },
-          "4": {
-            "title": "Kesehatan Global",
-            "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
-          }
-        }
-      },
-      "5": {
-        "title": "Pediatric Home Care",
-        "desc": "Pediatric Home Care brings specialized medical care directly to children in their own homes, ensuring comfort and convenience while addressing their healthcare needs.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp700.000",
-        "list-benefit": {
-          "1": {
-            "title": "Convenience",
-            "desc": "Eliminating travel for families, ensuring uninterrupted routines."
-          },
-          "2": {
-            "title": "Personalized Care",
-            "desc": "Tailored medical advice based on direct observation of the child's living environment."
-          },
-          "3": {
-            "title": "Reduced Stress",
-            "desc": "Providing care in a familiar setting, reducing anxiety for both children and parents."
-          },
-          "4": {
-            "title": "Improved Compliance",
-            "desc": "Enhanced cooperation from children, leading to better adherence to treatment plans."
-          },
-          "5": {
-            "title": "Family Involvement",
-            "desc": "Encouraging active participation from family members, fostering a supportive environment for the child's recovery and long-term health management."
-          }
-        }
-      },
-      "6": {
-        "title": "Otolaryngology Home Care",
-        "desc": "Otolaryngology Home Care involve specialized medical care for ear, nose, and throat conditions, conducted in the comfort of patients' homes",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp700.000",
-        "list-benefit": {
-          "1": {
-            "title": "Convenience",
-            "desc": "Expert care without clinic travel, ideal for those with mobility issues."
-          },
-          "2": {
-            "title": "Personalized Care",
-            "desc": "Tailored treatment plans in the patient's home environment."
-          },
-          "3": {
-            "title": "Comfort",
-            "desc": "Familiar surroundings reduce stress associated with medical appointments."
-          },
-          "4": {
-            "title": "Reduced Infection Risk",
-            "desc": "Avoidance of crowded healthcare settings promotes safety."
-          },
-          "5": {
-            "title": "Family Involvement",
-            "desc": "Home visits encourage family support and understanding of treatment plans."
-          }
-        }
-      },
-      "7": {
-        "title": "Dengue Fever Home Care",
-        "desc": "Dengue Fever Home Care entails treating and managing symptoms of dengue fever at home, ensuring comfort and recovery while reducing transmission risks and hospital-related issues.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp850.000",
-        "list-benefit": {
-          "1": {
-            "title": "Comfortable Recovery Environment",
-            "desc": "Familiar surroundings aid in stress reduction and promote recovery."
-          },
-          "2": {
-            "title": "Reduced Transmission Risk",
-            "desc": "Patients minimize the spread of the virus by staying at home."
-          },
-          "3": {
-            "title": "Personalized Treatment",
-            "desc": "Tailored care plans and symptom monitoring by caregivers enhance treatment effectiveness."
-          },
-          "4": {
-            "title": "Regular Monitoring",
-            "desc": "Regular follow-ups to monitor blood counts and hydration status, vital signs, and overall progress."
-          },
-          "5": {
-            "title": "Avoidance of Hospital Risks",
-            "desc": "Home care prevents potential hospital-acquired infections, aiding in faster recovery."
-          },
-          "6": {
-            "title": "Cost-Efficiency",
-            "desc": "Home care reduces healthcare expenses while ensuring proper management of dengue fever symptoms."
-          }
-        }
-      }
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
+    },
+    "form-book-title": {
+      "1": "Book a doctor home care",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now",
+      "4": "Book a vaccine kids now",
+      "5": "Book a Pediatric Practitioner Home Visit",
+      "6": "Book a Otolaryngology Practitioner Home Visit",
+      "7": "Book a Dengue Fever Home Care"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "anti-aging": {
+    "title-banner": "Anti Aging",
+    "title-slogan": "Seeking groundbreaking solutions to defy the signs of aging? Anti Aging?",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "revealing": "Revealing the Future of Anti-Aging",
+    "revealing-slogan": "Aging is a natural process that can result in visible changes to one`s skin, appearance, and overall well-being.",
+    "how-it-works": "How it works",
+    "discover": "Discover how cutting-edge secretome/stem cell technologies are reshaping the landscape of anti-aging solutions and rejuvenation.",
+    "pdf": "Stem Cells for Anti aging Doc.PDF",
+    "view": "View",
+    "start-from": "Start From",
+    "start-from-price": "Rp 1.500.000",
+    "treatment": "Treatment",
+    "treatment-procedure": "Treatment Procedure",
+    "treatment-procedure-slogan": "Need 4 times treatment in a month",
+    "benefit-list": {
+      "1": "Reduces wrinkles",
+      "2": "Improves collagen",
+      "3": "Moisturizes skin",
+      "4": "Skin looks younger and brighter."
+    },
+    "service-menu": {
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
     },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",
@@ -318,80 +232,71 @@
     "total": "Total",
     "pay_confirm": "Confirm & Pay"
   },
-  "home-nursing": {
-    "title-banner": "Home Nursing and Wound Care",
-    "title-slogan": "Receive top-notch nursing and wound care services in the comfort of your villa or hotel, from recovery support to chronic condition management.",
+  "hair-loss": {
+    "title-banner": "Hair Loss",
+    "title-slogan": "Are you looking for innovative solutions to combat Hair Loss?",
     "benefit": "Benefit",
     "book-button": "Book Now",
-    "sub-title": "Our comprehensive home nursing and wound care services include :",
+    "revealing": "Unlocking the Future of Hair Restoration",
+    "revealing-slogan": "Hair loss refers to the condition where an individual experiences a reduction in the number or thickness of hair on their scalp or other parts of their body.",
+    "how-it-works": "How it works",
+    "discover": "Explore how the secretome/stem cell is revolutionizing the fight against hair loss.",
+    "pdf": "Stem Cells for Hair Loss Doc.PDF",
+    "view": "View",
+    "start-from": "Start From",
+    "start-from-price": "Rp 3.350.000 ",
+    "treatment": "Treatment",
+    "treatment-procedure": "Treatment Procedure",
+    "treatment-procedure-slogan": "Need 4 times treatment in a month",
+    "benefit-list": {
+      "1": "Reduces wrinkles",
+      "2": "Improves collagen",
+      "3": "Moisturizes skin",
+      "4": "Skin looks younger and brighter."
+    },
     "service-menu": {
-      "1": {
-        "title": "Wound Care",
-        "desc": "Comprehensive healthcare services covering expert wound and ostomy care, advanced wound dressing methods, precise minor surgeries, and thorough post-surgical care for optimal recovery.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp500.000",
-        "list-benefit": {
-          "1": {
-            "title": "Wound and Ostomy Care",
-            "desc": "Specialized care for faster healing, complications prevention, and improved patient well-being."
-          },
-          "2": {
-            "title": "Advanced Wound Dressing",
-            "desc": "Accelerates healing, reduces infection risks, and provides optimal conditions for tissue recovery."
-          },
-          "3": {
-            "title": "Minor Surgeries",
-            "desc": "Efficient and precise treatment, minimizing trauma and ensuring quick recovery."
-          },
-          "4": {
-            "title": "Post-Surgical Care",
-            "desc": "Comprehensive care for pain management, infection prevention, and smooth rehabilitation, promoting a quicker recovery process."
-          }
-        }
-      },
-      "2": {
-        "title": "Monitoring and Prevention",
-        "desc": "Ensuring patient well-being through continuous vital sign monitoring and implementing preventive measures to curb the risk of infections.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp200.000",
-        "list-benefit": {
-          "1": {
-            "title": "Vital Sign Monitoring",
-            "desc": "Early intervention through regular monitoring detects health issues promptly, improving patient outcomes."
-          },
-          "2": {
-            "title": "Infection Prevention",
-            "desc": "Minimized disease transmission, safeguarding patients and healthcare workers."
-          }
-        }
-      }
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "aysha-bogor": "Aysha Islamic Hospital, Bogor",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "cepat-sehat-jakarta": "Cepat Sehat Clinic, Jakarta",
+    "cepat-sehat-bali": "Cepat Sehat Clinic, Bali",
+    "cepat-sehat-lombok": "Cepat Sehat Clinic, lombok",
+    "our-nurse": "Our Nurses",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
     },
     "form-book-title": {
-      "1": "Book a wound care now",
-      "2": "Book a monitoring & prevention now"
-    },
-    "practice-location": "Practice Location",
-    "our-doctors": "Our Doctors",
-    "dr-surgeon": "Surgeon",
-    "dr-general": "General Practitioner",
-    "dr-pediatrician": "Pediatrician",
-    "dr-asthetic": "Aesthetic Doctor",
-    "mayapada": "Mayapada Hospital",
-    "eka": "Eka Hospital",
-    "aysha": "Aysha Islamic Hospital",
-    "cepat-sehat": "Cepat Sehat Clinic",
-    "our-nurse": "Our Nurses",
-
-    "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
+      "1": "Book a doctor home care",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now",
+      "4": "Book a vaccine kids now",
+      "5": "Book a Pediatric Practitioner Home Visit",
+      "6": "Book a Otolaryngology Practitioner Home Visit",
+      "7": "Book a Dengue Fever Home Care"
     },
     "detail": "Payment Details",
     "fee": "Fee",
@@ -408,121 +313,27 @@
     "total": "Total",
     "pay_confirm": "Confirm & Pay"
   },
-  "remote-telemedicine": {
-    "title-banner": "Remote Telemedicine",
-    "title-slogan": "Access medical consultations without stepping out, via our comprehensive telehealth platform.",
+  "scars": {
+    "title-banner": "Scars",
+    "title-slogan": "Are you in search of groundbreaking solutions to address Scars and improve your skin`s appearance?",
     "benefit": "Benefit",
     "book-button": "Book Now",
-    "sub-title": "Our Remote Telemedicine services include: ",
-    "service-menu": {
-      "1": {
-        "title": "General Practitioner Online Consultation",
-        "desc": "Access healthcare through convenient online consultations, addressing diagnoses, treatments, and follow-up care flexibly from your own space.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp20.000",
-        "list-benefit": {
-          "1": {
-            "title": "Convenience",
-            "desc": "Allows patients to consult with a healthcare professional from the comfort of their own home, saving time and travel."
-          },
-          "2": {
-            "title": "Accessibility",
-            "desc": "Provides access to medical advice and prescriptions for common ailments without the need for in-person visits."
-          },
-          "3": {
-            "title": "Timely Care",
-            "desc": "Enables quick consultations for minor illnesses or health concerns without waiting for an appointment."
-          },
-          "4": {
-            "title": "Cost-Effective",
-            "desc": "May be more cost-efficient compared to in-person visits, considering travel expenses and time off work."
-          },
-          "5": {
-            "title": "Preventive Guidance",
-            "desc": "Offers a convenient way to discuss preventive care, lifestyle changes, and general health advice with a healthcare professional."
-          }
-        }
-      },
-      "2": {
-        "title": "Medical Doctor Online Consultation",
-        "desc": "Connect with specialized medical expertise remotely, eliminating the need for physical travel through our online platform.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp40.000",
-        "list-benefit": {
-          "1": {
-            "title": "Pediatrician",
-            "desc": "consult with doctor specializing in the medical care of infants, children, and adolescents, focusing on their physical, emotional, and behavioral well-being."
-          },
-          "2": {
-            "title": "Surgeon",
-            "desc": "consult with medical professional skilled in performing surgical procedures, addressing a wide range of conditions through operative techniques."
-          },
-          "3": {
-            "title": "Aesthetic Doctor",
-            "desc": "consult with medical practitioner with expertise in aesthetic or cosmetic medicine, knowing about non-surgical procedures to enhance a person's appearance."
-          }
-        }
-      },
-      "3": {
-        "title": "Online Medical Prescription",
-        "desc": "Online medical prescriptions enable patients to receive medications remotely through virtual consultations.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp40.000",
-        "list-benefit": {
-          "1": {
-            "title": "Convenience",
-            "desc": "Enables patients to receive prescriptions without visiting a physical clinic, saving time and effort."
-          },
-          "2": {
-            "title": "Accessibility",
-            "desc": "Improves access to necessary medications for individuals in remote areas or with limited mobility."
-          },
-          "3": {
-            "title": "Time Efficiency",
-            "desc": "Reduces the time spent on travel and waiting in queues at traditional pharmacies."
-          },
-          "4": {
-            "title": "Privacy",
-            "desc": "Offers a discreet way for individuals to obtain prescription medications without face-to-face interactions."
-          },
-          "5": {
-            "title": "Continuity of Care",
-            "desc": "Supports ongoing and consistent management of chronic conditions through timely prescription refills and adjustments."
-          }
-        }
-      },
-      "4": {
-        "title": "Online Sick Leave Letter",
-        "desc": "Online sick leave letter enables individuals to consult with healthcare professionals remotely to obtain the necessary certificates through digital platforms or websites.",
-        "benefit": "Benefit",
-        "start-from": "Start from",
-        "start-from-price": "Rp75.000",
-        "list-benefit": {
-          "1": {
-            "title": "Convenience",
-            "desc": "Allows individuals to obtain medical certificates from the comfort of their own homes, reducing the need for in-person visits."
-          },
-          "2": {
-            "title": "Time Savings",
-            "desc": "Streamlines the process, saving time compared to traditional methods of obtaining a medical certificate."
-          },
-          "3": {
-            "title": "Accessibility",
-            "desc": "Provides access to medical certificates for individuals in remote locations or those with limited mobility."
-          },
-          "4": {
-            "title": "Efficiency",
-            "desc": "Facilitates a quicker turnaround in obtaining necessary documentation for work or other purposes."
-          },
-          "5": {
-            "title": "Reduced Exposure",
-            "desc": "Minimizes the risk of exposure to contagious illnesses by avoiding unnecessary visits to healthcare facilities."
-          }
-        }
-      }
+    "revealing": "Unlocking the Future of Scar Treatment",
+    "revealing-slogan": "Scars can be a result of various injuries, surgeries, or skin conditions, often leaving individuals self-conscious about their appearance.",
+    "how-it-works": "How it works",
+    "discover": "Discover how the power of secretome and stem cells is transforming scar treatment and offering hope for smoother, healthier skin.",
+    "pdf": "Stem Cells for Hair Loss Doc.PDF",
+    "view": "View",
+    "start-from": "Start From",
+    "start-from-price": "Rp 1.500.000",
+    "treatment": "Treatment",
+    "treatment-procedure": "Treatment Procedure",
+    "treatment-procedure-slogan": "Need 4 times treatment in a month",
+    "benefit-list": {
+      "1": "Fade scars",
+      "2": "Improves collagen",
+      "3": "Moisturizes skin",
+      "4": "Skin looks younger and brighter."
     },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",
@@ -533,16 +344,22 @@
     "mayapada": "Mayapada Hospital",
     "eka": "Eka Hospital",
     "aysha": "Aysha Islamic Hospital",
+    "aysha-bogor": "Aysha Islamic Hospital, Bogor",
     "cepat-sehat": "Cepat Sehat Clinic",
+    "cepat-sehat-jakarta": "Cepat Sehat Clinic, Jakarta",
+    "cepat-sehat-bali": "Cepat Sehat Clinic, Bali",
+    "cepat-sehat-lombok": "Cepat Sehat Clinic, lombok",
     "our-nurse": "Our Nurses",
-
-    "form-book-title": {
-      "1": "Book for GP Consultation now",
-      "2": "Book for MD Consultation now",
-      "3": "Book a Medical Prescription now",
-      "4": "Book a Sick Leave Letter now"
+    "service-menu": {
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
     },
-
     "form-book": {
       "title": "Book a visit at your place now",
       "name": "Name",
@@ -551,232 +368,15 @@
       "service-label": "Select Service",
       "address": "Address",
       "address-label": "Your Address"
-    },
-    "detail": "Payment Details",
-    "fee": "Fee",
-    "discount": "Discount",
-    "method": "Choose Payment Method",
-    "e_wallet": "E-Wallet",
-    "bank_transfer": "Bank Transfer",
-    "card": "Card",
-    "other": "OTC",
-    "promo": "Promo Code",
-    "input_promo": "Input Promo Code",
-    "apply_promo": "Apply",
-    "your": "Your payment",
-    "total": "Total",
-    "pay_confirm": "Confirm & Pay"
-  },
-  "holistic-alternative": {
-    "title-banner": "Holistic Alternative Therapies",
-    "title-slogan": "Dive into holistic well-being with our range of alternative therapy solutions.",
-    "benefit": "Benefit",
-    "book-button": "Book Now",
-    "sub-title": "Our Holistic Alternative Therapies offer: ",
-    "service-menu": {
-      "1": {
-        "title": "Acupunture",
-        "desc": "An ancient Chinese medicine practice that involves inserting thin needles into the body at specific points.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp600.000",
-        "list-benefit": {
-          "1": {
-            "title": "Pain Management",
-            "desc": "Alleviates various types of pain, including chronic conditions."
-          },
-          "2": {
-            "title": "Stress Reduction",
-            "desc": "Promotes relaxation and balances the nervous system."
-          },
-          "3": {
-            "title": "Improved Sleep",
-            "desc": "Enhances sleep quality and helps manage insomnia."
-          },
-          "4": {
-            "title": "Enhanced Immune Function",
-            "desc": "Supports overall immune system health."
-          },
-          "5": {
-            "title": "Complementary Treatment",
-            "desc": "Used alongside conventional therapies for various conditions."
-          }
-        }
-      },
-      "2": {
-        "title": "Therapeutic Massage",
-        "desc": "A traditional massage that uses long, flowing strokes, kneading, and pressure to relax muscles and improve circulation.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp300.000",
-        "list-benefit": {
-          "1": {
-            "title": "Pain Relief",
-            "desc": "Eases muscle tension and reduces discomfort."
-          },
-          "2": {
-            "title": "Stress Reduction",
-            "desc": "Promotes relaxation, lowering stress levels."
-          },
-          "3": {
-            "title": "Improved Circulation",
-            "desc": "Enhances blood flow, aiding in overall health."
-          },
-          "4": {
-            "title": "Flexibility and Range of Motion",
-            "desc": "Helps increase flexibility and joint mobility."
-          },
-          "5": {
-            "title": "Mood Enhancement",
-            "desc": "Releases endorphins, contributing to a positive mood."
-          }
-        }
-      },
-      "3": {
-        "title": "Energy Balancing Reiki",
-        "desc": "A Japanese technique that uses gentle touch to channel energy into the body.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp400.000",
-        "list-benefit": {
-          "1": {
-            "title": "Stress Reduction",
-            "desc": "Promotes relaxation, easing stress and tension."
-          },
-          "2": {
-            "title": "Emotional Well-Being",
-            "desc": "Supports emotional balance and clarity."
-          },
-          "3": {
-            "title": "Pain Management",
-            "desc": "May help alleviate physical discomfort and pain."
-          },
-          "4": {
-            "title": "Enhanced Energy Flow",
-            "desc": "Aids in balancing and harmonizing the body's energy."
-          },
-          "5": {
-            "title": "Overall Relaxation",
-            "desc": "Induces a state of deep relaxation for holistic well-being."
-          }
-        }
-      },
-      "4": {
-        "title": "Yoga Guidance & Sessions",
-        "desc": "A type of yoga that combines traditional yoga poses with relaxation techniques.",
-        "benefit": "Benefit",
-        "start-from": "Start from",
-        "start-from-price": "Rp400.000",
-        "list-benefit": {
-          "1": {
-            "title": "Flexibility and Strength",
-            "desc": "Improves flexibility, balance, and overall physical strength."
-          },
-          "2": {
-            "title": "Stress Reduction",
-            "desc": "Promotes relaxation and reduces stress levels through mindful movements and breathing."
-          },
-          "3": {
-            "title": "Mental Clarity",
-            "desc": "Enhances mental focus, concentration, and mindfulness."
-          },
-          "4": {
-            "title": "Improved Posture",
-            "desc": "Helps correct and maintain good posture, reducing strain on the body."
-          },
-          "5": {
-            "title": "Mind-Body Connection",
-            "desc": "Strengthens the connection between the body and mind for holistic well-being."
-          }
-        }
-      },
-      "5": {
-        "title": "Meditation Practices",
-        "desc": "A type of meditation that involves a relaxed state and focusing on the breath.",
-        "benefit": "Benefit",
-        "start-from": "Start from",
-        "start-from-price": "Rp400.000",
-        "list-benefit": {
-          "1": {
-            "title": "Stress Reduction",
-            "desc": "Promotes relaxation, reducing overall stress levels."
-          },
-          "2": {
-            "title": "Improved Focus and Concentration",
-            "desc": "Enhances mental clarity and attention."
-          },
-          "3": {
-            "title": "Emotional Well-Being",
-            "desc": "Helps manage emotions and cultivate a positive mindset."
-          },
-          "4": {
-            "title": "Better Sleep",
-            "desc": "Supports relaxation and can contribute to improved sleep quality."
-          },
-          "5": {
-            "title": "Mindfulness",
-            "desc": "Fosters awareness of the present moment, leading to a greater sense of peace and balance."
-          }
-        }
-      },
-      "6": {
-        "title": "Osteopathy and Chiropractic services",
-        "desc": "Discover the healing touch of our osteopathy , where experienced practitioners employ gentle manual techniques to restore balance and alleviate musculoskeletal issues.",
-        "benefit": "Benefit",
-        "start-from": "Start from",
-        "start-from-price": "Rp450.000",
-        "list-benefit": {
-          "1": {
-            "title": "Pain Relief",
-            "desc": "Alleviates musculoskeletal pain and discomfort through manual adjustments."
-          },
-          "2": {
-            "title": "Improved Mobility",
-            "desc": "Enhances joint flexibility and overall range of motion."
-          },
-          "3": {
-            "title": "Posture Correction",
-            "desc": "Helps address and correct posture issues, reducing strain on the body."
-          },
-          "4": {
-            "title": "Headache and Migraine Relief",
-            "desc": "Can provide relief from tension headaches and migraines through spinal adjustments."
-          },
-          "5": {
-            "title": "Whole-body Wellness",
-            "desc": "Promotes overall well-being by addressing the interconnectedness of the musculoskeletal system and other bodily functions."
-          }
-        }
-      }
     },
     "form-book-title": {
-      "1": "Book Acupuntur now",
-      "2": "Book a Theurapetic Message now",
-      "3": "Book a Energi balancing Reiki now",
-      "4": "Book a Yoga guidance and sessions now",
-      "5": "Book a Meditation practices now",
-      "6": "Book a Osteopathy & Chiropractic Service now"
-    },
-    "practice-location": "Practice Location",
-    "our-doctors": "Our Doctors",
-    "dr-surgeon": "Surgeon",
-    "dr-general": "General Practitioner",
-    "dr-pediatrician": "Pediatrician",
-    "dr-asthetic": "Aesthetic Doctor",
-    "mayapada": "Mayapada Hospital",
-    "eka": "Eka Hospital",
-    "aysha": "Aysha Islamic Hospital",
-    "cepat-sehat": "Cepat Sehat Clinic",
-    "our-nurse": "Our Nurses",
-
-    "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
+      "1": "Book a doctor home care",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now",
+      "4": "Book a vaccine kids now",
+      "5": "Book a Pediatric Practitioner Home Visit",
+      "6": "Book a Otolaryngology Practitioner Home Visit",
+      "7": "Book a Dengue Fever Home Care"
     },
     "detail": "Payment Details",
     "fee": "Fee",
@@ -793,388 +393,36 @@
     "total": "Total",
     "pay_confirm": "Confirm & Pay"
   },
-  "inhome-therapy": {
-    "title-banner": "In-Home IV Therapy & more",
-    "title-slogan": "Receive vital intravenous treatments and medications, ensuring safety and comfort",
-    "benefit": "Composition",
-    "book-button": "Book Now",
-    "sub-title": "Our In-Home IV Therapy: ",
-    "service-menu": {
-      "1": {
-        "title": "Bali Belly Infusion",
-        "desc": "This IV drip provides a combination of therapeutic components to alleviate pain, nausea, and protect the gastrointestinal tract. The vitamin boosters aim to enhance overall well-being, boost immunity, and support various metabolic processes.",
-        "benefit": "Composition",
-        "start-from": "Start from: ",
-        "start-from-price": "Rp1.890.000",
-        "list-benefit": {
-          "1": {
-            "title": "Therapeutic Components: ",
-            "desc": {
-              "1": "Pain Killer IV",
-              "2": "Anti-Vomiting IV",
-              "3": "Gaster Protector IV"
-            }
-          },
-          "2": {
-            "title": "Vitamin Boosters: ",
-            "desc": {
-              "1": "Vitamin C",
-              "2": "Vitamin B1 (Tiamin)",
-              "3": "Vitamin B2 (Riboflavin)",
-              "4": "Nikotinamid (Vitamin B3)",
-              "5": "Asam Pantotenat (Vitamin B5)",
-              "6": "Vitamin B6",
-              "7": "Asam folat",
-              "8": "Vitamin B12",
-              "9": "Biotin"
-            }
-          }
-        }
-      },
-      "2": {
-        "title": "Super Bali Belly IV",
-        "desc": "A turbocharged upgrade to our Standard Bali Belly. Infused with immune-empowering zinc, and gut-nourishing probiotics, this blend is designed for medical-grade resilience. Beyond addressing Bali belly symptoms, it stands as a robust solution, fortifying your well-being at a cellular level. Immunity, detoxification, and digestive health converge for your optimal vitality.",
-        "benefit": "Composition",
-        "start-from": "Start From",
-        "start-from-price": "Rp2.380.000",
-        "list-benefit": {
-          "1": {
-            "title": "Therapeutic Components: ",
-            "desc": {
-              "1": "Pain Killer IV ",
-              "2": "Anti-Vomiting IV",
-              "3": "Gaster Protector IV"
-            }
-          },
-          "2": {
-            "title": "Vitamin Boosters: ",
-            "desc": {
-              "1": "Vitamin C",
-              "2": "Vitamin B1 (Tiamin)",
-              "3": "Vitamin B2 (Riboflavin)",
-              "4": "Nikotinamid (Vitamin B3)",
-              "5": "Asam Pantotenat (Vitamin B5)",
-              "6": "Vitamin B6",
-              "7": "Asam folat",
-              "8": "Vitamin B12",
-              "9": "Biotin",
-              "10": "Seng (20mg)",
-              "11": "Probiotik"
-            }
-          }
-        }
-      },
-      "3": {
-        "title": "Basic Immune Booster",
-        "desc": "This IV drip comprises essential electrolytes, a robust Vitamin B complex, and a dose of Vitamin C. It acts to fortify the immune system, enhance metabolic function, and promote the synthesis of collagen, thereby supporting overall health.",
-        "benefit": "Composition",
-        "start-from": "Start From",
-        "start-from-price": "Rp1.890.000",
-        "list-benefit": {
-          "1": {
-            "title": "",
-            "desc": [
-              "Elektrolit (500 ml)",
-              "Vitamin B12 (5mg)",
-              "Biotin (60 mcg)",
-              "Asam Folat (400 mcg)",
-              "Vitamin B2 (3.6 mg)",
-              "Nikotinamid (40 mg)",
-              "Asam pantotenat (15 mg)",
-              "Vitamin B1 (102.5 mg)",
-              "Vitamin B6 (104 mg)",
-              "Vitamin C (1,000 mg)"
-            ]
-          },
-          "2": {
-            "title": "Penguat Vitamin :",
-            "desc": [
-              "Vitamin C",
-              "Vitamin B1 (Tiamin)",
-              "Vitamin B2 (Riboflavin)",
-              "Nikotinamid (Vitamin B3)",
-              "Asam Pantotenat (Vitamin B5)",
-              "Vitamin B6",
-              "Asam folat",
-              "Vitamin B12",
-              "Biotin",
-              "Seng (20mg)",
-              "Glutathione",
-              "Probiotik"
-            ]
-          },
-          "3": {
-            "title": "Peningkatan Kualitas Tidur",
-            "desc": "Meningkatkan kualitas tidur dan membantu mengelola insomnia."
-          },
-          "4": {
-            "title": "Peningkatan Fungsi Imun",
-            "desc": "Mendukung kesehatan sistem kekebalan tubuh secara keseluruhan."
-          },
-          "5": {
-            "title": "Perawatan Komplementer",
-            "desc": "Digunakan bersama terapi konvensional untuk berbagai kondisi."
-          }
-        }
-      },
-      "4": {
-        "title": "Standard Immune Booster",
-        "desc": "This IV drip delivers a blend of vital electrolytes, an elevated quantity of Vitamin C, and a comprehensive Vitamin B complex. It serves to intensify the immune response, boost energy metabolism, stimulate red blood cell production, and contribute to collagen production for enhanced skin health and immune system resilience.",
-        "benefit": "Composition",
-        "start-from": "Start from: ",
-        "start-from-price": "Rp2.075.000",
-        "list-benefit": {
-          "1": {
-            "title": "",
-            "desc": [
-              "Elektrolit (500 ml)",
-              "Vitamin C (2,100 mg)",
-              "Vitamin B1 (102.5 mg)",
-              "Vitamin B2 (103.6 mg)",
-              "Nikotinamid (40 mg)",
-              "Asam pantotenat (15 mg)",
-              "Vitamin B6 (4 mg)",
-              "Asam Folat (400 mcg)",
-              "Vitamin B12 (10 mcg)",
-              "Biotin (60 mcg)"
-            ]
-          }
-        }
-      },
-      "5": {
-        "title": "Super Immune Booster",
-        "desc": "This potent IV drip combines electrolytes, NAC-Glutathione, Zinc, and an extensive range of vitamins and minerals, including A, D, E, C, B1, B2, B6, B12, and B5. It provides a formidable immune enhancement and supports various bodily functions, including antioxidant defenses, immune function, wound healing, and energy production. This comprehensive approach contributes to overall health and vitality.",
-        "benefit": "Composition",
-        "start-from": "Start From",
-        "start-from-price": "Rp2.480.000",
-        "list-benefit": {
-          "1": {
-            "title": "",
-            "desc": {
-              "1": "Elektrolit (500 ml)",
-              "2": "NAC-Glutathione (30 mg)",
-              "3": "Zinc (5 mg)",
-              "4": "Retinol (3,500 IU)",
-              "5": "Kolekalsiferol (220 IU)",
-              "6": "Alfatokoferol (11,2 IU)",
-              "7": "Vitamin C (2125 mg)",
-              "8": "Vitamin B1 (103.51 mg)",
-              "9": "Vitamin B2 (4.14 mg)",
-              "10": "Vitamin B6 (104.53 mg)",
-              "11": "Vitamin B12 (5.006 mg)",
-              "12": "Asam folat (0,414 mg)",
-              "13": "Vitamin B5 (17.25 mg)",
-              "14": "Biotin (0.069 mg)",
-              "15": "Nikotinamid (46 mg)"
-            }
-          }
-        }
-      },
-      "6": {
-        "title": "Hangover Infusion",
-        "desc": "Hangover infusion treatment is a quick 30-60 minute procedure to help you quickly overcome hangover symptoms through hydration and a combination of vitamins and electrolytes.",
-        "benefit": "Composition",
-        "start-from": "Start From",
-        "start-from-price": "Rp1.860.000",
-        "list-benefit": {
-          "1": {
-            "title": "",
-            "desc": [
-              "IV Pereda Sakit",
-              "IV Anti-Mual",
-              "IV Gaster Protector",
-              "IV Vit B1, B6, B12"
-            ]
-          }
-        }
-      },
-      "7": {
-        "title": "Fever Infusion",
-        "desc": "Fever Infusion treatment is a rapid recovery of high fever for adults through intravenous and can be beneficial to restore body fluids.",
-        "benefit": "Composition",
-        "start-from": "Start From",
-        "start-from-price": "Rp1.140.000",
-        "list-benefit": {
-          "1": {
-            "title": "",
-            "desc": [
-              "IV Pain Killer IV",
-              "IV Anti-Vomiting IV",
-              "IV Gaster Protector",
-              "Vit B1, B6, B12 IV",
-              "Paracetamol IV"
-            ]
-          }
-        }
-      },
-      "8": {
-        "title": "Gerd / Gastritis Infusion",
-        "desc": "Gerd/Gastritis Infusion treatment is useful for treating inflammation in the stomach or gaster caused by irritation due to stomach acid.",
-        "benefit": "Composition",
-        "start-from": "Start From",
-        "start-from-price": "Rp1.660.000",
-        "list-benefit": {
-          "1": {
-            "title": "",
-            "desc": [
-              "IV Pain Killer IV",
-              "IV Anti-Vomiting IV",
-              "IV Gaster Protector",
-              "IV Vit B1, B6, B12"
-            ]
-          }
-        }
-      },
-      "9": {
-        "title": "Iron Infusion",
-        "desc": "Iron infusion is an effective treatment for iron deficiency, the condition that causes tiredness and affects your ability to function.",
-        "benefit": "Composition",
-        "start-from": "Start From",
-        "start-from-price": "Rp1.590.000",
-        "list-benefit": {
-          "1": {
-            "title": "",
-            "desc": [
-              "Infus Ringer Laktat 500 cc",
-              "Infus NACL 100 cc",
-              "Vit C 1000 mg",
-              "Vit B Compex 5000 mg",
-              "Iron Sucrose Complex 100 mg"
-            ]
-          }
-        }
-      }
-    },
-    "practice-location": "Practice Location",
-    "our-doctors": "Our Doctors",
-    "dr-surgeon": "Surgeon",
-    "dr-general": "General Practitioner",
-    "dr-pediatrician": "Pediatrician",
-    "dr-asthetic": "Aesthetic Doctor",
-    "mayapada": "Mayapada Hospital",
-    "eka": "Eka Hospital",
-    "aysha": "Aysha Islamic Hospital",
-    "cepat-sehat": "Cepat Sehat Clinic",
-    "our-nurse": "Our Nurses",
-
-    "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
-    },
-    "detail": "Payment Details",
-    "fee": "Fee",
-    "discount": "Discount",
-    "method": "Choose Payment Method",
-    "e_wallet": "E-Wallet",
-    "bank_transfer": "Bank Transfer",
-    "card": "Card",
-    "other": "OTC",
-    "promo": "Promo Code",
-    "input_promo": "Input Promo Code",
-    "apply_promo": "Apply",
-    "your": "Your payment",
-    "total": "Total",
-    "pay_confirm": "Confirm & Pay"
-  },
-  "alternative-telemedicine": {
-    "title-banner": "Alternative Medicine",
-    "title-slogan": "Teeth whitening for enhanced appearance, secretome therapy for regenerative treatments, and ozone therapy for boost immune system.",
+  "arthritis": {
+    "title-banner": "Arthritis",
+    "title-slogan": "Are you seeking revolutionary approaches to alleviate the challenges of Arthritis?",
     "benefit": "Benefit",
     "book-button": "Book Now",
-    "sub-title": "Our Alternative Medicine services consist of: ",
+    "revealing": "Unlocking the Future of the Relief",
+    "revealing-slogan": "Arthritis is a common condition that can cause joint pain and limit mobility, impacting the quality of life for many individuals.",
+    "how-it-works": "How it works",
+    "discover": "Discover how cutting-edge treatments and therapies involving secretome and stem cells are reshaping the landscape of arthritis management and offering hope for improved joint health.",
+    "pdf": "Stem Cells for Arthritis Doc.PDF",
+    "view": "View",
+    "start-from": "Start From",
+    "start-from-price": "Rp 5.400.000",
+    "treatment": "Treatment",
+    "treatment-procedure": "Treatment Procedure",
+    "treatment-procedure-slogan": "Need 1 times treatment in a month",
+    "benefit-list": {
+      "1": "Increases needed cartilage cells",
+      "2": "Suppresses arthritis inflammation",
+      "3": "Releases proteins (cytokines) to reduce pain."
+    },
     "service-menu": {
-      "1": {
-        "title": "Teeth Whitening",
-        "desc": "Enhance the brightness of your smile with our professional teeth whitening service.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp889.000",
-        "list-benefit": {
-          "1": {
-            "title": "Improved Aesthetics",
-            "desc": "Enhances the appearance of teeth by reducing stains and discoloration, resulting in a brighter and whiter smile."
-          },
-          "2": {
-            "title": "Boosted Confidence",
-            "desc": "Whiter teeth often contribute to increased self-confidence and a positive self-image."
-          },
-          "3": {
-            "title": "Youthful Appearance",
-            "desc": "A whiter smile is associated with a more youthful look, as tooth discoloration can be a sign of aging."
-          },
-          "4": {
-            "title": "Enhanced Oral Hygiene",
-            "desc": "The process of teeth whitening often involves professional cleaning, contributing to improved overall oral hygiene."
-          },
-          "5": {
-            "title": "Positive Social Impression",
-            "desc": "A bright smile can leave a positive impression in social and professional situations, fostering a sense of attractiveness and friendliness."
-          }
-        }
-      },
-      "2": {
-        "title": "Secretome and Stem Cells Therapy",
-        "desc": "Experience the rejuvenating benefits of Secretome, a cutting-edge therapy that harnesses the power of regenerative proteins.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp2.499.000",
-        "list-benefit": {
-          "1": {
-            "title": "Tissue Regeneration",
-            "desc": "Promotes repair and regeneration of damaged tissues."
-          },
-          "2": {
-            "title": "Anti-Inflammatory",
-            "desc": "Exhibits anti-inflammatory properties, aiding in immune modulation."
-          },
-          "3": {
-            "title": "Accelerated Healing",
-            "desc": "Speeds up the natural healing process by promoting cell growth and tissue remodeling."
-          },
-          "4": {
-            "title": "Degenerative Condition Treatment",
-            "desc": "Holds potential for treating conditions like osteoarthritis and neurodegenerative diseases."
-          },
-          "5": {
-            "title": "Minimized Immune Response",
-            "desc": "Reduces the risk of immune rejection, making them suitable for transplantation and regenerative therapies."
-          }
-        }
-      },
-      "3": {
-        "title": "Ozone Therapy",
-        "desc": "Immerse yourself in the healing properties of ozone therapy. Discover a holistic approach to wellness with ozone therapy.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp3.125.000",
-        "list-benefit": {
-          "1": {
-            "title": "Improved Oxygenation",
-            "desc": "May enhance oxygen delivery to tissues, potentially boosting energy levels."
-          },
-          "2": {
-            "title": "Enhanced Immune System",
-            "desc": "Claimed to stimulate the immune system for increased resistance to infections."
-          },
-          "3": {
-            "title": "Anti-Inflammatory Effects",
-            "desc": "Proposed to have anti-inflammatory properties."
-          },
-          "4": {
-            "title": "Detoxification Support",
-            "desc": "Advocated for its potential role in aiding detoxification."
-          },
-          "5": {
-            "title": "Antimicrobial Properties",
-            "desc": "Suggested to have antimicrobial effects that may help combat infections."
-          }
-        }
-      }
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
     },
     "form-book": {
       "title": "Book a visit at your place now",
@@ -1184,162 +432,221 @@
       "service-label": "Select Service",
       "address": "Address",
       "address-label": "Your Address"
-    }
-  },
-  "practice-location": "Practice Location",
-  "our-doctors": "Our Doctors",
-  "dr-surgeon": "Surgeon",
-  "dr-general": "General Practitioner",
-  "dr-pediatrician": "Pediatrician",
-  "dr-asthetic": "Aesthetic Doctor",
-  "mayapada": "Mayapada Hospital",
-  "eka": "Eka Hospital",
-  "aysha": "Aysha Islamic Hospital",
-  "cepat-sehat": "Cepat Sehat Clinic",
-  "our-nurse": "Our Nurses",
-
-  "form-book": {
-    "title": "Book a visit at your place now",
-    "name": "Name",
-    "name-label": "Your Name",
-    "service": "Service",
-    "service-label": "Select Service",
-    "address": "Address",
-    "address-label": "Your Address"
-  },
-  "detail": "Payment Details",
-  "fee": "Fee",
-  "discount": "Discount",
-  "method": "Choose Payment Method",
-  "e_wallet": "E-Wallet",
-  "bank_transfer": "Bank Transfer",
-  "card": "Card",
-  "other": "OTC",
-  "promo": "Promo Code",
-  "input_promo": "Input Promo Code",
-  "apply_promo": "Apply",
-  "your": "Your payment",
-  "total": "Total",
-  "pay_confirm": "Confirm & Pay",
-  "question": {
-    "help": "Any Question? Our team is ready to help you directly",
-    "contact_whatsapp": "Contact via WhatsApp",
-    "link_whatsapp": "https://wa.me/6281222233144"
-  },
-  "doctor": {
-    "consultation": "Doctor Consultation",
-    "certification": "Chat with certified doctor",
-    "type_consult": "Consultation",
-    "profile": "Doctor Profile",
-    "experience": "Experience",
-    "schedule": "Consultation Schedule",
-    "place_practice": "Place of Practice",
-    "graduated_from": "Graduated from"
-  },
-  "chat": {
-    "end": "End Chat",
-    "doctor_finish": "Thank you The online consultation had ended."
-  },
-  "team": {
-    "our": "Our Team"
-  },
-  "booking": {
-    "title": "Check Your Health Without Going to Hospital",
-    "description": "You don't need to go out in this pandemic. Let us came to your house to check your health",
-    "inject": {
-      "title": "Vit C Injection at Home",
-      "image": "ic_suntik_vit_c.png",
-      "description": "Vitamin C is an antioxidant that helps protect your cells against the effects of free radicals",
-      "label": "Get Vit C Injection"
     },
-    "vaccine": {
-      "title": "Vaccines at Home",
-      "image": "ic_vaksin_rumah.png",
-      "description": "Take care of your health and family at home, and vaccines as soon as possible",
-      "label": "Get Inject Vaccines"
+    "form-book-title": {
+      "1": "Book a doctor home care",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now",
+      "4": "Book a vaccine kids now",
+      "5": "Book a Pediatric Practitioner Home Visit",
+      "6": "Book a Otolaryngology Practitioner Home Visit",
+      "7": "Book a Dengue Fever Home Care"
     },
-    "covid_vaccine": {
-      "title": "Covid 19 Vaccine at Home",
-      "image": "ic_vaksin_covid.png",
-      "description": "Get Covid-19 vaccinated easy and convenient at home",
-      "label": "Get Covid-19 Vaccine"
-    }
-  },
-  "article": {
-    "label": "Article",
-    "detail": "Article details"
-  },
-  "confirm": {
-    "title": "Confirmation",
-    "body": "Are you sure ?",
-    "yes": "Yes",
-    "no": "No"
-  },
-  "prescription": {
-    "pharmacy": "Pharmacy",
-    "patient_data": "Patient Data",
-    "full_name": "Full Name",
-    "mobile_number": "Mobile Number",
-    "weight": "Weight",
-    "kg": "Kg",
-    "age": "Age",
-    "complaint": "Complaint",
-    "medicine_allergy": "Medicine Allergy",
-    "add_manual_medicine": "Add Manual Medicine",
-    "data_treatment_plan": "Data - Treatment Plan",
-    "medicine": "Medicine",
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
     "total": "Total",
-    "rule": "Rule",
-    "time": "Time",
-    "notes": "Notes",
-    "delete": "Delete",
-    "no_data": "No data",
-    "add_medicine": "Add medicine",
-    "required": "Required",
-    "submit": "Submit",
-    "preview": "Preview",
-    "enter_medicine_name": "Enter medicine name",
-    "category": "Category",
-    "select_category": "Select category",
-    "internal_medicine": "Internal medicine",
-    "external_medicine": "External medicine",
-    "type": "Type",
-    "select_type": "Select Type",
-    "capsule": "Capsule",
-    "tablet": "Tablet",
-    "ampoule": "Ampoule",
-    "drops": "Drops",
-    "syrup": "Syrup",
-    "bottle": "Bottle",
-    "pill": "Pill",
-    "cream": "Cream",
-    "sachets": "Sachets",
-    "vials": "Vials",
-    "box": "Box",
-    "tube": "Tube",
-    "units": "Units",
-    "select_units": "Select Units",
-    "details": "Details",
-    "clean": "Clean",
-    "store": "Store",
-    "medicine_list": "Medicine List",
-    "find_medicine": "Find medicine",
-    "medicine_name": "Medicine name",
-    "total_as": "Total as",
-    "per_item": "Per Item",
-    "how_to_use": "How to use",
-    "x_a_day": "day",
-    "consume_time": "Consume time",
-    "morning": "Morning",
-    "afternoon": "Afternoon",
-    "evening": "Evening",
-    "before_eating": "Before eating",
-    "when_eating": "When eating",
-    "after_eating": "After eating",
-    "save": "Save",
-    "finished": "Finished",
-    "success": "Success",
-    "online_prescription": "Online Prescriptions",
-    "created_successfully": "Created successfully"
+    "pay_confirm": "Confirm & Pay"
+  },
+  "auto-immune": {
+    "title-banner": "Autoimmune",
+    "title-slogan": "Are you searching for groundbreaking solutions to address Autoimmune disorders and their impact on your health?",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "revealing": "Unlocking the Future of Autoimmune Disease Management",
+    "revealing-slogan": "Autoimmune diseases can affect the body`s immune system, leading to a range of health challenges and discomfort.",
+    "how-it-works": "How it works",
+    "discover": "Explore innovative research and therapies using secretome and stem cells that are revolutionizing autoimmune disease management, offering new hope for relief.",
+    "pdf": "Stem Cells for Autoimmune Doc.PDF",
+    "view": "View",
+    "start-from": "Start From",
+    "start-from-price": "Rp 2.500.000",
+    "treatment": "Treatment",
+    "treatment-procedure": "Treatment Procedure",
+    "treatment-procedure-slogan": "Need 2 times treatment in a month",
+    "benefit-list": {
+      "1": "Increases regeneration of damaged cells",
+      "2": "Caring for nerves and muscles",
+      "3": "Slows and stops the progression of the disease."
+    },
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "service-menu": {
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
+    },
+    "form-book-title": {
+      "1": "Book a doctor home care",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now",
+      "4": "Book a vaccine kids now",
+      "5": "Book a Pediatric Practitioner Home Visit",
+      "6": "Book a Otolaryngology Practitioner Home Visit",
+      "7": "Book a Dengue Fever Home Care"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "covid-19": {
+    "title-banner": "COVID-19",
+    "title-slogan": "Ready to Beat at Its Own Game?",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "revealing": "Exploring Hope in the Fight Against the Pandemic Covid-19",
+    "revealing-slogan": "COVID-19 is an infectious respiratory illness caused by the novel coronavirus, known as SARS-CoV-2.",
+    "how-it-works": "How it works",
+    "discover": "Discover how stem cell is contributing to our understanding of COVID-19 and the potential applications in pandemic response.",
+    "pdf": "Stem Cells for Covid-19 Doc.PDF",
+    "view": "View",
+    "start-from": "Start From",
+    "start-from-price": "Rp 1.500.000",
+    "treatment": "Treatment",
+    "treatment-procedure": "Treatment Procedure",
+    "treatment-procedure-slogan": "Need 2 times treatment in a month",
+    "benefit-list": {
+      "1": "Regeneration of lung injury",
+      "2": "Decreased B cell activation and proliferation",
+      "3": "Stimulates the production of regulatory T cells."
+    },
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "service-menu": {
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
+    },
+    "form-book-title": {
+      "1": "Book a doctor home care",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now",
+      "4": "Book a vaccine kids now",
+      "5": "Book a Pediatric Practitioner Home Visit",
+      "6": "Book a Otolaryngology Practitioner Home Visit",
+      "7": "Book a Dengue Fever Home Care"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "stroke": {
+    "title-banner": "Stroke",
+    "title-slogan": "Are you seeking innovative answers to address the aftermath of a",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "revealing": "Revealing the Future of Stroke Rehabilitation",
+    "revealing-slogan": "Stroke consequences can pose substantial hurdles, impacting both physical and cognitive functions, demanding effective rehabilitation methods.",
+    "how-it-works": "How it works",
+    "discover": "Discover how the revolutionary potential of secretome and stem cells is reshaping the domain of stroke recovery, providing fresh possibilities for rehabilitation, neural rejuvenation, and enhanced quality of life.",
+    "pdf": "Stem Cells for Stroke Doc.PDF",
+    "view": "View",
+    "start-from": "Start From",
+    "start-from-price": "Rp 4.500.000",
+    "treatment": "Treatment",
+    "treatment-procedure": "Treatment Procedure",
+    "treatment-procedure-slogan": "Need 1 times treatment in a month",
+    "benefit-list": {
+      "1": "Supports functional and anatomical recovery",
+      "2": "Relieve nerve inflammation",
+      "3": "Stimulates neuroprotection"
+    },
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "service-menu": {
+      "1": "Acne",
+      "2": "Anti Aging",
+      "3": "Hair Loss",
+      "4": "Scars",
+      "5": "Arthritis",
+      "6": "Auto Immune",
+      "7": "Covid-19",
+      "8": "Stroke"
+    },
+    "form-book-title": {
+      "1": "Book a doctor home care",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now",
+      "4": "Book a vaccine kids now",
+      "5": "Book a Pediatric Practitioner Home Visit",
+      "6": "Book a Otolaryngology Practitioner Home Visit",
+      "7": "Book a Dengue Fever Home Care"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
   }
 }

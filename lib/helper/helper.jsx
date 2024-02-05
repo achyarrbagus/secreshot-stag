@@ -30,7 +30,7 @@ class Helper {
         return alert("please fill form correcly");
       }
       let wardingWa = encodeURIComponent(`
-Hallo CepatSehat.com by Klinik Cepat Sehat, saya ingin konsultasi
+Hello%2C+Clinic+Cepat+Sehat%21+%F0%9F%A9%BA+I%E2%80%99m+looking+into+your+Stem+Cells+Therapy+and+would+love+to+know+more+about+the+treatments+and+who+it%E2%80%99s+best+suited+for.+Thanks%21+%E2%9C%A8
 
 Nama : ${form?.name}
 Alamat : ${form?.address} 
@@ -38,7 +38,7 @@ Layanan : ${form?.service}`);
 
       if (lang == "EN" || lang == "en") {
         wardingWa = encodeURIComponent(`
-        Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
+      Hello%2C+Clinic+Cepat+Sehat%21+%F0%9F%A9%BA+I%E2%80%99m+looking+into+your+Stem+Cells+Therapy+and+would+love+to+know+more+about+the+treatments+and+who+it%E2%80%99s+best+suited+for.+Thanks%21+%E2%9C%A8
         
         Name :  ${form.name}
         Address : ${form.address} 

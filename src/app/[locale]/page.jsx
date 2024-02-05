@@ -34,7 +34,7 @@ const Home = () => {
   const redirectWa = (e) => {
     e.preventDefault();
     const helper = new Helper();
-    helper.RedirectToWa(formData, locale, false);
+    helper.RedirectToWa(formData, locale, true);
   };
 
   const redirectTele = () => {
@@ -88,8 +88,6 @@ const Home = () => {
     }
   }, []);
 
-  console.log("root");
-
   return (
     <>
       <div className="content">
@@ -97,8 +95,8 @@ const Home = () => {
           <div className="container">
             <div className="text">
               <h3>
-                <span className="fw-normal"> Boost Your Body With </span> Stem
-                Cells Theraphy
+                <span className="fw-normal"> {t("title-banner")} </span>{" "}
+                {t("title-banner-2")}
               </h3>
             </div>
           </div>
@@ -109,17 +107,18 @@ const Home = () => {
             <div className="d-flex justify-content-end">
               <div className="text">
                 <h3>
-                  <span className="fw-normal">
-                    Consult For Free With Our Medical Team
-                  </span>
+                  <span className="fw-normal">{t("consult-for")}</span>
                 </h3>
                 <a href="#book" className="btn btn-primary fs-14 w-75">
-                  Book Now
+                  {t("book-button")}
                 </a>
                 <h3 className="line">
-                  <span>Or</span>
+                  <span>{t("or")}</span>
                 </h3>
-                <h3 className="mt-3">I Experience one of those Symptoms</h3>
+                {/* i-experience */}
+                <h3 className="mt-3">{t("i-experience")}</h3>
+
+                {/* <h3 className="mt-3">I Experience one of those Symptoms</h3> */}
               </div>
             </div>
           </div>
@@ -128,13 +127,13 @@ const Home = () => {
         <section className="menus">
           <div className="container">
             <h3 className="title-line blue">
-              <span> Aesthetic </span>
+              <span> {t("aesthetic")} </span>
             </h3>
             <div className="row g-3">
               <div className="col-6">
                 <Link href={locale + "/acne"} className="button-menu blue">
-                  <img src="assets/img/icon/icon-acne.svg" alt="" />
-                  <h5>Acne</h5>
+                  <img src="/assets/img/icon/icon-acne.svg" alt="" />
+                  <h5>{t("service-menu.1")}</h5>
                 </Link>
               </div>
               <div className="col-6">
@@ -142,26 +141,26 @@ const Home = () => {
                   href={locale + "/anti-aging"}
                   className="button-menu blue"
                 >
-                  <img src="assets/img/icon/icon-antiaging.svg" alt="" />
-                  <h5>Anti Aging</h5>
+                  <img src="/assets/img/icon/icon-antiaging.svg" alt="" />
+                  <h5>{t("service-menu.2")}</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href={locale + "/hair-loss"} className="button-menu blue">
-                  <img src="assets/img/icon/icon-hairloss.svg" alt="" />
-                  <h5>Hair Loss</h5>
+                  <img src="/assets/img/icon/icon-hairloss.svg" alt="" />
+                  <h5>{t("service-menu.3")}</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href={locale + "/scars"} className="button-menu blue">
-                  <img src="assets/img/icon/icon-scars.svg" alt="" />
-                  <h5>Scars</h5>
+                  <img src="/assets/img/icon/icon-scars.svg" alt="" />
+                  <h5>{t("service-menu.4")}</h5>
                 </Link>
               </div>
             </div>
 
             <h3 className="title-line warning">
-              <span> Fast Recovery </span>
+              <span> {t("fast-recovery")}</span>
             </h3>
             <div className="row g-3">
               <div className="col-6">
@@ -169,8 +168,8 @@ const Home = () => {
                   href={locale + `/arthritis`}
                   className="button-menu warning"
                 >
-                  <img src="assets/img/icon/icon-arthritis.svg" alt="" />
-                  <h5>Arthritis</h5>
+                  <img src="/assets/img/icon/icon-arthritis.svg" alt="" />
+                  <h5>{t("service-menu.5")}</h5>
                 </Link>
               </div>
               <div className="col-6">
@@ -178,8 +177,8 @@ const Home = () => {
                   href={locale + `/auto-immune`}
                   className="button-menu warning"
                 >
-                  <img src="assets/img/icon/icon-autoimmune.svg" alt="" />
-                  <h5>Auto Immune</h5>
+                  <img src="/assets/img/icon/icon-autoimmune.svg" alt="" />
+                  <h5>{t("service-menu.6")}</h5>
                 </Link>
               </div>
               <div className="col-6">
@@ -187,14 +186,14 @@ const Home = () => {
                   href={locale + "/covid-19"}
                   className="button-menu warning"
                 >
-                  <img src="assets/img/icon/icon-covid.svg" alt="" />
-                  <h5>Covid-19</h5>
+                  <img src="/assets/img/icon/icon-covid.svg" alt="" />
+                  <h5>{t("service-menu.7")}</h5>
                 </Link>
               </div>
               <div className="col-6">
                 <Link href={locale + "/stroke"} className="button-menu warning">
-                  <img src="assets/img/icon/icon-stroke.svg" alt="" />
-                  <h5>Stroke</h5>
+                  <img src="/assets/img/icon/icon-stroke.svg" alt="" />
+                  <h5>{t("service-menu.8")}</h5>
                 </Link>
               </div>
             </div>
@@ -214,12 +213,16 @@ const Home = () => {
         <section className="potential bg-soft">
           <div className="container">
             <h3 className="title-section">
-              <span className="fw-normal">Potential Uses of</span> <br />
-              <span className="text-primary">Secretome and Stem Cells</span>
+              <span className="fw-normal">{t("potential")}</span> <br />
+              <span className="text-primary">{t("secretome-and")}</span>
             </h3>
             <div className="d-flex justify-content-center">
               <img
-                src="assets/img/img-potential.png"
+                src={
+                  locale == "en"
+                    ? "/assets/img/img-potential.png"
+                    : "/assets/img/potential-uses-id.webp"
+                }
                 className="img-potential"
                 alt=""
               />
@@ -229,7 +232,7 @@ const Home = () => {
 
         <section className="potential">
           <div className="container">
-            <h3 className="title-section">Stem Cells Review From Experts</h3>
+            <h3 className="title-section">{t("stem-cells-review")}</h3>
             <div className="row justify-content-center">
               <div className="col-md-8">
                 <div className="row g-3">
@@ -240,7 +243,7 @@ const Home = () => {
                     className="col-6 gallery-video"
                   >
                     <img
-                      src="assets/img/img-video01.png"
+                      src="/assets/img/img-video01.png"
                       className="thumbnail-yt"
                     />
                     <div className="play-button">
@@ -254,7 +257,7 @@ const Home = () => {
                     className="col-6 gallery-video"
                   >
                     <img
-                      src="assets/img/img-video02.png"
+                      src="/assets/img/img-video02.png"
                       className="thumbnail-yt"
                     />
                     <div className="play-button">
@@ -268,7 +271,7 @@ const Home = () => {
                     className="col-6 gallery-video"
                   >
                     <img
-                      src="assets/img/img-video03.png"
+                      src="/assets/img/img-video03.png"
                       className="thumbnail-yt"
                     />
                     <div className="play-button">
@@ -297,46 +300,46 @@ const Home = () => {
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section"> Book Now </h3>
+            <h3 className="title-section"> {t("book-button")} </h3>
             <form>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">Name</label>
+                  <label className="form-label">{t("form-book.name")}</label>
                   <input
                     type="text"
                     className="form-control"
                     id="name"
                     onChange={handleChange}
-                    placeholder="Your Name"
+                    placeholder={t("form-book.name-label")}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Address</label>
+                  <label className="form-label">{t("form-book.address")}</label>
                   <input
                     type="text"
                     className="form-control"
                     id="address"
                     onChange={handleChange}
-                    placeholder="Your Address"
+                    placeholder={t("form-book.address-label")}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Service</label>
+                  <label className="form-label">{t("form-book.service")}</label>
                   <select
                     id="service"
                     onChange={handleChange}
                     className="form-select form-control"
                     aria-label="Default select example"
                   >
-                    <option selected>Select Service</option>
-                    <option value="Acne">Acne</option>
-                    <option value="Hair Loss">Hair Loss</option>
-                    <option value="Anti Aging">Anti Aging</option>
-                    <option value="Scars">Scars</option>
-                    <option value="Arthritis">Arthritis</option>
-                    <option value="Auto Immune">Auto Immune</option>
-                    <option value="Covid-19">Covid-19</option>
-                    <option value="Stroke">Stroke</option>
+                    <option selected>{t("form-book.service-label")}</option>
+                    <option value="Acne">{t("service-menu.1")}</option>
+                    <option value="Hair Loss">{t("service-menu.2")}</option>
+                    <option value="Anti Aging">{t("service-menu.3")}</option>
+                    <option value="Scars">{t("service-menu.4")}</option>
+                    <option value="Arthritis">{t("service-menu.5")}</option>
+                    <option value="Auto Immune">{t("service-menu.6")}</option>
+                    <option value="Covid-19">{t("service-menu.7")}</option>
+                    <option value="Stroke">{t("service-menu.8")}</option>
                   </select>
                 </div>
               </div>

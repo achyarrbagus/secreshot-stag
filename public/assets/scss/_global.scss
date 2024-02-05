@@ -1,886 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c7a1ce90 (migrate to next js 14)
-body {
-    background: $white;
-    font-family: $font-family;
-    font-size: 12px;
-    // padding-bottom: 70px;
-    overflow-x: hidden;
-    color: $dark;
-}
-
-.fs {
-    &-10 {
-        font-size: 10px;
-    }
-
-    &-12 {
-        font-size: 12px;
-    }
-
-    &-14 {
-        font-size: 14px;
-    }
-
-    &-16 {
-        font-size: 16px;
-    }
-
-    &-18 {
-        font-size: 18px;
-    }
-
-    &-20 {
-        font-size: 20px;
-    }
-
-    &-24 {
-        font-size: 24px;
-    }
-
-    &-32 {
-        font-size: 32px;
-    }
-
-    &-40 {
-        font-size: 40px;
-    }
-}
-
-a {
-    text-decoration: none;
-}
-
-.bg-soft {
-    background: $bg-soft;
-}
-
-.text {
-    &-dark {
-        color: $dark !important;
-    }
-
-    &-muted {
-        color: $muted !important;
-    }
-
-    &-primary {
-        color: $primary !important;
-    }
-
-    &-warning {
-        color: $warning !important;
-    }
-}
-
-.nav-top {
-    background: $white;
-    padding: 14px 0;
-
-    .nav-brand {
-        img {
-            width: 94px;
-        }
-    }
-}
-
-#loom-companion-mv3 {
-    display: none !important;
-}
-
-.content {
-<<<<<<< HEAD
-    margin-top: 68px;
-=======
-    margin-top: 80px;
->>>>>>> c7a1ce90 (migrate to next js 14)
-}
-
-.hero-banner {
-    background: url('../img/banner-homepage.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-<<<<<<< HEAD
-    height: 75vh;
-    display: flex;
-    align-items: center;
-
-    @include breakpoint(xl, max) {
-        height: 75vh;
-    }
-
-    @include breakpoint(lg, max) {
-        aspect-ratio: 414/284;
-        height: auto;
-=======
-    height: 100vh;
-    display: flex;
-    align-items: center;
-
-    @include breakpoint(xl, max) {
-        height: 75vh;
-    }
-
-    @include breakpoint(lg, max) {
-        height: 130vh;
->>>>>>> c7a1ce90 (migrate to next js 14)
-    }
-
-    @include breakpoint(sm, max) {
-        aspect-ratio: 414/284;
-        height: auto;
-    }
-
-    .text {
-        width: 55%;
-        color: $white;
-
-        .title {
-            font-weight: $bold;
-            font-size: 38px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
-            color: #F4FFC8;
-
-            @include breakpoint(sm, max) {
-                font-size: 18px;
-            }
-        }
-
-        .desc {
-            font-size: 18px;
-            margin-top: 32px;
-            margin-bottom: 54px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
-
-            @include breakpoint(sm, max) {
-                font-size: 12px;
-                margin-top: 12px;
-                margin-bottom: 14px;
-            }
-        }
-    }
-
-}
-
-.p-question {
-    padding: 100px 0 !important;
-
-    @include breakpoint(sm, max) {
-        padding-bottom: 50px !important;
-        padding-top: 24px !important;
-    }
-}
-
-section {
-    padding-bottom: 32px;
-
-    .title-section {
-        padding-top: 42px;
-        font-size: 24px;
-        font-weight: $bold;
-        text-align: center;
-        margin-bottom: 16px;
-
-        @include breakpoint(sm, max) {
-            font-size: 20px;
-        }
-    }
-
-    &.service {
-        background: $bg-soft;
-
-        .box-service {
-            padding: 10px;
-            background: $white;
-            border-radius: 10px;
-            box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.03);
-            text-align: center;
-            color: $primary;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: all .3s ease-in-out;
-
-            &:hover {
-                background: $primary;
-                color: $white;
-            }
-
-            i {
-                font-size: 74px;
-
-                @include breakpoint(sm, max) {
-                    font-size: 48px;
-                }
-            }
-
-            .title-service {
-                font-size: 14px;
-                text-align: center;
-
-                @include breakpoint(sm, max) {
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-
-    &.why {
-        background: $primary;
-        background-image: url('../img/bg-why.png');
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 24px 0;
-        color: $white;
-        position: relative;
-        height: 500px;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-
-<<<<<<< HEAD
-        @include breakpoint(xl, max) {
-            height: 75vh;
-        }
-
-        @include breakpoint(lg, max) {
-            aspect-ratio: 414/284;
-            height: auto;
-=======
-        @include breakpoint(lg, max) {
-            height: 100vh;
->>>>>>> c7a1ce90 (migrate to next js 14)
-        }
-
-        @include breakpoint(sm, max) {
-            height: auto;
-<<<<<<< HEAD
-            aspect-ratio: auto;
-=======
->>>>>>> c7a1ce90 (migrate to next js 14)
-            background-image: url('../img/bg-why-mobile.png');
-        }
-
-        .text {
-            width: 60%;
-        }
-
-        h3 {
-<<<<<<< HEAD
-            font-size: 38px;
-=======
-            font-size: 48px;
->>>>>>> c7a1ce90 (migrate to next js 14)
-            font-weight: $bold;
-            margin-bottom: 24px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
-            color: #F4FFC8;
-
-            @include breakpoint(sm, max) {
-                font-size: 20px;
-                margin-bottom: 16px;
-            }
-        }
-
-        .list-why {
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
-
-            .items-why {
-                display: flex;
-                align-items: start;
-                margin-bottom: 18px;
-
-                @include breakpoint(sm, max) {
-                    margin-bottom: 12px;
-                }
-
-                .img-list {
-                    width: 32px;
-
-                    @include breakpoint(sm, max) {
-                        width: 22px;
-                    }
-                }
-
-                span {
-                    margin-left: 8px;
-<<<<<<< HEAD
-                    font-size: 20px;
-=======
-                    font-size: 24px;
->>>>>>> c7a1ce90 (migrate to next js 14)
-
-                    @include breakpoint(sm, max) {
-                        font-size: 14px;
-                        margin-left: 4px;
-                    }
-                }
-            }
-        }
-
-        .img-bg {
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-
-            @include breakpoint(md, max) {
-                right: -180px;
-            }
-
-            @include breakpoint(sm, max) {
-                right: -100px;
-            }
-
-            img {
-                height: 100%;
-
-                @include breakpoint(sm, max) {
-                    height: 100%;
-                }
-            }
-        }
-    }
-
-    &.banner-pages {
-        background: $primary;
-<<<<<<< HEAD
-        background-position: top center;
-=======
-        background-position: center;
->>>>>>> c7a1ce90 (migrate to next js 14)
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 24px 0;
-        color: $white;
-        position: relative;
-<<<<<<< HEAD
-        height: 80vh;
-=======
-        height: 500px;
->>>>>>> c7a1ce90 (migrate to next js 14)
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-
-<<<<<<< HEAD
-        @include breakpoint(xl, max) {
-            height: 80vh;
-        }
-
-        @include breakpoint(lg, max) {
-            height: auto;
-        }
-
-        @include breakpoint(sm, max) {
-=======
-        @include breakpoint(lg, max) {
-            height: 100vh;
-        }
-
-        @include breakpoint(md, max) {
->>>>>>> c7a1ce90 (migrate to next js 14)
-            height: auto;
-        }
-
-
-        .text {
-            width: 53%;
-        }
-
-        h3 {
-            font-size: 32px;
-            font-weight: $bold;
-            margin-bottom: 16px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
-            color: #F4FFC8;
-
-            @include breakpoint(sm, max) {
-                font-size: 20px;
-            }
-        }
-
-        p {
-            font-size: 18px;
-            margin-top: 32px;
-            margin-bottom: 54px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
-
-            @include breakpoint(sm, max) {
-                font-size: 12px;
-                margin-top: 12px;
-                margin-bottom: 14px;
-            }
-        }
-
-        .img-bg {
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-
-            @include breakpoint(lg, max) {
-                right: -100px;
-            }
-
-            @include breakpoint(md, max) {
-                right: -80px;
-            }
-
-            @include breakpoint(sm, max) {
-                right: -50px;
-            }
-
-            img {
-                height: 500px;
-
-                @include breakpoint(sm, max) {
-                    height: 100%;
-                }
-            }
-        }
-    }
-
-    &.doctor {
-        background: $bg-soft;
-
-        &.nurse {
-            .items-doctor {
-                .name {
-                    min-height: 170px;
-                }
-            }
-        }
-
-        .items-doctor {
-
-            .img-doctor {
-                margin-bottom: -60px;
-                text-align: center;
-
-                img {
-                    width: 80%;
-                }
-            }
-
-            .name {
-                background: $white;
-                padding: 70px 8px 8px 8px;
-                text-align: center;
-                border-radius: 10px;
-<<<<<<< HEAD
-                min-height: 292px;
-=======
-                min-height: 170px;
->>>>>>> c7a1ce90 (migrate to next js 14)
-
-                @include breakpoint(sm, max) {
-                    min-height: 300px;
-                }
-
-                h5 {
-                    font-size: 18px;
-                    font-weight: $bold;
-
-                    @include breakpoint(sm, max) {
-                        font-size: 14px;
-                    }
-                }
-
-                p {
-                    font-size: 14px;
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-
-    &.article {
-        background: $bg-soft;
-        background-image: url('../img/bg-article.png');
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 100% 50%;
-        width: 100%;
-        object-fit: cover;
-
-    }
-
-    &.question {
-        background: $primary;
-        border-radius: 10px;
-        padding: 24px;
-        color: $white;
-        position: relative;
-        min-height: 300px;
-        display: flex;
-        align-items: center;
-
-        @include breakpoint(sm, max) {
-            min-height: auto;
-        }
-
-        .text {
-            width: 60%;
-            position: relative;
-            z-index: 4;
-        }
-
-        h5 {
-            font-size: 24px;
-            font-weight: $bold;
-
-            @include breakpoint(sm, max) {
-                font-size: 22px;
-            }
-        }
-
-        p {
-            font-size: 18px;
-
-            @include breakpoint(sm, max) {
-                font-size: 14px;
-            }
-        }
-
-        .img-question {
-            position: absolute;
-            right: -10px;
-            bottom: 0;
-            width: 40%;
-
-            @include breakpoint(sm, max) {
-                width: 50%;
-            }
-
-            img {
-                width: 100%;
-            }
-        }
-    }
-
-    &.faq {
-        background: $bg-soft;
-    }
-}
-
-.accordion-custom {
-    --bs-accordion-bg: transparent !important;
-    --bs-accordion-border-color: none !important;
-    margin-top: 24px;
-
-    .accordion-item {
-        margin-bottom: 14px;
-    }
-
-    .accordion-button {
-        color: $white;
-        font-weight: 500;
-        background: $primary;
-        border-radius: 10px;
-
-        &:focus {
-            border: none;
-            outline: none;
-            box-shadow: none;
-        }
-    }
-
-    .accordion-button::after {
-        background-image: url('../img/expand-arrow.png') !important;
-        background-size: 32px;
-        width: 32px;
-        height: 32px;
-    }
-
-    .accordion-button:not(.collapsed) {
-        background: $primary;
-        color: $white;
-        border-radius: 10px 10px 0 0;
-    }
-
-    .accordion-body {
-        background: $white;
-        color: $dark;
-        border-radius: 0 0 10px 10px;
-        position: relative;
-        padding-bottom: 70px;
-    }
-
-    .list-data-faq {
-        color: $muted;
-
-        .items-data-faq {
-            display: flex;
-            align-items: start;
-            font-size: 14px;
-
-            .img-check {
-                margin-right: 10px;
-                width: 24px;
-            }
-        }
-
-        h6 {
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        p {
-            font-size: 14px;
-        }
-
-        span {
-            font-size: 14px;
-        }
-
-        .price {
-            background: #01737F;
-            padding: 14px;
-            border-radius: 0 0 10px 10px;
-            display: flex;
-            align-items: center;
-            color: $white;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-
-            .value-price {
-                font-size: 16px;
-            }
-        }
-    }
-}
-
-
-.swiper-pagination-bullets {
-    position: static;
-    margin-top: 10px;
-}
-
-.swiper-pagination-bullet-active {
-    background: $primary !important;
-    width: 30px;
-    border-radius: 100px;
-    transition: all .3s ease-in-out;
-}
-
-.swiper-article {
-
-    &:hover {
-        .swiper-button-next {
-            display: flex;
-        }
-
-        .swiper-button-prev {
-            display: flex;
-        }
-
-        @include breakpoint(sm, max) {
-            .swiper-button-next {
-                display: none;
-            }
-
-            .swiper-button-prev {
-                display: none;
-            }
-        }
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        content: "";
-    }
-
-    .swiper-button-next {
-        right: 30px;
-        top: 44%;
-        display: none;
-        transition: all 1s ease-in-out;
-    }
-
-    .swiper-button-prev {
-        left: 30px;
-        top: 44%;
-        display: none;
-        transition: all 1s ease-in-out;
-    }
-
-    .swiper-slide {
-        transition: all 200ms linear;
-
-
-        .card-slide-article {
-            border-radius: 10px;
-            overflow: hidden;
-
-            img {
-                width: 100%;
-                aspect-ratio: 12/7;
-                object-fit: cover;
-            }
-
-            .name-article {
-                background: $white;
-                padding: 14px;
-                min-height: 200px;
-
-                @include breakpoint(sm, max) {
-                    min-height: 240px;
-                }
-
-                h6 {
-                    font-weight: $bold;
-                    color: $dark;
-                    font-size: 18px;
-                }
-
-                p {
-                    font-size: 14px;
-                    color: $muted;
-                }
-            }
-        }
-    }
-}
-
-.footer {
-    background: $primary;
-    padding-top: 24px;
-
-    .logo {
-<<<<<<< HEAD
-        width: 100px;
-    }
-
-    .logo-idi {
-        height: 60px;
-    }
-
-
-    .logo-atensi {
-        width: 160px;
-=======
-        width: 136px;
-    }
-
-    .logo-atensi {
-        width: 104px;
->>>>>>> c7a1ce90 (migrate to next js 14)
-    }
-
-    .footer-bottom {
-        margin-top: 24px;
-        background: $white;
-        color: $dark;
-        text-align: center;
-        padding: 12px 0;
-        font-size: 12px;
-    }
-}
-
-.custom-tooltip {
-    --bs-tooltip-bg: #E1E1E1;
-    --bs-tooltip-color: $dark;
-}
-
-.nav-content {
-    background: #F0F0F0;
-    padding: 14px 0;
-
-    .breadcrumb {
-        margin-bottom: 0;
-
-        a {
-            color: $primary;
-        }
-    }
-}
-
-.list-article {
-    .items-article {
-        display: flex;
-        gap: 12px;
-        align-items: center;
-        margin-bottom: 22px;
-
-        img {
-            width: 40%;
-            aspect-ratio: 175/105 auto;
-            border-radius: 8px;
-        }
-
-        .name {
-            h5 {
-                font-size: 14px;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
-.detail-article {
-    h3.text-primary {
-        color: #00B2AE !important;
-    }
-}
-
-h3.text-primary {
-    color: $title-dark !important;
-
-    @include breakpoint(sm, max) {
-        font-size: 20px;
-        font-weight: 700;
-    }
-}
-
-.title-line {
-    position: relative;
-<<<<<<< HEAD
-    font-size: 20px;
-=======
-    font-size: 24px;
->>>>>>> c7a1ce90 (migrate to next js 14)
-    font-weight: $bold;
-    margin-bottom: 16px;
-
-    @include breakpoint(sm, max) {
-        font-size: 20px;
-    }
-
-    &::before {
-        content: "";
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        margin-top: 0;
-        position: absolute;
-        z-index: 0;
-        height: 0;
-        border-top: 2px dashed $muted;
-    }
-
-    span {
-        background: $white;
-        position: relative;
-        z-index: 1;
-        padding-right: 8px;
-        color: $muted;
-    }
-<<<<<<< HEAD
-}
-=======
 body {
   background: $white;
   font-family: $font-family;
@@ -970,7 +87,7 @@ a {
 }
 
 .content {
-  margin-top: 80px;
+  margin-top: 68px;
 }
 
 .hero-banner {
@@ -979,12 +96,17 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   align-items: center;
 
+  @include breakpoint(xl, max) {
+    height: 75vh;
+  }
+
   @include breakpoint(lg, max) {
-    height: 130vh;
+    aspect-ratio: 414/284;
+    height: auto;
   }
 
   @include breakpoint(sm, max) {
@@ -1000,6 +122,7 @@ a {
       font-weight: $bold;
       font-size: 38px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      color: #f4ffc8;
 
       @include breakpoint(sm, max) {
         font-size: 18px;
@@ -1031,7 +154,7 @@ a {
 }
 
 section {
-  padding-bottom: 42px;
+  padding-bottom: 32px;
 
   .title-section {
     padding-top: 42px;
@@ -1042,115 +165,6 @@ section {
 
     @include breakpoint(sm, max) {
       font-size: 20px;
-    }
-  }
-
-  .title-line {
-    position: relative;
-    margin-top: 42px;
-    font-size: 24px;
-    font-weight: $bold;
-    margin-bottom: 16px;
-
-    @include breakpoint(sm, max) {
-      font-size: 20px;
-    }
-
-    &::before {
-      content: "";
-      width: 100%;
-      left: 0;
-      bottom: 0;
-      margin-top: 0;
-      position: absolute;
-      z-index: 0;
-      height: 0;
-      border-top: 2px solid $white;
-    }
-
-    &.blue {
-      color: $primary;
-
-      &::before {
-        border-top: 1.5px solid $primary;
-      }
-    }
-
-    &.warning {
-      color: $warning;
-
-      &::before {
-        border-top: 1.5px solid $warning;
-      }
-    }
-
-    span {
-      background: $white;
-      position: relative;
-      z-index: 1;
-      padding-right: 14px;
-    }
-  }
-
-  &.desc {
-    background-image: url("../img/bg-desc.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    padding: 42px 24px;
-    text-align: center;
-
-    @include breakpoint(lg, min) {
-      padding: 72px 24px;
-    }
-
-    h3 {
-      font-weight: $bold;
-      font-size: 24px;
-      color: $dark-primary;
-    }
-
-    p {
-      font-size: 16px;
-      color: #494949;
-      margin-bottom: 0;
-    }
-  }
-
-  &.detail-pages {
-    padding: 32px 0;
-
-    .title-line {
-      position: relative;
-      font-size: 24px;
-      font-weight: $bold;
-      margin: 0;
-      width: 100%;
-
-      @include breakpoint(sm, max) {
-        font-size: 20px;
-      }
-
-      &::before {
-        content: "";
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        margin-top: 0;
-        position: absolute;
-        z-index: 0;
-        height: 0;
-        border-top: 2px dashed $dark-primary;
-      }
-
-      span {
-        background: $white;
-        position: relative;
-        z-index: 1;
-        padding-right: 8px;
-        color: $dark-primary;
-      }
     }
   }
 
@@ -1198,6 +212,10 @@ section {
 
   &.why {
     background: $primary;
+    background-image: url("../img/bg-why.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 24px 0;
     color: $white;
     position: relative;
@@ -1207,12 +225,19 @@ section {
     display: flex;
     align-items: center;
 
+    @include breakpoint(xl, max) {
+      height: 75vh;
+    }
+
     @include breakpoint(lg, max) {
-      height: 100vh;
+      aspect-ratio: 414/284;
+      height: auto;
     }
 
     @include breakpoint(sm, max) {
       height: auto;
+      aspect-ratio: auto;
+      background-image: url("../img/bg-why-mobile.png");
     }
 
     .text {
@@ -1220,10 +245,11 @@ section {
     }
 
     h3 {
-      font-size: 48px;
+      font-size: 38px;
       font-weight: $bold;
       margin-bottom: 24px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      color: #f4ffc8;
 
       @include breakpoint(sm, max) {
         font-size: 20px;
@@ -1253,7 +279,7 @@ section {
 
         span {
           margin-left: 8px;
-          font-size: 24px;
+          font-size: 20px;
 
           @include breakpoint(sm, max) {
             font-size: 14px;
@@ -1289,7 +315,7 @@ section {
 
   &.banner-pages {
     background: $primary;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 24px 0;
@@ -1301,30 +327,16 @@ section {
     display: flex;
     align-items: center;
 
-    &.homepage {
-      background-image: url("../img/banner-homepage1.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      @include breakpoint(lg, max) {
-        height: auto;
-        aspect-ratio: 414/173;
-      }
-    }
-
     @include breakpoint(xl, max) {
       height: 80vh;
     }
 
     @include breakpoint(lg, max) {
       height: auto;
-      aspect-ratio: 414/284;
     }
 
     @include breakpoint(sm, max) {
       height: auto;
-      aspect-ratio: 414/284;
     }
 
     .text {
@@ -1336,35 +348,23 @@ section {
       font-weight: $bold;
       margin-bottom: 16px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      color: #f4ffc8;
 
       @include breakpoint(sm, max) {
         font-size: 20px;
       }
     }
 
-    .btn {
-      margin-top: 18px;
-    }
-
     p {
-      font-size: 20px;
+      font-size: 18px;
+      margin-top: 32px;
+      margin-bottom: 54px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 
       @include breakpoint(sm, max) {
         font-size: 12px;
         margin-top: 12px;
         margin-bottom: 14px;
-      }
-
-      b {
-        font-size: 32px;
-        font-weight: $bold;
-        margin-bottom: 16px;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-
-        @include breakpoint(sm, max) {
-          font-size: 20px;
-        }
       }
     }
 
@@ -1396,135 +396,9 @@ section {
     }
   }
 
-  &.banner-consult {
-    background: $warning;
-    background-image: url("../img/banner-homepage2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 24px 0;
-    color: $white;
-    position: relative;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-top: 10px;
-
-    @include breakpoint(lg, max) {
-      height: auto;
-      aspect-ratio: 414/254;
-    }
-
-    @include breakpoint(md, max) {
-      height: auto;
-    }
-
-    &::after {
-      content: " ";
-      position: absolute;
-      right: 30px;
-      bottom: -20px;
-      border-top: 22px solid #f89500;
-      border-right: 22px solid transparent;
-      border-left: 22px solid transparent;
-      border-bottom: none;
-    }
-
-    .text {
-      width: 60%;
-      text-align: right;
-      position: relative;
-      z-index: 5;
-    }
-
-    h3 {
-      font-size: 32px;
-      font-weight: $bold;
-      margin-bottom: 16px;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-
-      @include breakpoint(sm, max) {
-        font-size: 20px;
-      }
-    }
-
-    .line {
-      position: relative;
-      text-align: right;
-      margin-bottom: 0;
-      margin-top: 12px;
-      font-weight: normal;
-
-      &::before {
-        content: "";
-        width: 84%;
-        left: 0;
-        top: 50%;
-        margin-top: 0;
-        position: absolute;
-        z-index: 0;
-        height: 0;
-        border-top: 1px solid $white;
-      }
-
-      span {
-        background: transparent;
-        position: relative;
-        z-index: 1;
-        padding-left: 14px;
-      }
-    }
-
-    p {
-      font-size: 18px;
-      margin-top: 32px;
-      margin-bottom: 54px;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-
-      @include breakpoint(sm, max) {
-        font-size: 12px;
-        margin-top: 12px;
-        margin-bottom: 14px;
-      }
-    }
-
-    .img-bg {
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-
-      @include breakpoint(lg, max) {
-        right: -100px;
-      }
-
-      @include breakpoint(md, max) {
-        right: -80px;
-      }
-
-      @include breakpoint(sm, max) {
-        right: -50px;
-      }
-
-      img {
-        height: 500px;
-
-        @include breakpoint(sm, max) {
-          height: 100%;
-        }
-      }
-    }
-
-    .polygon {
-      position: absolute;
-      right: 10%;
-      bottom: -10px;
-    }
-  }
-
   &.doctor {
+    background: $bg-soft;
+
     &.nurse {
       .items-doctor {
         .name {
@@ -1544,11 +418,11 @@ section {
       }
 
       .name {
-        background: $bg-soft;
+        background: $white;
         padding: 70px 8px 8px 8px;
         text-align: center;
         border-radius: 10px;
-        min-height: 170px;
+        min-height: 292px;
 
         @include breakpoint(sm, max) {
           min-height: 300px;
@@ -1572,13 +446,13 @@ section {
   }
 
   &.article {
-    background: linear-gradient(
-      to top,
-      $bg-soft 0%,
-      $bg-soft 40%,
-      $primary 40%,
-      $primary 100%
-    );
+    background: $bg-soft;
+    background-image: url("../img/bg-article.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 50%;
+    width: 100%;
+    object-fit: cover;
   }
 
   &.question {
@@ -1649,9 +523,9 @@ section {
   }
 
   .accordion-button {
-    color: $primary;
+    color: $white;
     font-weight: 500;
-    background: $white;
+    background: $primary;
     border-radius: 10px;
 
     &:focus {
@@ -1661,19 +535,30 @@ section {
     }
   }
 
+  .accordion-button::after {
+    background-image: url("../img/expand-arrow.png") !important;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
   .accordion-button:not(.collapsed) {
-    background: $white;
-    color: $primary;
+    background: $primary;
+    color: $white;
     border-radius: 10px 10px 0 0;
   }
 
   .accordion-body {
-    background: #e7fefd;
+    background: $white;
     color: $dark;
     border-radius: 0 0 10px 10px;
+    position: relative;
+    padding-bottom: 70px;
   }
 
   .list-data-faq {
+    color: $muted;
+
     .items-data-faq {
       display: flex;
       align-items: start;
@@ -1694,15 +579,24 @@ section {
       font-size: 14px;
     }
 
+    span {
+      font-size: 14px;
+    }
+
     .price {
-      background: $white;
+      background: #01737f;
       padding: 14px;
-      border-radius: 8px;
+      border-radius: 0 0 10px 10px;
       display: flex;
       align-items: center;
+      color: $white;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
 
       .value-price {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
   }
@@ -1802,11 +696,15 @@ section {
   padding-top: 24px;
 
   .logo {
-    width: 136px;
+    width: 100px;
+  }
+
+  .logo-idi {
+    height: 60px;
   }
 
   .logo-atensi {
-    width: 104px;
+    width: 160px;
   }
 
   .footer-bottom {
@@ -1859,87 +757,48 @@ section {
   }
 }
 
-.gallery-video {
+.detail-article {
+  h3.text-primary {
+    color: #00b2ae !important;
+  }
+}
+
+h3.text-primary {
+  color: $title-dark !important;
+
+  @include breakpoint(sm, max) {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.title-line {
   position: relative;
+  font-size: 20px;
+  font-weight: $bold;
+  margin-bottom: 16px;
 
-  .thumbnail-yt {
+  @include breakpoint(sm, max) {
+    font-size: 20px;
+  }
+
+  &::before {
+    content: "";
     width: 100%;
-    aspect-ratio: 1280/720;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-  .play-button {
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
     position: absolute;
-    z-index: 3;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) !important;
-
-    img {
-      width: 100px;
-    }
+    z-index: 0;
+    height: 0;
+    border-top: 2px dashed $muted;
   }
-}
 
-.rate {
-  background: #f4f4f4;
-  padding: 30px 24px;
-  height: 100%;
-
-  .file {
-    display: flex;
-    gap: 12px;
+  span {
     background: $white;
-    padding: 12px;
-    border-radius: 10px;
-
-    .name-file {
-      h5 {
-        font-weight: 500;
-        font-size: 18px;
-      }
-
-      a {
-        font-size: 14px;
-        color: #58c949;
-      }
-    }
-  }
-
-  .price {
-    background: #01737f;
-    color: $white;
-    text-align: center;
-    padding: 12px 0;
-    border-radius: 10px;
-    font-size: 18px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
-
-  .desc {
-    font-size: 14px;
-    color: #736b6b;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    ul {
-      padding-left: 14px;
-    }
+    position: relative;
+    z-index: 1;
+    padding-right: 8px;
+    color: $muted;
   }
 }
-
-.img-potential {
-  width: 100%;
-
-  @include breakpoint(lg, min) {
-    width: 60%;
-  }
-}
->>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
-=======
-}
->>>>>>> c7a1ce90 (migrate to next js 14)
