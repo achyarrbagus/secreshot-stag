@@ -145,13 +145,13 @@ Service : ${service.value}
                                   <b>Start from:</b> Rp20.000
                                 </div>
                                 <div className="ms-auto d-flex gap-1">
-                                  <div
+                                  {/* <div
                                     onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-ernita/")}
                                     id="general"
                                     className="btn btn-warning"
                                   >
                                     <i class="fa-solid fa-user-doctor"></i>
-                                  </div>
+                                  </div> */}
                                   <div
                                     onClick={() => handleBook("General Practitioner Online Consultation")}
                                     id="general"
@@ -228,13 +228,13 @@ Service : ${service.value}
                                 </div>
 
                                 <div className="d-flex gap-1 ms-auto">
-                                  <div
+                                  {/* <div
                                     onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-lia/")}
                                     id="general"
                                     className="btn btn-warning"
                                   >
                                     <i class="fa-solid fa-user-doctor"></i>
-                                  </div>
+                                  </div> */}
                                   <div
                                     onClick={() => handleBook("Medical Doctor Online Consultation")}
                                     id="medical"

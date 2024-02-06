@@ -204,13 +204,13 @@ Layanan : ${service.value}`);
                             </div>
 
                             <div className="d-flex gap-1 ms-auto">
-                              <div
+                              {/* <div
                                 onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-ayu/")}
                                 id="general"
                                 className="btn btn-warning"
                               >
                                 <i class="fa-solid fa-user-doctor"></i>
-                              </div>
+                              </div> */}
                               <button
                                 onClick={() => handleBook("Terapi Sekretom dan Stem Cells")}
                                 id="secretome"

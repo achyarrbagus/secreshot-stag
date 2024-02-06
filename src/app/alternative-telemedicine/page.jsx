@@ -214,13 +214,13 @@ Service : ${service.value}
                                   <b>Start from:</b> Rp2.499.000
                                 </div>
                                 <div className="d-flex ms-auto gap-1">
-                                  <div
+                                  {/* <div
                                     onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-ayu/")}
                                     id="general"
                                     className="btn btn-warning"
                                   >
-                                    <i class="fa-solid fa-user-doctor"></i>
-                                  </div>
+                                     <i class="fa-solid fa-user-doctor"></i>
+                                  </div> */}
 
                                   <button
                                     onClick={() => handleBook("Secretome and Stem Cells Therapy")}

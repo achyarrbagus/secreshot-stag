@@ -129,13 +129,13 @@ Layanan : ${service.value}`);
                             </div>
 
                             <div className="ms-auto d-flex gap-1">
-                              <div
+                              {/* <div
                                 onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-ayu/")}
                                 id="general"
                                 className="btn btn-warning"
                               >
                                 <i class="fa-solid fa-user-doctor"></i>
-                              </div>
+                              </div> */}
                               <div
                                 onClick={() => handleBook("Konsultasi Online Dokter Umum")}
                                 id="general"
@@ -208,13 +208,13 @@ Layanan : ${service.value}`);
                             </div>
 
                             <div className="ms-auto d-flex gap-1">
-                              <div
+                              {/* <div
                                 onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-lia/")}
                                 id="general"
                                 className="btn btn-warning"
                               >
                                 <i class="fa-solid fa-user-doctor"></i>
-                              </div>
+                              </div> */}
                               <div
                                 onClick={() => handleBook("Konsultasi Online Dokter Spesialis")}
                                 id="medical"
