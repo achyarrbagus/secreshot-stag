@@ -122,13 +122,22 @@ Service : ${service.value}`);
                     </div>
                   </div>
                   <div className="price">
-                    Start from: <b> Rp 5.400.000 </b> <small>/Package</small>
+                    Start from: <b> Rp 1.500.000 </b> <small>/Treatment</small>
                   </div>
                   <div className="desc">
                     <p>Treatment Procedure :</p>
                     <ul>
-                      <li>Need 3 times treatment in a month</li>
-                      <li>Dosage : 2 vial per treatment</li>
+                      <li>Need 4 times treatment in a month</li>
+                    </ul>
+                    <p>Benefit :</p>
+                    <ul>
+                      <li>Improve pigmentation (dullness, spots)</li>
+                      <li>
+                        Improves collagen (large pores, wrinkle lines, acne
+                        scars)
+                      </li>
+                      <li>Moisturizes skin</li>
+                      <li>Skin looks younger and brighter.</li>
                     </ul>
                   </div>
                   <div className="w-100 d-flex justify-content-center">

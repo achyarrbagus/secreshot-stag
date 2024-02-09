@@ -128,7 +128,7 @@ Service : ${service.value}`);
                     </div>
                   </div>
                   <div className="price">
-                    Start from: <b> Rp 5.400.000 </b> <small>/Package</small>
+                    Start from: <b> Rp 5.400.000 </b> <small>/Package </small>
                   </div>
                   <div className="desc">
                     <p>Treatment Procedure :</p>
