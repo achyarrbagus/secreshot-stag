@@ -22,7 +22,6 @@ const Index: NextPage = () => {
       const wardingWa = encodeURIComponent(`
 Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation 
 
-
 Name : ${name.value}
 Address : ${address.value} 
 Service : ${service.value}`);

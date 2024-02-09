@@ -3,6 +3,44 @@ import { NextPage } from "next";
 import Link from "next/link";
 
 const Index: NextPage = () => {
+  const redirectWa = (e: any) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name") as HTMLInputElement | null;
+    const address = document.getElementById(
+      "address"
+    ) as HTMLInputElement | null;
+
+    const service = document.getElementById(
+      "service"
+    ) as HTMLInputElement | null;
+
+    if (name?.value && address?.value && service?.value) {
+      if (service?.value == "Select Service") {
+        return alert("please fill form correcly");
+      }
+      const wardingWa = encodeURIComponent(`
+Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation 
+
+Name : ${name.value}
+Address : ${address.value} 
+Service : ${service.value}`);
+
+      let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
+      window.location.href = url;
+
+      return;
+    } else {
+      alert("please fill form with correctly");
+    }
+  };
+
+  const redirectTele = (e: any) => {
+    e.preventDefault();
+
+    window.location.replace("https://t.me/InfusionJakarta");
+  };
+
   return (
     <>
       <div className="content">
@@ -121,7 +159,7 @@ const Index: NextPage = () => {
                   <input
                     type="text"
                     className="form-control"
-                    id=""
+                    id="name"
                     placeholder="Your Name"
                   />
                 </div>
@@ -130,13 +168,14 @@ const Index: NextPage = () => {
                   <input
                     type="text"
                     className="form-control"
-                    id=""
+                    id="address"
                     placeholder="Your Address"
                   />
                 </div>
                 <div className="col-md-4">
                   <label className="form-label">Service Name</label>
                   <select
+                    id="service"
                     className="form-select form-control"
                     aria-label="Default select example"
                   >
@@ -156,13 +195,21 @@ const Index: NextPage = () => {
               </div>
               <div className="row g-3 justify-content-center">
                 <div className="col-6 col-md-3">
-                  <button type="submit" className="btn btn-whatsapp w-100">
+                  <button
+                    type="submit"
+                    onClick={redirectWa}
+                    className="btn btn-whatsapp w-100"
+                  >
                     <i className="mdi mdi-whatsapp fs-18 me-2"></i>
                     Whatsapp
                   </button>
                 </div>
                 <div className="col-6 col-md-3">
-                  <button type="submit" className="btn btn-telegram w-100">
+                  <button
+                    type="submit"
+                    onClick={redirectTele}
+                    className="btn btn-telegram w-100"
+                  >
                     <i className="fa-brands fa-telegram fs-18 me-2"></i>
                     Telegram
                   </button>
