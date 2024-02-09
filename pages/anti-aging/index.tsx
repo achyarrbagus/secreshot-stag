@@ -1,8 +1,11 @@
 import React from "react";
 import { NextPage } from "next";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Index: NextPage = () => {
+  const isMobile = useSelector((state: any) => state.isMobile.value);
+
   const redirectWa = (e: any) => {
     e.preventDefault();
 
@@ -113,6 +116,7 @@ Service : ${service.value}`);
                     <div className="name-file">
                       <h5>Stem Cells for Anti aging Doc.PDF</h5>
                       <Link
+                        style={isMobile ? { display: "none" } : {}}
                         href={"/viewer-pdf?pdf=anti-aging.pdf"}
                         target="_blank"
                         className="me-4"

@@ -1,12 +1,20 @@
 "use client";
+import { setIsMobile } from "@/lib/redux/slices/isMobileslice/ismobileSlice";
 import Head from "next/head";
 import React, { Children, ReactNode } from "react";
+import { useDispatch } from "react-redux";
 
 type WrapperComponentProps = {
   children: ReactNode;
 };
 
 const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(setIsMobile());
+  }, [dispatch]);
+
   return (
     <>
       <Head>

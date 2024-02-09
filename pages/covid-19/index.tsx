@@ -1,8 +1,11 @@
 import React from "react";
 import { NextPage } from "next";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Index: NextPage = () => {
+  const isMobile = useSelector((state: any) => state.isMobile.value);
+
   const redirectWa = (e: any) => {
     e.preventDefault();
 
@@ -117,6 +120,7 @@ Service : ${service.value}`);
                         <i className="mdi mdi-download me-1"></i> Download
                       </a> */}
                       <Link
+                        style={isMobile ? { display: "none" } : {}}
                         href={"/viewer-pdf?pdf=covid-19.pdf"}
                         target="_blank"
                         className="me-4"

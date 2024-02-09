@@ -2,6 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import { Document, Page } from "react-pdf";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Index: NextPage = () => {
   const redirectWa = (e: any) => {
@@ -41,6 +42,9 @@ Service : ${service.value}`);
 
     window.location.replace("https://t.me/InfusionJakarta");
   };
+
+  const isMobile = useSelector((state: any) => state.isMobile.value);
+
   return (
     <>
       <div className="content">
@@ -110,6 +114,7 @@ Service : ${service.value}`);
                     <div className="name-file">
                       <h5>Stem Cells for Hair Loss Doc.PDF</h5>
                       <Link
+                        style={isMobile ? { display: "none" } : {}}
                         href={"/viewer-pdf?pdf=stemcell-for-hair-loss.pdf"}
                         target="_blank"
                         className="me-4"
