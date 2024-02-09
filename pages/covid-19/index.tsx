@@ -134,13 +134,20 @@ Service : ${service.value}`);
                     </div>
                   </div>
                   <div className="price">
-                    Start from: <b> Rp 5.400.000 </b> <small>/Package </small>
+                    Start from: <b> Rp 1.500.000 </b> <small>/Treatment</small>
                   </div>
                   <div className="desc">
                     <p>Treatment Procedure :</p>
                     <ul>
-                      <li>Need 3 times treatment in a month</li>
-                      <li>Dosage : 2 vial per treatment</li>
+                      <li>Need 2 times treatment in a month</li>
+                    </ul>
+                  </div>
+                  <div className="desc">
+                    <p>Benefit :</p>
+                    <ul>
+                      <li>Regeneration of lung injury</li>
+                      <li>Decreased B cell activation and proliferation</li>
+                      <li>Stimulates the production of regulatory T cells</li>
                     </ul>
                   </div>
                   <div className="w-100 d-flex justify-content-center">
