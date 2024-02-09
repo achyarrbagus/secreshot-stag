@@ -1,5 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
+import { Document, Page } from "react-pdf";
+import Link from "next/link";
 
 const Index: NextPage = () => {
   const redirectWa = (e: any) => {
@@ -116,10 +118,19 @@ Service Name : ${service.value}`);
                     <img src="assets/img/icon_pdf.svg" alt="" />
                     <div className="name-file">
                       <h5>Stem Cells for Hair Loss Doc.PDF</h5>
-                      <a href="#" className="me-4">
+                      <Link
+                        href={"/viewer-pdf?pdf=stemcell-for-hair-loss.pdf"}
+                        target="_blank"
+                        className="me-4"
+                      >
                         <i className="mdi mdi-eye me-1"></i> View
-                      </a>
-                      <a href="#" className="">
+                      </Link>
+
+                      <a
+                        className=""
+                        href={"/assets/pdf/stemcell-for-hair-loss.pdf"}
+                        download
+                      >
                         <i className="mdi mdi-download me-1"></i> Download
                       </a>
                     </div>

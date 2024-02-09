@@ -1048,3 +1048,11 @@ section {
     }
   }
 }
+
+.img-potential {
+  width: 100%;
+
+  @include breakpoint(lg, min) {
+    width: 60%;
+  }
+}

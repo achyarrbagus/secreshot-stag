@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { NextPage } from "next";
 
 const Acne: NextPage = () => {
@@ -117,10 +118,15 @@ Service Name : ${service.value}`);
                     <img src="assets/img/icon_pdf.svg" alt="" />
                     <div className="name-file">
                       <h5>Stem Cells for Acne Doc.PDF</h5>
-                      <a href="#" className="me-4">
+                      <Link
+                        href={"/viewer-pdf?pdf=acne.pdf"}
+                        target="_blank"
+                        className="me-4"
+                      >
                         <i className="mdi mdi-eye me-1"></i> View
-                      </a>
-                      <a href="#" className="">
+                      </Link>
+
+                      <a className="" href={"/assets/pdf/acne.pdf"} download>
                         <i className="mdi mdi-download me-1"></i> Download
                       </a>
                     </div>

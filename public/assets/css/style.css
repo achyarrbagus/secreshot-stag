@@ -1131,3 +1131,11 @@ section.faq {
 .rate .desc ul {
   padding-left: 14px;
 }
+.img-potential {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .img-potential {
+    width: 60%;
+  }
+}

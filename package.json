@@ -20,6 +20,7 @@
     "@mantine/core": "^6.0.21",
     "@mantine/hooks": "^6.0.21",
     "@mantine/next": "^6.0.21",
+    "@react-pdf/renderer": "^3.3.8",
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
@@ -30,6 +31,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.49.3",
+    "react-pdf": "^7.7.0",
     "typescript": "5.3.3"
   },
   "devDependencies": {

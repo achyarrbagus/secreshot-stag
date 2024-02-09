@@ -148,7 +148,7 @@ Service Name : ${service.value}`);
           </div>
         </section>
 
-        <section className="potential bg-soft">
+        {/* <section className="potential bg-soft">
           <div className="container">
             <h3 className="title-section">
               <span className="fw-normal">Potential Uses of</span> <br />
@@ -156,72 +156,88 @@ Service Name : ${service.value}`);
             </h3>
             <img src="assets/img/img-potential.png" className="w-100" alt="" />
           </div>
+        </section> */}
+
+        <section className="potential bg-soft">
+          <div className="container">
+            <h3 className="title-section">
+              <span className="fw-normal">Potential Uses of</span> <br />
+              <span className="text-primary">Secretome and Stem Cells</span>
+            </h3>
+            <div className="d-flex justify-content-center">
+              <img
+                src="assets/img/img-potential.png"
+                className="img-potential"
+                alt=""
+              />
+            </div>
+          </div>
         </section>
 
         <section className="potential">
           <div className="container">
             <h3 className="title-section">Stem Cells Review From Experts</h3>
-            <div className="row g-3">
-              <a
-                href="https://www.youtube.com/embed/Ve2CL-eRlao?si=H4PDxfD_rhfWBTgQ"
-                data-toggle="lightbox"
-                data-gallery="youtubevideos"
-                className="col-6 gallery-video"
-              >
-                <img
-                  alt="img"
-                  src="https://img.youtube.com/vi/Ve2CL-eRlao/hqdefault.jpg"
-                  className="thumbnail-yt"
-                />
-                <div className="play-button">
-                  <img src="assets/img/circle-play.png" alt="" />
+            <div className="row justify-content-center">
+              <div className="col-md-8">
+                <div className="row g-3">
+                  <a
+                    href="https://www.youtube.com/embed/Ve2CL-eRlao?si=H4PDxfD_rhfWBTgQ"
+                    data-toggle="lightbox"
+                    data-gallery="youtubevideos"
+                    className="col-6 gallery-video"
+                  >
+                    <img
+                      src="assets/img/img-video01.png"
+                      className="thumbnail-yt"
+                    />
+                    <div className="play-button">
+                      <img src="assets/img/circle-play.png" alt="" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/embed/SM3cH7FU3Q8?si=H4PDxfD_rhfWBTgQ"
+                    data-toggle="lightbox"
+                    data-gallery="youtubevideos"
+                    className="col-6 gallery-video"
+                  >
+                    <img
+                      src="assets/img/img-video02.png"
+                      className="thumbnail-yt"
+                    />
+                    <div className="play-button">
+                      <img src="assets/img/circle-play.png" alt="" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/embed/GIZp_DS2WvE?si=H4PDxfD_rhfWBTgQ"
+                    data-toggle="lightbox"
+                    data-gallery="youtubevideos"
+                    className="col-6 gallery-video"
+                  >
+                    <img
+                      src="assets/img/img-video03.png"
+                      className="thumbnail-yt"
+                    />
+                    <div className="play-button">
+                      <img src="assets/img/circle-play.png" alt="" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/embed/t9kWCxu7MR4?si=H4PDxfD_rhfWBTgQ"
+                    data-toggle="lightbox"
+                    data-gallery="youtubevideos"
+                    className="col-6 gallery-video"
+                  >
+                    <img
+                      src="assets/img/img-video04.png"
+                      className="thumbnail-yt"
+                    />
+                    <div className="play-button">
+                      <img src="assets/img/circle-play.png" alt="" />
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a
-                href="https://www.youtube.com/embed/SM3cH7FU3Q8?si=H4PDxfD_rhfWBTgQ"
-                data-toggle="lightbox"
-                data-gallery="youtubevideos"
-                className="col-6 gallery-video"
-              >
-                <img
-                  alt="img"
-                  src="https://i1.ytimg.com/vi/SM3cH7FU3Q8/mqdefault.jpg"
-                  className="thumbnail-yt"
-                />
-                <div className="play-button">
-                  <img src="assets/img/circle-play.png" alt="" />
-                </div>
-              </a>
-              <a
-                href="https://www.youtube.com/embed/GIZp_DS2WvE?si=H4PDxfD_rhfWBTgQ"
-                data-toggle="lightbox"
-                data-gallery="youtubevideos"
-                className="col-6 gallery-video"
-              >
-                <img
-                  alt="img"
-                  src="https://i1.ytimg.com/vi/GIZp_DS2WvE/mqdefault.jpg"
-                  className="thumbnail-yt"
-                />
-                <div className="play-button">
-                  <img src="assets/img/circle-play.png" alt="" />
-                </div>
-              </a>
-              <a
-                href="https://www.youtube.com/embed/t9kWCxu7MR4?si=H4PDxfD_rhfWBTgQ"
-                data-toggle="lightbox"
-                data-gallery="youtubevideos"
-                className="col-6 gallery-video"
-              >
-                <img
-                  alt="img"
-                  src="https://i1.ytimg.com/vi/t9kWCxu7MR4/mqdefault.jpg"
-                  className="thumbnail-yt"
-                />
-                <div className="play-button">
-                  <img src="assets/img/circle-play.png" alt="" />
-                </div>
-              </a>
+              </div>
             </div>
           </div>
         </section>
