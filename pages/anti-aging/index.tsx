@@ -20,21 +20,13 @@ const Index: NextPage = () => {
         return alert("please fill form correcly");
       }
       const wardingWa = encodeURIComponent(`
-Hello Admin,
-I want to book service with
-following information :
+Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation 
+
 
 Name : ${name.value}
-Address : ${address.value}
-Service Name : ${service.value}
-----------------------------------------------------------------------     
-Halo Admin,
-Saya ingin melakukan booking service dengan keterangan 
-berikut:
+Address : ${address.value} 
+Service : ${service.value}`);
 
-Nama : ${name.value}
-Alamat : ${address.value} 
-Service Name : ${service.value}`);
       let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
 
