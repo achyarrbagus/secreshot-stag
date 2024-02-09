@@ -116,7 +116,7 @@ Service : ${service.value}`);
                     <div className="name-file">
                       <h5>Stem Cells for Arthritis Doc.PDF</h5>
                       <Link
-                        href={"/viewer-pdf?pdf= arthritis.pdf"}
+                        href={"/viewer-pdf?pdf=arthritis.pdf"}
                         target="_blank"
                         className="me-4"
                       >
