@@ -115,7 +115,7 @@ Service : ${service.value}`);
                       <h5>Stem Cells for Covid-19 Doc.PDF</h5>
                       {isMobile ? (
                         <a
-                          className=""
+                          className="me-4"
                           href={"/assets/pdf/covid-19.pdf"}
                           download
                         >

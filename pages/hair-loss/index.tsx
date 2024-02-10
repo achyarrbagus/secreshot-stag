@@ -115,7 +115,7 @@ Service : ${service.value}`);
                       <h5>Stem Cells for Hair Loss Doc.PDF</h5>
                       {isMobile ? (
                         <a
-                          className=""
+                          className="me-4"
                           href={"/assets/pdf/stemcell-for-hair-loss.pdf"}
                           download
                         >

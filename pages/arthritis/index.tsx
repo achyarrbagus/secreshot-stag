@@ -121,7 +121,7 @@ Service : ${service.value}`);
 
                       {isMobile ? (
                         <a
-                          className=""
+                          className="me-4"
                           href={"/assets/pdf/arthritis.pdf"}
                           download
                         >

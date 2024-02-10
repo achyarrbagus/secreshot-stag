@@ -112,7 +112,11 @@ Service : ${service.value}`);
                     <div className="name-file">
                       <h5>Stem Cells for Acne Doc.PDF</h5>
                       {isMobile ? (
-                        <a className="" href={"/assets/pdf/acne.pdf"} download>
+                        <a
+                          className="me-4"
+                          href={"/assets/pdf/acne.pdf"}
+                          download
+                        >
                           <i className="mdi mdi-eye me-1"></i> View
                         </a>
                       ) : (
