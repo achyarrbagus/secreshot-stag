@@ -118,14 +118,19 @@ Service : ${service.value}`);
                     <img src="assets/img/icon_pdf.svg" alt="" />
                     <div className="name-file">
                       <h5>Stem Cells for Scars Doc.PDF</h5>
-                      <Link
-                        style={isMobile ? { display: "none" } : {}}
-                        href={"/viewer-pdf?pdf=scars.pdf"}
-                        target="_blank"
-                        className="me-4"
-                      >
-                        <i className="mdi mdi-eye me-1"></i> View
-                      </Link>
+                      {isMobile ? (
+                        <a className="" href={"/assets/pdf/scars.pdf"} download>
+                          <i className="mdi mdi-download me-1"></i> View
+                        </a>
+                      ) : (
+                        <a
+                          href={"/viewer-pdf?pdf=scars.pdf"}
+                          target="_blank"
+                          className="me-4"
+                        >
+                          <i className="mdi mdi-eye me-1"></i> View
+                        </a>
+                      )}
 
                       <a className="" href={"/assets/pdf/scars.pdf"} download>
                         <i className="mdi mdi-download me-1"></i> Download

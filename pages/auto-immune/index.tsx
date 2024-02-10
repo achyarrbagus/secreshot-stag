@@ -116,14 +116,23 @@ Service : ${service.value}`);
                     <img src="assets/img/icon_pdf.svg" alt="" />
                     <div className="name-file">
                       <h5>Stem Cells for Autoimmune Doc.PDF</h5>
-                      <Link
-                        style={isMobile ? { display: "none" } : {}}
-                        href={"/viewer-pdf?pdf=auto-imun.pdf"}
-                        target="_blank"
-                        className="me-4"
-                      >
-                        <i className="mdi mdi-eye me-1"></i> View
-                      </Link>
+                      {isMobile ? (
+                        <a
+                          className=""
+                          href={"/assets/pdf/auto-imun.pdf"}
+                          download
+                        >
+                          <i className="mdi mdi-download me-1"></i> View
+                        </a>
+                      ) : (
+                        <a
+                          href={"/viewer-pdf?pdf=auto-imun.pdf"}
+                          target="_blank"
+                          className="me-4"
+                        >
+                          <i className="mdi mdi-eye me-1"></i> View
+                        </a>
+                      )}
 
                       <a
                         className=""

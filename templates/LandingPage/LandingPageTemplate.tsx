@@ -93,7 +93,7 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
           </div>
           <div className="row mt-4">
             <div className="col-md-8 text-white">
-              <h4 className="fs-14">PT Cepat Sehat Indonesia</h4>
+              <h4 className="fs-8">PT Cepat Sehat Indonesia</h4>
               <p>
                 Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramat jati, Kota
                 Adm. Jakarta Timur, Provinsi DKI Jakarta 13510 <br />

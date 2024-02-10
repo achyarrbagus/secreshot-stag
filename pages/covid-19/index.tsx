@@ -113,20 +113,23 @@ Service : ${service.value}`);
                     <img src="assets/img/icon_pdf.svg" alt="" />
                     <div className="name-file">
                       <h5>Stem Cells for Covid-19 Doc.PDF</h5>
-                      {/* <a href="#" className="me-4">
-                        <i className="mdi mdi-eye me-1"></i> View
-                      </a>
-                      <a href="#" className="">
-                        <i className="mdi mdi-download me-1"></i> Download
-                      </a> */}
-                      <Link
-                        style={isMobile ? { display: "none" } : {}}
-                        href={"/viewer-pdf?pdf=covid-19.pdf"}
-                        target="_blank"
-                        className="me-4"
-                      >
-                        <i className="mdi mdi-eye me-1"></i> View
-                      </Link>
+                      {isMobile ? (
+                        <a
+                          className=""
+                          href={"/assets/pdf/covid-19.pdf"}
+                          download
+                        >
+                          <i className="mdi mdi-download me-1"></i> View
+                        </a>
+                      ) : (
+                        <a
+                          href={"/viewer-pdf?pdf=covid-19.pdf"}
+                          target="_blank"
+                          className="me-4"
+                        >
+                          <i className="mdi mdi-eye me-1"></i> View
+                        </a>
+                      )}
 
                       <a
                         className=""

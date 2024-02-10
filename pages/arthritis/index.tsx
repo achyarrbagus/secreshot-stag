@@ -43,6 +43,7 @@ Service : ${service.value}`);
 
     window.location.replace("https://t.me/InfusionJakarta");
   };
+
   return (
     <>
       <div className="content">
@@ -117,14 +118,24 @@ Service : ${service.value}`);
                     <img src="assets/img/icon_pdf.svg" alt="" />
                     <div className="name-file">
                       <h5>Stem Cells for Arthritis Doc.PDF</h5>
-                      <Link
-                        style={isMobile ? { display: "none" } : {}}
-                        href={"/viewer-pdf?pdf=arthritis.pdf"}
-                        target="_blank"
-                        className="me-4"
-                      >
-                        <i className="mdi mdi-eye me-1"></i> View
-                      </Link>
+
+                      {isMobile ? (
+                        <a
+                          className=""
+                          href={"/assets/pdf/arthritis.pdf"}
+                          download
+                        >
+                          <i className="mdi mdi-download me-1"></i> View
+                        </a>
+                      ) : (
+                        <a
+                          href={"/viewer-pdf?pdf=arthritis.pdf"}
+                          target="_blank"
+                          className="me-4"
+                        >
+                          <i className="mdi mdi-eye me-1"></i> View
+                        </a>
+                      )}
 
                       <a
                         className=""
