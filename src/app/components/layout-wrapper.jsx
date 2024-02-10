@@ -75,19 +75,19 @@ function LayoutWrapper({ children }) {
         />
 
         {/* <!-- favicon --> */}
-        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg" />
 
         {/* <!-- fontello --> */}
-        <link rel="stylesheet" href="/assets/fontello/css/csehat.css" />
+        <link rel="stylesheet" href="assets/fontello/css/csehat.css" />
 
         {/* <!-- swiper --> */}
-        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
         {/* <!-- bootstrap --> */}
-        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
         {/* <!-- custom --> */}
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
       </head>
 
       <nav className="nav nav-top fixed-top">
@@ -174,9 +174,9 @@ function LayoutWrapper({ children }) {
         <div className="container">
           <div className="d-flex align-items-center">
             <Link href="/">
-              <img src="/assets/img/logo-white.png" className="logo" alt="" />
+              <img src="assets/img/logo-white.png" className="logo" alt="" />
             </Link>
-            <img src="/assets/img/logo-atensi.png" className="logo-atensi ms-auto" alt="" />
+            <img src="assets/img/logo-atensi.png" className="logo-atensi ms-auto" alt="" />
           </div>
           <div className="row mt-4">
             <div className="col-md-8 text-white">
@@ -213,14 +213,14 @@ function LayoutWrapper({ children }) {
       </footer>
 
       <script type="module" src="/src/main.tsx"></script>
+      <script src="assets/bootstrap/js/main.js"></script>
       <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/swiper-bundle.min.js"></script>
-      <script src="assets/js/index.js"></script>
       <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossOrigin="anonymous"
       ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     </>
   );
 }
