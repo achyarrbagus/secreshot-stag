@@ -119,7 +119,7 @@ Service : ${service.value}`);
                           href={"/assets/pdf/covid-19.pdf"}
                           download
                         >
-                          <i className="mdi mdi-download me-1"></i> View
+                          <i className="mdi mdi-eye me-1"></i> View
                         </a>
                       ) : (
                         <a

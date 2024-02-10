@@ -1,8 +1,12 @@
 "use client";
 import { setIsMobile } from "@/lib/redux/slices/isMobileslice/ismobileSlice";
+
 import Head from "next/head";
 import React, { Children, ReactNode } from "react";
 import { useDispatch } from "react-redux";
+import Button from "react-bootstrap/Button";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 
 type WrapperComponentProps = {
   children: ReactNode;
@@ -79,6 +83,32 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
         </div>
       </nav>
       {children}
+
+      <OverlayTrigger
+        placement="left"
+        overlay={
+          <Tooltip id="tooltip-left" className="custom-tooltip">
+            Consult with Our Medical Team
+          </Tooltip>
+        }
+      >
+        <div className="btn-float">
+          <div className="btn-circle whatsapp">
+            <a
+              href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0"
+              className="text-white"
+            >
+              <i className="fs-24 fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <div className="btn-circle telegram">
+            <a href="https://t.me/unbanking" className="text-white">
+              <i className="fs-24 fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </OverlayTrigger>
+
       <footer className="footer">
         <div className="container">
           <div className="d-flex align-items-center">
@@ -93,11 +123,11 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
           </div>
           <div className="row mt-4">
             <div className="col-md-8 text-white">
-              <h4 className="fs-8">PT Cepat Sehat Indonesia</h4>
+              <h4 className="fs-14">PT Cepat Sehat Indonesia</h4>
               <p>
                 Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramat jati, Kota
                 Adm. Jakarta Timur, Provinsi DKI Jakarta 13510 <br />
-                sehatcepat.com
+                cepatsehat.com
               </p>
             </div>
             <div className="col-md-12">
@@ -133,6 +163,7 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
           Copyright © 2024 Cepat Sehat. All Rights Reserved.
         </div>
       </footer>
+      <script src="assets/bootstrap/js/main.js"></script>
       <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"

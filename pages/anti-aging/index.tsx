@@ -121,7 +121,7 @@ Service : ${service.value}`);
                           href={"/assets/pdf/anti-aging.pdf"}
                           download
                         >
-                          <i className="mdi mdi-download me-1"></i> View
+                          <i className="mdi mdi-eye me-1"></i> View
                         </a>
                       ) : (
                         <a

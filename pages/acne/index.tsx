@@ -113,7 +113,7 @@ Service : ${service.value}`);
                       <h5>Stem Cells for Acne Doc.PDF</h5>
                       {isMobile ? (
                         <a className="" href={"/assets/pdf/acne.pdf"} download>
-                          <i className="mdi mdi-download me-1"></i> View
+                          <i className="mdi mdi-eye me-1"></i> View
                         </a>
                       ) : (
                         <a
