@@ -5,12 +5,12 @@ import "swiper/css/pagination";
 import "swiper/css";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 import { useSelector } from "react-redux";
 // import { useNavigate } from "react-router-dom";
 
 import { useEffect, useState } from "react";
-import { Autoplay } from "swiper/modules";
 import Articles from "../../public/assets/article/json/article-id.json";
 
 const HomeId = () => {
@@ -60,7 +60,7 @@ Layanan : ${service.value}`);
           <div className="container">
             <div className="text">
               <h3 className="title">Mitra Terpercaya Anda dalam Perawatan Kesehatan di Rumah</h3>
-              <p className="desc">
+              <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
                 Kami memberikan perawatan kesehatan personal ke rumah Anda melalui para profesional berpengalaman kami.
               </p>
               <a href="#book" className="btn btn-warning">
@@ -107,7 +107,7 @@ Layanan : ${service.value}`);
               <div className="col-4">
                 <a href="/alternative-telemedicine" className="box-service">
                   <i className="icon-menu-alternative-telemedicine"></i>
-                  <span className="title-service"> Telemedis Alternatif </span>
+                  <span className="title-service"> Layanan Alternatif </span>
                 </a>
               </div>
             </div>
@@ -424,7 +424,7 @@ Layanan : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section"> Pesan </h3>
+            <h3 className="title-section"> Pesan kunjungan sekarang </h3>
             <form action="#">
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
@@ -446,7 +446,7 @@ Layanan : ${service.value}`);
                     <option value="Telemedis Jarak Jauh">Telemedis Jarak Jauh</option>
                     <option value="Terapi Alternatif Holistik">Terapi Alternatif Holistik</option>
                     <option value="Terapi IV di Rumah & Lainnya">Terapi IV di Rumah & Lainnya</option>
-                    <option value="Telemedis Alternatif">Telemedis Alternatif</option>
+                    <option value="Layanan Alternatif">Layanan Alternatif</option>
                   </select>
                 </div>
               </div>

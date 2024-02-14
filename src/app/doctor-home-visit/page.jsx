@@ -22,7 +22,7 @@ Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
 Name :  ${name.value}
 Address : ${address.value} 
 Service : ${service.value}
-`)
+`);
 
       let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
@@ -35,11 +35,23 @@ Service : ${service.value}
   const redirectTele = () => {
     window.location.href = "https://t.me/InfusionJakarta";
   };
-  
 
   const [service, setService] = useState();
+  const [book, setBook] = useState("Book a visit at your place now");
 
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Doctor Home Visit":
+        setBook("Book a doctor visit now");
+        break;
+      case "Nurse Home Visit":
+        setBook("Book a nurse visit now");
+        break;
+      case "Medical Check Up":
+        setBook("Book for medical check up now");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -222,7 +234,7 @@ Service : ${service.value}
                       </div>
                     </div>
                   </div>
-                  <div className="accordion-item col-md-6">
+                  {/* <div className="accordion-item col-md-6">
                     <h2 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
@@ -289,7 +301,7 @@ Service : ${service.value}
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="accordion-item col-md-6">
                     <h2 className="accordion-header">
                       <button
@@ -369,7 +381,7 @@ Service : ${service.value}
 
             <section className="book" id="book">
               <div className="container">
-                <h3 className="title-section"> Book Now </h3>
+                <h3 className="title-section"> {book} </h3>
                 <div>
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">

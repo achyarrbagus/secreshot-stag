@@ -1,6 +1,7 @@
 "use client";
 
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const RemoteTelemedicId = () => {
   const redirectWa = (e) => {
@@ -31,7 +32,24 @@ Layanan : ${service.value}`);
     window.location.replace("https://t.me/InfusionJakarta");
   };
 
+  const [book, setBook] = useState("Pesan kunjungan sekarang");
+
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Konsultasi Online Dokter Umum":
+        setBook("Pesan konsultasi dokter umum sekarang");
+        break;
+      case "Konsultasi Online Dokter Spesialis":
+        setBook("Pesan konsultasi dokter spesialis sekarang");
+        break;
+      case "Resep Medis Online":
+        setBook("Pesan resep obat online sekarang");
+        break;
+      case "Sertifikat Medis Online":
+        setBook("Pesan surat sakit online sekarang");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -376,7 +394,7 @@ Layanan : ${service.value}`);
                             </div>
 
                             <div
-                              onClick={() => handleBook("Sertifikat Medis Online")}
+                              onClick={() => (window.location.href = "https://www.suratsakit.cepatsehat.com/")}
                               id="certificate"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -395,7 +413,7 @@ Layanan : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section"> Pesan </h3>
+            <h3 className="title-section"> {book} </h3>
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSelector, useDispatch } from "react-redux";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 
 function LayoutWrapper({ children }) {
   const router = useRouter();
@@ -12,9 +14,6 @@ function LayoutWrapper({ children }) {
   const dispatch = useDispatch();
 
   React.useEffect(() => {
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
-
     // Hotjar tracking code
     (function (h, o, t, j, a, r) {
       h.hj =
@@ -45,51 +44,6 @@ function LayoutWrapper({ children }) {
 
   return (
     <>
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cepat Sehat</title>
-        {/* <!-- swiper --> */}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-        {/* <!-- icons --> */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css"
-          integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-        />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossOrigin="anonymous"
-        />
-
-        {/* <!-- favicon --> */}
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg" />
-
-        {/* <!-- fontello --> */}
-        <link rel="stylesheet" href="assets/fontello/css/csehat.css" />
-
-        {/* <!-- swiper --> */}
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
-        {/* <!-- bootstrap --> */}
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-
-        {/* <!-- custom --> */}
-        <link rel="stylesheet" href="assets/css/style.css" />
-      </head>
-
       <nav className="nav nav-top fixed-top">
         <div className="container">
           <div className="d-flex align-items-center">
@@ -145,24 +99,30 @@ function LayoutWrapper({ children }) {
       </nav>
       {children}
 
-      <div
-        className="btn-float"
-        data-bs-toggle="tooltip"
-        data-bs-placement="left"
-        data-bs-original-title="Consult with Our Medical Team"
-        data-bs-custom-class="custom-tooltip"
+      <OverlayTrigger
+        placement="left"
+        overlay={
+          <Tooltip id="tooltip-left" className="custom-tooltip">
+            Consult with Our Medical Team
+          </Tooltip>
+        }
       >
-        <div className="btn-circle whatsapp">
-          <a href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0" className="text-white">
-            <i className="fs-24 fa-brands fa-whatsapp"></i>
-          </a>
+        <div className="btn-float">
+          <div className="btn-circle whatsapp">
+            <a
+              href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0"
+              className="text-white"
+            >
+              <i className="fs-24 fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <div className="btn-circle telegram">
+            <a href="https://t.me/unbanking" className="text-white">
+              <i className="fs-24 fa-brands fa-telegram"></i>
+            </a>
+          </div>
         </div>
-        <div className="btn-circle telegram">
-          <a href="https://t.me/unbanking" className="text-white">
-            <i className="fs-24 fa-brands fa-telegram"></i>
-          </a>
-        </div>
-      </div>
+      </OverlayTrigger>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-PFX6ZWQ4"
         height="0"

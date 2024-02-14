@@ -1,0 +1,158 @@
+{
+  "app": {
+    "name": "Khỏi ngay",
+    "logo": "khoingay.png",
+    "prefix": "+84",
+    "currency": "VND",
+    "flag": "vietnam.png",
+    "title": "Khỏi ngay",
+    "keywords": "",
+    "description": "",
+    "copyright": "Bản quyền © 2023 Khỏi ngay. Đã đăng ký Bản quyền"
+  },
+  "home": {
+    "greeting": "Chào mừng quý khách",
+    "slogan": "Hãy Kiểm Tra Sức Khỏe Của Bạn Tại Đây",
+    "our_doctor": "bác sĩ của chúng tôi",
+    "recommended_for_you": "Đề xuất cho bạn"
+  },
+  "payment": {
+    "name": "Họ và tên",
+    "phone": "Số điện thoại",
+    "detail": "chi tiết thanh toán",
+    "fee": "Phí",
+    "discount": "Giảm giá",
+    "method": "Lựa chọn hình thức thanh toán",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Mã khuyến mại",
+    "input_promo": "Nhập mã khuyến mãi",
+    "apply_promo": "Ứng dụng",
+    "your": "Thanh toán của bạn",
+    "total": "Tổng tiền thanh toán",
+    "pay_confirm": "Xác nhận"
+  },
+  "question": {
+    "help": "Bất kỳ câu hỏi nào? Chúng tôi sẵn sàng giúp bạn trực tiếp",
+    "contact_whatsapp": "Liên hệ qua WhatsApp",
+    "link_whatsapp": "https://api.whatsapp.com/send/?phone=6281222233144&text&type=phone_number&app_absent=0"
+  },
+  "doctor": {
+    "consultation": "Bác sĩ tư vấn",
+    "certification": "Trò chuyện với bác sĩ đã được chứng nhận",
+    "type_consult": "tư vấn",
+    "profile": "hồ sơ bác sĩ",
+    "experience": "Trải qua",
+    "schedule": "Lịch tư vấn",
+    "place_practice": "Nơi thực hành",
+    "graduated_from": "Tốt nghiệp từ"
+  },
+  "chat": {
+    "end": "Kết thúc trò chuyện",
+    "doctor_finish": "You have ended the conversation with the patient"
+  },
+  "team": {
+    "our": "Đội của chúng tôi"
+  },
+  "booking": {
+    "title": "Khám sức khỏe của bạn mà không cần đến bệnh viện",
+    "description": "Bạn không cần phải ra ngoài trong đại dịch này. Hãy để chúng tôi đến nhà của bạn để kiểm tra sức khỏe của bạn",
+    "inject": {
+      "title": "Tiêm vitamin C tại nhà",
+      "image": "ic_suntik_vit_c.png",
+      "description": "Vitamin C là một chất chống oxy hóa giúp bảo vệ các tế bào của bạn trước tác động của các gốc tự do",
+      "label": "Tiêm vit C"
+    },
+    "vaccine": {
+      "title": "Vắc -xin tại nhà",
+      "image": "ic_vaksin_rumah.png",
+      "description": "Chăm sóc sức khỏe và gia đình của bạn ở nhà, và vắc -xin càng sớm càng tốt",
+      "label": "Nhận tiêm vắc -xin"
+    },
+    "covid_vaccine": {
+      "title": "Covid 19 vắc -xin tại nhà",
+      "image": "ic_vaksin_covid.png",
+      "description": "Tiêm phòng Covid-19 dễ dàng, thuận tiện tại nhà",
+      "label": "Nhận vắc-xin covid-19"
+    }
+  },
+  "article": {
+    "label": "Bài báo",
+    "detail": "chi tiết bài viết"
+  },
+  "confirm": {
+    "title": "Xác nhận",
+    "body": "Bạn có chắc không ?",
+    "yes": "Đúng",
+    "no": "KHÔNG"
+  },
+  "prescription": {
+    "pharmacy": "hiệu thuốc",
+    "patient_data": "Dữ liệu bệnh nhân",
+    "full_name": "Tên đầy đủ",
+    "mobile_number": "Số điện thoại",
+    "weight": "Cân nặng",
+    "kg": "kg",
+    "age": "Tuổi",
+    "complaint": "Phản hồi",
+    "medicine_allergy": "Dị ứng thuốc",
+    "add_manual_medicine": "Thêm thuốc",
+    "data_treatment_plan": "dữ liệu - Kế hoạch điều trị",
+    "medicine": "Khám",
+    "total": "Tổng",
+    "rule": "Quy định",
+    "time": "Thời gian",
+    "notes": "Ghi chú",
+    "delete": "Xóa",
+    "no_data": "Không có dữ liệu",
+    "add_medicine": "Thêm đơn",
+    "required": "Đã yêu cầu",
+    "submit": "Gửi đi",
+    "preview": "xem trước",
+    "enter_medicine_name": "Nhập tên thuốc",
+    "category": "Phân loại",
+    "select_category": "Chọn loại",
+    "internal_medicine": "Thuốc nội",
+    "external_medicine": "Thuốc ngoại",
+    "type": "Loại",
+    "select_type": "lựa chọn loại",
+    "capsule": "Viên nang",
+    "tablet": "viên",
+    "ampoule": "Ampule",
+    "drops": "giọt",
+    "syrup": "siro",
+    "bottle": "chai",
+    "pill": "viên",
+    "cream": "kem",
+    "sachets": "gói",
+    "vials": "giọt",
+    "box": "hộp",
+    "tube": "tuýp",
+    "units": "đơn vị",
+    "select_units": "lựa chọn đơn vị",
+    "details": "chi tiết",
+    "clean": "sạch",
+    "store": "lưu giữ",
+    "medicine_list": "danh sách thuốc",
+    "find_medicine": "tìm thuốc",
+    "medicine_name": "tên thuốc",
+    "total_as": "Tổng",
+    "per_item": "theo chủng loại",
+    "how_to_use": "cách sử dụng",
+    "x_a_day": "ngày",
+    "consume_time": "thời gian uống",
+    "morning": "Sáng",
+    "afternoon": "Chiều",
+    "evening": "Tối",
+    "before_eating": "Trước khi ăn",
+    "when_eating": "Trong khi ăn",
+    "after_eating": "Sau khi ăn",
+    "save": "lưu",
+    "finished": "Kết thúc",
+    "success": "Thành công",
+    "online_prescription": "Đơn thuốc online",
+    "created_successfully": "Tạo thành công"
+  }
+}

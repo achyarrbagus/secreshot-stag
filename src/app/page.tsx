@@ -79,7 +79,7 @@ Service Name : ${service.value}`);
               <div className="container">
                 <div className="text">
                   <h3 className="title"> Your Trusted Partner in Personalized In-Home Healthcare </h3>
-                  <p className="desc">
+                  <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
                     We deliver personalized and compassionate healthcare to your home through our experienced professionals.
                   </p>
                   <a href="#book" className="btn btn-warning">
@@ -126,7 +126,7 @@ Service Name : ${service.value}`);
                   <div className="col-4">
                     <a href="/alternative-telemedicine" className="box-service">
                       <i className="icon-menu-alternative-telemedicine"></i>
-                      <span className="title-service"> Alternative Telemedicine </span>
+                      <span className="title-service"> Alternative Medicine </span>
                     </a>
                   </div>
                 </div>
@@ -418,7 +418,7 @@ Service Name : ${service.value}`);
                         {Articles &&
                           Articles.map((item: any, index: number) => (
                             <>
-                              <SwiperSlide>
+                              <SwiperSlide key={index}>
                                 <Link href={`/article/${index}`}>
                                   <div className="card-slide-article">
                                     <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
@@ -443,7 +443,7 @@ Service Name : ${service.value}`);
 
             <section className="book" id="book">
               <div className="container">
-                <h3 className="title-section"> Book Now </h3>
+                <h3 className="title-section"> Book a visit at your place now </h3>
                 <form action="#">
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">
@@ -465,7 +465,7 @@ Service Name : ${service.value}`);
                         <option value="Remote Telemedicine">Remote Telemedicine</option>
                         <option value="Holistic Alternative Therapies">Holistic Alternative Therapies</option>
                         <option value="In-Home IV Therapy & more">In-Home IV Therapy & more</option>
-                        <option value="Alternative Telemedicine">Alternative Telemedicine</option>
+                        <option value="Alternative Medicine">Alternative Medicine</option>
                       </select>
                     </div>
                   </div>

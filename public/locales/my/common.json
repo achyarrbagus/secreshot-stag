@@ -1,0 +1,158 @@
+{
+  "app": {
+    "name": "Lekas Pulih",
+    "logo": "lekaspulih.png",
+    "prefix": "+60",
+    "currency": "RM",
+    "flag": "malaysia.png",
+    "title": "Lekas Pulih",
+    "keywords": "",
+    "description": "Lekas Pulih",
+    "copyright": "Hakcipta © 2023 Lekas Pulih. Hak Cipta Terpelihara "
+  },
+  "home": {
+    "greeting": "Selamat Datang",
+    "slogan": "Jom Periksa Kesihatan Anda di Sini",
+    "our_doctor": "Doktor kami",
+    "recommended_for_you": "Disyorkan untuk anda"
+  },
+  "payment": {
+    "name": "Nama Penuh",
+    "phone": "Nombor Telefon",
+    "detail": "Butiran pembayaran",
+    "fee": "Bayaran",
+    "discount": "Diskaun",
+    "method": "Pilih Kaedah Pembayaran",
+    "e_wallet": "E-Dompet",
+    "bank_transfer": "Bank",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Kod Promosi",
+    "input_promo": "Masukkan Kod Promosi",
+    "apply_promo": "Mohon",
+    "your": "Bayaran anda",
+    "total": "Jumlah Bayaran",
+    "pay_confirm": "Sahkan"
+  },
+  "question": {
+    "help": "Ada sebarang soalan? Pasukan kami sedia untuk membantu anda",
+    "contact_whatsapp": "Hubungi melalui WhatsApp",
+    "link_whatsapp": "https://api.whatsapp.com/send/?phone=6281281881802&text&type=phone_number&app_absent=0"
+  },
+  "doctor": {
+    "consultation": "Rundingan Doktor",
+    "certification": "Sembang dengan doktor bertauliah",
+    "type_consult": "Rundingan",
+    "profile": "Profil Doktor",
+    "experience": "Pengalaman",
+    "schedule": "Jadual Rundingan",
+    "place_practice": "Klinik",
+    "graduated_from": "Graduan dari"
+  },
+  "chat": {
+    "end": "Tamatkan Perbualan",
+    "doctor_finish": "Terima Kasih Konsultasi dalam talian telah ditamatkan."
+  },
+  "team": {
+    "our": "Tim kami"
+  },
+  "booking": {
+    "title": "Periksa Kesihatan Anda tanpa ke Hospital",
+    "description": "Anda tidak perlu keluar ketika pandemik ini. Biarlah kami periksa kesihatan anda di rumah",
+    "inject": {
+      "title": "Suntikan Vitamin C di Rumah",
+      "image": "ic_suntik_vit_c.png",
+      "description": "Vitamin C ialah antioksidan yang membantu melindungi sel anda daripada kesan radikal bebas",
+      "label": "Dapatkan Suntikan Vitamin C"
+    },
+    "vaccine": {
+      "title": "Vaksin di Rumah",
+      "image": "ic_vaksin_rumah.png",
+      "description": "Jaga kesihatan anda dan keluarga di rumah. Dapatkan vaksin secepat mungkin.",
+      "label": "Dapatkan Suntikan Vaksin"
+    },
+    "covid_vaccine": {
+      "title": "Vaksin COVID-19 di Rumah",
+      "image": "ic_vaksin_covid.png",
+      "description": "Dapatkan vaksin COVID 19 dengan mudah dan selesa di rumah",
+      "label": "Dapatkan Vaksin COVID-19"
+    }
+  },
+  "article": {
+    "label": "Artikel",
+    "detail": "Butiran artikel"
+  },
+  "confirm": {
+    "title": "Pengesahan",
+    "body": "Adakah anda pasti ?",
+    "yes": "Ya",
+    "no": "Tidak"
+  },
+  "prescription": {
+    "pharmacy": "Farmasi",
+    "patient_data": "Nama Pesakit",
+    "full_name": "Nama penuh",
+    "mobile_number": "Nombor Telefon",
+    "weight": "Berat",
+    "kg": "Kg",
+    "age": "Usia",
+    "complaint": "Aduan",
+    "medicine_allergy": "Alahan Ubat",
+    "add_manual_medicine": "Tambah ubat Manual",
+    "data_treatment_plan": "Data - Pelan Rawatan",
+    "medicine": "Ubat",
+    "total": "Jumlah",
+    "rule": "peraturan",
+    "time": "Masa",
+    "notes": "Nota",
+    "delete": "Padam",
+    "no_data": "Tiada data",
+    "add_medicine": "Tambah ubat",
+    "required": "Diperlukan",
+    "submit": "Hantar",
+    "preview": "Papar Semula",
+    "enter_medicine_name": "Masukkan nama ubat",
+    "category": "Kategori",
+    "select_category": "Pilih Kategori",
+    "internal_medicine": "Ubat dalaman",
+    "external_medicine": "Ubat luaran",
+    "type": "Jenis",
+    "select_type": "Pilih Jenis",
+    "capsule": "Kapsul",
+    "tablet": "Tablet",
+    "ampoule": "Ampul",
+    "drops": "titisan",
+    "syrup": "Sirap",
+    "bottle": "Botol",
+    "pill": "Pil",
+    "cream": "Krim",
+    "sachets": "sachet",
+    "vials": "Vial",
+    "box": "Kotak",
+    "tube": "Tiub",
+    "units": "Unit",
+    "select_units": "Pilih Unit",
+    "details": "Butiran",
+    "clean": "Bersih",
+    "store": "Simpan",
+    "medicine_list": "Senarai ubat",
+    "find_medicine": "Cari ubat",
+    "medicine_name": "Nama ubat",
+    "total_as": "Jumlah sebagai",
+    "per_item": "Setiap item",
+    "how_to_use": "Cara menggunakan",
+    "x_a_day": "sehari",
+    "consume_time": "Waktu makan",
+    "morning": "Pagi",
+    "afternoon": "Petang",
+    "evening": "Malam",
+    "before_eating": "Sebelum makan",
+    "when_eating": "Semasa makan",
+    "after_eating": "Selepas makan",
+    "save": "Simpan",
+    "finished": "Selesai",
+    "success": "Berjaya",
+    "online_prescription": "Perskripsi dalam talian",
+    "created_successfully": "Berjaya dibuat"
+  }
+}

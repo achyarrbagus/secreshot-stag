@@ -1,8 +1,11 @@
 "use client";
 import InHomeTherapyId from "./page-id";
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const InHomeTherapy = () => {
+  const [book, setBook] = useState("Book a visit at your place now");
+
   const redirectWa = (e) => {
     e.preventDefault();
 
@@ -32,6 +35,33 @@ Service : ${service.value}
   };
 
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Bali Belly Infusion":
+        setBook("Book bali belly infusion now");
+        break;
+      case "Super Bali Belly IV":
+        setBook("Book super bali belly infusion now");
+        break;
+      case "Basic Immnue Booster":
+        setBook("Book basic immune booster now");
+        break;
+      case "Super Immune Booster":
+        setBook("Book super immune booster now");
+        break;
+      case "Hangover Infusion":
+        setBook("Book hangover infusion now");
+        break;
+      case "Fever Infusion":
+        setBook("Book fever infusion now");
+        break;
+      case "Gerd / Gastritis Infusion":
+        setBook("Book gerd infusion now");
+        break;
+      case "Iron Infusion":
+        setBook("Book iron infusion now");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -657,7 +687,7 @@ Service : ${service.value}
 
             <section className="book" id="book">
               <div className="container">
-                <h3 className="title-section">Book Now</h3>
+                <h3 className="title-section">{book}</h3>
                 <div>
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">

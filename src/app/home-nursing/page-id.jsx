@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 
 const HomeNursingId = () => {
   const redirectWa = (e) => {
@@ -28,7 +29,18 @@ Layanan : ${service.value}`);
     window.location.href = "https://t.me/InfusionJakarta";
   };
 
+  const [book, setBook] = useState("Pesan kunjungan sekarang");
+
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Perawatan luka":
+        setBook("Pesan perawatan luka sekarang");
+        break;
+      case "Pemantauan & Pencegahan":
+        setBook("Pesan pemantauan dan pencegahan sekarang");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -199,7 +211,7 @@ Layanan : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section">Pesan</h3>
+            <h3 className="title-section">{book}</h3>
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">

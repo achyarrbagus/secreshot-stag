@@ -1,0 +1,158 @@
+{
+  "app": {
+    "name": "Fique Bom Logo",
+    "logo": "fiquebomlogo.png",
+    "prefix": "+55",
+    "currency": "R$",
+    "flag": "brazil.png",
+    "title": "Venha verificar sua saúde aqui, consulta médica online - Fique Bom Logo",
+    "keywords": "sehat cepat provides online doctor consultation services, injections of vitamin c and multivitamins as well as online sick letter services. Visit us now.",
+    "description": "Preço da injeção de vitamina C, benefícios da injeção de vitamina C, efeitos colaterais das injeções de vitamina C, médico de plantão, ligue para o médico em casa, médico de plantão, consulta médica on-line, aluguel de equipamentos médicos, cuidados em casa.",
+    "copyright": "Copyright © 2023 Fique Bom Logo. Todos os Direitos Reservados"
+  },
+  "home": {
+    "greeting": "Bem vindo",
+    "slogan": "Vamos Avaliar Sua Saúde Aqui",
+    "our_doctor": "Nosso Médico",
+    "recommended_for_you": "Recomendado Para Você"
+  },
+  "payment": {
+    "name": "Nome completo",
+    "phone": "Número de Telefone",
+    "detail": "Detalhes do Pagamento",
+    "fee": "Fee",
+    "discount": "Desconto",
+    "method": "Escolha o método de pagamento",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Transferência Bancária",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Código promocional",
+    "input_promo": "Inserir o código",
+    "apply_promo": "Aplicar",
+    "your": "Seu pagamento",
+    "total": "Pagamento Total",
+    "pay_confirm": "Pagar"
+  },
+  "question": {
+    "help": "Alguma Pergunta? Nossa equipe está pronta para ajudar",
+    "contact_whatsapp": "Contato via Whatsapp",
+    "link_whatsapp": "https://wa.me/6281281881802"
+  },
+  "doctor": {
+    "consultation": "Consulta Médica",
+    "certification": "Converse com médico certificado",
+    "type_consult": "Consulta",
+    "profile": "Perfil do médico",
+    "experience": "Experiência",
+    "schedule": "Cronograma de Consulta",
+    "place_practice": "Local de prática",
+    "graduated_from": "Graduado em"
+  },
+  "chat": {
+    "end": "Fim de papo",
+    "doctor_finish": "A conversa terminou!"
+  },
+  "team": {
+    "our": "Nosso time"
+  },
+  "booking": {
+    "title": "Verifique sua saúde sem ir ao hospital",
+    "description": "Você não precisa sair nessa pandemia. Vamos até sua casa para verificar sua saúde",
+    "inject": {
+      "title": "Injeção de Vit C em casa",
+      "image": "ic_suntik_vit_c.png",
+      "description": "A vitamina C é um antioxidante que ajuda a proteger as células contra os efeitos dos radicais livres",
+      "label": "Obtenha injeção de Vit C"
+    },
+    "vaccine": {
+      "title": "Vacinas em casa",
+      "image": "ic_vaksin_rumah.png",
+      "description": "Cuide da sua saúde e da sua família em casa, e vacine-se o mais rápido possível",
+      "label": "Obtenha vacinas injetáveis"
+    },
+    "covid_vaccine": {
+      "title": "Vacina Covid 19 em casa",
+      "image": "ic_vaksin_covid.png",
+      "description": "Vacinar-se contra a Covid-19 de forma fácil e conveniente em casa",
+      "label": "Obtenha a vacina Covid-19"
+    }
+  },
+  "article": {
+    "label": "Artigo",
+    "detail": "Detalhes do artigo"
+  },
+  "confirm": {
+    "title": "Confirmação",
+    "body": "Tem certeza ?",
+    "yes": "Sim",
+    "no": "Não"
+  },
+  "prescription": {
+    "pharmacy": "Pharmacy",
+    "patient_data": "Patient Data",
+    "full_name": "Full Name",
+    "mobile_number": "Mobile Number",
+    "weight": "Weight",
+    "kg": "Kg",
+    "age": "Age",
+    "complaint": "Complaint",
+    "medicine_allergy": "Medicine Allergy",
+    "add_manual_medicine": "Add Manual Medicine",
+    "data_treatment_plan": "Data - Treatment Plan",
+    "medicine": "Medicine",
+    "total": "Total",
+    "rule": "Rule",
+    "time": "Time",
+    "notes": "Notes",
+    "delete": "Delete",
+    "no_data": "No data",
+    "add_medicine": "Add medicine",
+    "required": "Required",
+    "submit": "Submit",
+    "preview": "Preview",
+    "enter_medicine_name": "Enter medicine name",
+    "category": "Category",
+    "select_category": "Select category",
+    "internal_medicine": "Internal medicine",
+    "external_medicine": "External medicine",
+    "type": "Type",
+    "select_type": "Select Type",
+    "capsule": "Capsule",
+    "tablet": "Tablet",
+    "ampoule": "Ampoule",
+    "drops": "Drops",
+    "syrup": "Syrup",
+    "bottle": "Bottle",
+    "pill": "Pill",
+    "cream": "Cream",
+    "sachets": "Sachets",
+    "vials": "Vials",
+    "box": "Box",
+    "tube": "Tube",
+    "units": "Units",
+    "select_units": "Select Units",
+    "details": "Details",
+    "clean": "Clean",
+    "store": "Store",
+    "medicine_list": "Medicine List",
+    "find_medicine": "Find medicine",
+    "medicine_name": "Medicine name",
+    "total_as": "Total as",
+    "per_item": "Per Item",
+    "how_to_use": "How to use",
+    "x_a_day": "day",
+    "consume_time": "Consume time",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "before_eating": "Before eating",
+    "when_eating": "When eating",
+    "after_eating": "After eating",
+    "save": "Save",
+    "finished": "Finished",
+    "success": "Success",
+    "online_prescription": "Online Prescriptions",
+    "created_successfully": "Created successfully"
+  }
+}

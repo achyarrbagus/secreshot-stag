@@ -1,9 +1,33 @@
 "use client";
 
 import React from "react";
+import { useState } from "react";
 
 const HolisticAlternativeId = () => {
+  const [book, setBook] = useState("Pesan perawatan luka sekarang");
+
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Akupuntur":
+        setBook("Pesan akupuntur sekarang");
+        break;
+      case "Pijat Terapi":
+        setBook("Pesan pijat terapi sekarang");
+        break;
+      case "Penyeimbang Energi Reiki":
+        setBook("Pesan penyeimbang energi reiki sekarang");
+        break;
+      case "Bimbingan dan Sesi Yoga":
+        setBook("Pesan bimbingan yoga sekarang");
+        break;
+      case "Praktik Meditasi":
+        setBook("Pesan penyeimbang energi reiki sekarang");
+        break;
+      case "Osteopati dan Layanan Chiropraktik":
+        setBook("Pesan bimbingan yoga sekarang");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -473,7 +497,7 @@ Layanan : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section">Pesan</h3>
+            <h3 className="title-section">{book}</h3>
             <form action="#">
               <div className="row mb-3 g-3">
                 <div className="col-md-4">

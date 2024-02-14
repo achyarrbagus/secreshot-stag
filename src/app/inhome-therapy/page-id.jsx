@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 
 const InHomeTherapyId = () => {
   const redirectWa = (e) => {
@@ -29,7 +30,47 @@ Layanan : ${service.value}`);
     window.location.href = "https://t.me/InfusionJakarta";
   };
 
+  // <option value="Infus Bali Belly">Infus Bali Belly</option>
+  //                   <option value="Super Bali Belly IV">Super Bali Belly IV</option>
+  //                   <option value="Basic Immune Booster">Basic Immune Booster</option>
+  //                   <option value="Standard Immune Booster">Standard Immune Booster</option>
+  //                   <option value="Super Immune Booster">Super Immune Booster</option>
+  //                   <option value="Hangover Infusion">Hangover Infusion</option>
+  //                   <option value="Fever Infusion">Fever Infusion</option>
+  //                   <option value="Gerd / Gastritis Infusion">Gerd / Gastritis Infusion</option>
+  //                   <option value="Iron Infusion">Iron Infusion</option>
+
+  const [book, setBook] = useState("Pesan kunjungan sekarang");
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Infus Bali Belly":
+        setBook("Pesan bali belly infusion sekarang");
+        break;
+      case "Super Bali Belly IV":
+        setBook("Pesan super bali belly infusion sekarang");
+        break;
+      case "Basic Immune Booster":
+        setBook("Pesan basic immnue booster sekarang");
+        break;
+      case "Standard Immune Booster":
+        setBook("Pesan standard immnue booster sekarang");
+        break;
+      case "Super Immune Booster":
+        setBook("Pesan super immune booster sekarang");
+        break;
+      case "Hangover Infusion":
+        setBook("Pesan hangover infusion sekarang");
+        break;
+      case "Fever Infusion":
+        setBook("Pesan fever infusion sekarang");
+        break;
+      case "Gerd / Gastritis Infusion":
+        setBook("Pesan gerd infusion sekarang");
+        break;
+      case "Iron Infusion":
+        setBook("Pesan iron infusion sekarang");
+        break;
+    }
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -639,7 +680,7 @@ Layanan : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section">Book Now</h3>
+            <h3 className="title-section">{book}</h3>
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">

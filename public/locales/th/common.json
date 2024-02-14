@@ -1,0 +1,158 @@
+{
+  "app": {
+    "name": "Hairewna",
+    "logo": "hairewna.png",
+    "prefix": "+66",
+    "currency": "THB",
+    "flag": "thailand.png",
+    "title": "Hairewna",
+    "keywords": "",
+    "description": "",
+    "copyright": "ลิขสิทธิ์ © 2023 Hairewna. สงวนลิขสิทธิ์"
+  },
+  "home": {
+    "greeting": "ยินดีต้อนรับ",
+    "slogan": "มาตรวจสุขภาพที่นี่กันเถอะ",
+    "our_doctor": "คุณหมอของเรา",
+    "recommended_for_you": "แนะนำสำหรับคุณ"
+  },
+  "payment": {
+    "name": "ชื่อเต็ม",
+    "phone": "หมายเลขโทรศัพท์",
+    "detail": "รายละเอียดการจ่ายเงิน",
+    "fee": "ค่าธรรมเนียม",
+    "discount": "การลดราคา",
+    "method": "เลือกวิธีการชำระเงิน",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "รหัสโปรโมชั่น",
+    "input_promo": "ใส่รหัสโปรโมชั่น",
+    "apply_promo": "นำมาใช้",
+    "your": "การชำระเงินของคุณ",
+    "total": "การชำระเงินทั้งหมด",
+    "pay_confirm": "การยืนยัน"
+  },
+  "question": {
+    "help": "มีคำถามไหม? ทีมงานของเราพร้อมที่จะช่วยเหลือคุณโดยตรง",
+    "contact_whatsapp": "ติดต่อผ่าน WhatsApp",
+    "link_whatsapp": "#"
+  },
+  "doctor": {
+    "consultation": "ปรึกษาแพทย์",
+    "certification": "พูดคุยกับแพทย์ที่ผ่านการรับรอง",
+    "type_consult": "การปรึกษาหารือ",
+    "profile": "โปรไฟล์แพทย์",
+    "experience": "ประสบการณ์ปี",
+    "schedule": "กำหนดการให้คำปรึกษา",
+    "place_practice": "สถานที่ปฏิบัติธรรม",
+    "graduated_from": "จบการศึกษาจาก"
+  },
+  "chat": {
+    "end": "สิ้นสุดการแชท",
+    "doctor_finish": "You have ended the conversation with the patient"
+  },
+  "team": {
+    "our": "ทีมงานของเรา"
+  },
+  "booking": {
+    "title": "ตรวจสุขภาพโดยไม่ต้องไปโรงพยาบาล",
+    "description": "คุณไม่จำเป็นต้องออกไปไหนในช่วงโรคระบาดนี้ ให้เรามาตรวจสุขภาพถึงบ้านคุณ",
+    "inject": {
+      "title": "การฉีดวิตามินซีที่บ้าน",
+      "image": "ic_suntik_vit_c.png",
+      "description": "วิตามินซีเป็นสารต้านอนุมูลอิสระที่ช่วยปกป้องเซลล์ของคุณจากผลกระทบของอนุมูลอิสระ",
+      "label": "รับฉีดวิตซี"
+    },
+    "vaccine": {
+      "title": "วัคซีนที่บ้าน",
+      "image": "ic_vaksin_rumah.png",
+      "description": "ดูแลสุขภาพของคุณและครอบครัวที่บ้านและวัคซีนโดยเร็วที่สุด",
+      "label": "รับวัคซีนฉีด"
+    },
+    "covid_vaccine": {
+      "title": "รับวัคซีนฉีด",
+      "image": "ic_vaksin_covid.png",
+      "description": "รับวัคซีนโควิด-19 ง่ายๆ สะดวกที่บ้าน",
+      "label": "รับวัคซีนโควิด-19"
+    }
+  },
+  "article": {
+    "label": "บทความ",
+    "detail": "รายละเอียดบทความ"
+  },
+  "confirm": {
+    "title": "การยืนยัน",
+    "body": "คุณแน่ใจไหม ?",
+    "yes": "ใช่",
+    "no": "เลขที่"
+  },
+  "prescription": {
+    "pharmacy": "ร้านขายยา",
+    "patient_data": "ข้อมูลผู้ป่วย",
+    "full_name": "ชื่อ-นามสกุล",
+    "mobile_number": "หมายเลขโทรศัพท์มือถือ",
+    "weight": "น้ำหนัก",
+    "kg": "กก.",
+    "age": "อายุ",
+    "complaint": "คำร้องเรียน",
+    "medicine_allergy": "อาการแพ้ยา",
+    "add_manual_medicine": "เพิ่มการแพทย์ด้วยตนเอง",
+    "data_treatment_plan": "ข้อมูล - แผนการรักษา",
+    "medicine": "ยา",
+    "total": "ทั้งหมด",
+    "rule": "กฎ",
+    "time": "เวลา",
+    "notes": "หมายเหตุ",
+    "delete": "ลบ",
+    "no_data": "ไม่มีข้อมูล",
+    "add_medicine": "เพิ่มยา",
+    "required": "จำเป็น",
+    "submit": "ส่ง",
+    "preview": "แสดงตัวอย่าง",
+    "enter_medicine_name": "กรอกชื่อยา",
+    "category": "หมวดหมู่",
+    "select_category": "เลือกหมวดหมู่",
+    "internal_medicine": "อายุรกรรม",
+    "external_medicine": "อายุรกรรมภายนอก",
+    "type": "ประเภท",
+    "select_type": "เลือกประเภท",
+    "capsule": "แคปซูล",
+    "tablet": "เม็ด",
+    "ampoule": "แอมพูล",
+    "drops": "ยาหยด",
+    "syrup": "น้ำเชื่อม",
+    "bottle": "ขวด",
+    "pill": "ยา",
+    "cream": "ครีม",
+    "sachets": "ซอง",
+    "vials": "ขวดไวอัล",
+    "box": "กล่อง",
+    "tube": "หลอดบีบ",
+    "units": "หน่วย",
+    "select_units": "เลือกหน่วยทั้งหมด",
+    "details": "รายละเอียด",
+    "clean": "ทำความสะอาด",
+    "store": "การจัดเก็บ",
+    "medicine_list": "รายการยา",
+    "find_medicine": "ค้นหายา",
+    "medicine_name": "ชื่อยา",
+    "total_as": "รวมเป็น",
+    "per_item": "ต่อรายการ",
+    "how_to_use": "วิธีใช้",
+    "x_a_day": "ต่อวัน",
+    "consume_time": "เวลาใช้",
+    "morning": "เช้า",
+    "afternoon": "กลางวัน",
+    "evening": "เย็น",
+    "before_eating": "ก่อนรับประทานอาหาร",
+    "when_eating": "เมื่อรับประทานอาหาร",
+    "after_eating": "หลังรับประทานอาหาร",
+    "save": "บันทึก",
+    "finished": "เสร็จสิ้นแล้ว",
+    "success": "สำเร็จ",
+    "online_prescription": "สร้างสำเร็จแล้ว",
+    "created_successfully": "สร้างสำเร็จแล้ว"
+  }
+}

@@ -2,8 +2,11 @@
 
 import { useSelector } from "react-redux";
 import RemoteTelemedicId from "./page-id";
+import { useState } from "react";
 
 const RemoteTelemedic = () => {
+  const [book, setBook] = useState("Book a visit at your place now");
+
   const redirectWa = (e) => {
     e.preventDefault();
 
@@ -34,6 +37,21 @@ Service : ${service.value}
   };
 
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "General Practitioner Online Consultation":
+        setBook("Book for GP Consultation now");
+        break;
+      case "Medical Doctor Online Consultation":
+        setBook("Book for MD Consultation now");
+        break;
+      case "Online Medical Prescription":
+        setBook("Request for online medical prescription now");
+        break;
+      case "Online Sick Leave Letter":
+        setBook("Request for online sick leave letter now");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -410,7 +428,7 @@ Service : ${service.value}
                                 </div>
 
                                 <div
-                                  onClick={() => handleBook("Online Medical Certificate")}
+                                  onClick={() => (window.location.href = "https://www.suratsakit.cepatsehat.com/")}
                                   id="certificate"
                                   className="btn btn-warning fs-14 ms-auto"
                                 >
@@ -429,7 +447,7 @@ Service : ${service.value}
 
             <section className="book" id="book">
               <div className="container">
-                <h3 className="title-section"> Book Now </h3>
+                <h3 className="title-section"> {book}</h3>
                 <div>
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">

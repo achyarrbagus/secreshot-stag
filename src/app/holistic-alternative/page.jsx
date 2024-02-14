@@ -1,14 +1,36 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import HolisticAlternativeId from "./page-id";
 
 const HolisticAlternative = () => {
   // const lang = useSelector((state: any) => state.lang.value);
   // console.log(lang);
+  const [book, setBook] = useState("Book a visit at your place now");
 
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Acupuncture":
+        setBook("Book acupunture now");
+        break;
+      case "Therapeutic Massage":
+        setBook("Book therapeutic massage now");
+        break;
+      case "Energy-Balancing Reiki":
+        setBook("Book energy-balancing reiki now");
+        break;
+      case "Yoga Guidance and Sessions":
+        setBook("Book yoga guidance now");
+        break;
+      case "Meditation Practices":
+        setBook("Book meditation practices now");
+        break;
+      case "Osteopathy and Chiropractic services":
+        setBook("Book osteopathy and chiropractic now");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -496,7 +518,7 @@ Service : ${service.value}
 
             <section className="book" id="book">
               <div className="container">
-                <h3 className="title-section">Book Now</h3>
+                <h3 className="title-section">{book}</h3>
                 <form action="#">
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">

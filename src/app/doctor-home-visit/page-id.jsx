@@ -33,8 +33,23 @@ Layanan : ${service.value}`);
   };
 
   const [service, setService] = useState();
+  const [book, setBook] = useState("Pesan kunjungan sekarang");
 
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Kunjungan Dokter ke Rumah":
+        setBook("Pesan kunjungan dokter sekarang");
+        break;
+      case "Kunjungan Perawat ke Rumah":
+        setBook("Pesan kunjungan perawat sekarang");
+        break;
+      case "Vaksinasi anak":
+        setBook("Pesan vaksin anak sekarang");
+        break;
+      case "Pemeriksaan Kesehatan":
+        setBook("Pesan pemeriksaan kesehatan sekarang");
+        break;
+    }
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -358,7 +373,7 @@ Layanan : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section">Pesan </h3>
+            <h3 className="title-section">{book}</h3>
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">

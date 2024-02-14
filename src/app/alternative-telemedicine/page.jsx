@@ -2,6 +2,7 @@
 
 import InHomeDiagnosticId from "./page-id";
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const InHomeDiagnostic = () => {
   const redirectWa = (e) => {
@@ -33,7 +34,21 @@ Service : ${service.value}
     window.location.href = "https://t.me/InfusionJakarta";
   };
 
+  const [book, setBook] = useState("Book a visit at your place now");
+
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Teeth Whitening":
+        setBook("Book teeth whitening now");
+        break;
+      case "Secretome and Stem Cells Therapy":
+        setBook("Book stem cell therapy now");
+        break;
+      case "Ozone Therapy":
+        setBook("Book ozone therapy now");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -311,7 +326,7 @@ Service : ${service.value}
 
             <section className="book" id="book">
               <div className="container">
-                <h3 className="title-section"> Book Now </h3>
+                <h3 className="title-section"> {book} </h3>
                 <div>
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">

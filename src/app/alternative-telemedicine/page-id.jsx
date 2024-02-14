@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 const InHomeDiagnosticId = () => {
   const redirectWa = (e) => {
     e.preventDefault();
@@ -28,8 +30,21 @@ Layanan : ${service.value}`);
   const redirectTele = () => {
     window.location.href = "https://t.me/InfusionJakarta";
   };
+  const [book, setBook] = useState("Pesan kunjungan sekarang");
 
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Pemutihan gigi":
+        setBook("Pesan layanan pemutihan gigi");
+        break;
+      case "Terapi Sekretom dan Stem Cells":
+        setBook("Pesan layanan terapi stem cell");
+        break;
+      case "Terapi Ozon":
+        setBook("Pesan layanan terapi ozon");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -300,7 +315,7 @@ Layanan : ${service.value}`);
 
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section"> Pesan </h3>
+            <h3 className="title-section"> {book} </h3>
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">

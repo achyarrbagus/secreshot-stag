@@ -1,5 +1,6 @@
 "use client";
 import HomeNursingId from "./page-id";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 
 const HomeNursing = () => {
@@ -31,7 +32,18 @@ Service : ${service.value}
     window.location.href = "https://t.me/InfusionJakarta";
   };
 
+  const [book, setBook] = useState("Book a visit at your place now");
+
   const handleBook = (serviceSelect) => {
+    switch (serviceSelect) {
+      case "Wound Care":
+        setBook("Book a wound care now");
+        break;
+      case "Monitoring and Prevention":
+        setBook("Book a monitoring & prevention now");
+        break;
+    }
+
     let serviceOption = document.getElementById("service");
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
@@ -212,7 +224,7 @@ Service : ${service.value}
 
             <section className="book" id="book">
               <div className="container">
-                <h3 className="title-section">Book Now</h3>
+                <h3 className="title-section">{book}</h3>
                 <div>
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">
