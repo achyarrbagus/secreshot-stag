@@ -39,10 +39,12 @@ Service : ${service.value}
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
       case "General Practitioner Online Consultation":
-        setBook("Book for GP Consultation now");
+        window.location.replace("https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum");
+        // setBook("Book for GP Consultation now");
         break;
       case "Medical Doctor Online Consultation":
-        setBook("Book for MD Consultation now");
+        window.location.replace("https://www.sehatcepat.com/payments/dr-lia/?camp=dranak");
+        // setBook("Book for MD Consultation now");
         break;
       case "Online Medical Prescription":
         setBook("Request for online medical prescription now");

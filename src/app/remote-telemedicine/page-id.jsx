@@ -37,10 +37,12 @@ Layanan : ${service.value}`);
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
       case "Konsultasi Online Dokter Umum":
-        setBook("Pesan konsultasi dokter umum sekarang");
+        window.location.replace("https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum");
+        // setBook("Pesan konsultasi dokter umum sekarang");
         break;
       case "Konsultasi Online Dokter Spesialis":
-        setBook("Pesan konsultasi dokter spesialis sekarang");
+        window.location.replace("https://www.sehatcepat.com/payments/dr-lia/?camp=dranak");
+        // setBook("Pesan konsultasi dokter spesialis sekarang");
         break;
       case "Resep Medis Online":
         setBook("Pesan resep obat online sekarang");
