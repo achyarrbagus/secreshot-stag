@@ -1,14 +1,16 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Articles from "../../../public/assets/article/json/article.json";
 import ArticlesId from "../../../public/assets/article/json/article-id.json";
 import { useSelector } from "react-redux";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
 function Article() {
   const lang = useSelector((state) => state.lang.value);
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const [cata, setData] = useState();
 
   const navStyle = {
     "--bs-breadcrumb-divider":
@@ -16,19 +18,20 @@ function Article() {
   };
   const [id, setId] = React.useState(null);
   const [artcs, setArtcs] = React.useState();
+  const [window_, setWindow_] = React.useState(window.location.search);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const pathname = window.location.pathname;
-      const searchParams = new URLSearchParams(window.location.search);
-      const id = searchParams.get("id");
-      console.log("Nilai ID:", id);
-      if (!id) {
+      // const searchParams = new URLSearchParams(window.location.search);
+      const idx = searchParams.get("id");
+      console.log("Nilai ID:", idx);
+      if (!idx) {
         router.push("/");
       }
-      setId(id);
+      setId(idx);
     }
-  }, [window.location.search]);
+  }, [searchParams.get("id")]);
 
   const data = lang == "ID" ? ArticlesId[id] : Articles[id];
 
