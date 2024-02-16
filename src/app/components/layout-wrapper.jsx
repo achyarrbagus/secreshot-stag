@@ -6,10 +6,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import { Dropdown } from "flowbite-react";
 
 function LayoutWrapper({ children }) {
-  const router = useRouter();
-
   const lang = useSelector((state) => state.lang.value);
   const dispatch = useDispatch();
 
@@ -46,12 +45,21 @@ function LayoutWrapper({ children }) {
     <>
       <nav className="nav nav-top fixed-top">
         <div className="container">
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center gap-3">
             <Link href="/">
               <div style={{ cursor: "pointer" }} className="nav-brand">
                 <img src="/assets/img/logo.png" alt="" />
               </div>
             </Link>
+            <div style={{ cursor: "pointer" }} className="nav-brand">
+              <img src="/assets/img/Kemenkes.png" alt="" />
+            </div>
+            {/* <div style={{ cursor: "pointer" }} className="nav-brand">
+              <img src="/assets/img/logo-default-idi3.png" alt="" />
+            </div> */}
+            {/* <div style={{ cursor: "pointer" }} className="nav-brand">
+              <img src="/assets/img/logo-atensi_new.png" alt="" />
+            </div> */}
 
             <div className="btn-group ms-auto">
               {(() => {
@@ -82,13 +90,15 @@ function LayoutWrapper({ children }) {
               })()}
 
               <ul className="dropdown-menu dropdown-menu-end">
-                <li>
-                  <button onClick={() => dispatch(setLang("EN"))} className="dropdown-item" type="button">
+                <li className="">
+                  <button onClick={() => dispatch(setLang("EN"))} className="dropdown-item d-flex gap-1" type="button">
+                    <img src="assets/img/flag/ID Flag_new.png" alt="" className="mt-1" width={25} />
                     English
                   </button>
                 </li>
-                <li>
-                  <button onClick={() => dispatch(setLang("ID"))} className="dropdown-item" type="button">
+                <li className="">
+                  <button onClick={() => dispatch(setLang("ID"))} className="dropdown-item d-flex gap-1" type="button">
+                    <img src="assets/img/flag/EN Flag_new.png" alt="" className="mt-1" width={25} />
                     Indonesia
                   </button>
                 </li>

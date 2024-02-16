@@ -45,7 +45,8 @@ Layanan : ${service.value}`);
         // setBook("Pesan konsultasi dokter spesialis sekarang");
         break;
       case "Resep Medis Online":
-        setBook("Pesan resep obat online sekarang");
+        window.location.replace("https://www.sehatcepat.com/payments/dr-ayu/?camp=resepobat");
+        // setBook("Pesan resep obat online sekarang");
         break;
       case "Sertifikat Medis Online":
         setBook("Pesan surat sakit online sekarang");
@@ -260,7 +261,7 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseThree"
                   >
-                    <i className="icon-menu-icon-remotetelemedicine03 me-2 fs-32"></i> Resep Medis Online
+                    <i className="icon-menu-icon-remotetelemedicine03 me-2 fs-32"></i> Resep Obat Online
                   </button>
                 </h2>
                 <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -432,8 +433,8 @@ Layanan : ${service.value}`);
                     <option>Pilih Layanan</option>
                     <option value="Konsultasi Online Dokter Umum">Konsultasi Online Dokter Umum</option>
                     <option value="Konsultasi Online Dokter Spesialis">Konsultasi Online Dokter Spesialis</option>
-                    <option value="Resep Medis Online">Resep Medis Online</option>
-                    <option value="Sertifikat Medis Online">Sertifikat Medis Online</option>
+                    <option value="Resep Obat Online">Resep Obat Online</option>
+                    <option value="Surat Sakit Online">Surat Sakit Online</option>
                   </select>
                 </div>
               </div>

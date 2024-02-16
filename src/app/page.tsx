@@ -123,6 +123,7 @@ Service Name : ${service.value}`);
                       <span className="title-service"> In-Home IV Therapy & More </span>
                     </Link>
                   </div>
+
                   <div className="col-4">
                     <a href="/alternative-telemedicine" className="box-service">
                       <i className="icon-menu-alternative-telemedicine"></i>
@@ -419,7 +420,7 @@ Service Name : ${service.value}`);
                           Articles.map((item: any, index: number) => (
                             <>
                               <SwiperSlide key={index}>
-                                <Link href={`/article/${index}`}>
+                                <Link href={`/article?id=${index}`}>
                                   <div className="card-slide-article">
                                     <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
                                     <div className="name-article">

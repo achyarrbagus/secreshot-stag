@@ -5,6 +5,7 @@ import Articles from "../../../../public/assets/article/json/article.json";
 import ArticlesId from "../../../../public/assets/article/json/article-id.json";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
+import LayoutWrapper from "@/app/components/layout-wrapper";
 
 function Article() {
   const navStyle = {
@@ -27,7 +28,7 @@ function Article() {
 
     const articleId = pathSegments[2];
     setId(articleId);
-  }, []);
+  }, [id]);
 
   const data = lang == "ID" ? ArticlesId[id] : Articles[id];
 

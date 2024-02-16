@@ -400,7 +400,7 @@ Layanan : ${service.value}`);
                       Articles.map((item: any, index: number) => (
                         <>
                           <SwiperSlide>
-                            <Link href={`/article/${index}`}>
+                            <Link href={`/article?id=${index}`}>
                               <div className="card-slide-article">
                                 <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
                                 <div className="name-article">

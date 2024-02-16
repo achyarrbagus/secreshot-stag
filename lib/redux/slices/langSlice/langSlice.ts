@@ -4,7 +4,7 @@ import { PayloadAction } from "@reduxjs/toolkit";
 export const langSlice = createSlice({
   name: "lang",
   initialState: {
-    value: "EN",
+    value: "ID",
   },
   reducers: {
     setLang: (state, action: PayloadAction<string>) => {

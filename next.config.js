@@ -6,7 +6,7 @@ const withPWA = require("next-pwa")({
 const nextConfig = {};
 
 module.exports = withPWA({
-  reactStrictMode: true,
+  reactStrictMode: false,
   env: {
     URL_API: process.env.URL_API,
     URL_NEXT: process.env.URL_NEXT,
