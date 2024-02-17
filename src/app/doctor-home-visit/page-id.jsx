@@ -333,8 +333,6 @@ Layanan : ${service.value}`);
                               <h6 className="mb-1">Tes Asam Urat </h6>
                               <span>
                                 Mengukur kadar asam urat untuk evaluasi fungsi ginjal dan mendiagnosis kondisi seperti asam urat.
-                                *Pengukuran Tekanan Darah Evaluasi tekanan darah arteri sebagai indikator penting kesehatan
-                                kardiovaskular.
                               </span>
                             </li>
                             <li className="mb-2">
