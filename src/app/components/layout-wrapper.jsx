@@ -92,13 +92,13 @@ function LayoutWrapper({ children }) {
               <ul className="dropdown-menu dropdown-menu-end">
                 <li className="">
                   <button onClick={() => dispatch(setLang("EN"))} className="dropdown-item d-flex gap-1" type="button">
-                    <img src="assets/img/flag/ID Flag_new.png" alt="" className="mt-1" width={25} />
+                    <img src="assets/img/flag/EN Flag_new.png" alt="" className="mt-1" width={25} />
                     English
                   </button>
                 </li>
                 <li className="">
                   <button onClick={() => dispatch(setLang("ID"))} className="dropdown-item d-flex gap-1" type="button">
-                    <img src="assets/img/flag/EN Flag_new.png" alt="" className="mt-1" width={25} />
+                    <img src="assets/img/flag/ID Flag_new.png" alt="" className="mt-1" width={25} />
                     Indonesia
                   </button>
                 </li>
