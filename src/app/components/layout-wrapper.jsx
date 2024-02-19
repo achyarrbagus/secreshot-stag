@@ -64,7 +64,7 @@ function LayoutWrapper({ children }) {
             </div>
 
             <div style={{ cursor: "pointer" }} className="nav-brand hidden-logo">
-              <img src="/assets/img/idi-removebg-preview_1.png" style={{ width: "50px" }} alt="" />
+              <img src="/assets/img/idi-removebg-preview_1.png" style={{ width: "40px" }} alt="" />
             </div>
 
             <div className="btn-group ms-auto">
@@ -113,6 +113,7 @@ function LayoutWrapper({ children }) {
           </div>
         </div>
       </nav>
+      <div className="" style={{ height: "20px" }}></div>
       {children}
 
       <OverlayTrigger
