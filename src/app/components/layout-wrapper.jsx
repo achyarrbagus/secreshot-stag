@@ -10,6 +10,7 @@ import { Dropdown } from "flowbite-react";
 
 function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
+
   const dispatch = useDispatch();
 
   React.useEffect(() => {
@@ -54,12 +55,17 @@ function LayoutWrapper({ children }) {
             <div style={{ cursor: "pointer" }} className="nav-brand">
               <img src="/assets/img/Kemenkes.png" alt="" />
             </div>
-            {/* <div style={{ cursor: "pointer" }} className="nav-brand">
-              <img src="/assets/img/logo-default-idi3.png" alt="" />
-            </div> */}
-            {/* <div style={{ cursor: "pointer" }} className="nav-brand">
-              <img src="/assets/img/logo-atensi_new.png" alt="" />
-            </div> */}
+            <div style={{ cursor: "pointer" }} className="nav-brand hidden-logo">
+              <img
+                onClick={() => window.location.replace("https://atensi.or.id/")}
+                src="/assets/img/Logo_Atensi-removebg-preview.png"
+                alt=""
+              />
+            </div>
+
+            <div style={{ cursor: "pointer" }} className="nav-brand hidden-logo">
+              <img src="/assets/img/idi-removebg-preview_1.png" style={{ width: "50px" }} alt="" />
+            </div>
 
             <div className="btn-group ms-auto">
               {(() => {
