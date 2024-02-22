@@ -12,14 +12,10 @@ import { Spinner } from 'flowbite-react';
 
 
 
-function Layout({ children }) {
+export default function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
   const dispatch = useDispatch()
-  const searchParams = useSearchParams();
-
-
   
-
   React.useEffect(() => {
     // Hotjar tracking code
     (function (h, o, t, j, a, r) {
@@ -49,14 +45,14 @@ function Layout({ children }) {
     })(window, document, "script", "dataLayer", "GTM-PFX6ZWQ4");
 
 
-    const lang = searchParams.get("lang");
-    if(lang==="en"){
-      dispatch(setLang("EN"))
-    }
+    // const lang = searchParams.get("lang");
+    // if(lang==="en"){
+    //   dispatch(setLang("EN"))
+    // }
 
 
 
-  }, [searchParams]);
+  }, []);
 
 
 
@@ -265,19 +261,4 @@ function Layout({ children }) {
       <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     </>
   );
-}
-
-
-export default function LayoutWrapper({children}){
-
-
-  
-  return(
-    <>
-     <Suspense fallback={<>
-     </>}>
-     <Layout children={children}/>
-    </Suspense>
-    </>
-  )
 }
