@@ -12,11 +12,10 @@ import React,{ Suspense } from "react";
 
 export default function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
+  const dispatch = useDispatch()
   
 
   React.useEffect(() => {
-
-
     // Hotjar tracking code
     (function (h, o, t, j, a, r) {
       h.hj =
@@ -119,7 +118,7 @@ export default function LayoutWrapper({ children }) {
             <div className="btn-group ms-auto">
               {(() => {
                 switch (lang) {
-                  case "idn":
+                  case "ID":
                     return (
                       <button
                         type="button"
@@ -146,13 +145,13 @@ export default function LayoutWrapper({ children }) {
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li className="">
-                  <button onClick={() => setLang("en")} className="dropdown-item d-flex gap-1" type="button">
+                  <button onClick={() => dispatch(setLang("EN")) } className="dropdown-item d-flex gap-1" type="button">
                     <img src="assets/img/flag/EN Flag_new.png" alt="" className="mt-1" width={25} />
                     English
                   </button>
                 </li>
                 <li className="">
-                  <button onClick={() => setLang("idn")} className="dropdown-item d-flex gap-1" type="button">
+                  <button onClick={() => dispatch(setLang("ID")) } className="dropdown-item d-flex gap-1" type="button">
                     <img src="assets/img/flag/ID Flag_new.png" alt="" className="mt-1" width={25} />
                     Indonesia
                   </button>

@@ -76,7 +76,7 @@ function Article() {
 
               {(() => {
                 switch (lang) {
-                  case "id":
+                  case "ID":
                     return (
                       <>
                         <div className="col-md-4">

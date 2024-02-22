@@ -70,7 +70,7 @@ Service : ${service.value}
   const lang = useSelector((state) => state.lang.value);
 
   switch (lang) {
-    case "idn":
+    case "ID":
       return (
         <>
           <InHomeTherapyId />
