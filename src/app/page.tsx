@@ -6,14 +6,31 @@ import "swiper/css";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HomeId from "./page-id";
+import { setLang } from "../../lib/redux/slices/langSlice/langSlice";
 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useRouter, useSearchParams } from "next/navigation";
+import { UseDispatch } from "react-redux";
+import { Suspense } from "react";
+
 
 import { useEffect, useState } from "react";
+
 import { Autoplay } from "swiper/modules";
 import Articles from "../../public/assets/article/json/article.json";
 
 const Home = () => {
+  const searchParams = useSearchParams();
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    const lang = searchParams.get("lang")
+    if(lang === "en"){
+      dispatch(setLang("EN"))
+    }
+
+  
+  },[])
+
   const CutText = (text: string) => {
     let sentences = text.split("");
     // Mengambil 100 kalimat pertama
@@ -493,4 +510,13 @@ Service Name : ${service.value}`);
   }
 };
 
-export default Home;
+
+
+
+export default function App() {
+  return (
+    <Suspense fallback={<div>Loading</div>}>
+      <Home />
+    </Suspense>
+  );
+}
