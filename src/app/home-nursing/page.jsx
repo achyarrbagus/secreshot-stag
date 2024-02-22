@@ -1,9 +1,24 @@
 "use client";
 import HomeNursingId from "./page-id";
-import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector,useDispatch } from "react-redux";
+import { useState,Suspense,useEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
+
 
 const HomeNursing = () => {
+
+  const searchParams = useSearchParams();
+  const dispatch = useDispatch();
+   useEffect(()=>{
+    const lang = searchParams.get("lang")
+    if(lang === "en"){
+      dispatch(setLang("EN"))
+    }
+
+  
+  },[])
+
   const redirectWa = (e) => {
     e.preventDefault();
 
@@ -481,4 +496,12 @@ Service : ${service.value}
   }
 };
 
-export default HomeNursing;
+
+
+export default function App() {
+  return (
+    <Suspense fallback={<div>Loading</div>}>
+      <HomeNursing />
+    </Suspense>
+  );
+}

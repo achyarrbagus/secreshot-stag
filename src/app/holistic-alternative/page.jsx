@@ -1,12 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector,useDispatch } from "react-redux";
+import { useState,Suspense,useEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
+
 import HolisticAlternativeId from "./page-id";
 
 const HolisticAlternative = () => {
-  // const lang = useSelector((state: any) => state.lang.value);
-  // console.log(lang);
+  const searchParams = useSearchParams();
+  const dispatch = useDispatch();
+   useEffect(()=>{
+    const lang = searchParams.get("lang")
+    if(lang === "en"){
+      dispatch(setLang("EN"))
+    }
+
+  
+  },[])
+
+
   const [book, setBook] = useState("Book a visit at your place now");
 
   const handleBook = (serviceSelect) => {
@@ -563,4 +576,13 @@ Service : ${service.value}
   }
 };
 
-export default HolisticAlternative;
+
+
+
+export default function App() {
+  return (
+    <Suspense fallback={<div>Loading</div>}>
+      <HolisticAlternative />
+    </Suspense>
+  );
+}

@@ -1,10 +1,23 @@
 "use client";
-import { useState } from "react";
 
-import { useSelector } from "react-redux";
 import DoctorHomeVisitId from "./page-id";
+import { useSelector,useDispatch } from "react-redux";
+import { useState,Suspense,useEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
+
 
 const DoctorHomeVisit = () => {
+  const searchParams = useSearchParams();
+  const dispatch = useDispatch();
+   useEffect(()=>{
+    const lang = searchParams.get("lang")
+    if(lang === "en"){
+      dispatch(setLang("EN"))
+    }
+
+  
+  },[])
   const redirectWa = (e) => {
     e.preventDefault();
 
@@ -638,4 +651,13 @@ Service : ${service.value}
   }
 };
 
-export default DoctorHomeVisit;
+
+
+
+export default function App() {
+  return (
+    <Suspense fallback={<div>Loading</div>}>
+      <DoctorHomeVisit />
+    </Suspense>
+  );
+}

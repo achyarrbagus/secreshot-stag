@@ -1,9 +1,23 @@
 "use client";
 import InHomeTherapyId from "./page-id";
-import { useSelector } from "react-redux";
-import { useState } from "react";
+import { useSelector,useDispatch } from "react-redux";
+import { useState,Suspense,useEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 
 const InHomeTherapy = () => {
+
+  const searchParams = useSearchParams();
+  const dispatch = useDispatch();
+   useEffect(()=>{
+    const lang = searchParams.get("lang")
+    if(lang === "en"){
+      dispatch(setLang("EN"))
+    }
+
+  
+  },[])
+
   const [book, setBook] = useState("Book a visit at your place now");
 
   const redirectWa = (e) => {
@@ -734,4 +748,11 @@ Service : ${service.value}
       );
   }
 };
-export default InHomeTherapy;
+
+export default function App() {
+  return (
+    <Suspense fallback={<div>Loading</div>}>
+      <InHomeTherapy />
+    </Suspense>
+  );
+}
