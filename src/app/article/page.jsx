@@ -33,7 +33,7 @@ function Article() {
     }
   }, [searchParams]);
 
-  const data = lang == "idn" ? ArticlesId[id] : Articles[id];
+  const data = lang == "ID" ? ArticlesId[id] : Articles[id];
 
   return (
     <>

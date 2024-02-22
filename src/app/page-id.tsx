@@ -105,10 +105,10 @@ Layanan : ${service.value}`);
                 </Link>
               </div>
               <div className="col-4">
-                <a href="/alternative-telemedicine" className="box-service">
+                <Link href="/alternative-telemedicine" className="box-service">
                   <i className="icon-menu-alternative-telemedicine"></i>
                   <span className="title-service"> Layanan Alternatif </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

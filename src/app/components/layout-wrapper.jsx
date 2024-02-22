@@ -7,12 +7,17 @@ import Tooltip from "react-bootstrap/Tooltip";
 import { Dropdown } from "flowbite-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import React,{ Suspense } from "react";
+import { Spinner } from 'flowbite-react';
 
 
 
-export default function LayoutWrapper({ children }) {
+
+function Layout({ children }) {
   const lang = useSelector((state) => state.lang.value);
   const dispatch = useDispatch()
+  const searchParams = useSearchParams();
+
+
   
 
   React.useEffect(() => {
@@ -42,7 +47,16 @@ export default function LayoutWrapper({ children }) {
       j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-PFX6ZWQ4");
-  }, []);
+
+
+    const lang = searchParams.get("lang");
+    if(lang==="en"){
+      dispatch(setLang("EN"))
+    }
+
+
+
+  }, [searchParams]);
 
 
 
@@ -162,8 +176,9 @@ export default function LayoutWrapper({ children }) {
         </div>
       </nav>
       <div className="" style={{ height: "20px" }}></div>
-      {children}
-
+    
+          {children}
+       
       <OverlayTrigger
         placement="left"
         overlay={
@@ -252,3 +267,18 @@ export default function LayoutWrapper({ children }) {
   );
 }
 
+
+export default function LayoutWrapper({children}){
+
+
+  
+  return(
+    <>
+     <Suspense fallback={<>
+      <Spinner aria-label="Left-aligned spinner example" />
+     </>}>
+     <Layout children={children}/>
+    </Suspense>
+    </>
+  )
+}
