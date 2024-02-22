@@ -1,19 +1,28 @@
 "use client";
-import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useSelector, useDispatch } from "react-redux";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import { Dropdown } from "flowbite-react";
+import { useRouter, useSearchParams } from "next/navigation";
+import React,{ Suspense } from "react";
 
-function LayoutWrapper({ children }) {
+
+
+function Layout({ children }) {
   const lang = useSelector((state) => state.lang.value);
-
+  const searchParams = useSearchParams();
   const dispatch = useDispatch();
 
   React.useEffect(() => {
+
+    // set lang by param in global wripper
+    const lang = searchParams.get("lang")
+    if(lang === "en"){
+       dispatch(setLang("en"))
+    }
+
     // Hotjar tracking code
     (function (h, o, t, j, a, r) {
       h.hj =
@@ -40,10 +49,71 @@ function LayoutWrapper({ children }) {
       j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-PFX6ZWQ4");
-  }, []);
+  }, [searchParams]);
+
+  const initLang = (lang)=>{
+    dispatch(setLang(lang))
+
+  const currentURL = window.location.href;
+
+  const url = new URL(currentURL);
+
+  const searchParams = url.searchParams;
+  searchParams.set("lang", lang);
+
+  const newURL = url.href;
+
+  window.location.assign(newURL);
+  window.location.assign(newURL);
+  }
+
+
 
   return (
     <>
+     <head>
+        <meta charSet="UTF-8" />
+        <title>Cepat Sehat</title>
+        {/* <!-- swiper --> */}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        {/* <!-- icons --> */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css"
+          integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossOrigin="anonymous"
+        />
+
+        {/* <!-- favicon --> */}
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg" />
+
+        {/* <!-- fontello --> */}
+        <link rel="stylesheet" href="assets/fontello/css/csehat.css" />
+
+        {/* <!-- swiper --> */}
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+        {/* <!-- bootstrap --> */}
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+        {/* <!-- custom --> */}
+        <link rel="stylesheet" href="assets/css/style.css" />
+      </head>
       <nav className="nav nav-top fixed-top">
         <div className="container">
           <div className="d-flex align-items-center gap-3">
@@ -70,7 +140,7 @@ function LayoutWrapper({ children }) {
             <div className="btn-group ms-auto">
               {(() => {
                 switch (lang) {
-                  case "ID":
+                  case "idn":
                     return (
                       <button
                         type="button"
@@ -97,13 +167,13 @@ function LayoutWrapper({ children }) {
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li className="">
-                  <button onClick={() => dispatch(setLang("EN"))} className="dropdown-item d-flex gap-1" type="button">
+                  <button onClick={() => initLang("en")} className="dropdown-item d-flex gap-1" type="button">
                     <img src="assets/img/flag/EN Flag_new.png" alt="" className="mt-1" width={25} />
                     English
                   </button>
                 </li>
                 <li className="">
-                  <button onClick={() => dispatch(setLang("ID"))} className="dropdown-item d-flex gap-1" type="button">
+                  <button onClick={() => initLang("idn")} className="dropdown-item d-flex gap-1" type="button">
                     <img src="assets/img/flag/ID Flag_new.png" alt="" className="mt-1" width={25} />
                     Indonesia
                   </button>
@@ -204,4 +274,13 @@ function LayoutWrapper({ children }) {
   );
 }
 
-export default LayoutWrapper;
+
+export default function LayoutWrapper({children}) {
+  return (
+    <Suspense fallback={<div>Loading page</div>}>
+      <Layout>{children}</Layout>
+    </Suspense>
+  );
+}
+
+

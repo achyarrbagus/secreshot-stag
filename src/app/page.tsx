@@ -65,7 +65,7 @@ Service Name : ${service.value}`);
   const lang = useSelector((state: any) => state.lang.value);
 
   switch (lang) {
-    case "ID":
+    case "idn":
       return (
         <>
           <HomeId />
