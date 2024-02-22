@@ -52,7 +52,7 @@ function LayoutWrapper({ children }) {
                 <img src="/assets/img/logo.png" alt="" />
               </div>
             </Link>
-            <div style={{ cursor: "pointer" }} className="nav-brand">
+            {/* <div style={{ cursor: "pointer" }} className="nav-brand">
               <img src="/assets/img/Kemenkes.png" alt="" />
             </div>
             <div style={{ cursor: "pointer" }} className="nav-brand hidden-logo">
@@ -65,7 +65,7 @@ function LayoutWrapper({ children }) {
 
             <div style={{ cursor: "pointer" }} className="nav-brand hidden-logo">
               <img src="/assets/img/idi-removebg-preview_1.png" style={{ width: "40px" }} alt="" />
-            </div>
+            </div> */}
 
             <div className="btn-group ms-auto">
               {(() => {
@@ -157,10 +157,12 @@ function LayoutWrapper({ children }) {
           </div>
           <div className="row mt-4">
             <div className="col-md-8 text-white">
-              <h4 className="fs-14">PT Cepat Sehat Indonesia</h4>
+              <h4 className="fs-14">Klinik Cepat Sehat</h4>
               <p>
-                Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramat jati, Kota Adm. Jakarta Timur, Provinsi DKI Jakarta 13510 <br />
-                sehatcepat.com
+                Nomor Registrasi : 04102100035090001
+              </p>
+              <p>
+              Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramat Jati, Kota Adm. Jakarta Timur, Provinsi DKI Jakarta 13510 <br />
               </p>
             </div>
             <div className="col-md-12">

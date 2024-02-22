@@ -8,6 +8,9 @@ import { Providers } from "../../lib/providers";
 import LayoutWrapper from "../app/components/layout-wrapper";
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/icon.png',
+  },
   title: "Cepat Sehat",
   description: "We deliver personalized and compassionate healthcare to your home through our experienced professionals",
 };
