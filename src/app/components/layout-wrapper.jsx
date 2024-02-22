@@ -49,22 +49,10 @@ function Layout({ children }) {
       j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-PFX6ZWQ4");
-  }, [searchParams]);
+  }, []);
 
   const initLang = (lang)=>{
     dispatch(setLang(lang))
-
-  const currentURL = window.location.href;
-
-  const url = new URL(currentURL);
-
-  const searchParams = url.searchParams;
-  searchParams.set("lang", lang);
-
-  const newURL = url.href;
-
-  window.location.assign(newURL);
-  window.location.assign(newURL);
   }
 
 
