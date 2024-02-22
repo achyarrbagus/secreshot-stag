@@ -33,5 +33,12 @@
     "@types/react-dom": "^18",
     "@types/swiper": "^6.0.0",
     "typescript": "^5"
-  }
+  },
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "next-i18next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
 }
