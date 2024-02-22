@@ -10,18 +10,14 @@ import React,{ Suspense } from "react";
 
 
 
-function Layout({ children }) {
+export default function Layout({ children }) {
   const lang = useSelector((state) => state.lang.value);
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
 
   React.useEffect(() => {
 
-    // set lang by param in global wripper
-    const lang = searchParams.get("lang")
-    if(lang === "en"){
-       dispatch(setLang("en"))
-    }
+    
 
     // Hotjar tracking code
     (function (h, o, t, j, a, r) {
@@ -262,13 +258,5 @@ function Layout({ children }) {
   );
 }
 
-
-export default function LayoutWrapper({children}) {
-  return (
-    <Suspense fallback={<div>Loading page</div>}>
-      <Layout>{children}</Layout>
-    </Suspense>
-  );
-}
 
 
