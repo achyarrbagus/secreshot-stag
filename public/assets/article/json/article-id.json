@@ -118,5 +118,40 @@
         "Desc": "Dalam tingkat yang parah, perasaan tertekan dan stres dapat menyebabkan seseorang mengalami perubahan perilaku. Kondisi ini menyebabkan menurunnya nafsu makan dan fokus, menghindar dari tanggung jawab, gelisah, mudah marah, dan mencari pelampiasan misalnya dengan mengonsumsi alkohol dan merokok. Jangan anggap remeh stres yang berlangsung lama apalagi jika muncul berulang kali. Jika hal itu terjadi, segera periksakan diri ke dokter atau psikiater untuk mengatasi stresnya. Pemeriksaan diperlukan untuk mengetahui secara pasti apa penyebab munculnya gejala stres dan mencegah komplikasi yang tidak diinginkan."
       }
     ]
+  },
+  {
+    "Id": 5,
+    "Title": "Nutrisi bagi Penderita Diabetes & Hipertensi",
+    "Desc": "Diabetes Mellitus (DM) merupakan penyakit sistemik yang berdampak pada seluruh bagian tubuh. Sampai saat ini belum ada obat yang dapat menyembuhkan sakit DM, tetapi dapat dikendalikan melalui obat-obatan dan perubahan pola hidup. Dan hipertensi merupakan penyakit gangguan tekanan darah yang melebih tekanan darah normal untuk sistolik - di atas 140 mmHg dan untuk diastolik – di atas 90 mmHg.",
+    "DescCard": "Diabetes Mellitus (DM) merupakan penyakit sistemik yang berdampak pada seluruh bagia.",
+    "PathImg": "/assets/img/article/article05.jpg",
+    "SubArticle": [
+      {
+        "Title": "Siapa saja yang bisa terkena DM / Hipertensi ?",
+        "Desc": "Yaitu orang dengan usia di atas 45 tahun dan usia di bawah 45 tahun, terutama dengan kegemukan, yang disertai dengan faktor risiko seperti : Kebiasaan tidak aktif bergerak/ olahraga, turunan pertama dari orang tua dengan DM, riwayat melahirkan bayi dengan Berat Badan (BB) lahir bayi > 4000 gram atau riwayat DM gestasional, hipertensi (> 140/90 mmHg), kolesterol HDL < 35 mg/dL dan atau Trigliserida > 250 mg/dL, menderita polycystic ovarial syndrome (PCOs) atau keadaan lain yang terkait dengan resistensi insulin, adanya riwayat toleransi terganggu atau glukosa darah puasa terganggu sebelumnya (PREDIABETES), memiliki riwayat penyakit jantung."
+      },{
+        "Title": "Berikut faktor-faktor yang mempertinggi risiko terkena DM & Hipertensi  :",
+        "Desc": "Faktor-faktor terkait Stress, seperti makan berlebih (asupan makanan tinggi gula, tinggi lemak dan tinggi garam, merokok, minum minuman beralkohol, mangguan saraf dan sistem endokrin : terjadi peningkatan hormon kortisol dan sekresi abnormal pada hormon seksual, kurang Olahraga/ beraktivitas fisik, faktor genetik dan penuaan."
+      },{
+        "Title": "",
+        "Desc": "Makan makanan berlebih bukan hanya berarti makan dengan jumlah porsi melebihi porsi normal, melainkan mengkonsumsi makanan atau minuman yang tinggi kadar gulanya seperti biskuit manis dengan krim, es krim, coklat batangan, soda, permen, minuman kaleng atau kemasan lainnya. Semakin sering kita makan makanan yang tinggi gula maka semakin memperberat kerja organ insulin dan mempertinggi risiko terkena Diabetes. Juga perlu untuk menghindari makan makanan yang berlemak/ digoreng dan bersantan, karena kandungan kolesterol pada santan sangat tinggi!! ."
+      },{
+        "Title": "Porsi Makan Yang Baik",
+        "Desc": "Berikut porsi makanan yang dianjurkan bagi penderita Diabetes dalam satu porsi piring dengan takaran sebagai berikut: 50% berupa sayuran, 25% karbohidrat (nasi merah, atau makanan - karbohidrat lainnya) , 25% untuk makanan berprotein, ditambah 1 gelas air non kalori."
+      },{
+        "Title": "",
+        "Desc": "Untuk durasi makan bagi penderita Diabetes, yang sebaiknya tetap makan besar 3 kali sehari ditambah snack 3 kali sehari pula, dengan tujuan untuk menjaga kestabilan kadar gula darah setiap waktu. Jenis snack lebih disarankan berupa buah, sayuran rebus, atau segelas susu. Adapun jenis-jenis makanan yang mengandung lemak yang baik (Good Fats) seperti alpukat, salmon, kacang-kacangan,  dan yang termasuk lemak yang merugikan tubuh (Bad Fats) antara lain: keju, es krim, kentang goreng dan lainnya."
+      },{
+        "Title": "",
+        "Desc": "Metode memasak makanan yang disarankan bagi penderita DM dan Hipertensi yaitu dengan mengukus, merebus, pepes, memanggang, dan berkuah, dan yang paling penting adalah menggunakan bahan makanan yang alamiah dan segar. Sedangkan metode memasak yang tidak disarankan berupa ditumis, digoreng, deep-fried, diawetkan dan diasap karena selain tinggi lemak juga tinggi garam terutama untuk makanan yang diawetkan."
+      },{
+        "Title": "DASH (Dietary Approaches to Stop Hypertension) adalah Pendekatan Pengaturan Asupan Diet untuk menghentikan Hipertensi merujuk pada pengaturan makan sebagai berikut:",
+        "Desc": "Makanan mengandung tinggi serat seperti gandum, buah buahan, sayuran dan susu rendah lemak, makan makanan tinggi kandungan Kalsium, Natrium dan Magnesium, kurangi mengkonsumsi daging, makanan yang manis dan mengandung gula, kurangi makan makanan yang mengandung lemak jenuh, kolesterol serta tinggi kandungan garam."
+      },{
+        "Title": "",
+        "Desc": "Agar penderita Diabetes dan Hipertensi dapat tetap hidup sehat dan berkualitas maka diperlukan upaya untuk merubah perilaku individu dalam memilih makanan yang tepat dan sehat. Jangan lupa tetap melakukan tes kesehatan rutin dengan dokter kami di cepatsehat.com."
+      }
+   
+    ]
   }
 ]

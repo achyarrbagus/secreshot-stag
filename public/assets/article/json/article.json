@@ -161,5 +161,39 @@
         "Desc": "In severe levels, feeling depressed and stressed can cause a person to experience behavioural changes. This condition causes a decrease in appetite and focus, avoids responsibilities, nervous, gets angry easily, and looks for venting for example by consuming alcohol and smoking.Do not underestimate the stress that lasts for a long time especially if it appears repeatedly. If it happens, check with a doctor or psychiatrist immediately to deal with the stress. Examination is needed to find out exactly what causes stress symptoms to appear and prevent unwanted complications."
       }
     ]
+  },{
+    "Id": 5,
+    "Title": "Nutrition for Diabetes & Hypertension Sufferers",
+    "Desc": "Diabetes Mellitus (DM) is a systemic disease that affects all parts of the body. Until now there is no medicine that can cure DM, but it can be controlled through medication and lifestyle changes. And hypertension is a blood pressure disorder that exceeds normal blood pressure for systolic - above 140 mmHg and for diastolic - above 90 mmHg.",
+    "DescCard": "Diabetes Mellitus (DM) is a systemic disease that affects all parts of the body.",
+    "PathImg": "/assets/img/article/article05.jpg",
+    "SubArticle": [
+      {
+        "Title": "Who can get DM / Hypertension?",
+        "Desc": "The habit of not actively moving/exercising, the first derivative of a parent with DM, history of giving birth to a baby with birth weight (BW) > 4000 grams or history of gestational DM, hypertension (> 140/90 mmHg), HDL cholesterol < 35 mg/dL and/or triglycerides > 250 mg/dL, suffering from polycystic ovarial syndrome (PCOs) or other conditions associated with insulin resistance, previous history of impaired tolerance or impaired fasting blood glucose (PREDIABETES), have a history of heart disease."
+      },{
+        "Title": "The following factors increase the risk of developing DM & Hypertension: ?",
+        "Desc": "Stress related factors, such excessive eating (intake of foods high in sugar, high in fat and high in salt, smoke, drink alcoholic beverages, nervous and endocrine system disorders: there is an increase in the hormone cortisol and abnormal secretion of sexual hormones, lack of exercise/physical activity, genetic factors and aging."
+      },{
+        "Title": "",
+        "Desc": "Eating excess food does not only mean eating more than the normal portion, but also consuming food or drinks that are high in sugar, such as sweet biscuits with cream, ice cream, chocolate bars, soda, candy, canned or other packaged drinks. The more often we eat foods that are high in sugar, the more difficult it is for the insulin organ to work and increase the risk of developing diabetes. It is also necessary to avoid eating fatty/fried foods and coconut milk, because the cholesterol content in coconut milk is very high!! ."
+      },{
+        "Title": "Good Portions",
+        "Desc": "The following are the recommended portions of food for Diabetes sufferers in one plate with the following measurements: 50% in the form of vegetables, 25% carbohydrates (brown rice, or other carbohydrate foods), 25% for protein foods and Plus 1 glass of non-calorie water."
+      },{
+        "Title": "",
+        "Desc": "For the duration of meals for diabetes sufferers, it is best to stick to eating 3 large meals a day plus snacks 3 times a day, with the aim of maintaining stable blood sugar levels at all times. The preferred type of snack is fruit, boiled vegetables, or a glass of milk. The types of food that contain good fats (Good Fats) such as avocado, salmon, nuts, and those that include fats that are detrimental to the body (Bad Fats) include: cheese, ice cream, French fries and others."
+      },{
+        "Title": "",
+        "Desc": "The recommended food cooking methods for DM and hypertension sufferers are steaming, boiling, spicy, grilling and gravy, and the most important thing is to use natural and fresh food ingredients. Meanwhile, cooking methods that are not recommended are sautéed, fried, deep-fried, preserved and smoked because apart from being high in fat, they are also high in salt, especially for preserved foods."
+      },{
+        "Title": "DASH (Dietary Approaches to Stop Hypertension) is a Dietary Intake Management Approach to stop Hypertension referring to food management as follows:",
+        "Desc": "foods high in fiber include whole grains, fruit, vegetables and low-fat milk, eat foods high in Calcium, Sodium and Magnesium, reduce consumption of meat, foods that are sweet and contain sugar, reduce eating foods that contain saturated fat, cholesterol and high salt content."
+      },{
+        "Title": "",
+        "Desc": "So that people with diabetes and hypertension can continue to live a healthy and quality life, efforts are needed to change individual behavior in choosing appropriate and healthy food. Don't forget to keep doing regular medichal checkup with our doctors at cepatsehat.com."
+      }
+   
+    ]
   }
 ]
