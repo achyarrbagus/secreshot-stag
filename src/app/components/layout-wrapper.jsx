@@ -275,7 +275,6 @@ export default function LayoutWrapper({children}){
   return(
     <>
      <Suspense fallback={<>
-      <Spinner aria-label="Left-aligned spinner example" />
      </>}>
      <Layout children={children}/>
     </Suspense>
