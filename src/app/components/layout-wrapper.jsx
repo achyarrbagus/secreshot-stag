@@ -10,14 +10,12 @@ import React,{ Suspense } from "react";
 
 
 
-export default function Layout({ children }) {
+export default function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
-  const searchParams = useSearchParams();
-  const dispatch = useDispatch();
+  
 
   React.useEffect(() => {
 
-    
 
     // Hotjar tracking code
     (function (h, o, t, j, a, r) {
@@ -47,9 +45,6 @@ export default function Layout({ children }) {
     })(window, document, "script", "dataLayer", "GTM-PFX6ZWQ4");
   }, []);
 
-  const initLang = (lang)=>{
-    dispatch(setLang(lang))
-  }
 
 
 
@@ -151,13 +146,13 @@ export default function Layout({ children }) {
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li className="">
-                  <button onClick={() => initLang("en")} className="dropdown-item d-flex gap-1" type="button">
+                  <button onClick={() => setLang("en")} className="dropdown-item d-flex gap-1" type="button">
                     <img src="assets/img/flag/EN Flag_new.png" alt="" className="mt-1" width={25} />
                     English
                   </button>
                 </li>
                 <li className="">
-                  <button onClick={() => initLang("idn")} className="dropdown-item d-flex gap-1" type="button">
+                  <button onClick={() => setLang("idn")} className="dropdown-item d-flex gap-1" type="button">
                     <img src="assets/img/flag/ID Flag_new.png" alt="" className="mt-1" width={25} />
                     Indonesia
                   </button>
@@ -257,6 +252,4 @@ export default function Layout({ children }) {
     </>
   );
 }
-
-
 
