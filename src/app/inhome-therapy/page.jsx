@@ -35,7 +35,7 @@ Name :  ${name.value}
 Address : ${address.value} 
 Service : ${service.value}
 `);
-      let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
+      let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
 
       return;
