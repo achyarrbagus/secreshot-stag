@@ -447,13 +447,13 @@ Service : ${service.value}
                                         <p>Surgeon</p>
                                         <span>STR: 3121101422105406</span>
                                         <hr />
-                                        {/* <div className="text-start">
+                                        <div className="text-start">
                                             <p>Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i></p>
                                             <ul className="ps-3">
-                                                <li>Mayapada Hospital Kuningan, Jakarta</li>
-                                                <li>Eka Hospital, Bekasi</li>
+                                                <li>Mayapada Hospital</li>
+                                                <li>Eka Hospital</li>
                                             </ul>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -467,12 +467,12 @@ Service : ${service.value}
                                         <p>Pediatrician</p>
                                         <span>STR: 3321201323154360</span>
                                         <hr />
-                                        {/* <div className="text-start">
+                                        <div className="text-start">
                                             <p>Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i></p>
                                             <ul className="ps-3">
-                                                <li>Aysha Islamic Hospital, Bogor</li>
+                                                <li>Aysha Islamic Hospital</li>
                                             </ul>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -486,12 +486,12 @@ Service : ${service.value}
                                         <p>Aesthetic Doctor</p>
                                         <span>STR: 3121100220145699</span>
                                         <hr />
-                                        {/* <div className="text-start">
+                                        <div className="text-start">
                                             <p>Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i></p>
                                             <ul className="ps-3">
-                                                <li>Cepat Sehat Clinic, Jakarta</li>
+                                                <li>Cepat Sehat Clinic</li>
                                             </ul>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -505,12 +505,12 @@ Service : ${service.value}
                                         <p>General Practitioner</p>
                                         <span>STR: 3121100220145544</span>
                                         <hr />
-                                        {/* <div className="text-start">
+                                        <div className="text-start">
                                             <p>Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i></p>
                                             <ul className="ps-3">
-                                                <li>Cepat Sehat Clinic, Jakarta</li>
+                                                <li>Cepat Sehat Clinic</li>
                                             </ul>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -524,12 +524,12 @@ Service : ${service.value}
                                         <p>General Practitioner</p>
                                         <span>STR: 3111100321119174</span>
                                         <hr />
-                                        {/* <div className="text-start">
+                                        <div className="text-start">
                                             <p>Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i></p>
                                             <ul className="ps-3">
-                                                <li>Cepat Sehat Clinic, Jakarta</li>
+                                                <li>Cepat Sehat Clinic</li>
                                             </ul>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -543,12 +543,12 @@ Service : ${service.value}
                                         <p>General Practitioner</p>
                                         <span>STR: 3111100220155405</span>
                                         <hr />
-                                        {/* <div className="text-start">
+                                        <div className="text-start">
                                             <p>Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i></p>
                                             <ul className="ps-3">
-                                                <li>Cepat Sehat Clinic, Jakarta</li>
+                                                <li>Cepat Sehat Clinic</li>
                                             </ul>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
