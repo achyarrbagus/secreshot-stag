@@ -167,7 +167,7 @@ Layanan : ${service.value}`);
                         <p>Dokter Bedah</p>
                         <span>STR: 3121101422105406</span>
                         <hr />
-                        <div className="text-start">
+                        {/* <div className="text-start">
                           <p>
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
@@ -175,7 +175,7 @@ Layanan : ${service.value}`);
                             <li>RS Mayapada Kuningan, Jakarta</li>
                             <li>RS Eka, Bekasi</li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -189,14 +189,14 @@ Layanan : ${service.value}`);
                         <p>Dokter Anak</p>
                         <span>STR: 3321201323154360</span>
                         <hr />
-                        <div className="text-start">
+                        {/* <div className="text-start">
                           <p>
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
                             <li>RS Islam Aysha, Bogor</li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -210,14 +210,14 @@ Layanan : ${service.value}`);
                         <p>Dokter Estetika</p>
                         <span>STR: 3121100220145699</span>
                         <hr />
-                        <div className="text-start">
+                        {/* <div className="text-start">
                           <p>
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
                             <li>Klinik Cepat Sehat, Jakarta</li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -231,14 +231,14 @@ Layanan : ${service.value}`);
                         <p>Dokter Umum</p>
                         <span>STR: 3121100220145544</span>
                         <hr />
-                        <div className="text-start">
+                        {/* <div className="text-start">
                           <p>
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
                             <li>Klinik Cepat Sehat, Jakarta</li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -252,14 +252,14 @@ Layanan : ${service.value}`);
                         <p>Dokter Umum</p>
                         <span>STR: 3111100321119174</span>
                         <hr />
-                        <div className="text-start">
+                        {/* <div className="text-start">
                           <p>
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
                             <li>Klinik Cepat Sehat, Jakarta</li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -273,14 +273,14 @@ Layanan : ${service.value}`);
                         <p>Dokter Umum</p>
                         <span>STR: 3111100220155405</span>
                         <hr />
-                        <div className="text-start">
+                        {/* <div className="text-start">
                           <p>
                             Lokasi Praktik <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                           </p>
                           <ul className="ps-3">
                             <li>Klinik Cepat Sehat, Jakarta</li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
