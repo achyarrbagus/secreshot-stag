@@ -12,8 +12,10 @@ import { Spinner } from 'flowbite-react';
 
 
 
+
 export default function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
+  const router = useRouter()
   const dispatch = useDispatch()
   
   React.useEffect(() => {
@@ -43,15 +45,6 @@ export default function LayoutWrapper({ children }) {
       j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-PFX6ZWQ4");
-
-
-    // const lang = searchParams.get("lang");
-    // if(lang==="en"){
-    //   dispatch(setLang("EN"))
-    // }
-   
-
-
 
   }, []);
 
@@ -106,11 +99,9 @@ export default function LayoutWrapper({ children }) {
       <nav className="nav nav-top fixed-top">
         <div className="container">
           <div className="d-flex align-items-center gap-3">
-            <Link href="/">
-              <div style={{ cursor: "pointer" }} className="nav-brand">
+              <div onClick={()=>router.push("/")} style={{ cursor: "pointer" }} className="nav-brand">
                 <img src="/assets/img/logo.png" alt="" />
               </div>
-            </Link>
             {/* <div style={{ cursor: "pointer" }} className="nav-brand">
               <img src="/assets/img/Kemenkes.png" alt="" />
             </div>

@@ -9,7 +9,7 @@ import LayoutWrapper from "../app/components/layout-wrapper";
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/icon.png',
+    icon: '/favicon.svg',
   },
   title: "Cepat Sehat",
   description: "We deliver personalized and compassionate healthcare to your home through our experienced professionals",

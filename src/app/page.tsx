@@ -496,7 +496,7 @@ Service Name : ${service.value}`);
                       </button>
                     </div>
                     <div className="col-6 col-md-3">
-                      <button type="submit" onClick={redirectTele} className="btn btn-telegram w-100">
+                    <button onClick={redirectTele} className="btn btn-telegram w-100">
                         <i className="fa-brands fa-telegram fs-18 me-2"></i>
                         Telegram
                       </button>
