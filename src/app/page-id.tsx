@@ -50,7 +50,7 @@ Layanan : ${service.value}`);
   };
 
   const redirectTele = () => {
-    window.location.href="https://t.me/InfusionJakarta";
+    window.location.href = "https://t.me/InfusionJakarta";
   };
 
   return (
@@ -425,7 +425,6 @@ Layanan : ${service.value}`);
         <section className="book" id="book">
           <div className="container">
             <h3 className="title-section"> Pesan kunjungan sekarang </h3>
-            <form action="#">
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
                   <label className="form-label">Nama</label>
@@ -464,7 +463,6 @@ Layanan : ${service.value}`);
                 </button>
                 </div>
               </div>
-            </form>
           </div>
         </section>
       </div>

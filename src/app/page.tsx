@@ -76,7 +76,7 @@ Service Name : ${service.value}`);
   };
 
   const redirectTele = () => {
-    window.location.href="https://t.me/InfusionJakarta";
+    window.location.href = "https://t.me/InfusionJakarta";
   };
 
   const lang = useSelector((state: any) => state.lang.value);
@@ -463,7 +463,6 @@ Service Name : ${service.value}`);
             <section className="book" id="book">
               <div className="container">
                 <h3 className="title-section"> Book a visit at your place now </h3>
-                <form action="#">
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">
                       <label className="form-label">Name</label>
@@ -488,21 +487,18 @@ Service Name : ${service.value}`);
                       </select>
                     </div>
                   </div>
-                  <div className="row g-3 justify-content-center align-items-stretch">
+                  <div className="row g-3 justify-content-center">
                     <div className="col-6 col-md-3">
-                      <button type="submit" onClick={redirectWa} className="btn btn-whatsapp w-100">
-                        <i className="mdi mdi-whatsapp fs-18 me-2"></i>
-                        Whatsapp
+                      <button onClick={redirectWa} className="btn btn-whatsapp w-100">
+                        <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
                       </button>
                     </div>
                     <div className="col-6 col-md-3">
-                    <button onClick={redirectTele} className="btn btn-telegram w-100">
-                        <i className="fa-brands fa-telegram fs-18 me-2"></i>
-                        Telegram
+                      <button onClick={redirectTele} className="btn btn-telegram w-100">
+                        <i className="fa-brands fa-telegram fs-18 me-2"></i> Telegram
                       </button>
                     </div>
                   </div>
-                </form>
               </div>
             </section>
           </div>
