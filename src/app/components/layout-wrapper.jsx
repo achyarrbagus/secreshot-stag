@@ -99,9 +99,12 @@ export default function LayoutWrapper({ children }) {
       <nav className="nav nav-top fixed-top">
         <div className="container">
           <div className="d-flex align-items-center gap-3">
-              <div onClick={()=>router.push("/")} style={{ cursor: "pointer" }} className="nav-brand">
+            <Link href={"/"} passHref>
+            <div style={{ cursor: "pointer" }} className="nav-brand" >
                 <img src="/assets/img/logo.png" alt="" />
               </div>
+            </Link>
+             
             {/* <div style={{ cursor: "pointer" }} className="nav-brand">
               <img src="/assets/img/Kemenkes.png" alt="" />
             </div>
@@ -194,7 +197,7 @@ export default function LayoutWrapper({ children }) {
            
           </div>
           <div className="btn-circle telegram">
-            <a href="https://t.me/unbanking" className="text-white">
+            <a href="https://t.me/InfusionJakarta" className="text-white">
               <i className="fs-24 fa-brands fa-telegram"></i>
             </a>
           </div>
