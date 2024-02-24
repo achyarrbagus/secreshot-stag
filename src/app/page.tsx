@@ -22,14 +22,14 @@ import Articles from "../../public/assets/article/json/article.json";
 const Home = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
-  useEffect(()=>{
-    const lang = searchParams.get("lang")
-    if(lang === "en"){
-      dispatch(setLang("EN"))
-    }
+  // useEffect(()=>{
+  //   const lang = searchParams.get("lang")
+  //   if(lang === "en"){
+  //     dispatch(setLang("EN"))
+  //   }
 
   
-  },[])
+  // },[])
 
   const CutText = (text: string) => {
     let sentences = text.split("");
