@@ -11,12 +11,12 @@ function Floatbutton() {
         data-bs-custom-className="custom-tooltip"
       >
         <div className="btn-circle whatsapp">
-          <a href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0" className="text-white">
+          <a href="https://api.whatsapp.com/send/?phone=6285212500030&text&type=phone_number&app_absent=0" className="text-white">
             <i className="fs-24 fa-brands fa-whatsapp"></i>
           </a>
         </div>
         <div className="btn-circle telegram">
-          <a href="https://t.me/InfusionJakarta" className="text-white">
+          <a href="https://t.me/cepat_sehat" className="text-white">
             <i className="fs-24 fa-brands fa-telegram"></i>
           </a>
         </div>

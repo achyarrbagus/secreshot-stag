@@ -24,7 +24,7 @@ function Footer() {
             <div className="col-md-12">
               <div className="d-flex align-items-center">
                 <Link
-                  href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0"
+                  href="https://api.whatsapp.com/send/?phone=6285212500030&text&type=phone_number&app_absent=0"
                   className="phone text-white fs-14 d-flex align-items-center"
                 >
                   <i className="mdi mdi-phone me-2 fs-24"></i> 0822 1118 9009

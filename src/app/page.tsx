@@ -50,13 +50,13 @@ const Home = () => {
       if (service.value == "Select Service") {
         return alert("please fill form correcly");
       }
-      const wardingWa = encodeURIComponent(`
-      Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
-      
-      Name :  ${name.value}
-      Address : ${address.value} 
-      Service : ${service.value}
-      `);
+  const wardingWa = encodeURIComponent(`
+Hallo CepatSehat.com by Klinik Cepat Sehat, saya ingin konsultasi
+
+Nama : ${name.value}
+Alamat : ${address.value} 
+Layanan : ${service.value}`)
+
       let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
 
@@ -67,7 +67,7 @@ const Home = () => {
   };
 
   const redirectTele = () => {
-    window.location.href = "https://t.me/InfusionJakarta";
+    window.location.href = "https://t.me/cepat_sehat";
   };
 
   const lang = useSelector((state: any) => state.lang.value);

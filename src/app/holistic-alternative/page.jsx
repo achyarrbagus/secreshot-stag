@@ -75,7 +75,7 @@ Service : ${service.value}
   };
 
   const redirectTele = () => {
-    window.location.replace("https://t.me/InfusionJakarta");
+    window.location.replace("https://t.me/cepat_sehat");
   };
 
   const lang = useSelector((state) => state.lang.value);

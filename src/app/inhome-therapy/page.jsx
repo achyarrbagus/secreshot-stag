@@ -45,7 +45,7 @@ Service : ${service.value}
   };
 
   const redirectTele = () => {
-    window.location.href = "https://t.me/InfusionJakarta";
+    window.location.href = "https://t.me/cepat_sehat";
   };
 
   const handleBook = (serviceSelect) => {
