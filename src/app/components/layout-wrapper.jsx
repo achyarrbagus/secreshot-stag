@@ -184,12 +184,23 @@ export default function LayoutWrapper({ children }) {
       >
         <div className="btn-float">
           <div className="btn-circle whatsapp">
-            <a
-              href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0"
-              className="text-white"
-            >
-              <i className="fs-24 fa-brands fa-whatsapp"></i>
-            </a>
+          {lang === "EN" ? (
+           <a 
+           href="https://api.whatsapp.com/send/?phone=6285212500030&text=&type=phone_number&app_absent=0"
+          className="text-white"
+          >
+           <i className="fs-24 fa-brands fa-whatsapp"></i>
+          </a>
+           ) : (
+          <a 
+          href="https://api.whatsapp.com/send/?phone=6282211189009&text=&type=phone_number&app_absent=0"
+          className="text-white"
+          >
+          <i className="fs-24 fa-brands fa-whatsapp"></i>
+          </a>
+        )}
+
+           
           </div>
           <div className="btn-circle telegram">
             <a href="https://t.me/unbanking" className="text-white">
