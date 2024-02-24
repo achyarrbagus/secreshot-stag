@@ -50,7 +50,7 @@ Layanan : ${service.value}`);
   };
 
   const redirectTele = () => {
-    window.location.replace("https://t.me/InfusionJakarta");
+    window.location.href="https://t.me/InfusionJakarta";
   };
 
   return (
