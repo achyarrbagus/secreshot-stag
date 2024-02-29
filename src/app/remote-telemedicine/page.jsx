@@ -67,6 +67,7 @@ Service : ${service.value}
         setBook("Request for online medical prescription now");
         break;
       case "Online Sick Leave Letter":
+        window.location.replace("https://www.sickleave.cepatsehat.com/");
         setBook("Request for online sick leave letter now");
         break;
     }
