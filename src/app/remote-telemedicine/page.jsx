@@ -448,7 +448,7 @@ Service : ${service.value}
                                 </div>
 
                                 <div
-                                  onClick={() => (window.location.href = "https://www.suratsakit.cepatsehat.com/")}
+                                  onClick={()=>handleBook("Online Sick Leave Letter")}
                                   id="certificate"
                                   className="btn btn-warning fs-14 ms-auto"
                                 >
