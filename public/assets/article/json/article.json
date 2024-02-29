@@ -195,5 +195,40 @@
       }
    
     ]
+  },
+  {
+    "Id": 6,
+    "Title": "Food Substitutes for Rice",
+    "Desc": "In the last few months, it has been widely reported on television, national print media and online media that there continues to be an increase in rice prices in almost all regions of Indonesia.",
+    "DescCard": "In the last few months, it has been widely reported on television, national print media and online media that there continues to be an increase in rice prices in almost all regions of Indonesia.",
+    "PathImg": "/assets/img/article/article06.jpg",
+    "SubArticle": [
+      {
+        "Title": "",
+        "Desc": "Various factors were mentioned as the cause of the increase in rice prices, ranging from weather anomalies that were too hot to drought which resulted in a shortage of water for irrigating rice fields, or excessive rain which caused floods so that rice plants were submerged and died, or several rice producing countries stopped their rice exports. for an indefinite period of time because it prioritizes domestic needs."
+      },{
+        "Title": "",
+        "Desc": "Rice which is processed into rice is the staple food of Indonesians, since toddlers are introduced to it and regularly consume rice. So there is a saying that is popular in society which says, You won't feel like eating if you haven't eaten rice. So it is clear that the majority of Indonesian people are dependent on basic daily needs for rice, and when there is a disruption in rice production/logistics, the total daily routine needs do not decrease in the slightest, so the potential for fluctuations in the price of rice becomes inevitable in the market. Rice is a food ingredient that is categorized as a source of carbohydrates, in addition to the need for protein, fat and minerals."
+      },{
+        "Title": "",
+        "Desc": "Eating excess food does not only mean eating more than the normal portion, but also consuming food or drinks that are high in sugar, such as sweet biscuits with cream, ice cream, chocolate bars, soda, candy, canned or other packaged drinks. The more often we eat foods that are high in sugar, the more difficult it is for the insulin organ to work and increase the risk of developing diabetes. It is also necessary to avoid eating fatty/fried foods and coconut milk, because the cholesterol content in coconut milk is very high!! ."
+      },{
+        "Title": "Alternative Carbohydrate Sources:",
+        "Desc": "Potato It is a tuber food that contains lots of vitamin C, potassium and resistant starch. This resistant starch is a type of starch that is not easily digested by the body, so it is often used for diet therapy to reduce weight. Potatoes also contain high fiber, especially in the skin, which provides a sensation of feeling full for longer. The way to make healthy potatoes is to boil or steam them."
+      },{
+        "Title": "",
+        "Desc": "Brown rice This is rice that does not undergo a milling process so it has a layer of epidermis which contains lots of fiber, protein, flavonoids and antioxidants. Fiber functions to help improve digestion and reduce cholesterol levels, and protein to build muscle and increase metabolism. As well as flavonoids and antioxidants prevent inflammation and cell damage caused by free radicals."
+      },{
+        "Title": "",
+        "Desc": "Oatmeal Is a food made from boiled or steamed wheat grains. Contains complex carbohydrates which can provide longer energy and control blood sugar levels. Oatmeal is rich in fiber, protein, B vitamins, magnesium, phosphorus and iron. When consuming oatmeal, you can add fruit, milk or honey to add taste and nutrition."
+      },{
+        "Title": "",
+        "Desc": "Corn It is a grain plant that has a yellow, white or red color which is rich in protein, carbohydrates, fat, fiber, vitamins B1, B2, B3, B5, B6, vitamin C, folate, iron, magnesium, manganese, phosphorus, potassium. , zing and beta carotene which can be converted into vitamin A in the body. Corn can be consumed by boiling or roasting."
+      },{
+        "Title": "",
+        "Desc": "Cassava, vermicelli, noodles, and many others are also sources of carbohydrates to replace rice that can be chosen to meet the food intake needs of the family. Take for example potatoes and corn, these two ingredients have glycemic levels (glucose content) which are much lower than rice. Potatoes, corn and tubers can be processed into various dishes instead of rice, they can be mashed/steamed/boiled. Vermicelli, noodles or products based on wheat flour, sago, there are also many kinds of processed foods that can be used and served at family dining table. Indeed, processing food from alternative carbohydrate sources requires quite a lot of effort to make it ready to be served and an agreement for all family members to gradually consume the alternative carbohydrate food, until it is accepted as a new staple food based on alternative carbohydrate sources, thereby reducing the family's dependence on availability. rice and its price which is currently volatile."
+      }
+   
+    ]
   }
 ]

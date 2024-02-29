@@ -396,25 +396,25 @@ Layanan : ${service.value}`);
                       },
                     }}
                   >
-                    {Articles &&
-                      Articles.map((item: any, index: number) => (
-                        <>
-                          <SwiperSlide>
-                            <Link href={`/article?id=${index}`}>
-                              <div className="card-slide-article">
-                                <img src={`assets/img/article/article0${index + 1}.jpg`} alt="" />
-                                <div className="name-article">
-                                  <h6>{CutText(item.Title)}...</h6>
-                                  <p>{CutText(item.DescCard)}...</p>
-                                  <a href="article-detail.html" className="text-muted fs-14">
-                                    lebih lanjut <i className="mdi mdi-arrow-right"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </Link>
-                          </SwiperSlide>
-                        </>
-                      ))}
+                     {Articles &&
+  Articles.sort((a, b) => b.Id - a.Id).map((item: any, index: number) => (
+    <SwiperSlide key={index}>
+      <Link href={`/article?id=${index}`}>
+        <div className="card-slide-article">
+          {/* Assuming the images are stored in the public folder */}
+          <img src={`/assets/img/article/article0${item.Id}.jpg`} alt="" />
+          <div className="name-article">
+            <h6>{CutText(item.Title)}...</h6>
+            <p>{CutText(item.DescCard)}...</p>
+            {/* Assuming you want to navigate to article-detail.html */}
+            <a href="article-detail.html" className="text-muted fs-14">
+              read more <i className="mdi mdi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </Link>
+    </SwiperSlide>
+  ))}
                   </Swiper>
                 </div>
               </div>

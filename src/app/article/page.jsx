@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Articles from "../../../public/assets/article/json/article.json";
 import ArticlesId from "../../../public/assets/article/json/article-id.json";
@@ -10,6 +10,7 @@ import { Suspense } from "react";
 function Article() {
   const lang = useSelector((state) => state.lang.value);
   const router = useRouter();
+  const [articles,setArticles] = useState(null)
   const query = router.query;
   const searchParams = useSearchParams();
 
@@ -49,7 +50,7 @@ function Article() {
                   <a href="#/">Article</a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  {data.Title}
+                  {data?.Title}
                 </li>
               </ol>
             </nav>
@@ -59,9 +60,9 @@ function Article() {
           <div className="container">
             <div className="row g-3">
               <div className="col-md-8">
-                <h3 className="title-detail fw-bold fs-24 text-primary">{data.Title}</h3>
-                <p className="summary fs-12">{data.Desc}.</p>
-                <img src={data.PathImg} className="w-100 my-3" alt="" />
+                <h3 className="title-detail fw-bold fs-24 text-primary">{data?.Title}</h3>
+                <p className="summary fs-12">{data?.Desc}.</p>
+                <img src={data?.PathImg} className="w-100 my-3" alt="" />
                 {/* <p className="fs-12">
                   However, there are also some things that can unwittingly cause gastric disorders. What are these habits, here
                   are some habits that can trigger stomach disorders:
@@ -72,6 +73,7 @@ function Article() {
                     <p className="fs-12">{item.Desc}</p>
                   </>
                 ))}
+
               </div>
 
               {(() => {
@@ -85,8 +87,8 @@ function Article() {
                             {ArticlesId &&
                               ArticlesId.map((item, index) => (
                                 <>
+                                <Link style={{color:"#5B5A5A"}} href = {`/article?id=${index}`}>
                                   <butoon
-                                    onClick={() => router.push(`/article?id=${index}`)}
                                     className="items-article"
                                     style={{ cursor: "pointer" }}
                                   >
@@ -98,7 +100,9 @@ function Article() {
                                       </a>
                                     </div>
                                   </butoon>
+                                </Link>
                                 </>
+
                               ))}
                           </div>
                         </div>
@@ -112,20 +116,21 @@ function Article() {
                           {Articles &&
                             Articles.map((item, index) => (
                               <>
-                                <butoon
-                                  onClick={() => (window.location.href = `/article?id=${index}`)}
-                                  className="items-article"
-                                  style={{ cursor: "pointer" }}
-                                >
-                                  <img src={item.PathImg} alt="" />
-                                  <div className="name">
-                                    <h5>{item.Title}</h5>
-                                    <a className="text-muted fs-14">
-                                      read more <i className="mdi mdi-arrow-right"></i>
-                                    </a>
-                                  </div>
-                                </butoon>
-                              </>
+                                <Link style={{color:"#5B5A5A"}} href = {`/article?id=${index}`}>
+                                  <butoon
+                                    className="items-article"
+                                    style={{ cursor: "pointer" }}
+                                  >
+                                    <img src={item.PathImg} alt="" />
+                                    <div className="name">
+                                      <h5>{item.Title}</h5>
+                                      <a className="text-muted fs-14">
+                                        read more <i className="mdi mdi-arrow-right"></i>
+                                      </a>
+                                    </div>
+                                  </butoon>
+                                </Link>
+                                </>
                             ))}
                         </div>
                       </div>

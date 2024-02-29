@@ -153,5 +153,38 @@
       }
    
     ]
+  },
+  {
+    "Id": 6,
+    "Title": "Makanan Pengganti Nasi",
+    "Desc": "Dalam beberapa bulan terakhir ramai diberitakan di televisi, media cetak nasional maupun di media online bahwa terus terjadi kenaikan harga beras hampir di semua wilayah Indonesia.",
+    "DescCard": "Dalam beberapa bulan terakhir ramai diberitakan di televisi, media cetak nasional maupun di media online bahwa terus terjadi kenaikan harga beras hampir di semua wilayah Indonesia.",
+    "PathImg": "/assets/img/article/article06.jpg",
+    "SubArticle": [
+      {
+        "Title": "",
+        "Desc": "Beragam faktor yang disebutkan sebagai penyebab naiknya harga beras, mulai dari anomali cuaca yang terlalu panas sampai terjadi kekeringan yang mengakibatkan kekurangan air bagi pengairan di sawah, maupun hujan berlebih yang menyebabkan banjir sehingga tanaman padi terendam dan mati, atau beberapa negara produsen beras menghentikan ekspor berasnya sampai waktu yang tidak ditentukan karena mengutamakan kebutuhan dalam negerinya."
+      },{
+        "Title": "",
+        "Desc": "Beras yang diolah menjadi nasi merupakan makanan pokok orang Indonesia, sejak balita sudah dikenalkan dan rutin mengkonsumsi beras. Sehingga ada pameo yang populer di masyarakat yang mengatakan, “Belum berasa makan kalau belum makan nasi.” Sehingga tampak sekali ketergantungan kebutuhan pokok sehari-hari sebagian besar masyarakat Indonesia dengan beras, dan ketika terjadi gangguan di produksi/ logistik beras sedangkan total kebutuhan rutin harian tidak menurun sedikitpun sehingga potensi gejolak harga kenaikan beras menjadi keniscayaan secara pasar. Nasi merupakan bahan makanan yang dikategorikan sebagai sumber karbohidrat, selain kebutuhan protein, lemak dan mineral."
+      },{
+        "Title": "Sumber Karbohidrat Alternatif :",
+        "Desc": "Kentang  Adalah bahan pangan umbi-umbian yang mengandung banyak vitamin C, kalium dan pati resisten. Pati resisten ini merupakan jenis pati yang tidak mudah dicerna oleh tubuh sehingga sering digunakan untuk terapi diet menurunkan berat badan. Kentang juga mengandung tinggi serat terutama di kulitnya, yang memberikan sensasi rasa kenyang lebih lama. Cara mengolah kentang yang sehat adalah dengan merebus atau mengukusnya."
+      },{
+        "Title": "",
+        "Desc": "Beras Merah Merupakan beras yang tidak mengalami proses penggilingan sehingga memiliki lapisan kulit ari yang mengandung banyak serat, protein, flavonoid dan antioksidan. Serat berfungsi membantu melancarkan pencernaan dan menurunkan kadar kolesterol, dan protein untuk membangun otot dan meningkatkan metabolisme. Serta flavonoid dan antioksidan mencegah peradangan dan kerusakan sel akibat radikal bebas."
+      },{
+        "Title": "",
+        "Desc": "Oatmeal Adalah makanan yang terbuat dari biji-bijian gandum yang direbus atau dikukus. Mengandung karbohidrat kompleks yang bisa memberikan energi lebih lama dan mengontrol kadar gula darah. Oatmeal kaya akan serat, protein, vitamin B, magnesium, fosfor, dan zat besi. Dalam mengkonsumsi oatmeal bisa ditambahkan buah-buahan, susu atau madu untuk menambah rasa dan nutrisi."
+      },{
+        "Title": "",
+        "Desc": "Jagung Adalah tanaman biji-bijian yang memiliki warna kuning, putih atau merah yang kaya kandungan protein, karbohidrat, lemak, serat, vitamin B1, B2, B3, B5, B6, vitamin C, folat, zat besi, magnesium, mangan, fosfor, kalium, zing serta beta karoten yang bisa diubah menjadi vitamin A dalam tubuh. Jagung bisa dikonsumsi dengan dengan cara direbus atau dipanggang."  
+      },{
+        "Title": "",
+        "Desc": "Singkong, bihun, mie, dan banyak lainnya juga merupakan sumber karbohidrat pengganti nasi yang bisa dipilih dalam memenuhi kebutuhan asupan makanan dalam keluarga. Ambil contoh seperti kentang dan jagung, kedua bahan ini memiliki kadar glikemik (kadar kandungan glukosa) yang jauh lebih rendah dibandingkan beras/ nasi. Kentang, jagung dan umbi-umbian bisa diolah menjadi berbagai masakan pengganti nasi, bisa secara dihaluskan/ dikukus/ direbus. Bihun, mie atau produk yang berbasis tepung terigu, sagu juga sudah banyak ragam olahan makanan yang bisa digunakan dan disajikan di meja makan keluarga. Memang untuk mengolah makanan sumber karbohidrat alternatif memerlukan effort yang cukup banyak untuk menjadi makanan siap disajikan dan kesepakatan bagi seluruh anggota keluarga untuk mau mengkonsumsi secara bertahap makanan karbohidrat alternatif tersebut, sampai diterima menjadi makanan pokok baru berbasis sumber karbohidrat alternatif, sehingga mengurangi ketergantungan keluarga pada ketersediaan beras dan harganya yang saat ini sedang bergejolak."  
+      }
+        
+   
+    ]
   }
 ]

@@ -44,6 +44,7 @@ Layanan : ${service.value}`);
         setBook("Pesan kunjungan perawat sekarang");
         break;
       case "Vaksinasi anak":
+        window.location.href = "https://www.vaksindirumah.cepatsehat.com/"
         setBook("Pesan vaksin anak sekarang");
         break;
       case "Pemeriksaan Kesehatan":
