@@ -112,48 +112,50 @@ const LandingPageTemplate: React.FC<WrapperComponentProps> = ({ children }) => {
       <footer className="footer">
         <div className="container">
           <div className="d-flex align-items-center">
-            <Link href="/">
+            <a href="index.html">
               <img src="assets/img/logo-white.png" className="logo" alt="" />
-            </Link>
-            <img
-              src="assets/img/logo-atensi.png"
-              className="logo-atensi ms-auto"
-              alt=""
-            />
+            </a>
+            <a href="https://atensi.or.id/" className="ms-auto">
+              <img
+                src="assets/img/logo-atensi.png"
+                className="logo-atensi"
+                alt=""
+              />
+            </a>
           </div>
           <div className="row mt-4">
-            <div className="col-md-8 text-white fs-14">
-              <h4 className="fs-14">PT Cepat Sehat Indonesia</h4>
+            <div className="col-md-8 text-white">
+              <h4 className="fs-14">Klinik Cepat Sehat Indonesia</h4>
+              <p>Registered Number 04102100035090001</p>
               <p>
                 Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramat jati, Kota
-                Adm. Jakarta Timur, Provinsi DKI Jakarta 13510 <br />
-                sehatcepat.com
+                Adm. Jakarta Timur, Provinsi DKI Jakarta 13510
               </p>
             </div>
             <div className="col-md-12">
               <div className="d-flex align-items-center">
-                <Link
-                  href="https://api.whatsapp.com/send/?phone=6282211189009&text&type=phone_number&app_absent=0"
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6285212500030&text&type=phone_number&app_absent=0"
                   className="phone text-white fs-14 d-flex align-items-center"
                 >
                   <i className="mdi mdi-phone me-2 fs-24"></i> 0822 1118 9009
-                </Link>
+                </a>
                 <div className="sosmed list-inline ms-auto">
-                  <Link href="#" className="list-inline-item text-white">
+                  <a href="#" className="list-inline-item text-white">
                     <i className="mdi mdi-web fs-24"></i>
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="https://www.facebook.com/klinikcepatsehat"
                     className="list-inline-item text-white"
                   >
                     <i className="mdi mdi-facebook fs-24"></i>
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="https://www.instagram.com/sehatcepat.mobi/ "
                     className="list-inline-item text-white"
                   >
                     <i className="mdi mdi-instagram fs-24"></i>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
