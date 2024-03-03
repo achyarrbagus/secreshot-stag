@@ -1,6 +1,7 @@
 [
   {
     "Id": 1,
+    "created_at":"27 februari 2024",
     "Title": "Kebiasaan Tanpa Disadari Menyebabkan Gangguan Lambung",
     "Desc": "Harus Anda waspadai bila terjadi gangguan lambung maka hal ini akan sangat mengganggu aktivitas sehari-hari. Oleh karena itu, menjaga sistem pencernaan khususnya lambung merupakan hal yang perlu Anda perhatikan. Apalagi banyak juga penderita gangguan lambung seperti ini. Seperti dispepsia, asam lambung, atau sakit maag. Jika Anda mengidap penyakit ini, Anda harus benar-benar menjalankan pola hidup sehat. Namun, ada juga beberapa hal yang tanpa disadari bisa menyebabkan gangguan lambung. Apa saja kebiasaan tersebut, berikut beberapa kebiasaan yang bisa memicunya. gangguan lambung.",
     "DescCard": "Harus Anda waspadai bila terjadi gangguan lambung maka hal ini akan sangat mengganggu aktivitas sehari-hari. Oleh karena itu, ",
@@ -30,6 +31,7 @@
   },
   {
     "Id": 2,
+    "created_at":"28 februari 2024",
     "Title": "Jangan Remehkan Sakit Kepala! Inilah 7 Penyebab Sakit Kepala Punggung",
     "Desc": "Sakit kepala adalah salah satu masalah kesehatan yang paling umum dialami semua orang. Namun lokasi sakit kepala yang dialami cenderung berbeda. Ada beberapa titik lokasi yang sering terasa nyeri saat sakit kepala, seperti di bagian belakang kepala atau disebut juga sakit kepala punggung. Sakit kepala punggung bisa ringan atau berat. Jika kondisinya ringan, sakit kepala akan mereda dengan sendirinya. Namun pada kondisi yang lebih parah, sakit kepala biasanya tidak kunjung hilang dan diikuti gejala lainnya. Secara umum, berikut beberapa penyebab sakit kepala punggung yang perlu Anda ketahui.",
     "DescCard": "Sakit kepala adalah salah satu masalah kesehatan yang paling umum dialami semua orang. Namun lokasi s",
@@ -63,6 +65,7 @@
   },
   {
     "Id": 3,
+    "created_at":"29 ferbruari 2024",
     "Title": "Penyebab Sakit Punggung dan Tips Mengatasinya",
     "Desc": "Yakin sakit punggung hanya dialami oleh orang lanjut usia? Anda salah. Banyak orang di usia produktif atau bahkan anak-anak yang harus menghadapi sakit pinggang. Bagaimana bisa? Penyebabnya beragam, mulai dari cedera hingga gerakan yang salah. Nah, berikut beberapa hal yang bisa menjadi penyebab sakit pinggang.",
     "DescCard": "Yakin sakit punggung hanya dialami oleh orang lanjut usia? Anda salah. Banyak orang di usia produktif",
@@ -96,6 +99,7 @@
   },
   {
     "Id": 4,
+    "created_at":"1 maret 2024",
     "Title": "Gejala Paling Umum dari Terlalu Banyak Stres",
     "Desc": "Stres merupakan reaksi tubuh terhadap kondisi tertentu. Stres biasanya muncul ketika seseorang menghadapi ancaman, tekanan, atau sesuatu yang baru. Pada dasarnya gejala yang sering muncul sebagai tanda stres bisa berbeda-beda pada setiap orang, tergantung penyebab dan daya tahan tubuh. Ada empat hal yang bisa berubah dan menjadi tanda tubuh saat mengalami stres.",
     "DescCard": "Stres merupakan reaksi tubuh terhadap kondisi tertentu. Stres biasanya muncul ketika seseorang menghadapi ancaman,",
@@ -121,6 +125,7 @@
   },
   {
     "Id": 5,
+    "created_at":"2 maret 2024",
     "Title": "Nutrisi bagi Penderita Diabetes & Hipertensi",
     "Desc": "Diabetes Mellitus (DM) merupakan penyakit sistemik yang berdampak pada seluruh bagian tubuh. Sampai saat ini belum ada obat yang dapat menyembuhkan sakit DM, tetapi dapat dikendalikan melalui obat-obatan dan perubahan pola hidup. Dan hipertensi merupakan penyakit gangguan tekanan darah yang melebih tekanan darah normal untuk sistolik - di atas 140 mmHg dan untuk diastolik – di atas 90 mmHg.",
     "DescCard": "Diabetes Mellitus (DM) merupakan penyakit sistemik yang berdampak pada seluruh bagia.",
@@ -156,7 +161,7 @@
   },
   {
     "Id": 6,
-    "Title": "Makanan Pengganti Nasi",
+    "created_at":"3 maret 2024",
     "Desc": "Dalam beberapa bulan terakhir ramai diberitakan di televisi, media cetak nasional maupun di media online bahwa terus terjadi kenaikan harga beras hampir di semua wilayah Indonesia.",
     "DescCard": "Dalam beberapa bulan terakhir ramai diberitakan di televisi, media cetak nasional maupun di media online bahwa terus terjadi kenaikan harga beras hampir di semua wilayah Indonesia.",
     "PathImg": "/assets/img/article/article06.jpg",

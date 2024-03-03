@@ -410,6 +410,7 @@ Layanan : ${service.value}`);
             <a href="article-detail.html" className="text-muted fs-14">
               read more <i className="mdi mdi-arrow-right"></i>
             </a>
+            <p className="text-end">{item.created_at}</p>
           </div>
         </div>
       </Link>
