@@ -102,21 +102,6 @@ export default function LayoutWrapper({ children }) {
               </div>
             </Link>
              
-            {/* <div style={{ cursor: "pointer" }} className="nav-brand">
-              <img src="/assets/img/Kemenkes.png" alt="" />
-            </div>
-            <div style={{ cursor: "pointer" }} className="nav-brand hidden-logo">
-              <img
-                onClick={() => window.location.replace("https://atensi.or.id/")}
-                src="/assets/img/Logo_Atensi-removebg-preview.png"
-                alt=""
-              />
-            </div>
-
-            <div style={{ cursor: "pointer" }} className="nav-brand hidden-logo">
-              <img src="/assets/img/idi-removebg-preview_1.png" style={{ width: "40px" }} alt="" />
-            </div> */}
-
             <div className="btn-group ms-auto">
               {(() => {
                 switch (lang) {
@@ -213,8 +198,9 @@ export default function LayoutWrapper({ children }) {
                 <a href="index.html">
                     <img src="assets/img/logo-white.png" className="logo" alt="" /> 
                 </a>
-
-                <img src="assets/img/logo-atensi.png" className="logo-atensi ms-auto" alt="" />
+                <a href="https://atensi.or.id/" className="ms-auto">
+                <img src="assets/img/logo-atensi.png" className="logo-atensi" alt="" />
+                </a>
             </div>
             <div className="row mt-4">
                 <div className="col-md-8 text-white">
