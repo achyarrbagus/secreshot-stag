@@ -15,10 +15,10 @@ import Articles from "../../public/assets/article/json/article-id.json";
 
 const HomeId = () => {
   const CutText = (text: string) => {
-    let sentences = text.split("");
+    let sentences = text?.split("");
     // Mengambil 100 kalimat pertama
-    let first100Sentences = sentences.slice(0, 40);
-    let resultText = first100Sentences.join("");
+    let first100Sentences = sentences?.slice(0, 40);
+    let resultText = first100Sentences?.join("");
     return resultText;
   };
 
