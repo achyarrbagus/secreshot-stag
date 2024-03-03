@@ -59,7 +59,7 @@ Layanan : ${service.value}`);
         <div className="hero-banner">
           <div className="container">
             <div className="text">
-              <h3 className="title">Mitra Terpercaya Anda dalam Perawatan Kesehatan di Rumah</h3>
+              <h3 className="title">Mitra Terpercaya Anda untuk Layanan Kesehatan Homecare di Bali, Jakarta, Surabaya & Bandung</h3>
               <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
                 Kami memberikan perawatan kesehatan personal ke rumah Anda melalui para profesional berpengalaman kami.
               </p>

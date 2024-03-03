@@ -86,7 +86,7 @@ Layanan : ${service.value}`)
             <div className="hero-banner">
               <div className="container">
                 <div className="text">
-                  <h3 className="title"> Your Trusted Partner in Personalized In-Home Healthcare </h3>
+                  <h3 className="title"> Your Trusted Partner in Personalized Home Healthcare in Bali </h3>
                   <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
                     We deliver personalized and compassionate healthcare to your home through our experienced professionals.
                   </p>
