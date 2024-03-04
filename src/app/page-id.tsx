@@ -401,16 +401,14 @@ Layanan : ${service.value}`);
     <SwiperSlide key={index}>
       <Link href={`/article?id=${index}`}>
         <div className="card-slide-article">
-          {/* Assuming the images are stored in the public folder */}
           <img src={`/assets/img/article/article0${item.Id}.jpg`} alt="" />
           <div className="name-article">
             <h6>{CutText(item.Title)}...</h6>
             <p>{CutText(item.DescCard)}...</p>
-            {/* Assuming you want to navigate to article-detail.html */}
             <a href="article-detail.html" className="text-muted fs-14">
               read more <i className="mdi mdi-arrow-right"></i>
             </a>
-            <p className="text-end">{item.created_at}</p>
+            <p className="text-end text-capitalize">{item.created_at}</p>
           </div>
         </div>
       </Link>

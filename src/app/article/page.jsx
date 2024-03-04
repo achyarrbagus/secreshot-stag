@@ -61,6 +61,7 @@ function Article() {
             <div className="row g-3">
               <div className="col-md-8">
                 <h3 className="title-detail fw-bold fs-24 text-primary">{data?.Title}</h3>
+                <p className="text-capitalize">{data?.created_at}</p>
                 <p className="summary fs-12">{data?.Desc}.</p>
                 <img src={data?.PathImg} className="w-100 my-3" alt="" />
                 {/* <p className="fs-12">
