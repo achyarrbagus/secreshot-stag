@@ -24,8 +24,8 @@ const Home = () => {
   const dispatch = useDispatch();
   useEffect(()=>{
     const lang = searchParams.get("lang")
-    if(lang === "en"){
-      dispatch(setLang("EN"))
+    if(lang === "idn"){
+      dispatch(setLang("ID"))
     }
 
   
