@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import LayoutWrapper from "../components/layout-wrapper";
 
 const InHomeTherapyId = () => {
   const redirectWa = (e) => {
@@ -79,11 +80,17 @@ Layanan : ${service.value}`);
   return (
     <>
       <div className="content">
-        <section className="banner-pages" style={{ backgroundImage: "url('assets/img/bg-homeiv.png')" }}>
+        <section
+          className="banner-pages"
+          style={{ backgroundImage: "url('assets/img/bg-homeiv.png')" }}
+        >
           <div className="container">
             <div className="text">
               <h3>Terapi IV di Rumah & lainnya</h3>
-              <p>Menerima perawatan dan pengobatan intravena yang tepat, memastikan keamanan dan kenyamanan.</p>
+              <p>
+                Menerima perawatan dan pengobatan intravena yang tepat,
+                memastikan keamanan dan kenyamanan.
+              </p>
               <button href="#book" className="btn btn-warning fs-14">
                 Pesan
               </button>
@@ -95,10 +102,15 @@ Layanan : ${service.value}`);
           <div className="container">
             <div className="d-flex align-items-center">
               <img src="assets/img/plus-vector.svg" width="30px" alt="" />
-              <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">Terapi IV Di Rumah :</h3>
+              <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">
+                Terapi IV Di Rumah :
+              </h3>
             </div>
 
-            <div className="accordion accordion-custom row" id="accordionExample">
+            <div
+              className="accordion accordion-custom row"
+              id="accordionExample"
+            >
               <div className="accordion-item col-md-6">
                 <h2 className="accordion-header">
                   <button
@@ -109,20 +121,31 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    <i className="icon-menu-icon-homeiv07 me-2 fs-32"></i>Infus Bali Belly
+                    <i className="icon-menu-icon-homeiv07 me-2 fs-32"></i>Infus
+                    Bali Belly
                   </button>
                 </h2>
-                <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseOne"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="assets/img/homeiv/img-sub-homeiv01.png" className="w-100" alt="" />
+                          <img
+                            src="assets/img/homeiv/img-sub-homeiv01.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Tipe IV ini memberikan kombinasi komponen terapeutik untuk mengurangi rasa sakit, mual, dan melindungi
-                            saluran pencernaan. Bertujuan untuk meningkatkan kondisi secara keseluruhan, meningkatkan kekebalan,
+                            Tipe IV ini memberikan kombinasi komponen terapeutik
+                            untuk mengurangi rasa sakit, mual, dan melindungi
+                            saluran pencernaan. Bertujuan untuk meningkatkan
+                            kondisi secara keseluruhan, meningkatkan kekebalan,
                             dan mendukung berbagai proses metabolisme.
                           </p>
                           <h6 className="title-line">
@@ -130,7 +153,9 @@ Layanan : ${service.value}`);
                           </h6>
                           <div className="row gy-3">
                             <div className="col-12">
-                              <p className="fw-medium mb-2">Komponen Terapi :</p>
+                              <p className="fw-medium mb-2">
+                                Komponen Terapi :
+                              </p>
                               <ul className="ps-3">
                                 <li>IV Pereda Sakit</li>
                                 <li>IV Anti-Mual</li>
@@ -138,7 +163,9 @@ Layanan : ${service.value}`);
                               </ul>
                             </div>
                             <div className="col-md-6">
-                              <p className="fw-medium mb-2">Penguat Vitamin :</p>
+                              <p className="fw-medium mb-2">
+                                Penguat Vitamin :
+                              </p>
                               <ul className="ps-3">
                                 <li>Vitamin C</li>
                                 <li>Vitamin B1 (Tiamin)</li>
@@ -180,30 +207,45 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseSuperBali"
                   >
-                    <i className="icon-menu-icon-homeiv07 me-2 fs-32"></i> Super Bali Belly IV
+                    <i className="icon-menu-icon-homeiv07 me-2 fs-32"></i> Super
+                    Bali Belly IV
                   </button>
                 </h2>
-                <div id="collapseSuperBali" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseSuperBali"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="assets/img/homeiv/img-sub-homeiv02.png" className="w-100" alt="" />
+                          <img
+                            src="assets/img/homeiv/img-sub-homeiv02.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Peningkatan Standard Bali Belly kami. Diperkaya dengan zinc yang memperkuat kekebalan tubuh,
-                            detoksifikasi glutathione, dan probiotik yang memberi nutrisi pada usus, campuran ini dirancang untuk
-                            ketahanan tingkat medis. Selain mengatasi gejala perut buncit, ini juga merupakan solusi ampuh yang
-                            memperkuat pertumbuhan sel. Imunitas, detoksifikasi, dan kesehatan pencernaan untuk vitalitas optimal
-                            Anda.
+                            Peningkatan Standard Bali Belly kami. Diperkaya
+                            dengan zinc yang memperkuat kekebalan tubuh,
+                            detoksifikasi glutathione, dan probiotik yang
+                            memberi nutrisi pada usus, campuran ini dirancang
+                            untuk ketahanan tingkat medis. Selain mengatasi
+                            gejala perut buncit, ini juga merupakan solusi ampuh
+                            yang memperkuat pertumbuhan sel. Imunitas,
+                            detoksifikasi, dan kesehatan pencernaan untuk
+                            vitalitas optimal Anda.
                           </p>
                           <h6 className="title-line">
                             <span> Komposisi </span>
                           </h6>
                           <div className="row gy-3">
                             <div className="col-12">
-                              <p className="fw-medium mb-2">Komponen Terapi :</p>
+                              <p className="fw-medium mb-2">
+                                Komponen Terapi :
+                              </p>
                               <ul className="ps-3">
                                 <li>IV Pereda Sakit</li>
                                 <li>IV Anti-Mual</li>
@@ -211,7 +253,9 @@ Layanan : ${service.value}`);
                               </ul>
                             </div>
                             <div className="col-12">
-                              <p className="fw-medium mb-2">Peningkat Vitamin :</p>
+                              <p className="fw-medium mb-2">
+                                Peningkat Vitamin :
+                              </p>
                               <ul className="ps-3">
                                 <li>Vitamin C</li>
                                 <li>Vitamin B1 (Tiamin)</li>
@@ -256,21 +300,33 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseBasicImmune"
                   >
-                    <i className="icon-menu-icon-homeiv08 me-2 fs-32"></i> Basic Immune Booster
+                    <i className="icon-menu-icon-homeiv08 me-2 fs-32"></i> Basic
+                    Immune Booster
                   </button>
                 </h2>
-                <div id="collapseBasicImmune" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseBasicImmune"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="assets/img/homeiv/img-sub-homeiv03.png" className="w-100" alt="" />
+                          <img
+                            src="assets/img/homeiv/img-sub-homeiv03.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Tipe IV ini terdiri dari elektrolit esensial, Vitamin B kompleks yang kuat, dan Vitamin C. Bertindak
-                            untuk memperkuat sistem kekebalan tubuh, meningkatkan fungsi metabolisme, dan meningkatkan sintesis
-                            kolagen, sehingga mendukung kesehatan secara keseluruhan.
+                            Tipe IV ini terdiri dari elektrolit esensial,
+                            Vitamin B kompleks yang kuat, dan Vitamin C.
+                            Bertindak untuk memperkuat sistem kekebalan tubuh,
+                            meningkatkan fungsi metabolisme, dan meningkatkan
+                            sintesis kolagen, sehingga mendukung kesehatan
+                            secara keseluruhan.
                           </p>
                           <h6 className="title-line">
                             <span> Komposisi </span>
@@ -319,22 +375,34 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseStandardImmune"
                   >
-                    <i className="icon-menu-icon-homeiv08 me-2 fs-32"></i> Standard Immune Booster
+                    <i className="icon-menu-icon-homeiv08 me-2 fs-32"></i>{" "}
+                    Standard Immune Booster
                   </button>
                 </h2>
-                <div id="collapseStandardImmune" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseStandardImmune"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="assets/img/homeiv/img-sub-homeiv04.png" className="w-100" alt="" />
+                          <img
+                            src="assets/img/homeiv/img-sub-homeiv04.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Tipe IV ini memberikan campuran elektrolit penting, Vitamin C dalam jumlah tinggi, dan Vitamin B
-                            kompleks yang komprehensif. Berfungsi untuk mengintensifkan respon imun, meningkatkan metabolisme,
-                            merangsang produksi sel darah merah, dan produksi kolagen untuk meningkatkan kesehatan kulit dan
-                            sistem kekebalan tubuh.
+                            Tipe IV ini memberikan campuran elektrolit penting,
+                            Vitamin C dalam jumlah tinggi, dan Vitamin B
+                            kompleks yang komprehensif. Berfungsi untuk
+                            mengintensifkan respon imun, meningkatkan
+                            metabolisme, merangsang produksi sel darah merah,
+                            dan produksi kolagen untuk meningkatkan kesehatan
+                            kulit dan sistem kekebalan tubuh.
                           </p>
                           <h6 className="title-line">
                             <span> Komposisi </span>
@@ -360,7 +428,9 @@ Layanan : ${service.value}`);
                               Mulai dari: <b>Rp2.075.000</b>
                             </div>
                             <button
-                              onClick={() => handleBook("Standard Immune Booster")}
+                              onClick={() =>
+                                handleBook("Standard Immune Booster")
+                              }
                               id="standard"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -384,22 +454,35 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseSuperImmune"
                   >
-                    <i className="icon-menu-icon-homeiv08 me-2 fs-32"></i> Super Immune Booster
+                    <i className="icon-menu-icon-homeiv08 me-2 fs-32"></i> Super
+                    Immune Booster
                   </button>
                 </h2>
-                <div id="collapseSuperImmune" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseSuperImmune"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="assets/img/homeiv/img-sub-homeiv05.png" className="w-100" alt="" />
+                          <img
+                            src="assets/img/homeiv/img-sub-homeiv05.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Tipe IV yang ampuhdengan menggabungkan elektrolit, Glutathione, Zinc, dan beragam vitamin dan mineral,
-                            termasuk A, D, E, C, B1, B2, B6, B12, dan B5. Memberikan peningkatan kekebalan dan mendukung berbagai
-                            fungsi tubuh, termasuk pertahanan antioksidan, fungsi kekebalan, penyembuhan luka, dan produksi
-                            energi. Berkontribusi terhadap kesehatan dan vitalitas secara keseluruhan.
+                            Tipe IV yang ampuhdengan menggabungkan elektrolit,
+                            Glutathione, Zinc, dan beragam vitamin dan mineral,
+                            termasuk A, D, E, C, B1, B2, B6, B12, dan B5.
+                            Memberikan peningkatan kekebalan dan mendukung
+                            berbagai fungsi tubuh, termasuk pertahanan
+                            antioksidan, fungsi kekebalan, penyembuhan luka, dan
+                            produksi energi. Berkontribusi terhadap kesehatan
+                            dan vitalitas secara keseluruhan.
                           </p>
                           <h6 className="title-line">
                             <span> Komposisi </span>
@@ -454,20 +537,31 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseThree"
                   >
-                    <i className="icon-menu-icon-homeiv09 me-2 fs-32"></i> Hangover Infusion
+                    <i className="icon-menu-icon-homeiv09 me-2 fs-32"></i>{" "}
+                    Hangover Infusion
                   </button>
                 </h2>
-                <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseThree"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="assets/img/homeiv/img-sub-homeiv06.png" className="w-100" alt="" />
+                          <img
+                            src="assets/img/homeiv/img-sub-homeiv06.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Perawatan infus mabuk adalah prosedur cepat selama 30-60 menit untuk membantu Anda mengatasi gejala
-                            mabuk dengan cepat melalui hidrasi dan kombinasi vitamin dan elektrolit.
+                            Perawatan infus mabuk adalah prosedur cepat selama
+                            30-60 menit untuk membantu Anda mengatasi gejala
+                            mabuk dengan cepat melalui hidrasi dan kombinasi
+                            vitamin dan elektrolit.
                           </p>
                           <h6 className="title-line">
                             <span> Komposisi </span>
@@ -511,19 +605,29 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseFour"
                   >
-                    <i className="icon-menu-icon-homeiv10 me-2 fs-32"></i> Fever Infusion
+                    <i className="icon-menu-icon-homeiv10 me-2 fs-32"></i> Fever
+                    Infusion
                   </button>
                 </h2>
-                <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseFour"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="assets/img/homeiv/img-sub-homeiv07.png" className="w-100" alt="" />
+                          <img
+                            src="assets/img/homeiv/img-sub-homeiv07.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Infus Pengobatan Demam merupakan pemulihan cepat demam tinggi pada orang dewasa melalui infus dan
+                            Infus Pengobatan Demam merupakan pemulihan cepat
+                            demam tinggi pada orang dewasa melalui infus dan
                             dapat bermanfaat untuk memulihkan cairan tubuh.
                           </p>
                           <h6 className="title-line">
@@ -570,19 +674,29 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseFive"
                   >
-                    <i className="icon-menu-icon-homeiv11 me-2 fs-32"></i> Gerd/Gastritis Infusion
+                    <i className="icon-menu-icon-homeiv11 me-2 fs-32"></i>{" "}
+                    Gerd/Gastritis Infusion
                   </button>
                 </h2>
-                <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseFive"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="assets/img/homeiv/img-sub-homeiv08.png" className="w-100" alt="" />
+                          <img
+                            src="assets/img/homeiv/img-sub-homeiv08.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Infus Pengobatan Gerd/Gastritis bermanfaat untuk mengatasi peradangan pada lambung atau iritasi
+                            Infus Pengobatan Gerd/Gastritis bermanfaat untuk
+                            mengatasi peradangan pada lambung atau iritasi
                             lambung akibat asam lambung.
                           </p>
                           <h6 className="title-line">
@@ -603,7 +717,9 @@ Layanan : ${service.value}`);
                               Mulai dari: <b>Rp1.660.000</b>
                             </div>
                             <button
-                              onClick={() => handleBook("Gerd / Gastritis Infusion")}
+                              onClick={() =>
+                                handleBook("Gerd / Gastritis Infusion")
+                              }
                               id="gerd"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -627,20 +743,30 @@ Layanan : ${service.value}`);
                     aria-expanded="true"
                     aria-controls="collapseSix"
                   >
-                    <i className="icon-menu-icon-homeiv12 me-2 fs-32"></i> Iron Infusion
+                    <i className="icon-menu-icon-homeiv12 me-2 fs-32"></i> Iron
+                    Infusion
                   </button>
                 </h2>
-                <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div
+                  id="collapseSix"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
                   <div className="accordion-body">
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
-                          <img src="/assets/img/homeiv/img-sub-homeiv09.png" className="w-100" alt="" />
+                          <img
+                            src="/assets/img/homeiv/img-sub-homeiv09.png"
+                            className="w-100"
+                            alt=""
+                          />
                         </div>
                         <div className="col-12">
                           <p>
-                            Infus zat besi adalah pengobatan yang efektif untuk kekurangan zat besi, suatu kondisi yang
-                            menyebabkan kelelahan dan memengaruhi fungsi tubuh Anda.
+                            Infus zat besi adalah pengobatan yang efektif untuk
+                            kekurangan zat besi, suatu kondisi yang menyebabkan
+                            kelelahan dan memengaruhi fungsi tubuh Anda.
                           </p>
                           <h6 className="title-line">
                             <span> Komposisi </span>
@@ -685,37 +811,68 @@ Layanan : ${service.value}`);
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
                   <label className="form-label">Nama</label>
-                  <input type="text" className="form-control" id="name" placeholder="Nama Anda" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    placeholder="Nama Anda"
+                  />
                 </div>
                 <div className="col-md-4">
                   <label className="form-label">Alamat</label>
-                  <input type="text" className="form-control" id="address" placeholder="Alamat Anda" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="address"
+                    placeholder="Alamat Anda"
+                  />
                 </div>
                 <div className="col-md-4">
                   <label className="form-label">Layanan</label>
-                  <select id="service" className="form-select form-control" aria-label="Default select example">
+                  <select
+                    id="service"
+                    className="form-select form-control"
+                    aria-label="Default select example"
+                  >
                     <option>Pilih Layanan</option>
                     <option value="Infus Bali Belly">Infus Bali Belly</option>
-                    <option value="Super Bali Belly IV">Super Bali Belly IV</option>
-                    <option value="Basic Immune Booster">Basic Immune Booster</option>
-                    <option value="Standard Immune Booster">Standard Immune Booster</option>
-                    <option value="Super Immune Booster">Super Immune Booster</option>
+                    <option value="Super Bali Belly IV">
+                      Super Bali Belly IV
+                    </option>
+                    <option value="Basic Immune Booster">
+                      Basic Immune Booster
+                    </option>
+                    <option value="Standard Immune Booster">
+                      Standard Immune Booster
+                    </option>
+                    <option value="Super Immune Booster">
+                      Super Immune Booster
+                    </option>
                     <option value="Hangover Infusion">Hangover Infusion</option>
                     <option value="Fever Infusion">Fever Infusion</option>
-                    <option value="Gerd / Gastritis Infusion">Gerd / Gastritis Infusion</option>
+                    <option value="Gerd / Gastritis Infusion">
+                      Gerd / Gastritis Infusion
+                    </option>
                     <option value="Iron Infusion">Iron Infusion</option>
                   </select>
                 </div>
               </div>
               <div className="row g-3 justify-content-center">
                 <div className="col-6 col-md-3">
-                  <button onClick={redirectWa} className="btn btn-whatsapp w-100">
+                  <button
+                    onClick={redirectWa}
+                    className="btn btn-whatsapp w-100"
+                  >
                     <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
                   </button>
                 </div>
                 <div className="col-6 col-md-3">
-                  <button onClick={redirectTele} className="btn btn-telegram w-100">
-                    <i className="fa-brands fa-telegram fs-18 me-2"></i> Telegram
+                  <button
+                    onClick={redirectTele}
+                    className="btn btn-telegram w-100"
+                  >
+                    <i className="fa-brands fa-telegram fs-18 me-2"></i>{" "}
+                    Telegram
                   </button>
                 </div>
               </div>

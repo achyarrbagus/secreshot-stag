@@ -7,12 +7,12 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HomeId from "./page-id";
 import { setLang } from "../../lib/redux/slices/langSlice/langSlice";
+import LayoutWrapper from "./components/layout-wrapper";
 
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter, useSearchParams } from "next/navigation";
 import { UseDispatch } from "react-redux";
 import { Suspense } from "react";
-
 
 import { useEffect, useState } from "react";
 
@@ -22,14 +22,12 @@ import Articles from "../../public/assets/article/json/article.json";
 const Home = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
-  useEffect(()=>{
-    const lang = searchParams.get("lang")
-    if(lang === "idn"){
-      dispatch(setLang("ID"))
+  useEffect(() => {
+    const lang = searchParams.get("lang");
+    if (lang === "idn") {
+      dispatch(setLang("ID"));
     }
-
-  
-  },[])
+  }, []);
 
   const CutText = (text: string) => {
     let sentences = text.split("");
@@ -43,19 +41,23 @@ const Home = () => {
     e.preventDefault();
 
     const name = document.getElementById("name") as HTMLInputElement | null;
-    const address = document.getElementById("address") as HTMLInputElement | null;
+    const address = document.getElementById(
+      "address"
+    ) as HTMLInputElement | null;
 
-    const service = document.getElementById("service") as HTMLInputElement | null;
+    const service = document.getElementById(
+      "service"
+    ) as HTMLInputElement | null;
     if (name?.value && address?.value && service?.value) {
       if (service.value == "Select Service") {
         return alert("please fill form correcly");
       }
-  const wardingWa = encodeURIComponent(`
+      const wardingWa = encodeURIComponent(`
 Hallo CepatSehat.com by Klinik Cepat Sehat, saya ingin konsultasi
 
 Nama : ${name.value}
 Alamat : ${address.value} 
-Layanan : ${service.value}`)
+Layanan : ${service.value}`);
 
       let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
       window.location.href = url;
@@ -86,9 +88,13 @@ Layanan : ${service.value}`)
             <div className="hero-banner">
               <div className="container">
                 <div className="text">
-                  <h3 className="title"> Your Trusted Partner in Personalized Home Healthcare in Bali </h3>
+                  <h3 className="title">
+                    {" "}
+                    Your Trusted Partner in Personalized Home Healthcare in Bali{" "}
+                  </h3>
                   <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
-                    We deliver personalized and compassionate healthcare to your home through our experienced professionals.
+                    We deliver personalized and compassionate healthcare to your
+                    home through our experienced professionals.
                   </p>
                   <a href="#book" className="btn btn-warning">
                     Book Now
@@ -110,32 +116,46 @@ Layanan : ${service.value}`)
                   <div className="col-4">
                     <Link href="/home-nursing" className="box-service">
                       <i className="icon-menu-home-nursing"></i>
-                      <span className="title-service"> Home Nursing and Wound Care </span>
+                      <span className="title-service">
+                        Home Nursing and Wound Care
+                      </span>
                     </Link>
                   </div>
                   <div className="col-4">
                     <Link href="/remote-telemedicine" className="box-service">
                       <i className="icon-menu-remote-telemedicine"></i>
-                      <span className="title-service"> Remote Telemedicine </span>
+                      <span className="title-service">Remote Telemedicine</span>
                     </Link>
                   </div>
                   <div className="col-4">
                     <Link href="/holistic-alternative" className="box-service">
                       <i className="icon-menu-holistic"></i>
-                      <span className="title-service"> Holistic Alternative Therapies </span>
+                      <span className="title-service">
+                        {" "}
+                        Holistic Alternative Therapies{" "}
+                      </span>
                     </Link>
                   </div>
                   <div className="col-4">
                     <Link href="/inhome-therapy" className="box-service">
                       <i className="icon-menu-in-home-iv"></i>
-                      <span className="title-service"> In-Home IV Therapy & More </span>
+                      <span className="title-service">
+                        {" "}
+                        In-Home IV Therapy & More{" "}
+                      </span>
                     </Link>
                   </div>
 
                   <div className="col-4">
-                    <Link href="/alternative-telemedicine" className="box-service">
+                    <Link
+                      href="/alternative-telemedicine"
+                      className="box-service"
+                    >
                       <i className="icon-menu-alternative-telemedicine"></i>
-                      <span className="title-service"> Alternative Medicine </span>
+                      <span className="title-service">
+                        {" "}
+                        Alternative Medicine{" "}
+                      </span>
                     </Link>
                   </div>
                 </div>
@@ -153,25 +173,43 @@ Layanan : ${service.value}`)
                   </div>
                   <div className="list-why">
                     <div className="items-why">
-                      <img src="assets/img/Protect.png" className="img-list" alt="" />
+                      <img
+                        src="assets/img/Protect.png"
+                        className="img-list"
+                        alt=""
+                      />
                       <span>Easy, safe & comfortable service</span>
                     </div>
                   </div>
                   <div className="list-why">
                     <div className="items-why">
-                      <img src="assets/img/Diploma.png" className="img-list" alt="" />
-                      <span>Supported by certified & trained health workers</span>
+                      <img
+                        src="assets/img/Diploma.png"
+                        className="img-list"
+                        alt=""
+                      />
+                      <span>
+                        Supported by certified & trained health workers
+                      </span>
                     </div>
                   </div>
                   <div className="list-why">
                     <div className="items-why">
-                      <img src="assets/img/Last 24 Hours.png" className="img-list" alt="" />
+                      <img
+                        src="assets/img/Last 24 Hours.png"
+                        className="img-list"
+                        alt=""
+                      />
                       <span>24 hours service</span>
                     </div>
                   </div>
                   <div className="list-why">
                     <div className="items-why">
-                      <img src="assets/img/Globe Network.png" className="img-list" alt="" />
+                      <img
+                        src="assets/img/Globe Network.png"
+                        className="img-list"
+                        alt=""
+                      />
                       <span>Wide coverage</span>
                     </div>
                   </div>
@@ -197,14 +235,14 @@ Layanan : ${service.value}`)
                             <hr />
                             <div className="text-start">
                               <p>
-                                Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i>
+                                Practice Location{" "}
+                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                               </p>
                               <ul className="ps-3">
                                 <li>Mayapada Hospital</li>
                                 <li>Eka Hospital</li>
                               </ul>
                             </div>
-                       
                           </div>
                         </div>
                       </div>
@@ -220,7 +258,8 @@ Layanan : ${service.value}`)
                             <hr />
                             <div className="text-start">
                               <p>
-                                Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i>
+                                Practice Location{" "}
+                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                               </p>
                               <ul className="ps-3">
                                 <li>Aysha Islamic Hospital</li>
@@ -241,7 +280,8 @@ Layanan : ${service.value}`)
                             <hr />
                             <div className="text-start">
                               <p>
-                                Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i>
+                                Practice Location{" "}
+                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                               </p>
                               <ul className="ps-3">
                                 <li>Cepat Sehat Clinic</li>
@@ -253,7 +293,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-4">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/dr-ernita-r.png" alt="" />
+                            <img
+                              src="assets/img/doctor/dr-ernita-r.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>dr. Ernita Rosyanti Dewi</h5>
@@ -262,7 +305,8 @@ Layanan : ${service.value}`)
                             <hr />
                             <div className="text-start">
                               <p>
-                                Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i>
+                                Practice Location{" "}
+                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                               </p>
                               <ul className="ps-3">
                                 <li>Cepat Sehat Clinic</li>
@@ -274,7 +318,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-4">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/dr-irvan-r.png" alt="" />
+                            <img
+                              src="assets/img/doctor/dr-irvan-r.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>dr. Irvan Rizki Fitri</h5>
@@ -283,7 +330,8 @@ Layanan : ${service.value}`)
                             <hr />
                             <div className="text-start">
                               <p>
-                                Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i>
+                                Practice Location{" "}
+                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                               </p>
                               <ul className="ps-3">
                                 <li>Cepat Sehat Clinic</li>
@@ -295,7 +343,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-4">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/dr-melchisedek-a.png" alt="" />
+                            <img
+                              src="assets/img/doctor/dr-melchisedek-a.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>dr. Melchisedek A.V.P Marbun</h5>
@@ -304,7 +355,8 @@ Layanan : ${service.value}`)
                             <hr />
                             <div className="text-start">
                               <p>
-                                Practice Location <i className="mdi mdi-map-marker fs-18 ms-2"></i>
+                                Practice Location{" "}
+                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                               </p>
                               <ul className="ps-3">
                                 <li>Cepat Sehat Clinic</li>
@@ -328,7 +380,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-3">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/nurse-siti.png" alt="" />
+                            <img
+                              src="assets/img/doctor/nurse-siti.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>Siti Rahma Derlauw</h5>
@@ -339,7 +394,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-3">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/nurse-loisa.png" alt="" />
+                            <img
+                              src="assets/img/doctor/nurse-loisa.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>Loisa Lakamai</h5>
@@ -350,7 +408,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-3">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/nurse-syarah.png" alt="" />
+                            <img
+                              src="assets/img/doctor/nurse-syarah.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>Syarah Azzarah</h5>
@@ -361,7 +422,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-3">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/nurse-andi.png" alt="" />
+                            <img
+                              src="assets/img/doctor/nurse-andi.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>Andi Andriansyah S.</h5>
@@ -372,7 +436,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-3">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/nurse-marsiani.png" alt="" />
+                            <img
+                              src="assets/img/doctor/nurse-marsiani.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>Marsiani Talo</h5>
@@ -383,7 +450,10 @@ Layanan : ${service.value}`)
                       <div className="col-6 col-md-3">
                         <div className="items-doctor">
                           <div className="img-doctor">
-                            <img src="assets/img/doctor/nurse-irfan.png" alt="" />
+                            <img
+                              src="assets/img/doctor/nurse-irfan.png"
+                              alt=""
+                            />
                           </div>
                           <div className="name">
                             <h5>Irfan Mustofa</h5>
@@ -425,24 +495,35 @@ Layanan : ${service.value}`)
                           },
                         }}
                       >
-                      {Articles &&
-  Articles.sort((a, b) => b.Id - a.Id).map((item: any, index: number) => (
-    <SwiperSlide key={index}>
-      <Link href={`/article?id=${index}`}>
-        <div className="card-slide-article">
-          <img src={`/assets/img/article/article0${item.Id}.jpg`} alt="" />
-          <div className="name-article">
-            <h6>{CutText(item.Title)}...</h6>
-            <p>{CutText(item.DescCard)}...</p>
-            <a href="article-detail.html" className="text-muted fs-14">
-              read more <i className="mdi mdi-arrow-right"></i>
-            </a>
-            <p className="text-end text-capitalize">{item.created_at}</p>
-          </div>
-        </div>
-      </Link>
-    </SwiperSlide>
-  ))}
+                        {Articles &&
+                          Articles.sort((a, b) => b.Id - a.Id).map(
+                            (item: any, index: number) => (
+                              <SwiperSlide key={index}>
+                                <Link href={`/article?id=${index}`}>
+                                  <div className="card-slide-article">
+                                    <img
+                                      src={`/assets/img/article/article0${item.Id}.jpg`}
+                                      alt=""
+                                    />
+                                    <div className="name-article">
+                                      <h6>{CutText(item.Title)}...</h6>
+                                      <p>{CutText(item.DescCard)}...</p>
+                                      <a
+                                        href="article-detail.html"
+                                        className="text-muted fs-14"
+                                      >
+                                        read more{" "}
+                                        <i className="mdi mdi-arrow-right"></i>
+                                      </a>
+                                      <p className="text-end text-capitalize">
+                                        {item.created_at}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </SwiperSlide>
+                            )
+                          )}
                       </Swiper>
                     </div>
                   </div>
@@ -452,43 +533,79 @@ Layanan : ${service.value}`)
 
             <section className="book" id="book">
               <div className="container">
-                <h3 className="title-section"> Book a visit at your place now </h3>
-                  <div className="row mb-3 g-3">
-                    <div className="col-md-4">
-                      <label className="form-label">Name</label>
-                      <input type="text" className="form-control" id="name" placeholder="Your Name" />
-                    </div>
-                    <div className="col-md-4">
-                      <label className="form-label">Address</label>
-                      <input id="address" type="text" className="form-control" placeholder="Your Address" />
-                    </div>
-                    <div className="col-md-4">
-                      <label className="form-label">Service</label>
-                      <select id="service" className="form-select form-control" aria-label="Default select example">
-                        <option value="Select Service" selected>
-                          Select Service
-                        </option>
-                        <option value="Doctor Home Visit">Doctor Home Visit</option>
-                        <option value="Home Nursing and Wound Care">Home Nursing and Wound Care</option>
-                        <option value="Remote Telemedicine">Remote Telemedicine</option>
-                        <option value="Holistic Alternative Therapies">Holistic Alternative Therapies</option>
-                        <option value="In-Home IV Therapy & more">In-Home IV Therapy & more</option>
-                        <option value="Alternative Medicine">Alternative Medicine</option>
-                      </select>
-                    </div>
+                <h3 className="title-section">
+                  {" "}
+                  Book a visit at your place now{" "}
+                </h3>
+                <div className="row mb-3 g-3">
+                  <div className="col-md-4">
+                    <label className="form-label">Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                    />
                   </div>
-                  <div className="row g-3 justify-content-center">
-                    <div className="col-6 col-md-3">
-                      <button onClick={redirectWa} className="btn btn-whatsapp w-100">
-                        <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
-                      </button>
-                    </div>
-                    <div className="col-6 col-md-3">
-                      <button onClick={redirectTele} className="btn btn-telegram w-100">
-                        <i className="fa-brands fa-telegram fs-18 me-2"></i> Telegram
-                      </button>
-                    </div>
+                  <div className="col-md-4">
+                    <label className="form-label">Address</label>
+                    <input
+                      id="address"
+                      type="text"
+                      className="form-control"
+                      placeholder="Your Address"
+                    />
                   </div>
+                  <div className="col-md-4">
+                    <label className="form-label">Service</label>
+                    <select
+                      id="service"
+                      className="form-select form-control"
+                      aria-label="Default select example"
+                    >
+                      <option value="Select Service" selected>
+                        Select Service
+                      </option>
+                      <option value="Doctor Home Visit">
+                        Doctor Home Visit
+                      </option>
+                      <option value="Home Nursing and Wound Care">
+                        Home Nursing and Wound Care
+                      </option>
+                      <option value="Remote Telemedicine">
+                        Remote Telemedicine
+                      </option>
+                      <option value="Holistic Alternative Therapies">
+                        Holistic Alternative Therapies
+                      </option>
+                      <option value="In-Home IV Therapy & more">
+                        In-Home IV Therapy & more
+                      </option>
+                      <option value="Alternative Medicine">
+                        Alternative Medicine
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div className="row g-3 justify-content-center">
+                  <div className="col-6 col-md-3">
+                    <button
+                      onClick={redirectWa}
+                      className="btn btn-whatsapp w-100"
+                    >
+                      <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
+                    </button>
+                  </div>
+                  <div className="col-6 col-md-3">
+                    <button
+                      onClick={redirectTele}
+                      className="btn btn-telegram w-100"
+                    >
+                      <i className="fa-brands fa-telegram fs-18 me-2"></i>{" "}
+                      Telegram
+                    </button>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
@@ -497,13 +614,12 @@ Layanan : ${service.value}`)
   }
 };
 
-
-
-
 export default function App() {
   return (
-    <Suspense fallback={<div>Loading</div>}>
-      <Home />
-    </Suspense>
+    <LayoutWrapper>
+      <Suspense fallback={<div>Loading</div>}>
+        <Home />
+      </Suspense>
+    </LayoutWrapper>
   );
 }
