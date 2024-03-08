@@ -4,13 +4,15 @@ import React, { useEffect, useState } from "react";
 import Articles from "../../../public/assets/article/json/article.json";
 import ArticlesId from "../../../public/assets/article/json/article-id.json";
 import { useSelector } from "react-redux";
+import LayoutWrapper from "../components/layout-wrapper";
+
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
 function Article() {
   const lang = useSelector((state) => state.lang.value);
   const router = useRouter();
-  const [articles,setArticles] = useState(null)
+  const [articles, setArticles] = useState(null);
   const query = router.query;
   const searchParams = useSearchParams();
 
@@ -60,7 +62,9 @@ function Article() {
           <div className="container">
             <div className="row g-3">
               <div className="col-md-8">
-                <h3 className="title-detail fw-bold fs-24 text-primary">{data?.Title}</h3>
+                <h3 className="title-detail fw-bold fs-24 text-primary">
+                  {data?.Title}
+                </h3>
                 <p className="text-capitalize">{data?.created_at}</p>
                 <p className="summary fs-12">{data?.Desc}.</p>
                 <img src={data?.PathImg} className="w-100 my-3" alt="" />
@@ -74,7 +78,6 @@ function Article() {
                     <p className="fs-12">{item.Desc}</p>
                   </>
                 ))}
-
               </div>
 
               {(() => {
@@ -83,27 +86,33 @@ function Article() {
                     return (
                       <>
                         <div className="col-md-4">
-                          <h3 className="title-section text-start pt-0 fs-14"> More Article </h3>
+                          <h3 className="title-section text-start pt-0 fs-14">
+                            {" "}
+                            More Article{" "}
+                          </h3>
                           <div className="list-article">
                             {ArticlesId &&
                               ArticlesId.map((item, index) => (
                                 <>
-                                <Link style={{color:"#5B5A5A"}} href = {`/article?id=${index}`}>
-                                  <butoon
-                                    className="items-article"
-                                    style={{ cursor: "pointer" }}
+                                  <Link
+                                    style={{ color: "#5B5A5A" }}
+                                    href={`/article?id=${index}`}
                                   >
-                                    <img src={item.PathImg} alt="" />
-                                    <div className="name">
-                                      <h5>{item.Title}</h5>
-                                      <a className="text-muted fs-14">
-                                        read more <i className="mdi mdi-arrow-right"></i>
-                                      </a>
-                                    </div>
-                                  </butoon>
-                                </Link>
+                                    <butoon
+                                      className="items-article"
+                                      style={{ cursor: "pointer" }}
+                                    >
+                                      <img src={item.PathImg} alt="" />
+                                      <div className="name">
+                                        <h5>{item.Title}</h5>
+                                        <a className="text-muted fs-14">
+                                          read more{" "}
+                                          <i className="mdi mdi-arrow-right"></i>
+                                        </a>
+                                      </div>
+                                    </butoon>
+                                  </Link>
                                 </>
-
                               ))}
                           </div>
                         </div>
@@ -112,12 +121,18 @@ function Article() {
                   default:
                     return (
                       <div className="col-md-4">
-                        <h3 className="title-section text-start pt-0 fs-14"> More Article </h3>
+                        <h3 className="title-section text-start pt-0 fs-14">
+                          {" "}
+                          More Article{" "}
+                        </h3>
                         <div className="list-article">
                           {Articles &&
                             Articles.map((item, index) => (
                               <>
-                                <Link style={{color:"#5B5A5A"}} href = {`/article?id=${index}`}>
+                                <Link
+                                  style={{ color: "#5B5A5A" }}
+                                  href={`/article?id=${index}`}
+                                >
                                   <butoon
                                     className="items-article"
                                     style={{ cursor: "pointer" }}
@@ -126,12 +141,13 @@ function Article() {
                                     <div className="name">
                                       <h5>{item.Title}</h5>
                                       <a className="text-muted fs-14">
-                                        read more <i className="mdi mdi-arrow-right"></i>
+                                        read more{" "}
+                                        <i className="mdi mdi-arrow-right"></i>
                                       </a>
                                     </div>
                                   </butoon>
                                 </Link>
-                                </>
+                              </>
                             ))}
                         </div>
                       </div>
@@ -148,8 +164,10 @@ function Article() {
 
 export default function ArticlePage() {
   return (
-    <Suspense fallback={<div>Loading article...</div>}>
-      <Article />
-    </Suspense>
+    <LayoutWrapper>
+      <Suspense fallback={<div>Loading article...</div>}>
+        <Article />
+      </Suspense>
+    </LayoutWrapper>
   );
 }

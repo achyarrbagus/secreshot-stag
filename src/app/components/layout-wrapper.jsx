@@ -6,15 +6,14 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import { Dropdown } from "flowbite-react";
 import { useRouter, useSearchParams } from "next/navigation";
-import React,{ Suspense } from "react";
-import { Spinner } from 'flowbite-react';
-
+import React, { Suspense } from "react";
+import { Spinner } from "flowbite-react";
 
 export default function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
-  const router = useRouter()
-  const dispatch = useDispatch()
-  
+  const router = useRouter();
+  const dispatch = useDispatch();
+
   React.useEffect(() => {
     // Hotjar tracking code
     (function (h, o, t, j, a, r) {
@@ -42,19 +41,18 @@ export default function LayoutWrapper({ children }) {
       j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-PFX6ZWQ4");
-
   }, []);
-
-
-
 
   return (
     <>
-     <head>
+      <head>
         <meta charSet="UTF-8" />
         <title>Cepat Sehat</title>
         {/* <!-- swiper --> */}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 
         {/* <!-- icons --> */}
         <link
@@ -97,11 +95,11 @@ export default function LayoutWrapper({ children }) {
         <div className="container">
           <div className="d-flex align-items-center gap-3">
             <Link href={"/"} passHref>
-            <div style={{ cursor: "pointer" }} className="nav-brand" >
+              <div style={{ cursor: "pointer" }} className="nav-brand">
                 <img src="/assets/img/logo.png" alt="" />
               </div>
             </Link>
-             
+
             <div className="btn-group ms-auto">
               {(() => {
                 switch (lang) {
@@ -132,14 +130,32 @@ export default function LayoutWrapper({ children }) {
 
               <ul className="dropdown-menu dropdown-menu-end">
                 <li className="">
-                  <button onClick={() => dispatch(setLang("EN")) } className="dropdown-item d-flex gap-1" type="button">
-                    <img src="assets/img/flag/EN Flag_new.png" alt="" className="mt-1" width={25} />
+                  <button
+                    onClick={() => dispatch(setLang("EN"))}
+                    className="dropdown-item d-flex gap-1"
+                    type="button"
+                  >
+                    <img
+                      src="assets/img/flag/EN Flag_new.png"
+                      alt=""
+                      className="mt-1"
+                      width={25}
+                    />
                     English
                   </button>
                 </li>
                 <li className="">
-                  <button onClick={() => dispatch(setLang("ID")) } className="dropdown-item d-flex gap-1" type="button">
-                    <img src="assets/img/flag/ID Flag_new.png" alt="" className="mt-1" width={25} />
+                  <button
+                    onClick={() => dispatch(setLang("ID"))}
+                    className="dropdown-item d-flex gap-1"
+                    type="button"
+                  >
+                    <img
+                      src="assets/img/flag/ID Flag_new.png"
+                      alt=""
+                      className="mt-1"
+                      width={25}
+                    />
                     Indonesia
                   </button>
                 </li>
@@ -148,8 +164,8 @@ export default function LayoutWrapper({ children }) {
           </div>
         </div>
       </nav>
-     
-          {children}
+
+      {children}
       <OverlayTrigger
         placement="left"
         overlay={
@@ -160,23 +176,21 @@ export default function LayoutWrapper({ children }) {
       >
         <div className="btn-float">
           <div className="btn-circle whatsapp">
-          {lang === "EN" ? (
-           <a 
-           href="https://api.whatsapp.com/send/?phone=6285212500030&text=&type=phone_number&app_absent=0"
-          className="text-white"
-          >
-           <i className="fs-24 fa-brands fa-whatsapp"></i>
-          </a>
-           ) : (
-          <a 
-          href="https://api.whatsapp.com/send/?phone=6285212500030&text=&type=phone_number&app_absent=0"
-          className="text-white"
-          >
-          <i className="fs-24 fa-brands fa-whatsapp"></i>
-          </a>
-        )}
-
-           
+            {lang === "EN" ? (
+              <a
+                href="https://api.whatsapp.com/send/?phone=6285212500030&text=&type=phone_number&app_absent=0"
+                className="text-white"
+              >
+                <i className="fs-24 fa-brands fa-whatsapp"></i>
+              </a>
+            ) : (
+              <a
+                href="https://api.whatsapp.com/send/?phone=6285212500030&text=&type=phone_number&app_absent=0"
+                className="text-white"
+              >
+                <i className="fs-24 fa-brands fa-whatsapp"></i>
+              </a>
+            )}
           </div>
           <div className="btn-circle telegram">
             <a href="https://t.me/cepat_sehat" className="text-white">
@@ -192,50 +206,62 @@ export default function LayoutWrapper({ children }) {
         style={{ display: "display:none;visibility:hidden" }}
       ></iframe>
 
-<footer className="footer">
+      <footer className="footer">
         <div className="container">
-            <div className="d-flex align-items-center">
-                <a href="index.html">
-                    <img src="assets/img/logo-white.png" className="logo" alt="" /> 
-                </a>
-                <a href="https://atensi.or.id/" className="ms-auto">
-                <img src="assets/img/logo-atensi.png" className="logo-atensi" alt="" />
-                </a>
+          <div className="d-flex align-items-center">
+            <a href="index.html">
+              <img src="assets/img/logo-white.png" className="logo" alt="" />
+            </a>
+            <a href="https://atensi.or.id/" className="ms-auto">
+              <img
+                src="assets/img/logo-atensi.png"
+                className="logo-atensi"
+                alt=""
+              />
+            </a>
+          </div>
+          <div className="row mt-4">
+            <div className="col-md-8 text-white">
+              <h4 className="fs-14">Klinik Cepat Sehat Indonesia</h4>
+              <p>Registered Number 04102100035090001</p>
+              <p>
+                Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramat jati, Kota
+                Adm. Jakarta Timur, Provinsi DKI Jakarta 13510
+              </p>
             </div>
-            <div className="row mt-4">
-                <div className="col-md-8 text-white">
-                    <h4 className="fs-14">Klinik Cepat Sehat Indonesia</h4>
-                    <p>
-                        Registered Number 04102100035090001
-                    </p>
-                    <p>Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramat jati, Kota Adm. Jakarta Timur, Provinsi
-                        DKI Jakarta 13510</p>
+            <div className="col-md-12">
+              <div className="d-flex align-items-center">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6285212500030&text&type=phone_number&app_absent=0"
+                  className="phone text-white fs-14 d-flex align-items-center"
+                >
+                  <i className="mdi mdi-phone me-2 fs-24"></i> 0822 1118 9009
+                </a>
+                <div className="sosmed list-inline ms-auto">
+                  <a href="#" className="list-inline-item text-white">
+                    <i className="mdi mdi-web fs-24"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/klinikcepatsehat"
+                    className="list-inline-item text-white"
+                  >
+                    <i className="mdi mdi-facebook fs-24"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/sehatcepat.mobi/ "
+                    className="list-inline-item text-white"
+                  >
+                    <i className="mdi mdi-instagram fs-24"></i>
+                  </a>
                 </div>
-                <div className="col-md-12">
-                    <div className="d-flex align-items-center">
-                        <a href="https://api.whatsapp.com/send/?phone=6285212500030&text&type=phone_number&app_absent=0"
-                            className="phone text-white fs-14 d-flex align-items-center">
-                            <i className="mdi mdi-phone me-2 fs-24"></i> 0822 1118 9009
-                        </a>
-                        <div className="sosmed list-inline ms-auto">
-                            <a href="#" className="list-inline-item text-white">
-                                <i className="mdi mdi-web fs-24"></i>
-                            </a>
-                            <a href="https://www.facebook.com/klinikcepatsehat" className="list-inline-item text-white">
-                                <i className="mdi mdi-facebook fs-24"></i>
-                            </a>
-                            <a href="https://www.instagram.com/sehatcepat.mobi/ " className="list-inline-item text-white">
-                                <i className="mdi mdi-instagram fs-24"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div className="footer-bottom">
-            Copyright © 2024 Cepat Sehat. All Rights Reserved.
+          Copyright © 2024 Cepat Sehat. All Rights Reserved.
         </div>
-    </footer>
+      </footer>
 
       <script type="module" src="/src/main.tsx"></script>
       <script src="assets/bootstrap/js/main.js"></script>

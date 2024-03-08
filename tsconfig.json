@@ -34,6 +34,6 @@
     "src/app/inhome-therapy/page.jsx",
     "src/app/alternative-telemedicine/page.jsx",
     "src/app/test/page.tsx"
-  ],
+, "src/app/perklin-bni-sby/page.jsx"  ],
   "exclude": ["node_modules"]
 }
