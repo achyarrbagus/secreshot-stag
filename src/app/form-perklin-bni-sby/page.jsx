@@ -2,8 +2,9 @@
 
 import React from "react";
 
-import { Formik, useFormik } from "formik";
+import { useFormik } from "formik";
 import { validation } from "./validation";
+import Swal from "sweetalert2";
 
 const initialValues = {
   name: "",
@@ -19,38 +20,48 @@ var perklinBniSby = () => {
     initialValues: initialValues,
     validationSchema: validation,
     onSubmit: async (values) => {
-      try {
-        const resData = await fetch(`https://cepatsehats.com/api/v3/cs/index.php`, {
-          // mode: 'no-cors',
-          method: 'POST',
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: values.name,
-            phone: values.phone,
-            clinic_name: values.clinic_name,
-            clinic_address: values.clinic_address,
-            operational_license_number: values.clinic_operation_license_number,
-            clinic_fasyankes_code: values.fasyankes_clinic_code
-          })
-        });
-
-        if (resData.ok) {
-          const result = await resData.json();
-          console.log(result);
-      
-          if (result.status === "success") {
-            window.location.replace('/success-register');
-          }
-        } else {
-          console.error("Request failed with status:", resData.status);
-          const errorResponse = await resData.json();
-          console.error("Error response:", errorResponse);
+      Swal.fire({
+        html: `<p>Periksa Kembali <br> Apakah  Data yang Anda Masukan <br> Sudah Sesuai?</p>`,
+        showCancelButton: true,
+        confirmButtonColor: "#ff8a00",
+        cancelButtonColor: "#a6a6a6",
+        confirmButtonText: "OK",
+        cancelButtonText: "BACK"
+      }).then( async (result) => {
+        if (result.isConfirmed) {
+          try {
+            const resData = await fetch(`https://cepatsehats.com/api/v3/cs/index.php`, {
+              method: 'POST',
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                name: values.name,
+                phone: values.phone,
+                clinic_name: values.clinic_name,
+                clinic_address: values.clinic_address,
+                operational_license_number: values.clinic_operation_license_number,
+                clinic_fasyankes_code: values.fasyankes_clinic_code
+              })
+            });
+    
+            if (resData.ok) {
+              const result = await resData.json();
+              console.log(result);
+          
+              if (result.status === "success") {
+                window.location.replace('/success-register');
+              }
+            } else {
+              console.error("Request failed with status:", resData.status);
+              const errorResponse = await resData.json();
+              console.error("Error response:", errorResponse);
+            }
+          } catch (error) {
+            console.error('Error:', error);
+          }    
         }
-      } catch (error) {
-        console.error('Error:', error);
-      }
+      });
     }
   })
 
@@ -89,7 +100,7 @@ var perklinBniSby = () => {
             </div>
             <div className="mb-3">
               <label for="phone" className="form-label">No Handphone Perwakilan</label>
-              <input type="number" className="form-control" id="phone" aria-describedby="" 
+              <input type="number" pattern="\d*" className="form-control" id="phone" aria-describedby="" 
                 value={values.phone}
                 onBlur={handleBlur} 
                 onChange={handleChange}
