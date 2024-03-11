@@ -11,7 +11,7 @@ import Articles from "../../public/assets/article/json/article-id.json";
 import Helper from "../../lib/helper/helper";
 
 const HomeId = () => {
-  const CutText = (text) => {
+  const CutText = (text: string) => {
     let sentences = text?.split("");
     // Mengambil 100 kalimat pertama
     let first100Sentences = sentences?.slice(0, 40);
@@ -24,7 +24,7 @@ const HomeId = () => {
     service: "Select Service",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
   };

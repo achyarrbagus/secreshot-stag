@@ -20,7 +20,7 @@ import Helper from "../../lib/helper/helper";
 const Home = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
-  const lang = useSelector((state) => state.lang.value);
+  const lang = useSelector((state: any) => state.lang.value);
 
   useEffect(() => {
     const lang = searchParams.get("lang");
@@ -29,7 +29,7 @@ const Home = () => {
     }
   }, []);
 
-  const CutText = (text) => {
+  const CutText = (text: string) => {
     let sentences = text.split("");
     // Mengambil 100 kalimat pertama
     let first100Sentences = sentences.slice(0, 40);
@@ -52,7 +52,7 @@ const Home = () => {
     service: "Select Service",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
   };
