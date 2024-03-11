@@ -5,6 +5,8 @@ import RemoteTelemedicId from "./page-id";
 import { useState, Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
+import LayoutWrapper from "../components/layout-wrapper";
+import Helper from "../../../lib/helper/helper";
 
 const RemoteTelemedic = () => {
   const searchParams = useSearchParams();
@@ -17,35 +19,11 @@ const RemoteTelemedic = () => {
   }, []);
 
   const [book, setBook] = useState("Book a visit at your place now");
-
-  const redirectWa = (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById("name");
-    const address = document.getElementById("address");
-
-    const service = document.getElementById("service");
-    if (name?.value && address?.value && service?.value) {
-      const wardingWa = encodeURIComponent(`
-Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
-
-Name :  ${name.value}
-Address : ${address.value} 
-Service : ${service.value}
-  `);
-
-      let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
-      window.location.href = url;
-
-      return;
-    } else {
-      alert("please fill form with correctly");
-    }
-  };
-
-  const redirectTele = () => {
-    window.location.replace("https://t.me/cepat_sehat");
-  };
+  const [formData, setFormData] = useState({
+    name: "",
+    address: "",
+    service: "Select Service",
+  });
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
@@ -75,6 +53,19 @@ Service : ${service.value}
     window.location.href = "#book";
   };
   const lang = useSelector((state) => state.lang.value);
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+
+  const redirectWa = () => {
+    const helper = new Helper();
+    helper.RedirectToWa(formData, lang, true);
+  };
+  const redirectTele = () => {
+    const helper = new Helper();
+    helper.redirectTele();
+  };
 
   switch (lang) {
     case "ID":
@@ -546,6 +537,8 @@ Service : ${service.value}
                         className="form-control"
                         id="name"
                         placeholder="Your Name"
+                        onChange={handleChange}
+                        value={formData.name}
                       />
                     </div>
                     <div className="col-md-4">
@@ -555,6 +548,8 @@ Service : ${service.value}
                         className="form-control"
                         id="address"
                         placeholder="Your Address"
+                        onChange={handleChange}
+                        value={formData.address}
                       />
                     </div>
                     <div className="col-md-4">
@@ -563,6 +558,8 @@ Service : ${service.value}
                         id="service"
                         className="form-select form-control"
                         aria-label="Default select example"
+                        onChange={handleChange}
+                        value={formData.service}
                       >
                         <option>Select Service</option>
                         <option value="General Practitioner Online Consultation">
@@ -611,8 +608,10 @@ Service : ${service.value}
 
 export default function App() {
   return (
-    <Suspense fallback={<div>Loading</div>}>
-      <RemoteTelemedic />
-    </Suspense>
+    <LayoutWrapper>
+      <Suspense fallback={<div>Loading</div>}>
+        <RemoteTelemedic />
+      </Suspense>
+    </LayoutWrapper>
   );
 }

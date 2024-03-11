@@ -3,37 +3,11 @@
 import InHomeDiagnosticId from "./page-id";
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import Helper from "../../../lib/helper/helper";
+import { Suspense } from "react";
+import LayoutWrapper from "../components/layout-wrapper";
 
 const InHomeDiagnostic = () => {
-  const redirectWa = (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById("name");
-    const address = document.getElementById("address");
-
-    const service = document.getElementById("service");
-    if (name?.value && address?.value && service?.value) {
-      const wardingWa = encodeURIComponent(`
-Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
-
-Name :  ${name.value}
-Address : ${address.value} 
-Service : ${service.value}
-`);
-
-      let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
-      window.location.href = url;
-
-      return;
-    } else {
-      alert("please fill form with correctly");
-    }
-  };
-
-  const redirectTele = () => {
-    window.location.href = "https://t.me/cepat_sehat";
-  };
-
   const [book, setBook] = useState("Book a visit at your place now");
 
   const handleBook = (serviceSelect) => {
@@ -53,6 +27,26 @@ Service : ${service.value}
     serviceOption.value = serviceSelect;
     window.location.href = "#book";
   };
+
+  const [formData, setFormData] = useState({
+    name: "",
+    address: "",
+    service: "Select Service",
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+
+  const redirectWa = () => {
+    const helper = new Helper();
+    helper.RedirectToWa(formData, lang, true);
+  };
+  const redirectTele = () => {
+    const helper = new Helper();
+    helper.redirectTele();
+  };
   const lang = useSelector((state) => state.lang.value);
   switch (lang) {
     case "ID":
@@ -65,13 +59,19 @@ Service : ${service.value}
       return (
         <>
           <div className="content">
-            <section className="banner-pages" style={{ backgroundImage: "url('assets/img/bg-home-diagnostic.png')" }}>
+            <section
+              className="banner-pages"
+              style={{
+                backgroundImage: "url('assets/img/bg-home-diagnostic.png')",
+              }}
+            >
               <div className="container">
                 <div className="text">
                   <h3>Alternative Telemedicine</h3>
                   <p>
-                    Teeth whitening for enhanced appearance, secretome therapy for regenerative treatments, and ozone therapy for
-                    boost immune system.
+                    Teeth whitening for enhanced appearance, secretome therapy
+                    for regenerative treatments, and ozone therapy for boost
+                    immune system.
                   </p>
                   <a href="#book" className="btn btn-warning fs-14">
                     {" "}
@@ -85,9 +85,14 @@ Service : ${service.value}
               <div className="container">
                 <div className="d-flex align-items-center">
                   <img src="assets/img/plus-vector.svg" width="30px" alt="" />
-                  <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">Our Alternative Telemedicine services consist of:</h3>
+                  <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">
+                    Our Alternative Telemedicine services consist of:
+                  </h3>
                 </div>
-                <div className="accordion accordion-custom row" id="accordionExample">
+                <div
+                  className="accordion accordion-custom row"
+                  id="accordionExample"
+                >
                   <div className="accordion-item col-md-6">
                     <h2 className="accordion-header">
                       <button
@@ -98,18 +103,30 @@ Service : ${service.value}
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        <i className="icon-menu-icon-alternative01 me-2 fs-32"></i> Teeth Whitening
+                        <i className="icon-menu-icon-alternative01 me-2 fs-32"></i>{" "}
+                        Teeth Whitening
                       </button>
                     </h2>
-                    <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
                       <div className="accordion-body">
                         <div className="list-data-faq">
                           <div className="row gy-3">
                             <div className="col-12">
-                              <img src="assets/img/alternative/img-sub-alternative01.png" className="w-100" alt="" />
+                              <img
+                                src="assets/img/alternative/img-sub-alternative01.png"
+                                className="w-100"
+                                alt=""
+                              />
                             </div>
                             <div className="col-12">
-                              <p>Enhance the brightness of your smile with our professional teeth whitening service.</p>
+                              <p>
+                                Enhance the brightness of your smile with our
+                                professional teeth whitening service.
+                              </p>
                               <h6 className="title-line">
                                 <span>Benefit</span>
                               </h6>
@@ -117,35 +134,45 @@ Service : ${service.value}
                                 <li className="mb-2">
                                   <h6 className="mb-1">Improved Aesthetics</h6>
                                   <span>
-                                    Enhances the appearance of teeth by reducing stains and discoloration, resulting in a brighter
-                                    and whiter smile.
+                                    Enhances the appearance of teeth by reducing
+                                    stains and discoloration, resulting in a
+                                    brighter and whiter smile.
                                   </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">Boosted Confidence</h6>
                                   <span>
-                                    Whiter teeth often contribute to increased self-confidence and a positive self-image.
+                                    Whiter teeth often contribute to increased
+                                    self-confidence and a positive self-image.
                                   </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">Youthful Appearance</h6>
                                   <span>
-                                    A whiter smile is associated with a more youthful look, as tooth discoloration can be a sign
-                                    of aging.
+                                    A whiter smile is associated with a more
+                                    youthful look, as tooth discoloration can be
+                                    a sign of aging.
                                   </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Enhanced Oral Hygiene</h6>
+                                  <h6 className="mb-1">
+                                    Enhanced Oral Hygiene
+                                  </h6>
                                   <span>
-                                    The process of teeth whitening often involves professional cleaning, contributing to improved
-                                    overall oral hygiene.
+                                    The process of teeth whitening often
+                                    involves professional cleaning, contributing
+                                    to improved overall oral hygiene.
                                   </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Positive Social Impression</h6>
+                                  <h6 className="mb-1">
+                                    Positive Social Impression
+                                  </h6>
                                   <span>
-                                    A bright smile can leave a positive impression in social and professional situations,
-                                    fostering a sense of attractiveness and friendliness.
+                                    A bright smile can leave a positive
+                                    impression in social and professional
+                                    situations, fostering a sense of
+                                    attractiveness and friendliness.
                                   </span>
                                 </li>
                               </ul>
@@ -177,20 +204,30 @@ Service : ${service.value}
                         aria-expanded="true"
                         aria-controls="collapseTwo"
                       >
-                        <i className="icon-menu-icon-alternative02 me-2 fs-32"></i> Secretome and Stem Cells Therapy
+                        <i className="icon-menu-icon-alternative02 me-2 fs-32"></i>{" "}
+                        Secretome and Stem Cells Therapy
                       </button>
                     </h2>
-                    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div
+                      id="collapseTwo"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
                       <div className="accordion-body">
                         <div className="list-data-faq">
                           <div className="row gy-3">
                             <div className="col-12">
-                              <img src="assets/img/alternative/img-sub-alternative02.png" className="w-100" alt="" />
+                              <img
+                                src="assets/img/alternative/img-sub-alternative02.png"
+                                className="w-100"
+                                alt=""
+                              />
                             </div>
                             <div className="col-12">
                               <p>
-                                Experience the rejuvenating benefits of Secretome, a cutting-edge therapy that harnesses the power
-                                of regenerative proteins.
+                                Experience the rejuvenating benefits of
+                                Secretome, a cutting-edge therapy that harnesses
+                                the power of regenerative proteins.
                               </p>
                               <h6 className="title-line">
                                 <span>Benefit</span>
@@ -198,28 +235,42 @@ Service : ${service.value}
                               <ul className="ps-3">
                                 <li className="mb-2">
                                   <h6 className="mb-1">Tissue Regeneration</h6>
-                                  <span>Promotes repair and regeneration of damaged tissues.</span>
+                                  <span>
+                                    Promotes repair and regeneration of damaged
+                                    tissues.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">Anti-Inflammatory</h6>
-                                  <span>Exhibits anti-inflammatory properties, aiding in immune modulation.</span>
+                                  <span>
+                                    Exhibits anti-inflammatory properties,
+                                    aiding in immune modulation.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">Accelerated Healing</h6>
                                   <span>
-                                    Speeds up the natural healing process by promoting cell growth and tissue remodeling.
+                                    Speeds up the natural healing process by
+                                    promoting cell growth and tissue remodeling.
                                   </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Degenerative Condition Treatment</h6>
+                                  <h6 className="mb-1">
+                                    Degenerative Condition Treatment
+                                  </h6>
                                   <span>
-                                    Holds potential for treating conditions like osteoarthritis and neurodegenerative diseases.
+                                    Holds potential for treating conditions like
+                                    osteoarthritis and neurodegenerative
+                                    diseases.
                                   </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Minimized Immune Response</h6>
+                                  <h6 className="mb-1">
+                                    Minimized Immune Response
+                                  </h6>
                                   <span>
-                                    Reduces the risk of immune rejection, making them suitable for transplantation and
+                                    Reduces the risk of immune rejection, making
+                                    them suitable for transplantation and
                                     regenerative therapies.
                                   </span>
                                 </li>
@@ -238,7 +289,11 @@ Service : ${service.value}
                                   </div> */}
 
                                   <button
-                                    onClick={() => handleBook("Secretome and Stem Cells Therapy")}
+                                    onClick={() =>
+                                      handleBook(
+                                        "Secretome and Stem Cells Therapy"
+                                      )
+                                    }
                                     id="secretome"
                                     className="btn btn-warning fs-14 ms-auto"
                                   >
@@ -262,19 +317,29 @@ Service : ${service.value}
                         aria-expanded="true"
                         aria-controls="collapseThree"
                       >
-                        <i className="icon-menu-icon-alternative03 me-2 fs-32"></i> Ozone Therapy
+                        <i className="icon-menu-icon-alternative03 me-2 fs-32"></i>{" "}
+                        Ozone Therapy
                       </button>
                     </h2>
-                    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div
+                      id="collapseThree"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
                       <div className="accordion-body">
                         <div className="list-data-faq">
                           <div className="row gy-3">
                             <div className="col-12">
-                              <img src="assets/img/alternative/img-sub-alternative03.png" className="w-100" alt="" />
+                              <img
+                                src="assets/img/alternative/img-sub-alternative03.png"
+                                className="w-100"
+                                alt=""
+                              />
                             </div>
                             <div className="col-12">
                               <p>
-                                Immerse yourself in the healing properties of ozone therapy. Discover a holistic approach to
+                                Immerse yourself in the healing properties of
+                                ozone therapy. Discover a holistic approach to
                                 wellness with ozone therapy.
                               </p>
                               <h6 className="title-line">
@@ -283,23 +348,46 @@ Service : ${service.value}
                               <ul className="ps-3">
                                 <li className="mb-2">
                                   <h6 className="mb-1">Improved Oxygenation</h6>
-                                  <span>May enhance oxygen delivery to tissues, potentially boosting energy levels.</span>
+                                  <span>
+                                    May enhance oxygen delivery to tissues,
+                                    potentially boosting energy levels.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Enhanced Immune System</h6>
-                                  <span>Claimed to stimulate the immune system for increased resistance to infections.</span>
+                                  <h6 className="mb-1">
+                                    Enhanced Immune System
+                                  </h6>
+                                  <span>
+                                    Claimed to stimulate the immune system for
+                                    increased resistance to infections.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Anti-Inflammatory Effects</h6>
-                                  <span>Proposed to have anti-inflammatory properties.</span>
+                                  <h6 className="mb-1">
+                                    Anti-Inflammatory Effects
+                                  </h6>
+                                  <span>
+                                    Proposed to have anti-inflammatory
+                                    properties.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Detoxification Support</h6>
-                                  <span>Advocated for its potential role in aiding detoxification.</span>
+                                  <h6 className="mb-1">
+                                    Detoxification Support
+                                  </h6>
+                                  <span>
+                                    Advocated for its potential role in aiding
+                                    detoxification.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Antimicrobial Properties</h6>
-                                  <span>Suggested to have antimicrobial effects that may help combat infections.</span>
+                                  <h6 className="mb-1">
+                                    Antimicrobial Properties
+                                  </h6>
+                                  <span>
+                                    Suggested to have antimicrobial effects that
+                                    may help combat infections.
+                                  </span>
                                 </li>
                               </ul>
                               <div className="price">
@@ -331,31 +419,59 @@ Service : ${service.value}
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">
                       <label className="form-label">Name</label>
-                      <input type="text" className="form-control" id="name" placeholder="Your Name" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
                     </div>
                     <div className="col-md-4">
                       <label className="form-label">Address</label>
-                      <input type="text" className="form-control" id="address" placeholder="Your Address" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="address"
+                        placeholder="Your Address"
+                        value={formData.address}
+                        onChange={handleChange}
+                      />
                     </div>
                     <div className="col-md-4">
                       <label className="form-label">Service Name</label>
-                      <select id="service" className="form-select form-control" aria-label="Default select example">
+                      <select
+                        id="service"
+                        className="form-select form-control"
+                        aria-label="Default select example"
+                        value={formData.service}
+                        onChange={handleChange}
+                      >
                         <option>Select Service</option>
                         <option value="Teeth Whitening">Teeth Whitening</option>
-                        <option value="Secretome and Stem Cells Therapy">Secretome and Stem Cells Therapy</option>
+                        <option value="Secretome and Stem Cells Therapy">
+                          Secretome and Stem Cells Therapy
+                        </option>
                         <option value="Ozone Therapy">Ozone Therapy</option>
                       </select>
                     </div>
                   </div>
                   <div className="row g-3 justify-content-center">
                     <div className="col-6 col-md-3">
-                      <button onClick={redirectWa} className="btn btn-whatsapp w-100">
+                      <button
+                        onClick={redirectWa}
+                        className="btn btn-whatsapp w-100"
+                      >
                         <i className="mdi mdi-whatsapp fs-18 me-2"></i>
                         Whatsapp
                       </button>
                     </div>
                     <div className="col-6 col-md-3">
-                      <button onClick={redirectTele} className="btn btn-telegram w-100">
+                      <button
+                        onClick={redirectTele}
+                        className="btn btn-telegram w-100"
+                      >
                         <i className="fa-brands fa-telegram fs-18 me-2"></i>
                         Telegram
                       </button>
@@ -370,4 +486,12 @@ Service : ${service.value}
   }
 };
 
-export default InHomeDiagnostic;
+export default function App() {
+  return (
+    <Suspense fallback={<div>Loading</div>}>
+      <LayoutWrapper>
+        <InHomeDiagnostic />
+      </LayoutWrapper>
+    </Suspense>
+  );
+}

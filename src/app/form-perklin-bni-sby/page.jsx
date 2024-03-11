@@ -15,8 +15,7 @@ const initialValues = {
   fasyankes_clinic_code: "",
 };
 
-var perklinBniSby = () => {
-
+const perklinBniSby = () => {
   const handlePhoneChange = (e) => {
     const { id, value } = e.target;
 
@@ -39,31 +38,35 @@ var perklinBniSby = () => {
         confirmButtonColor: "#ff8a00",
         cancelButtonColor: "#a6a6a6",
         confirmButtonText: "OK",
-        cancelButtonText: "BACK"
-      }).then( async (result) => {
+        cancelButtonText: "BACK",
+      }).then(async (result) => {
         if (result.isConfirmed) {
           try {
-            const resData = await fetch(`https://cepatsehats.com/api/v3/cs/index.php`, {
-              method: 'POST',
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                name: values.name,
-                phone: values.phone,
-                clinic_name: values.clinic_name,
-                clinic_address: values.clinic_address,
-                operational_license_number: values.clinic_operation_license_number,
-                clinic_fasyankes_code: values.fasyankes_clinic_code
-              })
-            });
-    
+            const resData = await fetch(
+              `https://cepatsehats.com/api/v3/cs/index.php`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  name: values.name,
+                  phone: values.phone,
+                  clinic_name: values.clinic_name,
+                  clinic_address: values.clinic_address,
+                  operational_license_number:
+                    values.clinic_operation_license_number,
+                  clinic_fasyankes_code: values.fasyankes_clinic_code,
+                }),
+              }
+            );
+
             if (resData.ok) {
               const result = await resData.json();
               console.log(result);
-          
+
               if (result.status === "success") {
-                window.location.replace('/success-register');
+                window.location.replace("/success-register");
               }
             } else {
               console.error("Request failed with status:", resData.status);
@@ -71,12 +74,12 @@ var perklinBniSby = () => {
               console.error("Error response:", errorResponse);
             }
           } catch (error) {
-            console.error('Error:', error);
-          }    
+            console.error("Error:", error);
+          }
         }
       });
-    }
-  })
+    },
+  });
 
   return (
     <>
@@ -96,67 +99,126 @@ var perklinBniSby = () => {
         <div className="title-kur">
           <img src="assets/img/perklin-bni-sby/icon-regis.svg" alt="" />
           <span>
-            Pendaftaran KUR (Kredit Usaha Rakyat)
-            BNI - Cepat Sehat & Perklin
+            Pendaftaran KUR (Kredit Usaha Rakyat) BNI - Cepat Sehat & Perklin
           </span>
         </div>
         <div className="container">
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
-              <label for="name" className="form-label">Nama PIC Perwakilan</label>
-              <input type="text" className="form-control" id="name" aria-describedby=""
+              <label for="name" className="form-label">
+                Nama PIC Perwakilan
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="name"
+                aria-describedby=""
                 value={values.name}
-                onBlur={handleBlur} 
+                onBlur={handleBlur}
                 onChange={handleChange}
               />
-              {errors.name && <small  style={{ color: "red" }}>{errors.name}</small>}
+              {errors.name && (
+                <small style={{ color: "red" }}>{errors.name}</small>
+              )}
             </div>
             <div className="mb-3">
-              <label for="phone" className="form-label">No Handphone Perwakilan</label>
-              <input type="text" inputmode="numeric" pattern="[0-9]*" className="form-control" id="phone" aria-describedby="" 
+              <label for="phone" className="form-label">
+                No Handphone Perwakilan
+              </label>
+              <input
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                className="form-control"
+                id="phone"
+                aria-describedby=""
                 value={values.phone}
-                onBlur={handleBlur} 
+                onBlur={handleBlur}
                 onChange={handlePhoneChange}
               />
-              {errors.phone && <small  style={{ color: "red" }}>{errors.phone}</small>}
+              {errors.phone && (
+                <small style={{ color: "red" }}>{errors.phone}</small>
+              )}
             </div>
             <div className="mb-3">
-              <label for="clinic_name" className="form-label">Nama Klinik</label>
-              <input type="text" className="form-control" id="clinic_name" aria-describedby="" 
+              <label for="clinic_name" className="form-label">
+                Nama Klinik
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="clinic_name"
+                aria-describedby=""
                 value={values.clinic_name}
-                onBlur={handleBlur} 
+                onBlur={handleBlur}
                 onChange={handleChange}
               />
-              {errors.clinic_name && <small  style={{ color: "red" }}>{errors.clinic_name}</small>}
+              {errors.clinic_name && (
+                <small style={{ color: "red" }}>{errors.clinic_name}</small>
+              )}
             </div>
             <div className="mb-3">
-              <label for="clinic_address" className="form-label">Alamat Klinik</label>
-              <input type="text" className="form-control" id="clinic_address" aria-describedby="" 
+              <label for="clinic_address" className="form-label">
+                Alamat Klinik
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="clinic_address"
+                aria-describedby=""
                 value={values.address}
-                onBlur={handleBlur} 
+                onBlur={handleBlur}
                 onChange={handleChange}
               />
-              {errors.clinic_address && <small  style={{ color: "red" }}>{errors.clinic_address}</small>}
+              {errors.clinic_address && (
+                <small style={{ color: "red" }}>{errors.clinic_address}</small>
+              )}
             </div>
             <div className="mb-3">
-              <label for="clinic_operation_license_number" className="form-label">Nomor Izin Operasional Klinik</label>
-              <input type="text" className="form-control" id="clinic_operation_license_number" aria-describedby="" 
+              <label
+                for="clinic_operation_license_number"
+                className="form-label"
+              >
+                Nomor Izin Operasional Klinik
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="clinic_operation_license_number"
+                aria-describedby=""
                 value={values.clinic_operation_license_number}
-                onBlur={handleBlur} 
+                onBlur={handleBlur}
                 onChange={handleChange}
               />
-              {errors.clinic_operation_license_number && <small  style={{ color: "red" }}>{errors.clinic_operation_license_number}</small>}
+              {errors.clinic_operation_license_number && (
+                <small style={{ color: "red" }}>
+                  {errors.clinic_operation_license_number}
+                </small>
+              )}
             </div>
             <div className="mb-3">
-              <label for="fasyankes_clinic_code" className="form-label">Kode Fasyankes Klinik</label>
-              <input type="text" className="form-control" id="fasyankes_clinic_code" aria-describedby=""
+              <label for="fasyankes_clinic_code" className="form-label">
+                Kode Fasyankes Klinik
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="fasyankes_clinic_code"
+                aria-describedby=""
                 value={values.fasyankes_clinic_code}
-                onBlur={handleBlur} 
+                onBlur={handleBlur}
                 onChange={handleChange}
               />
-              {errors.fasyankes_clinic_code && <small  style={{ color: "red" }}>{errors.fasyankes_clinic_code}</small>}
+              {errors.fasyankes_clinic_code && (
+                <small style={{ color: "red" }}>
+                  {errors.fasyankes_clinic_code}
+                </small>
+              )}
             </div>
-            <button type="submit" className="btn btn-yellow w-100 mt-5"> Daftar </button>
+            <button type="submit" className="btn btn-yellow w-100 mt-5">
+              {" "}
+              Daftar{" "}
+            </button>
           </form>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { useState, Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 import LayoutWrapper from "../components/layout-wrapper";
+import Helper from "../../../lib/helper/helper";
 
 import HolisticAlternativeId from "./page-id";
 
@@ -47,33 +48,24 @@ const HolisticAlternative = () => {
     window.location.href = "#book";
   };
 
-  const redirectWa = (e) => {
-    e.preventDefault();
+  const [formData, setFormData] = useState({
+    name: "",
+    address: "",
+    service: "Select Service",
+  });
 
-    const name = document.getElementById("name");
-    const address = document.getElementById("address");
-
-    const service = document.getElementById("service");
-    if (name?.value && address?.value && service?.value) {
-      const wardingWa = encodeURIComponent(`
-Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
-
-Name :  ${name.value}
-Address : ${address.value} 
-Service : ${service.value}
-`);
-
-      let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
-      window.location.href = url;
-
-      return;
-    } else {
-      alert("please fill form with correctly");
-    }
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
   };
 
+  const redirectWa = () => {
+    const helper = new Helper();
+    helper.RedirectToWa(formData, lang, true);
+  };
   const redirectTele = () => {
-    window.location.replace("https://t.me/cepat_sehat");
+    const helper = new Helper();
+    helper.redirectTele();
   };
 
   const lang = useSelector((state) => state.lang.value);
@@ -738,7 +730,7 @@ Service : ${service.value}
             <section className="book" id="book">
               <div className="container">
                 <h3 className="title-section">{book}</h3>
-                <form action="#">
+                <div>
                   <div className="row mb-3 g-3">
                     <div className="col-md-4">
                       <label className="form-label">Name</label>
@@ -747,6 +739,8 @@ Service : ${service.value}
                         className="form-control"
                         id="name"
                         placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="col-md-4">
@@ -756,6 +750,8 @@ Service : ${service.value}
                         className="form-control"
                         id="address"
                         placeholder="Your Address"
+                        value={formData.address}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="col-md-4">
@@ -764,6 +760,8 @@ Service : ${service.value}
                         id="service"
                         className="form-select form-control"
                         aria-label="Default select example"
+                        value={formData.service}
+                        onChange={handleChange}
                       >
                         <option>Select Service</option>
                         <option value="Acupuncture">Acupuncture</option>
@@ -804,7 +802,7 @@ Service : ${service.value}
                       </button>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
             </section>
           </div>

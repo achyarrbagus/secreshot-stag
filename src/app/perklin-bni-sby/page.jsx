@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 
-var perklinBniSby = () => {
+const perklinBniSby = () => {
   return (
     <>
       <head>
@@ -21,20 +21,20 @@ var perklinBniSby = () => {
         </div>
         <div className="container">
           <div className="text-home">
-            <h5>
-              FORM REGISTRASI
-            </h5>
+            <h5>FORM REGISTRASI</h5>
             <p className="detail-text">
-              Kredit usaha rakyat
-              oleh <br />
+              Kredit usaha rakyat oleh <br />
               BNI, Cepat Sehat dan Perklin Surabaya
             </p>
             <p className="fs-16">
-              Dapatkan kesempatan untuk mendapatkan KUR BNI & fasilitas Rekam Medis Elektronik dan layanan digital
-              lainnya
+              Dapatkan kesempatan untuk mendapatkan KUR BNI & fasilitas Rekam
+              Medis Elektronik dan layanan digital lainnya
             </p>
           </div>
-          <Link href="/form-perklin-bni-sby" className="btn btn-yellow w-100 mt-5">
+          <Link
+            href="/form-perklin-bni-sby"
+            className="btn btn-yellow w-100 mt-5"
+          >
             Daftar Sekarang
           </Link>
         </div>

@@ -1,34 +1,27 @@
 "use client";
 import { useState } from "react";
 import LayoutWrapper from "../components/layout-wrapper";
+import Helper from "../../../lib/helper/helper";
 
 const InHomeTherapyId = () => {
-  const redirectWa = (e) => {
-    e.preventDefault();
+  const [formData, setFormData] = useState({
+    name: "",
+    address: "",
+    service: "Select Service",
+  });
 
-    const name = document.getElementById("name");
-    const address = document.getElementById("address");
-
-    const service = document.getElementById("service");
-    if (name?.value && address?.value && service?.value) {
-      const wardingWa = encodeURIComponent(`
-Hallo CepatSehat.com by Klinik Cepat Sehat, saya ingin konsultasi
-
-Nama : ${name.value}
-Alamat : ${address.value} 
-Layanan : ${service.value}`);
-
-      let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
-      window.location.href = url;
-
-      return;
-    } else {
-      alert("please fill form with correctly");
-    }
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
   };
 
+  const redirectWa = () => {
+    const helper = new Helper();
+    helper.RedirectToWa(formData, "ID", true);
+  };
   const redirectTele = () => {
-    window.location.href = "https://t.me/cepat_sehat";
+    const helper = new Helper();
+    helper.redirectTele();
   };
 
   // <option value="Infus Bali Belly">Infus Bali Belly</option>
@@ -816,6 +809,8 @@ Layanan : ${service.value}`);
                     className="form-control"
                     id="name"
                     placeholder="Nama Anda"
+                    value={formData.name}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
@@ -825,6 +820,8 @@ Layanan : ${service.value}`);
                     className="form-control"
                     id="address"
                     placeholder="Alamat Anda"
+                    value={formData.address}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
@@ -833,6 +830,8 @@ Layanan : ${service.value}`);
                     id="service"
                     className="form-select form-control"
                     aria-label="Default select example"
+                    value={formData.service}
+                    onChange={handleChange}
                   >
                     <option>Pilih Layanan</option>
                     <option value="Infus Bali Belly">Infus Bali Belly</option>

@@ -33,7 +33,10 @@
     "src/app/holistic-alternative/page.jsx",
     "src/app/inhome-therapy/page.jsx",
     "src/app/alternative-telemedicine/page.jsx",
-    "src/app/test/page.tsx"
-, "src/app/perklin-bni-sby/page.jsx"  ],
+    "src/app/test/page.tsx",
+    "src/app/perklin-bni-sby/page.jsx",
+    "src/app/page-id.jsx",
+    "src/app/page.jsx"
+  ],
   "exclude": ["node_modules"]
 }
