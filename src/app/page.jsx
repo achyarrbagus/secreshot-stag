@@ -150,7 +150,7 @@ const Home = () => {
                   <h3>Why Choose Us?</h3>
                   <div className="list-why">
                     <div className="items-why">
-                      <span>-More than 5000 patients well treated in 2023</span>
+                      <span>More than 5000 patients well treated in 2023</span>
                     </div>
                   </div>
                   <div className="list-why">
