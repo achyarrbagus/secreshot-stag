@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Accordion from "react-bootstrap/Accordion";
 import Helper from "../../../lib/helper/helper";
 
 const DoctorHomeVisitId = () => {
@@ -41,8 +42,10 @@ const DoctorHomeVisitId = () => {
         setBook("Pesan pemeriksaan kesehatan sekarang");
         break;
     }
-    let serviceOption = document.getElementById("service");
-    serviceOption.value = serviceSelect;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      service: serviceSelect,
+    }));
     window.location.href = "#book";
   };
 
@@ -75,399 +78,330 @@ const DoctorHomeVisitId = () => {
                 Keutamaan kunjungan dokter ke rumah anda meliputi :
               </h3>
             </div>
-            <div
-              className="accordion accordion-custom row"
-              id="accordionExample"
-            >
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    <i className="icon-menu-icon-homevisit01 me-2 fs-32"></i>{" "}
-                    Kunjungan Dokter ke Rumah
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <div className="list-data-faq">
-                      <div className="row gy-3">
-                        <div className="col-12">
-                          <img
-                            src="assets/img/homevisit/img-sub-homevisit01.png"
-                            className="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-12">
-                          <p>
-                            Kunjungan dokter ke rumah menghadirkan fasilitas
-                            perawatan medis ke rumah anda, memungkinkan pasien
-                            menerima pemeriksaan, diagnosis, resep, dan menerima
-                            konsultasi dalam kenyamanan rumah mereka sendiri.
-                          </p>
-                          <h6 className="title-line">
-                            <span>Keuntungan</span>
-                          </h6>
-                          <ul className="ps-3">
-                            <li className="mb-2">
-                              <h6 className="mb-1">Kenyamanan</h6>
-                              <span>
-                                Layanan kesehatan dikirimkan ke rumah Anda untuk
-                                menghemat waktu dan kemudahan.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Perawatan Pribadi</h6>
-                              <span>
-                                Rencana perawatan yang disesuaikan dengan
-                                mempertimbangkan lingkungan rumah dan gaya
-                                hidup.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Intervensi Tepat Waktu</h6>
-                              <span>
-                                Deteksi dini dan tindakan untuk mencegah
-                                komplikasi.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Peningkatan Hubungan </h6>
-                              <span>
-                                Kunjungan ke rumah menumbuhkan komunikasi dan
-                                kepercayaan yang lebih baik.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Aksesibilitas </h6>
-                              <span>
-                                Akses mudah bagi kelompok rentan seperti lansia
-                                dan mereka yang memiliki masalah mobilitas.
-                              </span>
-                            </li>
-                          </ul>
-                          <div className="price">
-                            <div className="value-price">
-                              <b>Mulai dari:</b> Rp250.000
-                            </div>
-                            <div
-                              onClick={() =>
-                                handleBook("Kunjungan Dokter ke Rumah")
-                              }
-                              id="doctor-visit"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan
-                            </div>
+
+            <Accordion className="accordion accordion-custom row">
+              <Accordion.Item className="accordion-item col-md-6" eventKey="1">
+                <Accordion.Header>
+                  <i className="icon-menu-icon-homevisit01 me-2 fs-32"></i>{" "}
+                  Kunjungan Dokter ke Rumah
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="assets/img/homevisit/img-sub-homevisit01.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>
+                          Kunjungan dokter ke rumah menghadirkan fasilitas
+                          perawatan medis ke rumah anda, memungkinkan pasien
+                          menerima pemeriksaan, diagnosis, resep, dan menerima
+                          konsultasi dalam kenyamanan rumah mereka sendiri.
+                        </p>
+                        <h6 className="title-line">
+                          <span>Keuntungan</span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">Kenyamanan</h6>
+                            <span>
+                              Layanan kesehatan dikirimkan ke rumah Anda untuk
+                              menghemat waktu dan kemudahan.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Perawatan Pribadi</h6>
+                            <span>
+                              Rencana perawatan yang disesuaikan dengan
+                              mempertimbangkan lingkungan rumah dan gaya hidup.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Intervensi Tepat Waktu</h6>
+                            <span>
+                              Deteksi dini dan tindakan untuk mencegah
+                              komplikasi.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Peningkatan Hubungan </h6>
+                            <span>
+                              Kunjungan ke rumah menumbuhkan komunikasi dan
+                              kepercayaan yang lebih baik.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Aksesibilitas </h6>
+                            <span>
+                              Akses mudah bagi kelompok rentan seperti lansia
+                              dan mereka yang memiliki masalah mobilitas.
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>Mulai dari:</b> Rp250.000
+                          </div>
+                          <div
+                            onClick={() =>
+                              handleBook("Kunjungan Dokter ke Rumah")
+                            }
+                            id="doctor-visit"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            Pesan
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="true"
-                    aria-controls="collapseTwo"
-                  >
-                    <i className="icon-menu-icon-homevisit02 me-2 fs-32"></i>{" "}
-                    Kunjungan Perawat ke Rumah
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <div className="list-data-faq">
-                      <div className="row gy-3">
-                        <div className="col-12">
-                          <img
-                            src="assets/img/homevisit/img-sub-homevisit02.png"
-                            className="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-12">
-                          <p>
-                            Kunjungan Perawat ke rumah menawarkan layanan yang
-                            dipersonalisasi ke rumah seperti pengecekan,
-                            perawatan, dan penyuluhan kesehatan.
-                          </p>
-                          <h6 className="title-line">
-                            <span>Keuntungan</span>
-                          </h6>
-                          <ul className="ps-3">
-                            <li className="mb-2">
-                              <h6 className="mb-1">Kenyamanan</h6>
-                              <span>
-                                Layanan kesehatan dikirimkan ke rumah Anda untuk
-                                menghemat waktu dan kemudahan.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Perawatan Pribadi</h6>
-                              <span>
-                                Rencana perawatan yang disesuaikan dengan
-                                mempertimbangkan lingkungan rumah dan gaya
-                                hidup.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Intervensi Tepat Waktu </h6>
-                              <span>
-                                Deteksi dini dan tindakan untuk mencegah
-                                komplikasi.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Peningkatan Hubungan </h6>
-                              <span>
-                                Kunjungan ke rumah menumbuhkan komunikasi dan
-                                kepercayaan yang lebih baik.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Aksesibilitas </h6>
-                              <span>
-                                Akses mudah bagi kelompok rentan seperti lansia
-                                dan mereka yang memiliki masalah mobilitas.
-                              </span>
-                            </li>
-                          </ul>
-                          <div className="price">
-                            <div className="value-price">
-                              <b>Mulai dari:</b> Rp200.000
-                            </div>
-                            <div
-                              onClick={() =>
-                                handleBook("Kunjungan Perawat ke Rumah")
-                              }
-                              id="nurse-visit"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan
-                            </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item className="accordion-item col-md-6" eventKey="2">
+                <Accordion.Header>
+                  <i className="icon-menu-icon-homevisit02 me-2 fs-32"></i>{" "}
+                  Kunjungan Perawat ke Rumah
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="assets/img/homevisit/img-sub-homevisit02.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>
+                          Kunjungan Perawat ke rumah menawarkan layanan yang
+                          dipersonalisasi ke rumah seperti pengecekan,
+                          perawatan, dan penyuluhan kesehatan.
+                        </p>
+                        <h6 className="title-line">
+                          <span>Keuntungan</span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">Kenyamanan</h6>
+                            <span>
+                              Layanan kesehatan dikirimkan ke rumah Anda untuk
+                              menghemat waktu dan kemudahan.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Perawatan Pribadi</h6>
+                            <span>
+                              Rencana perawatan yang disesuaikan dengan
+                              mempertimbangkan lingkungan rumah dan gaya hidup.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Intervensi Tepat Waktu </h6>
+                            <span>
+                              Deteksi dini dan tindakan untuk mencegah
+                              komplikasi.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Peningkatan Hubungan </h6>
+                            <span>
+                              Kunjungan ke rumah menumbuhkan komunikasi dan
+                              kepercayaan yang lebih baik.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Aksesibilitas </h6>
+                            <span>
+                              Akses mudah bagi kelompok rentan seperti lansia
+                              dan mereka yang memiliki masalah mobilitas.
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>Mulai dari:</b> Rp200.000
+                          </div>
+                          <div
+                            onClick={() =>
+                              handleBook("Kunjungan Perawat ke Rumah")
+                            }
+                            id="nurse-visit"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            Pesan
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="true"
-                    aria-controls="collapseThree"
-                  >
-                    <i className="icon-menu-icon-homevisit03 me-2 fs-32"></i>
-                    Vaksinasi anak
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <div className="list-data-faq">
-                      <div className="row gy-3">
-                        <div className="col-12">
-                          <img
-                            src="assets/img/homevisit/img-sub-homevisit03.png"
-                            className="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-12">
-                          <p>
-                            Vaksinasi Anak adalah pemberian vaksin untuk
-                            melindungi anak dari penyakit seperti campak,
-                            gondongan, rubella, dan polio.
-                          </p>
-                          <h6 className="title-line">
-                            <span>Keuntungan </span>
-                          </h6>
-                          <ul className="ps-3">
-                            <li className="mb-2">
-                              <h6 className="mb-1">Perlindungan Kesehatan</h6>
-                              <span>
-                                Vaksin melindungi anak-anak dari penyakit
-                                serius.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Pertahanan Nasional </h6>
-                              <span>
-                                Vaksinasi membantu mencegah penyebaran penyakit
-                                di masyarakat.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Hemat Biaya Kesehatan</h6>
-                              <span>
-                                Vaksinasi menghemat biaya pengobatan dengan
-                                mencegah penyakit parah.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Akses Sekolah </h6>
-                              <span>
-                                Vaksinasi yang diwajibkan menjamin akses
-                                terhadap pendidikan di lingkungan yang lebih
-                                aman.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Kesehatan Global </h6>
-                              <span>
-                                Program vaksinasi berkontribusi pada upaya
-                                global melawan penyakit menular.
-                              </span>
-                            </li>
-                          </ul>
-                          <div className="price">
-                            <div className="value-price">
-                              <b>Mulai dari:</b> Rp300.000
-                            </div>
-                            <div
-                              onClick={() => handleBook("Vaksinasi anak")}
-                              id="child"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan
-                            </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item className="accordion-item col-md-6" eventKey="3">
+                <Accordion.Header>
+                  {" "}
+                  <i className="icon-menu-icon-homevisit03 me-2 fs-32"></i>{" "}
+                  Vaksinasi anak
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="assets/img/homevisit/img-sub-homevisit03.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>
+                          Vaksinasi Anak adalah pemberian vaksin untuk
+                          melindungi anak dari penyakit seperti campak,
+                          gondongan, rubella, dan polio.
+                        </p>
+                        <h6 className="title-line">
+                          <span>Keuntungan </span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">Perlindungan Kesehatan</h6>
+                            <span>
+                              Vaksin melindungi anak-anak dari penyakit serius.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Pertahanan Nasional </h6>
+                            <span>
+                              Vaksinasi membantu mencegah penyebaran penyakit di
+                              masyarakat.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Hemat Biaya Kesehatan</h6>
+                            <span>
+                              Vaksinasi menghemat biaya pengobatan dengan
+                              mencegah penyakit parah.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Akses Sekolah </h6>
+                            <span>
+                              Vaksinasi yang diwajibkan menjamin akses terhadap
+                              pendidikan di lingkungan yang lebih aman.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Kesehatan Global </h6>
+                            <span>
+                              Program vaksinasi berkontribusi pada upaya global
+                              melawan penyakit menular.
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>Mulai dari:</b> Rp300.000
+                          </div>
+                          <div
+                            onClick={() => handleBook("Vaksinasi anak")}
+                            id="child"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            Pesan
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="true"
-                    aria-controls="collapseFour"
-                  >
-                    <i className="icon-menu-icon-homevisit04 me-2 fs-32"></i>{" "}
-                    Pemeriksaan Kesehatan
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <div className="list-data-faq">
-                      <div className="row gy-3">
-                        <div className="col-12">
-                          <img
-                            src="assets/img/homevisit/img-sub-homevisit04.png"
-                            className="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-12">
-                          <p>
-                            Pemeriksaan kesehatan adalah pertemuan rutin dengan
-                            ahli kesehatan untuk menilai kesehatan secara
-                            keseluruhan melalui pengukuran tanda vital,
-                            pemeriksaan fisik, dan jika perlu, pemeriksaan atau
-                            tes tambahan.
-                          </p>
-                          <h6 className="title-line">
-                            <span>Keuntungan </span>
-                          </h6>
-                          <ul className="ps-3">
-                            <li className="mb-2">
-                              <h6 className="mb-1">Tes Kadar Glukosa Darah</h6>
-                              <span>
-                                Periksa kadar gula darah untuk mendiagnosis dan
-                                mengelola diabetes dan hipoglikemia.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Tes Kolesterol</h6>
-                              <span>
-                                Menilai kadar LDL, HDL, dan trigliserida untuk
-                                mengukur risiko kardiovaskular.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Tes Asam Urat </h6>
-                              <span>
-                                Mengukur kadar asam urat untuk evaluasi fungsi
-                                ginjal dan mendiagnosis kondisi seperti asam
-                                urat.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">
-                                Pengukuran Tekanan Darah{" "}
-                              </h6>
-                              <span>
-                                Pengukuran Tekanan Darah Evaluasi tekanan darah
-                                arteri sebagai indikator penting kesehatan
-                                kardiovaskular.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Tes Kadar Zat Besi </h6>
-                              <span>
-                                Mengukur jumlah zat besi dalam darah dan
-                                mendiagnosis kondisi seperti anemia.
-                              </span>
-                            </li>
-                          </ul>
-                          <div className="price">
-                            <div className="value-price">
-                              <b>Mulai dari:</b> Rp150.000
-                            </div>
-                            <div
-                              onClick={() =>
-                                handleBook("Pemeriksaan Kesehatan")
-                              }
-                              id="medical"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan
-                            </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item className="accordion-item col-md-6" eventKey="4">
+                <Accordion.Header>
+                  {" "}
+                  <i className="icon-menu-icon-homevisit04 me-2 fs-32"></i>{" "}
+                  Pemeriksaan Kesehatan
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="assets/img/homevisit/img-sub-homevisit04.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>
+                          Pemeriksaan kesehatan adalah pertemuan rutin dengan
+                          ahli kesehatan untuk menilai kesehatan secara
+                          keseluruhan melalui pengukuran tanda vital,
+                          pemeriksaan fisik, dan jika perlu, pemeriksaan atau
+                          tes tambahan.
+                        </p>
+                        <h6 className="title-line">
+                          <span>Keuntungan </span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">Tes Kadar Glukosa Darah</h6>
+                            <span>
+                              Periksa kadar gula darah untuk mendiagnosis dan
+                              mengelola diabetes dan hipoglikemia.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Tes Kolesterol</h6>
+                            <span>
+                              Menilai kadar LDL, HDL, dan trigliserida untuk
+                              mengukur risiko kardiovaskular.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Tes Asam Urat </h6>
+                            <span>
+                              Mengukur kadar asam urat untuk evaluasi fungsi
+                              ginjal dan mendiagnosis kondisi seperti asam urat.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Pengukuran Tekanan Darah </h6>
+                            <span>
+                              Pengukuran Tekanan Darah Evaluasi tekanan darah
+                              arteri sebagai indikator penting kesehatan
+                              kardiovaskular.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Tes Kadar Zat Besi </h6>
+                            <span>
+                              Mengukur jumlah zat besi dalam darah dan
+                              mendiagnosis kondisi seperti anemia.
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>Mulai dari:</b> Rp150.000
+                          </div>
+                          <div
+                            onClick={() => handleBook("Pemeriksaan Kesehatan")}
+                            id="medical"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            Pesan
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </section>
 

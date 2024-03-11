@@ -7,6 +7,7 @@ import { useSearchParams } from "next/navigation";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 import LayoutWrapper from "../components/layout-wrapper";
 import Helper from "../../../lib/helper/helper";
+import Accordion from "react-bootstrap/Accordion";
 
 const RemoteTelemedic = () => {
   const searchParams = useSearchParams();
@@ -48,8 +49,10 @@ const RemoteTelemedic = () => {
         break;
     }
 
-    let serviceOption = document.getElementById("service");
-    serviceOption.value = serviceSelect;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      service: serviceSelect,
+    }));
     window.location.href = "#book";
   };
   const lang = useSelector((state) => state.lang.value);
@@ -104,424 +107,372 @@ const RemoteTelemedic = () => {
                     Our Remote Telemedicine services include:
                   </h3>
                 </div>
-                <div
-                  className="accordion accordion-custom row"
-                  id="accordionExample"
-                >
-                  <div className="accordion-item col-md-6">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        <i className="icon-menu-icon-remotetelemedicine01 me-2 fs-32"></i>{" "}
-                        General Practitioner Online Consultation
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      className="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div className="accordion-body">
-                        <div className="list-data-faq">
-                          <div className="row gy-3">
-                            <div className="col-12">
-                              <img
-                                src="assets/img/remote-telemedicine/img-sub-remotetelemedicine01.png"
-                                className="w-100"
-                                alt=""
-                              />
-                            </div>
-                            <div className="col-12">
-                              <p>
-                                Access healthcare through convenient online
-                                consultations, addressing diagnoses, treatments,
-                                and follow-up care flexibly from your own space.
-                              </p>
-                              <h6 className="title-line">
-                                <span>Benefit</span>
-                              </h6>
-                              <ul className="ps-3">
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Convenience</h6>
-                                  <span>
-                                    Allows patients to consult with a healthcare
-                                    professional from the comfort of their own
-                                    home, saving time and travel.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Accessibility</h6>
-                                  <span>
-                                    Provides access to medical advice and
-                                    prescriptions for common ailments without
-                                    the need for in-person visits.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Timely Care</h6>
-                                  <span>
-                                    Enables quick consultations for minor
-                                    illnesses or health concerns without waiting
-                                    for an appointment.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Cost-Effective</h6>
-                                  <span>
-                                    May be more cost-efficient compared to
-                                    in-person visits, considering travel
-                                    expenses and time off work.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Preventive Guidance</h6>
-                                  <span>
-                                    Offers a convenient way to discuss
-                                    preventive care, lifestyle changes, and
-                                    general health advice with a healthcare
-                                    professional.
-                                  </span>
-                                </li>
-                              </ul>
-                              <div className="price">
-                                <div className="value-price">
-                                  <b>Start from:</b> Rp20.000
-                                </div>
-                                <div className="ms-auto d-flex gap-1">
-                                  {/* <div
+                <Accordion className="accordion accordion-custom row">
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="1"
+                  >
+                    <Accordion.Header>
+                      <i className="icon-menu-icon-remotetelemedicine01 me-2 fs-32"></i>{" "}
+                      General Practitioner Online Consultation
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/remote-telemedicine/img-sub-remotetelemedicine01.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              Access healthcare through convenient online
+                              consultations, addressing diagnoses, treatments,
+                              and follow-up care flexibly from your own space.
+                            </p>
+                            <h6 className="title-line">
+                              <span>Benefit</span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Convenience</h6>
+                                <span>
+                                  Allows patients to consult with a healthcare
+                                  professional from the comfort of their own
+                                  home, saving time and travel.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Accessibility</h6>
+                                <span>
+                                  Provides access to medical advice and
+                                  prescriptions for common ailments without the
+                                  need for in-person visits.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Timely Care</h6>
+                                <span>
+                                  Enables quick consultations for minor
+                                  illnesses or health concerns without waiting
+                                  for an appointment.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Cost-Effective</h6>
+                                <span>
+                                  May be more cost-efficient compared to
+                                  in-person visits, considering travel expenses
+                                  and time off work.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Preventive Guidance</h6>
+                                <span>
+                                  Offers a convenient way to discuss preventive
+                                  care, lifestyle changes, and general health
+                                  advice with a healthcare professional.
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp20.000
+                              </div>
+                              <div className="ms-auto d-flex gap-1">
+                                {/* <div
                                     onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-ernita/")}
                                     id="general"
                                     className="btn btn-warning"
                                   >
                                     <i class="fa-solid fa-user-doctor"></i>
                                   </div> */}
-                                  <div
-                                    onClick={() =>
-                                      handleBook(
-                                        "General Practitioner Online Consultation"
-                                      )
-                                    }
-                                    id="general"
-                                    className="btn btn-warning fs-14 ms-auto"
-                                  >
-                                    Book Now{" "}
-                                  </div>
+                                <div
+                                  onClick={() =>
+                                    handleBook(
+                                      "General Practitioner Online Consultation"
+                                    )
+                                  }
+                                  id="general"
+                                  className="btn btn-warning fs-14 ms-auto"
+                                >
+                                  Book Now{" "}
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item col-md-6">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                        aria-controls="collapseTwo"
-                      >
-                        <i className="icon-menu-icon-remotetelemedicine02 me-2 fs-32"></i>{" "}
-                        Medical Doctor Online Consultation
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      className="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div className="accordion-body">
-                        <div className="list-data-faq">
-                          <div className="row gy-3">
-                            <div className="col-12">
-                              <img
-                                src="assets/img/remote-telemedicine/img-sub-remotetelemedicine02.png"
-                                className="w-100"
-                                alt=""
-                              />
-                            </div>
-                            <div className="col-12">
-                              <p>
-                                Connect with specialized medical expertise
-                                remotely, eliminating the need for physical
-                                travel through our online platform
-                              </p>
-                              <h6 className="title-line">
-                                <span>Benefit</span>
-                              </h6>
-                              <ul className="ps-3">
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Pediatrician</h6>
-                                  <span>
-                                    consult with doctor specializing in the
-                                    medical care of infants, children, and
-                                    adolescents, focusing on their physical,
-                                    emotional, and behavioral well-being.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Surgeon</h6>
-                                  <span>
-                                    consult with medical professional skilled in
-                                    performing surgical procedures, addressing a
-                                    wide range of conditions through operative
-                                    techniques.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Aesthetic Doctor</h6>
-                                  <span>
-                                    consult with medical practitioner with
-                                    expertise in aesthetic or cosmetic medicine,
-                                    knowing about non-surgical procedures to
-                                    enhance a person's appearance.
-                                  </span>
-                                </li>
-                              </ul>
-                              <div className="price">
-                                <div className="value-price">
-                                  <b>Start from:</b> Rp40.000
-                                </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="2"
+                  >
+                    <Accordion.Header>
+                      <i className="icon-menu-icon-remotetelemedicine02 me-2 fs-32"></i>{" "}
+                      Medical Doctor Online Consultation
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/remote-telemedicine/img-sub-remotetelemedicine02.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              Connect with specialized medical expertise
+                              remotely, eliminating the need for physical travel
+                              through our online platform
+                            </p>
+                            <h6 className="title-line">
+                              <span>Benefit</span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Pediatrician</h6>
+                                <span>
+                                  consult with doctor specializing in the
+                                  medical care of infants, children, and
+                                  adolescents, focusing on their physical,
+                                  emotional, and behavioral well-being.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Surgeon</h6>
+                                <span>
+                                  consult with medical professional skilled in
+                                  performing surgical procedures, addressing a
+                                  wide range of conditions through operative
+                                  techniques.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Aesthetic Doctor</h6>
+                                <span>
+                                  consult with medical practitioner with
+                                  expertise in aesthetic or cosmetic medicine,
+                                  knowing about non-surgical procedures to
+                                  enhance a person's appearance.
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp40.000
+                              </div>
 
-                                <div className="d-flex gap-1 ms-auto">
-                                  {/* <div
+                              <div className="d-flex gap-1 ms-auto">
+                                {/* <div
                                     onClick={() => (window.location.href = "https://www.sehatcepat.com/payments/dr-lia/")}
                                     id="general"
                                     className="btn btn-warning"
                                   >
                                     <i class="fa-solid fa-user-doctor"></i>
                                   </div> */}
-                                  <div
-                                    onClick={() =>
-                                      handleBook(
-                                        "Medical Doctor Online Consultation"
-                                      )
-                                    }
-                                    id="medical"
-                                    className="btn btn-warning fs-14 ms-auto"
-                                  >
-                                    Book Now
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item col-md-6">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="true"
-                        aria-controls="collapseThree"
-                      >
-                        <i className="icon-menu-icon-remotetelemedicine03 me-2 fs-32"></i>{" "}
-                        Online Medical Prescription
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      className="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div className="accordion-body">
-                        <div className="list-data-faq">
-                          <div className="row gy-3">
-                            <div className="col-12">
-                              <img
-                                src="assets/img/remote-telemedicine/img-sub-remotetelemedicine03.png"
-                                className="w-100"
-                                alt=""
-                              />
-                            </div>
-                            <div className="col-12">
-                              <p>
-                                Online medical prescriptions enable patients to
-                                receive medications remotely through virtual
-                                consultations.
-                              </p>
-                              <h6 className="title-line">
-                                <span>Benefit</span>
-                              </h6>
-                              <ul className="ps-3">
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Convenience</h6>
-                                  <span>
-                                    Enables patients to receive prescriptions
-                                    without visiting a physical clinic, saving
-                                    time and effort.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Accessibility</h6>
-                                  <span>
-                                    Improves access to necessary medications for
-                                    individuals in remote areas or with limited
-                                    mobility.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Time Efficiency</h6>
-                                  <span>
-                                    Reduces the time spent on travel and waiting
-                                    in queues at traditional pharmacies.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Privacy</h6>
-                                  <span>
-                                    Offers a discreet way for individuals to
-                                    obtain prescription medications without
-                                    face-to-face interactions.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Continuity of Care</h6>
-                                  <span>
-                                    Supports ongoing and consistent management
-                                    of chronic conditions through timely
-                                    prescription refills and adjustments.
-                                  </span>
-                                </li>
-                              </ul>
-                              <div className="price">
-                                <div className="value-price">
-                                  <b>Start from:</b> Rp40.000
-                                </div>
-
                                 <div
                                   onClick={() =>
-                                    handleBook("Online Medical Prescription")
+                                    handleBook(
+                                      "Medical Doctor Online Consultation"
+                                    )
                                   }
-                                  id="prescription"
+                                  id="medical"
                                   className="btn btn-warning fs-14 ms-auto"
                                 >
-                                  Book Now{" "}
+                                  Book Now
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item col-md-6">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="true"
-                        aria-controls="collapseFour"
-                      >
-                        <i className="icon-menu-icon-remotetelemedicine04 me-2 fs-32"></i>
-                        Online Sick Leave Letter
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFour"
-                      className="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div className="accordion-body">
-                        <div className="list-data-faq">
-                          <div className="row gy-3">
-                            <div className="col-12">
-                              <img
-                                src="assets/img/remote-telemedicine/img-sub-remotetelemedicine04.png"
-                                className="w-100"
-                                alt=""
-                              />
-                            </div>
-                            <div className="col-12">
-                              <p>
-                                Online sick leave letter enables individuals to
-                                consult with healthcare professionals remotely
-                                to obtain the necessary sick leave letter
-                                through digital platforms or websites.
-                              </p>
-                              <h6 className="title-line">
-                                <span>Benefit</span>
-                              </h6>
-                              <ul className="ps-3">
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Convenience</h6>
-                                  <span>
-                                    Allows individuals to obtain sick leave
-                                    letter from the comfort of their own homes,
-                                    reducing the need for in-person visits.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Time Savings</h6>
-                                  <span>
-                                    Streamlines the process, saving time
-                                    compared to traditional methods of obtaining
-                                    a sick leave letter.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Accessibility</h6>
-                                  <span>
-                                    Provides access to sick leave letter for
-                                    individuals in remote locations or those
-                                    with limited mobility.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Efficiency</h6>
-                                  <span>
-                                    Facilitates a quicker turnaround in
-                                    obtaining necessary documentation for work
-                                    or other purposes.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Reduced Exposure</h6>
-                                  <span>
-                                    Minimizes the risk of exposure to contagious
-                                    illnesses by avoiding unnecessary visits to
-                                    healthcare facilities.
-                                  </span>
-                                </li>
-                              </ul>
-                              <div className="price">
-                                <div className="value-price">
-                                  <b>Start from:</b> Rp75.000
-                                </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="3"
+                  >
+                    <Accordion.Header>
+                      <i className="icon-menu-icon-remotetelemedicine03 me-2 fs-32"></i>{" "}
+                      Online Medical Prescription
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/remote-telemedicine/img-sub-remotetelemedicine03.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              Online medical prescriptions enable patients to
+                              receive medications remotely through virtual
+                              consultations.
+                            </p>
+                            <h6 className="title-line">
+                              <span>Benefit</span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Convenience</h6>
+                                <span>
+                                  Enables patients to receive prescriptions
+                                  without visiting a physical clinic, saving
+                                  time and effort.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Accessibility</h6>
+                                <span>
+                                  Improves access to necessary medications for
+                                  individuals in remote areas or with limited
+                                  mobility.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Time Efficiency</h6>
+                                <span>
+                                  Reduces the time spent on travel and waiting
+                                  in queues at traditional pharmacies.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Privacy</h6>
+                                <span>
+                                  Offers a discreet way for individuals to
+                                  obtain prescription medications without
+                                  face-to-face interactions.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Continuity of Care</h6>
+                                <span>
+                                  Supports ongoing and consistent management of
+                                  chronic conditions through timely prescription
+                                  refills and adjustments.
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp40.000
+                              </div>
 
-                                <div
-                                  onClick={() =>
-                                    handleBook("Online Sick Leave Letter")
-                                  }
-                                  id="certificate"
-                                  className="btn btn-warning fs-14 ms-auto"
-                                >
-                                  Book Now{" "}
-                                </div>
+                              <div
+                                onClick={() =>
+                                  handleBook("Online Medical Prescription")
+                                }
+                                id="prescription"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Book Now{" "}
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="4"
+                  >
+                    <Accordion.Header>
+                      <i className="icon-menu-icon-remotetelemedicine04 me-2 fs-32"></i>
+                      Online Sick Leave Letter
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/remote-telemedicine/img-sub-remotetelemedicine04.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              Online sick leave letter enables individuals to
+                              consult with healthcare professionals remotely to
+                              obtain the necessary sick leave letter through
+                              digital platforms or websites.
+                            </p>
+                            <h6 className="title-line">
+                              <span>Benefit</span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Convenience</h6>
+                                <span>
+                                  Allows individuals to obtain sick leave letter
+                                  from the comfort of their own homes, reducing
+                                  the need for in-person visits.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Time Savings</h6>
+                                <span>
+                                  Streamlines the process, saving time compared
+                                  to traditional methods of obtaining a sick
+                                  leave letter.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Accessibility</h6>
+                                <span>
+                                  Provides access to sick leave letter for
+                                  individuals in remote locations or those with
+                                  limited mobility.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Efficiency</h6>
+                                <span>
+                                  Facilitates a quicker turnaround in obtaining
+                                  necessary documentation for work or other
+                                  purposes.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Reduced Exposure</h6>
+                                <span>
+                                  Minimizes the risk of exposure to contagious
+                                  illnesses by avoiding unnecessary visits to
+                                  healthcare facilities.
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp75.000
+                              </div>
+
+                              <div
+                                onClick={() =>
+                                  handleBook("Online Sick Leave Letter")
+                                }
+                                id="certificate"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Book Now{" "}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
               </div>
             </section>
 

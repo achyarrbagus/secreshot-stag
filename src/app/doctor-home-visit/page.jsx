@@ -55,8 +55,10 @@ const DoctorHomeVisit = () => {
         break;
     }
 
-    let serviceOption = document.getElementById("service");
-    serviceOption.value = serviceSelect;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      service: serviceSelect,
+    }));
     window.location.href = "#book";
   };
 
@@ -735,7 +737,7 @@ const DoctorHomeVisit = () => {
                                 <b>Start from:</b> Rp250.000
                               </div>
                               <div
-                                onClick={() => handleBook("Doctor Home Visit")}
+                                onClick={() => handleBook("Medical Check Up")}
                                 id="doctor-visit"
                                 className="btn btn-warning fs-14 ms-auto"
                               >

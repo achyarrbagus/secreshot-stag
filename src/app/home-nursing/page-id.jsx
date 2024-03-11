@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Accordion from "react-bootstrap/Accordion";
 
 const HomeNursingId = () => {
   const [formData, setFormData] = useState({
@@ -34,8 +35,10 @@ const HomeNursingId = () => {
         break;
     }
 
-    let serviceOption = document.getElementById("service");
-    serviceOption.value = serviceSelect;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      service: serviceSelect,
+    }));
     window.location.href = "#book";
   };
   return (
@@ -68,183 +71,162 @@ const HomeNursingId = () => {
                 Layanan perawatan rumah & perawatan luka kami meliputi :
               </h3>
             </div>
-            <div
-              className="accordion accordion-custom row"
-              id="accordionExample"
-            >
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    <i className="icon-menu-icon-nursing me-2 fs-32"></i>{" "}
-                    Perawatan luka
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <div className="list-data-faq">
-                      <div className="row gy-3">
-                        <div className="col-12">
-                          <img
-                            src="assets/img/home-nursing/img-home-nursing-sub01.png"
-                            className="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-12">
-                          <p>
-                            Layanan kesehatan komprehensif yang mencakup ahli
-                            perawatan luka dan ostomi, metode pembalutan luka
-                            canggih, operasi kecil yang tepat, dan perawatan
-                            pasca bedah menyeluruh untuk pemulihan optimal.
-                          </p>
-                          <h6 className="title-line">
-                            <span> Keuntungan </span>
-                          </h6>
-                          <ul className="ps-3">
-                            <li className="mb-2">
-                              <h6 className="mb-1">
-                                Perawatan Luka dan Ostomi
-                              </h6>
-                              <span>
-                                Perawatan khusus untuk penyembuhan lebih cepat,
-                                pencegahan komplikasi, dan peningkatan kondisi
-                                pasien.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">
-                                Pembalutan Luka Tingkat Lanjut
-                              </h6>
-                              <span>
-                                Mempercepat penyembuhan, mengurangi risiko
-                                infeksi, dan memberikan kondisi optimal untuk
-                                pemulihan jaringan.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Operasi Kecil</h6>
-                              <span>
-                                Perawatan yang efisien dan tepat, meminimalkan
-                                pasca-trauma dan memastikan pemulihan yang
-                                cepat.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Perawatan Pasca Bedah</h6>
-                              <span>
-                                Perawatan komprehensif untuk manajemen nyeri,
-                                pencegahan infeksi, dan mendorong proses
-                                pemulihan yang lebih cepat.
-                              </span>
-                            </li>
-                          </ul>
-                          <div className="price">
-                            <div className="value-price">
-                              <b>Mulai dari:</b> Rp250.000
-                            </div>
-                            <div
-                              onClick={() => handleBook("Perawatan luka")}
-                              id="wound"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan
-                            </div>
+            <Accordion className="accordion accordion-custom row">
+              <Accordion.Item className="accordion-item col-md-6" eventKey="1">
+                <Accordion.Header>
+                  <i className="icon-menu-icon-nursing me-2 fs-32"></i>
+                  Perawatan luka
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="assets/img/home-nursing/img-home-nursing-sub01.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>
+                          Layanan kesehatan komprehensif yang mencakup ahli
+                          perawatan luka dan ostomi, metode pembalutan luka
+                          canggih, operasi kecil yang tepat, dan perawatan pasca
+                          bedah menyeluruh untuk pemulihan optimal.
+                        </p>
+                        <h6 className="title-line">
+                          <span> Keuntungan </span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">Perawatan Luka dan Ostomi</h6>
+                            <span>
+                              Perawatan khusus untuk penyembuhan lebih cepat,
+                              pencegahan komplikasi, dan peningkatan kondisi
+                              pasien.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              Pembalutan Luka Tingkat Lanjut
+                            </h6>
+                            <span>
+                              Mempercepat penyembuhan, mengurangi risiko
+                              infeksi, dan memberikan kondisi optimal untuk
+                              pemulihan jaringan.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Operasi Kecil</h6>
+                            <span>
+                              Perawatan yang efisien dan tepat, meminimalkan
+                              pasca-trauma dan memastikan pemulihan yang cepat.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Perawatan Pasca Bedah</h6>
+                            <span>
+                              Perawatan komprehensif untuk manajemen nyeri,
+                              pencegahan infeksi, dan mendorong proses pemulihan
+                              yang lebih cepat.
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>Mulai dari:</b> Rp250.000
+                          </div>
+                          <div
+                            onClick={() => handleBook("Perawatan luka")}
+                            id="wound"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            Pesan
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="true"
-                    aria-controls="collapseThree"
-                  >
-                    <i className="icon-menu-icon-nursing-2 me-2 fs-32"></i>{" "}
-                    Pemantauan & Pencegahan
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    <div className="list-data-faq">
-                      <div className="row gy-3">
-                        <div className="col-12">
-                          <img
-                            src="assets/img/home-nursing/img-home-nursing-sub02.png"
-                            className="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-12">
-                          <p>
-                            Memastikan kondisi pasien melalui pemantauan
-                            tanda-tanda vital secara terus menerus dan
-                            menerapkan tindakan pencegahan untuk mengurangi
-                            risiko infeksi.
-                          </p>
-                          <h6 className="title-line">
-                            <span> Keuntungan </span>
-                          </h6>
-                          <ul className="ps-3">
-                            <li className="mb-2">
-                              <h6 className="mb-1">Pemantauan Tanda Vital</h6>
-                              <span>
-                                Intervensi dini melalui pemantauan rutin dapat
-                                mendeteksi masalah kesehatan dengan cepat,
-                                sehingga meningkatkan kondisi pasien.
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">Pencegahan Infeksi</h6>
-                              <span>
-                                Meminimalkan penularan penyakit, melindungi
-                                pasien dan petugas kesehatan.{" "}
-                              </span>
-                            </li>
-                          </ul>
-                          <div className="price">
-                            <div className="value-price">
-                              <b>Mulai dari:</b> Rp200.000
-                            </div>
-                            <div
-                              onClick={() =>
-                                handleBook("Pemantauan & Pencegahan")
-                              }
-                              id="monitoring"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              Pesan
-                            </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item className="accordion-item col-md-6" eventKey="2">
+                <Accordion.Header>
+                  <i className="icon-menu-icon-nursing-2 me-2 fs-32"></i>{" "}
+                  Pemantauan & Pencegahan
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="assets/img/home-nursing/img-home-nursing-sub01.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>
+                          Layanan kesehatan komprehensif yang mencakup ahli
+                          perawatan luka dan ostomi, metode pembalutan luka
+                          canggih, operasi kecil yang tepat, dan perawatan pasca
+                          bedah menyeluruh untuk pemulihan optimal.
+                        </p>
+                        <h6 className="title-line">
+                          <span> Keuntungan </span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">Perawatan Luka dan Ostomi</h6>
+                            <span>
+                              Perawatan khusus untuk penyembuhan lebih cepat,
+                              pencegahan komplikasi, dan peningkatan kondisi
+                              pasien.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              Pembalutan Luka Tingkat Lanjut
+                            </h6>
+                            <span>
+                              Mempercepat penyembuhan, mengurangi risiko
+                              infeksi, dan memberikan kondisi optimal untuk
+                              pemulihan jaringan.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Operasi Kecil</h6>
+                            <span>
+                              Perawatan yang efisien dan tepat, meminimalkan
+                              pasca-trauma dan memastikan pemulihan yang cepat.
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">Perawatan Pasca Bedah</h6>
+                            <span>
+                              Perawatan komprehensif untuk manajemen nyeri,
+                              pencegahan infeksi, dan mendorong proses pemulihan
+                              yang lebih cepat.
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>Mulai dari:</b> Rp250.000
+                          </div>
+                          <div
+                            onClick={() => handleBook("Perawatan luka")}
+                            id="wound"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            Pesan
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </section>
 
