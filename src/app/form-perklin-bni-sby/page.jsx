@@ -16,6 +16,19 @@ const initialValues = {
 };
 
 var perklinBniSby = () => {
+
+  const handlePhoneChange = (e) => {
+    const { id, value } = e.target;
+
+    const parsedValue = parseInt(value, 10);
+
+    if (!isNaN(parsedValue)) {
+      handleChange(e);
+    } else {
+      formik.setFieldError(id, "Masukan nomor dengan benar");
+    }
+  };
+
   const { values, handleBlur, handleChange, handleSubmit, errors } = useFormik({
     initialValues: initialValues,
     validationSchema: validation,
@@ -100,10 +113,10 @@ var perklinBniSby = () => {
             </div>
             <div className="mb-3">
               <label for="phone" className="form-label">No Handphone Perwakilan</label>
-              <input type="number" pattern="\d*" className="form-control" id="phone" aria-describedby="" 
+              <input type="text" inputmode="numeric" pattern="[0-9]*" className="form-control" id="phone" aria-describedby="" 
                 value={values.phone}
                 onBlur={handleBlur} 
-                onChange={handleChange}
+                onChange={handlePhoneChange}
               />
               {errors.phone && <small  style={{ color: "red" }}>{errors.phone}</small>}
             </div>
