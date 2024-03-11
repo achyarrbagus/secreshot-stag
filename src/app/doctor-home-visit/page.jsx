@@ -16,6 +16,7 @@ const DoctorHomeVisit = () => {
       dispatch(setLang("ID"));
     }
   }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     address: "",
