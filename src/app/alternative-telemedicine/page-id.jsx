@@ -57,7 +57,7 @@ const InHomeDiagnosticId = () => {
         >
           <div className="container">
             <div className="text">
-              <h3>Telemedis Alternatif</h3>
+              <h3>Layanan Alternatif</h3>
               <p>
                 Pemutihan gigi untuk mempercantik penampilan, terapi sekretom
                 untuk perawatan regeneratif, dan terapi ozon untuk meningkatkan
