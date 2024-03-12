@@ -75,7 +75,7 @@ const InHomeDiagnosticId = () => {
             <div className="d-flex align-items-center">
               <img src="assets/img/plus-vector.svg" width="30px" alt="" />
               <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">
-                Layanan Telemedis Alternatif kami terdiri dari:
+                Layanan Alternatif kami terdiri dari:
               </h3>
             </div>
             <div
