@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Helper from "../../../lib/helper/helper";
+import Accordion from "react-bootstrap/Accordion";
 
 const InHomeDiagnosticId = () => {
   const [formData, setFormData] = useState({
@@ -38,8 +39,10 @@ const InHomeDiagnosticId = () => {
         break;
     }
 
-    let serviceOption = document.getElementById("service");
-    serviceOption.value = serviceSelect;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      service: serviceSelect,
+    }));
     window.location.href = "#book";
   };
 
@@ -61,8 +64,7 @@ const InHomeDiagnosticId = () => {
                 sistem kekebalan tubuh.
               </p>
               <a href="#book" className="btn btn-warning fs-14">
-                {" "}
-                Pesan{" "}
+                Pesan
               </a>
             </div>
           </div>
@@ -80,26 +82,16 @@ const InHomeDiagnosticId = () => {
               className="accordion accordion-custom row"
               id="accordionExample"
             >
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
+              <Accordion className="accordion accordion-custom row">
+                <Accordion.Item
+                  className="accordion-item col-md-6"
+                  eventKey="1"
+                >
+                  <Accordion.Header>
                     <i className="icon-menu-icon-alternative01 me-2 fs-32"></i>{" "}
                     Pemutihan gigi
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
+                  </Accordion.Header>
+                  <Accordion.Body>
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
@@ -179,29 +171,17 @@ const InHomeDiagnosticId = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="true"
-                    aria-controls="collapseTwo"
-                  >
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item
+                  className="accordion-item col-md-6"
+                  eventKey="2"
+                >
+                  <Accordion.Header>
                     <i className="icon-menu-icon-alternative02 me-2 fs-32"></i>{" "}
                     Terapi Sekretom dan Stem Cells
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
+                  </Accordion.Header>
+                  <Accordion.Body>
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
@@ -290,29 +270,17 @@ const InHomeDiagnosticId = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item col-md-6">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="true"
-                    aria-controls="collapseThree"
-                  >
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item
+                  className="accordion-item col-md-6"
+                  eventKey="3"
+                >
+                  <Accordion.Header>
                     <i className="icon-menu-icon-alternative03 me-2 fs-32"></i>{" "}
                     Terapi Ozon
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
+                  </Accordion.Header>
+                  <Accordion.Body>
                     <div className="list-data-faq">
                       <div className="row gy-3">
                         <div className="col-12">
@@ -384,9 +352,9 @@ const InHomeDiagnosticId = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </div>
           </div>
         </section>
