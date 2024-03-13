@@ -3,7 +3,8 @@ class Helper {
     let phone = "6285212500030";
     const date = new Date();
     if (date.getHours() >= 21 || date.getHours() < 6) {
-      phone = "6281222200113";
+      // phone = "6281222200113";
+      phone = "6285212500030";
     }
 
     if (!isForm) {

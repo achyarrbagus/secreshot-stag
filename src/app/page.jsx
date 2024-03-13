@@ -1,5 +1,4 @@
 "use client";
-
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css";
@@ -20,7 +19,7 @@ import Helper from "../../lib/helper/helper";
 const Home = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
-  const lang = useSelector((state: any) => state.lang.value);
+  const lang = useSelector((state) => state.lang.value);
 
   useEffect(() => {
     const lang = searchParams.get("lang");
@@ -29,7 +28,7 @@ const Home = () => {
     }
   }, []);
 
-  const CutText = (text: string) => {
+  const CutText = (text) => {
     let sentences = text.split("");
     // Mengambil 100 kalimat pertama
     let first100Sentences = sentences.slice(0, 40);
@@ -52,7 +51,7 @@ const Home = () => {
     service: "Select Service",
   });
 
-  const handleChange = (e: any) => {
+  const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
   };
