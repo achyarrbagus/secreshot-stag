@@ -6,6 +6,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import {format} from "date-fns";
 import * as XLSX from 'xlsx';
 
+const URL_API = "https://cepatsehats.com/api/v3/cs/";
+
 const columns = [
   {
     name: 'ID',
@@ -45,6 +47,21 @@ const columns = [
   {
     name: 'Created At',
     selector: row => row.created_at,
+    sortable: true,
+  },
+  {
+    name: 'KTP',
+    selector: row => <a href={`${URL_API}uploads/ktp/${row.ktp}`}>{row.izin_operasional !== null ? row.ktp : ''}</a>,
+    sortable: true,
+  },
+  {
+    name: 'NPWP',
+    selector: row => <a href={`${URL_API}uploads/npwp/${row.npwp}`}>{row.izin_operasional !== null ? row.npwp : ''}</a>,
+    sortable: true,
+  },
+  {
+    name: 'Izin Operasional',
+    selector: row => <a href={`${URL_API}uploads/izin-operasional/${row.izin_operasional}`}>{row.izin_operasional !== null ? row.izin_operasional : ''}</a>,
     sortable: true,
   },
 ];
@@ -124,7 +141,7 @@ const dataKurBni = () => {
   const exportToExcel = () => {
     const ws = XLSX.utils.json_to_sheet(filteredData);
     const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+    XLSX.utils.book_append_sheet(wb, ws, 'KUR BNI');
     XLSX.writeFile(wb, `kur-bni-${Date.now()}.xlsx`);
   };
 
