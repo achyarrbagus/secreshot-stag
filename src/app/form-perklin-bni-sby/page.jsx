@@ -17,7 +17,7 @@ const initialValues = {
 
 const perklinBniSby = () => {
 
-  const [formStep, setFormStep] = useState(1);
+  const [formStep, setFormStep] = useState(0);
   const [isValid, setIsValid] = useState(false); 
 
   const [ktpPengurus, setKtpPengurus] = useState(null);
