@@ -17,18 +17,22 @@ const initialValues = {
 
 const perklinBniSby = () => {
 
-  const [formStep, setFormStep] = useState(0);
+  const [formStep, setFormStep] = useState(1);
   const [isValid, setIsValid] = useState(false); 
 
   const [ktpPengurus, setKtpPengurus] = useState(null);
   const [npwpPerusahaan, setNpwpPerusahaan] = useState(null);
   const [izinOperasional, setIzinOperasional] = useState(null);
 
+  const [fileName1, ktpInput] = useState("");
+  const [fileName2, npwpInput] = useState("");
+  const [fileName3, ioInput] = useState("");
+
   useEffect(() => {
     setIsValid(false);
   }, []);
 
-  const handleFileChange = (ev, setter,) => {
+  const handleFileChange = (ev, setter, setFileName) => {
     const file = ev.target.files && ev.target.files[0];
     if (file) {
 
@@ -44,6 +48,7 @@ const perklinBniSby = () => {
       const reader = new FileReader(); 
       reader.onload = () => { 
         setter(reader.result);
+        setFileName(file.name);
       };
       reader.readAsDataURL(file);
     }
@@ -311,10 +316,11 @@ const perklinBniSby = () => {
                       <i className="fa-solid fa-upload"></i>&nbsp;Upload File</label>
                     <input type="file" className="form-control" id="ktp_pengurus" 
                       accept="image/*,.pdf" 
-                      onChange={(e) => handleFileChange(e, setKtpPengurus)}
+                      onChange={(e) => handleFileChange(e, setKtpPengurus, ktpInput)}
                       required
                       />
                   </div>
+                  <p className="">{fileName1}</p>
                 </div>
                 <div className="mb-3">
                   <label htmlFor="npwp_perusahaan" className="form-label">
@@ -325,10 +331,11 @@ const perklinBniSby = () => {
                       <i className="fa-solid fa-upload"></i>&nbsp;Upload File</label>
                     <input type="file" className="form-control" id="npwp_perusahaan" 
                       accept="image/*,.pdf" 
-                      onChange={(e) => handleFileChange(e, setNpwpPerusahaan)}
+                      onChange={(e) => handleFileChange(e, setNpwpPerusahaan, npwpInput)}
                       required
                       />
-                  </div>
+                    </div>
+                    <p className="">{fileName2}</p>
                 </div>
                 <div className="mb-3">
                   <label htmlFor="izin_operasional" className="form-label">
@@ -336,13 +343,16 @@ const perklinBniSby = () => {
                   </label>
                   <div class="input-group custom-file-button">
                     <label className="input-group-text" for="izin_operasional">
-                      <i className="fa-solid fa-upload"></i>&nbsp;Upload File</label>
+                      <i className="fa-solid fa-upload"></i>&nbsp;Upload File
+                      </label>
                     <input type="file" className="form-control" id="izin_operasional" 
                       accept="image/*,.pdf" 
-                      onChange={(e) => handleFileChange(e, setIzinOperasional)}
+                      onChange={(e) => handleFileChange(e, setIzinOperasional, ioInput)}
                       required
+                      placeholder="qr32r32"
                       />
                   </div>
+                  <p className="">{fileName3}</p>
                 </div>
               </section>
             )}
