@@ -1094,10 +1094,10 @@ const DoctorHomeVisit = () => {
 
 export default function App() {
   return (
-    <Suspense fallback={<div>Loading</div>}>
-      <LayoutWrapper>
+    <LayoutWrapper>
+      <Suspense fallback={<div>Loading</div>}>
         <DoctorHomeVisit />
-      </LayoutWrapper>
-    </Suspense>
+      </Suspense>
+    </LayoutWrapper>
   );
 }
