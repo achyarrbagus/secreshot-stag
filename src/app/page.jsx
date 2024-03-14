@@ -112,8 +112,7 @@ const Home = () => {
                     <Link href="/holistic-alternative" className="box-service">
                       <i className="icon-menu-holistic"></i>
                       <span className="title-service">
-                        {" "}
-                        Holistic Alternative Therapies{" "}
+                        Holistic Alternative Therapies
                       </span>
                     </Link>
                   </div>
@@ -121,8 +120,7 @@ const Home = () => {
                     <Link href="/inhome-therapy" className="box-service">
                       <i className="icon-menu-in-home-iv"></i>
                       <span className="title-service">
-                        {" "}
-                        In-Home IV Therapy & More{" "}
+                        In-Home IV Therapy & More
                       </span>
                     </Link>
                   </div>
@@ -477,34 +475,32 @@ const Home = () => {
                         }}
                       >
                         {Articles &&
-                          Articles.sort((a, b) => b.Id - a.Id).map(
-                            (item, index) => (
-                              <SwiperSlide key={index}>
-                                <Link href={`/article?id=${index}`}>
-                                  <div className="card-slide-article">
-                                    <img
-                                      src={`/assets/img/article/article0${item.Id}.jpg`}
-                                      alt=""
-                                    />
-                                    <div className="name-article">
-                                      <h6>{CutText(item.Title)}...</h6>
-                                      <p>{CutText(item.DescCard)}...</p>
-                                      <a
-                                        href="article-detail.html"
-                                        className="text-muted fs-14"
-                                      >
-                                        read more{" "}
-                                        <i className="mdi mdi-arrow-right"></i>
-                                      </a>
-                                      <p className="text-end text-capitalize">
-                                        {item.created_at}
-                                      </p>
-                                    </div>
+                          Articles.map((item, index) => (
+                            <SwiperSlide key={item.Id}>
+                              <Link href={`/article?id=${item.Id}`}>
+                                <div className="card-slide-article">
+                                  <img
+                                    src={`/assets/img/article/article0${item.Id}.jpg`}
+                                    alt=""
+                                  />
+                                  <div className="name-article">
+                                    <h6>{CutText(item.Title)}...</h6>
+                                    <p>{CutText(item.DescCard)}...</p>
+                                    <a
+                                      href="article-detail.html"
+                                      className="text-muted fs-14"
+                                    >
+                                      read more{" "}
+                                      <i className="mdi mdi-arrow-right"></i>
+                                    </a>
+                                    <p className="text-end text-capitalize">
+                                      {item.created_at}
+                                    </p>
                                   </div>
-                                </Link>
-                              </SwiperSlide>
-                            )
-                          )}
+                                </div>
+                              </Link>
+                            </SwiperSlide>
+                          ))}
                       </Swiper>
                     </div>
                   </div>

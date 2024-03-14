@@ -57,7 +57,9 @@ function Article() {
             <div className="container">
               <div className="row g-3">
                 <div className="col-md-8">
-                  <h3 className="title-detail fw-bold fs-24 text-primary">{data.Title}</h3>
+                  <h3 className="title-detail fw-bold fs-24 text-primary">
+                    {data.Title}
+                  </h3>
                   <p className="summary fs-12">{data.Desc}.</p>
                   <img src={data.PathImg} className="w-100 my-3" alt="" />
                   {/* <p className="fs-12">
@@ -78,13 +80,18 @@ function Article() {
                       return (
                         <>
                           <div className="col-md-4">
-                            <h3 className="title-section text-start pt-0 fs-14"> More Article </h3>
+                            <h3 className="title-section text-start pt-0 fs-14">
+                              {" "}
+                              More Article{" "}
+                            </h3>
                             <div className="list-article">
                               {ArticlesId &&
                                 ArticlesId.map((item, index) => (
                                   <>
                                     <butoon
-                                      onClick={() => router.push(`/article/${index}`)}
+                                      onClick={() =>
+                                        router.push(`/article/${index}`)
+                                      }
                                       className="items-article"
                                       style={{ cursor: "pointer" }}
                                     >
@@ -92,7 +99,8 @@ function Article() {
                                       <div className="name">
                                         <h5>{item.Title}</h5>
                                         <a className="text-muted fs-14">
-                                          read more <i className="mdi mdi-arrow-right"></i>
+                                          read more{" "}
+                                          <i className="mdi mdi-arrow-right"></i>
                                         </a>
                                       </div>
                                     </butoon>
@@ -105,13 +113,17 @@ function Article() {
                     default:
                       return (
                         <div className="col-md-4">
-                          <h3 className="title-section text-start pt-0 fs-14"> More Article </h3>
+                          <h3 className="title-section text-start pt-0 fs-14">
+                            More Article
+                          </h3>
                           <div className="list-article">
                             {Articles &&
                               Articles.map((item, index) => (
                                 <>
                                   <butoon
-                                    onClick={() => (window.location.href = `/article/${index}`)}
+                                    onClick={() =>
+                                      (window.location.href = `/article/${index}`)
+                                    }
                                     className="items-article"
                                     style={{ cursor: "pointer" }}
                                   >
@@ -119,7 +131,8 @@ function Article() {
                                     <div className="name">
                                       <h5>{item.Title}</h5>
                                       <a className="text-muted fs-14">
-                                        read more <i className="mdi mdi-arrow-right"></i>
+                                        read more
+                                        <i className="mdi mdi-arrow-right"></i>
                                       </a>
                                     </div>
                                   </butoon>

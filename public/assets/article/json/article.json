@@ -1,7 +1,7 @@
 [
   {
-    "created_at":"27 february 2024",
     "Id": 1,
+    "created_at": "27 february 2024",
     "Title": "Unknowingly Habits Cause Gastric Disorders",
     "Desc": "You must be aware that when gastric disorders occur, this will greatly interfere with daily activities. Therefore, maintaining the digestive system, especially the stomach, is something you need to pay attention to. Moreover, there are also many people with gastric disorders such as dyspepsia, stomach acid, or gastric ulcers. If you have this disease, you must really run a healthy lifestyle. However, there are also some things that can unwittingly cause gastric disorders. What are these habits, here are some habits that can trigger stomach disorders",
     "DescCard": "You must be aware that when gastric disorders occur, this will greatly interfere with daily activities.",
@@ -34,7 +34,7 @@
     ]
   },
   {
-    "created_at":"28 february 2024",
+    "created_at": "28 february 2024",
     "Id": 2,
     "Title": "Don’t Underestimate Headache! These Are 7 Causes Back Headache",
     "Desc": "Headaches are one of the most common health problems for everyone. However, the location of the headache experienced tends to be different. There are several points of location that often feel pain when you have a headache, such as at the back of the head or also known as a back headache. Back headache can be mild or severe. If the condition is mild, the headache will subside on its own. However, for more severe conditions, headache usually does not go away and followed by other symptoms. In general, here are some causes of back headache that you need to know",
@@ -68,7 +68,7 @@
     ]
   },
   {
-    "created_at":"29 february 2024",
+    "created_at": "29 february 2024",
     "Id": 3,
     "Title": "Causes of Back Pain and Tips to Overcome It",
     "Desc": "Are you sure that back pain is only experienced by the elderly? You are wrong. There are many people in their productive age or even children who have to deal with back pain. How come? The causes range from injury to incorrect movement. Well, here are some things that can cause back pain",
@@ -141,7 +141,7 @@
     ]
   },
   {
-    "created_at":"1 march 2024",
+    "created_at": "1 march 2024",
     "Id": 4,
     "Title": "Most Common Symptoms of Too Much Stress",
     "Desc": "Stress is the body's reaction to certain conditions. Stress usually arises when a person faces a threat, pressure, or something new. Basically, the symptoms that often appear as a sign of stress can vary from one person to another, depending on the cause and the body's resistance. There are four things that can change and be a sign on the body when experiencing stress",
@@ -165,9 +165,10 @@
         "Desc": "In severe levels, feeling depressed and stressed can cause a person to experience behavioural changes. This condition causes a decrease in appetite and focus, avoids responsibilities, nervous, gets angry easily, and looks for venting for example by consuming alcohol and smoking.Do not underestimate the stress that lasts for a long time especially if it appears repeatedly. If it happens, check with a doctor or psychiatrist immediately to deal with the stress. Examination is needed to find out exactly what causes stress symptoms to appear and prevent unwanted complications."
       }
     ]
-  },{
-    "created_at":"2 march 2024",
+  },
+  {
     "Id": 5,
+    "created_at": "2 march 2024",
     "Title": "Nutrition for Diabetes & Hypertension Sufferers",
     "Desc": "Diabetes Mellitus (DM) is a systemic disease that affects all parts of the body. Until now there is no medicine that can cure DM, but it can be controlled through medication and lifestyle changes. And hypertension is a blood pressure disorder that exceeds normal blood pressure for systolic - above 140 mmHg and for diastolic - above 90 mmHg.",
     "DescCard": "Diabetes Mellitus (DM) is a systemic disease that affects all parts of the body.",
@@ -176,34 +177,40 @@
       {
         "Title": "Who can get DM / Hypertension?",
         "Desc": "The habit of not actively moving/exercising, the first derivative of a parent with DM, history of giving birth to a baby with birth weight (BW) > 4000 grams or history of gestational DM, hypertension (> 140/90 mmHg), HDL cholesterol < 35 mg/dL and/or triglycerides > 250 mg/dL, suffering from polycystic ovarial syndrome (PCOs) or other conditions associated with insulin resistance, previous history of impaired tolerance or impaired fasting blood glucose (PREDIABETES), have a history of heart disease."
-      },{
+      },
+      {
         "Title": "The following factors increase the risk of developing DM & Hypertension: ?",
         "Desc": "Stress related factors, such excessive eating (intake of foods high in sugar, high in fat and high in salt, smoke, drink alcoholic beverages, nervous and endocrine system disorders: there is an increase in the hormone cortisol and abnormal secretion of sexual hormones, lack of exercise/physical activity, genetic factors and aging."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Eating excess food does not only mean eating more than the normal portion, but also consuming food or drinks that are high in sugar, such as sweet biscuits with cream, ice cream, chocolate bars, soda, candy, canned or other packaged drinks. The more often we eat foods that are high in sugar, the more difficult it is for the insulin organ to work and increase the risk of developing diabetes. It is also necessary to avoid eating fatty/fried foods and coconut milk, because the cholesterol content in coconut milk is very high!! ."
-      },{
+      },
+      {
         "Title": "Good Portions",
         "Desc": "The following are the recommended portions of food for Diabetes sufferers in one plate with the following measurements: 50% in the form of vegetables, 25% carbohydrates (brown rice, or other carbohydrate foods), 25% for protein foods and Plus 1 glass of non-calorie water."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "For the duration of meals for diabetes sufferers, it is best to stick to eating 3 large meals a day plus snacks 3 times a day, with the aim of maintaining stable blood sugar levels at all times. The preferred type of snack is fruit, boiled vegetables, or a glass of milk. The types of food that contain good fats (Good Fats) such as avocado, salmon, nuts, and those that include fats that are detrimental to the body (Bad Fats) include: cheese, ice cream, French fries and others."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "The recommended food cooking methods for DM and hypertension sufferers are steaming, boiling, spicy, grilling and gravy, and the most important thing is to use natural and fresh food ingredients. Meanwhile, cooking methods that are not recommended are sautéed, fried, deep-fried, preserved and smoked because apart from being high in fat, they are also high in salt, especially for preserved foods."
-      },{
+      },
+      {
         "Title": "DASH (Dietary Approaches to Stop Hypertension) is a Dietary Intake Management Approach to stop Hypertension referring to food management as follows:",
         "Desc": "foods high in fiber include whole grains, fruit, vegetables and low-fat milk, eat foods high in Calcium, Sodium and Magnesium, reduce consumption of meat, foods that are sweet and contain sugar, reduce eating foods that contain saturated fat, cholesterol and high salt content."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "So that people with diabetes and hypertension can continue to live a healthy and quality life, efforts are needed to change individual behavior in choosing appropriate and healthy food. Don't forget to keep doing regular medichal checkup with our doctors at cepatsehat.com."
       }
-   
     ]
   },
   {
-    "created_at":"3 march 2024",
     "Id": 6,
+    "created_at": "3 march 2024",
     "Title": "Food Substitutes for Rice",
     "Desc": "In the last few months, it has been widely reported on television, national print media and online media that there continues to be an increase in rice prices in almost all regions of Indonesia.",
     "DescCard": "In the last few months, it has been widely reported on television, national print media and online media that there continues to be an increase in rice prices in almost all regions of Indonesia.",
@@ -212,29 +219,35 @@
       {
         "Title": "",
         "Desc": "Various factors were mentioned as the cause of the increase in rice prices, ranging from weather anomalies that were too hot to drought which resulted in a shortage of water for irrigating rice fields, or excessive rain which caused floods so that rice plants were submerged and died, or several rice producing countries stopped their rice exports. for an indefinite period of time because it prioritizes domestic needs."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Rice which is processed into rice is the staple food of Indonesians, since toddlers are introduced to it and regularly consume rice. So there is a saying that is popular in society which says, You won't feel like eating if you haven't eaten rice. So it is clear that the majority of Indonesian people are dependent on basic daily needs for rice, and when there is a disruption in rice production/logistics, the total daily routine needs do not decrease in the slightest, so the potential for fluctuations in the price of rice becomes inevitable in the market. Rice is a food ingredient that is categorized as a source of carbohydrates, in addition to the need for protein, fat and minerals."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Eating excess food does not only mean eating more than the normal portion, but also consuming food or drinks that are high in sugar, such as sweet biscuits with cream, ice cream, chocolate bars, soda, candy, canned or other packaged drinks. The more often we eat foods that are high in sugar, the more difficult it is for the insulin organ to work and increase the risk of developing diabetes. It is also necessary to avoid eating fatty/fried foods and coconut milk, because the cholesterol content in coconut milk is very high!! ."
-      },{
+      },
+      {
         "Title": "Alternative Carbohydrate Sources:",
         "Desc": "Potato It is a tuber food that contains lots of vitamin C, potassium and resistant starch. This resistant starch is a type of starch that is not easily digested by the body, so it is often used for diet therapy to reduce weight. Potatoes also contain high fiber, especially in the skin, which provides a sensation of feeling full for longer. The way to make healthy potatoes is to boil or steam them."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Brown rice This is rice that does not undergo a milling process so it has a layer of epidermis which contains lots of fiber, protein, flavonoids and antioxidants. Fiber functions to help improve digestion and reduce cholesterol levels, and protein to build muscle and increase metabolism. As well as flavonoids and antioxidants prevent inflammation and cell damage caused by free radicals."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Oatmeal Is a food made from boiled or steamed wheat grains. Contains complex carbohydrates which can provide longer energy and control blood sugar levels. Oatmeal is rich in fiber, protein, B vitamins, magnesium, phosphorus and iron. When consuming oatmeal, you can add fruit, milk or honey to add taste and nutrition."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Corn It is a grain plant that has a yellow, white or red color which is rich in protein, carbohydrates, fat, fiber, vitamins B1, B2, B3, B5, B6, vitamin C, folate, iron, magnesium, manganese, phosphorus, potassium. , zing and beta carotene which can be converted into vitamin A in the body. Corn can be consumed by boiling or roasting."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Cassava, vermicelli, noodles, and many others are also sources of carbohydrates to replace rice that can be chosen to meet the food intake needs of the family. Take for example potatoes and corn, these two ingredients have glycemic levels (glucose content) which are much lower than rice. Potatoes, corn and tubers can be processed into various dishes instead of rice, they can be mashed/steamed/boiled. Vermicelli, noodles or products based on wheat flour, sago, there are also many kinds of processed foods that can be used and served at family dining table. Indeed, processing food from alternative carbohydrate sources requires quite a lot of effort to make it ready to be served and an agreement for all family members to gradually consume the alternative carbohydrate food, until it is accepted as a new staple food based on alternative carbohydrate sources, thereby reducing the family's dependence on availability. rice and its price which is currently volatile."
       }
-   
     ]
   }
 ]

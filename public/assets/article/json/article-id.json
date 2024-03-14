@@ -1,7 +1,7 @@
 [
   {
     "Id": 1,
-    "created_at":"27 februari 2024",
+    "created_at": "27 februari 2024",
     "Title": "Kebiasaan Tanpa Disadari Menyebabkan Gangguan Lambung",
     "Desc": "Harus Anda waspadai bila terjadi gangguan lambung maka hal ini akan sangat mengganggu aktivitas sehari-hari. Oleh karena itu, menjaga sistem pencernaan khususnya lambung merupakan hal yang perlu Anda perhatikan. Apalagi banyak juga penderita gangguan lambung seperti ini. Seperti dispepsia, asam lambung, atau sakit maag. Jika Anda mengidap penyakit ini, Anda harus benar-benar menjalankan pola hidup sehat. Namun, ada juga beberapa hal yang tanpa disadari bisa menyebabkan gangguan lambung. Apa saja kebiasaan tersebut, berikut beberapa kebiasaan yang bisa memicunya. gangguan lambung.",
     "DescCard": "Harus Anda waspadai bila terjadi gangguan lambung maka hal ini akan sangat mengganggu aktivitas sehari-hari. Oleh karena itu, ",
@@ -31,7 +31,7 @@
   },
   {
     "Id": 2,
-    "created_at":"28 februari 2024",
+    "created_at": "28 februari 2024",
     "Title": "Jangan Remehkan Sakit Kepala! Inilah 7 Penyebab Sakit Kepala Punggung",
     "Desc": "Sakit kepala adalah salah satu masalah kesehatan yang paling umum dialami semua orang. Namun lokasi sakit kepala yang dialami cenderung berbeda. Ada beberapa titik lokasi yang sering terasa nyeri saat sakit kepala, seperti di bagian belakang kepala atau disebut juga sakit kepala punggung. Sakit kepala punggung bisa ringan atau berat. Jika kondisinya ringan, sakit kepala akan mereda dengan sendirinya. Namun pada kondisi yang lebih parah, sakit kepala biasanya tidak kunjung hilang dan diikuti gejala lainnya. Secara umum, berikut beberapa penyebab sakit kepala punggung yang perlu Anda ketahui.",
     "DescCard": "Sakit kepala adalah salah satu masalah kesehatan yang paling umum dialami semua orang. Namun lokasi s",
@@ -65,7 +65,7 @@
   },
   {
     "Id": 3,
-    "created_at":"29 ferbruari 2024",
+    "created_at": "29 ferbruari 2024",
     "Title": "Penyebab Sakit Punggung dan Tips Mengatasinya",
     "Desc": "Yakin sakit punggung hanya dialami oleh orang lanjut usia? Anda salah. Banyak orang di usia produktif atau bahkan anak-anak yang harus menghadapi sakit pinggang. Bagaimana bisa? Penyebabnya beragam, mulai dari cedera hingga gerakan yang salah. Nah, berikut beberapa hal yang bisa menjadi penyebab sakit pinggang.",
     "DescCard": "Yakin sakit punggung hanya dialami oleh orang lanjut usia? Anda salah. Banyak orang di usia produktif",
@@ -99,7 +99,7 @@
   },
   {
     "Id": 4,
-    "created_at":"1 maret 2024",
+    "created_at": "1 maret 2024",
     "Title": "Gejala Paling Umum dari Terlalu Banyak Stres",
     "Desc": "Stres merupakan reaksi tubuh terhadap kondisi tertentu. Stres biasanya muncul ketika seseorang menghadapi ancaman, tekanan, atau sesuatu yang baru. Pada dasarnya gejala yang sering muncul sebagai tanda stres bisa berbeda-beda pada setiap orang, tergantung penyebab dan daya tahan tubuh. Ada empat hal yang bisa berubah dan menjadi tanda tubuh saat mengalami stres.",
     "DescCard": "Stres merupakan reaksi tubuh terhadap kondisi tertentu. Stres biasanya muncul ketika seseorang menghadapi ancaman,",
@@ -125,7 +125,7 @@
   },
   {
     "Id": 5,
-    "created_at":"2 maret 2024",
+    "created_at": "2 maret 2024",
     "Title": "Nutrisi bagi Penderita Diabetes & Hipertensi",
     "Desc": "Diabetes Mellitus (DM) merupakan penyakit sistemik yang berdampak pada seluruh bagian tubuh. Sampai saat ini belum ada obat yang dapat menyembuhkan sakit DM, tetapi dapat dikendalikan melalui obat-obatan dan perubahan pola hidup. Dan hipertensi merupakan penyakit gangguan tekanan darah yang melebih tekanan darah normal untuk sistolik - di atas 140 mmHg dan untuk diastolik – di atas 90 mmHg.",
     "DescCard": "Diabetes Mellitus (DM) merupakan penyakit sistemik yang berdampak pada seluruh bagia.",
@@ -134,34 +134,40 @@
       {
         "Title": "Siapa saja yang bisa terkena DM / Hipertensi ?",
         "Desc": "Yaitu orang dengan usia di atas 45 tahun dan usia di bawah 45 tahun, terutama dengan kegemukan, yang disertai dengan faktor risiko seperti : Kebiasaan tidak aktif bergerak/ olahraga, turunan pertama dari orang tua dengan DM, riwayat melahirkan bayi dengan Berat Badan (BB) lahir bayi > 4000 gram atau riwayat DM gestasional, hipertensi (> 140/90 mmHg), kolesterol HDL < 35 mg/dL dan atau Trigliserida > 250 mg/dL, menderita polycystic ovarial syndrome (PCOs) atau keadaan lain yang terkait dengan resistensi insulin, adanya riwayat toleransi terganggu atau glukosa darah puasa terganggu sebelumnya (PREDIABETES), memiliki riwayat penyakit jantung."
-      },{
+      },
+      {
         "Title": "Berikut faktor-faktor yang mempertinggi risiko terkena DM & Hipertensi  :",
         "Desc": "Faktor-faktor terkait Stress, seperti makan berlebih (asupan makanan tinggi gula, tinggi lemak dan tinggi garam, merokok, minum minuman beralkohol, mangguan saraf dan sistem endokrin : terjadi peningkatan hormon kortisol dan sekresi abnormal pada hormon seksual, kurang Olahraga/ beraktivitas fisik, faktor genetik dan penuaan."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Makan makanan berlebih bukan hanya berarti makan dengan jumlah porsi melebihi porsi normal, melainkan mengkonsumsi makanan atau minuman yang tinggi kadar gulanya seperti biskuit manis dengan krim, es krim, coklat batangan, soda, permen, minuman kaleng atau kemasan lainnya. Semakin sering kita makan makanan yang tinggi gula maka semakin memperberat kerja organ insulin dan mempertinggi risiko terkena Diabetes. Juga perlu untuk menghindari makan makanan yang berlemak/ digoreng dan bersantan, karena kandungan kolesterol pada santan sangat tinggi!! ."
-      },{
+      },
+      {
         "Title": "Porsi Makan Yang Baik",
         "Desc": "Berikut porsi makanan yang dianjurkan bagi penderita Diabetes dalam satu porsi piring dengan takaran sebagai berikut: 50% berupa sayuran, 25% karbohidrat (nasi merah, atau makanan - karbohidrat lainnya) , 25% untuk makanan berprotein, ditambah 1 gelas air non kalori."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Untuk durasi makan bagi penderita Diabetes, yang sebaiknya tetap makan besar 3 kali sehari ditambah snack 3 kali sehari pula, dengan tujuan untuk menjaga kestabilan kadar gula darah setiap waktu. Jenis snack lebih disarankan berupa buah, sayuran rebus, atau segelas susu. Adapun jenis-jenis makanan yang mengandung lemak yang baik (Good Fats) seperti alpukat, salmon, kacang-kacangan,  dan yang termasuk lemak yang merugikan tubuh (Bad Fats) antara lain: keju, es krim, kentang goreng dan lainnya."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Metode memasak makanan yang disarankan bagi penderita DM dan Hipertensi yaitu dengan mengukus, merebus, pepes, memanggang, dan berkuah, dan yang paling penting adalah menggunakan bahan makanan yang alamiah dan segar. Sedangkan metode memasak yang tidak disarankan berupa ditumis, digoreng, deep-fried, diawetkan dan diasap karena selain tinggi lemak juga tinggi garam terutama untuk makanan yang diawetkan."
-      },{
+      },
+      {
         "Title": "DASH (Dietary Approaches to Stop Hypertension) adalah Pendekatan Pengaturan Asupan Diet untuk menghentikan Hipertensi merujuk pada pengaturan makan sebagai berikut:",
         "Desc": "Makanan mengandung tinggi serat seperti gandum, buah buahan, sayuran dan susu rendah lemak, makan makanan tinggi kandungan Kalsium, Natrium dan Magnesium, kurangi mengkonsumsi daging, makanan yang manis dan mengandung gula, kurangi makan makanan yang mengandung lemak jenuh, kolesterol serta tinggi kandungan garam."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Agar penderita Diabetes dan Hipertensi dapat tetap hidup sehat dan berkualitas maka diperlukan upaya untuk merubah perilaku individu dalam memilih makanan yang tepat dan sehat. Jangan lupa tetap melakukan tes kesehatan rutin dengan dokter kami di cepatsehat.com."
       }
-   
     ]
   },
   {
     "Id": 6,
-    "created_at":"3 maret 2024",
+    "created_at": "3 maret 2024",
     "Title": "Makanan pengganti nasi",
     "Desc": "Dalam beberapa bulan terakhir ramai diberitakan di televisi, media cetak nasional maupun di media online bahwa terus terjadi kenaikan harga beras hampir di semua wilayah Indonesia.",
     "DescCard": "Dalam beberapa bulan terakhir ramai diberitakan di televisi, media cetak nasional maupun di media online bahwa terus terjadi kenaikan harga beras hampir di semua wilayah Indonesia.",
@@ -170,27 +176,31 @@
       {
         "Title": "",
         "Desc": "Beragam faktor yang disebutkan sebagai penyebab naiknya harga beras, mulai dari anomali cuaca yang terlalu panas sampai terjadi kekeringan yang mengakibatkan kekurangan air bagi pengairan di sawah, maupun hujan berlebih yang menyebabkan banjir sehingga tanaman padi terendam dan mati, atau beberapa negara produsen beras menghentikan ekspor berasnya sampai waktu yang tidak ditentukan karena mengutamakan kebutuhan dalam negerinya."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Beras yang diolah menjadi nasi merupakan makanan pokok orang Indonesia, sejak balita sudah dikenalkan dan rutin mengkonsumsi beras. Sehingga ada pameo yang populer di masyarakat yang mengatakan, “Belum berasa makan kalau belum makan nasi.” Sehingga tampak sekali ketergantungan kebutuhan pokok sehari-hari sebagian besar masyarakat Indonesia dengan beras, dan ketika terjadi gangguan di produksi/ logistik beras sedangkan total kebutuhan rutin harian tidak menurun sedikitpun sehingga potensi gejolak harga kenaikan beras menjadi keniscayaan secara pasar. Nasi merupakan bahan makanan yang dikategorikan sebagai sumber karbohidrat, selain kebutuhan protein, lemak dan mineral."
-      },{
+      },
+      {
         "Title": "Sumber Karbohidrat Alternatif :",
         "Desc": "Kentang  Adalah bahan pangan umbi-umbian yang mengandung banyak vitamin C, kalium dan pati resisten. Pati resisten ini merupakan jenis pati yang tidak mudah dicerna oleh tubuh sehingga sering digunakan untuk terapi diet menurunkan berat badan. Kentang juga mengandung tinggi serat terutama di kulitnya, yang memberikan sensasi rasa kenyang lebih lama. Cara mengolah kentang yang sehat adalah dengan merebus atau mengukusnya."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Beras Merah Merupakan beras yang tidak mengalami proses penggilingan sehingga memiliki lapisan kulit ari yang mengandung banyak serat, protein, flavonoid dan antioksidan. Serat berfungsi membantu melancarkan pencernaan dan menurunkan kadar kolesterol, dan protein untuk membangun otot dan meningkatkan metabolisme. Serta flavonoid dan antioksidan mencegah peradangan dan kerusakan sel akibat radikal bebas."
-      },{
+      },
+      {
         "Title": "",
         "Desc": "Oatmeal Adalah makanan yang terbuat dari biji-bijian gandum yang direbus atau dikukus. Mengandung karbohidrat kompleks yang bisa memberikan energi lebih lama dan mengontrol kadar gula darah. Oatmeal kaya akan serat, protein, vitamin B, magnesium, fosfor, dan zat besi. Dalam mengkonsumsi oatmeal bisa ditambahkan buah-buahan, susu atau madu untuk menambah rasa dan nutrisi."
-      },{
+      },
+      {
         "Title": "",
-        "Desc": "Jagung Adalah tanaman biji-bijian yang memiliki warna kuning, putih atau merah yang kaya kandungan protein, karbohidrat, lemak, serat, vitamin B1, B2, B3, B5, B6, vitamin C, folat, zat besi, magnesium, mangan, fosfor, kalium, zing serta beta karoten yang bisa diubah menjadi vitamin A dalam tubuh. Jagung bisa dikonsumsi dengan dengan cara direbus atau dipanggang."  
-      },{
+        "Desc": "Jagung Adalah tanaman biji-bijian yang memiliki warna kuning, putih atau merah yang kaya kandungan protein, karbohidrat, lemak, serat, vitamin B1, B2, B3, B5, B6, vitamin C, folat, zat besi, magnesium, mangan, fosfor, kalium, zing serta beta karoten yang bisa diubah menjadi vitamin A dalam tubuh. Jagung bisa dikonsumsi dengan dengan cara direbus atau dipanggang."
+      },
+      {
         "Title": "",
-        "Desc": "Singkong, bihun, mie, dan banyak lainnya juga merupakan sumber karbohidrat pengganti nasi yang bisa dipilih dalam memenuhi kebutuhan asupan makanan dalam keluarga. Ambil contoh seperti kentang dan jagung, kedua bahan ini memiliki kadar glikemik (kadar kandungan glukosa) yang jauh lebih rendah dibandingkan beras/ nasi. Kentang, jagung dan umbi-umbian bisa diolah menjadi berbagai masakan pengganti nasi, bisa secara dihaluskan/ dikukus/ direbus. Bihun, mie atau produk yang berbasis tepung terigu, sagu juga sudah banyak ragam olahan makanan yang bisa digunakan dan disajikan di meja makan keluarga. Memang untuk mengolah makanan sumber karbohidrat alternatif memerlukan effort yang cukup banyak untuk menjadi makanan siap disajikan dan kesepakatan bagi seluruh anggota keluarga untuk mau mengkonsumsi secara bertahap makanan karbohidrat alternatif tersebut, sampai diterima menjadi makanan pokok baru berbasis sumber karbohidrat alternatif, sehingga mengurangi ketergantungan keluarga pada ketersediaan beras dan harganya yang saat ini sedang bergejolak."  
+        "Desc": "Singkong, bihun, mie, dan banyak lainnya juga merupakan sumber karbohidrat pengganti nasi yang bisa dipilih dalam memenuhi kebutuhan asupan makanan dalam keluarga. Ambil contoh seperti kentang dan jagung, kedua bahan ini memiliki kadar glikemik (kadar kandungan glukosa) yang jauh lebih rendah dibandingkan beras/ nasi. Kentang, jagung dan umbi-umbian bisa diolah menjadi berbagai masakan pengganti nasi, bisa secara dihaluskan/ dikukus/ direbus. Bihun, mie atau produk yang berbasis tepung terigu, sagu juga sudah banyak ragam olahan makanan yang bisa digunakan dan disajikan di meja makan keluarga. Memang untuk mengolah makanan sumber karbohidrat alternatif memerlukan effort yang cukup banyak untuk menjadi makanan siap disajikan dan kesepakatan bagi seluruh anggota keluarga untuk mau mengkonsumsi secara bertahap makanan karbohidrat alternatif tersebut, sampai diterima menjadi makanan pokok baru berbasis sumber karbohidrat alternatif, sehingga mengurangi ketergantungan keluarga pada ketersediaan beras dan harganya yang saat ini sedang bergejolak."
       }
-        
-   
     ]
   }
 ]

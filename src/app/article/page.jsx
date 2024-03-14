@@ -22,7 +22,7 @@ function Article() {
     "--bs-breadcrumb-divider":
       "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E\")",
   };
-  const [id, setId] = React.useState(1);
+  const [id, setId] = React.useState(0);
   const [artcs, setArtcs] = React.useState();
 
   useEffect(() => {
@@ -37,6 +37,7 @@ function Article() {
   }, [searchParams]);
 
   const data = lang == "ID" ? ArticlesId[id] : Articles[id];
+  console.log(id, "==========");
 
   return (
     <>
@@ -68,11 +69,7 @@ function Article() {
                 <p className="text-capitalize">{data?.created_at}</p>
                 <p className="summary fs-12">{data?.Desc}.</p>
                 <img src={data?.PathImg} className="w-100 my-3" alt="" />
-                {/* <p className="fs-12">
-                  However, there are also some things that can unwittingly cause gastric disorders. What are these habits, here
-                  are some habits that can trigger stomach disorders:
-                </p> */}
-                {data.SubArticle.map((item) => (
+                {data?.SubArticle.map((item) => (
                   <>
                     <p className="title-p fw-bold">{item.Title}</p>
                     <p className="fs-12">{item.Desc}</p>
@@ -87,8 +84,7 @@ function Article() {
                       <>
                         <div className="col-md-4">
                           <h3 className="title-section text-start pt-0 fs-14">
-                            {" "}
-                            More Article{" "}
+                            More Article
                           </h3>
                           <div className="list-article">
                             {ArticlesId &&
@@ -96,7 +92,7 @@ function Article() {
                                 <>
                                   <Link
                                     style={{ color: "#5B5A5A" }}
-                                    href={`/article?id=${index}`}
+                                    href={`/article?id=${item.Id - 1}`}
                                   >
                                     <butoon
                                       className="items-article"
@@ -122,7 +118,6 @@ function Article() {
                     return (
                       <div className="col-md-4">
                         <h3 className="title-section text-start pt-0 fs-14">
-                          {" "}
                           More Article{" "}
                         </h3>
                         <div className="list-article">
@@ -131,7 +126,7 @@ function Article() {
                               <>
                                 <Link
                                   style={{ color: "#5B5A5A" }}
-                                  href={`/article?id=${index}`}
+                                  href={`/article?id=${item.Id - 1}`}
                                 >
                                   <butoon
                                     className="items-article"
