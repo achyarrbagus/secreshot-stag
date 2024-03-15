@@ -27,6 +27,8 @@ const perklinBniSby = () => {
   const [fileName2, npwpInput] = useState("");
   const [fileName3, ioInput] = useState("");
 
+  const [submitLoad, setSubmitLoading] = useState(false);
+
   useEffect(() => {
     setIsValid(false);
   }, []);
@@ -66,6 +68,7 @@ const perklinBniSby = () => {
           cancelButtonText: "BACK",
         }).then(async (result) => {
           if (result.isConfirmed) {
+            setSubmitLoading(true);
             try {
               const resData = await fetch(
                 `https://cepatsehats.com/api/v3/cs/index.php`,
@@ -103,6 +106,8 @@ const perklinBniSby = () => {
               }
             } catch (error) {
               console.error("Error:", error);
+            } finally {
+              setSubmitLoading(false);
             }
           }
         });
@@ -127,10 +132,10 @@ const perklinBniSby = () => {
       return (
         <button
           type="submit"
-          className="btn btn-yellow w-100 mt-5"
+          className={`btn btn-yellow w-100 mt-5 ${submitLoad ? 'disabled' : ''}`}
           disabled={!isFilesSelected}
         >
-          Daftar
+          {submitLoad ? 'Memuat...' : 'Daftar'}
         </button>
       );
     } else {
