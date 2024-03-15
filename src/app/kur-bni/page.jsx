@@ -1,73 +1,17 @@
 "use client"
+
 import { useEffect, useState } from 'react';
 import DataTable from 'react-data-table-component';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {format} from "date-fns";
 import * as XLSX from 'xlsx';
+import JSZip from 'jszip';
+import { saveAs } from 'file-saver';
 
-const URL_API = "https://cepatsehats.com/api/v3/cs/";
 const pathUploadKtp = "https://cepatsehats.com/api/v3/cs/uploads/ktp/";
 const pathUploadNpwp = "https://cepatsehats.com/api/v3/cs/uploads/npwp/";
 const pathUploadIo = "https://cepatsehats.com/api/v3/cs/uploads/izin-operasional/";
-
-const columns = [
-  {
-    name: 'No',
-    selector: row => row.id,
-    sortable: true,
-  },
-  {
-    name: 'Name PIC Perwakilan',
-    selector: row => row.name,
-    sortable: true,
-  },
-  {
-    name: 'No Handphone PIC',
-    selector: row => row.phone,
-    sortable: true,
-  },
-  {
-    name: 'Clinic Name',
-    selector: row => row.clinic_name,
-    sortable: true,
-  },
-  {
-    name: 'Clinic Address',
-    selector: row => row.clinic_address,
-    sortable: true,
-  },
-  {
-    name: 'Operational License Number',
-    selector: row => row.operational_license_number,
-    sortable: true,
-  },
-  {
-    name: 'Clinic Fasyankes Code',
-    selector: row => row.clinic_fasyankes_code,
-    sortable: true,
-  },
-  {
-    name: 'Created At',
-    selector: row => row.created_at,
-    sortable: true,
-  },
-  {
-    name: 'KTP',
-    selector: row => <a href={row.ktp}>{row.ktp !== null ? (row.extensionFileKtp === "pdf") ? `PDF` : `IMAGE` : ''}</a>,
-    sortable: true,
-  },
-  {
-    name: 'NPWP',
-    selector: row => <a href={row.npwp}>{row.npwp !== null ? (row.extensionFileNpwp === "pdf") ? `PDF` : `IMAGE` : ''}</a>,
-    sortable: true,
-  },
-  {
-    name: 'Izin Operasional',
-    selector: row => <a href={row.izin_operasional}>{row.izin_operasional !== null ? (row.extensionFileIo === "pdf") ? `PDF` : `IMAGE` : ''}</a>,
-    sortable: true,
-  },
-];
 
 const dataKurBni = () => {
 
@@ -76,6 +20,7 @@ const dataKurBni = () => {
   const [loading, setLoading] = useState(true);
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState(new Date());
+  const [isDownloadLoading, setLoadingDownload] = useState(false);
   
   useEffect(() => {
     const fetchDiscount = async () => {
@@ -98,16 +43,16 @@ const dataKurBni = () => {
           const updatedData = result.data.map((item, index) => {
             const dateParts = item.created_at.split(' ')[0];
             return {
-                ...item,
-                id: (index + 1).toString(),
-                created_at: dateParts,
-                updated_at: null,
-                ktp: `${pathUploadKtp}${item.ktp}`,
-                npwp: `${pathUploadNpwp}${item.npwp}`,
-                izin_operasional: `${pathUploadIo}${item.izin_operasional}`,
-                extensionFileKtp: item.ktp.split('.').pop(),
-                extensionFileNpwp: item.npwp.split('.').pop(),
-                extensionFileIo: item.izin_operasional.split('.').pop(),
+              ...item,
+              id: (index + 1).toString(),
+              created_at: dateParts,
+              updated_at: null,
+              ktp: `${pathUploadKtp}${item.ktp}`,
+              npwp: `${pathUploadNpwp}${item.npwp}`,
+              izin_operasional: `${pathUploadIo}${item.izin_operasional}`,
+              extensionFileKtp: item.ktp.split('.').pop(),
+              extensionFileNpwp: item.npwp.split('.').pop(),
+              extensionFileIo: item.izin_operasional.split('.').pop(),
             };
           });
 
@@ -125,6 +70,34 @@ const dataKurBni = () => {
 
     fetchDiscount();
   }, []); 
+
+  const downloadAllFiles = async () => {
+    setLoadingDownload(true);
+    const zip = new JSZip();
+    const cors = "https://cepatsehats.com/api/v3/cs/fileUrl.php?fileUrl=";
+    try {
+      for (const item of filteredData) {
+        const responseKtp = await fetch(cors + encodeURIComponent(item.ktp));
+        const blobKtp = await responseKtp.blob();
+        zip.file(`KTP_${item.clinic_name}.${item.extensionFileKtp}`, blobKtp);
+
+        const responseNpwp = await fetch(cors + encodeURIComponent(item.npwp));
+        const blobNpwp = await responseNpwp.blob();
+        zip.file(`NPWP_${item.clinic_name}.${item.extensionFileNpwp}`, blobNpwp);
+
+        const responseIzin = await fetch(cors + encodeURIComponent(item.izin_operasional));
+        const blobIzin = await responseIzin.blob();
+        zip.file(`IO_${item.clinic_name}.${item.extensionFileIo}`, blobIzin);
+      }
+      const timestamp = Date.now();
+      const content = await zip.generateAsync({ type: 'blob' });
+      saveAs(content, `KTP_NPWP_IZIN-OPERASIONAL_${timestamp}.zip`);
+    } catch (error) {
+      console.error('Error downloading files:', error);
+    } finally {
+      setLoadingDownload(false); 
+    }
+  }
 
   const handleFilter = (event) => {
 
@@ -154,6 +127,64 @@ const dataKurBni = () => {
     XLSX.writeFile(wb, `kur-bni-${Date.now()}.xlsx`);
   };
 
+  const columns = [
+    {
+      name: 'No',
+      selector: row => row.id,
+      sortable: true,
+    },
+    {
+      name: 'Name PIC Perwakilan',
+      selector: row => row.name,
+      sortable: true,
+    },
+    {
+      name: 'No Handphone PIC',
+      selector: row => row.phone,
+      sortable: true,
+    },
+    {
+      name: 'Clinic Name',
+      selector: row => row.clinic_name,
+      sortable: true,
+    },
+    {
+      name: 'Clinic Address',
+      selector: row => row.clinic_address,
+      sortable: true,
+    },
+    {
+      name: 'Operational License Number',
+      selector: row => row.operational_license_number,
+      sortable: true,
+    },
+    {
+      name: 'Clinic Fasyankes Code',
+      selector: row => row.clinic_fasyankes_code,
+      sortable: true,
+    },
+    {
+      name: 'Created At',
+      selector: row => row.created_at,
+      sortable: true,
+    },
+    {
+      name: 'KTP',
+      selector: row => <a href={row.ktp}>{row.ktp !== null ? `KTP_${row.clinic_name}` : ''}</a>,
+      sortable: true,
+    },
+    {
+      name: 'NPWP',
+      selector: row => <a href={row.npwp}>{row.npwp !== null ? `NPWP_${row.clinic_name}` : ''}</a>,
+      sortable: true,
+    },
+    {
+      name: 'Izin Operasional',
+      selector: row => <a href={row.izin_operasional}>{row.izin_operasional !== null ? `IO_${row.clinic_name}` : ''}</a>,
+      sortable: true,
+    },
+  ];
+
   return (
     <>
     <head>
@@ -172,7 +203,7 @@ const dataKurBni = () => {
     </head>
     <div>
     <div className="row mt-4 pb-3">
-      <div className="col-7 col-lg-3 mx-3 pt-3">
+      <div className="col-7 col-lg-2 mx-3 pt-3">
         <input className="form-control" type="text" placeholder="Search" onChange={(event) => handleFilter(event)} />
       </div>
       <div className="col-3 col-lg-1 pt-3">
@@ -204,6 +235,9 @@ const dataKurBni = () => {
       </div>
       <div className='col-6 col-lg-2 mx-3 pt-3'>
         <button className='btn btn-secondary' onClick={handleFilter}>Apply Filter</button>
+      </div>
+      <div className='col-lg-2 pt-3'>
+        <button className='btn btn-secondary' onClick={downloadAllFiles} style={{color: "blue", cursor: "pointer"}}>{isDownloadLoading ? 'Downloading...' : 'Download Files'}</button>
       </div>
     </div>
     {loading ? (
