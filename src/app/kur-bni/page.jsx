@@ -7,20 +7,23 @@ import {format} from "date-fns";
 import * as XLSX from 'xlsx';
 
 const URL_API = "https://cepatsehats.com/api/v3/cs/";
+const pathUploadKtp = "https://cepatsehats.com/api/v3/cs/uploads/ktp/";
+const pathUploadNpwp = "https://cepatsehats.com/api/v3/cs/uploads/npwp/";
+const pathUploadIo = "https://cepatsehats.com/api/v3/cs/uploads/izin-operasional/";
 
 const columns = [
   {
-    name: 'ID',
+    name: 'No',
     selector: row => row.id,
     sortable: true,
   },
   {
-    name: 'Name',
+    name: 'Name PIC Perwakilan',
     selector: row => row.name,
     sortable: true,
   },
   {
-    name: 'Phone',
+    name: 'No Handphone PIC',
     selector: row => row.phone,
     sortable: true,
   },
@@ -51,17 +54,17 @@ const columns = [
   },
   {
     name: 'KTP',
-    selector: row => <a href={`${URL_API}uploads/ktp/${row.ktp}`}>{row.izin_operasional !== null ? row.ktp : ''}</a>,
+    selector: row => <a href={row.ktp}>{row.ktp !== null ? (row.extensionFileKtp === "pdf") ? `PDF` : `IMAGE` : ''}</a>,
     sortable: true,
   },
   {
     name: 'NPWP',
-    selector: row => <a href={`${URL_API}uploads/npwp/${row.npwp}`}>{row.izin_operasional !== null ? row.npwp : ''}</a>,
+    selector: row => <a href={row.npwp}>{row.npwp !== null ? (row.extensionFileNpwp === "pdf") ? `PDF` : `IMAGE` : ''}</a>,
     sortable: true,
   },
   {
     name: 'Izin Operasional',
-    selector: row => <a href={`${URL_API}uploads/izin-operasional/${row.izin_operasional}`}>{row.izin_operasional !== null ? row.izin_operasional : ''}</a>,
+    selector: row => <a href={row.izin_operasional}>{row.izin_operasional !== null ? (row.extensionFileIo === "pdf") ? `PDF` : `IMAGE` : ''}</a>,
     sortable: true,
   },
 ];
@@ -98,7 +101,13 @@ const dataKurBni = () => {
                 ...item,
                 id: (index + 1).toString(),
                 created_at: dateParts,
-                updated_at: null
+                updated_at: null,
+                ktp: `${pathUploadKtp}${item.ktp}`,
+                npwp: `${pathUploadNpwp}${item.npwp}`,
+                izin_operasional: `${pathUploadIo}${item.izin_operasional}`,
+                extensionFileKtp: item.ktp.split('.').pop(),
+                extensionFileNpwp: item.npwp.split('.').pop(),
+                extensionFileIo: item.izin_operasional.split('.').pop(),
             };
           });
 
@@ -153,6 +162,13 @@ const dataKurBni = () => {
       <title>Form Registrasi</title>
       <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
       <link rel="stylesheet" href="assets/css/pbs/style.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossOrigin="anonymous"
+        referrerPolicy="no-referrer"
+      />
     </head>
     <div>
     <div className="row mt-4 pb-3">
