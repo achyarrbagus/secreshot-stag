@@ -6,6 +6,7 @@ import DataTable from "react-data-table-component";
 import Button from "react-bootstrap/Button";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
+import Cookies from "js-cookie";
 
 const App = () => {
   const [articles, setArticles] = useState("");
