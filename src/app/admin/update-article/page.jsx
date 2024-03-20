@@ -12,6 +12,7 @@ import { useFormik } from "formik";
 import Cookies from "js-cookie";
 import axios from "axios";
 import * as yup from "yup";
+import { Suspense } from "react";
 
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
@@ -381,4 +382,10 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default function UpdateArticle() {
+  return (
+    <Suspense fallback={<div>Loading article...</div>}>
+      <Page />
+    </Suspense>
+  );
+}
