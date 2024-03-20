@@ -32,6 +32,7 @@ function Article() {
       let resp = await axios.get(
         `https://api.cepatsehat.com/api/v1/article/${id}`
       );
+      console.log(resp.data.data);
 
       setArticle(resp.data.data);
     } catch (error) {
@@ -141,22 +142,27 @@ function Article() {
                               More Article
                             </h3>
                             <div className="list-article">
-                              {ArticlesId &&
-                                ArticlesId.map((item, index) => (
+                              {articles &&
+                                articles.map((item, index) => (
                                   <>
                                     <Link
                                       style={{ color: "#5B5A5A" }}
-                                      href={`/article?id=${item.Id - 1}`}
+                                      href={`/article?id=${item.id}&locale=${locale}`}
                                     >
                                       <butoon
                                         className="items-article"
                                         style={{ cursor: "pointer" }}
                                       >
-                                        <img src={item.PathImg} alt="" />
+                                        <img
+                                          src={`https://api.cepatsehat.com/uploads/${item.image}`}
+                                          alt="image"
+                                        />
+
                                         <div className="name">
-                                          <h5>{item.Title}</h5>
+                                          <h5>{item.title}</h5>
+
                                           <a className="text-muted fs-14">
-                                            read more{" "}
+                                            read more
                                             <i className="mdi mdi-arrow-right"></i>
                                           </a>
                                         </div>

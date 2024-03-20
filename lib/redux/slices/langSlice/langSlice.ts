@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { PayloadAction } from "@reduxjs/toolkit";
 
-
 export const langSlice = createSlice({
   name: "lang",
   initialState: {
@@ -9,7 +8,15 @@ export const langSlice = createSlice({
   },
   reducers: {
     setLang: (state, action: PayloadAction<string>) => {
-     
+      const searchParams = new URLSearchParams(window.location.search);
+
+      searchParams.set("locale", "id");
+      if (state.value == "EN") {
+        searchParams.set("locale", "en");
+      }
+
+      const newUrl = `${window.location.pathname}?${searchParams.toString()}`;
+      window.history.pushState({ path: newUrl }, "", newUrl);
       state.value = action.payload;
     },
   },
