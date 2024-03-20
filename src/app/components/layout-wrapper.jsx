@@ -89,7 +89,11 @@ export default function LayoutWrapper({ children }) {
         <nav className="nav nav-top fixed-top">
           <div className="container">
             <div className="d-flex align-items-center gap-3">
-              <Link href={`/?${lang == "EN" ? "locale=en" : "locale=id"}`}>
+              <Link
+                href={`/?${
+                  lang == "EN" ? "lang=en&locale=en" : "lang=idn&locale=id"
+                }`}
+              >
                 <div style={{ cursor: "pointer" }} className="nav-brand">
                   <img src="/assets/img/logo.png" alt="" />
                 </div>
