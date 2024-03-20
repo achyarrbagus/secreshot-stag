@@ -9,6 +9,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
 import { Spinner } from "flowbite-react";
 import Helper from "../../../lib/helper/helper";
+import locale from "antd/es/date-picker/locale/en_US";
 
 export default function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
@@ -88,7 +89,7 @@ export default function LayoutWrapper({ children }) {
         <nav className="nav nav-top fixed-top">
           <div className="container">
             <div className="d-flex align-items-center gap-3">
-              <Link href={"/"} passHref>
+              <Link href={`/?${lang === "EN" ? "locale=en" : "locale=id"}`}>
                 <div style={{ cursor: "pointer" }} className="nav-brand">
                   <img src="/assets/img/logo.png" alt="" />
                 </div>
