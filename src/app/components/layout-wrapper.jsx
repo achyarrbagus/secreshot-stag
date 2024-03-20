@@ -6,15 +6,12 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import { Dropdown } from "flowbite-react";
 import { useRouter, useSearchParams } from "next/navigation";
-import React, { Suspense, useState } from "react";
+import React, { Suspense } from "react";
 import { Spinner } from "flowbite-react";
 import Helper from "../../../lib/helper/helper";
 
 export default function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
-  const searchParams = useSearchParams();
-  const [query, setQuery] = useState();
-
   const dispatch = useDispatch();
 
   React.useEffect(() => {
@@ -91,11 +88,7 @@ export default function LayoutWrapper({ children }) {
         <nav className="nav nav-top fixed-top">
           <div className="container">
             <div className="d-flex align-items-center gap-3">
-              <Link
-                href={`/?${
-                  lang === "EN" ? "lang=en&locale=en" : "lang=idn&locale=id"
-                }`}
-              >
+              <Link href={"/"} passHref>
                 <div style={{ cursor: "pointer" }} className="nav-brand">
                   <img src="/assets/img/logo.png" alt="" />
                 </div>
