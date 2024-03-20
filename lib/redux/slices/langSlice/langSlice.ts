@@ -10,10 +10,7 @@ export const langSlice = createSlice({
     setLang: (state, action: PayloadAction<string>) => {
       const searchParams = new URLSearchParams(window.location.search);
 
-      searchParams.set("locale", "id");
-      if (state.value == "EN") {
-        searchParams.set("locale", "en");
-      }
+      searchParams.set("locale", state.value === "EN" ? "en" : "id");
 
       const newUrl = `${window.location.pathname}?${searchParams.toString()}`;
       window.history.pushState({ path: newUrl }, "", newUrl);
