@@ -575,6 +575,7 @@ const Home = () => {
                             <SwiperSlide key={item.id}>
                               <Link
                                 href={`/article?id=${item.id}&locale=${item.locale}`}
+                                scroll={true}
                               >
                                 <div className="card-slide-article">
                                   <img
