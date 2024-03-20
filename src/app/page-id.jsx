@@ -6,15 +6,23 @@ import "swiper/css";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Articles from "../../public/assets/article/json/article-id.json";
 import Helper from "../../lib/helper/helper";
+import useSWR from "swr";
+import axios from "axios";
+const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
 const HomeId = () => {
+  const { data: articles, error: articlesError } = useSWR(
+    `https://api.cepatsehat.com/api/v1/articles?locale=id`,
+    fetcher
+  );
+
   const CutText = (text) => {
     let sentences = text?.split("");
     // Mengambil 100 kalimat pertama
-    let first100Sentences = sentences?.slice(0, 40);
+    let first100Sentences = sentences?.slice(0, 30);
     let resultText = first100Sentences?.join("");
     return resultText;
   };
@@ -427,32 +435,34 @@ const HomeId = () => {
                       },
                     }}
                   >
-                    {Articles &&
-                      Articles.sort((a, b) => b.Id - a.Id).map(
-                        (item, index) => (
-                          <SwiperSlide key={item.Id}>
-                            <Link href={`/article?id=${item.Id - 1}`}>
-                              <div className="card-slide-article">
-                                <img src={item.PathImg} alt="" />
-                                <div className="name-article">
-                                  <h6>{CutText(item.Title)}...</h6>
-                                  <p>{CutText(item.DescCard)}...</p>
-                                  <a
-                                    href="article-detail.html"
-                                    className="text-muted fs-14"
-                                  >
-                                    read more{" "}
-                                    <i className="mdi mdi-arrow-right"></i>
-                                  </a>
-                                  <p className="text-end text-capitalize">
-                                    {item.created_at}
-                                  </p>
-                                </div>
+                    {articles &&
+                      articles.map((item, index) => (
+                        <SwiperSlide key={item.id}>
+                          <Link
+                            href={`/article?id=${item.id}&locale=${item.locale}`}
+                          >
+                            <div className="card-slide-article">
+                              <img
+                                alt=""
+                                src={`https://api.cepatsehat.com/uploads/${item.image}`}
+                              />
+                              <div className="name-article">
+                                <h6>{CutText(item.title)}...</h6>
+                                <p>{CutText(item.intro)}...</p>
+                                <a
+                                  href="article-detail.html"
+                                  className="text-muted fs-14"
+                                >
+                                  <i className="mdi mdi-arrow-right"></i>
+                                </a>
+                                <p className="text-end text-capitalize">
+                                  {item.publish_date}
+                                </p>
                               </div>
-                            </Link>
-                          </SwiperSlide>
-                        )
-                      )}
+                            </div>
+                          </Link>
+                        </SwiperSlide>
+                      ))}
                   </Swiper>
                 </div>
               </div>
@@ -546,5 +556,32 @@ const HomeId = () => {
     </>
   );
 };
+
+// {Articles &&
+//   Articles.sort((a, b) => b.Id - a.Id).map(
+//     (item, index) => (
+//       <SwiperSlide key={item.Id}>
+//         <Link href={`/article?id=${item.Id - 1}`}>
+//           <div className="card-slide-article">
+//             <img src={item.PathImg} alt="" />
+//             <div className="name-article">
+//               <h6>{CutText(item.Title)}...</h6>
+//               <p>{CutText(item.DescCard)}...</p>
+//               <a
+//                 href="article-detail.html"
+//                 className="text-muted fs-14"
+//               >
+//                 read more{" "}
+//                 <i className="mdi mdi-arrow-right"></i>
+//               </a>
+//               <p className="text-end text-capitalize">
+//                 {item.created_at}
+//               </p>
+//             </div>
+//           </div>
+//         </Link>
+//       </SwiperSlide>
+//     )
+//   )}
 
 export default HomeId;

@@ -89,6 +89,11 @@ const App = () => {
       sortable: true,
     },
     {
+      name: "locale",
+      selector: (row) => row.locale,
+      sortable: true,
+    },
+    {
       name: "description",
       selector: (row) => CutText(row.description),
       sortable: true,

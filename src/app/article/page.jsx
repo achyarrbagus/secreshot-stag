@@ -19,6 +19,7 @@ function Article() {
   const searchParams = useSearchParams();
   const [cata, setData] = useState();
   const [id, setId] = React.useState(0);
+  const [locale, setLocale] = React.useState(0);
   const [article, setArticle] = React.useState([]);
 
   const navStyle = {
@@ -26,34 +27,36 @@ function Article() {
       "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E\")",
   };
 
-  // const { data: articles, error: articlesError } = useSWR(
-  //   "https://api.cepatsehat.com/api/v1/articles",
-  //   fetcher
-  // );
+  const FetchArticle = async (id) => {
+    try {
+      let resp = await axios.get(
+        `https://api.cepatsehat.com/api/v1/article/${id}`
+      );
+
+      setArticle(resp.data.data);
+    } catch (error) {
+      setArticle([]);
+    }
+  };
+
+  const { data: articles, error: articlesError } = useSWR(
+    `https://api.cepatsehat.com/api/v1/articles?locale=${locale}`,
+    fetcher
+  );
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const idx = searchParams.get("id");
-      console.log("Nilai ID:", idx);
+      const locale = searchParams.get("locale");
       if (!idx) {
         router.push("/");
       }
-      const FetchArticle = async (id) => {
-        try {
-          let resp = await axios.get(
-            `https://api.cepatsehat.com/api/v1/article/${id}`
-          );
-          setArticle(resp.data.data);
-        } catch (error) {
-          setArticle([]);
-        }
-      };
       setId(idx);
+      setLocale(locale);
       FetchArticle(idx);
     }
   }, [searchParams]);
 
-  const data = lang == "ID" ? ArticlesId[id] : Articles[id];
   const dateToString = (dateString) => {
     const dt = new Date(dateString);
     const date = dt.getDate();
@@ -82,7 +85,7 @@ function Article() {
   };
 
   return (
-    data && (
+    article && (
       <>
         <div className="content">
           <div className="nav-content">
@@ -90,13 +93,13 @@ function Article() {
               <nav style={navStyle}>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index.html">Home</a>
+                    <Link href={`/?locale=${locale}&lang=${locale}`}>Home</Link>
                   </li>
                   <li className="breadcrumb-item">
                     <a href="#/">Article</a>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    {data.title}
+                    {article.title}
                   </li>
                 </ol>
               </nav>
@@ -107,23 +110,25 @@ function Article() {
               <div className="row g-3">
                 <div className="col-md-8">
                   <h3 className="title-detail fw-bold fs-24 text-primary">
-                    {data.Title}
+                    {article.title}
                   </h3>
-                  <p className="text-capitalize">
-                    {dateToString(data.created_at)}
-                  </p>
+                  <p className="text-capitalize">{article.publish_date}</p>
                   <img
-                    src={data.PathImg}
+                    src={`https://api.cepatsehat.com/uploads/${article.image}`}
                     alt="image"
                     style={{ maxWidth: "100%" }}
                   />
-                  <p className="summary fs-12">{data.Desc}.</p>
-                  {data?.SubArticle.map((item) => (
+                  <div
+                    className="mt-2"
+                    dangerouslySetInnerHTML={{ __html: article.description }}
+                  />
+                  {/* <p className="summary fs-12">{article.intro}.</p> */}
+                  {/* {data?.SubArticle.map((item) => (
                     <>
                       <p className="title-p fw-bold">{item.Title}</p>
                       <p className="fs-12">{item.Desc}</p>
                     </>
-                  ))}
+                  ))} */}
                 </div>
 
                 {(() => {
@@ -170,21 +175,25 @@ function Article() {
                             More Article{" "}
                           </h3>
                           <div className="list-article">
-                            {Articles &&
-                              Articles.map((item, index) => (
+                            {articles &&
+                              articles.map((item, index) => (
                                 <>
                                   <Link
                                     style={{ color: "#5B5A5A" }}
-                                    href={`/article?id=${item.Id - 1}`}
+                                    href={`/article?id=${item.id}&locale=${locale}`}
                                   >
                                     <butoon
                                       className="items-article"
                                       style={{ cursor: "pointer" }}
                                     >
-                                      <img src={item.PathImg} alt="image" />
+                                      <img
+                                        src={`https://api.cepatsehat.com/uploads/${item.image}`}
+                                        alt="image"
+                                      />
 
                                       <div className="name">
-                                        <h5>{item.Title}</h5>
+                                        <h5>{item.title}</h5>
+
                                         <a className="text-muted fs-14">
                                           read more
                                           <i className="mdi mdi-arrow-right"></i>

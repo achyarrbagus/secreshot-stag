@@ -5,7 +5,7 @@ import "swiper/css";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HomeId from "./page-id";
-import React from "react";
+import React, { useState } from "react";
 import { setLang } from "../../lib/redux/slices/langSlice/langSlice";
 import LayoutWrapper from "./components/layout-wrapper";
 import { useDispatch, useSelector } from "react-redux";
@@ -26,34 +26,24 @@ const Home = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
   const lang = useSelector((state) => state.lang.value);
+  const [locale, setLocale] = useState("en");
   const { data: articles, error: articlesError } = useSWR(
-    "https://api.cepatsehat.com/api/v1/articles",
+    `https://api.cepatsehat.com/api/v1/articles?locale=${locale}`,
     fetcher
   );
 
-  // const FetchArticle = async () => {
-  //   try {
-  //     let resp = await axios.get("https://api.cepatsehat.com/api/v1/articles");
-
-  //     setArticles(resp.data.data);
-  //   } catch (error) {
-  //     setArticles([]);
-  //   }
-  // };
-
   useEffect(() => {
-    const lang = searchParams.get("locales");
+    const lang = searchParams.get("lang");
     if (lang === "idn") {
       dispatch(setLang("ID"));
+      setLocale("id");
     }
   }, [searchParams]);
 
   const CutText = (text, isTitle) => {
     let sentences = text.split("");
-    let first100Sentences = sentences.slice(0, 70);
-    if (isTitle) {
-      first100Sentences = sentences.slice(0, 30);
-    }
+    let first100Sentences = sentences.slice(0, 30);
+
     let resultText = first100Sentences.join("");
     return resultText;
   };
@@ -580,32 +570,34 @@ const Home = () => {
                           },
                         }}
                       >
-                        {Articles &&
-                          Articles.sort((a, b) => b.Id - a.Id).map(
-                            (item, index) => (
-                              <SwiperSlide key={item.Id}>
-                                <Link href={`/article?id=${item.Id - 1}`}>
-                                  <div className="card-slide-article">
-                                    <img src={item.PathImg} alt="" />
-                                    <div className="name-article">
-                                      <h6>{CutText(item.Title)}...</h6>
-                                      <p>{CutText(item.DescCard)}...</p>
-                                      <a
-                                        href="article-detail.html"
-                                        className="text-muted fs-14"
-                                      >
-                                        read more{" "}
-                                        <i className="mdi mdi-arrow-right"></i>
-                                      </a>
-                                      <p className="text-end text-capitalize">
-                                        {item.created_at}
-                                      </p>
-                                    </div>
+                        {articles &&
+                          articles.map((item, index) => (
+                            <SwiperSlide key={item.id}>
+                              <Link
+                                href={`/article?id=${item.id}&locale=${item.locale}`}
+                              >
+                                <div className="card-slide-article">
+                                  <img
+                                    alt=""
+                                    src={`https://api.cepatsehat.com/uploads/${item.image}`}
+                                  />
+                                  <div className="name-article">
+                                    <h6>{CutText(item.title)}...</h6>
+                                    <p>{CutText(item.intro)}...</p>
+                                    <a
+                                      href="article-detail.html"
+                                      className="text-muted fs-14"
+                                    >
+                                      <i className="mdi mdi-arrow-right"></i>
+                                    </a>
+                                    <p className="text-end text-capitalize">
+                                      {item.publish_date}
+                                    </p>
                                   </div>
-                                </Link>
-                              </SwiperSlide>
-                            )
-                          )}
+                                </div>
+                              </Link>
+                            </SwiperSlide>
+                          ))}
                       </Swiper>
                     </div>
                   </div>

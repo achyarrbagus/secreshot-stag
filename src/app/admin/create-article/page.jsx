@@ -26,10 +26,11 @@ const Page = () => {
     article_title: "",
     article_category: "",
     source: "",
-    // alt_img: "",
-    // date_publish: "",
-    // is_active: false,
-    // intro: "",
+    alt_img: "",
+    date_publish: "",
+    is_active: false,
+    intro: "",
+    locale: "",
   };
 
   const validationsSchema = yup.object().shape({
@@ -37,13 +38,12 @@ const Page = () => {
     article_category: yup.string().required("Required"),
     source: yup.string().min(10).required("Required"),
     // alt_img: yup.string().required("Required"),
-    // date_publish: yup.string().required("Required"),
-    // is_active: yup.boolean(),
-    // intro: yup.string().min(10).required("Required"),
+    date_publish: yup.string().required("Required"),
+    is_active: yup.boolean(),
+    intro: yup.string().min(10).required("Required"),
   });
 
   const onSubmit = async (values) => {
-    console.log("hello world");
     const {
       article_title,
       article_category,
@@ -52,7 +52,9 @@ const Page = () => {
       source,
       is_active,
       intro,
+      locale,
     } = values;
+    console.log(values);
 
     // const bodyJson = JSON.stringify({
     //   title: article_title,
@@ -75,8 +77,13 @@ const Page = () => {
     const formData = new FormData();
     formData.set("title", article_title);
     formData.set("desc", valueTextEditor);
-    // formData.set("image", imgBanner);
     formData.append("image", imgBanner);
+    formData.set("category", 0);
+    formData.set("source", source);
+    formData.set("date_publish", date_publish);
+    formData.set("is_active", is_active);
+    formData.set("intro", intro);
+    formData.set("locale", values.locale);
 
     const config = {
       headers: {
@@ -91,7 +98,6 @@ const Page = () => {
         console.log(response);
         alert("created article success");
         router.push("/admin/dashboard");
-        return;
       })
       .catch(function (error) {
         console.log(error);
@@ -219,6 +225,30 @@ const Page = () => {
                 )}
               </div>
               <div className="mb-2">
+                <label for="locale" className="form-label">
+                  Lang
+                </label>
+                <select
+                  id="locale"
+                  value={values.locale}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={`form-control ${
+                    errors.locale && touched.locale ? "is-invalid" : ""
+                  }`}
+                  required
+                >
+                  <option value="" disabled>
+                    Choose Language
+                  </option>
+                  <option value="id">Indonesia</option>
+                  <option values="en">English</option>
+                </select>
+                {errors.locale && touched.locale && (
+                  <p style={{ color: "red" }}>{errors.locale}</p>
+                )}
+              </div>
+              <div className="mb-2">
                 <label for="img_banner" class="form-label">
                   Cover Banner
                 </label>
@@ -280,7 +310,7 @@ const Page = () => {
                   <p style={{ color: "red" }}>{errors.source}</p>
                 )}
               </div>
-              {/* <div className="mb-2">
+              <div className="mb-2">
                 <label for="date_publish" class="form-label">
                   Publish Date
                 </label>
@@ -301,8 +331,8 @@ const Page = () => {
                 {errors.date_publish && touched.date_publish && (
                   <p style={{ color: "red" }}>{errors.date_publish}</p>
                 )}
-              </div> */}
-              {/* <div className="mb-2">
+              </div>
+              <div className="mb-2">
                 <div class="form-check form-check-inline">
                   <input
                     class="form-check-input"
@@ -317,8 +347,8 @@ const Page = () => {
                     Active
                   </label>
                 </div>
-              </div> */}
-              {/* <div className="mb-2">
+              </div>
+              <div className="mb-2">
                 <label for="intro" class="form-label">
                   Intro
                 </label>
@@ -337,7 +367,7 @@ const Page = () => {
                 {errors.intro && touched.intro && (
                   <p style={{ color: "red" }}>{errors.intro}</p>
                 )}
-              </div> */}
+              </div>
               <div className="mb-2">
                 <QuillEditor
                   theme="snow"
