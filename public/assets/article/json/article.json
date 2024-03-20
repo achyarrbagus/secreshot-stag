@@ -307,5 +307,119 @@
         "Desc": ""
       }
     ]
+  },
+  {
+    "Id": 7,
+    "created_at": "20 maret 2024",
+    "Title": "Getting to Know STROKE",
+    "Desc": "Stroke is a cerebrovascular disease (brain blood vessels) which is characterized by disruption of blood flow to the brain, causing the death of brain tissue. Being one of the top ten non-communicable diseases in Indonesia and consuming a lot of energy, attention, patient medical costs and being a burden on families, stroke is a big concern for the government to encourage healthy lifestyles for the community.",
+    "DescCard": "Stroke is a cerebrovascular disease (brain blood vessels) which is characterized by disruption of blood flow to the brain, causing the death of brain tissue.",
+    "PathImg": "/assets/img/article/apa-itu-stroke.jpg",
+    "SubArticle": [
+      {
+        "Title": "Stroke is divided into two types based on the cause:",
+        "Desc": "1. ISCHEMIC STROKE – where blood flow to the brain is disrupted due to atherosclerosis (hardening of the blood vessel walls). Brain blood vessels can also become blocked due to blood clots originating from other places. If the blood clot is released and carried by the bloodstream, there is a possibility that the clot will block the blood vessels to the brain, resulting in an ischemic stroke."
+      },
+      {
+        "Title": "",
+        "Desc": "2. HEMORRHAGIC STROKE - rupture of a blood vessel in the brain. The blood that comes out of the ruptured blood vessels will seep into the brain tissue and damage it."
+      },
+      {
+        "Title": "WHY DO STROKES OCCUR?",
+        "Desc": ""
+      },
+      {
+        "Title": "Stroke can occur due to risk factors, including:",
+        "Desc": "a. Risk factors that cannot be controlled include: advanced age, gender, ethnicity"
+      },
+      {
+        "Title": "",
+        "Desc": "b. Risk factors that can be controlled include: metabolic disorders, for example: diabetes, hypertension, high cholesterol and obesity, consumption of alcohol, drugs, lack of exercise and smoking."
+      },
+      {
+        "Title": "",
+        "Desc": "To prevent stroke, if a person suffers from a metabolic disorder, make sure the disease is controlled. Take blood pressure/cholesterol/blood sugar control medication according to your doctor's instructions."
+      },
+      {
+        "Title": "",
+        "Desc": "In many cases, most strokes occur suddenly, very quickly and cause brain damage within minutes. Strokes can get worse and cause permanent brain damage within a few hours to 1-2 days."
+      },
+      {
+        "Title": "BEWARE OF EMERGING STROKE SYMPTOMS!",
+        "Desc": "Serangan terjadinya Stroke dapat dikenali dari gejala-gejalanya, yang bisa muncul satu atau lebih gejala, antara lain :"
+      },
+      {
+        "Title": "",
+        "Desc": "a. There is weakness/paralysis in the limbs or one side of the body"
+      },
+      {
+        "Title": "",
+        "Desc": "b. There may also be partial loss of vision/hearing"
+      },
+      {
+        "Title": "",
+        "Desc": "c. Double vision"
+      },
+      {
+        "Title": "",
+        "Desc": "d. Dizziness is not the main symptom as an indication of stroke, usually only as an additional symptom"
+      },
+      {
+        "Title": "",
+        "Desc": "e. Slurred speech, difficulty swallowing"
+      },
+      {
+        "Title": "",
+        "Desc": "f. It's hard to think of the right words"
+      },
+      {
+        "Title": "",
+        "Desc": "g. Inability to recognize body parts"
+      },
+      {
+        "Title": "",
+        "Desc": "h. Unusual movements"
+      },
+      {
+        "Title": "",
+        "Desc": "i. Impaired bladder control"
+      },
+      {
+        "Title": "",
+        "Desc": "j. Losing balance and falling"
+      },
+      {
+        "Title": "",
+        "Desc": "k. Faint"
+      },
+      {
+        "Title": "",
+        "Desc": "The diagnosis of stroke can be made from clinical symptoms and physical examination by a doctor. A more definite diagnosis can be obtained from an examination with a CT scan (Computed Tomography - Scan) of the brain or MRI (Magnetic Resonance Imaging). This service is available in hospitals and is used as a way to detect the type of stroke and the location of the brain affected by the stroke."
+      },
+      {
+        "Title": "",
+        "Desc": "Recognize the signs of a stroke and immediately take the sufferer to the hospital emergency unit, this can avoid more extensive brain damage. Recovery measures are needed for stroke sufferers to reduce complications and normalize the physical condition of stroke sufferers. Mental disorders often occur due to an imbalance in emotional control."
+      },
+      {
+        "Title": "What should we do to prevent stroke?",
+        "Desc": "How to prevent stroke? According to the principle, prevention is better than cure."
+      },
+      {
+        "Title": "",
+        "Desc": "1. By implementing healthy living habits from an early age, such as stopping smoking, exercising regularly, limiting alcoholic drinks, eating healthy food, getting enough sleep, and avoiding excessive stress."
+      },
+      {
+        "Title": "",
+        "Desc": "3. Get regular treatment if you have risky diseases such as hypertension, diabetes and high cholesterol. And patients must recognize the early signs of stroke."
+      },
+      {
+        "Title": "",
+        "Desc": "If stroke symptoms appear, immediately take them to the nearest hospital. The golden period is the right time to treat stroke patients. In stroke, the golden period is four and a half hours after a person experiences stroke symptoms. Without treatment within this time period, it is very likely that stroke sufferers will experience permanent brain damage. The sooner you get treatment, the impact of a stroke can be minimized."
+      },
+      {
+        "Title": "",
+        "Desc": "Bila timbul gejala stroke, segera bawa ke rumah sakit terdekat. Golden period adalah waktu yang tepat untuk menangani pasien stroke. Pada penyakit stroke, periode golden hour adalah empat setengah jam setelah seseorang mengalami gejala stroke. Tanpa adanya penanganan pada rentang waktu tersebut, pengidap stroke sangat mungkin mengalami kerusakan otak permanen. Semakin cepat mendapatkan penanganan, maka dampak stroke yang ditimbulkan dapat diminimalisir.n"
+      }
+    ]
   }
 ]

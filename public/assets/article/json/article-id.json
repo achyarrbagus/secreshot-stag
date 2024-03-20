@@ -260,5 +260,119 @@
         "Desc": ""
       }
     ]
+  },
+  {
+    "Id": 7,
+    "created_at": "20 maret 2024",
+    "Title": "Kenali apa itu STROKE",
+    "Desc": "Stroke termasuk penyakit serebrovaskular (pembuluh darah otak) yang ditandai dengan adanya gangguan aliran darah ke otak sehingga menyebabkan kematian jaringan otak. Menjadi bagian dari sepuluh besar penyakit tidak menular di Indonesia dan menghabiskan banyak tenaga, perhatian, biaya pengobatan bagi pasien dan menjadi beban keluarga, penyakit Stroke ini menjadi perhatian besar bagi pemerintah untuk mendorong pola hidup sehat bagi masyarakat.",
+    "DescCard": "Stroke termasuk penyakit serebrovaskular (pembuluh darah otak) yang ditandai dengan adanya gangguan aliran darah ke otak sehingga menyebabkan kematian jaringan otak.",
+    "PathImg": "/assets/img/article/apa-itu-stroke.jpg",
+    "SubArticle": [
+      {
+        "Title": "Jenis penyakit Stroke dibagi dalam dua macam menurut penyebabnya :",
+        "Desc": "1. STROKE ISKEMIK - di mana aliran darah ke otak terganggu oleh aterosklerosis (pengerasan dinding pembuluh darah). Pembuluh darah otak juga bisa tersumbat karena ada bekuan darah yang berasal dari tempat lain. Bila bekuan darah tersebut terlepas dan terbawa oleh aliran darah ada kemungkinan bekuan tersebut akan menyumbat pembuluh darah ke otak sehingga terjadi Stroke Iskemik."
+      },
+      {
+        "Title": "",
+        "Desc": "2. STROKE HEMORRAGIK - di mana ada pembuluh darah otak yang pecah. Darah yang keluar dari pembuluh yang pecah akan merembes ke jaringan otak dan merusaknya."
+      },
+      {
+        "Title": "MENGAPA BISA TERJADI STROKE ?",
+        "Desc": ""
+      },
+      {
+        "Title": "Stroke bisa terjadi karena adanya faktor risiko, di antaranya :",
+        "Desc": "a. Faktor Risiko yang tidak dapat dikendalikan seperti : usia lanjut, jenis kelamin, suku bangsa"
+      },
+      {
+        "Title": "",
+        "Desc": "b. Faktor Risiko Yang dapat dikendalikan seperti : penyakit gangguan metabolik, misalnya : diabetes, hipertensi, kolesterol tinggi serta kegemukan, konsumsi alkohol, obat-obatan, kurang berolahraga dan merokok."
+      },
+      {
+        "Title": "",
+        "Desc": "Untuk mencegah terjadinya stroke, bila seseorang menderita penyakit gangguan metabolik, pastikan mereka mengontrol penyakitnya. Minumlah obat pengontrol tekanan darah/ kolesterol/ gula darah sesuai dengan petunjuk dokter."
+      },
+      {
+        "Title": "",
+        "Desc": "Di banyak kasus, sebagian besar Stroke terjadi secara mendadak, sangat cepat dan menyebabkan kerusakan otak dalam hitungan menit. Stroke dapat bertambah buruk dan menyebabkan kerusakan otak menetap dalam hitungan jam sampai 1-2 hari."
+      },
+      {
+        "Title": "AWASI GEJALA-GEJALA STROKE YANG MUNCUL",
+        "Desc": "Serangan terjadinya Stroke dapat dikenali dari gejala-gejalanya, yang bisa muncul satu atau lebih gejala, antara lain :"
+      },
+      {
+        "Title": "",
+        "Desc": "a. Terjadinya kelemahan/ kelumpuhan tungkai tubuh, atau salah satu sisi tubuh"
+      },
+      {
+        "Title": "",
+        "Desc": "b. Bisa juga muncul kehilangan sebagian penglihatan/ pendengaran"
+      },
+      {
+        "Title": "",
+        "Desc": "c. Penglihatan ganda"
+      },
+      {
+        "Title": "",
+        "Desc": "d. Pusing, bukan gejala utama sebagai indikasi stroke, biasanya sebagai gejala tambahan saja"
+      },
+      {
+        "Title": "",
+        "Desc": "e. Bicara tidak jelas (pelo), sulit menelan"
+      },
+      {
+        "Title": "",
+        "Desc": "f. Sulit memikirkan kata-kata yang tepat"
+      },
+      {
+        "Title": "",
+        "Desc": "g. Tidak mampu mengenali bagian tubuh"
+      },
+      {
+        "Title": "",
+        "Desc": "h. Gerakan yang tidak biasa"
+      },
+      {
+        "Title": "",
+        "Desc": "i. Terganggunya kendali terhadap kandung kemih"
+      },
+      {
+        "Title": "",
+        "Desc": "j. Hilang keseimbangan dan jatuh"
+      },
+      {
+        "Title": "",
+        "Desc": "k. Pingsan"
+      },
+      {
+        "Title": "",
+        "Desc": "Diagnosa Stroke dapat diketahui dari gejala klinis dan pemeriksaan fisik oleh dokter. Diagnosa yang lebih pasti didapat dari pemeriksaan dengan alat CT Scan (Computed Tomography - Scan) otak atau MRI (Magnetic Resonance Imaging). Pelayanan ini terdapat di rumah sakit dan dipakai sebagai salah satu cara untuk mendeteksi jenis Stroke maupun lokasi di otak yang terserang Stroke."
+      },
+      {
+        "Title": "",
+        "Desc": "Kenali tanda-tanda Stroke dan segera bawa penderita ke Unit Gawat Darurat Rumah Sakit, hal ini dapat menghindari kerusakan otak yang lebih luas. Tindakan pemulihan diperlukan pada penderita Stroke untuk mengurangi komplikasi dan menormalkan kondisi fisik penderita Stroke. Gangguan kejiwaan sering terjadi akibat adanya ketidakseimbangan pengendalian emosi"
+      },
+      {
+        "Title": "Apa yang harus kita lakukan untuk mencegah serangan Stroke",
+        "Desc": "Bagaimana mencegah serangan Stroke? Sesuai prinsip, bahwa mencegah lebih baik dari mengobati."
+      },
+      {
+        "Title": "",
+        "Desc": "1. Dengan menjalankan Perilaku Hidup Sehat sejak dini seperti berhenti merokok, melakukan olahraga teratur, membatasi minuman beralkohol, makan makanan sehat, tidur cukup dan menghindari stress yang berlebihan."
+      },
+      {
+        "Title": "",
+        "Desc": "2. Pengendalian faktor-faktor risiko secara optimal harus dijalankan"
+      },
+      {
+        "Title": "",
+        "Desc": "3. Rutin berobat apabila memiliki penyakit risiko seperti Hipertensi, Diabetes, dan Kolesterol Tinggi. Dan pasien harus mengenali tanda-tanda dini stroke."
+      },
+      {
+        "Title": "",
+        "Desc": "Bila timbul gejala stroke, segera bawa ke rumah sakit terdekat. Golden period adalah waktu yang tepat untuk menangani pasien stroke. Pada penyakit stroke, periode golden hour adalah empat setengah jam setelah seseorang mengalami gejala stroke. Tanpa adanya penanganan pada rentang waktu tersebut, pengidap stroke sangat mungkin mengalami kerusakan otak permanen. Semakin cepat mendapatkan penanganan, maka dampak stroke yang ditimbulkan dapat diminimalisir.n"
+      }
+    ]
   }
 ]
