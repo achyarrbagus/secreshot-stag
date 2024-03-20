@@ -431,12 +431,9 @@ const HomeId = () => {
                       Articles.sort((a, b) => b.Id - a.Id).map(
                         (item, index) => (
                           <SwiperSlide key={item.Id}>
-                            <Link href={`/article?id=${item.Id}`}>
+                            <Link href={`/article?id=${item.Id - 1}`}>
                               <div className="card-slide-article">
-                                <img
-                                  src={`/assets/img/article/article0${item.Id}.jpg`}
-                                  alt=""
-                                />
+                                <img src={item.PathImg} alt="" />
                                 <div className="name-article">
                                   <h6>{CutText(item.Title)}...</h6>
                                   <p>{CutText(item.DescCard)}...</p>

@@ -500,7 +500,7 @@ const Home = () => {
                 <div className="swiper swiper-article mt-5">
                   <div className="swiper-wrapper">
                     <div className="swiper-wrapper">
-                      <Swiper
+                      {/* <Swiper
                         loop
                         modules={[Autoplay]}
                         spaceBetween={30}
@@ -557,6 +557,55 @@ const Home = () => {
                               </Link>
                             </SwiperSlide>
                           ))}
+                      </Swiper> */}
+                      <Swiper
+                        loop
+                        modules={[Autoplay]}
+                        spaceBetween={30}
+                        slidesPerView={3.5}
+                        speed={1000}
+                        autoplay={{
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        }}
+                        breakpoints={{
+                          320: {
+                            slidesPerView: 1.5,
+                          },
+                          480: {
+                            slidesPerView: 2.5,
+                          },
+                          768: {
+                            slidesPerView: 3.5,
+                          },
+                        }}
+                      >
+                        {Articles &&
+                          Articles.sort((a, b) => b.Id - a.Id).map(
+                            (item, index) => (
+                              <SwiperSlide key={item.Id}>
+                                <Link href={`/article?id=${item.Id - 1}`}>
+                                  <div className="card-slide-article">
+                                    <img src={item.PathImg} alt="" />
+                                    <div className="name-article">
+                                      <h6>{CutText(item.Title)}...</h6>
+                                      <p>{CutText(item.DescCard)}...</p>
+                                      <a
+                                        href="article-detail.html"
+                                        className="text-muted fs-14"
+                                      >
+                                        read more{" "}
+                                        <i className="mdi mdi-arrow-right"></i>
+                                      </a>
+                                      <p className="text-end text-capitalize">
+                                        {item.created_at}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </SwiperSlide>
+                            )
+                          )}
                       </Swiper>
                     </div>
                   </div>
