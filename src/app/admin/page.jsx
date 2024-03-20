@@ -12,7 +12,7 @@ const Page = () => {
   const onFinish = () => {
     const formValues = form.getFieldsValue();
     axios
-      .post(" https://api.cepatsehat.com/api/v1/login", {
+      .post("https://api.cepatsehat.com/api/v1/login", {
         username: formValues.username,
         Password: formValues.password,
       })
