@@ -1,0 +1,65 @@
+{
+  "Id": 1,
+  "created_at": "27 februari 2024",
+  "Title": "Kebiasaan Tanpa Disadari Menyebabkan Gangguan Lambung",
+  "Desc": "Harus Anda waspadai bila terjadi gangguan lambung maka hal ini akan sangat mengganggu aktivitas sehari-hari. Oleh karena itu, menjaga sistem pencernaan khususnya lambung merupakan hal yang perlu Anda perhatikan. Apalagi banyak juga penderita gangguan lambung seperti ini. Seperti dispepsia, asam lambung, atau sakit maag. Jika Anda mengidap penyakit ini, Anda harus benar-benar menjalankan pola hidup sehat. Namun, ada juga beberapa hal yang tanpa disadari bisa menyebabkan gangguan lambung. Apa saja kebiasaan tersebut, berikut beberapa kebiasaan yang bisa memicunya. gangguan lambung.",
+  "DescCard": "Harus Anda waspadai bila terjadi gangguan lambung maka hal ini akan sangat mengganggu aktivitas sehari-hari. Oleh karena itu, ",
+  "PathImg": "/assets/img/article/article01.jpg",
+  "SubArticle": [
+    {
+      "Title": "Pola Makan Tidak Sehat",
+      "Desc": "Kebiasaan mengonsumsi makanan olahan, junk food, atau pola makan tinggi karbohidrat, gula, garam, makanan pedas, dan makanan berlemak penuh juga bisa menyebabkan sistem pencernaan tidak sehat. Pasalnya, jenis makanan tersebut rendah nutrisi, serat, dan air sehingga dapat memperlambat proses pencernaan dan membuat perut kembung serta menghasilkan banyak gas."
+    },
+    {
+      "Title": "Berbaring setelah makan",
+      "Desc": "Apakah Anda masih sering makan larut malam? Atau Anda suka berbaring setelah makan? Jika iya, mungkin hal ini bisa memicu asam lambung naik. Saat Anda berbaring, tubuh Anda tidak lagi mendapat manfaat dari gravitasi untuk membantu menjaga isi perut tetap pada tempatnya. Sehingga saat Anda berbaring, makanan yang Anda makan berisiko bocor melalui sfingter esofagus. Jadi, hindari makan sebelum tidur, apalagi jika Anda langsung berbaring setelah makan. Jika Anda harus berbaring, cobalah berbaring miring ke kiri atau angkat tubuh bagian atas untuk membantu menjaga usus tetap di tempatnya."
+    },
+    {
+      "Title": "Dehidrasi",
+      "Desc": "Dehidrasi menjadi salah satu penyebab utama gangguan sistem pencernaan karena dapat memicu sembelit, maag, dan naiknya asam lambung. Kondisi ini membuat lambung tidak memiliki cukup air untuk memproduksi asam pencernaan. Penelitian menunjukkan bahwa minum 8 hingga 10 gelas air per hari dapat membantu membatasi gejala serius penyakit asam lambung."
+    },
+    {
+      "Title": "Tidak ada keseimbangan antara makan dan olahraga",
+      "Desc": "Bila melakukan olahraga secara teratur, Anda akan mendapatkan manfaat pada sistem pencernaan. Namun, jika salah melakukannya, justru bisa memicu masalah baru. Jika Anda tidak memiliki waktu antara makan dan berolahraga, hal ini dapat menyebabkan mulas, sakit perut, muntah, dan kelelahan. Anda membutuhkan setidaknya 2 jam sebelum berolahraga. Itu tergantung pada jumlah makan siang yang Anda konsumsi."
+    },
+    {
+      "Title": "Kurang tidur",
+      "Desc": "Kurang tidur ternyata bisa menyebabkan penyakit gastroesophageal reflux, sindrom iritasi usus besar, dan dispepsia fungsional. Penyakit ini berkaitan dengan sistem pencernaan yang tidak sehat. Kurang tidur akan berdampak sangat negatif pada mikrobioma usus yang pada akhirnya akan menyebabkan masalah pencernaan dan kesehatan secara umum."
+    }
+  ]
+},
+
+{
+    "Id": 1,
+    "created_at": "27 february 2024",
+    "Title": "Unknowingly Habits Cause Gastric Disorders",
+    "Desc": "You must be aware that when gastric disorders occur, this will greatly interfere with daily activities. Therefore, maintaining the digestive system, especially the stomach, is something you need to pay attention to. Moreover, there are also many people with gastric disorders such as dyspepsia, stomach acid, or gastric ulcers. If you have this disease, you must really run a healthy lifestyle. However, there are also some things that can unwittingly cause gastric disorders. What are these habits, here are some habits that can trigger stomach disorders",
+    "DescCard": "You must be aware that when gastric disorders occur, this will greatly interfere with daily activities.",
+    "PathImg": "/assets/img/article/article01.jpg",
+    "SubArticle": [
+      {
+        "Title": "Unhealthy Diet",
+        "Desc": "The habit of consuming processed foods, junk food, or a diet high in carbohydrates, sugar, salt, spicy foods, and full-fat foods can also cause an unhealthy digestive system. This is because these types of foods are low in nutrients, fiber, and water, so they can slow down the digestive process and make the stomach bloated and produce a lot of gas."
+      },
+      {
+        "Title": "Overeating",
+        "Desc": "When hungry or after fasting, many people do not realize that they have eaten a lot. However, overeating can slow down the digestive process. This means that food stays in the stomach for a longer period of time and tends to turn into fat. As a result, this makes food spoiled and cannot be digested properly. This condition can trigger many problems such as heartburn, acid reflux, vomiting, and nausea."
+      },
+      {
+        "Title": "Lying down after eating",
+        "Desc": "Do you still often eat late at night? Or do you like lying down after eating? If so, maybe this can trigger stomach acid to rise. When you lie down, your body no longer has the benefit of gravity to help keep stomach contents in place. So when you lie down, the food you eat is at risk of leaking through the esophageal sphincter. So, avoid eating before bed, especially if you lie down immediately after you eat. If you have to lie down, try lying on your left side or lifting your upper body to help keep your bowels in place."
+      },
+      {
+        "Title": "Dehydration",
+        "Desc": "Dehydration is one of the main causes of digestive system disorders because it can trigger constipation, gastritis, and acid reflux. This condition makes the stomach does not have enough water to produce digestive acid. Research shows that drinking 8 to 10 glasses of water per day can help limit serious symptoms of acid reflux."
+      },
+      {
+        "Title": "There is no gap between meals and exercise",
+        "Desc": "When doing a regular exercise, you will get benefits on the digestive system. However, if you do it the wrong way, it can trigger new problems. If you don't have time between eating and exercising, this can lead to heartburn, stomach pain, vomiting, and fatigue. You will need at least 2 hours before exercise. That depends on the size of the lunch you consumed."
+      },
+      {
+        "Title": "Lack of Sleep",
+        "Desc": "Lack of sleep can actually cause gastroesophageal reflux disease, irritable bowel syndrome, and functional dyspepsia. This disease is related to an unhealthy digestive system. Poor sleep will have a very negative impact on the gut microbiome which in turn will lead to digestive problems and general health."
+      }
+    ]
+  },

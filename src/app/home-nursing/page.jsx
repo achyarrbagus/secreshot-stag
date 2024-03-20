@@ -5,6 +5,8 @@ import { useState, Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 import LayoutWrapper from "../components/layout-wrapper";
+import Helper from "../../../lib/helper/helper";
+import Accordion from "react-bootstrap/Accordion";
 
 const HomeNursing = () => {
   const searchParams = useSearchParams();
@@ -16,32 +18,24 @@ const HomeNursing = () => {
     }
   }, []);
 
-  const redirectWa = (e) => {
-    e.preventDefault();
+  const [formData, setFormData] = useState({
+    name: "",
+    address: "",
+    service: "Select Service",
+  });
 
-    const name = document.getElementById("name");
-    const address = document.getElementById("address");
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
 
-    const service = document.getElementById("service");
-    if (name?.value && address?.value && service?.value) {
-      const wardingWa = encodeURIComponent(`
-Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
-
-Name :  ${name.value}
-Address : ${address.value} 
-Service : ${service.value}
-`);
-
-      let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
-      window.location.href = url;
-
-      return;
-    } else {
-      alert("please fill form with correctly");
-    }
+  const redirectWa = () => {
+    const helper = new Helper();
+    helper.RedirectToWa(formData, lang, true);
   };
   const redirectTele = () => {
-    window.location.href = "https://t.me/cepat_sehat";
+    const helper = new Helper();
+    helper.redirectTele();
   };
 
   const [book, setBook] = useState("Book a visit at your place now");
@@ -56,8 +50,10 @@ Service : ${service.value}
         break;
     }
 
-    let serviceOption = document.getElementById("service");
-    serviceOption.value = serviceSelect;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      service: serviceSelect,
+    }));
     window.location.href = "#book";
   };
   const lang = useSelector((state) => state.lang.value);
@@ -103,188 +99,155 @@ Service : ${service.value}
                     include :
                   </h3>
                 </div>
-                <div
-                  className="accordion accordion-custom row"
-                  id="accordionExample"
-                >
-                  <div className="accordion-item col-md-6">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        <i className="icon-menu-icon-nursing me-2 fs-32"></i>{" "}
-                        Wound Care
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      className="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div className="accordion-body">
-                        <div className="list-data-faq">
-                          <div className="row gy-3">
-                            <div className="col-12">
-                              <img
-                                src="assets/img/home-nursing/img-home-nursing-sub01.png"
-                                className="w-100"
-                                alt=""
-                              />
-                            </div>
-                            <div className="col-12">
-                              <p>
-                                Comprehensive healthcare services covering
-                                expert wound and ostomy care, advanced wound
-                                dressing methods, precise minor surgeries, and
-                                thorough post-surgical care for optimal
-                                recovery.
-                              </p>
-                              <h6 className="title-line">
-                                <span> Benefit </span>
-                              </h6>
-                              <ul className="ps-3">
-                                <li className="mb-2">
-                                  <h6 className="mb-1">
-                                    Wound and Ostomy Care
-                                  </h6>
-                                  <span>
-                                    Specialized care for faster healing,
-                                    complications prevention, and improved
-                                    patient well-being.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">
-                                    Advanced Wound Dressing
-                                  </h6>
-                                  <span>
-                                    Accelerates healing, reduces infection
-                                    risks, and provides optimal conditions for
-                                    tissue recovery.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Minor Surgeries</h6>
-                                  <span>
-                                    {" "}
-                                    Efficient and precise treatment, minimizing
-                                    trauma and ensuring quick recovery.{" "}
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Post-Surgical Care</h6>
-                                  <span>
-                                    Comprehensive care for pain management,
-                                    infection prevention, and smooth
-                                    rehabilitation, promoting a quicker recovery
-                                    process.
-                                  </span>
-                                </li>
-                              </ul>
-                              <div className="price">
-                                <div className="value-price">
-                                  <b>Start from:</b> Rp250.000
-                                </div>
-                                <div
-                                  onClick={() => handleBook("Wound Care")}
-                                  id="wound"
-                                  className="btn btn-warning fs-14 ms-auto"
-                                >
-                                  Book Now
-                                </div>
+                <Accordion className="accordion accordion-custom row">
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="1"
+                  >
+                    <Accordion.Header>
+                      {" "}
+                      <i className="icon-menu-icon-nursing me-2 fs-32"></i>{" "}
+                      Wound Care
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/home-nursing/img-home-nursing-sub01.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              Comprehensive healthcare services covering expert
+                              wound and ostomy care, advanced wound dressing
+                              methods, precise minor surgeries, and thorough
+                              post-surgical care for optimal recovery.
+                            </p>
+                            <h6 className="title-line">
+                              <span> Benefit </span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Wound and Ostomy Care</h6>
+                                <span>
+                                  Specialized care for faster healing,
+                                  complications prevention, and improved patient
+                                  well-being.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">
+                                  Advanced Wound Dressing
+                                </h6>
+                                <span>
+                                  Accelerates healing, reduces infection risks,
+                                  and provides optimal conditions for tissue
+                                  recovery.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Minor Surgeries</h6>
+                                <span>
+                                  {" "}
+                                  Efficient and precise treatment, minimizing
+                                  trauma and ensuring quick recovery.{" "}
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Post-Surgical Care</h6>
+                                <span>
+                                  Comprehensive care for pain management,
+                                  infection prevention, and smooth
+                                  rehabilitation, promoting a quicker recovery
+                                  process.
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp250.000
+                              </div>
+                              <div
+                                onClick={() => handleBook("Wound Care")}
+                                id="wound"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Book Now
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div className="accordion-item col-md-6">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="true"
-                        aria-controls="collapseThree"
-                      >
-                        <i className="icon-menu-icon-nursing-2 me-2 fs-32"></i>{" "}
-                        Monitoring and Prevention
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      className="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div className="accordion-body">
-                        <div className="list-data-faq">
-                          <div className="row gy-3">
-                            <div className="col-12">
-                              <img
-                                src="assets/img/home-nursing/img-home-nursing-sub02.png"
-                                className="w-100"
-                                alt=""
-                              />
-                            </div>
-                            <div className="col-12">
-                              <p>
-                                Ensuring patient well-being through continuous
-                                vital sign monitoring and implementing
-                                preventive measures to curb the risk of
-                                infections.
-                              </p>
-                              <h6 className="title-line">
-                                <span> Benefit </span>
-                              </h6>
-                              <ul className="ps-3">
-                                <li className="mb-2">
-                                  <h6 className="mb-1">
-                                    Vital Sign Monitoring
-                                  </h6>
-                                  <span>
-                                    Early intervention through regular
-                                    monitoring detects health issues promptly,
-                                    improving patient outcomes.
-                                  </span>
-                                </li>
-                                <li className="mb-2">
-                                  <h6 className="mb-1">Infection Prevention</h6>
-                                  <span>
-                                    {" "}
-                                    Minimized disease transmission, safeguarding
-                                    patients and healthcare workers.{" "}
-                                  </span>
-                                </li>
-                              </ul>
-                              <div className="price">
-                                <div className="value-price">
-                                  <b>Start from:</b> Rp200.000
-                                </div>
-                                <div
-                                  onClick={() =>
-                                    handleBook("Monitoring and Prevention")
-                                  }
-                                  id="monitoring"
-                                  className="btn btn-warning fs-14 ms-auto"
-                                >
-                                  Book Now
-                                </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="2"
+                  >
+                    <Accordion.Header>
+                      <i className="icon-menu-icon-nursing-2 me-2 fs-32"></i>{" "}
+                      Monitoring and Prevention
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/home-nursing/img-home-nursing-sub02.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              Ensuring patient well-being through continuous
+                              vital sign monitoring and implementing preventive
+                              measures to curb the risk of infections.
+                            </p>
+                            <h6 className="title-line">
+                              <span> Benefit </span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Vital Sign Monitoring</h6>
+                                <span>
+                                  Early intervention through regular monitoring
+                                  detects health issues promptly, improving
+                                  patient outcomes.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Infection Prevention</h6>
+                                <span>
+                                  {" "}
+                                  Minimized disease transmission, safeguarding
+                                  patients and healthcare workers.{" "}
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp200.000
+                              </div>
+                              <div
+                                onClick={() =>
+                                  handleBook("Monitoring and Prevention")
+                                }
+                                id="monitoring"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Book Now
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
               </div>
             </section>
 
@@ -300,6 +263,8 @@ Service : ${service.value}
                         className="form-control"
                         id="name"
                         placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="col-md-4">
@@ -309,6 +274,8 @@ Service : ${service.value}
                         className="form-control"
                         id="address"
                         placeholder="Your Address"
+                        value={formData.address}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="col-md-4">
@@ -317,6 +284,8 @@ Service : ${service.value}
                         id="service"
                         className="form-select form-control"
                         aria-label="Default select example"
+                        value={formData.service}
+                        onChange={handleChange}
                       >
                         <option>Select Service</option>
                         <option value="Wound Care">Wound Care</option>

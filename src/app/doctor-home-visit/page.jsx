@@ -6,48 +6,40 @@ import { useState, Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 import LayoutWrapper from "../components/layout-wrapper";
+import Helper from "../../../lib/helper/helper";
+import Accordion from "react-bootstrap/Accordion";
 
 const DoctorHomeVisit = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
+
   useEffect(() => {
     const lang = searchParams.get("lang");
     if (lang === "idn") {
       dispatch(setLang("ID"));
     }
   }, []);
-  const redirectWa = (e) => {
-    e.preventDefault();
 
-    const name = document.getElementById("name");
-    const address = document.getElementById("address");
+  const [formData, setFormData] = useState({
+    name: "",
+    address: "",
+    service: "Select Service",
+  });
 
-    const service = document.getElementById("service");
-    console.log(service?.value);
-    console.log(name?.value);
-    console.log(address?.value);
-    if (name?.value && address?.value && service?.value) {
-      const wardingWa = encodeURIComponent(`
-Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
 
-Name :  ${name.value}
-Address : ${address.value} 
-Service : ${service.value}
-`);
-
-      let url = `https://api.whatsapp.com/send/?phone=6285212500030&text=${wardingWa}&type=phone_number&app_absent=0`;
-      window.location.href = url;
-
-      return;
-    } else {
-      alert("please fill form with correctly");
-    }
+  const redirectWa = () => {
+    const helper = new Helper();
+    helper.RedirectToWa(formData, lang, true);
   };
   const redirectTele = () => {
-    window.location.href = "https://t.me/cepat_sehat";
+    const helper = new Helper();
+    helper.RedirectToTele();
   };
 
-  const [service, setService] = useState();
   const [book, setBook] = useState("Book a visit at your place now");
 
   const handleBook = (serviceSelect) => {
@@ -63,8 +55,10 @@ Service : ${service.value}
         break;
     }
 
-    let serviceOption = document.getElementById("service");
-    serviceOption.value = serviceSelect;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      service: serviceSelect,
+    }));
     window.location.href = "#book";
   };
 
@@ -110,7 +104,7 @@ Service : ${service.value}
                     Our Primary physician home visits include :
                   </h3>
                 </div>
-                <div
+                {/* <div
                   className="accordion accordion-custom row"
                   id="accordionExample"
                 >
@@ -307,7 +301,7 @@ Service : ${service.value}
                       </div>
                     </div>
                   </div>
-                  {/* <div className="accordion-item col-md-6">
+                  <div className="accordion-item col-md-6">
                     <h2 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
@@ -317,19 +311,29 @@ Service : ${service.value}
                         aria-expanded="true"
                         aria-controls="collapseThree"
                       >
-                        <i className="icon-menu-icon-homevisit03 me-2 fs-32"></i>Child Vaccination
+                        <i className="icon-menu-icon-homevisit03 me-2 fs-32"></i>
+                        Child Vaccination
                       </button>
                     </h2>
-                    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div
+                      id="collapseThree"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
                       <div className="accordion-body">
                         <div className="list-data-faq">
                           <div className="row gy-3">
                             <div className="col-12">
-                              <img src="assets/img/homevisit/img-sub-homevisit03.png" className="w-100" alt="" />
+                              <img
+                                src="assets/img/homevisit/img-sub-homevisit03.png"
+                                className="w-100"
+                                alt=""
+                              />
                             </div>
                             <div className="col-12">
                               <p>
-                                Child Vaccination is the administration of vaccines to protect children from diseases like
+                                Child Vaccination is the administration of
+                                vaccines to protect children from diseases like
                                 measles, mumps, rubella, and polio.
                               </p>
                               <h6 className="title-line">
@@ -338,23 +342,40 @@ Service : ${service.value}
                               <ul className="ps-3">
                                 <li className="mb-2">
                                   <h6 className="mb-1">Health Protection</h6>
-                                  <span>Vaccines safeguard children from serious illnesses.</span>
+                                  <span>
+                                    Vaccines safeguard children from serious
+                                    illnesses.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">Community Defense</h6>
-                                  <span>Vaccination aids in preventing disease spread in communities.</span>
+                                  <span>
+                                    Vaccination aids in preventing disease
+                                    spread in communities.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
-                                  <h6 className="mb-1">Cost-Effective Health</h6>
-                                  <span>Vaccinations save on medical costs by preventing severe illnesses.</span>
+                                  <h6 className="mb-1">
+                                    Cost-Effective Health
+                                  </h6>
+                                  <span>
+                                    Vaccinations save on medical costs by
+                                    preventing severe illnesses.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">School Access</h6>
-                                  <span>Required vaccines ensure access to education in a safer environment.</span>
+                                  <span>
+                                    Required vaccines ensure access to education
+                                    in a safer environment.
+                                  </span>
                                 </li>
                                 <li className="mb-2">
                                   <h6 className="mb-1">Global Health</h6>
-                                  <span>Vaccination programs contribute to global efforts against infectious diseases.</span>
+                                  <span>
+                                    Vaccination programs contribute to global
+                                    efforts against infectious diseases.
+                                  </span>
                                 </li>
                               </ul>
                               <div className="price">
@@ -362,7 +383,9 @@ Service : ${service.value}
                                   <b>Start from:</b> Rp300.000
                                 </div>
                                 <div
-                                  onClick={() => handleBook("Child Vaccination")}
+                                  onClick={() =>
+                                    handleBook("Child Vaccination")
+                                  }
                                   id="child"
                                   className="btn btn-warning fs-14 ms-auto"
                                 >
@@ -374,7 +397,7 @@ Service : ${service.value}
                         </div>
                       </div>
                     </div>
-                  </div> */}
+                  </div>
                   <div className="accordion-item col-md-6">
                     <h2 className="accordion-header">
                       <button
@@ -476,7 +499,257 @@ Service : ${service.value}
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                <Accordion className="accordion accordion-custom row">
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="1"
+                  >
+                    <Accordion.Header>
+                      {" "}
+                      <i className="icon-menu-icon-homevisit01 me-2 fs-32"></i>{" "}
+                      Doctor Home Visit
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/homevisit/img-sub-homevisit01.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              A Doctor Home Visit brings medical care to your
+                              doorstep, allowing patients to receive
+                              examinations, diagnoses, prescriptions, and advice
+                              in the comfort of their own homes.
+                            </p>
+                            <h6 className="title-line">
+                              <span>Benefit</span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Convenience</h6>
+                                <span>
+                                  Healthcare delivered to your doorstep for
+                                  time-saving and ease.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Personalized Care</h6>
+                                <span>
+                                  Tailored treatment plans considering home
+                                  environment and lifestyle.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Timely Intervention</h6>
+                                <span>
+                                  Early detection and action to prevent
+                                  complications.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Enhanced Relationship</h6>
+                                <span>
+                                  In-home visits foster better communication and
+                                  trust.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Accessibility</h6>
+                                <span>
+                                  Easy access for vulnerable populations like
+                                  the elderly and those with mobility issues.
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp250.000
+                              </div>
+                              <div
+                                onClick={() => handleBook("Doctor Home Visit")}
+                                id="doctor-visit"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Book Now{" "}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="2"
+                  >
+                    <Accordion.Header>
+                      {" "}
+                      <i className="icon-menu-icon-homevisit02 me-2 fs-32"></i>{" "}
+                      Nurse Home Visit
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/homevisit/img-sub-homevisit02.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              A Nurse Home Visit brings healthcare to your door,
+                              offering personalized services like assessments,
+                              treatments, and health education.
+                            </p>
+                            <h6 className="title-line">
+                              <span>Benefit</span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Convenience</h6>
+                                <span>
+                                  Healthcare delivered to your doorstep for
+                                  time-saving and ease.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Personalized Care</h6>
+                                <span>
+                                  Tailored treatment plans considering home
+                                  environment and lifestyle.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Timely Intervention</h6>
+                                <span>
+                                  Early detection and action to prevent
+                                  complications.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Enhanced Relationship</h6>
+                                <span>
+                                  In-home visits foster better communication and
+                                  trust.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Accessibility</h6>
+                                <span>
+                                  Easy access for vulnerable populations like
+                                  the elderly and those with mobility issues.
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp200.000
+                              </div>
+                              <div
+                                onClick={() => handleBook("Nurse Home Visit")}
+                                id="nurse-visit"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Book Now{" "}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item
+                    className="accordion-item col-md-6"
+                    eventKey="3"
+                  >
+                    <Accordion.Header>
+                      {" "}
+                      <i className="icon-menu-icon-homevisit04 me-2 fs-32"></i>{" "}
+                      Medical Check Up
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <div className="list-data-faq">
+                        <div className="row gy-3">
+                          <div className="col-12">
+                            <img
+                              src="assets/img/homevisit/img-sub-homevisit04.png"
+                              className="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div className="col-12">
+                            <p>
+                              A Doctor Home Visit brings medical care to your
+                              doorstep, allowing patients to receive
+                              examinations, diagnoses, prescriptions, and advice
+                              in the comfort of their own homes.
+                            </p>
+                            <h6 className="title-line">
+                              <span>Benefit</span>
+                            </h6>
+                            <ul className="ps-3">
+                              <li className="mb-2">
+                                <h6 className="mb-1">Convenience</h6>
+                                <span>
+                                  Healthcare delivered to your doorstep for
+                                  time-saving and ease.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Personalized Care</h6>
+                                <span>
+                                  Tailored treatment plans considering home
+                                  environment and lifestyle.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Timely Intervention</h6>
+                                <span>
+                                  Early detection and action to prevent
+                                  complications.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Enhanced Relationship</h6>
+                                <span>
+                                  In-home visits foster better communication and
+                                  trust.
+                                </span>
+                              </li>
+                              <li className="mb-2">
+                                <h6 className="mb-1">Accessibility</h6>
+                                <span>
+                                  Easy access for vulnerable populations like
+                                  the elderly and those with mobility issues.
+                                </span>
+                              </li>
+                            </ul>
+                            <div className="price">
+                              <div className="value-price">
+                                <b>Start from:</b> Rp250.000
+                              </div>
+                              <div
+                                onClick={() => handleBook("Medical Check Up")}
+                                id="doctor-visit"
+                                className="btn btn-warning fs-14 ms-auto"
+                              >
+                                Book Now{" "}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
               </div>
             </section>
 
@@ -492,6 +765,8 @@ Service : ${service.value}
                         className="form-control"
                         id="name"
                         placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="col-md-4">
@@ -501,6 +776,8 @@ Service : ${service.value}
                         className="form-control"
                         id="address"
                         placeholder="Your Address"
+                        value={formData.address}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="col-md-4">
@@ -509,6 +786,8 @@ Service : ${service.value}
                         id="service"
                         className="form-select form-control"
                         aria-label="Default select example"
+                        value={formData.service}
+                        onChange={handleChange}
                       >
                         <option>Select Service</option>
                         <option value="Doctor Home Visit">
@@ -516,9 +795,6 @@ Service : ${service.value}
                         </option>
                         <option value="Nurse Home Visit">
                           Nurse Home Visit
-                        </option>
-                        <option value="Child Vaccination">
-                          Child Vaccination
                         </option>
                         <option value="Medical Check Up">
                           Medical Check Up
@@ -818,10 +1094,10 @@ Service : ${service.value}
 
 export default function App() {
   return (
-    <Suspense fallback={<div>Loading</div>}>
-      <LayoutWrapper>
+    <LayoutWrapper>
+      <Suspense fallback={<div>Loading</div>}>
         <DoctorHomeVisit />
-      </LayoutWrapper>
-    </Suspense>
+      </Suspense>
+    </LayoutWrapper>
   );
 }
