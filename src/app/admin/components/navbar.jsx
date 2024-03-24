@@ -22,8 +22,7 @@ function NavbarAdmin({ menu }) {
             </Nav.Link>
             <Nav.Link>
               <Button
-                style={{ backgroundColor: "green" }}
-                variant="success"
+                className="btn btn-success btn-sm"
                 size="sm"
                 onClick={() => router.push("/admin/create-article")}
               >

@@ -255,15 +255,15 @@ const dataKurBni = () => {
             </div>
           </div>
           <div className="col-6 col-lg-2 mx-3 pt-3">
-            <button className="btn btn-secondary" onClick={handleFilter}>
+            <button className="btn btn-secondary btn-sm" onClick={handleFilter}>
               Apply Filter
             </button>
           </div>
           <div className="col-lg-2 pt-3">
             <button
-              className="btn btn-secondary"
+              className="btn btn-info btn-sm"
               onClick={downloadAllFiles}
-              style={{ color: "blue", cursor: "pointer" }}
+              style={{ color: "white", cursor: "pointer" }}
             >
               {isDownloadLoading ? "Downloading..." : "Download Files"}
             </button>
