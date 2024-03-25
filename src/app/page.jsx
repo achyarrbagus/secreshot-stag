@@ -19,6 +19,7 @@ import useSWR from "swr";
 
 import Helper from "../../lib/helper/helper";
 import axios from "axios";
+import { exit } from "process";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
@@ -34,9 +35,13 @@ const Home = () => {
 
   useEffect(() => {
     const lang = searchParams.get("lang");
-    if (lang === "idn") {
-      dispatch(setLang("ID"));
-      setLocale("id");
+    switch (lang) {
+      case "id":
+        dispatch(setLang("ID"));
+        break;
+      default:
+        dispatch(setLang("EN"));
+        setLocale("en");
     }
   }, [searchParams]);
 
