@@ -60,18 +60,6 @@ const Page = () => {
       locale,
     } = values;
 
-    // const bodyJson = JSON.stringify({
-    //   title: article_title,
-    //   category: article_category,
-    //   alt_img: alt_img,
-    //   date_publish: date_publish,
-    //   source: source,
-    //   is_active: is_active,
-    //   intro: intro,
-    //   img_banner: imgBanner,
-    //   contents: valueTextEditor,
-    // });
-
     const token = Cookies.get("islogin");
     if (!token) {
       alert("token not found");
