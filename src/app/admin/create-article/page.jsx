@@ -1,7 +1,7 @@
 "use client";
 
 import { Container } from "react-bootstrap";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "react-quill/dist/quill.snow.css";
 import NavbarAdmin from "../components/navbar";
@@ -20,6 +20,7 @@ const Page = () => {
   const [imgBanner, setImgBanner] = useState();
   const [valueTextEditor, setTextEditor] = useState();
   const [imageInput, setImageInput] = useState();
+  const [categories, setCategories] = useState();
   const router = useRouter();
 
   const intialvalues = {
@@ -32,6 +33,10 @@ const Page = () => {
     intro: "",
     locale: "",
   };
+
+  useEffect(() => {
+    FetchCategories();
+  }, []);
 
   const validationsSchema = yup.object().shape({
     article_title: yup.string().min(5).required("Required"),
@@ -54,7 +59,6 @@ const Page = () => {
       intro,
       locale,
     } = values;
-    console.log(values);
 
     // const bodyJson = JSON.stringify({
     //   title: article_title,
@@ -78,7 +82,7 @@ const Page = () => {
     formData.set("title", article_title);
     formData.set("desc", valueTextEditor);
     formData.append("image", imgBanner);
-    formData.set("category", 0);
+    formData.set("category", article_category);
     formData.set("source", source);
     formData.set("date_publish", date_publish);
     formData.set("is_active", is_active);
@@ -103,6 +107,23 @@ const Page = () => {
         console.log(error);
         alert("created article failed");
         router.push("/admin/dashboard");
+      });
+  };
+
+  const FetchCategories = async () => {
+    const token = Cookies.get("islogin");
+    axios
+      .get(`https://api.cepatsehat.com/api/v1/categories`, {
+        headers: {
+          Authorization: "Bearer" + " " + token,
+        }
+      })
+      .then(function (response) {
+        setCategories(response.data.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+        setCategories(null);
       });
   };
 
@@ -217,8 +238,12 @@ const Page = () => {
                   <option value="" disabled>
                     Choose Category
                   </option>
-                  <option value="Kesehatan">Kesehatan</option>
-                  <option values="Makanan">Makanan</option>
+                  {categories &&
+                  categories.map((item) => (
+                    <option key={item.id} value={item.id}>
+                      {item.name}
+                    </option>
+                  ))}
                 </select>
                 {errors.article_category && touched.article_category && (
                   <p style={{ color: "red" }}>{errors.article_category}</p>
@@ -254,10 +279,10 @@ const Page = () => {
                 </label>
                 <img
                   id="banner-priview"
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   style={{ display: imgBanner ? "block" : "none" }}
                   height="auto"
-                  width="450px"
+                  width="55%"
                   alt="Preview"
                 />
                 <br />
@@ -378,7 +403,7 @@ const Page = () => {
                 />
               </div>
 
-              <button type="submit">Upload Article</button>
+              <button className="btn btn-primary btn-sm" type="submit">Upload Article</button>
             </form>
           </div>
           {/* <div className="col-lg-8">
