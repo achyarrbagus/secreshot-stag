@@ -17,64 +17,44 @@ import { Suspense } from "react";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 const Page = () => {
+
+  const URL_API = "https://api.cepatsehat.com/api/v1/";
+  // const URL_API = "http://127.0.0.1:5500/api/v1/";
+  const URL_BANNER = "https://api.cepatsehat.com/uploads/";
+
   const router = useRouter();
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
 
-  const [isLoading, setIsLoading] = useState(false);
   const [imgBanner, setImgBanner] = useState();
+  const [categories, setCategories] = useState();
   const [article, setArticle] = useState({
-    title: "",
-    category: "",
-    source: "",
+    article_title: "",
   });
-  useEffect(() => {
-    FetchArticle();
-  }, []);
 
   const [valueTextEditor, setTextEditor] = useState();
-  const [initialValues, setInitialValues] = useState({
-    article_title: "",
-    article_category: "",
-    source: "",
-    // alt_img: "",
-    // date_publish: "",
-    // is_active: false,
-    // intro: "",
-  });
+  
+  useEffect(() => {
+    FetchArticle();
+    FetchCategories();
+  }, []);
 
   const validationsSchema = yup.object().shape({
-    // article_title: yup.string().min(5).required("Required"),
-    // article_category: yup.string().required("Required"),
-    // source: yup.string().min(10).required("Required"),
-    // alt_img: yup.string().required("Required"),
-    // date_publish: yup.string().required("Required"),
-    // is_active: yup.boolean(),
-    // intro: yup.string().min(10).required("Required"),
+    article_title: yup.string().min(5).required("Required"),
+    source: yup.string().min(5).required("Required"),
+    is_active: yup.boolean(),
+    intro: yup.string().min(10).required("Required"),
   });
-
+  
   const onSubmit = async (values) => {
+
     const {
       article_title,
       article_category,
-      alt_img,
-      date_publish,
       source,
       is_active,
-      intro,
+      intro
     } = values;
-
-    // const bodyJson = JSON.stringify({
-    //   title: article_title,
-    //   category: article_category,
-    //   alt_img: alt_img,
-    //   date_publish: date_publish,
-    //   source: source,
-    //   is_active: is_active,
-    //   intro: intro,
-    //   img_banner: imgBanner,
-    //   contents: valueTextEditor,
-    // });
 
     const token = Cookies.get("islogin");
     if (!token) {
@@ -85,7 +65,12 @@ const Page = () => {
     const formData = new FormData();
     formData.set("title", article_title);
     formData.set("desc", valueTextEditor);
-    formData.set("image", imgBanner);
+    formData.set("source", source);
+    formData.set("category", article_category);
+    formData.set("is_active", is_active);
+    formData.set("intro", intro);
+    formData.append("image", imgBanner);
+
     const config = {
       headers: {
         "Content-type": "multipart/form-data",
@@ -94,7 +79,7 @@ const Page = () => {
     };
 
     axios
-      .put(`https://api.cepatsehat.com/api/v1/article/${id}`, formData, config)
+      .put(`${URL_API}article/${id}`, formData, config)
       .then(function (response) {
         console.log(response.data.data);
         alert("created article success");
@@ -108,15 +93,31 @@ const Page = () => {
       });
   };
 
-  const { values, errors, touched, handleSubmit, handleChange, handleBlur } =
+  const valueForm  = {
+    article_title: article?.title || '',
+    article_category: article?.category_id || '',
+    img_banner: article?.image || '',
+    source: article?.source || '',
+    is_active: article?.is_active || '',
+    intro: article?.intro || ''
+  }
+
+  const initialValues = {
+    article_title: "",
+    article_category: "",
+    source: "",
+    is_active: "",
+    intro: "",
+  };
+
+  const formik =
     useFormik({
-      initialValues: {
-        article_title: "",
-        article_category: "",
-      },
+      initialValues: valueForm || initialValues,
       validationSchema: validationsSchema,
+      enableReinitialize: true,
       onSubmit,
-    });
+    }
+  );
 
   const handleFileChange = (ev, setter) => {
     const file = ev.target.files && ev.target.files[0];
@@ -128,27 +129,47 @@ const Page = () => {
 
       const reader = new FileReader();
       reader.onload = () => {
-        setter(reader.result);
+        setter(ev.target.files[0]);
+
         const imgPreview = document.getElementById("banner-priview");
         imgPreview.src = reader.result;
       };
       reader.readAsDataURL(file);
     }
   };
+
   const FetchArticle = async () => {
     axios
-      .get(`https://api.cepatsehat.com/api/v1/article/${id}`)
+      .get(`${URL_API}article/${id}`)
       .then(function (response) {
-        console.log(response.data.data);
         setArticle(response.data.data);
-        setInitialValues({
-          article_title: response.data.data.title,
-        });
+        setTextEditor(response.data.data.description);
       })
       .catch(function (error) {
         console.log(error);
         setArticle(null);
       });
+  };
+
+  const FetchCategories = async () => {
+    const token = Cookies.get("islogin");
+    axios
+      .get(`https://api.cepatsehat.com/api/v1/categories`, {
+        headers: {
+          Authorization: "Bearer" + " " + token,
+        }
+      })
+      .then(function (response) {
+        setCategories(response.data.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+        setCategories(null);
+      });
+  };
+
+  const updateArticle = (content, delta, source, editor) => {
+    setTextEditor(content);
   };
 
   const modules = {
@@ -195,38 +216,38 @@ const Page = () => {
         <div style={{ marginTop: "0.5rem", display: "flex" }}>
           <div className="pb-4">
             <h3>Update {article?.title}</h3>
-            <form onSubmit={handleSubmit} autoComplete="off">
+            <form onSubmit={formik.handleSubmit} autoComplete="off">
               <div className="mb-2">
-                <label for="article_title" class="form-label">
+                <label htmlFor="article_title" className="form-label">
                   Title
                 </label>
                 <input
                   type="text"
                   id="article_title"
-                  value={values.article_title}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+                  value={formik.values?.article_title || ''}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                   className={`form-control ${
-                    errors.article_title && touched.article_title
+                    formik.errors.article_title && formik.touched.article_title
                       ? "is-invalid"
                       : ""
                   }`}
                 />
-                {errors.article_title && touched.article_title && (
-                  <p style={{ color: "red" }}>{errors.article_title}</p>
+                {formik.errors.article_title && formik.touched.article_title && (
+                  <p style={{ color: "red" }}>{formik.errors.article_title}</p>
                 )}
               </div>
               <div className="mb-2">
-                <label for="article_category" className="form-label">
+                <label htmlFor="article_category" className="form-label">
                   Category
                 </label>
                 <select
                   id="article_category"
-                  value={values.article_category}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+                  value={formik.values?.article_category}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                   className={`form-control ${
-                    errors.article_category && touched.article_category
+                    formik.errors.article_category && formik.touched.article_category
                       ? "is-invalid"
                       : ""
                   }`}
@@ -234,24 +255,29 @@ const Page = () => {
                   <option value="" disabled>
                     Choose Category
                   </option>
-                  <option value="Kesehatan">Kesehatan</option>
-                  <option values="Makanan">Makanan</option>
+                  {categories &&
+                  categories.map((item) => (
+                    <option key={item.id} value={item.id}>
+                      {item.name}
+                    </option>
+                  ))}
                 </select>
-                {errors.article_category && touched.article_category && (
-                  <p style={{ color: "red" }}>{errors.article_category}</p>
+                {formik.errors.article_category && formik.touched.article_category && (
+                  <p style={{ color: "red" }}>{formik.errors.article_category}</p>
                 )}
               </div>
               <div className="mb-2">
-                <label for="img_banner" class="form-label">
+                <label htmlFor="img_banner" className="form-label">
                   Cover Banner
                 </label>
                 <img
                   id="banner-priview"
-                  className="img-fluid"
-                  style={{ display: imgBanner ? "block" : "none" }}
+                  className="img-fluid rounded"
+                  style={{ display: valueForm.img_banner ? imgBanner ? "block" : "block" : "none" }}
                   height="auto"
-                  width="450px"
+                  width="100%"
                   alt="Preview"
+                  src={`${URL_BANNER}${valueForm.img_banner}`}
                 />
                 <br />
                 <input
@@ -260,12 +286,12 @@ const Page = () => {
                   accept="image/*"
                   onChange={(e) => handleFileChange(e, setImgBanner)}
                   className={`form-control ${
-                    errors.img_banner && touched.img_banner ? "is-invalid" : ""
+                    formik.errors.img_banner && formik.touched.img_banner ? "is-invalid" : ""
                   }`}
                 />
               </div>
               {/* <div className="mb-2">
-                <label for="alt_img" class="form-label">
+                <label htmlFor="alt_img" className="form-label">
                   Alt Image Banner
                 </label>
                 <input
@@ -284,26 +310,26 @@ const Page = () => {
                 )}
               </div> */}
               <div className="mb-2">
-                <label for="source" class="form-label">
+                <label htmlFor="source" className="form-label">
                   Source
                 </label>
                 <input
                   type="text"
                   id="source"
-                  value={values.source}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+                  value={formik.values.source}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                   className={`form-control ${
-                    errors.source && touched.source ? "is-invalid" : ""
+                    formik.errors.source && formik.touched.source ? "is-invalid" : ""
                   }`}
                   required
                 />
-                {errors.source && touched.source && (
-                  <p style={{ color: "red" }}>{errors.source}</p>
+                {formik.errors.source && formik.touched.source && (
+                  <p style={{ color: "red" }}>{formik.errors.source}</p>
                 )}
-              </div>
+              </div> 
               {/* <div className="mb-2">
-                <label for="date_publish" class="form-label">
+                <label htmlFor="date_publish" className="form-label">
                   Publish Date
                 </label>
                 <input
@@ -324,58 +350,59 @@ const Page = () => {
                   <p style={{ color: "red" }}>{errors.date_publish}</p>
                 )}
               </div> */}
-              {/* <div className="mb-2">
-                <div class="form-check form-check-inline">
+              <div className="mb-2">
+                <div className="form-check form-check-inline">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     id="is_active"
                     name="is_active"
-                    checked={values.is_active}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
+                    checked={formik.values.is_active === "true"}
+                    onChange={(e) => {
+                      formik.handleChange(e);
+                      formik.setFieldValue("is_active", e.target.checked ? "true" : "false");
+                    }}
+                    onBlur={formik.handleBlur}
                   />
-                  <label class="form-check-label" for="inlineCheckbox1">
-                    Active
+                  <label className="form-check-label" htmlFor="inlineCheckbox1">
+                    {formik.values.is_active === "true" ? 'Active' : 'Not Active'}
                   </label>
                 </div>
-              </div> */}
-              {/* <div className="mb-2">
-                <label for="intro" class="form-label">
+              </div>
+              <div className="mb-2">
+                <label htmlFor="intro" className="form-label">
                   Intro
                 </label>
                 <textarea
                   id="intro"
                   rows="5"
                   cols="33"
-                  value={values.intro}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+                  value={formik.values.intro}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                   className={`form-control ${
-                    errors.intro && touched.intro ? "is-invalid" : ""
+                    formik.errors.intro && formik.touched.intro ? "is-invalid" : ""
                   }`}
                   required
                 ></textarea>
-                {errors.intro && touched.intro && (
-                  <p style={{ color: "red" }}>{errors.intro}</p>
+                {formik.errors.intro && formik.touched.intro && (
+                  <p style={{ color: "red" }}>{formik.errors.intro}</p>
                 )}
-              </div> */}
+              </div>
               <div className="mb-2">
                 <QuillEditor
                   theme="snow"
                   modules={modules}
                   formats={formats}
                   value={valueTextEditor}
-                  onChange={setTextEditor}
+                  onChange={updateArticle}
                 />
               </div>
 
-              <button type="submit">Upload Article</button>
+              <button className="btn btn-primary btn-sm" type="submit">Upload Article</button>
             </form>
           </div>
-          {/* <div className="col-lg-8">
-            <div style={{ paddingLeft: "30px", marginTop: "70px" }}></div>
-          </div> */}
+          <div className="px-4" style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{__html: valueTextEditor}} />
         </div>
       </Container>
     </>
