@@ -84,22 +84,27 @@ const App = () => {
       sortable: true,
     },
     {
-      name: "title",
+      name: "Publish Date",
+      selector: (row) => row.publish_date,
+      sortable: true,
+    },
+    {
+      name: "Title",
       selector: (row) => row.title,
       sortable: true,
     },
     {
-      name: "locale",
+      name: "Locale",
       selector: (row) => row.locale,
       sortable: true,
     },
     {
-      name: "description",
-      selector: (row) => CutText(row.description),
+      name: "Intro",
+      selector: (row) => CutText(row.intro),
       sortable: true,
     },
     {
-      name: "action",
+      name: "Action",
       selector: (row) => (
         <div className="d-flex gap-2">
           <Button
