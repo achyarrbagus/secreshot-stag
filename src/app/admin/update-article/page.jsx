@@ -1,6 +1,6 @@
 "use client";
 
-import { Container } from "react-bootstrap";
+import { Container, Modal } from "react-bootstrap";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import "react-quill/dist/quill.snow.css";
@@ -16,6 +16,26 @@ import { Suspense } from "react";
 
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="xl"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Preview
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <div className="px-4" style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{__html: props.valueTextEditor}} />
+      </Modal.Body>
+    </Modal>
+  );
+}
+
 const Page = () => {
 
   const URL_API = "https://api.cepatsehat.com/api/v1/";
@@ -28,6 +48,7 @@ const Page = () => {
 
   const [imgBanner, setImgBanner] = useState();
   const [categories, setCategories] = useState();
+  const [modalShow, setModalShow] = useState(false);
   const [article, setArticle] = useState({
     article_title: "",
   });
@@ -153,6 +174,11 @@ const Page = () => {
 
   const FetchCategories = async () => {
     const token = Cookies.get("islogin");
+    if (!token) {
+      alert("token not found");
+      router.push("/admin");
+      return;
+    }
     axios
       .get(`https://api.cepatsehat.com/api/v1/categories`, {
         headers: {
@@ -213,9 +239,9 @@ const Page = () => {
     <>
       <NavbarAdmin />
       <Container>
-        <div style={{ marginTop: "0.5rem", display: "flex" }}>
-          <div className="pb-4">
-            <h3>Update {article?.title}</h3>
+        <div className="mx-auto" style={{ maxWidth: "840px;" }}>
+          <div className="pb-4 pt-4">
+            <h3 style={{ textAlign: "center" }}>{article?.title}</h3>
             <form onSubmit={formik.handleSubmit} autoComplete="off">
               <div className="mb-2">
                 <label htmlFor="article_title" className="form-label">
@@ -398,13 +424,19 @@ const Page = () => {
                   onChange={updateArticle}
                 />
               </div>
-
-              <button className="btn btn-primary btn-sm" type="submit">Upload Article</button>
+              <div className="d-flex justify-content-end">
+                <a className="btn btn-secondary btn-sm" onClick={() => setModalShow(true)}>Preview</a>&nbsp;
+                <button className="btn btn-primary btn-sm" type="submit">Upload Article</button>
+              </div>
             </form>
           </div>
-          <div className="px-4" style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{__html: valueTextEditor}} />
         </div>
       </Container>
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        valueTextEditor={valueTextEditor}
+      />
     </>
   );
 };

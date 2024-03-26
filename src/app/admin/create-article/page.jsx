@@ -100,6 +100,11 @@ const Page = () => {
 
   const FetchCategories = async () => {
     const token = Cookies.get("islogin");
+    if (!token) {
+      alert("token not found");
+      router.push("/admin");
+      return;
+    }
     axios
       .get(`https://api.cepatsehat.com/api/v1/categories`, {
         headers: {
@@ -182,8 +187,8 @@ const Page = () => {
     <>
       <NavbarAdmin />
       <Container>
-        <div style={{ marginTop: "0.5rem", display: "flex" }}>
-          <div className="pb-4">
+        <div className="mx-auto" style={{ maxWidth: "840px;" }}>
+          <div className="pb-4 pt-4">
             <h3>New Article</h3>
             <form onSubmit={handleSubmit} autoComplete="off">
               <div className="mb-2">
@@ -390,8 +395,9 @@ const Page = () => {
                   onChange={setTextEditor}
                 />
               </div>
-
-              <button className="btn btn-primary btn-sm" type="submit">Upload Article</button>
+              <div className="d-flex justify-content-end">
+                <button className="btn btn-primary btn-sm" type="submit">Upload Article</button>
+              </div>
             </form>
           </div>
           {/* <div className="col-lg-8">
