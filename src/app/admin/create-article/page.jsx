@@ -104,7 +104,7 @@ const Page = () => {
       .get(`https://api.cepatsehat.com/api/v1/categories`, {
         headers: {
           Authorization: "Bearer" + " " + token,
-        }
+        },
       })
       .then(function (response) {
         setCategories(response.data.data);
@@ -227,11 +227,11 @@ const Page = () => {
                     Choose Category
                   </option>
                   {categories &&
-                  categories.map((item) => (
-                    <option key={item.id} value={item.id}>
-                      {item.name}
-                    </option>
-                  ))}
+                    categories.map((item) => (
+                      <option key={item.id} value={item.id}>
+                        {item.name}
+                      </option>
+                    ))}
                 </select>
                 {errors.article_category && touched.article_category && (
                   <p style={{ color: "red" }}>{errors.article_category}</p>
@@ -391,7 +391,9 @@ const Page = () => {
                 />
               </div>
 
-              <button className="btn btn-primary btn-sm" type="submit">Upload Article</button>
+              <button className="btn btn-primary btn-sm" type="submit">
+                Upload Article
+              </button>
             </form>
           </div>
           {/* <div className="col-lg-8">

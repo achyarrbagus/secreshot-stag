@@ -4,6 +4,9 @@ import "./globals.css";
 import Head from "next/head";
 import MyHead from "../app/components/Head";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css";
 
 const inter = Inter({ subsets: ["latin"] });
 import { Providers } from "../../lib/providers";

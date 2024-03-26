@@ -1,8 +1,5 @@
 "use client";
 
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import "swiper/css";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -44,6 +41,31 @@ const HomeId = () => {
 
   const redirectTele = () => {
     window.location.href = "https://t.me/cepat_sehat";
+  };
+  const dateToString = (dateString) => {
+    const dt = new Date(dateString);
+    const date = dt.getDate();
+    const month = dt.getMonth();
+    const year = dt.getFullYear();
+    const months = [
+      "Januari",
+      "February",
+      "March",
+      "Aprl",
+      "Mei",
+      "Juni",
+      "Juli",
+      "Augstus",
+      "September",
+      "Oktober",
+      "November",
+      "Desember",
+    ];
+    const monthName = months[month];
+
+    const result = date + " " + monthName + " " + year;
+
+    return result;
   };
 
   return (

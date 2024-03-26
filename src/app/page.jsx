@@ -1,7 +1,5 @@
 "use client";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import "swiper/css";
+
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HomeId from "./page-id";
