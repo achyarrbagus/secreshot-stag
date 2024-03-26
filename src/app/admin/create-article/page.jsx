@@ -100,6 +100,11 @@ const Page = () => {
 
   const FetchCategories = async () => {
     const token = Cookies.get("islogin");
+    if (!token) {
+      alert("token not found");
+      router.push("/admin");
+      return;
+    }
     axios
       .get(`https://api.cepatsehat.com/api/v1/categories`, {
         headers: {
@@ -182,8 +187,8 @@ const Page = () => {
     <>
       <NavbarAdmin />
       <Container>
-        <div style={{ marginTop: "0.5rem", display: "flex" }}>
-          <div className="pb-4">
+        <div className="mx-auto" style={{ maxWidth: "840px;" }}>
+          <div className="pb-4 pt-4">
             <h3>New Article</h3>
             <form onSubmit={handleSubmit} autoComplete="off">
               <div className="mb-2">
