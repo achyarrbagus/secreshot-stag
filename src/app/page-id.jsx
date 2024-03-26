@@ -457,7 +457,7 @@ const HomeId = () => {
                                   <i className="mdi mdi-arrow-right"></i>
                                 </a>
                                 <p className="text-end text-capitalize">
-                                  {item.publish_date}
+                                  {dateToString(item?.publish_date)}
                                 </p>
                               </div>
                             </div>

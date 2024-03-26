@@ -15,8 +15,7 @@ const App = () => {
   const [articles, setArticles] = useState("");
   const FetchArticle = async () => {
     axios
-      .get("https://api.cepatsehat.com/api/v1/articles")
-      // .get("http://127.0.0.1:5500/api/v1/articles")
+      .get("https://api.cepatsehat.com/api/v1/articles?admin=true")
       .then(function (response) {
         setArticles(response.data.data);
       })
