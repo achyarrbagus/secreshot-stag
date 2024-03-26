@@ -113,7 +113,9 @@ function Article() {
                   <h3 className="title-detail fw-bold fs-24 text-primary">
                     {article.title}
                   </h3>
-                  <p className="text-capitalize">{article.publish_date}</p>
+                  <p className="text-capitalize">
+                    {dateToString(article.publish_date)}
+                  </p>
                   <img
                     src={`https://api.cepatsehat.com/uploads/${article.image}`}
                     alt="image"
