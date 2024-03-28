@@ -99,7 +99,7 @@ const Page = () => {
     };
 
     axios
-      .put(`${URL_API_V2}article/${id}`, formData, config)
+      .put(`${URL_API_V2}article/${article.id}`, formData, config)
       .then(function (response) {
         console.log(response.data.data);
         alert("created article success");
