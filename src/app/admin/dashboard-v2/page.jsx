@@ -140,7 +140,11 @@ const App = () => {
         <div className="d-flex gap-2">
           <Button
             variant="primary"
-            onClick={() => router.push(`/admin/update-article-v2?id=${row.id}`)}
+            onClick={() =>
+              router.push(
+                `/admin/update-article-v2?id=${row.article_id_v2}&locale=${row.locale}`
+              )
+            }
             size="sm"
           >
             Update
