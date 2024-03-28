@@ -103,13 +103,13 @@ const Page = () => {
       .then(function (response) {
         console.log(response.data.data);
         alert("created article success");
-        router.push("/admin/dashboard");
+        router.push("/admin/dashboard-v2");
         return;
       })
       .catch(function (error) {
         alert("created article failed");
         console.log(error.response);
-        router.push("/admin/dashboard");
+        router.push("/admin/dashboard-v2");
       });
   };
 

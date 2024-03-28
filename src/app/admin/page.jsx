@@ -20,7 +20,7 @@ const Page = () => {
         Cookies.set("islogin", response.data.data.token, { expires: 1 / 24 });
 
         alert("login success");
-        router.push("/admin/dashboard");
+        router.push("/admin/dashboard-v2");
       })
       .catch(function (error) {
         alert(error.response.data.message);
