@@ -19,9 +19,7 @@ const App = () => {
     axios
       .get(`${URL_API_V2}articles?admin=${admin}`)
       .then(function (response) {
-        setArticles(
-          response.data.data.sort((a, b) => a.article_id_v2 - b.article_id_v2)
-        );
+        setArticles(response.data.data);
       })
       .catch(function (error) {
         setArticles("");
