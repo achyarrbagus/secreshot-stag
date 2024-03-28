@@ -19,7 +19,6 @@ function Article() {
   const searchParams = useSearchParams();
   const [cata, setData] = useState();
   const [id, setId] = React.useState(0);
-  const [locale, setLocale] = React.useState(0);
   const [article, setArticle] = React.useState([]);
 
   const navStyle = {
@@ -27,35 +26,28 @@ function Article() {
       "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E\")",
   };
 
-  const FetchArticle = async (id) => {
+  const FetchArticle = async (id, locale) => {
+    const url = `https://api.cepatsehat.com/api/v2/article/${id}?locale=${locale}`;
     try {
-      let resp = await axios.get(
-        `https://api.cepatsehat.com/api/v1/article/${id}`
-      );
-      console.log(resp.data.data);
+      let resp = await axios.get(url);
+      console.log(resp);
+      console.log(resp.data.data[0]);
 
-      setArticle(resp.data.data);
+      setArticle(resp.data.data[0]);
     } catch (error) {
       setArticle([]);
     }
   };
 
   const { data: articles, error: articlesError } = useSWR(
-    `https://api.cepatsehat.com/api/v1/articles?locale=${locale}`,
+    `https://api.cepatsehat.com/api/v2/articles?locale=${searchParams.get(
+      "locale"
+    )}`,
     fetcher
   );
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const idx = searchParams.get("id");
-      const locale = searchParams.get("locale");
-      if (!idx) {
-        router.push("/");
-      }
-      setId(idx);
-      setLocale(locale);
-      FetchArticle(idx);
-    }
+    FetchArticle(searchParams.get("id"), searchParams.get("locale"));
   }, [searchParams]);
 
   const dateToString = (dateString) => {
@@ -94,7 +86,13 @@ function Article() {
               <nav style={navStyle}>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link href={`/?locale=${locale}&lang=${locale}`}>Home</Link>
+                    <Link
+                      href={`/?locale=${searchParams.get(
+                        "locale"
+                      )}&lang=${searchParams.get("locale")}`}
+                    >
+                      Home
+                    </Link>
                   </li>
                   <li className="breadcrumb-item">
                     <a href="#/">Article</a>
@@ -149,7 +147,9 @@ function Article() {
                                   <>
                                     <Link
                                       style={{ color: "#5B5A5A" }}
-                                      href={`/article?id=${item.id}&locale=${locale}`}
+                                      href={`/article?id=${
+                                        item.article_id_v2
+                                      }&locale=${searchParams.get("locale")}`}
                                     >
                                       <butoon
                                         className="items-article"
@@ -180,7 +180,7 @@ function Article() {
                       return (
                         <div className="col-md-4">
                           <h3 className="title-section text-start pt-0 fs-14">
-                            More Article{" "}
+                            More Article
                           </h3>
                           <div className="list-article">
                             {articles &&
@@ -188,7 +188,9 @@ function Article() {
                                 <>
                                   <Link
                                     style={{ color: "#5B5A5A" }}
-                                    href={`/article?id=${item.id}&locale=${locale}`}
+                                    href={`/article?id=${
+                                      item.article_id_v2
+                                    }&locale=${searchParams.get("locale")}`}
                                   >
                                     <butoon
                                       className="items-article"

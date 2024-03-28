@@ -54,7 +54,6 @@ const App = () => {
         };
         axios
           .delete(`https://api.cepatsehat.com/api/v1/article/${id}`, config)
-          // .delete(`http://127.0.0.1:5500/api/v1/article/${id}`, config)
           .then(function (response) {
             console.log(response);
 

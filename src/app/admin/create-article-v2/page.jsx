@@ -16,7 +16,6 @@ import { Suspense } from "react";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 const Page = () => {
-
   const URL_API_V2 = "https://api.cepatsehat.com/api/v2/";
   const URL_API_V1 = "https://api.cepatsehat.com/api/v1/";
 
@@ -25,7 +24,7 @@ const Page = () => {
   const locale = searchParams.get("locale") ?? null;
 
   let actionURL = articleIdV2 !== null ? "article-language" : "article";
-  
+
   const [imgBanner, setImgBanner] = useState();
   const [valueTextEditor, setTextEditor] = useState();
   const [categories, setCategories] = useState();
@@ -39,7 +38,7 @@ const Page = () => {
     date_publish: "",
     is_active: false,
     intro: "",
-    locale : "",
+    locale: "",
   };
 
   useEffect(() => {
@@ -56,7 +55,6 @@ const Page = () => {
   });
 
   const onSubmit = async (values) => {
-
     const {
       article_title,
       article_category,
@@ -118,7 +116,7 @@ const Page = () => {
       .get(`${URL_API_V1}categories`, {
         headers: {
           Authorization: "Bearer" + " " + token,
-        }
+        },
       })
       .then(function (response) {
         setCategories(response.data.data);
@@ -241,11 +239,11 @@ const Page = () => {
                     Choose Category
                   </option>
                   {categories &&
-                  categories.map((item) => (
-                    <option key={item.id} value={item.id}>
-                      {item.name}
-                    </option>
-                  ))}
+                    categories.map((item) => (
+                      <option key={item.id} value={item.id}>
+                        {item.name}
+                      </option>
+                    ))}
                 </select>
                 {errors.article_category && touched.article_category && (
                   <p style={{ color: "red" }}>{errors.article_category}</p>
@@ -268,8 +266,12 @@ const Page = () => {
                   <option value="" disabled>
                     Choose Language
                   </option>
-                  <option value="en" disabled={locale === "en" ? true : false}>English</option>
-                  <option value="id" disabled={locale === "id" ? true : false}>Indonesia</option>
+                  <option value="en" disabled={locale === "en" ? true : false}>
+                    English
+                  </option>
+                  <option value="id" disabled={locale === "id" ? true : false}>
+                    Indonesia
+                  </option>
                 </select>
                 {errors.locale && touched.locale && (
                   <p style={{ color: "red" }}>{errors.locale}</p>
@@ -405,7 +407,9 @@ const Page = () => {
                 />
               </div>
               <div className="d-flex justify-content-end">
-                <button className="btn btn-primary btn-sm" type="submit">Upload Article</button>
+                <button className="btn btn-primary btn-sm" type="submit">
+                  Upload Article
+                </button>
               </div>
             </form>
           </div>

@@ -20,11 +20,20 @@ function NavbarAdmin({ menu }) {
             <Nav.Link onClick={() => router.push("/admin/kur-bni")}>
               Kur Bni
             </Nav.Link>
-            <Nav.Link>
+            {/* <Nav.Link>
               <Button
                 className="btn btn-success btn-sm"
                 size="sm"
                 onClick={() => router.push("/admin/create-article")}
+              >
+                create article
+              </Button>
+            </Nav.Link> */}
+            <Nav.Link>
+              <Button
+                className="btn btn-success btn-sm"
+                size="sm"
+                onClick={() => router.push("/admin/create-article-v2")}
               >
                 create article
               </Button>

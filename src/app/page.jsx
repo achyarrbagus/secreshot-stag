@@ -17,7 +17,6 @@ import useSWR from "swr";
 
 import Helper from "../../lib/helper/helper";
 import axios from "axios";
-import { exit } from "process";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
@@ -27,7 +26,7 @@ const Home = () => {
   const lang = useSelector((state) => state.lang.value);
   const [locale, setLocale] = useState("en");
   const { data: articles, error: articlesError } = useSWR(
-    `https://api.cepatsehat.com/api/v1/articles?locale=${locale}`,
+    `https://api.cepatsehat.com/api/v2/articles?locale=${locale}`,
     fetcher
   );
 
@@ -493,64 +492,6 @@ const Home = () => {
                 <div className="swiper swiper-article mt-5">
                   <div className="swiper-wrapper">
                     <div className="swiper-wrapper">
-                      {/* <Swiper
-                        loop
-                        modules={[Autoplay]}
-                        spaceBetween={30}
-                        slidesPerView={3.5}
-                        speed={1000}
-                        autoplay={{
-                          delay: 3000,
-                          disableOnInteraction: false,
-                        }}
-                        breakpoints={{
-                          320: {
-                            slidesPerView: 1.5,
-                          },
-                          480: {
-                            slidesPerView: 2.5,
-                          },
-                          768: {
-                            slidesPerView: 3.5,
-                          },
-                        }}
-                      >
-                        {articles &&
-                          articles.map((item, index) => (
-                            <SwiperSlide key={index}>
-                              <Link href={`/article?id=${item?.id}`}>
-                                <div className="card-slide-article">
-                                  <img
-                                    src={`https://api.cepatsehat.com/uploads/${item.image}`}
-                                    alt="img"
-                                    style={{ maxWidth: "100%" }}
-                                  />
-
-                                  <div className="name-article">
-                                    <h6>{CutText(item.title, true)}...</h6>
-                                    <div
-                                      className="mt-2"
-                                      dangerouslySetInnerHTML={{
-                                        __html:
-                                          CutText(item.description) + "...",
-                                      }}
-                                    />
-                                    <a
-                                      href="article-detail.html"
-                                      className="text-muted fs-14"
-                                    >
-                                      read more{" "}
-                                      <i className="mdi mdi-arrow-right"></i>
-                                    </a>
-                                    <p className="text-end text-capitalize">
-                                      {dateToString(item?.created_at)}
-                                    </p>
-                                  </div>
-                                </div>
-                              </Link>
-                            </SwiperSlide>
-                          ))}
-                      </Swiper> */}
                       <Swiper
                         loop
                         modules={[Autoplay]}
@@ -577,7 +518,7 @@ const Home = () => {
                           articles.map((item, index) => (
                             <SwiperSlide key={item.id}>
                               <Link
-                                href={`/article?id=${item.id}&locale=${item.locale}`}
+                                href={`/article?id=${item.article_id_v2}&locale=${item.locale}`}
                                 scroll={true}
                               >
                                 <div className="card-slide-article">

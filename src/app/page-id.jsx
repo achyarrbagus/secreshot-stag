@@ -12,7 +12,7 @@ const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
 const HomeId = () => {
   const { data: articles, error: articlesError } = useSWR(
-    `https://api.cepatsehat.com/api/v1/articles?locale=id`,
+    `https://api.cepatsehat.com/api/v2/articles?locale=id`,
     fetcher
   );
 
@@ -461,7 +461,7 @@ const HomeId = () => {
                       articles.map((item, index) => (
                         <SwiperSlide key={item.id}>
                           <Link
-                            href={`/article?id=${item.id}&locale=${item.locale}`}
+                            href={`/article?id=${item.article_id_v2}&locale=${item.locale}`}
                             scroll={true}
                           >
                             <div className="card-slide-article">

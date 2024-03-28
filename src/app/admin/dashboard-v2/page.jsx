@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 
 const App = () => {
-
   const URL_API_V2 = "https://api.cepatsehat.com/api/v2/";
   const admin = true;
 
@@ -20,7 +19,9 @@ const App = () => {
     axios
       .get(`${URL_API_V2}articles?admin=${admin}`)
       .then(function (response) {
-        setArticles(response.data.data);
+        setArticles(
+          response.data.data.sort((a, b) => a.article_id_v2 - b.article_id_v2)
+        );
       })
       .catch(function (error) {
         setArticles("");
@@ -114,13 +115,21 @@ const App = () => {
       name: "Add Lenguage",
       selector: (row) => (
         <>
-        <Button
-          variant="warning"
-          onClick={() => router.push(`/admin/create-article-v2?articleIdV2=${row.article_id_v2}&locale=${row.locale}`)}
-          size="sm"
-        >
-          Add
-        </Button>
+          {row.locale === "en" ? (
+            <Button
+              variant="warning"
+              onClick={() =>
+                router.push(
+                  `/admin/create-article-v2?articleIdV2=${row.article_id_v2}&locale=${row.locale}`
+                )
+              }
+              size="sm"
+            >
+              Add
+            </Button>
+          ) : (
+            <></>
+          )}
         </>
       ),
       sortable: true,
