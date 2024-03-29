@@ -8,6 +8,7 @@ export const langSlice = createSlice({
   },
   reducers: {
     setLang: (state, action: PayloadAction<string>) => {
+      console.log("hello world");
       const searchParams = new URLSearchParams(window.location.search);
 
       searchParams.set("locale", state.value === "EN" ? "en" : "id");

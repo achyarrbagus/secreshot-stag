@@ -1,29 +1,78 @@
 import React from "react";
+import Link from "next/link";
 
-function Navbar() {
+function MyNavbar({ lang, dispatch, setLang }) {
   return (
     <>
       <nav className="nav nav-top fixed-top">
         <div className="container">
-          <div className="d-flex align-items-center">
-            <Link href="/">
+          <div className="d-flex align-items-center gap-3">
+            <Link
+              href={`/?${
+                lang == "EN" ? "lang=en&locale=en" : "lang=idn&locale=id"
+              }`}
+            >
               <div style={{ cursor: "pointer" }} className="nav-brand">
                 <img src="/assets/img/logo.png" alt="" />
               </div>
             </Link>
 
             <div className="btn-group ms-auto">
-              <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <i className="mdi mdi-earth me-2"></i> EN
-              </button>
+              {(() => {
+                switch (lang) {
+                  case "ID":
+                    return (
+                      <button
+                        type="button"
+                        className="btn btn-secondary dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i className="mdi mdi-earth me-2"></i> ID
+                      </button>
+                    );
+                  default:
+                    return (
+                      <button
+                        type="button"
+                        className="btn btn-secondary dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i className="mdi mdi-earth me-2"></i> EN
+                      </button>
+                    );
+                }
+              })()}
+
               <ul className="dropdown-menu dropdown-menu-end">
-                <li>
-                  <button className="dropdown-item" type="button">
+                <li className="">
+                  <button
+                    onClick={() => dispatch(setLang("EN"))}
+                    className="dropdown-item d-flex gap-1"
+                    type="button"
+                  >
+                    <img
+                      src="assets/img/flag/EN Flag_new.png"
+                      alt=""
+                      className="mt-1"
+                      width={25}
+                    />
                     English
                   </button>
                 </li>
-                <li>
-                  <button className="dropdown-item" type="button">
+                <li className="">
+                  <button
+                    onClick={() => dispatch(setLang("ID"))}
+                    className="dropdown-item d-flex gap-1"
+                    type="button"
+                  >
+                    <img
+                      src="assets/img/flag/ID Flag_new.png"
+                      alt=""
+                      className="mt-1"
+                      width={25}
+                    />
                     Indonesia
                   </button>
                 </li>
@@ -31,19 +80,89 @@ function Navbar() {
             </div>
           </div>
         </div>
-
-        <script type="module" src="/src/main.tsx"></script>
-        <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/assets/js/swiper-bundle.min.js"></script>
-        <script src="/assets/js/index.js"></script>
-        <script
-          src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-          crossOrigin="anonymous"
-        ></script>
       </nav>
     </>
   );
 }
 
-export default Navbar;
+export default MyNavbar;
+
+{
+  /* <nav className="nav nav-top fixed-top">
+<div className="container">
+  <div className="d-flex align-items-center gap-3">
+    <Link
+      href={`/?${
+        lang == "EN" ? "lang=en&locale=en" : "lang=idn&locale=id"
+      }`}
+    >
+      <div style={{ cursor: "pointer" }} className="nav-brand">
+        <img src="/assets/img/logo.png" alt="" />
+      </div>
+    </Link>
+
+    <div className="btn-group ms-auto">
+      {(() => {
+        switch (lang) {
+          case "ID":
+            return (
+              <button
+                type="button"
+                className="btn btn-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i className="mdi mdi-earth me-2"></i> ID
+              </button>
+            );
+          default:
+            return (
+              <button
+                type="button"
+                className="btn btn-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i className="mdi mdi-earth me-2"></i> EN
+              </button>
+            );
+        }
+      })()}
+
+      <ul className="dropdown-menu dropdown-menu-end">
+        <li className="">
+          <button
+            onClick={() => dispatch(setLang("EN"))}
+            className="dropdown-item d-flex gap-1"
+            type="button"
+          >
+            <img
+              src="assets/img/flag/EN Flag_new.png"
+              alt=""
+              className="mt-1"
+              width={25}
+            />
+            English
+          </button>
+        </li>
+        <li className="">
+          <button
+            onClick={() => dispatch(setLang("ID"))}
+            className="dropdown-item d-flex gap-1"
+            type="button"
+          >
+            <img
+              src="assets/img/flag/ID Flag_new.png"
+              alt=""
+              className="mt-1"
+              width={25}
+            />
+            Indonesia
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</nav> */
+}
