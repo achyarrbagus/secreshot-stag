@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
-import MyHead from "../app/components/Head";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css";
@@ -55,9 +54,6 @@ export default function RootLayout({
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossOrigin="anonymous"
       />
-
-      {/* <!-- favicon --> */}
-      <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg" />
 
       {/* <!-- fontello --> */}
       <link rel="stylesheet" href="assets/fontello/css/csehat.css" />

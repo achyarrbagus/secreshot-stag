@@ -11,12 +11,10 @@ import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { useEffect } from "react";
 import { Autoplay } from "swiper/modules";
-import Articles from "../../public/assets/article/json/article.json";
-import Image from "next/image";
 import useSWR from "swr";
-
 import Helper from "../../lib/helper/helper";
 import axios from "axios";
+import CardService from "./components/card-service";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
@@ -128,55 +126,36 @@ const Home = () => {
               <div className="container">
                 <h3 className="title-section"> Our Services </h3>
                 <div className="row g-3">
-                  <div className="col-4">
-                    <Link href="/doctor-home-visit" className="box-service">
-                      <i className="icon-menu-doctor-home"></i>
-                      <span className="title-service"> Doctor Home Visit </span>
-                    </Link>
-                  </div>
-                  <div className="col-4">
-                    <Link href="/home-nursing" className="box-service">
-                      <i className="icon-menu-home-nursing"></i>
-                      <span className="title-service">
-                        Home Nursing and Wound Care
-                      </span>
-                    </Link>
-                  </div>
-                  <div className="col-4">
-                    <Link href="/remote-telemedicine" className="box-service">
-                      <i className="icon-menu-remote-telemedicine"></i>
-                      <span className="title-service">Remote Telemedicine</span>
-                    </Link>
-                  </div>
-                  <div className="col-4">
-                    <Link href="/holistic-alternative" className="box-service">
-                      <i className="icon-menu-holistic"></i>
-                      <span className="title-service">
-                        Holistic Alternative Therapies
-                      </span>
-                    </Link>
-                  </div>
-                  <div className="col-4">
-                    <Link href="/inhome-therapy" className="box-service">
-                      <i className="icon-menu-in-home-iv"></i>
-                      <span className="title-service">
-                        In-Home IV Therapy & More
-                      </span>
-                    </Link>
-                  </div>
-
-                  <div className="col-4">
-                    <Link
-                      href="/alternative-telemedicine"
-                      className="box-service"
-                    >
-                      <i className="icon-menu-alternative-telemedicine"></i>
-                      <span className="title-service">
-                        {" "}
-                        Alternative Medicine{" "}
-                      </span>
-                    </Link>
-                  </div>
+                  <CardService
+                    link={"/doctor-home-visit"}
+                    titleService={" Doctor Home Visit"}
+                    icon={"icon-menu-doctor-home"}
+                  />
+                  <CardService
+                    link={"/home-nursing"}
+                    titleService={"Home Nursing and Wound Care"}
+                    icon={"icon-menu-home-nursing"}
+                  />
+                  <CardService
+                    link={"/remote-telemedicine"}
+                    titleService={"Remote Telemedicine"}
+                    icon={"icon-menu-remote-telemedicine"}
+                  />
+                  <CardService
+                    link={"/holistic-alternative"}
+                    titleService={"Holistic Alternative Therapies"}
+                    icon={"icon-menu-holistic"}
+                  />
+                  <CardService
+                    link={"/inhome-therapy"}
+                    titleService={"In-Home IV Therapy & More"}
+                    icon={"icon-menu-in-home-iv"}
+                  />
+                  <CardService
+                    link={"/alternative-telemedicine"}
+                    titleService={"Alternative Medicine"}
+                    icon={"icon-menu-alternative-telemedicine"}
+                  />
                 </div>
               </div>
             </section>
