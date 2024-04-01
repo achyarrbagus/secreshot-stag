@@ -23,8 +23,9 @@
   border: none;
 }
 .btn-yellow {
-  background: #ff8a00;
-  color: #fff;
+  background: #ff8a00 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
 }
 .btn-yellow[disabled] {
   opacity: 0.5; /* Reduce opacity to indicate disabled state */
