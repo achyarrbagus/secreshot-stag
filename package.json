@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.0.5-canary.59",
     "@reduxjs/toolkit": "^2.1.0",
     "antd": "^5.15.3",
     "axios": "^1.6.8",
