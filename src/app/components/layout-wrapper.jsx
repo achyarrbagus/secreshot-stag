@@ -11,9 +11,7 @@ import MyHead from "../components/Head";
 import "../../../public/assets/css/style.css";
 import { useSelector, useDispatch } from "react-redux";
 import { GoogleTagManager } from "@next/third-parties/google";
-import HotjarInit from "./hotjar";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
-import { hotjar } from "react-hotjar";
 
 export default function LayoutWrapper({ children }) {
   const helper = new Helper();
