@@ -26,7 +26,6 @@ export default function LayoutWrapper({ children }) {
 
   return (
     <>
-      <HotjarInit />
       <GoogleTagManager gtmId="GTM-PFX6ZWQ4" />
       <MyHead />
       <MyNavbar lang={lang} dispatch={dispatch} setLang={setLang} />
