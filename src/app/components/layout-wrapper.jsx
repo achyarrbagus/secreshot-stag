@@ -20,7 +20,22 @@ export default function LayoutWrapper({ children }) {
   const lang = useSelector((state) => state.lang.value);
   const dispatch = useDispatch();
   useEffect(() => {
-    hotjar.initialize(3831085, 6);
+    (function (h, o, t, j, a, r) {
+      h.hj =
+        h.hj ||
+        function () {
+          (h.hj.q = h.hj.q || []).push(arguments);
+        };
+      h._hjSettings = {
+        hjid: YOUR_HOTJAR_ID,
+        hjsv: YOUR_HOTJAR_SNIPPET_VERSION,
+      };
+      a = o.getElementsByTagName("head")[0];
+      r = o.createElement("script");
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, "//static.hotjar.com/c/hotjar-3831085", ".js?sv=6");
   }, []);
 
   return (
