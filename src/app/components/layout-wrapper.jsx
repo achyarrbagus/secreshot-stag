@@ -13,11 +13,16 @@ import { useSelector, useDispatch } from "react-redux";
 import { GoogleTagManager } from "@next/third-parties/google";
 import HotjarInit from "./hotjar";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
+import { hotjar } from "react-hotjar";
+import { useEffect } from "react";
 
 export default function LayoutWrapper({ children }) {
   const helper = new Helper();
   const lang = useSelector((state) => state.lang.value);
   const dispatch = useDispatch();
+  useEffect(() => {
+    hotjar.initialize(3831085, 6);
+  }, []);
 
   return (
     <>
