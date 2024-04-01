@@ -14,7 +14,6 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import HotjarInit from "./hotjar";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 import { hotjar } from "react-hotjar";
-import { useEffect } from "react";
 
 export default function LayoutWrapper({ children }) {
   const helper = new Helper();
