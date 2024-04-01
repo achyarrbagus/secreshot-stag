@@ -24,16 +24,13 @@ export default function LayoutWrapper({ children }) {
         function () {
           (h.hj.q = h.hj.q || []).push(arguments);
         };
-      h._hjSettings = {
-        hjid: YOUR_HOTJAR_ID,
-        hjsv: YOUR_HOTJAR_SNIPPET_VERSION,
-      };
+      h._hjSettings = { hjid: 3831085, hjsv: 6 };
       a = o.getElementsByTagName("head")[0];
       r = o.createElement("script");
       r.async = 1;
       r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
-    })(window, document, "//static.hotjar.com/c/hotjar-3831085", ".js?sv=6");
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
   }, []);
 
   return (
