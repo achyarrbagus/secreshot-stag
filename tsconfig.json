@@ -35,10 +35,11 @@
     "src/app/alternative-telemedicine/page.jsx",
     "src/app/test/page.tsx",
     "src/app/perklin-bni-sby/page.jsx",
-    "src/app/page-id.jsx",
-    "src/app/page.jsx",
+    "src/pages/page-id.jsx",
+    "src/pages/page.jsx",
     "src/app/admin/update-article/page.jsx",
-    "src/app/admin/page.jsx"
+    "src/app/admin/page.jsx",
+    "src/pages/layout.tsx"
   ],
   "exclude": ["node_modules"]
 }
