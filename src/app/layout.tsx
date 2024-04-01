@@ -5,9 +5,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css";
-import "./styles/bootstrap/css/bootstrap.min.css";
-import "./styles/bootstrap/css/bootstrap.css";
-import "./styles/css/style.css";
 import "./globals.css";
 import Head from "next/head";
 
@@ -39,6 +36,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>{children}</Providers>
       </body>
+      <MyScript />
     </html>
   );
 }
