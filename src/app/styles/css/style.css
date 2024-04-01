@@ -237,7 +237,7 @@ a {
   margin-top: 68px;
 }
 .hero-banner {
-  background: url("../../public/assets/img/banner-homepage.png");
+  background: url("../../../../public/assets/img/banner-homepage.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -356,7 +356,7 @@ section.service .box-service .title-service {
 }
 section.why {
   background: #00b2ae;
-  background-image: url("../../public/assets/img/bg-why.png");
+  background-image: url("../../../../public/assets/img/bg-why.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,7 +384,7 @@ section.why {
   section.why {
     height: auto;
     aspect-ratio: auto;
-    background-image: url("../../public/assets/img/bg-why-mobile.png");
+    background-image: url("../../../../public/assets/img/bg-why-mobile.png");
   }
 }
 section.why .text {
@@ -584,7 +584,7 @@ section.doctor .items-doctor .name p {
 }
 section.article {
   background: #e7f4f3;
-  background-image: url("../../public/assets/img/bg-article.png");
+  background-image: url("../../../../public/assets/img/bg-article.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 50%;
@@ -665,7 +665,7 @@ section.faq {
   box-shadow: none;
 }
 .accordion-custom .accordion-button::after {
-  background-image: url("../../public/assets/img/expand-arrow.png") !important;
+  background-image: url("../../../../public/assets/img/expand-arrow.png") !important;
   background-size: 32px;
   width: 32px;
   height: 32px;

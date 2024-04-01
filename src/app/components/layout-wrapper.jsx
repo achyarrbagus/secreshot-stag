@@ -2,20 +2,28 @@
 
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import React from "react";
+import React, { useEffect } from "react";
 import Helper from "../../../lib/helper/helper";
 import MyFooter from "../components/footer";
 import MyScript from "../components/script";
 import MyNavbar from "../components/navbar";
+import MyHead from "../components/Head";
+import "../../../public/assets/css/style.css";
 import { useSelector, useDispatch } from "react-redux";
+import { GoogleTagManager } from "@next/third-parties/google";
+import HotjarInit from "./hotjar";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 
 export default function LayoutWrapper({ children }) {
   const helper = new Helper();
   const lang = useSelector((state) => state.lang.value);
   const dispatch = useDispatch();
+
   return (
     <>
+      <HotjarInit />
+      <GoogleTagManager gtmId="GTM-PFX6ZWQ4" />
+      <MyHead />
       <MyNavbar lang={lang} dispatch={dispatch} setLang={setLang} />
       {children}
       <OverlayTrigger

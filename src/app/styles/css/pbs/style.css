@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+}
+.btn-primary {
+  background: #04737f;
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #02464e !important;
+  border: none;
+}
+.btn-yellow {
+  background: #ff8a00;
+  color: #fff;
+}
+.btn-yellow[disabled] {
+  opacity: 0.5; /* Reduce opacity to indicate disabled state */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+  background-color: #ccc;
+}
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active {
+  background: #cc6e00 !important;
+  border: none;
+}
+.btn-secondary {
+  background: #f2f8ff;
+  color: #04737f;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background: #bfddff !important;
+  border: none;
+}
+.btn-white {
+  background: #fff;
+  color: #1e1e1e;
+}
+.btn-white:hover {
+  background: #e6e6e6;
+  color: #1e1e1e;
+}
+.btn-outline-white {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn-outline-white:hover {
+  background: #e6e6e6;
+}
+.btn .disabled {
+  opacity: 0.7;
+}
+.floating-bottom {
+  position: fixed;
+  background: #f2f8ff;
+  bottom: 0;
+  width: 100%;
+  padding: 14px 0;
+}
+.form-control,
+.form-select {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 100px;
+  border: 0;
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+.form-control::placeholder,
+.form-select::placeholder {
+  color: #949494;
+}
+.form-control:focus,
+.form-select:focus {
+  background: #fff;
+  border: 0;
+  outline: 1px solid #fff;
+  box-shadow: none;
+  color: #fff;
+}
+.form-control.otp__digit,
+.form-select.otp__digit {
+  border-radius: 8px !important;
+  font-size: 24px;
+  text-align: center;
+}
+.form-control.otp__digit::-webkit-outer-spin-button,
+.form-control.otp__digit::-webkit-inner-spin-button,
+.form-select.otp__digit::-webkit-outer-spin-button,
+.form-select.otp__digit::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-control.otp__digit[type="number"],
+.form-select.otp__digit[type="number"] {
+  -moz-appearance: textfield;
+}
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+.form-label {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+.form-search:focus-within {
+  border-radius: 100px;
+  border: 0;
+  outline: 1px solid #fff;
+}
+.form-search span {
+  border-radius: 100px;
+  background: #fff;
+  border: 0;
+  color: #fff;
+}
+.form-search .form-control {
+  outline: none;
+}
+.form-search.search-home .form-control {
+  background: rgba(255, 255, 255, 0.1);
+}
+.form-search.search-home .form-control::placeholder {
+  color: #ccc;
+}
+.form-search.search-home span {
+  background: rgba(255, 255, 255, 0.1);
+  margin-left: 0 !important;
+}
+body {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  color: #1e1e1e;
+  font-size: 12px;
+}
+.content {
+  max-width: 480px;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 100vh;
+  background-color: #f3fffd;
+  padding-bottom: 100px;
+}
+.content .content-body {
+  padding-top: 70px;
+}
+.content .content-menu {
+  padding-top: 30px;
+}
+.content.bg-home {
+  background-image: url("../../../assets//img/perklin-bni-sby/bg-home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.content.bg-thanks {
+  background-image: url("../../../assets/img/perklin-bni-sby/bg-thanks.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 80%;
+}
+a {
+  text-decoration: none;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.text-dark {
+  color: #1e1e1e !important;
+}
+.text-muted {
+  color: #949494 !important;
+}
+.text-primary {
+  color: #04737f !important;
+}
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.text-home {
+  text-align: center;
+  margin-top: 64px;
+  padding: 0 24px;
+}
+.text-home h5 {
+  font-size: 24px;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+.text-home .detail-text {
+  border-top: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+  padding: 24px 0;
+  font-weight: bold;
+  color: #04737f;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+.title-kur {
+  background: #00b2ae;
+  padding: 14px 24px;
+  color: #fff;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-block: 24px;
+}
+.title-kur span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.form-label {
+  font-size: 14px;
+  color: #1e1e1e;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.form-control {
+  outline: 1px solid #00b2ae;
+  border-radius: 5px;
+  background-color: #dbf3ee;
+  color: #1e1e1e;
+}
+.form-control:focus {
+  background-color: #dbf3ee;
+  border: 1px solid #00b2ae;
+  outline: 1px solid #00b2ae;
+  box-shadow: none;
+  color: #1e1e1e;
+}
+.text-contact {
+  border-top: 1px solid #1e1e1e;
+  padding-top: 32px;
+  font-size: 18px;
+}
+.custom-file-button input[type=file] {
+  margin-left: -2px !important;
+}
+
+.custom-file-button input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+
+.custom-file-button input[type=file]::file-selector-button {
+  display: none;
+}
+
+.custom-file-button:hover label {
+  background-color: #dde0e3;
+  cursor: pointer;
+}
