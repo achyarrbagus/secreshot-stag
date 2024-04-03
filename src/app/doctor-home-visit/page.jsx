@@ -569,7 +569,7 @@ const DoctorHomeVisit = () => {
                             </ul>
                             <div className="price">
                               <div className="value-price">
-                                <b>Start from:</b> Rp250.000
+                                <b>Start from:</b> Rp400.000
                               </div>
                               <div
                                 onClick={() => handleBook("Doctor Home Visit")}

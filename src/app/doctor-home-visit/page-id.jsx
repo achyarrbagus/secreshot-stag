@@ -144,7 +144,7 @@ const DoctorHomeVisitId = () => {
                         </ul>
                         <div className="price">
                           <div className="value-price">
-                            <b>Mulai dari:</b> Rp250.000
+                            <b>Mulai dari:</b> Rp400.000
                           </div>
                           <div
                             onClick={() =>
