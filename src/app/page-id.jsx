@@ -17,13 +17,6 @@ const HomeId = () => {
     fetcher
   );
 
-  const CutText = (text) => {
-    let sentences = text?.split("");
-    // Mengambil 100 kalimat pertama
-    let first100Sentences = sentences?.slice(0, 30);
-    let resultText = first100Sentences?.join("");
-    return resultText;
-  };
   const [formData, setFormData] = useState({
     name: "",
     address: "",
@@ -42,31 +35,6 @@ const HomeId = () => {
 
   const redirectTele = () => {
     window.location.href = "https://t.me/cepat_sehat";
-  };
-  const dateToString = (dateString) => {
-    const dt = new Date(dateString);
-    const date = dt.getDate();
-    const month = dt.getMonth();
-    const year = dt.getFullYear();
-    const months = [
-      "Januari",
-      "February",
-      "March",
-      "Aprl",
-      "Mei",
-      "Juni",
-      "Juli",
-      "Augstus",
-      "September",
-      "Oktober",
-      "November",
-      "Desember",
-    ];
-    const monthName = months[month];
-
-    const result = date + " " + monthName + " " + year;
-
-    return result;
   };
 
   return (

@@ -460,7 +460,7 @@ const Home = () => {
                           articles.map((item, index) => (
                             <SwiperSlide key={item.id}>
                               <Link
-                                href={`/article?id=${item.id}&locale=en`}
+                                href={`/article?id=${item.article_id_v2}&locale=en`}
                                 scroll={true}
                               >
                                 <CardArticleSlide
