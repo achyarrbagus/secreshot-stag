@@ -12,10 +12,13 @@ import CardArticleSlide from "./components/card-article-slide";
 import "../../public/assets/css/style.css";
 import "../../public/assets/fontello/css/csehat.css";
 import LayoutWrapper from "./components/layout-wrapper";
+import DoctorCard from "./components/card-doctor";
+import NUrseCard from "./components/card-nurse";
 
 import Helper from "../../lib/helper/helper";
 import axios from "axios";
 import HeroBanner from "./components/hero-banner";
+import NurseCard from "./components/card-nurse";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
@@ -184,148 +187,48 @@ const Home = () => {
                 <div className="row justify-content-center">
                   <div className="col-md-12 col-lg-8">
                     <div className="row g-3 g-md-5 justify-content-center">
-                      <div className="col-6 col-md-4">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img src="assets/img/doctor/dr-dewi-f.png" alt="" />
-                          </div>
-                          <div className="name">
-                            <h5>dr. Dewi Fransiska, Sp.B</h5>
-                            <p>Surgeon</p>
-                            <span>STR: 3121101422105406</span>
-                            <hr />
-                            <div className="text-start">
-                              <p>
-                                Practice Location{" "}
-                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
-                              </p>
-                              <ul className="ps-3">
-                                <li>Mayapada Hospital</li>
-                                <li>Eka Hospital</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-4">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img src="assets/img/doctor/dr-dwi-s.png" alt="" />
-                          </div>
-                          <div className="name">
-                            <h5>dr. Dwi Suryaning Ayu Aprilizia, Sp.A</h5>
-                            <p>Pediatrician</p>
-                            <span>STR: 3321201323154360</span>
-                            <hr />
-                            <div className="text-start">
-                              <p>
-                                Practice Location{" "}
-                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
-                              </p>
-                              <ul className="ps-3">
-                                <li>Aysha Islamic Hospital</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-4">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img src="assets/img/doctor/dr-ayu-a.png" alt="" />
-                          </div>
-                          <div className="name">
-                            <h5>dr. Ayu A. Istiana</h5>
-                            <p>Aesthetic Doctor</p>
-                            <span>STR: 3121100220145699</span>
-                            <hr />
-                            <div className="text-start">
-                              <p>
-                                Practice Location{" "}
-                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
-                              </p>
-                              <ul className="ps-3">
-                                <li>Cepat Sehat Clinic</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-4">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/dr-ernita-r.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>dr. Ernita Rosyanti Dewi</h5>
-                            <p>General Practitioner</p>
-                            <span>STR: 3121100220145544</span>
-                            <hr />
-                            <div className="text-start">
-                              <p>
-                                Practice Location{" "}
-                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
-                              </p>
-                              <ul className="ps-3">
-                                <li>Cepat Sehat Clinic</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-4">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/dr-irvan-r.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>dr. Irvan Rizki Fitri</h5>
-                            <p>General Practitioner</p>
-                            <span>STR: 3111100321119174</span>
-                            <hr />
-                            <div className="text-start">
-                              <p>
-                                Practice Location{" "}
-                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
-                              </p>
-                              <ul className="ps-3">
-                                <li>Cepat Sehat Clinic</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-4">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/dr-melchisedek-a.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>dr. Melchisedek A.V.P Marbun</h5>
-                            <p>General Practitioner</p>
-                            <span>STR: 3111100220155405</span>
-                            <hr />
-                            <div className="text-start">
-                              <p>
-                                Practice Location{" "}
-                                <i className="mdi mdi-map-marker fs-18 ms-2"></i>
-                              </p>
-                              <ul className="ps-3">
-                                <li>Cepat Sehat Clinic</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <DoctorCard
+                        image={`assets/img/doctor/dr-dewi-f.png`}
+                        name="dr. Dewi Fransiska, Sp.B"
+                        job="Surgeon"
+                        str="3121101422105406"
+                        practiceLocation={["Mayapada Hospital", "Eka Hospital"]}
+                      />
+                      <DoctorCard
+                        image={`assets/img/doctor/dr-dwi-s.png`}
+                        name="dr. Dwi Suryaning Ayu Aprilizia, Sp.A"
+                        job="Pediatrician"
+                        str="3321201323154360"
+                        practiceLocation={["Aysha Islamic Hospital"]}
+                      />
+                      <DoctorCard
+                        image={`assets/img/doctor/dr-ayu-a.png`}
+                        name="dr. Ayu A. Istiana"
+                        job="Aesthetic Doctor"
+                        str="3321201323154360"
+                        practiceLocation={["Cepat Sehat Clinic"]}
+                      />
+                      <DoctorCard
+                        image={`assets/img/doctor/dr-ernita-r.png`}
+                        name="dr. Ernita Rosyanti Dewi"
+                        job="General Practitioner"
+                        str="3121100220145544"
+                        practiceLocation={["Cepat Sehat Clinic"]}
+                      />
+                      <DoctorCard
+                        image={`assets/img/doctor/dr-irvan-r.png`}
+                        name="dr. Irvan Rizki Fitri"
+                        job="General Practitioner"
+                        str="3121100220145544"
+                        practiceLocation={["Cepat Sehat Clinic"]}
+                      />
+                      <DoctorCard
+                        image={`assets/img/doctor/dr-melchisedek-a.png`}
+                        name="dr. Melchisedek A.V.P Marbun"
+                        job="General Practitioner"
+                        str="3111100220155405"
+                        practiceLocation={["Cepat Sehat Clinic"]}
+                      />
                     </div>
                   </div>
                 </div>
@@ -338,90 +241,42 @@ const Home = () => {
                 <div className="row justify-content-center">
                   <div className="col-md-12 col-lg-8">
                     <div className="row g-3 g-md-4 justify-content-center">
-                      <div className="col-6 col-md-3">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/nurse-siti.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>Siti Rahma Derlauw</h5>
-                            <span>STR: 3101522234737239</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-3">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/nurse-loisa.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>Loisa Lakamai</h5>
-                            <span>STR: 1701721213519681</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-3">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/nurse-syarah.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>Syarah Azzarah</h5>
-                            <span>STR: 2601521224246624 </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-3">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/nurse-andi.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>Andi Andriansyah S.</h5>
-                            <span>STR: 1201512214112821</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-3">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/nurse-marsiani.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>Marsiani Talo</h5>
-                            <span>STR: 190172122-4444051</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-6 col-md-3">
-                        <div className="items-doctor">
-                          <div className="img-doctor">
-                            <img
-                              src="assets/img/doctor/nurse-irfan.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="name">
-                            <h5>Irfan Mustofa</h5>
-                            <span>STR: 1401511224517960</span>
-                          </div>
-                        </div>
-                      </div>
+                      <NurseCard
+                        name="Siti Rahma Derlauw"
+                        str="3101522234737239"
+                        isnurse={true}
+                        image="assets/img/doctor/nurse-siti.png"
+                      />
+                      <NurseCard
+                        name="Loisa Lakamai"
+                        str="1701721213519681"
+                        isnurse={true}
+                        image="assets/img/doctor/nurse-loisa.png"
+                      />
+                      <NurseCard
+                        name="Syarah Azzarah"
+                        str="2601521224246624"
+                        isnurse={true}
+                        image="assets/img/doctor/nurse-syarah.png"
+                      />
+                      <NurseCard
+                        name="Andi Andriansyah S."
+                        str="1201512214112821"
+                        isnurse={true}
+                        image="assets/img/doctor/nurse-andi.png"
+                      />
+                      <NurseCard
+                        name="Marsiani Talo"
+                        str=" 190172122-4444051"
+                        isnurse={true}
+                        image="assets/img/doctor/nurse-marsiani.png"
+                      />
+                      <NurseCard
+                        name="Irfan Mustofa"
+                        str="1401511224517960"
+                        isnurse={true}
+                        image="assets/img/doctor/nurse-irfan.png"
+                      />
                     </div>
                   </div>
                 </div>
@@ -571,11 +426,11 @@ const Home = () => {
 export default function App() {
   return (
     <>
-      <Suspense fallback={<div>Loading</div>}>
-        <LayoutWrapper>
+      <LayoutWrapper>
+        <Suspense fallback={<div>Loading</div>}>
           <Home />
-        </LayoutWrapper>
-      </Suspense>
+        </Suspense>
+      </LayoutWrapper>
     </>
   );
 }
