@@ -4,11 +4,8 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HomeId from "./page-id";
 import React, { useState } from "react";
-import { setLang } from "../../lib/redux/slices/langSlice/langSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-import { useEffect } from "react";
 import { Autoplay } from "swiper/modules";
 import useSWR from "swr";
 import CardArticleSlide from "./components/card-article-slide";
@@ -23,8 +20,6 @@ import HeroBanner from "./components/hero-banner";
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
 const Home = () => {
-  const searchParams = useSearchParams();
-  const dispatch = useDispatch();
   const lang = useSelector((state) => state.lang.value);
   const [locale, setLocale] = useState("en");
   const { data: articles, error: articlesError } = useSWR(
@@ -465,7 +460,7 @@ const Home = () => {
                           articles.map((item, index) => (
                             <SwiperSlide key={item.id}>
                               <Link
-                                href={`/article?id=${item.id}&locale=${item.locale}`}
+                                href={`/article?id=${item.id}&locale=en`}
                                 scroll={true}
                               >
                                 <CardArticleSlide
