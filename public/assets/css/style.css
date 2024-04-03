@@ -237,7 +237,7 @@ a {
   margin-top: 68px;
 }
 .hero-banner {
-  background: url("../img/banner-homepage.png");
+  background: url("https://api.cepatsehat.com/uploads/banner-homepage.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -356,7 +356,7 @@ section.service .box-service .title-service {
 }
 section.why {
   background: #00b2ae;
-  background-image: url("../img/bg-why.png");
+  background-image: url("https://api.cepatsehat.com/uploads/bg-why.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,7 +384,7 @@ section.why {
   section.why {
     height: auto;
     aspect-ratio: auto;
-    background-image: url("../img/bg-why-mobile.png");
+    background-image: url("https://api.cepatsehat.com/uploads/bg-why-mobile.png");
   }
 }
 section.why .text {

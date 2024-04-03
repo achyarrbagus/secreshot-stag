@@ -4,12 +4,13 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
-import Articles from "../../public/assets/article/json/article-id.json";
 import Helper from "../../lib/helper/helper";
+import CardArticleSlide from "./components/card-article-slide";
 import useSWR from "swr";
 import axios from "axios";
+import HeroBanner from "./components/hero-banner";
+import Image from "next/image";
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
-
 const HomeId = () => {
   const { data: articles, error: articlesError } = useSWR(
     `https://api.cepatsehat.com/api/v2/articles?locale=id`,
@@ -71,23 +72,14 @@ const HomeId = () => {
   return (
     <>
       <div className="content">
-        <div className="hero-banner">
-          <div className="container">
-            <div className="text">
-              <h3 className="title">
-                Mitra Terpercaya Anda untuk Layanan Kesehatan Homecare di Bali,
-                Jakarta, Surabaya & Bandung
-              </h3>
-              <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
-                Kami memberikan perawatan kesehatan personal ke rumah Anda
-                melalui para profesional berpengalaman kami.
-              </p>
-              <a href="#book" className="btn btn-warning">
-                Pesan
-              </a>
-            </div>
-          </div>
-        </div>
+        <HeroBanner
+          title={
+            "Mitra Terpercaya Anda untuk Layanan Kesehatan Homecare di Bali, Jakarta, Surabaya & Bandung"
+          }
+          desc={
+            " Kami memberikan perawatan kesehatan personal ke rumah Anda melalui para profesional berpengalaman kami"
+          }
+        />
 
         <section className="service">
           <div className="container">
@@ -465,23 +457,10 @@ const HomeId = () => {
                             scroll={true}
                           >
                             <div className="card-slide-article">
-                              <img
-                                alt=""
-                                src={`https://api.cepatsehat.com/uploads/${item.image}`}
+                              <CardArticleSlide
+                                item={item}
+                                path={`https://api.cepatsehat.com/uploads/${item.image}`}
                               />
-                              <div className="name-article">
-                                <h6>{CutText(item.title)}...</h6>
-                                <p>{CutText(item.intro)}...</p>
-                                <a
-                                  href="article-detail.html"
-                                  className="text-muted fs-14"
-                                >
-                                  <i className="mdi mdi-arrow-right"></i>
-                                </a>
-                                <p className="text-end text-capitalize">
-                                  {dateToString(item?.publish_date)}
-                                </p>
-                              </div>
                             </div>
                           </Link>
                         </SwiperSlide>

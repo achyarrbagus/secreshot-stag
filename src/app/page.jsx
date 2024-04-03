@@ -5,16 +5,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import HomeId from "./page-id";
 import React, { useState } from "react";
 import { setLang } from "../../lib/redux/slices/langSlice/langSlice";
-import LayoutWrapper from "./components/layout-wrapper";
 import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { useEffect } from "react";
 import { Autoplay } from "swiper/modules";
 import useSWR from "swr";
+import CardArticleSlide from "./components/card-article-slide";
+import "../../public/assets/css/style.css";
+import "../../public/assets/fontello/css/csehat.css";
+import LayoutWrapper from "./components/layout-wrapper";
+
 import Helper from "../../lib/helper/helper";
 import axios from "axios";
-import CardService from "./components/card-service";
+import HeroBanner from "./components/hero-banner";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
@@ -24,7 +28,7 @@ const Home = () => {
   const lang = useSelector((state) => state.lang.value);
   const [locale, setLocale] = useState("en");
   const { data: articles, error: articlesError } = useSWR(
-    `https://api.cepatsehat.com/api/v2/articles?locale=${locale}`,
+    `https://api.cepatsehat.com/api/v1/articles?locale=${locale}`,
     fetcher
   );
 
@@ -40,14 +44,6 @@ const Home = () => {
     }
   }, [searchParams]);
 
-  const CutText = (text, isTitle) => {
-    let sentences = text.split("");
-    let first100Sentences = sentences.slice(0, 30);
-
-    let resultText = first100Sentences.join("");
-    return resultText;
-  };
-
   const redirectWa = () => {
     const helper = new Helper();
     helper.RedirectToWa(formData, lang, true);
@@ -62,32 +58,6 @@ const Home = () => {
     address: "",
     service: "Select Service",
   });
-
-  const dateToString = (dateString) => {
-    const dt = new Date(dateString);
-    const date = dt.getDate();
-    const month = dt.getMonth();
-    const year = dt.getFullYear();
-    const months = [
-      "Januari",
-      "February",
-      "March",
-      "Aprl",
-      "Mei",
-      "Juni",
-      "Juli",
-      "Augstus",
-      "September",
-      "Oktober",
-      "November",
-      "Desember",
-    ];
-    const monthName = months[month];
-
-    const result = date + " " + monthName + " " + year;
-
-    return result;
-  };
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -105,57 +75,67 @@ const Home = () => {
       return (
         <>
           <div className="content">
-            <div className="hero-banner">
-              <div className="container">
-                <div className="text">
-                  <h3 className="title">
-                    Your Trusted Partner in Personalized Home Healthcare in Bali{" "}
-                  </h3>
-                  <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
-                    We deliver personalized and compassionate healthcare to your
-                    home through our experienced professionals.
-                  </p>
-                  <a href="#book" className="btn btn-warning">
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            <HeroBanner
+              title={
+                "Your Trusted Partner in Personalized Home Healthcare in Bali"
+              }
+              desc={
+                "We deliver personalized and compassionate healthcare to your home through our experienced professionals"
+              }
+            />
             <section className="service">
               <div className="container">
                 <h3 className="title-section"> Our Services </h3>
                 <div className="row g-3">
-                  <CardService
-                    link={"/doctor-home-visit"}
-                    titleService={" Doctor Home Visit"}
-                    icon={"icon-menu-doctor-home"}
-                  />
-                  <CardService
-                    link={"/home-nursing"}
-                    titleService={"Home Nursing and Wound Care"}
-                    icon={"icon-menu-home-nursing"}
-                  />
-                  <CardService
-                    link={"/remote-telemedicine"}
-                    titleService={"Remote Telemedicine"}
-                    icon={"icon-menu-remote-telemedicine"}
-                  />
-                  <CardService
-                    link={"/holistic-alternative"}
-                    titleService={"Holistic Alternative Therapies"}
-                    icon={"icon-menu-holistic"}
-                  />
-                  <CardService
-                    link={"/inhome-therapy"}
-                    titleService={"In-Home IV Therapy & More"}
-                    icon={"icon-menu-in-home-iv"}
-                  />
-                  <CardService
-                    link={"/alternative-telemedicine"}
-                    titleService={"Alternative Medicine"}
-                    icon={"icon-menu-alternative-telemedicine"}
-                  />
+                  <div className="col-4">
+                    <Link href="/doctor-home-visit" className="box-service">
+                      <i className="icon-menu-doctor-home"></i>
+                      <span className="title-service"> Doctor Home Visit </span>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <Link href="/home-nursing" className="box-service">
+                      <i className="icon-menu-home-nursing"></i>
+                      <span className="title-service">
+                        Home Nursing and Wound Care
+                      </span>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <Link href="/remote-telemedicine" className="box-service">
+                      <i className="icon-menu-remote-telemedicine"></i>
+                      <span className="title-service">Remote Telemedicine</span>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <Link href="/holistic-alternative" className="box-service">
+                      <i className="icon-menu-holistic"></i>
+                      <span className="title-service">
+                        Holistic Alternative Therapies
+                      </span>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <Link href="/inhome-therapy" className="box-service">
+                      <i className="icon-menu-in-home-iv"></i>
+                      <span className="title-service">
+                        In-Home IV Therapy & More
+                      </span>
+                    </Link>
+                  </div>
+
+                  <div className="col-4">
+                    <Link
+                      href="/alternative-telemedicine"
+                      className="box-service"
+                    >
+                      <i className="icon-menu-alternative-telemedicine"></i>
+                      <span className="title-service">
+                        {" "}
+                        Alternative Medicine{" "}
+                      </span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </section>
@@ -497,28 +477,13 @@ const Home = () => {
                           articles.map((item, index) => (
                             <SwiperSlide key={item.id}>
                               <Link
-                                href={`/article?id=${item.article_id_v2}&locale=${item.locale}`}
+                                href={`/article?id=${item.id}&locale=${item.locale}`}
                                 scroll={true}
                               >
-                                <div className="card-slide-article">
-                                  <img
-                                    alt=""
-                                    src={`https://api.cepatsehat.com/uploads/${item.image}`}
-                                  />
-                                  <div className="name-article">
-                                    <h6>{CutText(item.title)}...</h6>
-                                    <p>{CutText(item.intro)}...</p>
-                                    <a
-                                      href="article-detail.html"
-                                      className="text-muted fs-14"
-                                    >
-                                      <i className="mdi mdi-arrow-right"></i>
-                                    </a>
-                                    <p className="text-end text-capitalize">
-                                      {dateToString(item?.publish_date)}
-                                    </p>
-                                  </div>
-                                </div>
+                                <CardArticleSlide
+                                  item={item}
+                                  path={`https://api.cepatsehat.com/uploads/${item.image}`}
+                                />
                               </Link>
                             </SwiperSlide>
                           ))}
@@ -623,11 +588,11 @@ const Home = () => {
 export default function App() {
   return (
     <>
-      <LayoutWrapper>
-        <Suspense fallback={<div>Loading</div>}>
+      <Suspense fallback={<div>Loading</div>}>
+        <LayoutWrapper>
           <Home />
-        </Suspense>
-      </LayoutWrapper>
+        </LayoutWrapper>
+      </Suspense>
     </>
   );
 }

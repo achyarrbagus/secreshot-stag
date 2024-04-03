@@ -18,4 +18,14 @@ module.exports = withPWA({
   },
   i18n,
   ...nextConfig,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "api.cepatsehat.com",
+        port: "",
+        pathname: "/uploads/",
+      },
+    ],
+  },
 });
