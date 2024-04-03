@@ -32,18 +32,6 @@ const Home = () => {
     fetcher
   );
 
-  useEffect(() => {
-    const lang = searchParams.get("lang");
-    switch (lang) {
-      case "id":
-        dispatch(setLang("ID"));
-        break;
-      default:
-        dispatch(setLang("EN"));
-        setLocale("en");
-    }
-  }, [searchParams]);
-
   const redirectWa = () => {
     const helper = new Helper();
     helper.RedirectToWa(formData, lang, true);

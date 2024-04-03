@@ -35,13 +35,7 @@ const CardArticleSlide = ({ path, item }) => {
   return (
     <>
       <div className="card-slide-article">
-        <Image
-          width={170}
-          height={170}
-          src={path}
-          style={{ width: "100%", aspectRatio: 12 / 7, objectFit: "cover" }}
-          alt="Picture of the author"
-        />
+        <img src={path} />
 
         <div className="name-article">
           <h6>{CutText(item.title)}...</h6>
