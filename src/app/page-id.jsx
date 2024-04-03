@@ -425,10 +425,7 @@ const HomeId = () => {
                             scroll={true}
                           >
                             <div className="card-slide-article">
-                              <CardArticleSlide
-                                item={item}
-                                path={`https://api.cepatsehat.com/uploads/${item.image}`}
-                              />
+                              <CardArticleSlide item={item} path={item.image} />
                             </div>
                           </Link>
                         </SwiperSlide>

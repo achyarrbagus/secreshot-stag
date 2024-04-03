@@ -23,8 +23,7 @@ module.exports = withPWA({
       {
         protocol: "https",
         hostname: "api.cepatsehat.com",
-        port: "",
-        pathname: "/uploads/",
+        pathname: "/uploads/**",
       },
     ],
   },

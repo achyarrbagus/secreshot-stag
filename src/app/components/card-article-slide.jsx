@@ -35,7 +35,12 @@ const CardArticleSlide = ({ path, item }) => {
   return (
     <>
       <div className="card-slide-article">
-        <img src={path} />
+        <img
+          src={"https://api.cepatsehat.com/uploads/" + path}
+          alt="Picture of the author"
+          layout="fill"
+          objectFit="cover"
+        />
 
         <div className="name-article">
           <h6>{CutText(item.title)}...</h6>

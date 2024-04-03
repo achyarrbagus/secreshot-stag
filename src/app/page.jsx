@@ -465,7 +465,7 @@ const Home = () => {
                               >
                                 <CardArticleSlide
                                   item={item}
-                                  path={`https://api.cepatsehat.com/uploads/${item.image}`}
+                                  path={item.image}
                                 />
                               </Link>
                             </SwiperSlide>
