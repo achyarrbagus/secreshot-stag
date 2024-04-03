@@ -23,7 +23,7 @@ const Home = () => {
   const lang = useSelector((state) => state.lang.value);
   const [locale, setLocale] = useState("en");
   const { data: articles, error: articlesError } = useSWR(
-    `https://api.cepatsehat.com/api/v1/articles?locale=${locale}`,
+    `https://api.cepatsehat.com/api/v2/articles?locale=${locale}`,
     fetcher
   );
 
