@@ -11,10 +11,47 @@
     "copyright": "Copyright © 2022 Cepat Sehat. All Rights Reserved"
   },
   "home": {
-    "greeting": "Welcome",
-    "slogan": "Let's Check Your Health Here",
-    "our_doctor": "Our Doctor",
-    "recommended_for_you": "Recommended For You"
+    "title-banner": "Your Trusted Partner in Personalized Home Healthcare in Bali",
+    "title-slogan": "We deliver personalized and compassionate healthcare to your home through our experienced professionals",
+    "book-button": "Book Now",
+    "our-service": "Our Service",
+    "service-menu": {
+      "1": "Doctor Home Visit",
+      "2": "Home Nursing And Wound Care",
+      "3": "Remote Telemedicine",
+      "4": "Holistic Alternative Therapies",
+      "5": "In-Home IV Therapy & More",
+      "6": "Alternative Medicine"
+    },
+    "why": "Why Choose Us?",
+    "why-slogan": "More than 5000 patients well treated in 2023",
+    "why-menu": {
+      "1": "Easy, safe & comfortable service",
+      "2": "Supported by certified & trained health workers",
+      "3": "24 hours service",
+      "4": "Wide coverage"
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+    "article": "Articles",
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    }
   },
   "payment": {
     "name": "Full Name",

@@ -11,10 +11,47 @@
     "copyright": "Hak Cipta © 2022 Cepat Sehat. Seluruh hak cipta"
   },
   "home": {
-    "greeting": "Selamat Datang",
-    "slogan": "Yuk Cek Kesehatan Kamu Disini",
-    "our_doctor": "Tim Dokter Kami",
-    "recommended_for_you": "Artikel Menarik Buat Kamu"
+    "title-banner": "Mitra Terpercaya Anda untuk Layanan Kesehatan Homecare di Bali, Jakarta, Surabaya & Bandung",
+    "title-slogan": "Kami memberikan perawatan kesehatan personal ke rumah Anda melalui para profesional berpengalaman kami",
+    "book-button": "Book Now",
+    "our-service": "Layanan Kami",
+    "service-menu": {
+      "1": "Kunjungan Dokter Ke Rumah",
+      "2": "Perawatan Dirumah Dan Perawatan Luka",
+      "3": "Telemedis Jarak Jauh",
+      "4": "Terapi Alternatif Holistic",
+      "5": "Terapi IV Dirumah & Lainnya",
+      "6": "Layanan Alternatif"
+    },
+    "why": "Mengapa Memilih Kami?",
+    "why-slogan": "Sudah menangani 5000 pasien lebih di tahun 2023",
+    "why-menu": {
+      "1": "Layanan yang mudah, aman, dan nyaman",
+      "2": "Didukung oleh tenaga kesehatan bersertifikat dan terlatih",
+      "3": "Layanan 24 jam",
+      "4": "Cakupan yang luas"
+    },
+    "practice-location": "Lokasi Praktik",
+    "our-doctors": "Dokter Kami",
+    "dr-surgeon": "Dokter Bedah",
+    "dr-general": "Dokter Umum",
+    "dr-pediatrician": "Dokter Anak",
+    "dr-asthetic": "Dokter Estetika",
+    "mayapada": "RS Hospital",
+    "eka": "RS Eka",
+    "aysha": "RS Islam Aysha",
+    "cepat-sehat": "Klinik Cepat Sehat",
+    "our-nurse": "Perawat Kami",
+    "article": "Article",
+    "form-book": {
+      "title": "Pesan kunjungan sekarang",
+      "name": "Nama",
+      "name-label": "Nama Anda",
+      "service": "Layanan",
+      "service-label": "Pilih Layanan",
+      "address": "Alamat",
+      "address-label": "Alamat Anda"
+    }
   },
   "payment": {
     "name": "Nama Lengkap",

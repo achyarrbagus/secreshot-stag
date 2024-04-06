@@ -5,6 +5,7 @@ const DoctorCard = ({
   job,
   practiceLocation,
   isnurse,
+  titlelocation,
   lang,
 }) => {
   return (
@@ -25,11 +26,7 @@ const DoctorCard = ({
                 <hr />
                 <div className="text-start">
                   <p>
-                    {lang == "id" ? (
-                      <>Lokasi Praktik</>
-                    ) : (
-                      <>Practice Location</>
-                    )}
+                    {titlelocation}
                     <i className="mdi mdi-map-marker fs-18 ms-2"></i>
                   </p>
                   <ul className="ps-3">

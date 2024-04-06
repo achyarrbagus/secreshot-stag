@@ -1,17 +1,24 @@
+"use client";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "next-intl/client";
 import React from "react";
 import Link from "next/link";
 
-function MyNavbar({ lang, dispatch, setLang }) {
+function MyNavbar() {
+  const t = useTranslations("LocaleSwitcher");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const onLocaleChange = (newLocale) => {
+    router.replace(pathname, { locale: newLocale });
+  };
   return (
     <>
       <nav className="nav nav-top fixed-top">
         <div className="container">
           <div className="d-flex align-items-center gap-3">
-            <Link
-              href={`/?${
-                lang == "EN" ? "lang=en&locale=en" : "lang=idn&locale=id"
-              }`}
-            >
+            <Link href={"/" + locale}>
               <div style={{ cursor: "pointer" }} className="nav-brand">
                 <img src="/assets/img/logo.png" alt="" />
               </div>
@@ -19,8 +26,8 @@ function MyNavbar({ lang, dispatch, setLang }) {
 
             <div className="btn-group ms-auto">
               {(() => {
-                switch (lang) {
-                  case "ID":
+                switch (locale) {
+                  case "id":
                     return (
                       <button
                         type="button"
@@ -48,7 +55,7 @@ function MyNavbar({ lang, dispatch, setLang }) {
               <ul className="dropdown-menu dropdown-menu-end">
                 <li className="">
                   <button
-                    onClick={() => dispatch(setLang("EN"))}
+                    onClick={() => onLocaleChange("en")}
                     className="dropdown-item d-flex gap-1"
                     type="button"
                   >
@@ -63,7 +70,7 @@ function MyNavbar({ lang, dispatch, setLang }) {
                 </li>
                 <li className="">
                   <button
-                    onClick={() => dispatch(setLang("ID"))}
+                    onClick={() => onLocaleChange("id")}
                     className="dropdown-item d-flex gap-1"
                     type="button"
                   >

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { Providers } from "../../../lib/providers";
 
 type Props = {
   children: ReactNode;
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 //function to get the translations
 async function getMessages(locale: string) {
   try {
-    return (await import(`../../../locales/${locale}.json`)).default;
+    return (await import(`../../../locales/${locale}/common.json`)).default;
   } catch (error) {
     notFound();
   }
@@ -25,7 +26,7 @@ async function getMessages(locale: string) {
 
 //function to generate the routes for all the locales
 export async function generateStaticParams() {
-  return ["en", "fr"].map((locale) => ({ locale }));
+  return ["en", "id"].map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -38,7 +39,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className="bg-gray-100">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="p-5">{children}</div>
+          <Providers>{children}</Providers>
         </NextIntlClientProvider>
       </body>
     </html>
