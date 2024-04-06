@@ -1,11 +1,18 @@
 import { ReactNode } from "react";
+import type { Metadata } from "next";
 
 type Props = {
   children: ReactNode;
 };
+export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.svg",
+  },
+  title: "Cepat Sehat",
+  description:
+    "We deliver personalized and compassionate healthcare to your home through our experienced professionals",
+};
 
-// Since we have a `not-found.tsx` page on the root, a layout file
-// is required, even if it's just passing children through.
 export default function RootLayout({ children }: Props) {
   return children;
 }

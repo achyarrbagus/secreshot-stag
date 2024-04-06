@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import HomeId from "./page-id";
 import React, { useState } from "react";
 import { Suspense } from "react";
 import { Autoplay } from "swiper/modules";
@@ -65,7 +64,10 @@ const Home = () => {
             <h3 className="title-section"> {t("our-service")} </h3>
             <div className="row g-3">
               <div className="col-4">
-                <Link href="/doctor-home-visit" className="box-service">
+                <Link
+                  href={locale + "/doctor-home-visit"}
+                  className="box-service"
+                >
                   <i className="icon-menu-doctor-home"></i>
                   <span className="title-service"> {t("service-menu.1")} </span>
                 </Link>
@@ -165,7 +167,7 @@ const Home = () => {
               <div className="col-md-12 col-lg-8">
                 <div className="row g-3 g-md-5 justify-content-center">
                   <DoctorCard
-                    image={`assets/img/doctor/dr-dewi-f.png`}
+                    image={`/assets/img/doctor/dr-dewi-f.png`}
                     name="dr. Dewi Fransiska, Sp.B"
                     job={t("dr-surgeon")}
                     str="3121101422105406"
@@ -173,7 +175,7 @@ const Home = () => {
                     practiceLocation={[t("mayapada"), t("eka")]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-dwi-s.png`}
+                    image={`/assets/img/doctor/dr-dwi-s.png`}
                     name="dr. Dwi Suryaning Ayu Aprilizia, Sp.A"
                     job={t("dr-pediatrician")}
                     str="3321201323154360"
@@ -181,7 +183,7 @@ const Home = () => {
                     practiceLocation={["Aysha Islamic Hospital"]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-ayu-a.png`}
+                    image={`/assets/img/doctor/dr-ayu-a.png`}
                     name="dr. Ayu A. Istiana"
                     job="Aesthetic Doctor"
                     str="3321201323154360"
@@ -189,7 +191,7 @@ const Home = () => {
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-ernita-r.png`}
+                    image={`/assets/img/doctor/dr-ernita-r.png`}
                     name="dr. Ernita Rosyanti Dewi"
                     job="General Practitioner"
                     str="3121100220145544"
@@ -197,7 +199,7 @@ const Home = () => {
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-irvan-r.png`}
+                    image={`/assets/img/doctor/dr-irvan-r.png`}
                     name="dr. Irvan Rizki Fitri"
                     job="General Practitioner"
                     str="3121100220145544"
@@ -205,7 +207,7 @@ const Home = () => {
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-melchisedek-a.png`}
+                    image={`/assets/img/doctor/dr-melchisedek-a.png`}
                     name="dr. Melchisedek A.V.P Marbun"
                     job="General Practitioner"
                     str="3111100220155405"
