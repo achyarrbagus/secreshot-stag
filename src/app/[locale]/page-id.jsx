@@ -4,13 +4,13 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
-import Helper from "../../lib/helper/helper";
-import CardArticleSlide from "./components/card-article-slide";
-import DoctorCard from "./components/card-doctor";
-import NurseCard from "./components/card-nurse";
+import Helper from "../../../lib/helper/helper";
+import CardArticleSlide from "../components/card-article-slide";
+import DoctorCard from "../components/card-doctor";
+import NurseCard from "../components/card-nurse";
 import useSWR from "swr";
 import axios from "axios";
-import HeroBanner from "./components/hero-banner";
+import HeroBanner from "../components/hero-banner";
 import Image from "next/image";
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 const HomeId = () => {
