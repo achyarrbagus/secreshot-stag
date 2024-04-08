@@ -2,6 +2,7 @@
 const { i18n } = require("./next-i18next.config");
 const withPWA = require("next-pwa")({
   dest: "public",
+  maximumFileSizeToCacheInBytes: 5000000,
 });
 const nextConfig = {
   output: "export",

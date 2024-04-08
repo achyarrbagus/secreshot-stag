@@ -9,7 +9,8 @@ import useSWR from "swr";
 import CardArticleSlide from "../components/card-article-slide";
 import "../../../public/assets/css/style.css";
 import "../../../public/assets/fontello/css/csehat.css";
-import LayoutWrapper from "../components/layout-wrapper";
+import LayoutWrapper from "@/app/components/layout-wrapper";
+
 import DoctorCard from "../components/card-doctor";
 import Helper from "../../../lib/helper/helper";
 import axios from "axios";
@@ -405,9 +406,7 @@ export default function App() {
   return (
     <>
       <LayoutWrapper>
-        <Suspense fallback={<div>Loading</div>}>
-          <Home />
-        </Suspense>
+        <Home />
       </LayoutWrapper>
     </>
   );

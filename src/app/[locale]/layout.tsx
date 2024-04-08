@@ -39,7 +39,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className="bg-gray-100">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Providers>{children}</Providers>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

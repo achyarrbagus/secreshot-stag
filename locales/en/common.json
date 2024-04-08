@@ -53,9 +53,147 @@
       "address-label": "Your Address"
     }
   },
-  "payment": {
-    "name": "Full Name",
-    "phone": "Phone Number",
+  "doctor-home-visit": {
+    "title-banner": "Doctor Home Visit",
+    "title-slogan": "Experience the convenience of consultations with doctors right in your place. With a guarantee of a clinic.",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "sub-title": "Our Primary physician home visits include :",
+    "service-menu": {
+      "1": {
+        "title": "Doctor Home Visit",
+        "desc": "A Doctor Home Visit brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp400.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
+          },
+          "2": {
+            "title": "Personalized Care",
+            "desc": "Tailored treatment plans considering home environment and lifestyle."
+          },
+          "3": {
+            "title": "Timely Intervention",
+            "desc": "Early detection and action to prevent complications."
+          },
+          "4": {
+            "title": "Enhanced Relationship",
+            "desc": "In-home visits foster better communication and trust."
+          },
+          "5": {
+            "title": "Accessibility",
+            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
+          }
+        }
+      },
+      "2": {
+        "title": "Nurse Home Visit",
+        "desc": "A Nurse Home Visit brings healthcare to your door, offering personalized services like assessments, treatments, and health education",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp200.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
+          },
+          "2": {
+            "title": "Personalized Care",
+            "desc": "Tailored treatment plans considering home environment and lifestyle."
+          },
+          "3": {
+            "title": "Timely Intervention",
+            "desc": "Early detection and action to prevent complications."
+          },
+          "4": {
+            "title": "Enhanced Relationship",
+            "desc": "In-home visits foster better communication and trust."
+          },
+          "5": {
+            "title": "Accessibility",
+            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
+          }
+        }
+      },
+      "3": {
+        "title": "Medical Check Up",
+        "desc": "A Doctor Home Visit brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp250.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
+          },
+          "2": {
+            "title": "Personalized Care",
+            "desc": "Tailored treatment plans considering home environment and lifestyle."
+          },
+          "3": {
+            "title": "Timely Intervention",
+            "desc": "Early detection and action to prevent complications."
+          },
+          "4": {
+            "title": "Enhanced Relationship",
+            "desc": "In-home visits foster better communication and trust."
+          },
+          "5": {
+            "title": "Accessibility",
+            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
+          }
+        }
+      },
+      "4": {
+        "title": "Vaksinasi Anak",
+        "desc": "Vaksinasi Anak adalah pemberian vaksin untuk melindungi anak dari penyakit seperti campak, gondongan, rubella, dan polio.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp150.000",
+        "list-benefit": {
+          "1": {
+            "title": "Perlindungan Kesehatan",
+            "desc": "Vaksin melindungi anak-anak dari penyakit serius."
+          },
+          "2": {
+            "title": "Pertahanan Nasional",
+            "desc": "Vaksinasi menghemat biaya pengobatan dengan mencegah penyakit parah."
+          },
+          "3": {
+            "title": "Akses Sekolah",
+            "desc": "Vaksinasi yang diwajibkan menjamin akses terhadap pendidikan di lingkungan yang lebih aman."
+          },
+          "4": {
+            "title": "Kesehatan Global",
+            "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
     "detail": "Payment Details",
     "fee": "Fee",
     "discount": "Discount",
