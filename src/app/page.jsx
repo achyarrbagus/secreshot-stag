@@ -261,7 +261,7 @@ const Home = () => {
                       />
                       <NurseCard
                         name="Andi Andriansyah S."
-                        str="1201512214112821"
+                        str="HA00000870437934"
                         isnurse={true}
                         image="assets/img/doctor/nurse-andi.png"
                       />
