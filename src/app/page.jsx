@@ -277,6 +277,12 @@ const Home = () => {
                         isnurse={true}
                         image="assets/img/doctor/nurse-irfan.png"
                       />
+                      <NurseCard
+                        name="Dimas Catur Nugroho"
+                        str="ED00000360053713"
+                        isnurse={true}
+                        image="/assets/img/doctor/nurse-dimas.png"
+                      />
                     </div>
                   </div>
                 </div>

@@ -412,7 +412,7 @@ const HomeNursing = () => {
                         <div className="items-doctor">
                           <div className="img-doctor">
                             <img
-                              src="assets/img/doctor/nurse-dimas.png"
+                              src="/assets/img/doctor/nurse-dimas.png"
                               alt=""
                             />
                           </div>
