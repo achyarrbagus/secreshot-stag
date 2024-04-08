@@ -343,7 +343,7 @@ const HomeNursingId = () => {
                       </div>
                       <div className="name">
                         <h5>Andi Andriansyah S.</h5>
-                        <span>STR: 1201512214112821</span>
+                        <span>STR: HA00000870437934</span>
                       </div>
                     </div>
                   </div>
