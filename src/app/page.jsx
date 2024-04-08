@@ -205,7 +205,7 @@ const Home = () => {
                         image={`assets/img/doctor/dr-ayu-a.png`}
                         name="dr. Ayu A. Istiana"
                         job="Aesthetic Doctor"
-                        str="3321201323154360"
+                        str="3121100220145699"
                         practiceLocation={["Cepat Sehat Clinic"]}
                       />
                       <DoctorCard
@@ -219,7 +219,7 @@ const Home = () => {
                         image={`assets/img/doctor/dr-irvan-r.png`}
                         name="dr. Irvan Rizki Fitri"
                         job="General Practitioner"
-                        str="3121100220145544"
+                        str="3111100321119174"
                         practiceLocation={["Cepat Sehat Clinic"]}
                       />
                       <DoctorCard

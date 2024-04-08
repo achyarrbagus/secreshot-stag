@@ -188,7 +188,7 @@ const HomeId = () => {
                     image={`assets/img/doctor/dr-ayu-a.png`}
                     name="dr. Ayu A. Istiana"
                     job="Dokter Estetika"
-                    str="3321201323154360"
+                    str="3121100220145699"
                     lang="id"
                     practiceLocation={["Klinik Cepat Sehat"]}
                   />
@@ -204,7 +204,7 @@ const HomeId = () => {
                     image={`assets/img/doctor/dr-irvan-r.png`}
                     name="dr. Irvan Rizki Fitri"
                     job="Dokter Umum"
-                    str="3121100220145544"
+                    str="3111100321119174"
                     practiceLocation={["Klinik Cepat Sehat"]}
                   />
                   <DoctorCard
