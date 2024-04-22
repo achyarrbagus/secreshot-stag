@@ -1,5 +1,8 @@
+import axios from "axios";
+import { number } from "yup";
+
 class Helper {
-  RedirectToWa(form, lang, isForm) {
+  async RedirectToWa(form, lang, isForm) {
     let phone = "6285212500030";
     const date = new Date();
     if (date.getHours() >= 21 || date.getHours() < 6) {
@@ -33,9 +36,25 @@ Layanan : ${form?.service}`);
         Service : ${form.service}
         `);
       }
+      const formData = {
+        customer_name: form.name,
+        customer_address: form.address,
+        service_name: form.service,
+      };
 
-      let url = `https://api.whatsapp.com/send/?phone=${phone}&text=${wardingWa}&type=phone_number&app_absent=0`;
-      window.location.href = url;
+      let resp = await axios
+        .post("https://api.cepatsehat.com/api/v1/book-service", formData)
+        .then(function (response) {
+          console.log();
+          const numberPhone = response.data.data.number_whatsapp;
+          let url = `https://api.whatsapp.com/send/?phone=${numberPhone}&text=${wardingWa}&type=phone_number&app_absent=0`;
+          return url;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+      window.location.href = resp;
 
       return;
     } else {

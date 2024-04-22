@@ -23,6 +23,9 @@ function NavbarAdmin({ menu }) {
             <Nav.Link onClick={() => router.push("/admin/customer-service")}>
               Customer Service
             </Nav.Link>
+            <Nav.Link onClick={() => router.push("/admin/booking-list")}>
+              Booking List
+            </Nav.Link>
             {/* <Nav.Link>
               <Button
                 className="btn btn-success btn-sm"
@@ -39,6 +42,15 @@ function NavbarAdmin({ menu }) {
                 onClick={() => router.push("/admin/create-article-v2")}
               >
                 create article
+              </Button>
+            </Nav.Link>
+            <Nav.Link>
+              <Button
+                className="btn btn-warning btn-sm"
+                size="sm"
+                onClick={() => router.push("/admin/create-cs")}
+              >
+                Add Customer Service
               </Button>
             </Nav.Link>
           </Nav>

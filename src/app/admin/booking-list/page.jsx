@@ -15,7 +15,7 @@ const App = () => {
   const [cs, setcs] = useState("");
   const FetchCS = async () => {
     axios
-      .get("https://api.cepatsehat.com/api/v1/customers-service")
+      .get("https://api.cepatsehat.com/api/v1/books-service")
       .then(function (response) {
         console.log(response.data.data);
         setcs(response.data.data);
@@ -83,50 +83,24 @@ const App = () => {
       sortable: true,
     },
     {
-      name: "Customer Service Name",
-      selector: (row) => row.customer_service_name,
+      name: "Customer Name",
+      selector: (row) => row.customer_name,
       sortable: true,
     },
     {
-      name: "Number Whatsapp",
-      selector: (row) => row.number_whatsapp,
+      name: "Customer address",
+      selector: (row) => row.customer_address,
       sortable: true,
     },
     {
-      name: "Start Time",
-      selector: (row) => row.start_time,
+      name: "Service name",
+      selector: (row) => row.service_name,
       sortable: true,
     },
+
     {
-      name: "End Time",
-      selector: (row) => row.end_time,
-      sortable: true,
-    },
-    {
-      name: "Status",
-      selector: (row) => row.status.toString(),
-      sortable: true,
-    },
-    {
-      name: "Action",
-      selector: (row) => (
-        <div className="d-flex gap-2">
-          <Button
-            variant="primary"
-            onClick={() => router.push(`/admin/update-cs?id=${row.id}`)}
-            size="sm"
-          >
-            Update
-          </Button>
-          <Button
-            variant="danger"
-            onClick={() => DeleteArticle(row.id)}
-            size="sm"
-          >
-            Delete
-          </Button>
-        </div>
-      ),
+      name: "created",
+      selector: (row) => row.created_at,
       sortable: true,
     },
   ];

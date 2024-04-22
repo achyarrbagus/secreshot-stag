@@ -7,14 +7,11 @@ import "react-quill/dist/quill.snow.css";
 import NavbarAdmin from "../components/navbar";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
-import dynamic from "next/dynamic";
 import { useFormik } from "formik";
 import Cookies from "js-cookie";
 import axios from "axios";
 import * as yup from "yup";
 import { Suspense } from "react";
-
-const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -40,25 +37,17 @@ function MyVerticallyCenteredModal(props) {
 
 const Page = () => {
   const URL_API = "https://api.cepatsehat.com/api/v1/";
-  // const URL_API = "http://127.0.0.1:5500/api/v1/";
-  const URL_BANNER = "https://api.cepatsehat.com/uploads/";
 
   const router = useRouter();
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
 
-  const [imgBanner, setImgBanner] = useState();
-  const [categories, setCategories] = useState();
   const [modalShow, setModalShow] = useState(false);
   const [article, setArticle] = useState({
     article_title: "",
   });
 
   const [valueTextEditor, setTextEditor] = useState();
-
-  useEffect(() => {
-    FetchArticle();
-  }, []);
 
   const validationsSchema = yup.object().shape({
     customer_service_name: yup.string().min(5).required("Required"),
@@ -71,25 +60,12 @@ const Page = () => {
   });
 
   const onSubmit = async (values) => {
-    const { article_title, article_category, source, is_active, intro } =
-      values;
-
     const token = Cookies.get("islogin");
     if (!token) {
       alert("token not found");
       router.push("/admin");
       return;
     }
-    // const formData = new FormData();
-    // formData.set("title", article_title);
-    // formData.set("desc", valueTextEditor);
-    // formData.set("source", source);
-    // formData.set("category", article_category);
-    // formData.set("status", is_active);
-    // formData.set("intro", intro);
-    // formData.append("image", imgBanner);
-
-    console.log(values);
 
     const config = {
       headers: {
@@ -99,7 +75,7 @@ const Page = () => {
     };
 
     axios
-      .patch(`${URL_API}cs/${id}`, values, config)
+      .post(`${URL_API}cs`, values, config)
       .then(function (response) {
         console.log(response.data.data);
         alert("updated success");
@@ -114,12 +90,12 @@ const Page = () => {
   };
 
   const valueForm = {
-    customer_service_name: article?.customer_service_name || "",
-    start_time: article?.start_time || "",
-    end_time: article?.end_time || "",
-    status: article?.status || "",
-    url_telegram: article?.url_telegram || "",
-    number_whatsapp: article?.number_whatsapp || "",
+    customer_service_name: "",
+    start_time: "",
+    end_time: "",
+    status: "",
+    url_telegram: "",
+    number_whatsapp: "",
   };
 
   const initialValues = {
@@ -239,32 +215,6 @@ const Page = () => {
                   )}
               </div>
               <div className="mb-2">
-                <label className="mb-2">Status</label>
-                <br />
-                <div className="form-check form-check-inline">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    id="status"
-                    name="status"
-                    checked={formik.values.status.toString() === "true"}
-                    onChange={(e) => {
-                      formik.handleChange(e);
-                      formik.setFieldValue(
-                        "status",
-                        e.target.checked ? "true" : "false"
-                      );
-                    }}
-                    onBlur={formik.handleBlur}
-                  />
-                  <label className="form-check-label" htmlFor="inlineCheckbox1">
-                    {formik.values.status.toString() === "true"
-                      ? "Active"
-                      : "Not Active"}
-                  </label>
-                </div>
-              </div>
-              <div className="mb-2">
                 <label htmlFor="article_title" className="form-label">
                   Url Telegram
                 </label>
@@ -352,7 +302,7 @@ const Page = () => {
 
               <div className="d-flex justify-content-end">
                 <button className="btn btn-primary btn-sm" type="submit">
-                  Update Customer Service
+                  Add Customer Service
                 </button>
               </div>
             </form>

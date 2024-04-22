@@ -34,6 +34,11 @@ function MyFooter() {
                 Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
                 80361
               </p>
+              <h4 className="fs-14">Jakarta Address</h4>
+              <p>
+                Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm.
+                Jakarta Timur, Provinsi DKI Jakarta 13510
+              </p>
             </div>
             <div className="col-md-12">
               <div className="d-flex align-items-center">
