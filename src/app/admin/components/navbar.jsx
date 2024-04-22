@@ -20,6 +20,9 @@ function NavbarAdmin({ menu }) {
             <Nav.Link onClick={() => router.push("/admin/kur-bni")}>
               Kur Bni
             </Nav.Link>
+            <Nav.Link onClick={() => router.push("/admin/customer-service")}>
+              Customer Service
+            </Nav.Link>
             {/* <Nav.Link>
               <Button
                 className="btn btn-success btn-sm"
