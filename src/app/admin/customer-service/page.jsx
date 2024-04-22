@@ -54,7 +54,7 @@ const App = () => {
           },
         };
         axios
-          .delete(`https://api.cepatsehat.com/api/v1/article/${id}`, config)
+          .delete(`https://api.cepatsehat.com/api/v1/cs/${id}`, config)
           .then(function (response) {
             console.log(response);
 
@@ -83,23 +83,28 @@ const App = () => {
       sortable: true,
     },
     {
-      name: "Publish Date",
-      selector: (row) => row.publish_date,
+      name: "Customer Service Name",
+      selector: (row) => row.customer_service_name,
       sortable: true,
     },
     {
-      name: "Title",
-      selector: (row) => row.title,
+      name: "Number Whatsapp",
+      selector: (row) => row.number_whatsapp,
       sortable: true,
     },
     {
-      name: "Locale",
-      selector: (row) => row.locale,
+      name: "Start Time",
+      selector: (row) => row.start_time,
       sortable: true,
     },
     {
-      name: "Intro",
-      selector: (row) => CutText(row.intro),
+      name: "End Time",
+      selector: (row) => row.end_time,
+      sortable: true,
+    },
+    {
+      name: "Status",
+      selector: (row) => row.status.toString(),
       sortable: true,
     },
     {
@@ -108,7 +113,7 @@ const App = () => {
         <div className="d-flex gap-2">
           <Button
             variant="primary"
-            onClick={() => router.push(`/admin/update-article?id=${row.id}`)}
+            onClick={() => router.push(`/admin/update-cs?id=${row.id}`)}
             size="sm"
           >
             Update

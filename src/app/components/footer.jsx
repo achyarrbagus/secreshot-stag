@@ -22,16 +22,17 @@ function MyFooter() {
           </div>
           <div className="row mt-4">
             <div className="col-md-8 text-white">
-              <h4 className="fs-14">Klinik Cepat Sehat Indonesia</h4>
+              <h4 className="fs-16">Klinik Cepat Sehat Indonesia</h4>
               <p>Registered Number 04102100035090001</p>
 
+              <h4 className="fs-14">Seminyak Address</h4>
               <p>
-                Seminyak Address Jl. Legian No.369 X, Legian, Kuta, Badung
-                Regency, Bali 80361
+                Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali 80361
               </p>
+              <h4 className="fs-14"> Jimbaran Address</h4>
               <p>
-                Jimbaran Address Jl. Puri Gading, Jimbaran, South Kuta, Badung
-                Regency, Bali 80361
+                Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
+                80361
               </p>
             </div>
             <div className="col-md-12">
