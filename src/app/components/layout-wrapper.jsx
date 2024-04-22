@@ -33,6 +33,22 @@ export default function LayoutWrapper({ children }) {
     })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
   }, []);
 
+  const formData = {
+    name: "float button",
+    address: "float button",
+    service: "float button",
+  };
+
+  const redirectWa = () => {
+    const helper = new Helper();
+    helper.RedirectToWa(formData, lang, false);
+  };
+
+  const redirectTele = () => {
+    const helper = new Helper();
+    helper.RedirectToTele(formData);
+  };
+
   return (
     <>
       <GoogleTagManager gtmId="GTM-PFX6ZWQ4" />
@@ -49,15 +65,12 @@ export default function LayoutWrapper({ children }) {
       >
         <div className="btn-float">
           <div className="btn-circle whatsapp">
-            <a
-              onClick={() => helper.RedirectToWa("", "", false)}
-              className="text-white"
-            >
+            <a onClick={() => redirectWa()} className="text-white">
               <i className="fs-24 fa-brands fa-whatsapp"></i>
             </a>
           </div>
           <div className="btn-circle telegram">
-            <a href="https://t.me/cepat_sehat" className="text-white">
+            <a onClick={() => redirectTele()} className="text-white">
               <i className="fs-24 fa-brands fa-telegram"></i>
             </a>
           </div>

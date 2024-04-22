@@ -24,7 +24,7 @@ const RemoteTelemedicId = () => {
   };
   const redirectTele = () => {
     const helper = new Helper();
-    helper.redirectTele();
+    helper.redirectTele(formData);
   };
 
   const [book, setBook] = useState("Pesan kunjungan sekarang");

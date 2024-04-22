@@ -37,7 +37,7 @@ const Home = () => {
 
   const redirectTele = () => {
     const helper = new Helper();
-    helper.RedirectToTele();
+    helper.RedirectToTele(formData);
   };
   const [formData, setFormData] = React.useState({
     name: "",

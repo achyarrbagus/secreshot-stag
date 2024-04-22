@@ -72,7 +72,7 @@ const InHomeTherapy = () => {
   };
   const redirectTele = () => {
     const helper = new Helper();
-    helper.redirectTele();
+    helper.redirectTele(formData);
   };
 
   switch (lang) {

@@ -3,16 +3,24 @@ import { number } from "yup";
 
 class Helper {
   async RedirectToWa(form, lang, isForm) {
-    let phone = "6285212500030";
-    const date = new Date();
-    if (date.getHours() >= 21 || date.getHours() < 6) {
-      // phone = "6281222200113";
-      phone = "6285212500030";
-    }
-
     if (!isForm) {
-      let url = `https://api.whatsapp.com/send/?phone=${phone}&text=&type=phone_number&app_absent=0`;
-      window.location.href = url;
+      const formData = {
+        customer_name: form.name,
+        customer_address: form.address,
+        service_name: form.service,
+      };
+      let resp = await axios
+        .post("https://api.cepatsehat.com/api/v1/book-service", formData)
+        .then(function (response) {
+          const numberPhone = response.data.data.number_whatsapp;
+          let url = `https://api.whatsapp.com/send/?phone=${numberPhone}&text=&type=phone_number&app_absent=0`;
+          return url;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+      window.location.href = resp;
       return;
     }
 
@@ -62,8 +70,24 @@ Layanan : ${form?.service}`);
       return;
     }
   }
-  RedirectToTele() {
-    window.location.href = "https://t.me/cepat_sehat";
+  async RedirectToTele(form) {
+    const formData = {
+      customer_name: form.name || "",
+      customer_address: form.address || "",
+      service_name: form.service || "",
+    };
+
+    let resp = await axios
+      .post("https://api.cepatsehat.com/api/v1/book-service", formData)
+      .then(function (response) {
+        const url = response.data.data.url_telegram;
+        return url;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+    window.location.href = resp;
   }
 }
 

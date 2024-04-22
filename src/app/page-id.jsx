@@ -36,7 +36,8 @@ const HomeId = () => {
   };
 
   const redirectTele = () => {
-    window.location.href = "https://t.me/cepat_sehat";
+    const helper = new Helper();
+    helper.RedirectToTele(formData);
   };
 
   return (

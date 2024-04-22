@@ -54,7 +54,7 @@ const HolisticAlternativeId = () => {
   };
   const redirectTele = () => {
     const helper = new Helper();
-    helper.redirectTele();
+    helper.redirectTele(formData);
   };
 
   return (

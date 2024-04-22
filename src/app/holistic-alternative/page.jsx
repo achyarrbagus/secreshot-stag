@@ -68,7 +68,7 @@ const HolisticAlternative = () => {
   };
   const redirectTele = () => {
     const helper = new Helper();
-    helper.redirectTele();
+    helper.redirectTele(formData);
   };
 
   const lang = useSelector((state) => state.lang.value);
