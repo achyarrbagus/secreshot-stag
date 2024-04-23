@@ -14,7 +14,6 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import { setLang } from "../../../lib/redux/slices/langSlice/langSlice";
 
 export default function LayoutWrapper({ children }) {
-  const helper = new Helper();
   const lang = useSelector((state) => state.lang.value);
   const dispatch = useDispatch();
   useEffect(() => {

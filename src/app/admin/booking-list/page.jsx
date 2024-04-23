@@ -18,7 +18,7 @@ const App = () => {
       .get("https://api.cepatsehat.com/api/v1/books-service")
       .then(function (response) {
         console.log(response.data.data);
-        setcs(response.data.data);
+        setcs(response.data.data.reverse());
       })
       .catch(function (error) {
         setcs("");
