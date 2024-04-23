@@ -136,7 +136,7 @@ const App = () => {
       <NavbarAdmin />
       <div className="container-fluid">
         <DataTable
-          title="List Article"
+          title="CS List"
           columns={columns}
           data={cs}
           pagination

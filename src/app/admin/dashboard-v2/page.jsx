@@ -83,31 +83,37 @@ const App = () => {
       name: "Id",
       selector: (row) => row.id,
       sortable: true,
+      width: "60px",
     },
     {
       name: "Publish Date",
       selector: (row) => row.publish_date,
       sortable: true,
+      width: "110px",
     },
     {
       name: "Title",
       selector: (row) => row.title,
       sortable: true,
+      width: "300px",
     },
     {
       name: "Locale",
       selector: (row) => row.locale,
       sortable: true,
+      width: "60px",
     },
     {
       name: "Intro",
       selector: (row) => CutText(row.intro),
       sortable: true,
+      width: "300px",
     },
     {
       name: "Group Article",
       selector: (row) => row.article_id_v2,
       sortable: true,
+      width: "60px",
     },
     {
       name: "Add Lenguage",
@@ -131,6 +137,7 @@ const App = () => {
         </>
       ),
       sortable: true,
+      width: "75px",
     },
     {
       name: "Action",
@@ -163,11 +170,13 @@ const App = () => {
       name: "Created At",
       selector: (row) => row.created_at,
       sortable: true,
+      width: "140px",
     },
     {
       name: "Updated At",
       selector: (row) => row.updated_at,
       sortable: true,
+      width: "140px",
     },
   ];
 
