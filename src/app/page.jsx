@@ -25,6 +25,11 @@ const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 const Home = () => {
   const lang = useSelector((state) => state.lang.value);
   const [locale, setLocale] = useState("en");
+  const [formData, setFormData] = React.useState({
+    name: "",
+    address: "",
+    service: "Select Service",
+  });
   const { data: articles, error: articlesError } = useSWR(
     `https://api.cepatsehat.com/api/v2/articles?locale=${locale}`,
     fetcher
@@ -37,13 +42,9 @@ const Home = () => {
 
   const redirectTele = () => {
     const helper = new Helper();
+
     helper.RedirectToTele(formData);
   };
-  const [formData, setFormData] = React.useState({
-    name: "",
-    address: "",
-    service: "Select Service",
-  });
 
   const handleChange = (e) => {
     const { id, value } = e.target;

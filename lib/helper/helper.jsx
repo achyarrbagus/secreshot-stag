@@ -71,23 +71,34 @@ Layanan : ${form?.service}`);
     }
   }
   async RedirectToTele(form) {
-    const formData = {
-      customer_name: form.name || "",
-      customer_address: form.address || "",
-      service_name: form.service || "",
-    };
+    if (form?.name && form?.address && form?.service) {
+      if (form.service == "Select Service") {
+        return alert("please fill form correcly");
+      }
 
-    let resp = await axios
-      .post("https://api.cepatsehat.com/api/v1/book-service", formData)
-      .then(function (response) {
-        const url = response.data.data.url_telegram;
-        return url;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+      const formData = {
+        customer_name: form.name,
+        customer_address: form.address,
+        service_name: form.service,
+      };
 
-    window.location.href = resp;
+      let resp = await axios
+        .post("https://api.cepatsehat.com/api/v1/book-service", formData)
+        .then(function (response) {
+          const url = response.data.data.url_telegram;
+          return url;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+      window.location.href = resp;
+
+      return;
+    } else {
+      alert("please fill form with correctly");
+      return;
+    }
   }
 }
 
