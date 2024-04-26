@@ -12,12 +12,6 @@ import Accordion from "react-bootstrap/Accordion";
 const RemoteTelemedic = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
-  useEffect(() => {
-    const lang = searchParams.get("lang");
-    if (lang === "idn") {
-      dispatch(setLang("ID"));
-    }
-  }, []);
 
   const [book, setBook] = useState("Book a visit at your place now");
   const [formData, setFormData] = useState({
@@ -67,7 +61,7 @@ const RemoteTelemedic = () => {
   };
   const redirectTele = () => {
     const helper = new Helper();
-    helper.redirectTele(formData);
+    helper.RedirectToTele(formData);
   };
 
   switch (lang) {
