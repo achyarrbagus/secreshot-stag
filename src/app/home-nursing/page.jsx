@@ -35,7 +35,7 @@ const HomeNursing = () => {
   };
   const redirectTele = () => {
     const helper = new Helper();
-    helper.redirectTele(formData);
+    helper.RedirectToTele(formData);
   };
 
   const [book, setBook] = useState("Book a visit at your place now");

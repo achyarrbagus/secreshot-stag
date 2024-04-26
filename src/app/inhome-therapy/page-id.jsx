@@ -23,7 +23,7 @@ const InHomeTherapyId = () => {
   };
   const redirectTele = () => {
     const helper = new Helper();
-    helper.redirectTele(formData);
+    helper.RedirectToTele(formData);
   };
 
   const [book, setBook] = useState("Pesan kunjungan sekarang");

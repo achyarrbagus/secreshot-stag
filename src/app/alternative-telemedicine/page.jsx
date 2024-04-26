@@ -48,7 +48,7 @@ const InHomeDiagnostic = () => {
   };
   const redirectTele = () => {
     const helper = new Helper();
-    helper.redirectTele(formData);
+    helper.RedirectToTele(formData);
   };
 
   const lang = useSelector((state) => state.lang.value);
