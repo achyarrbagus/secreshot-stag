@@ -32,19 +32,23 @@ export default function LayoutWrapper({ children }) {
     })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
   }, []);
 
-  const formData = {
-    name: "float button",
-    address: "float button",
-    service: "float button",
-  };
-
   const redirectWa = () => {
     const helper = new Helper();
+    const formData = {
+      name: "float_button_Wa",
+      address: "float_button_wa",
+      service: "float_button_wa",
+    };
     helper.RedirectToWa(formData, lang, false);
   };
 
   const redirectTele = () => {
     const helper = new Helper();
+    const formData = {
+      name: "float_button_tele",
+      address: "float_button_tele",
+      service: "float_button_tele",
+    };
     helper.RedirectToTele(formData);
   };
 
