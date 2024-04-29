@@ -1,0 +1,361 @@
+{
+  "app": {
+    "name": "Cepat Sehat",
+    "logo": "sehatcepat.png",
+    "prefix": "+62",
+    "currency": "Rp",
+    "flag": "indonesia.png",
+    "title": "Yuk Cek Kesehatanmu Disini, konsultasi dokter online - Sehatcepat",
+    "keywords": "sehat cepat, cepat sehat, surat izin tidak masuk kerja, contoh surat izin sakit, surat izin sakit kerja, contoh surat izin sakit kerja, membuat surat izin sakit, surat sakit kerja, surat izin tidak masuk kerja karena sakit, ijin sakit, buat surat ijin sakit, cara bikin surat ijin sakit, cara membuat surat ijin sakit, contoh surat ijin sakit, surat ijin sakit dokter, surat ijin sakit kuliah, bikin surat ijin sakit ijin sakit kerja, harga suntik vitamin C, manfaat suntik vitamin C, efek samping, suntik vitamin C, dokter panggilan, panggil dokter  ke rumah, dokter panggilan ke rumah, konsultasi dokter online, sewa alat medis, rawat di rumah.",
+    "description": "sehat cepat menyediakan layanan konsultasi dokter online, suntik vitamin c dan mutivitamin serta layanan surat sakit online Kunjungi kami sekarang.",
+    "copyright": "Hak Cipta © 2022 Cepat Sehat. Seluruh hak cipta",
+    "practice-location": "Lokasi Praktik",
+    "our-doctors": "Dokter Kami",
+    "dr-surgeon": "Dokter Bedah",
+    "dr-general": "Dokter Umum",
+    "dr-pediatrician": "Dokter Anak",
+    "dr-asthetic": "Dokter Estetika",
+    "mayapada": "RS Hospital",
+    "eka": "RS Eka",
+    "aysha": "RS Islam Aysha",
+    "cepat-sehat": "Klinik Cepat Sehat",
+    "our-nurse": "Perawat Kami"
+  },
+  "home": {
+    "title-banner": "Mitra Terpercaya Anda untuk Layanan Kesehatan Homecare di Bali, Jakarta, Surabaya & Bandung",
+    "title-slogan": "Kami memberikan perawatan kesehatan personal ke rumah Anda melalui para profesional berpengalaman kami",
+    "book-button": "Book Now",
+    "our-service": "Layanan Kami",
+    "service-menu": {
+      "1": "Kunjungan Dokter Ke Rumah",
+      "2": "Perawatan Dirumah Dan Perawatan Luka",
+      "3": "Telemedis Jarak Jauh",
+      "4": "Terapi Alternatif Holistic",
+      "5": "Terapi IV Dirumah & Lainnya",
+      "6": "Layanan Alternatif"
+    },
+    "why": "Mengapa Memilih Kami?",
+    "why-slogan": "Sudah menangani 5000 pasien lebih di tahun 2023",
+    "why-menu": {
+      "1": "Layanan yang mudah, aman, dan nyaman",
+      "2": "Didukung oleh tenaga kesehatan bersertifikat dan terlatih",
+      "3": "Layanan 24 jam",
+      "4": "Cakupan yang luas"
+    },
+    "practice-location": "Lokasi Praktik",
+    "our-doctors": "Dokter Kami",
+    "dr-surgeon": "Dokter Bedah",
+    "dr-general": "Dokter Umum",
+    "dr-pediatrician": "Dokter Anak",
+    "dr-asthetic": "Dokter Estetika",
+    "mayapada": "RS Hospital",
+    "eka": "RS Eka",
+    "aysha": "RS Islam Aysha",
+    "cepat-sehat": "Klinik Cepat Sehat",
+    "our-nurse": "Perawat Kami",
+    "article": "Article",
+    "form-book": {
+      "title": "Pesan kunjungan sekarang",
+      "name": "Nama",
+      "name-label": "Nama Anda",
+      "service": "Layanan",
+      "service-label": "Pilih Layanan",
+      "address": "Alamat",
+      "address-label": "Alamat Anda"
+    }
+  },
+  "doctor-home-visit": {
+    "title-banner": "Kunjungan Dokter Ke Rumah",
+    "title-slogan": "Rasakan kemudahan konsultasi dengan dokter langsung di rumah Anda. Dengan jaminan klinik.",
+    "benefit": "Keuntungan",
+    "book-button": "Pesan",
+    "sub-title": "Keutamaan kunjungan dokter ke rumah anda meliputi :",
+    "service-menu": {
+      "1": {
+        "title": "Kunjungan Dokter Kerumah",
+        "desc": "Kunjungan dokter ke rumah menghadirkan fasilitas perawatan medis ke rumah anda, memungkinkan pasien menerima pemeriksaan, diagnosis, resep, dan menerima konsultasi dalam kenyamanan rumah mereka sendiri.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp400.000",
+        "list-benefit": {
+          "1": {
+            "title": "Kenyamanan",
+            "desc": "Layanan kesehatan dikirimkan ke rumah Anda untuk menghemat waktu dan kemudahan."
+          },
+          "2": {
+            "title": "Perawatan Pribadi",
+            "desc": "Rencana perawatan yang disesuaikan dengan mempertimbangkan lingkungan rumah dan gaya hidup."
+          },
+          "3": {
+            "title": "Intervensi Tepat Waktu",
+            "desc": "Deteksi dini dan tindakan untuk mencegah komplikasi."
+          },
+          "4": {
+            "title": "Peningkatan Hubungan",
+            "desc": "Kunjungan ke rumah menumbuhkan komunikasi dan kepercayaan yang lebih baik."
+          },
+          "5": {
+            "title": "Aksesibilitas",
+            "desc": "Akses mudah bagi kelompok rentan seperti lansia dan mereka yang memiliki masalah mobilitas"
+          }
+        }
+      },
+      "2": {
+        "title": "Kunjungan Perawat Kerumah",
+        "desc": "Kunjungan Perawat ke rumah menawarkan layanan yang dipersonalisasi ke rumah seperti pengecekan, perawatan, dan penyuluhan kesehatan.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp200.000",
+        "list-benefit": {
+          "1": {
+            "title": "Kenyamanan",
+            "desc": "Layanan kesehatan dikirimkan ke rumah Anda untuk menghemat waktu dan kemudahan."
+          },
+          "2": {
+            "title": "Perawatan Pribadi",
+            "desc": "Rencana perawatan yang disesuaikan dengan mempertimbangkan lingkungan rumah dan gaya hidup."
+          },
+          "3": {
+            "title": "Intervensi Tepat Waktu",
+            "desc": "Deteksi dini dan tindakan untuk mencegah komplikasi."
+          },
+          "4": {
+            "title": "Peningkatan Hubungan",
+            "desc": "Kunjungan ke rumah menumbuhkan komunikasi dan kepercayaan yang lebih baik."
+          },
+          "5": {
+            "title": "Aksesibilitas",
+            "desc": "Akses mudah bagi kelompok rentan seperti lansia dan mereka yang memiliki masalah mobilitas."
+          }
+        }
+      },
+      "3": {
+        "title": "Pemeriksaan Kesehatan",
+        "desc": "Pemeriksaan kesehatan adalah pertemuan rutin dengan ahli kesehatan untuk menilai kesehatan secara keseluruhan melalui pengukuran tanda vital, pemeriksaan fisik, dan jika perlu, pemeriksaan atau tes tambahan.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp150.000",
+        "list-benefit": {
+          "1": {
+            "title": "Tes Kadar Glukosa Darah",
+            "desc": "Periksa kadar gula darah untuk mendiagnosis dan mengelola diabetes dan hipoglikemia."
+          },
+          "2": {
+            "title": "Tes Kolesterol",
+            "desc": "Menilai kadar LDL, HDL, dan trigliserida untuk mengukur risiko kardiovaskular."
+          },
+          "3": {
+            "title": "Tes Asam Urat",
+            "desc": "Mengukur kadar asam urat untuk evaluasi fungsi ginjal dan mendiagnosis kondisi seperti asam urat."
+          },
+          "4": {
+            "title": "Pengukuran Tekanan Darah",
+            "desc": "Pengukuran Tekanan Darah Evaluasi tekanan darah arteri sebagai indikator penting kesehatan kardiovaskular."
+          },
+          "5": {
+            "title": "Tes Kadar Zat Besi",
+            "desc": "Mengukur jumlah zat besi dalam darah dan mendiagnosis kondisi seperti anemia."
+          }
+        }
+      },
+      "4": {
+        "title": "Vaksinasi Anak",
+        "desc": "Vaksinasi Anak adalah pemberian vaksin untuk melindungi anak dari penyakit seperti campak, gondongan, rubella, dan polio.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp150.000",
+        "list-benefit": {
+          "1": {
+            "title": "Perlindungan Kesehatan",
+            "desc": "Vaksin melindungi anak-anak dari penyakit serius."
+          },
+          "2": {
+            "title": "Pertahanan Nasional",
+            "desc": "Vaksinasi menghemat biaya pengobatan dengan mencegah penyakit parah."
+          },
+          "3": {
+            "title": "Akses Sekolah",
+            "desc": "Vaksinasi yang diwajibkan menjamin akses terhadap pendidikan di lingkungan yang lebih aman."
+          },
+          "4": {
+            "title": "Kesehatan Global",
+            "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
+          }
+        }
+      }
+    },
+    "form-book": {
+      "title": "Pesan kunjungan sekarang",
+      "name": "Nama",
+      "name-label": "Nama Anda",
+      "service": "Layanan",
+      "service-label": "Pilih Layanan",
+      "address": "Alamat",
+      "address-label": "Alamat Anda"
+    },
+    "practice-location": "Lokasi Praktik",
+    "our-doctors": "Dokter Kami",
+    "dr-surgeon": "Dokter Bedah",
+    "dr-general": "Dokter Umum",
+    "dr-pediatrician": "Dokter Anak",
+    "dr-asthetic": "Dokter Estetika",
+    "mayapada": "RS Hospital",
+    "eka": "RS Eka",
+    "aysha": "RS Islam Aysha",
+    "cepat-sehat": "Klinik Cepat Sehat",
+    "our-nurse": "Perawat Kami",
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "payment": {
+    "name": "Nama Lengkap",
+    "phone": "Nomor Handphone",
+    "detail": "Detail Pembayaran",
+    "fee": "Biaya",
+    "discount": "Diskon",
+    "method": "Pilih Metode Bayar",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Transfer Bank",
+    "card": "Card",
+    "other": "Pulsa",
+    "promo": "Kode Promo",
+    "input_promo": "Masukan Kode Promo",
+    "apply_promo": "Pakai",
+    "your": "Pembayaranmu",
+    "total": "Total",
+    "pay_confirm": "Bayar & Konfirmasi"
+  },
+  "question": {
+    "help": "Ada Pertanyaan? Tim kami siap membantu kamu secara langsung",
+    "contact_whatsapp": "Hubungi melalui whatsapp",
+    "link_whatsapp": "https://wa.me/6281222233144"
+  },
+  "doctor": {
+    "consultation": "Konsultasi Dokter",
+    "certification": "Chat dengan dokter tersertifikasi",
+    "type_consult": "Konsultasi",
+    "profile": "Profil Dokter",
+    "experience": "Pengalaman Dokter",
+    "schedule": "Jadwal Konsultasi Dokter",
+    "place_practice": "Tempat Praktek",
+    "graduated_from": "Lulusan Dari"
+  },
+  "chat": {
+    "end": "Akhiri",
+    "doctor_finish": "Terima Kasih Konsultasi online telah berakhir."
+  },
+  "team": {
+    "our": "Tim Kami"
+  },
+  "booking": {
+    "title": "Cek Kesehatan Kamu Tanpa Kerumah Sakit",
+    "description": "Kamu tidak perlu keluar rumah di pandemi ini untuk cek kesehatan kamu, biar kami yang datang kerumah kamu",
+    "inject": {
+      "title": "Suntik Vit C di Rumah",
+      "image": "ic_suntik_vit_c.png",
+      "description": "Vit C bermanfaat sebagai antidioksidan dan berfungsi untuk melindungi dari kerusakan sel akibat bakteri & virus",
+      "label": "Suntik Vit C Sekarang"
+    },
+    "vaccine": {
+      "title": "Vaksin di Rumah",
+      "image": "ic_vaksin_rumah.png",
+      "description": "Pertahakan kesehatan anda dan keluarga dirumah, dan vaksin segera mungkin",
+      "label": "Suntik Vaksin Sekarang"
+    },
+    "covid_vaccine": {
+      "title": "Vaksin Covid di Rumah",
+      "image": "ic_vaksin_covid.png",
+      "description": "Khawatir keluar rumah karena pandemi? jangan khawatir, kami akan datang kerumah anda untuk vaksin covide",
+      "label": "Lakukan Vaksin Covid-19 Sekarang"
+    }
+  },
+  "article": {
+    "label": "Artikel",
+    "detail": "Detil artikel"
+  },
+  "confirm": {
+    "title": "Konfirmasi",
+    "body": "Apakah anda yakin ?",
+    "yes": "Ya",
+    "no": "Tidak"
+  },
+  "prescription": {
+    "pharmacy": "Farmasi",
+    "patient_data": "Data Pasien",
+    "full_name": "Nama Lengkap",
+    "mobile_number": "Nomor Handphone",
+    "weight": "Berat Badan",
+    "kg": "Kg",
+    "age": "Umur",
+    "complaint": "Keluhan",
+    "medicine_allergy": "Alergi Obat",
+    "add_manual_medicine": "Tambah Obat Manual",
+    "data_treatment_plan": "Data - Rencana Pengobatan",
+    "medicine": "Obat",
+    "total": "Jumlah",
+    "rule": "Aturan",
+    "time": "Waktu",
+    "notes": "Catatan",
+    "delete": "Hapus",
+    "no_data": "No data",
+    "add_medicine": "Tambah Obat",
+    "required": "Required",
+    "submit": "Submit",
+    "preview": "Preview",
+    "enter_medicine_name": "Ketik Nama Obat",
+    "category": "Kategori",
+    "select_category": "Pilih Kategori",
+    "internal_medicine": "Obat Dalam",
+    "external_medicine": "Obat Luar",
+    "type": "Tipe",
+    "select_type": "Pilih Tipe",
+    "capsule": "Kapsul",
+    "tablet": "Tablet",
+    "ampoule": "Ampul",
+    "drops": "Drop",
+    "syrup": "Sirup",
+    "bottle": "Botol",
+    "pill": "Pil",
+    "cream": "Krim",
+    "sachets": "Sachet",
+    "vials": "Vial",
+    "box": "Box",
+    "tube": "Tube",
+    "units": "Unit",
+    "select_units": "Pilih Unit",
+    "details": "Butir",
+    "clean": "Bersih",
+    "store": "Simpan",
+    "medicine_list": "Daftar Obat",
+    "find_medicine": "Cari obat",
+    "medicine_name": "Nama Obat",
+    "total_as": "Jumlah as",
+    "per_item": "per Butir",
+    "how_to_use": "Aturan Pakai",
+    "x_a_day": "sehari",
+    "consume_time": "Waktu Minum",
+    "morning": "Pagi",
+    "afternoon": "Siang",
+    "evening": "Malam",
+    "before_eating": "Sebelum Makan",
+    "when_eating": "Saat Makan",
+    "after_eating": "Sesudah Makan",
+    "save": "Simpan",
+    "finished": "Selesai",
+    "success": "Sukses",
+    "online_prescription": "Resep Online",
+    "created_successfully": "Telah berhasil dibuat"
+  }
+}

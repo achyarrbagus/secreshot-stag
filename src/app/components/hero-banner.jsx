@@ -1,4 +1,4 @@
-const HeroBanner = ({ title, desc }) => {
+const HeroBanner = ({ title, desc, bookButton }) => {
   return (
     <>
       <div className="hero-banner">
@@ -9,7 +9,7 @@ const HeroBanner = ({ title, desc }) => {
               {desc}
             </p>
             <a href="#book" className="btn btn-warning">
-              Book Now
+              {bookButton}
             </a>
           </div>
         </div>

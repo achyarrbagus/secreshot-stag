@@ -2,29 +2,13 @@
 const { i18n } = require("./next-i18next.config");
 const withPWA = require("next-pwa")({
   dest: "public",
+  maximumFileSizeToCacheInBytes: 5000000,
 });
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+};
 
 module.exports = withPWA({
   reactStrictMode: false,
-  env: {
-    URL_API: process.env.URL_API,
-    URL_NEXT: process.env.URL_NEXT,
-    URL_APISURKIT: process.env.URL_APISURKIT,
-    SENDBIRD_APP_ID: process.env.SENDBIRD_APP_ID,
-    SENDBIRD_USER_ID: process.env.SENDBIRD_USER_ID,
-    SENDBIRD_API_TOKEN: process.env.SENDBIRD_API_TOKEN,
-    SENDBIRD_ACCESS_TOKEN: process.env.SENDBIRD_ACCESS_TOKEN,
-  },
-  i18n,
   ...nextConfig,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "api.cepatsehat.com",
-        pathname: "/uploads/**",
-      },
-    ],
-  },
 });

@@ -33,10 +33,10 @@ function MyHead() {
         />
 
         {/* <!-- fontello --> */}
-        <link rel="stylesheet" href="assets/fontello/css/csehat.css" />
+        <link rel="stylesheet" href="/assets/fontello/css/csehat.css" />
 
         {/* <!-- custom --> */}
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
       </head>
       {/* Konten aplikasi Anda */}
     </>

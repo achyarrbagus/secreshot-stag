@@ -1,86 +1,87 @@
+"use client";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "next-intl/client";
+import { Dropdown, Nav, Container } from "react-bootstrap";
+
 import React from "react";
 import Link from "next/link";
 
-function MyNavbar({ lang, dispatch, setLang }) {
+function MyNavbar() {
+  // const t = useTranslations("LocaleSwitcher");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const onLocaleChange = (newLocale) => {
+    router.replace(pathname, { locale: newLocale });
+  };
   return (
     <>
-      <nav className="nav nav-top fixed-top">
-        <div className="container">
+      <Nav activeKey="/home" className="nav nav-top fixed-top">
+        <Container>
           <div className="d-flex align-items-center gap-3">
-            <Link
-              href={`/?${
-                lang == "EN" ? "lang=en&locale=en" : "lang=idn&locale=id"
-              }`}
-            >
+            <Link href={`/${locale}`}>
               <div style={{ cursor: "pointer" }} className="nav-brand">
                 <img src="/assets/img/logo.png" alt="" />
               </div>
             </Link>
 
-            <div className="btn-group ms-auto">
+            <Dropdown className="btn-group ms-auto">
               {(() => {
-                switch (lang) {
-                  case "ID":
+                switch (locale) {
+                  case "id":
                     return (
-                      <button
-                        type="button"
+                      <Dropdown.Toggle
+                        variant=""
                         className="btn btn-secondary dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
+                        id="dropdown-basic"
                       >
                         <i className="mdi mdi-earth me-2"></i> ID
-                      </button>
+                      </Dropdown.Toggle>
                     );
                   default:
                     return (
-                      <button
-                        type="button"
+                      <Dropdown.Toggle
+                        variant=""
                         className="btn btn-secondary dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
+                        id="dropdown-basic"
                       >
                         <i className="mdi mdi-earth me-2"></i> EN
-                      </button>
+                      </Dropdown.Toggle>
                     );
                 }
               })()}
 
-              <ul className="dropdown-menu dropdown-menu-end">
-                <li className="">
-                  <button
-                    onClick={() => dispatch(setLang("EN"))}
-                    className="dropdown-item d-flex gap-1"
-                    type="button"
-                  >
-                    <img
-                      src="assets/img/flag/EN Flag_new.png"
-                      alt=""
-                      className="mt-1"
-                      width={25}
-                    />
-                    English
-                  </button>
-                </li>
-                <li className="">
-                  <button
-                    onClick={() => dispatch(setLang("ID"))}
-                    className="dropdown-item d-flex gap-1"
-                    type="button"
-                  >
-                    <img
-                      src="assets/img/flag/ID Flag_new.png"
-                      alt=""
-                      className="mt-1"
-                      width={25}
-                    />
-                    Indonesia
-                  </button>
-                </li>
-              </ul>
-            </div>
+              <Dropdown.Menu>
+                <Dropdown.Item
+                  onClick={() => onLocaleChange("en")}
+                  className="d-flex gap-1"
+                >
+                  <img
+                    src="/assets/img/flag/EN Flag_new.png"
+                    alt=""
+                    className="mt-1"
+                    width={25}
+                  />
+                  English
+                </Dropdown.Item>
+                <Dropdown.Item
+                  onClick={() => onLocaleChange("id")}
+                  className="d-flex gap-1"
+                >
+                  <img
+                    src="/assets/img/flag/ID Flag_new.png"
+                    alt=""
+                    className="mt-1"
+                    width={25}
+                  />
+                  Indonesia
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
-        </div>
-      </nav>
+        </Container>
+      </Nav>
     </>
   );
 }

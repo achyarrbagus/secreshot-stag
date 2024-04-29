@@ -2,24 +2,46 @@
 
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useState } from "react";
+import { Suspense } from "react";
 import { Autoplay } from "swiper/modules";
-import { useEffect, useState } from "react";
-import Helper from "../../lib/helper/helper";
-import CardArticleSlide from "./components/card-article-slide";
-import DoctorCard from "./components/card-doctor";
-import NurseCard from "./components/card-nurse";
 import useSWR from "swr";
+import CardArticleSlide from "../components/card-article-slide";
+import "../../../public/assets/css/style.css";
+import "../../../public/assets/fontello/css/csehat.css";
+import LayoutWrapper from "@/app/components/layout-wrapper";
+
+import DoctorCard from "../components/card-doctor";
+import Helper from "../../../lib/helper/helper";
 import axios from "axios";
-import HeroBanner from "./components/hero-banner";
-import Image from "next/image";
+import HeroBanner from "../components/hero-banner";
+import NurseCard from "../components/card-nurse";
+import { useLocale, useTranslations } from "next-intl";
+
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
-const HomeId = () => {
+
+const Home = () => {
+  const locale = useLocale();
+
+  const t = useTranslations("home");
+
   const { data: articles, error: articlesError } = useSWR(
-    `https://api.cepatsehat.com/api/v2/articles?locale=id`,
+    `https://api.cepatsehat.com/api/v2/articles?locale=${locale}`,
     fetcher
   );
 
-  const [formData, setFormData] = useState({
+  const redirectWa = (locale) => {
+    console.log(locale);
+
+    const helper = new Helper();
+    helper.RedirectToWa(formData, locale, true);
+  };
+
+  const redirectTele = () => {
+    const helper = new Helper();
+    helper.RedirectToTele();
+  };
+  const [formData, setFormData] = React.useState({
     name: "",
     address: "",
     service: "Select Service",
@@ -30,78 +52,56 @@ const HomeId = () => {
     setFormData({ ...formData, [id]: value });
   };
 
-  const redirectWa = () => {
-    const helper = new Helper();
-    helper.RedirectToWa(formData, "ID", true);
-  };
-
-  const redirectTele = () => {
-    const helper = new Helper();
-    helper.RedirectToTele(formData);
-  };
-
   return (
     <>
       <div className="content">
         <HeroBanner
-          title={
-            "Mitra Terpercaya Anda untuk Layanan Kesehatan Homecare di Bali, Jakarta, Surabaya & Bandung"
-          }
-          desc={
-            " Kami memberikan perawatan kesehatan personal ke rumah Anda melalui para profesional berpengalaman kami"
-          }
+          title={t("title-banner")}
+          desc={t("title-slogan")}
+          bookButton={t("book-button")}
         />
-
         <section className="service">
           <div className="container">
-            <h3 className="title-section"> Layanan Kami </h3>
+            <h3 className="title-section"> {t("our-service")} </h3>
             <div className="row g-3">
               <div className="col-4">
-                <Link href="/doctor-home-visit" className="box-service">
+                <Link
+                  href={locale + "/doctor-home-visit"}
+                  className="box-service"
+                >
                   <i className="icon-menu-doctor-home"></i>
-                  <span className="title-service">
-                    {" "}
-                    Kunjungan Dokter ke Rumah{" "}
-                  </span>
+                  <span className="title-service"> {t("service-menu.1")} </span>
                 </Link>
               </div>
               <div className="col-4">
                 <Link href="/home-nursing" className="box-service">
                   <i className="icon-menu-home-nursing"></i>
-                  <span className="title-service">
-                    {" "}
-                    Perawatan di Rumah & Perawatan Luka{" "}
-                  </span>
+                  <span className="title-service">{t("service-menu.2")}</span>
                 </Link>
               </div>
               <div className="col-4">
                 <Link href="/remote-telemedicine" className="box-service">
                   <i className="icon-menu-remote-telemedicine"></i>
-                  <span className="title-service"> Telemedis Jarak Jauh </span>
+                  <span className="title-service">{t("service-menu.3")}</span>
                 </Link>
               </div>
               <div className="col-4">
                 <Link href="/holistic-alternative" className="box-service">
                   <i className="icon-menu-holistic"></i>
-                  <span className="title-service">
-                    {" "}
-                    Terapi Alternatif Holistik{" "}
-                  </span>
+                  <span className="title-service">{t("service-menu.4")}</span>
                 </Link>
               </div>
               <div className="col-4">
                 <Link href="/inhome-therapy" className="box-service">
                   <i className="icon-menu-in-home-iv"></i>
-                  <span className="title-service">
-                    {" "}
-                    Terapi IV di Rumah & Lainnya{" "}
-                  </span>
+                  <span className="title-service">{t("service-menu.5")}</span>
                 </Link>
               </div>
+
               <div className="col-4">
                 <Link href="/alternative-telemedicine" className="box-service">
                   <i className="icon-menu-alternative-telemedicine"></i>
-                  <span className="title-service"> Layanan Alternatif </span>
+                  <span className="title-service"> {t("service-menu.6")} </span>
                 </Link>
               </div>
             </div>
@@ -111,10 +111,10 @@ const HomeId = () => {
         <section className="why">
           <div className="container">
             <div className="text">
-              <h3>Mengapa Memilih Kami?</h3>
+              <h3>{t("why")}</h3>
               <div className="list-why">
                 <div className="items-why">
-                  <span>Sudah menangani 5000 pasien lebih di tahun 2023</span>
+                  <span>{t("why-slogan")}</span>
                 </div>
               </div>
               <div className="list-why">
@@ -124,7 +124,7 @@ const HomeId = () => {
                     className="img-list"
                     alt=""
                   />
-                  <span>Layanan yang mudah, aman, dan nyaman</span>
+                  <span>{t("why-menu.1")}</span>
                 </div>
               </div>
               <div className="list-why">
@@ -134,9 +134,7 @@ const HomeId = () => {
                     className="img-list"
                     alt=""
                   />
-                  <span>
-                    Didukung oleh tenaga kesehatan bersertifikat dan terlatih
-                  </span>
+                  <span>{t("why-menu.2")}</span>
                 </div>
               </div>
               <div className="list-why">
@@ -146,7 +144,7 @@ const HomeId = () => {
                     className="img-list"
                     alt=""
                   />
-                  <span>Layanan 24 jam</span>
+                  <span>{t("why-menu.3")}</span>
                 </div>
               </div>
               <div className="list-why">
@@ -156,7 +154,7 @@ const HomeId = () => {
                     className="img-list"
                     alt=""
                   />
-                  <span>Cakupan yang luas</span>
+                  <span>{t("why-menu.4")}</span>
                 </div>
               </div>
             </div>
@@ -165,55 +163,57 @@ const HomeId = () => {
 
         <section className="doctor">
           <div className="container">
-            <h3 className="title-section"> Dokter Kami </h3>
+            <h3 className="title-section">{t("our-doctors")} </h3>
             <div className="row justify-content-center">
               <div className="col-md-12 col-lg-8">
                 <div className="row g-3 g-md-5 justify-content-center">
                   <DoctorCard
-                    image={`assets/img/doctor/dr-dewi-f.png`}
+                    image={`/assets/img/doctor/dr-dewi-f.png`}
                     name="dr. Dewi Fransiska, Sp.B"
-                    job="Dokter Bedah"
+                    job={t("dr-surgeon")}
                     str="3121101422105406"
-                    practiceLocation={["RS Mayapada", "RS Eka"]}
-                    lang="id"
+                    titlelocation={t("practice-location")}
+                    practiceLocation={[t("mayapada"), t("eka")]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-dwi-s.png`}
+                    image={`/assets/img/doctor/dr-dwi-s.png`}
                     name="dr. Dwi Suryaning Ayu Aprilizia, Sp.A"
-                    job="Dokter Anak"
+                    job={t("dr-pediatrician")}
                     str="3321201323154360"
-                    lang="id"
-                    practiceLocation={["RS Islam Aysha"]}
+                    titlelocation={t("practice-location")}
+                    practiceLocation={["Aysha Islamic Hospital"]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-ayu-a.png`}
+                    image={`/assets/img/doctor/dr-ayu-a.png`}
                     name="dr. Ayu A. Istiana"
-                    job="Dokter Estetika"
-                    str="3121100220145699"
-                    lang="id"
-                    practiceLocation={["Klinik Cepat Sehat"]}
+                    job="Aesthetic Doctor"
+                    str="3321201323154360"
+                    titlelocation={t("practice-location")}
+                    practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-ernita-r.png`}
+                    image={`/assets/img/doctor/dr-ernita-r.png`}
                     name="dr. Ernita Rosyanti Dewi"
-                    job="Dokter Umum"
-                    lang="id"
+                    job="General Practitioner"
                     str="3121100220145544"
-                    practiceLocation={["Klinik Cepat Sehat"]}
+                    titlelocation={t("practice-location")}
+                    practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-irvan-r.png`}
+                    image={`/assets/img/doctor/dr-irvan-r.png`}
                     name="dr. Irvan Rizki Fitri"
-                    job="Dokter Umum"
-                    str="3111100321119174"
-                    practiceLocation={["Klinik Cepat Sehat"]}
+                    job="General Practitioner"
+                    str="3121100220145544"
+                    titlelocation={t("practice-location")}
+                    practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`assets/img/doctor/dr-melchisedek-a.png`}
+                    image={`/assets/img/doctor/dr-melchisedek-a.png`}
                     name="dr. Melchisedek A.V.P Marbun"
-                    job="Dokter Umum"
+                    job="General Practitioner"
                     str="3111100220155405"
-                    practiceLocation={["Klinik Cepat Sehat"]}
+                    titlelocation={t("practice-location")}
+                    practiceLocation={[t("cepat-sehat")]}
                   />
                 </div>
               </div>
@@ -223,7 +223,7 @@ const HomeId = () => {
 
         <section className="doctor nurse">
           <div className="container">
-            <h3 className="title-section"> Perawat Kami </h3>
+            <h3 className="title-section"> {t("our-nurse")} </h3>
             <div className="row justify-content-center">
               <div className="col-md-12 col-lg-8">
                 <div className="row g-3 g-md-4 justify-content-center">
@@ -247,7 +247,7 @@ const HomeId = () => {
                   />
                   <NurseCard
                     name="Andi Andriansyah S."
-                    str="HA00000870437934"
+                    str="1201512214112821"
                     isnurse={true}
                     image="assets/img/doctor/nurse-andi.png"
                   />
@@ -263,12 +263,6 @@ const HomeId = () => {
                     isnurse={true}
                     image="assets/img/doctor/nurse-irfan.png"
                   />
-                  <NurseCard
-                    name="Dimas Catur Nugroho"
-                    str="ED00000360053713"
-                    isnurse={true}
-                    image="/assets/img/doctor/nurse-dimas.png"
-                  />
                 </div>
               </div>
             </div>
@@ -277,7 +271,7 @@ const HomeId = () => {
 
         <section className="article">
           <div className="container">
-            <h3 className="title-section text-white">Artikel</h3>
+            <h3 className="title-section text-white"> {t("article")} </h3>
             <div className="swiper swiper-article mt-5">
               <div className="swiper-wrapper">
                 <div className="swiper-wrapper">
@@ -307,12 +301,10 @@ const HomeId = () => {
                       articles.map((item, index) => (
                         <SwiperSlide key={item.id}>
                           <Link
-                            href={`/article?id=${item.article_id_v2}&locale=${item.locale}`}
+                            href={`/article?id=${item.article_id_v2}&locale=en`}
                             scroll={true}
                           >
-                            <div className="card-slide-article">
-                              <CardArticleSlide item={item} path={item.image} />
-                            </div>
+                            <CardArticleSlide item={item} path={item.image} />
                           </Link>
                         </SwiperSlide>
                       ))}
@@ -323,74 +315,75 @@ const HomeId = () => {
           </div>
         </section>
 
+        {/* booking session */}
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section"> Pesan kunjungan sekarang </h3>
-            <div className="row mb-3 g-3">
-              <div className="col-md-4">
-                <label className="form-label">Nama</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  placeholder="Nama Anda"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
+            <h3 className="title-section">{t("form-book.title")}</h3>
+            <form>
+              <div className="row mb-3 g-3">
+                <div className="col-md-4">
+                  <label className="form-label">{t("form-book.name")}</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    placeholder={t("form-book.name-label")}
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="col-md-4">
+                  <label className="form-label">{t("form-book.address")}</label>
+                  <input
+                    id="address"
+                    type="text"
+                    className="form-control"
+                    placeholder={t("form-book.address-label")}
+                    value={formData.address}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="col-md-4">
+                  <label className="form-label">{t("form-book.service")}</label>
+                  <select
+                    id="service"
+                    className="form-select form-control"
+                    aria-label="Default select example"
+                    value={formData.service}
+                    onChange={handleChange}
+                  >
+                    <option value="Select Service" disabled>
+                      {t("form-book.service-label")}
+                    </option>
+                    <option value={t("service-menu.1")}>
+                      {t("service-menu.1")}
+                    </option>
+                    <option value={t("service-menu.2")}>
+                      {t("service-menu.2")}
+                    </option>
+                    <option value={t("service-menu.3")}>
+                      {t("service-menu.3")}
+                    </option>
+                    <option value={t("service-menu.4")}>
+                      {t("service-menu.4")}
+                    </option>
+                    <option value={t("service-menu.5")}>
+                      {t("service-menu.5")}
+                    </option>
+                    <option value={t("service-menu.6")}>
+                      {t("service-menu.6")}
+                    </option>
+                  </select>
+                </div>
               </div>
-              <div className="col-md-4">
-                <label className="form-label">Alamat</label>
-                <input
-                  id="address"
-                  type="text"
-                  className="form-control"
-                  placeholder="Alamat Anda"
-                  value={formData.address}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="col-md-4">
-                <label className="form-label">Layanan</label>
-                <select
-                  id="service"
-                  className="form-select form-control"
-                  aria-label="Default select example"
-                  value={formData.service}
-                  onChange={handleChange}
-                >
-                  <option value="Select Service" selected>
-                    Pilih Layanan
-                  </option>
-                  <option value="Kunjungan Dokter ke Rumah">
-                    {" "}
-                    Kunjungan Dokter ke Rumah
-                  </option>
-                  <option value="Perawatan di Rumah dan Perawatan Luka">
-                    {" "}
-                    Perawatan di Rumah dan Perawatan Luka
-                  </option>
-                  <option value="Telemedis Jarak Jauh">
-                    Telemedis Jarak Jauh
-                  </option>
-                  <option value="Terapi Alternatif Holistik">
-                    Terapi Alternatif Holistik
-                  </option>
-                  <option value="Terapi IV di Rumah & Lainnya">
-                    Terapi IV di Rumah & Lainnya
-                  </option>
-                  <option value="Layanan Alternatif">Layanan Alternatif</option>
-                </select>
-              </div>
-            </div>
-            <div className="row g-3 justify-content-center align-items-stretch">
+            </form>
+            <div className="row g-3 justify-content-center">
               <div className="col-6 col-md-3">
                 <button
-                  type="submit"
-                  onClick={redirectWa}
+                  onClick={() => redirectWa(locale)}
                   className="btn btn-whatsapp w-100"
                 >
-                  <i className="mdi mdi-whatsapp fs-18 me-2"></i>
-                  Whatsapp
+                  <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
                 </button>
               </div>
               <div className="col-6 col-md-3">
@@ -398,8 +391,7 @@ const HomeId = () => {
                   onClick={redirectTele}
                   className="btn btn-telegram w-100"
                 >
-                  <i className="fa-brands fa-telegram fs-18 me-2"></i>
-                  Telegram
+                  <i className="fa-brands fa-telegram fs-18 me-2"></i> Telegram
                 </button>
               </div>
             </div>
@@ -410,31 +402,12 @@ const HomeId = () => {
   );
 };
 
-// {Articles &&
-//   Articles.sort((a, b) => b.Id - a.Id).map(
-//     (item, index) => (
-//       <SwiperSlide key={item.Id}>
-//         <Link href={`/article?id=${item.Id - 1}`}>
-//           <div className="card-slide-article">
-//             <img src={item.PathImg} alt="" />
-//             <div className="name-article">
-//               <h6>{CutText(item.Title)}...</h6>
-//               <p>{CutText(item.DescCard)}...</p>
-//               <a
-//                 href="article-detail.html"
-//                 className="text-muted fs-14"
-//               >
-//                 read more{" "}
-//                 <i className="mdi mdi-arrow-right"></i>
-//               </a>
-//               <p className="text-end text-capitalize">
-//                 {item.created_at}
-//               </p>
-//             </div>
-//           </div>
-//         </Link>
-//       </SwiperSlide>
-//     )
-//   )}
-
-export default HomeId;
+export default function App() {
+  return (
+    <>
+      <LayoutWrapper>
+        <Home />
+      </LayoutWrapper>
+    </>
+  );
+}
