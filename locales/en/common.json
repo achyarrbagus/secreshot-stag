@@ -209,6 +209,298 @@
     "total": "Total",
     "pay_confirm": "Confirm & Pay"
   },
+  "home-nursing": {
+    "title-banner": "Home Nursing and Wound Care",
+    "title-slogan": "Receive top-notch nursing and wound care services in the comfort of your villa or hotel, from recovery support to chronic condition management.",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "sub-title": "Our comprehensive home nursing and wound care services include :",
+    "service-menu": {
+      "1": {
+        "title": "Wound Care",
+        "desc": "Comprehensive healthcare services covering expert wound and ostomy care, advanced wound dressing methods, precise minor surgeries, and thorough post-surgical care for optimal recovery.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp250.000",
+        "list-benefit": {
+          "1": {
+            "title": "Wound and Ostomy Care",
+            "desc": "Specialized care for faster healing, complications prevention, and improved patient well-being."
+          },
+          "2": {
+            "title": "Advanced Wound Dressing",
+            "desc": "Accelerates healing, reduces infection risks, and provides optimal conditions for tissue recovery."
+          },
+          "3": {
+            "title": "Minor Surgeries",
+            "desc": "Efficient and precise treatment, minimizing trauma and ensuring quick recovery."
+          },
+          "4": {
+            "title": "Post-Surgical Care",
+            "desc": "Comprehensive care for pain management, infection prevention, and smooth rehabilitation, promoting a quicker recovery process."
+          }
+        }
+      },
+      "2": {
+        "title": "Monitoring and Prevention",
+        "desc": "Ensuring patient well-being through continuous vital sign monitoring and implementing preventive measures to curb the risk of infections.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp200.000",
+        "list-benefit": {
+          "1": {
+            "title": "Vital Sign Monitoring",
+            "desc": "Early intervention through regular monitoring detects health issues promptly, improving patient outcomes."
+          },
+          "2": {
+            "title": "Infection Prevention",
+            "desc": "Minimized disease transmission, safeguarding patients and healthcare workers."
+          }
+        }
+      },
+      "3": {
+        "title": "Medical Check Up",
+        "desc": "A Doctor Home Visit brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp250.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
+          },
+          "2": {
+            "title": "Personalized Care",
+            "desc": "Tailored treatment plans considering home environment and lifestyle."
+          },
+          "3": {
+            "title": "Timely Intervention",
+            "desc": "Early detection and action to prevent complications."
+          },
+          "4": {
+            "title": "Enhanced Relationship",
+            "desc": "In-home visits foster better communication and trust."
+          },
+          "5": {
+            "title": "Accessibility",
+            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
+          }
+        }
+      },
+      "4": {
+        "title": "Vaksinasi Anak",
+        "desc": "Vaksinasi Anak adalah pemberian vaksin untuk melindungi anak dari penyakit seperti campak, gondongan, rubella, dan polio.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp150.000",
+        "list-benefit": {
+          "1": {
+            "title": "Perlindungan Kesehatan",
+            "desc": "Vaksin melindungi anak-anak dari penyakit serius."
+          },
+          "2": {
+            "title": "Pertahanan Nasional",
+            "desc": "Vaksinasi menghemat biaya pengobatan dengan mencegah penyakit parah."
+          },
+          "3": {
+            "title": "Akses Sekolah",
+            "desc": "Vaksinasi yang diwajibkan menjamin akses terhadap pendidikan di lingkungan yang lebih aman."
+          },
+          "4": {
+            "title": "Kesehatan Global",
+            "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "remote-telemedicine": {
+    "title-banner": "Remote Telemedicine",
+    "title-slogan": "Access medical consultations without stepping out, via our comprehensive telehealth platform.",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "sub-title": "Our Remote Telemedicine services include: ",
+    "service-menu": {
+      "1": {
+        "title": "General Practitioner Online Consultation",
+        "desc": "Access healthcare through convenient online consultations, addressing diagnoses, treatments, and follow-up care flexibly from your own space.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp20.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Allows patients to consult with a healthcare professional from the comfort of their own home, saving time and travel."
+          },
+          "2": {
+            "title": "Accessibility",
+            "desc": "Provides access to medical advice and prescriptions for common ailments without the need for in-person visits."
+          },
+          "3": {
+            "title": "Timely Care",
+            "desc": "Enables quick consultations for minor illnesses or health concerns without waiting for an appointment."
+          },
+          "4": {
+            "title": "Cost-Effective",
+            "desc": "May be more cost-efficient compared to in-person visits, considering travel expenses and time off work."
+          },
+          "5": {
+            "title": "Preventive Guidance",
+            "desc": "Offers a convenient way to discuss preventive care, lifestyle changes, and general health advice with a healthcare professional."
+          }
+        }
+      },
+      "2": {
+        "title": "Medical Doctor Online Consultant",
+        "desc": "Connect with specialized medical expertise remotely, eliminating the need for physical travel through our online platform.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp40.000",
+        "list-benefit": {
+          "1": {
+            "title": "Pediatrician",
+            "desc": "consult with doctor specializing in the medical care of infants, children, and adolescents, focusing on their physical, emotional, and behavioral well-being."
+          },
+          "2": {
+            "title": "Surgeon",
+            "desc": "consult with medical professional skilled in performing surgical procedures, addressing a wide range of conditions through operative techniques."
+          },
+          "3": {
+            "title": "Aesthetic Doctor",
+            "desc": "consult with medical practitioner with expertise in aesthetic or cosmetic medicine, knowing about non-surgical procedures to enhance a person's appearance."
+          }
+        }
+      },
+      "3": {
+        "title": "Online Medical Prescription",
+        "desc": "Online medical prescriptions enable patients to receive medications remotely through virtual consultations.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp40.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Enables patients to receive prescriptions without visiting a physical clinic, saving time and effort."
+          },
+          "2": {
+            "title": "Accessibility",
+            "desc": "Improves access to necessary medications for individuals in remote areas or with limited mobility."
+          },
+          "3": {
+            "title": "Time Efficiency",
+            "desc": "Reduces the time spent on travel and waiting in queues at traditional pharmacies."
+          },
+          "4": {
+            "title": "Privacy",
+            "desc": "Offers a discreet way for individuals to obtain prescription medications without face-to-face interactions."
+          },
+          "5": {
+            "title": "Continuity of Care",
+            "desc": "Supports ongoing and consistent management of chronic conditions through timely prescription refills and adjustments."
+          }
+        }
+      },
+      "4": {
+        "title": "Online Sick Leave Letter",
+        "desc": "Online sick leave letter enables individuals to consult with healthcare professionals remotely to obtain the necessary sick leave letter through digital platforms or websites.",
+        "benefit": "Benefit",
+        "start-from": "Start from",
+        "start-from-price": "Rp75.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Allows individuals to obtain sick leave letter from the comfort of their own homes, reducing the need for in-person visits."
+          },
+          "2": {
+            "title": "Time Savings",
+            "desc": "Streamlines the process, saving time compared to traditional methods of obtaining a sick leave letter."
+          },
+          "3": {
+            "title": "Accessibility",
+            "desc": "Provides access to sick leave letter for individuals in remote locations or those with limited mobility."
+          },
+          "4": {
+            "title": "Efficiency",
+            "desc": "Facilitates a quicker turnaround in obtaining necessary documentation for work or other purposes."
+          },
+          "5": {
+            "title": "Reduced Exposure",
+            "desc": "Minimizes the risk of exposure to contagious illnesses by avoiding unnecessary visits to healthcare facilities."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
   "question": {
     "help": "Any Question? Our team is ready to help you directly",
     "contact_whatsapp": "Contact via WhatsApp",

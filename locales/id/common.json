@@ -219,23 +219,305 @@
     "total": "Total",
     "pay_confirm": "Confirm & Pay"
   },
-  "payment": {
-    "name": "Nama Lengkap",
-    "phone": "Nomor Handphone",
-    "detail": "Detail Pembayaran",
-    "fee": "Biaya",
-    "discount": "Diskon",
-    "method": "Pilih Metode Bayar",
+  "home-nursing": {
+    "title-banner": "Perawatan di Rumah & Perawatan Luka",
+    "title-slogan": "Dapatkan layanan keperawatan dan perawatan luka terbaik dalam kenyamanan hunian Anda, mulai dari dukungan pemulihan hingga manajemen kondisi kronis.",
+    "benefit": "Keuntungan",
+    "book-button": "Pesan",
+    "sub-title": "Layanan perawatan rumah & perawatan luka kami meliputi :",
+    "service-menu": {
+      "1": {
+        "title": "Perawatan Luka",
+        "desc": "Layanan kesehatan komprehensif yang mencakup ahli perawatan luka dan ostomi, metode pembalutan luka canggih, operasi kecil yang tepat, dan perawatan pasca bedah menyeluruh untuk pemulihan optimal.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari:",
+        "start-from-price": "Rp250.000",
+        "list-benefit": {
+          "1": {
+            "title": "Perawatan Luka dan Ostomi",
+            "desc": "Perawatan khusus untuk penyembuhan lebih cepat, pencegahan komplikasi, dan peningkatan kondisi pasien."
+          },
+          "2": {
+            "title": "Pembalutan Luka Tingkat Lanjut",
+            "desc": "Mempercepat penyembuhan, mengurangi risiko infeksi, dan memberikan kondisi optimal untuk pemulihan jaringan."
+          },
+          "3": {
+            "title": "Operasi Kecil",
+            "desc": "Perawatan yang efisien dan tepat, meminimalkan pasca-trauma dan memastikan pemulihan yang cepat."
+          },
+          "4": {
+            "title": "Perawatan Pasca Bedah",
+            "desc": "Perawatan komprehensif untuk manajemen nyeri, pencegahan infeksi, dan mendorong proses pemulihan yang lebih cepat."
+          }
+        }
+      },
+      "2": {
+        "title": "Pemantauan & Pencegahan",
+        "desc": "Layanan kesehatan komprehensif yang mencakup ahli perawatan luka dan ostomi, metode pembalutan luka canggih, operasi kecil yang tepat, dan perawatan pasca bedah menyeluruh untuk pemulihan optimal.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp200.000",
+        "list-benefit": {
+          "1": {
+            "title": "Perawatan Luka dan Ostomi",
+            "desc": "Perawatan khusus untuk penyembuhan lebih cepat, pencegahan komplikasi, dan peningkatan kondisi pasien."
+          },
+          "2": {
+            "title": "Pembalutan Luka Tingkat Lanjut",
+            "desc": "Mempercepat penyembuhan, mengurangi risiko infeksi, dan memberikan kondisi optimal untuk pemulihan jaringan."
+          },
+          "3": {
+            "title": "Operasi Kecil",
+            "desc": "Perawatan yang efisien dan tepat, meminimalkan pasca-trauma dan memastikan pemulihan yang cepat."
+          },
+          "4": {
+            "title": "Perawatan Pasca Bedah",
+            "desc": "Perawatan komprehensif untuk manajemen nyeri, pencegahan infeksi, dan mendorong proses pemulihan yang lebih cepat."
+          }
+        }
+      },
+      "3": {
+        "title": "Medical Check Up",
+        "desc": "A Doctor Home Visit brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp250.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
+          },
+          "2": {
+            "title": "Personalized Care",
+            "desc": "Tailored treatment plans considering home environment and lifestyle."
+          },
+          "3": {
+            "title": "Timely Intervention",
+            "desc": "Early detection and action to prevent complications."
+          },
+          "4": {
+            "title": "Enhanced Relationship",
+            "desc": "In-home visits foster better communication and trust."
+          },
+          "5": {
+            "title": "Accessibility",
+            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
+          }
+        }
+      },
+      "4": {
+        "title": "Vaksinasi Anak",
+        "desc": "Vaksinasi Anak adalah pemberian vaksin untuk melindungi anak dari penyakit seperti campak, gondongan, rubella, dan polio.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp150.000",
+        "list-benefit": {
+          "1": {
+            "title": "Perlindungan Kesehatan",
+            "desc": "Vaksin melindungi anak-anak dari penyakit serius."
+          },
+          "2": {
+            "title": "Pertahanan Nasional",
+            "desc": "Vaksinasi menghemat biaya pengobatan dengan mencegah penyakit parah."
+          },
+          "3": {
+            "title": "Akses Sekolah",
+            "desc": "Vaksinasi yang diwajibkan menjamin akses terhadap pendidikan di lingkungan yang lebih aman."
+          },
+          "4": {
+            "title": "Kesehatan Global",
+            "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
     "e_wallet": "E-Wallet",
-    "bank_transfer": "Transfer Bank",
+    "bank_transfer": "Bank Transfer",
     "card": "Card",
-    "other": "Pulsa",
-    "promo": "Kode Promo",
-    "input_promo": "Masukan Kode Promo",
-    "apply_promo": "Pakai",
-    "your": "Pembayaranmu",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
     "total": "Total",
-    "pay_confirm": "Bayar & Konfirmasi"
+    "pay_confirm": "Confirm & Pay"
+  },
+  "remote-telemedicine": {
+    "title-banner": "Telemedis jarak jauh",
+    "title-slogan": "Akses konsultasi medis tanpa melangkah keluar, melalui platform online komprehensif kami.",
+    "benefit": "Keuntungan",
+    "book-button": "Pesan",
+    "sub-title": "Layanan telemedis jarak jauh kami meliputi:",
+    "service-menu": {
+      "1": {
+        "title": "Konsultasi Online Dokter Umum",
+        "desc": "Akses perawatan kesehatan melalui konsultasi online yang nyaman, diagnosis, perawatan, dan tindak lanjut secara fleksibel dari rumah Anda sendiri.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp20.000",
+        "list-benefit": {
+          "1": {
+            "title": "Kenyamanan",
+            "desc": "Memungkinkan pasien untuk berkonsultasi dengan profesional kesehatan dari rumah mereka sendiri, menghemat waktu dan perjalanan."
+          },
+          "2": {
+            "title": "Aksesibilitas",
+            "desc": "Memberikan akses saran dan resep medis untuk penyakit umum tanpa perlu kunjungan langsung."
+          },
+          "3": {
+            "title": "Perawatan Tepat Waktu",
+            "desc": "Memungkinkan konsultasi cepat untuk penyakit ringan atau masalah kesehatan tanpa menunggu janji temu."
+          },
+          "4": {
+            "title": "Hemat Biaya",
+            "desc": "Memungkinkan lebih hemat biaya dibandingkan dengan kunjungan langsung, mempertimbangkan biaya perjalanan dan waktu."
+          },
+          "5": {
+            "title": "Bimbingan Preventif",
+            "desc": "Menawarkan cara yang nyaman untuk membahas perawatan preventif, gaya hidup, dan nasihat kesehatan umum dengan profesional kesehatan."
+          }
+        }
+      },
+      "2": {
+        "title": "Konsultasi Online Dokter Spesialis",
+        "desc": "Terhubung dengan tenaga spesialis dari jarak jauh, menghilangkan kebutuhan akan perjalanan fisik melalui platform online kami.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp40.000",
+        "list-benefit": {
+          "1": {
+            "title": "Dokter anak",
+            "desc": "Konsultasikan dengan dokter yang berspesialisasi dalam perawatan medis bayi, anak-anak, dan remaja, dengan fokus pada kesejahteraan fisik, emosional, dan perilaku mereka."
+          },
+          "2": {
+            "title": "Ahli bedah",
+            "desc": "Konsultasikan dengan profesional medis yang terampil dalam melakukan prosedur bedah, menangani berbagai kondisi melalui teknik operasi."
+          },
+          "3": {
+            "title": "Dokter estetika",
+            "desc": "Konsultasikan dengan praktisi medis dengan keahlian dalam kedokteran kecantikan, mengetahui tentang prosedur non-bedah untuk meningkatkan penampilan seseorang."
+          }
+        }
+      },
+      "3": {
+        "title": "Resep Obat Online",
+        "desc": "Resep medis online memungkinkan pasien menerima obat dari jarak jauh melalui konsultasi virtual.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai Dari: ",
+        "start-from-price": "Rp40.000",
+        "list-benefit": {
+          "1": {
+            "title": "Kenyamanan",
+            "desc": "Memungkinkan pasien untuk menerima resep tanpa kunjungan klinik fisik, menghemat waktu dan tenaga."
+          },
+          "2": {
+            "title": "Aksesibilitas",
+            "desc": "Mengurangi Meningkatkan akses ke obat -obatan yang diperlukan untuk individu dengan mobilitas terbatas. yang dihabiskan untuk perjalanan dan menunggu dalam antrian di apotek."
+          },
+          "3": {
+            "title": "Efisiensi Waktu",
+            "desc": "Mengurangi waktu yang dihabiskan untuk perjalanan dan menunggu dalam antrian di apotek."
+          },
+          "4": {
+            "title": "Privasi",
+            "desc": "Menawarkan cara efektif bagi individu untuk mendapatkan resep obat tanpa interaksi tatap muka."
+          },
+          "5": {
+            "title": "Perawatan Berkelanjutan",
+            "desc": "Mendukung manajemen kondisi kronis yang berkelanjutan dan konsisten melalui penyesuaian resep tepat waktu."
+          }
+        }
+      },
+      "4": {
+        "title": "Surat Sakit Online",
+        "desc": "Surat sakit online memungkinkan individu untuk berkonsultasi dengan profesional kesehatan dari jarak jauh untuk mendapatkan surat sakit yang diperlukan melalui platform digital atau situs web.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp75.000",
+        "list-benefit": {
+          "1": {
+            "title": "Kenyamanan",
+            "desc": "Memungkinkan individu untuk mendapatkan surat sakit dari rumah mereka, mengurangi kebutuhan untuk kunjungan langsung.."
+          },
+          "2": {
+            "title": "Penghematan Waktu",
+            "desc": "Merampingkan proses, menghemat waktu dibandingkan dengan metode tradisional untuk mendapatkan surat sakit."
+          },
+          "3": {
+            "title": "Aksesibilitas",
+            "desc": "Memberikan akses surat sakit untuk individu yang memiliki mobilitas terbatas."
+          },
+          "4": {
+            "title": "Efisiensi",
+            "desc": "Memfasilitasi proses yang lebih cepat dalam memperoleh dokumentasi yang diperlukan untuk pekerjaan atau tujuan lain."
+          },
+          "5": {
+            "title": "Mengurangi Penularan",
+            "desc": "Meminimalkan risiko paparan penyakit menular dengan menghindari kunjungan yang tidak perlu ke fasilitas perawatan kesehatan."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
   },
   "question": {
     "help": "Ada Pertanyaan? Tim kami siap membantu kamu secara langsung",

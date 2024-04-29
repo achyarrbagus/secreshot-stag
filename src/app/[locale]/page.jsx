@@ -74,32 +74,41 @@ const Home = () => {
                 </Link>
               </div>
               <div className="col-4">
-                <Link href="/home-nursing" className="box-service">
+                <Link href={locale + "/home-nursing"} className="box-service">
                   <i className="icon-menu-home-nursing"></i>
                   <span className="title-service">{t("service-menu.2")}</span>
                 </Link>
               </div>
               <div className="col-4">
-                <Link href="/remote-telemedicine" className="box-service">
+                <Link
+                  href={locale + "/remote-telemedicine"}
+                  className="box-service"
+                >
                   <i className="icon-menu-remote-telemedicine"></i>
                   <span className="title-service">{t("service-menu.3")}</span>
                 </Link>
               </div>
               <div className="col-4">
-                <Link href="/holistic-alternative" className="box-service">
+                <Link
+                  href={locale + "/holistic-alternative"}
+                  className="box-service"
+                >
                   <i className="icon-menu-holistic"></i>
                   <span className="title-service">{t("service-menu.4")}</span>
                 </Link>
               </div>
               <div className="col-4">
-                <Link href="/inhome-therapy" className="box-service">
+                <Link href={locale + "/inhome-therapy"} className="box-service">
                   <i className="icon-menu-in-home-iv"></i>
                   <span className="title-service">{t("service-menu.5")}</span>
                 </Link>
               </div>
 
               <div className="col-4">
-                <Link href="/alternative-telemedicine" className="box-service">
+                <Link
+                  href={locale + "/alternative-telemedicine"}
+                  className="box-service"
+                >
                   <i className="icon-menu-alternative-telemedicine"></i>
                   <span className="title-service"> {t("service-menu.6")} </span>
                 </Link>
