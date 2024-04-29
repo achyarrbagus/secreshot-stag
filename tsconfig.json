@@ -33,7 +33,7 @@
     "src/app/remote-telemedicine/page.jsx",
     "src/app/holistic-alternative/page.jsx",
     "src/app/inhome-therapy/page.jsx",
-    "src/app/alternative-telemedicine/page.jsx",
+    "src/app/[locale]/alternative-telemedicine/page.jsx",
     "src/app/test/page.tsx",
     "src/app/perklin-bni-sby/page.jsx",
     "src/pages/page-id.jsx",
