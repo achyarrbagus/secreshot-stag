@@ -6,16 +6,16 @@ import React, { useState } from "react";
 import { Suspense } from "react";
 import { Autoplay } from "swiper/modules";
 import useSWR from "swr";
-import CardArticleSlide from "../components/card-article-slide";
+import CardArticleSlide from "./components/card-article-slide";
 import "../../../public/assets/css/style.css";
 import "../../../public/assets/fontello/css/csehat.css";
-import LayoutWrapper from "@/app/components/layout-wrapper";
+import LayoutWrapper from "./components/layout-wrapper";
 
-import DoctorCard from "../components/card-doctor";
+import DoctorCard from "./components/card-doctor";
 import Helper from "../../../lib/helper/helper";
 import axios from "axios";
-import HeroBanner from "../components/hero-banner";
-import NurseCard from "../components/card-nurse";
+import HeroBanner from "./components/hero-banner";
+import NurseCard from "./components/card-nurse";
 import { useLocale, useTranslations } from "next-intl";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
@@ -310,7 +310,7 @@ const Home = () => {
                       articles.map((item, index) => (
                         <SwiperSlide key={item.id}>
                           <Link
-                            href={`/article?id=${item.article_id_v2}&locale=en`}
+                            href={`/${locale}/article?id=${item.article_id_v2}&locale=${locale}`}
                             scroll={true}
                           >
                             <CardArticleSlide item={item} path={item.image} />

@@ -519,6 +519,644 @@
     "total": "Total",
     "pay_confirm": "Confirm & Pay"
   },
+  "holistic-alternative": {
+    "title-banner": "Terapi Alternatif Holistik",
+    "title-slogan": "Nikmati pengalaman holistik dengan berbagai solusi terapi alternatif kami.",
+    "benefit": "Keuntungan",
+    "book-button": "Pesan",
+    "sub-title": "Terapi alternatif holistik kami meliputi: ",
+    "service-menu": {
+      "1": {
+        "title": "Akupunter",
+        "desc": "Praktik pengobatan Tiongkok kuno yang dengan memasukan jarum tipis ke dalam tubuh pada titik -titik tertentu.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp600.000",
+        "list-benefit": {
+          "1": {
+            "title": "Manajemen Rasa Sakit",
+            "desc": "Mengurangi berbagai jenis rasa sakit, termasuk kondisi kronis."
+          },
+          "2": {
+            "title": "Pengurangan Stres",
+            "desc": "Relaksasi dan menyeimbangkan sistem saraf."
+          },
+          "3": {
+            "title": "Peningkatan Kualitas Tidur",
+            "desc": "Meningkatkan kualitas tidur dan membantu mengelola insomnia."
+          },
+          "4": {
+            "title": "Peningkatan Fungsi Imun",
+            "desc": "Mendukung kesehatan sistem kekebalan tubuh secara keseluruhan."
+          },
+          "5": {
+            "title": "Perawatan Komplementer",
+            "desc": "Digunakan bersama terapi konvensional untuk berbagai kondisi."
+          }
+        }
+      },
+      "2": {
+        "title": "Pijat Terapi",
+        "desc": "Pijat tradisional yang menggunakan gerakan, dan tekanan untuk mengendurkan otot dan meningkatkan sirkulasi.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp300.000",
+        "list-benefit": {
+          "1": {
+            "title": "Pereda Sakit",
+            "desc": "Menghilangkan ketegangan otot dan mengurangi ketidaknyamanan."
+          },
+          "2": {
+            "title": "Pengurangan Stres",
+            "desc": "Meningkatkan relaksasi, menurunkan tingkat stres."
+          },
+          "3": {
+            "title": "Peningkatan Sirkulasi",
+            "desc": "Meningkatkan aliran darah, membantu kesehatan secara keseluruhan."
+          },
+          "4": {
+            "title": "Fleksibilitas dan Rentang Gerak",
+            "desc": "Membantu meningkatkan fleksibilitas dan mobilitas sendi."
+          },
+          "5": {
+            "title": "Peningkatan Suasana Hati",
+            "desc": "Melepaskan endorfin, berkontribusi pada suasana hati yang positif."
+          }
+        }
+      },
+      "3": {
+        "title": "Penyeimbang Energy Reiki",
+        "desc": "Teknik Jepang yang menggunakan sentuhan lembut untuk menyalurkan energi ke dalam tubuh.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp400.000",
+        "list-benefit": {
+          "1": {
+            "title": "Pengurangan Stres",
+            "desc": "Meningkatkan relaksasi, mengurangi stres dan ketegangan."
+          },
+          "2": {
+            "title": "Kesimbangan Emosional",
+            "desc": "Mendukung keseimbangan emosional."
+          },
+          "3": {
+            "title": "Manajemen Rasa Sakit",
+            "desc": "Membantu mengurangi ketidaknyamanan dan rasa sakit fisik."
+          },
+          "4": {
+            "title": "Peningkatan Aliran Energi",
+            "desc": "Membantu dalam menyeimbangkan dan menyelaraskan energi tubuh."
+          },
+          "5": {
+            "title": "Relaksasi",
+            "desc": "Meningkatkan relaksasi yang mendalam untuk kenyamanan holistik."
+          }
+        }
+      },
+      "4": {
+        "title": "Bimbingan & Sesi Yoga",
+        "desc": "Jenis yoga yang menggabungkan pose yoga tradisional dengan teknik relaksasi.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp400.000",
+        "list-benefit": {
+          "1": {
+            "title": "Fleksibilitas dan Kekuatan",
+            "desc": "Meningkatkan fleksibilitas, keseimbangan, dan kekuatan fisik secara keseluruhan."
+          },
+          "2": {
+            "title": "Pengurangan Stres",
+            "desc": "Meningkatkan relaksasi dan mengurangi tingkat stres melalui gerakan dan pernapasan."
+          },
+          "3": {
+            "title": "Kejernihan Mental",
+            "desc": "Meningkatkan fokus mental, konsentrasi, dan meditasi."
+          },
+          "4": {
+            "title": "Postur yang Lebih Baik",
+            "desc": "Membantu memperbaiki dan mempertahankan postur yang baik, mengurangi ketegangan pada tubuh."
+          },
+          "5": {
+            "title": "Koneksi Pikiran-Tubuh",
+            "desc": "Memperkuat hubungan antara tubuh dan pikiran untuk kesejahteraan holistik."
+          }
+        }
+      },
+      "5": {
+        "title": "Praktik Meditasi",
+        "desc": "Jenis meditasi yang melibatkan keadaan yang rileks dan fokus pada pernapasan.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp400.000",
+        "list-benefit": {
+          "1": {
+            "title": "Pengurangan Stres",
+            "desc": "Meningkatkan relaksasi, mengurangi tingkat stres secara keseluruhan."
+          },
+          "2": {
+            "title": "Peningkatan Fokus dan Konsentrasi",
+            "desc": "Meningkatkan fokus dan kejernihan mental."
+          },
+          "3": {
+            "title": "Kesejahteraan Emosional",
+            "desc": "Membantu mengelola emosi dan menumbuhkan pola pikir yang positif."
+          },
+          "4": {
+            "title": "Kualitas Tidur",
+            "desc": "Mendukung relaksasi dan dapat berkontribusi pada peningkatan kualitas tidur."
+          },
+          "5": {
+            "title": "Kesadaran",
+            "desc": "Menumbuhkan kesadaran, yang mengarah pada rasa damai dan keseimbangan."
+          }
+        }
+      },
+      "6": {
+        "title": " Osteopathy & Layanan Chiropractic",
+        "desc": "Temukan sentuhan penyembuhan osteopati kami, dengan praktisi yang berpengalaman menggunakan teknik lembut untuk memulihkan keseimbangan dan mengurangi masalah muskuloskeletal.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp450.000",
+        "list-benefit": {
+          "1": {
+            "title": "Pereda Sakit",
+            "desc": "Mengurangi nyeri muskuloskeletal dan ketidaknyamanan."
+          },
+          "2": {
+            "title": "Peningkatan Mobilitas",
+            "desc": "Meningkatkan fleksibilitas sendi dan keseluruhan rentang gerak."
+          },
+          "3": {
+            "title": "Memperbaiki Masalah Postur",
+            "desc": "Membantu mengatasi dan memperbaiki masalah postur, mengurangi ketegangan pada tubuh."
+          },
+          "4": {
+            "title": "Sakit Kepala dan Migrain",
+            "desc": "Meringankan sakit kepala dan migrain yang tegang melalui penyesuaian tulang belakang."
+          },
+          "5": {
+            "title": "Kesehatan Seluruh Tubuh",
+            "desc": "Peningkatan kondisi secara keseluruhan dengan mengatasi keterkaitan sistem muskuloskeletal dan fungsi tubuh lainnya."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "inhome-therapy": {
+    "title-banner": "Terapi IV di Rumah & lainnya",
+    "title-slogan": "Menerima perawatan dan pengobatan intravena yang tepat, memastikan keamanan dan kenyamanan.",
+    "benefit": "Komposisi",
+    "book-button": "Pesan",
+    "sub-title": "Terapi IV Di Rumah: ",
+    "service-menu": {
+      "1": {
+        "title": "Infus Di Bali Belly",
+        "desc": "Tipe IV ini memberikan kombinasi komponen terapeutik untuk mengurangi rasa sakit, mual, dan melindungi saluran pencernaan. Bertujuan untuk meningkatkan kondisi secara keseluruhan, meningkatkan kekebalan, dan mendukung berbagai proses metabolisme.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp1.890.000",
+        "list-benefit": {
+          "1": {
+            "title": "Komponen Terapi :",
+            "desc": {
+              "1": "IV Pereda Sakit",
+              "2": "IV Anti-Mual",
+              "3": "IV Gaster Protector"
+            }
+          },
+          "2": {
+            "title": "Penguat Vitamin :",
+            "desc": {
+              "1": "Vitamin C",
+              "2": "Vitamin B1 (Tiamin)",
+              "3": "Vitamin B2 (Riboflavin)",
+              "4": "Nikotinamid (Vitamin B3)",
+              "5": "Asam Pantotenat (Vitamin B5)",
+              "6": "Vitamin B6",
+              "7": "Asam folat",
+              "8": "Vitamin B12",
+              "9": "Biotin"
+            }
+          }
+        }
+      },
+      "2": {
+        "title": "Super Bali Belly IV",
+        "desc": "Peningkatan Standard Bali Belly kami. Diperkaya dengan zinc yang memperkuat kekebalan tubuh, detoksifikasi glutathione, dan probiotik yang memberi nutrisi pada usus, campuran ini dirancang untuk ketahanan tingkat medis. Selain mengatasi gejala perut buncit, ini juga merupakan solusi ampuh yang memperkuat pertumbuhan sel. Imunitas, detoksifikasi, dan kesehatan pencernaan untuk vitalitas optimal Anda.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp2.380.000",
+        "list-benefit": {
+          "1": {
+            "title": "Komponen Terapi :",
+            "desc": {
+              "1": "IV Pereda Sakit",
+              "2": "IV Anti-Mual",
+              "3": "IV Gaster Protector"
+            }
+          },
+          "2": {
+            "title": "Penguat Vitamin :",
+            "desc": {
+              "1": "Vitamin C",
+              "2": "Vitamin B1 (Tiamin)",
+              "3": "Vitamin B2 (Riboflavin)",
+              "4": "Nikotinamid (Vitamin B3)",
+              "5": "Asam Pantotenat (Vitamin B5)",
+              "6": "Vitamin B6",
+              "7": "Asam folat",
+              "8": "Vitamin B12",
+              "9": "Biotin",
+              "10": "Seng (20mg)",
+              "11": "Glutathione",
+              "12": "Probiotik"
+            }
+          }
+        }
+      },
+      "3": {
+        "title": "Basic Immune Booster",
+        "desc": "Tipe IV ini terdiri dari elektrolit esensial, Vitamin B kompleks yang kuat, dan Vitamin C. Bertindak untuk memperkuat sistem kekebalan tubuh, meningkatkan fungsi metabolisme, dan meningkatkan sintesis kolagen, sehingga mendukung kesehatan secara keseluruhan.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp1.890.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "Elektrolit (500 ml)",
+              "Vitamin B12 (5mg)",
+              "Biotin (60 mcg)",
+              "Asam Folat (400 mcg)",
+              "Vitamin B2 (3.6 mg)",
+              "Nikotinamid (40 mg)",
+              "Asam pantotenat (15 mg)",
+              "Vitamin B1 (102.5 mg)",
+              "Vitamin B6 (104 mg)",
+              "Vitamin C (1,000 mg)"
+            ]
+          },
+          "2": {
+            "title": "Penguat Vitamin :",
+            "desc": [
+              "Vitamin C",
+              "Vitamin B1 (Tiamin)",
+              "Vitamin B2 (Riboflavin)",
+              "Nikotinamid (Vitamin B3)",
+              "Asam Pantotenat (Vitamin B5)",
+              "Vitamin B6",
+              "Asam folat",
+              "Vitamin B12",
+              "Biotin",
+              "Seng (20mg)",
+              "Glutathione",
+              "Probiotik"
+            ]
+          },
+          "3": {
+            "title": "Peningkatan Kualitas Tidur",
+            "desc": "Meningkatkan kualitas tidur dan membantu mengelola insomnia."
+          },
+          "4": {
+            "title": "Peningkatan Fungsi Imun",
+            "desc": "Mendukung kesehatan sistem kekebalan tubuh secara keseluruhan."
+          },
+          "5": {
+            "title": "Perawatan Komplementer",
+            "desc": "Digunakan bersama terapi konvensional untuk berbagai kondisi."
+          }
+        }
+      },
+      "4": {
+        "title": "Standart Immune Booster",
+        "desc": "Tipe IV ini memberikan campuran elektrolit penting, Vitamin C dalam jumlah tinggi, dan Vitamin B kompleks yang komprehensif. Berfungsi untuk mengintensifkan respon imun, meningkatkan metabolisme, merangsang produksi sel darah merah, dan produksi kolagen untuk meningkatkan kesehatan kulit dan sistem kekebalan tubuh.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp2.075.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "Elektrolit (500 ml)",
+              "Vitamin C (2,100 mg)",
+              "Vitamin B1 (102.5 mg)",
+              "Vitamin B2 (103.6 mg)",
+              "Nikotinamid (40 mg)",
+              "Asam pantotenat (15 mg)",
+              "Vitamin B6 (4 mg)",
+              "Asam Folat (400 mcg)",
+              "Vitamin B12 (10 mcg)",
+              "Biotin (60 mcg)"
+            ]
+          }
+        }
+      },
+      "5": {
+        "title": "Super Immune Booster",
+        "desc": "Tipe IV yang ampuhdengan menggabungkan elektrolit, Glutathione, Zinc, dan beragam vitamin dan mineral, termasuk A, D, E, C, B1, B2, B6, B12, dan B5. Memberikan peningkatan kekebalan dan mendukung berbagai fungsi tubuh, termasuk pertahanan antioksidan, fungsi kekebalan, penyembuhan luka, dan produksi energi. Berkontribusi terhadap kesehatan dan vitalitas secara keseluruhan.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp2.480.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": {
+              "1": "Elektrolit (500 ml)",
+              "2": "Glutathione (600 mg)",
+              "3": "Zinc (5 mg)",
+              "4": "Retinol (3,500 IU)",
+              "5": "Kolekalsiferol (220 IU)",
+              "6": "Alfatokoferol (11,2 IU)",
+              "7": "Vitamin C (2125 mg)",
+              "8": "Vitamin B1 (103.51 mg)",
+              "9": "Vitamin B2 (4.14 mg)",
+              "10": "Vitamin B6 (104.53 mg)",
+              "11": "Vitamin B12 (5.006 mg)",
+              "12": "Asam folat (0,414 mg)",
+              "13": "Vitamin B5 (17.25 mg)",
+              "14": "Biotin (0.069 mg)",
+              "15": "Nikotinamid (46 mg)"
+            }
+          }
+        }
+      },
+      "6": {
+        "title": "Hangover Infusion",
+        "desc": "Perawatan infus mabuk adalah prosedur cepat selama 30-60 menit untuk membantu Anda mengatasi gejala mabuk dengan cepat melalui hidrasi dan kombinasi vitamin dan elektrolit.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp1.860.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "IV Pereda Sakit",
+              "IV Anti-Mual",
+              "IV Gaster Protector",
+              "IV Vit B1, B6, B12"
+            ]
+          }
+        }
+      },
+      "7": {
+        "title": "Fever Infusion",
+        "desc": "Infus Pengobatan Demam merupakan pemulihan cepat demam tinggi pada orang dewasa melalui infus dan dapat bermanfaat untuk memulihkan cairan tubuh.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp1.140.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "IV Pereda Sakit",
+              "IV Anti-Mual",
+              "IV Gaster Protector",
+              "IV Vit B1, B6, B12",
+              "IV Parasetamol"
+            ]
+          }
+        }
+      },
+      "8": {
+        "title": "Gerd / Gastritis Infusion",
+        "desc": "Infus Pengobatan Gerd/Gastritis bermanfaat untuk mengatasi peradangan pada lambung atau iritasi lambung akibat asam lambung.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp1.660.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "IV Pereda Sakit",
+              "IV Anti-Mual",
+              "IV Gaster Protector",
+              "IV Vit B1, B6, B12"
+            ]
+          }
+        }
+      },
+      "9": {
+        "title": "Iron Infusion",
+        "desc": "Infus zat besi adalah pengobatan yang efektif untuk kekurangan zat besi, suatu kondisi yang menyebabkan kelelahan dan memengaruhi fungsi tubuh Anda.",
+        "benefit": "Komposisi",
+        "start-from": "Mulai dari: ",
+        "start-from-price": "Rp1.590.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "Infus Ringer Laktat 500 cc",
+              "Infus NACL 100 cc",
+              "Vit C 1000 mg",
+              "Vit B Kompeks 5000 mg",
+              "Zat Besi Sukrosa Kompleks 100 mg"
+            ]
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "alternative-telemedicine": {
+    "title-banner": "Layanan Alternatif",
+    "title-slogan": "Pemutihan gigi untuk mempercantik penampilan, terapi sekretom untuk perawatan regeneratif, dan terapi ozon untuk meningkatkan sistem kekebalan tubuh.",
+    "benefit": "Keuntungan",
+    "book-button": "Pesan",
+    "sub-title": "Layanan Alternatif kami terdiri dari:  ",
+    "service-menu": {
+      "1": {
+        "title": "Pemutihan Gigi",
+        "desc": "Tingkatkan kecerahan senyum Anda dengan layanan pemutihan gigi profesional kami.",
+        "benefit": "Keuntungan",
+        "start-from": "Start From",
+        "start-from-price": "Rp889.000",
+        "list-benefit": {
+          "1": {
+            "title": "Peningkatan Estetika",
+            "desc": "Meningkatkan penampilan gigi dengan mengurangi noda dan perubahan warna, sehingga menghasilkan senyuman yang lebih cerah dan putih."
+          },
+          "2": {
+            "title": "Meningkatkan Kepercayaan Diri",
+            "desc": "Gigi yang lebih putih sering kali berkontribusi pada peningkatan kepercayaan diri dan citra diri yang positif."
+          },
+          "3": {
+            "title": "Penampilan Awet Muda",
+            "desc": "Senyuman yang lebih cerah dikaitkan dengan penampilan yang lebih muda, karena perubahan warna gigi bisa menjadi tanda penuaan."
+          },
+          "4": {
+            "title": "Peningkatan Kebersihan Mulut",
+            "desc": "Proses pemutihan gigi sering kali melibatkan pembersihan profesional, sehingga berkontribusi terhadap peningkatan kebersihan mulut secara keseluruhan."
+          },
+          "5": {
+            "title": "Kesan Sosial Positif",
+            "desc": "Senyum cerah dapat meninggalkan kesan positif dalam situasi sosial dan profesional, menumbuhkan rasa menarik dan ramah."
+          }
+        }
+      },
+      "2": {
+        "title": "Terapi Secretome dan Stem Cells",
+        "desc": "Rasakan manfaat peremajaan dari Secretome, terapi mutakhir yang memanfaatkan kekuatan protein regeneratif.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp2.499.000",
+        "list-benefit": {
+          "1": {
+            "title": "Regenerasi Jaringan",
+            "desc": "Mempromosikan perbaikan dan regenerasi jaringan yang rusak."
+          },
+          "2": {
+            "title": "Anti-inflamasi",
+            "desc": "Menunjukkan sifat anti-inflamasi, membantu modulasi kekebalan tubuh."
+          },
+          "3": {
+            "title": "Mempercepat Penyembuhan",
+            "desc": "Mempercepat proses penyembuhan alami dengan mendorong pertumbuhan sel dan remodeling jaringan."
+          },
+          "4": {
+            "title": "Perawatan Kondisi Degeneratif",
+            "desc": "Memiliki potensi untuk mengobati kondisi seperti osteoartritis dan penyakit neurodegeneratif."
+          },
+          "5": {
+            "title": "Meminimalkan Respon Kekebalan Tubuh",
+            "desc": "Mengurangi risiko penolakan kekebalan tubuh, menjadikannya cocok untuk transplantasi dan terapi regeneratif."
+          }
+        }
+      },
+      "3": {
+        "title": "Terapy Ozone",
+        "desc": "Manjakan diri Anda dalam khasiat penyembuhan terapi ozon. Temukan pendekatan holistik terhadap kesehatan dengan terapi ozon.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp3.125.000",
+        "list-benefit": {
+          "1": {
+            "title": "Peningkatan Oksigenasi",
+            "desc": "Dapat meningkatkan pengiriman oksigen ke jaringan, berpotensi meningkatkan tingkat energi."
+          },
+          "2": {
+            "title": "Meningkatkan Sistem Kekebalan Tubuh",
+            "desc": "Diklaim merangsang sistem kekebalan tubuh untuk meningkatkan resistensi terhadap infeksi."
+          },
+          "3": {
+            "title": "Efek Anti Inflamasi",
+            "desc": "Memiliki sifat anti-inflamasi."
+          },
+          "4": {
+            "title": "Dukungan Detoksifikasi",
+            "desc": "Diadvokasi karena peran potensialnya dalam membantu detoksifikasi."
+          },
+          "5": {
+            "title": "Sifat Antimikroba",
+            "desc": "Memiliki efek antimikroba yang dapat membantu memerangi infeksi."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
   "question": {
     "help": "Ada Pertanyaan? Tim kami siap membantu kamu secara langsung",
     "contact_whatsapp": "Hubungi melalui whatsapp",

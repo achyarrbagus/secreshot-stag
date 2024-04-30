@@ -1,12 +1,12 @@
 "use client";
 import { useState, Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import LayoutWrapper from "../../components/layout-wrapper";
+import LayoutWrapper from "../components/layout-wrapper";
 import Helper from "../../../../lib/helper/helper";
 import Accordion from "react-bootstrap/Accordion";
 import { useLocale, useTranslations } from "next-intl";
-import NurseCard from "@/app/components/card-nurse";
-import DoctorCard from "@/app/components/card-doctor";
+import NurseCard from "../components/card-nurse";
+import DoctorCard from "../components/card-doctor";
 
 const HomeNursing = () => {
   const [formData, setFormData] = useState({

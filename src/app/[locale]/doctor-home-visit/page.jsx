@@ -5,9 +5,9 @@ import { useSearchParams } from "next/navigation";
 import Helper from "../../../../lib/helper/helper";
 import Accordion from "react-bootstrap/Accordion";
 import { useLocale, useTranslations } from "next-intl";
-import DoctorCard from "@/app/components/card-doctor";
-import NurseCard from "@/app/components/card-nurse";
-import LayoutWrapper from "@/app/components/layout-wrapper";
+import DoctorCard from "../components/card-doctor";
+import NurseCard from "../components/card-nurse";
+import LayoutWrapper from "../components/layout-wrapper";
 
 const DoctorHomeVisit = () => {
   const locale = useLocale();

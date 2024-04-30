@@ -3,7 +3,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useState, Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import LayoutWrapper from "../../components/layout-wrapper";
+import LayoutWrapper from "../components/layout-wrapper";
 import Helper from "../../../../lib/helper/helper";
 import Accordion from "react-bootstrap/Accordion";
 import { useLocale, useTranslations } from "next-intl";

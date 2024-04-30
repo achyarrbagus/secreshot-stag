@@ -501,6 +501,644 @@
     "total": "Total",
     "pay_confirm": "Confirm & Pay"
   },
+  "holistic-alternative": {
+    "title-banner": "Holistic Alternative Therapies",
+    "title-slogan": "Dive into holistic well-being with our range of alternative therapy solutions.",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "sub-title": "Our Holistic Alternative Therapies offer: ",
+    "service-menu": {
+      "1": {
+        "title": "Acupunture",
+        "desc": "An ancient Chinese medicine practice that involves inserting thin needles into the body at specific points.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp600.000",
+        "list-benefit": {
+          "1": {
+            "title": "Pain Management",
+            "desc": "Alleviates various types of pain, including chronic conditions."
+          },
+          "2": {
+            "title": "Stress Reduction",
+            "desc": "Promotes relaxation and balances the nervous system."
+          },
+          "3": {
+            "title": "Improved Sleep",
+            "desc": "Enhances sleep quality and helps manage insomnia."
+          },
+          "4": {
+            "title": "Enhanced Immune Function",
+            "desc": "Supports overall immune system health."
+          },
+          "5": {
+            "title": "Complementary Treatment",
+            "desc": "Used alongside conventional therapies for various conditions."
+          }
+        }
+      },
+      "2": {
+        "title": "Therapeutic Massage",
+        "desc": "A traditional massage that uses long, flowing strokes, kneading, and pressure to relax muscles and improve circulation.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp300.000",
+        "list-benefit": {
+          "1": {
+            "title": "Pain Relief",
+            "desc": "Eases muscle tension and reduces discomfort."
+          },
+          "2": {
+            "title": "Stress Reduction",
+            "desc": "Promotes relaxation, lowering stress levels."
+          },
+          "3": {
+            "title": "Improved Circulation",
+            "desc": "Enhances blood flow, aiding in overall health."
+          },
+          "4": {
+            "title": "Flexibility and Range of Motion",
+            "desc": "Helps increase flexibility and joint mobility."
+          },
+          "5": {
+            "title": "Mood Enhancement",
+            "desc": "Releases endorphins, contributing to a positive mood."
+          }
+        }
+      },
+      "3": {
+        "title": "Enery Balancing Reiki",
+        "desc": "A Japanese technique that uses gentle touch to channel energy into the body.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp400.000",
+        "list-benefit": {
+          "1": {
+            "title": "Stress Reduction",
+            "desc": "Promotes relaxation, easing stress and tension."
+          },
+          "2": {
+            "title": "Emotional Well-Being",
+            "desc": "Supports emotional balance and clarity."
+          },
+          "3": {
+            "title": "Pain Management",
+            "desc": "May help alleviate physical discomfort and pain."
+          },
+          "4": {
+            "title": "Enhanced Energy Flow",
+            "desc": "Aids in balancing and harmonizing the body's energy."
+          },
+          "5": {
+            "title": "Overall Relaxation",
+            "desc": "Induces a state of deep relaxation for holistic well-being."
+          }
+        }
+      },
+      "4": {
+        "title": "Yoga Guidance & Sessions",
+        "desc": "A type of yoga that combines traditional yoga poses with relaxation techniques.",
+        "benefit": "Benefit",
+        "start-from": "Start from",
+        "start-from-price": "Rp400.000",
+        "list-benefit": {
+          "1": {
+            "title": "Flexibility and Strength",
+            "desc": "Improves flexibility, balance, and overall physical strength."
+          },
+          "2": {
+            "title": "Stress Reduction",
+            "desc": "Promotes relaxation and reduces stress levels through mindful movements and breathing."
+          },
+          "3": {
+            "title": "Mental Clarity",
+            "desc": "Enhances mental focus, concentration, and mindfulness."
+          },
+          "4": {
+            "title": "Improved Posture",
+            "desc": "Helps correct and maintain good posture, reducing strain on the body."
+          },
+          "5": {
+            "title": "Mind-Body Connection",
+            "desc": "Strengthens the connection between the body and mind for holistic well-being."
+          }
+        }
+      },
+      "5": {
+        "title": "Meditation Practices",
+        "desc": "A type of meditation that involves a relaxed state and focusing on the breath.",
+        "benefit": "Benefit",
+        "start-from": "Start from",
+        "start-from-price": "Rp400.000",
+        "list-benefit": {
+          "1": {
+            "title": "Stress Reduction",
+            "desc": "Promotes relaxation, reducing overall stress levels."
+          },
+          "2": {
+            "title": "Improved Focus and Concentration",
+            "desc": "Enhances mental clarity and attention."
+          },
+          "3": {
+            "title": "Emotional Well-Being",
+            "desc": "Helps manage emotions and cultivate a positive mindset."
+          },
+          "4": {
+            "title": "Better Sleep",
+            "desc": "Supports relaxation and can contribute to improved sleep quality."
+          },
+          "5": {
+            "title": "Mindfulness",
+            "desc": "Fosters awareness of the present moment, leading to a greater sense of peace and balance."
+          }
+        }
+      },
+      "6": {
+        "title": "Osteopathy and Chiropractic services",
+        "desc": "Discover the healing touch of our osteopathy , where experienced practitioners employ gentle manual techniques to restore balance and alleviate musculoskeletal issues.",
+        "benefit": "Benefit",
+        "start-from": "Start from",
+        "start-from-price": "Rp450.000",
+        "list-benefit": {
+          "1": {
+            "title": "Pain Relief",
+            "desc": "Alleviates musculoskeletal pain and discomfort through manual adjustments."
+          },
+          "2": {
+            "title": "Improved Mobility",
+            "desc": "Enhances joint flexibility and overall range of motion."
+          },
+          "3": {
+            "title": "Posture Correction",
+            "desc": "Helps address and correct posture issues, reducing strain on the body."
+          },
+          "4": {
+            "title": "Headache and Migraine Relief",
+            "desc": "Can provide relief from tension headaches and migraines through spinal adjustments."
+          },
+          "5": {
+            "title": "Whole-body Wellness",
+            "desc": "Promotes overall well-being by addressing the interconnectedness of the musculoskeletal system and other bodily functions."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "inhome-therapy": {
+    "title-banner": "In-Home IV Therapy & more",
+    "title-slogan": "Receive vital intravenous treatments and medications, ensuring safety and comfort",
+    "benefit": "Composition",
+    "book-button": "Book Now",
+    "sub-title": "Our In-Home IV Therapy: ",
+    "service-menu": {
+      "1": {
+        "title": "Bali Belly Infusion",
+        "desc": "This IV drip provides a combination of therapeutic components to alleviate pain, nausea, and protect the gastrointestinal tract. The vitamin boosters aim to enhance overall well-being, boost immunity, and support various metabolic processes.",
+        "benefit": "Composition",
+        "start-from": "Start from: ",
+        "start-from-price": "Rp1.890.000",
+        "list-benefit": {
+          "1": {
+            "title": "Therapeutic Components: ",
+            "desc": {
+              "1": "Pain Killer IV",
+              "2": "Anti-Vomiting IV",
+              "3": "Gaster Protector IV"
+            }
+          },
+          "2": {
+            "title": "Vitamin Boosters: ",
+            "desc": {
+              "1": "Vitamin C",
+              "2": "Vitamin B1 (Tiamin)",
+              "3": "Vitamin B2 (Riboflavin)",
+              "4": "Nikotinamid (Vitamin B3)",
+              "5": "Asam Pantotenat (Vitamin B5)",
+              "6": "Vitamin B6",
+              "7": "Asam folat",
+              "8": "Vitamin B12",
+              "9": "Biotin"
+            }
+          }
+        }
+      },
+      "2": {
+        "title": "Super Bali Belly IV",
+        "desc": "A turbocharged upgrade to our Standard Bali Belly. Infused with immune-empowering zinc, detoxifying glutathione, and gut-nourishing probiotics, this blend is designed for medical-grade resilience. Beyond addressing Bali belly symptoms, it stands as a robust solution, fortifying your well-being at a cellular level. Immunity, detoxification, and digestive health converge for your optimal vitality.",
+        "benefit": "Composition",
+        "start-from": "Start From",
+        "start-from-price": "Rp2.380.000",
+        "list-benefit": {
+          "1": {
+            "title": "Therapeutic Components: ",
+            "desc": {
+              "1": "Pain Killer IV ",
+              "2": "Anti-Vomiting IV",
+              "3": "Gaster Protector IV"
+            }
+          },
+          "2": {
+            "title": "Vitamin Boosters: ",
+            "desc": {
+              "1": "Vitamin C",
+              "2": "Vitamin B1 (Tiamin)",
+              "3": "Vitamin B2 (Riboflavin)",
+              "4": "Nikotinamid (Vitamin B3)",
+              "5": "Asam Pantotenat (Vitamin B5)",
+              "6": "Vitamin B6",
+              "7": "Asam folat",
+              "8": "Vitamin B12",
+              "9": "Biotin",
+              "10": "Seng (20mg)",
+              "11": "Glutathione",
+              "12": "Probiotik"
+            }
+          }
+        }
+      },
+      "3": {
+        "title": "Basic Immune Booster",
+        "desc": "This IV drip comprises essential electrolytes, a robust Vitamin B complex, and a dose of Vitamin C. It acts to fortify the immune system, enhance metabolic function, and promote the synthesis of collagen, thereby supporting overall health.",
+        "benefit": "Composition",
+        "start-from": "Start From",
+        "start-from-price": "Rp1.890.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "Elektrolit (500 ml)",
+              "Vitamin B12 (5mg)",
+              "Biotin (60 mcg)",
+              "Asam Folat (400 mcg)",
+              "Vitamin B2 (3.6 mg)",
+              "Nikotinamid (40 mg)",
+              "Asam pantotenat (15 mg)",
+              "Vitamin B1 (102.5 mg)",
+              "Vitamin B6 (104 mg)",
+              "Vitamin C (1,000 mg)"
+            ]
+          },
+          "2": {
+            "title": "Penguat Vitamin :",
+            "desc": [
+              "Vitamin C",
+              "Vitamin B1 (Tiamin)",
+              "Vitamin B2 (Riboflavin)",
+              "Nikotinamid (Vitamin B3)",
+              "Asam Pantotenat (Vitamin B5)",
+              "Vitamin B6",
+              "Asam folat",
+              "Vitamin B12",
+              "Biotin",
+              "Seng (20mg)",
+              "Glutathione",
+              "Probiotik"
+            ]
+          },
+          "3": {
+            "title": "Peningkatan Kualitas Tidur",
+            "desc": "Meningkatkan kualitas tidur dan membantu mengelola insomnia."
+          },
+          "4": {
+            "title": "Peningkatan Fungsi Imun",
+            "desc": "Mendukung kesehatan sistem kekebalan tubuh secara keseluruhan."
+          },
+          "5": {
+            "title": "Perawatan Komplementer",
+            "desc": "Digunakan bersama terapi konvensional untuk berbagai kondisi."
+          }
+        }
+      },
+      "4": {
+        "title": "Standart Immune Booster",
+        "desc": "This IV drip delivers a blend of vital electrolytes, an elevated quantity of Vitamin C, and a comprehensive Vitamin B complex. It serves to intensify the immune response, boost energy metabolism, stimulate red blood cell production, and contribute to collagen production for enhanced skin health and immune system resilience.",
+        "benefit": "Composition",
+        "start-from": "Start from: ",
+        "start-from-price": "Rp2.075.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "Elektrolit (500 ml)",
+              "Vitamin C (2,100 mg)",
+              "Vitamin B1 (102.5 mg)",
+              "Vitamin B2 (103.6 mg)",
+              "Nikotinamid (40 mg)",
+              "Asam pantotenat (15 mg)",
+              "Vitamin B6 (4 mg)",
+              "Asam Folat (400 mcg)",
+              "Vitamin B12 (10 mcg)",
+              "Biotin (60 mcg)"
+            ]
+          }
+        }
+      },
+      "5": {
+        "title": "Super Immune Booster",
+        "desc": "This potent IV drip combines electrolytes, Glutathione, Zinc, and an extensive range of vitamins and minerals, including A, D, E, C, B1, B2, B6, B12, and B5. It provides a formidable immune enhancement and supports various bodily functions, including antioxidant defenses, immune function, wound healing, and energy production. This comprehensive approach contributes to overall health and vitality.",
+        "benefit": "Composition",
+        "start-from": "Start From",
+        "start-from-price": "Rp2.480.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": {
+              "1": "Elektrolit (500 ml)",
+              "2": "Glutathione (600 mg)",
+              "3": "Zinc (5 mg)",
+              "4": "Retinol (3,500 IU)",
+              "5": "Kolekalsiferol (220 IU)",
+              "6": "Alfatokoferol (11,2 IU)",
+              "7": "Vitamin C (2125 mg)",
+              "8": "Vitamin B1 (103.51 mg)",
+              "9": "Vitamin B2 (4.14 mg)",
+              "10": "Vitamin B6 (104.53 mg)",
+              "11": "Vitamin B12 (5.006 mg)",
+              "12": "Asam folat (0,414 mg)",
+              "13": "Vitamin B5 (17.25 mg)",
+              "14": "Biotin (0.069 mg)",
+              "15": "Nikotinamid (46 mg)"
+            }
+          }
+        }
+      },
+      "6": {
+        "title": "Hangover Infusion",
+        "desc": "Hangover infusion treatment is a quick 30-60 minute procedure to help you quickly overcome hangover symptoms through hydration and a combination of vitamins and electrolytes.",
+        "benefit": "Composition",
+        "start-from": "Start From",
+        "start-from-price": "Rp1.860.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "IV Pereda Sakit",
+              "IV Anti-Mual",
+              "IV Gaster Protector",
+              "IV Vit B1, B6, B12"
+            ]
+          }
+        }
+      },
+      "7": {
+        "title": "Fever Infusion",
+        "desc": "Fever Infusion treatment is a rapid recovery of high fever for adults through intravenous and can be beneficial to restore body fluids.",
+        "benefit": "Composition",
+        "start-from": "Start From",
+        "start-from-price": "Rp1.140.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "IV Pain Killer IV",
+              "IV Anti-Vomiting IV",
+              "IV Gaster Protector",
+              "Vit B1, B6, B12 IV",
+              "Paracetamol IV"
+            ]
+          }
+        }
+      },
+      "8": {
+        "title": "Gerd / Gastritis Infusion",
+        "desc": "Gerd/Gastritis Infusion treatment is useful for treating inflammation in the stomach or gaster caused by irritation due to stomach acid.",
+        "benefit": "Composition",
+        "start-from": "Start From",
+        "start-from-price": "Rp1.660.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "IV Pain Killer IV",
+              "IV Anti-Vomiting IV",
+              "IV Gaster Protector",
+              "IV Vit B1, B6, B12"
+            ]
+          }
+        }
+      },
+      "9": {
+        "title": "Iron Infusion",
+        "desc": "Iron infusion is an effective treatment for iron deficiency, the condition that causes tiredness and affects your ability to function.",
+        "benefit": "Composition",
+        "start-from": "Start From",
+        "start-from-price": "Rp1.590.000",
+        "list-benefit": {
+          "1": {
+            "title": "",
+            "desc": [
+              "Infus Ringer Laktat 500 cc",
+              "Infus NACL 100 cc",
+              "Vit C 1000 mg",
+              "Vit B Compex 5000 mg",
+              "Iron Sucrose Complex 100 mg"
+            ]
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
+  "alternative-telemedicine": {
+    "title-banner": "Alternative Medicine",
+    "title-slogan": "Teeth whitening for enhanced appearance, secretome therapy for regenerative treatments, and ozone therapy for boost immune system.",
+    "benefit": "Benefit",
+    "book-button": "Book Now",
+    "sub-title": "Our Alternative Medicine services consist of: ",
+    "service-menu": {
+      "1": {
+        "title": "Teeth Whitening",
+        "desc": "Enhance the brightness of your smile with our professional teeth whitening service.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp889.000",
+        "list-benefit": {
+          "1": {
+            "title": "Improved Aesthetics",
+            "desc": "Enhances the appearance of teeth by reducing stains and discoloration, resulting in a brighter and whiter smile."
+          },
+          "2": {
+            "title": "Boosted Confidence",
+            "desc": "Whiter teeth often contribute to increased self-confidence and a positive self-image."
+          },
+          "3": {
+            "title": "Youthful Appearance",
+            "desc": "A whiter smile is associated with a more youthful look, as tooth discoloration can be a sign of aging."
+          },
+          "4": {
+            "title": "Enhanced Oral Hygiene",
+            "desc": "The process of teeth whitening often involves professional cleaning, contributing to improved overall oral hygiene."
+          },
+          "5": {
+            "title": "Positive Social Impression",
+            "desc": "A bright smile can leave a positive impression in social and professional situations, fostering a sense of attractiveness and friendliness."
+          }
+        }
+      },
+      "2": {
+        "title": "Secretome and Stem Cells Therapy",
+        "desc": "Experience the rejuvenating benefits of Secretome, a cutting-edge therapy that harnesses the power of regenerative proteins.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp2.499.000",
+        "list-benefit": {
+          "1": {
+            "title": "Tissue Regeneration",
+            "desc": "Promotes repair and regeneration of damaged tissues."
+          },
+          "2": {
+            "title": "Anti-Inflammatory",
+            "desc": "Exhibits anti-inflammatory properties, aiding in immune modulation."
+          },
+          "3": {
+            "title": "Accelerated Healing",
+            "desc": "Speeds up the natural healing process by promoting cell growth and tissue remodeling."
+          },
+          "4": {
+            "title": "Degenerative Condition Treatment",
+            "desc": "Holds potential for treating conditions like osteoarthritis and neurodegenerative diseases."
+          },
+          "5": {
+            "title": "Minimized Immune Response",
+            "desc": "Reduces the risk of immune rejection, making them suitable for transplantation and regenerative therapies."
+          }
+        }
+      },
+      "3": {
+        "title": "Ozone Therapy",
+        "desc": "Immerse yourself in the healing properties of ozone therapy. Discover a holistic approach to wellness with ozone therapy.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp3.125.000",
+        "list-benefit": {
+          "1": {
+            "title": "Improved Oxygenation",
+            "desc": "May enhance oxygen delivery to tissues, potentially boosting energy levels."
+          },
+          "2": {
+            "title": "Enhanced Immune System",
+            "desc": "Claimed to stimulate the immune system for increased resistance to infections."
+          },
+          "3": {
+            "title": "Anti-Inflammatory Effects",
+            "desc": "Proposed to have anti-inflammatory properties."
+          },
+          "4": {
+            "title": "Detoxification Support",
+            "desc": "Advocated for its potential role in aiding detoxification."
+          },
+          "5": {
+            "title": "Antimicrobial Properties",
+            "desc": "Suggested to have antimicrobial effects that may help combat infections."
+          }
+        }
+      }
+    },
+    "practice-location": "Practice Location",
+    "our-doctors": "Our Doctors",
+    "dr-surgeon": "Surgeon",
+    "dr-general": "General Practitioner",
+    "dr-pediatrician": "Pediatrician",
+    "dr-asthetic": "Aesthetic Doctor",
+    "mayapada": "Mayapada Hospital",
+    "eka": "Eka Hospital",
+    "aysha": "Aysha Islamic Hospital",
+    "cepat-sehat": "Cepat Sehat Clinic",
+    "our-nurse": "Our Nurse",
+
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
+    },
+    "detail": "Payment Details",
+    "fee": "Fee",
+    "discount": "Discount",
+    "method": "Choose Payment Method",
+    "e_wallet": "E-Wallet",
+    "bank_transfer": "Bank Transfer",
+    "card": "Card",
+    "other": "OTC",
+    "promo": "Promo Code",
+    "input_promo": "Input Promo Code",
+    "apply_promo": "Apply",
+    "your": "Your payment",
+    "total": "Total",
+    "pay_confirm": "Confirm & Pay"
+  },
   "question": {
     "help": "Any Question? Our team is ready to help you directly",
     "contact_whatsapp": "Contact via WhatsApp",
