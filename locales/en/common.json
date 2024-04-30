@@ -391,7 +391,7 @@
         }
       },
       "2": {
-        "title": "Medical Doctor Online Consultant",
+        "title": "Medical Doctor Online Consultation",
         "desc": "Connect with specialized medical expertise remotely, eliminating the need for physical travel through our online platform.",
         "benefit": "Benefit",
         "start-from": "Start From",
@@ -442,22 +442,22 @@
       },
       "4": {
         "title": "Online Sick Leave Letter",
-        "desc": "Online sick leave letter enables individuals to consult with healthcare professionals remotely to obtain the necessary sick leave letter through digital platforms or websites.",
+        "desc": "Online sick leave letter enables individuals to consult with healthcare professionals remotely to obtain the necessary certificates through digital platforms or websites.",
         "benefit": "Benefit",
         "start-from": "Start from",
         "start-from-price": "Rp75.000",
         "list-benefit": {
           "1": {
             "title": "Convenience",
-            "desc": "Allows individuals to obtain sick leave letter from the comfort of their own homes, reducing the need for in-person visits."
+            "desc": "Allows individuals to obtain medical certificates from the comfort of their own homes, reducing the need for in-person visits."
           },
           "2": {
             "title": "Time Savings",
-            "desc": "Streamlines the process, saving time compared to traditional methods of obtaining a sick leave letter."
+            "desc": "Streamlines the process, saving time compared to traditional methods of obtaining a medical certificate."
           },
           "3": {
             "title": "Accessibility",
-            "desc": "Provides access to sick leave letter for individuals in remote locations or those with limited mobility."
+            "desc": "Provides access to medical certificates for individuals in remote locations or those with limited mobility."
           },
           "4": {
             "title": "Efficiency",
@@ -687,6 +687,12 @@
           }
         }
       }
+    },
+
+    "form-book-title": {
+      "1": "Book a doctor visit now",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now"
     },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",

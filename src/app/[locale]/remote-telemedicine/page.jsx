@@ -164,7 +164,7 @@ const RemoteTelemedic = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() => handleBook(t("form-book-title.1"))}
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -230,9 +230,7 @@ const RemoteTelemedic = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() =>
-                              handleBook("Monitoring and Prevention")
-                            }
+                            onClick={() => handleBook(t("form-book-title.1"))}
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -314,9 +312,7 @@ const RemoteTelemedic = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() =>
-                              handleBook("Monitoring and Prevention")
-                            }
+                            onClick={() => handleBook(t("form-book-title.3"))}
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -344,7 +340,7 @@ const RemoteTelemedic = () => {
                         />
                       </div>
                       <div className="col-12">
-                        <p>{t("service-menu.2.desc")}</p>
+                        <p>{t("service-menu.4.desc")}</p>
                         <h6 className="title-line">
                           <span>{t("benefit")}</span>
                         </h6>

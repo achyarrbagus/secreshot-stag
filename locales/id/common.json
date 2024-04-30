@@ -492,6 +492,10 @@
         }
       }
     },
+    "form-book-title": {
+      "1": "Pesan perawatan luka sekarang",
+      "2": "Pesan pemantauan dan pencegahan medis sekarang"
+    },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",
     "dr-surgeon": "Surgeon",
