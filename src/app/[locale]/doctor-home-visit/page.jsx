@@ -792,7 +792,10 @@ const DoctorHomeVisit = () => {
                               </b>
                             </div>
                             <div
-                              onClick={() => handleBook("Doctor Home Visit")}
+                              onClick={() =>
+                                (window.location.href =
+                                  "https://www.vaksindirumah.cepatsehat.com/")
+                              }
                               id="doctor-visit"
                               className="btn btn-warning fs-14 ms-auto"
                             >
