@@ -188,7 +188,7 @@ const Home = () => {
                     job={t("dr-pediatrician")}
                     str="3321201323154360"
                     titlelocation={t("practice-location")}
-                    practiceLocation={["Aysha Islamic Hospital"]}
+                    practiceLocation={[t("aysha")]}
                   />
                   <DoctorCard
                     image={`/assets/img/doctor/dr-ayu-a.png`}
