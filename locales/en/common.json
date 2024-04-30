@@ -120,30 +120,30 @@
       },
       "3": {
         "title": "Medical Check Up",
-        "desc": "A Doctor Home Visit brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
+        "desc": "A medical check-up is a routine appointment with a healthcare professional to assess overall health through vital sign measurements, a physical examination, and, if necessary, additional screenings or tests.",
         "benefit": "Benefit",
         "start-from": "Start From",
-        "start-from-price": "Rp250.000",
+        "start-from-price": "Rp150.000",
         "list-benefit": {
           "1": {
-            "title": "Convenience",
-            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
+            "title": "Blood Glucose Level Tests",
+            "desc": "Check blood sugar levels to diagnose and manage diabetes and hypoglycemia."
           },
           "2": {
-            "title": "Personalized Care",
-            "desc": "Tailored treatment plans considering home environment and lifestyle."
+            "title": "Cholesterol Testing",
+            "desc": "Assess LDL, HDL, and triglyceride levels to gauge cardiovascular risk."
           },
           "3": {
-            "title": "Timely Intervention",
-            "desc": "Early detection and action to prevent complications."
+            "title": "Uric Acid Test",
+            "desc": "Measure uric acid levels for kidney function evaluation and diagnosing conditions like gout."
           },
           "4": {
-            "title": "Enhanced Relationship",
-            "desc": "In-home visits foster better communication and trust."
+            "title": "Blood Pressure Measurement",
+            "desc": "Evaluate arterial blood pressure as a crucial indicator of cardiovascular health."
           },
           "5": {
-            "title": "Accessibility",
-            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
+            "title": "Iron Level Tests",
+            "desc": "Measure the amount of iron in the blood and diagnosing conditions like iron deficiency anemia"
           }
         }
       },

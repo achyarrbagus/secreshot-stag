@@ -632,7 +632,7 @@ const DoctorHomeVisit = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() => handleBook("Nurse Home Visit")}
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -714,7 +714,7 @@ const DoctorHomeVisit = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() => handleBook("Medical Check Up")}
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -817,7 +817,7 @@ const DoctorHomeVisit = () => {
         {/* booking session */}
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section">{t("form-book.title")}</h3>
+            <h3 className="title-section">{book}</h3>
             <form>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
@@ -876,10 +876,7 @@ const DoctorHomeVisit = () => {
             </form>
             <div className="row g-3 justify-content-center">
               <div className="col-6 col-md-3">
-                <button
-                  onClick={() => redirectWa(locale)}
-                  className="btn btn-whatsapp w-100"
-                >
+                <button onClick={redirectWa} className="btn btn-whatsapp w-100">
                   <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
                 </button>
               </div>
