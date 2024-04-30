@@ -35,7 +35,7 @@ Nama : ${form?.name}
 Alamat : ${form?.address} 
 Layanan : ${form?.service}`);
 
-      if (lang == "EN") {
+      if (lang == "EN" || lang == "en") {
         wardingWa = encodeURIComponent(`
         Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation
         
