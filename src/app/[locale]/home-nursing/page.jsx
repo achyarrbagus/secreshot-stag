@@ -15,6 +15,8 @@ const HomeNursing = () => {
     service: "Select Service",
   });
 
+  const locale = useLocale();
+
   const t = useTranslations("home-nursing");
 
   const handleChange = (e) => {
@@ -149,7 +151,7 @@ const HomeNursing = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() => handleBook("Wound Care")}
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -231,29 +233,37 @@ const HomeNursing = () => {
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">Name</label>
+                  <label className="form-label">
+                    {locale == "id" ? "Nama" : "Name"}
+                  </label>
                   <input
                     type="text"
                     className="form-control"
                     id="name"
-                    placeholder="Your Name"
+                    placeholder={locale == "id" ? "Nama Anda" : "Your Name"}
                     value={formData.name}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Address</label>
+                  <label className="form-label">
+                    {locale == "id" ? "Alamat" : "Address"}
+                  </label>
                   <input
                     type="text"
                     className="form-control"
                     id="address"
-                    placeholder="Your Address"
+                    placeholder={
+                      locale == "id" ? "Alamat Anda" : "Your Address"
+                    }
                     value={formData.address}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Service Name</label>
+                  <label className="form-label">
+                    {locale == "id" ? "Nama Service" : "Service Name"}
+                  </label>
                   <select
                     id="service"
                     className="form-select form-control"
