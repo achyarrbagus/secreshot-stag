@@ -31,15 +31,13 @@ const Home = () => {
   );
 
   const redirectWa = (locale) => {
-    console.log(locale);
-
     const helper = new Helper();
     helper.RedirectToWa(formData, locale, true);
   };
 
   const redirectTele = () => {
     const helper = new Helper();
-    helper.RedirectToTele();
+    helper.RedirectToTele(formData);
   };
   const [formData, setFormData] = React.useState({
     name: "",
