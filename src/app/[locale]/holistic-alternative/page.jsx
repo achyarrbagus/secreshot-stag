@@ -12,6 +12,7 @@ const HolisticAlternative = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
   const t = useTranslations("holistic-alternative");
+  const locale = useLocale();
 
   const [book, setBook] = useState("Book a visit at your place now");
 
@@ -57,7 +58,7 @@ const HolisticAlternative = () => {
 
   const redirectWa = () => {
     const helper = new Helper();
-    helper.RedirectToWa(formData, lang, true);
+    helper.RedirectToWa(formData, locale, true);
   };
   const redirectTele = () => {
     const helper = new Helper();

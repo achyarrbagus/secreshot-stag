@@ -26,7 +26,7 @@ const HomeNursing = () => {
 
   const redirectWa = () => {
     const helper = new Helper();
-    helper.RedirectToWa(formData, lang, true);
+    helper.RedirectToWa(formData, locale, true);
   };
   const redirectTele = () => {
     const helper = new Helper();

@@ -8,6 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 const InHomeTherapy = () => {
   const [book, setBook] = useState("Book a visit at your place now");
   const t = useTranslations("inhome-therapy");
+  const locale = useLocale();
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
@@ -56,7 +57,7 @@ const InHomeTherapy = () => {
 
   const redirectWa = () => {
     const helper = new Helper();
-    helper.RedirectToWa(formData, lang, true);
+    helper.RedirectToWa(formData, locale, true);
   };
   const redirectTele = () => {
     const helper = new Helper();
