@@ -32,18 +32,18 @@ const DoctorHomeVisit = () => {
     helper.RedirectToTele(formData);
   };
 
-  const [book, setBook] = useState("Book a visit at your place now");
+  const [book, setBook] = useState(t("form-book.title"));
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
       case "Doctor Home Visit":
-        setBook("Book a doctor visit now");
+        setBook(t("form-book-title.1"));
         break;
       case "Nurse Home Visit":
-        setBook("Book a nurse visit now");
+        setBook(t("form-book-title.2"));
         break;
       case "Medical Check Up":
-        setBook("Book for medical check up now");
+        setBook(t("form-book-title.3"));
         break;
     }
 
@@ -633,7 +633,7 @@ const DoctorHomeVisit = () => {
                           </div>
                           <div
                             onClick={() => handleBook("Nurse Home Visit")}
-                            id="doctor-visit"
+                            id="nurse-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
                             {t("book-button")}
@@ -715,7 +715,7 @@ const DoctorHomeVisit = () => {
                           </div>
                           <div
                             onClick={() => handleBook("Medical Check Up")}
-                            id="doctor-visit"
+                            id="medical-check-up"
                             className="btn btn-warning fs-14 ms-auto"
                           >
                             {t("book-button")}
@@ -854,13 +854,13 @@ const DoctorHomeVisit = () => {
                     <option value="Select Service" disabled>
                       {t("form-book.service-label")}
                     </option>
-                    <option value={t("service-menu.1")}>
+                    <option value={t("service-menu.1.title")}>
                       {t("service-menu.1.title")}
                     </option>
-                    <option value={t("service-menu.2")}>
+                    <option value={t("service-menu.2.title")}>
                       {t("service-menu.2.title")}
                     </option>
-                    <option value={t("service-menu.3")}>
+                    <option value={t("service-menu.3.title")}>
                       {t("service-menu.3.title")}
                     </option>
                     {locale == "id" ? (

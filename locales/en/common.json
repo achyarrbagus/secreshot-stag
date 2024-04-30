@@ -194,6 +194,11 @@
       "address": "Address",
       "address-label": "Your Address"
     },
+    "form-book-title": {
+      "1": "Book a doctor visit now",
+      "2": "Book a nurse visit now",
+      "3": "Book for medical check up now"
+    },
     "detail": "Payment Details",
     "fee": "Fee",
     "discount": "Discount",

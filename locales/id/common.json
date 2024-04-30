@@ -55,7 +55,7 @@
     "our-nurse": "Perawat Kami",
     "article": "Artikel",
     "form-book": {
-      "title": "Pesan kunjungan sekarang",
+      "title": "Pesan Sekarang Dari Rumah",
       "name": "Nama",
       "name-label": "Nama Anda",
       "service": "Layanan",
@@ -185,13 +185,18 @@
       }
     },
     "form-book": {
-      "title": "Pesan kunjungan sekarang",
+      "title": "Pesan Sekarang Dari Rumah",
       "name": "Nama",
       "name-label": "Nama Anda",
       "service": "Layanan",
       "service-label": "Pilih Layanan",
       "address": "Alamat",
       "address-label": "Alamat Anda"
+    },
+    "form-book-title": {
+      "1": "Pesan kunjungan dokter sekarang",
+      "2": "Pesan kunjungan perawat sekarang",
+      "3": "Pesan pemeriksaan kesehatan sekarang"
     },
     "practice-location": "Lokasi Praktik",
     "our-doctors": "Dokter Kami",
@@ -344,13 +349,13 @@
     "our-nurse": "Perawat Kami",
 
     "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
+      "title": "Pesan Sekarang Dari Rumah",
+      "name": "Nama",
+      "name-label": "Nama Anda",
+      "service": "Layanan",
+      "service-label": "Pilih Layanan",
+      "address": "Alamat",
+      "address-label": "Alamat Anda"
     },
     "detail": "Payment Details",
     "fee": "Fee",
@@ -493,16 +498,16 @@
     "eka": "Eka Hospital",
     "aysha": "Aysha Islamic Hospital",
     "cepat-sehat": "Cepat Sehat Clinic",
-    "our-nurse": "Our Nurse",
+    "our-nurse": "Perawat Kami",
 
     "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
+      "title": "Pesan Sekarang Dari Rumah",
+      "name": "Nama",
+      "name-label": "Nama Anda",
+      "service": "Layanan",
+      "service-label": "Pilih Layanan",
+      "address": "Alamat",
+      "address-label": "Alamat Anda"
     },
     "detail": "Payment Details",
     "fee": "Fee",
@@ -714,13 +719,13 @@
     "our-nurse": "Our Nurse",
 
     "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
+      "title": "Pesan Sekarang Dari Rumah",
+      "name": "Nama",
+      "name-label": "Nama Anda",
+      "service": "Layanan",
+      "service-label": "Pilih Layanan",
+      "address": "Alamat",
+      "address-label": "Alamat Anda"
     },
     "detail": "Payment Details",
     "fee": "Fee",
@@ -1003,13 +1008,13 @@
     "our-nurse": "Our Nurse",
 
     "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
+      "title": "Pesan Sekarang Dari Rumah",
+      "name": "Nama",
+      "name-label": "Nama Anda",
+      "service": "Layanan",
+      "service-label": "Pilih Layanan",
+      "address": "Alamat",
+      "address-label": "Alamat Anda"
     },
     "detail": "Payment Details",
     "fee": "Fee",
@@ -1134,13 +1139,13 @@
     "our-nurse": "Our Nurse",
 
     "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
+      "title": "Pesan Sekarang Dari Rumah",
+      "name": "Nama",
+      "name-label": "Nama Anda",
+      "service": "Layanan",
+      "service-label": "Pilih Layanan",
+      "address": "Alamat",
+      "address-label": "Alamat Anda"
     },
     "detail": "Payment Details",
     "fee": "Fee",
