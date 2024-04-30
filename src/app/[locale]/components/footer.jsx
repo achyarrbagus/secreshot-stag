@@ -10,11 +10,11 @@ function MyFooter() {
         <div className="container">
           <div className="d-flex align-items-center">
             <a href="index.html">
-              <img src="assets/img/logo-white.png" className="logo" alt="" />
+              <img src="/assets/img/logo-white.png" className="logo" alt="" />
             </a>
             <a href="https://atensi.or.id/" className="ms-auto">
               <img
-                src="assets/img/logo-atensi.png"
+                src="/assets/img/logo-atensi.png"
                 className="logo-atensi"
                 alt=""
               />

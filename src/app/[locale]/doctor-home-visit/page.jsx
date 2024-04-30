@@ -78,7 +78,7 @@ const DoctorHomeVisit = () => {
         <section className="faq pt-4">
           <div className="container">
             <div className="d-flex align-items-center">
-              <img src="assets/img/plus-vector.svg" width="30px" alt="" />
+              <img src="/assets/img/plus-vector.svg" width="30px" alt="" />
               <h3 className="text-primary fs-20 fw-bold ms-3 mb-0">
                 {t("sub-title")}
               </h3>
