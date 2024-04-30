@@ -36,13 +36,22 @@ const DoctorHomeVisit = () => {
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
-      case "Doctor Home Visit" || "Kunjungan Dokter Kerumah":
+      case "Doctor Home Visit":
         setBook(t("form-book-title.1"));
         break;
-      case "Nurse Home Visit" || "Kunjungan Perawat Kerumah":
+      case "Nurse Home Visit":
         setBook(t("form-book-title.2"));
         break;
-      case "Medical Check Up" || "Pemeriksaan Kesehatan":
+      case "Medical Check Up":
+        setBook(t("form-book-title.3"));
+        break;
+      case "Kunjungan Dokter Kerumah":
+        setBook(t("form-book-title.1"));
+        break;
+      case "Kunjungan Perawat Kerumah":
+        setBook(t("form-book-title.2"));
+        break;
+      case "Pemeriksaan Kesehatan":
         setBook(t("form-book-title.3"));
         break;
     }
