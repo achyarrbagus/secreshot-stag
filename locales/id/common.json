@@ -336,7 +336,11 @@
         }
       }
     },
-    "practice-location": "Practice Location",
+    "form-book-title": {
+      "1": "Pesan perawatan luka sekarang",
+      "2": "Pesan pemantauan dan pencegahan medis sekarang"
+    },
+    "practice-location": "Lokasi Praktik",
     "our-doctors": "Dokter Kami",
     "dr-surgeon": "Dokter Bedah",
     "dr-general": "Dokter Umum",

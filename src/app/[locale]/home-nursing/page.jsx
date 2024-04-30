@@ -33,7 +33,7 @@ const HomeNursing = () => {
     helper.RedirectToTele(formData);
   };
 
-  const [book, setBook] = useState("Book a visit at your place now");
+  const [book, setBook] = useState(t("form-book.title"));
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
@@ -43,7 +43,34 @@ const HomeNursing = () => {
       case "Monitoring and Prevention":
         setBook("Book a monitoring & prevention now");
         break;
+      case "Perawatan Luka":
+        setBook(t("form-book-title.1"));
+        break;
+      case "Pemantauan & Pencegahan":
+        setBook(t("form-book-title.2"));
+        break;
     }
+
+    // switch (serviceSelect) {
+    //   case "Doctor Home Visit":
+    //     setBook(t("form-book-title.1"));
+    //     break;
+    //   case "Nurse Home Visit":
+    //     setBook(t("form-book-title.2"));
+    //     break;
+    //   case "Medical Check Up":
+    //     setBook(t("form-book-title.3"));
+    //     break;
+    //   case "Kunjungan Dokter Kerumah":
+    //     setBook(t("form-book-title.1"));
+    //     break;
+    //   case "Kunjungan Perawat Kerumah":
+    //     setBook(t("form-book-title.2"));
+    //     break;
+    //   case "Pemeriksaan Kesehatan":
+    //     setBook(t("form-book-title.3"));
+    //     break;
+    // }
 
     setFormData((prevFormData) => ({
       ...prevFormData,
@@ -51,6 +78,7 @@ const HomeNursing = () => {
     }));
     window.location.href = "#book";
   };
+
   return (
     <>
       <div className="content">
@@ -150,8 +178,11 @@ const HomeNursing = () => {
                               {t("service-menu.1.start-from-price")}
                             </b>
                           </div>
+
                           <div
-                            onClick={() => handleBook("Wound Care")}
+                            onClick={() =>
+                              handleBook(t("service-menu.1.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -210,9 +241,9 @@ const HomeNursing = () => {
                           </div>
                           <div
                             onClick={() =>
-                              handleBook("Monitoring and Prevention")
+                              handleBook(t("service-menu.2.title"))
                             }
-                            id="doctor-visit"
+                            id="nurse-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
                             {t("book-button")}
@@ -227,43 +258,36 @@ const HomeNursing = () => {
           </div>
         </section>
 
+        {/* booking session */}
         <section className="book" id="book">
           <div className="container">
             <h3 className="title-section">{book}</h3>
-            <div>
+            <form>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">
-                    {locale == "id" ? "Nama" : "Name"}
-                  </label>
+                  <label className="form-label">{t("form-book.name")}</label>
                   <input
                     type="text"
                     className="form-control"
                     id="name"
-                    placeholder={locale == "id" ? "Nama Anda" : "Your Name"}
+                    placeholder={t("form-book.name-label")}
                     value={formData.name}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">
-                    {locale == "id" ? "Alamat" : "Address"}
-                  </label>
+                  <label className="form-label">{t("form-book.address")}</label>
                   <input
+                    id="address"
                     type="text"
                     className="form-control"
-                    id="address"
-                    placeholder={
-                      locale == "id" ? "Alamat Anda" : "Your Address"
-                    }
+                    placeholder={t("form-book.address-label")}
                     value={formData.address}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">
-                    {locale == "id" ? "Nama Service" : "Service Name"}
-                  </label>
+                  <label className="form-label">{t("form-book.service")}</label>
                   <select
                     id="service"
                     className="form-select form-control"
@@ -271,32 +295,42 @@ const HomeNursing = () => {
                     value={formData.service}
                     onChange={handleChange}
                   >
-                    <option>Select Service</option>
-                    <option value="Wound Care">Wound Care</option>
-                    <option value="Monitoring and Prevention">
-                      Monitoring and Prevention
+                    <option value="Select Service" disabled>
+                      {t("form-book.service-label")}
                     </option>
+                    <option value={t("service-menu.1.title")}>
+                      {t("service-menu.1.title")}
+                    </option>
+                    <option value={t("service-menu.2.title")}>
+                      {t("service-menu.2.title")}
+                    </option>
+                    <option value={t("service-menu.3.title")}>
+                      {t("service-menu.3.title")}
+                    </option>
+                    {locale == "id" ? (
+                      <option value={t("service-menu.4")}>
+                        {t("service-menu.4.title")}
+                      </option>
+                    ) : (
+                      <></>
+                    )}
                   </select>
                 </div>
               </div>
-              <div className="row g-3 justify-content-center">
-                <div className="col-6 col-md-3">
-                  <button
-                    onClick={redirectWa}
-                    className="btn btn-whatsapp w-100"
-                  >
-                    <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
-                  </button>
-                </div>
-                <div className="col-6 col-md-3">
-                  <button
-                    onClick={redirectTele}
-                    className="btn btn-telegram w-100"
-                  >
-                    <i className="fa-brands fa-telegram fs-18 me-2"></i>{" "}
-                    Telegram
-                  </button>
-                </div>
+            </form>
+            <div className="row g-3 justify-content-center">
+              <div className="col-6 col-md-3">
+                <button onClick={redirectWa} className="btn btn-whatsapp w-100">
+                  <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
+                </button>
+              </div>
+              <div className="col-6 col-md-3">
+                <button
+                  onClick={redirectTele}
+                  className="btn btn-telegram w-100"
+                >
+                  <i className="fa-brands fa-telegram fs-18 me-2"></i> Telegram
+                </button>
               </div>
             </div>
           </div>
