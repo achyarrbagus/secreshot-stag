@@ -193,7 +193,7 @@ const Home = () => {
                   <DoctorCard
                     image={`/assets/img/doctor/dr-ayu-a.png`}
                     name="dr. Ayu A. Istiana"
-                    job="Aesthetic Doctor"
+                    job={t("dr-asthetic")}
                     str="3321201323154360"
                     titlelocation={t("practice-location")}
                     practiceLocation={[t("cepat-sehat")]}
@@ -201,7 +201,7 @@ const Home = () => {
                   <DoctorCard
                     image={`/assets/img/doctor/dr-ernita-r.png`}
                     name="dr. Ernita Rosyanti Dewi"
-                    job="General Practitioner"
+                    job={t("dr-general")}
                     str="3121100220145544"
                     titlelocation={t("practice-location")}
                     practiceLocation={[t("cepat-sehat")]}
@@ -209,7 +209,7 @@ const Home = () => {
                   <DoctorCard
                     image={`/assets/img/doctor/dr-irvan-r.png`}
                     name="dr. Irvan Rizki Fitri"
-                    job="General Practitioner"
+                    job={t("dr-general")}
                     str="3121100220145544"
                     titlelocation={t("practice-location")}
                     practiceLocation={[t("cepat-sehat")]}
@@ -217,7 +217,7 @@ const Home = () => {
                   <DoctorCard
                     image={`/assets/img/doctor/dr-melchisedek-a.png`}
                     name="dr. Melchisedek A.V.P Marbun"
-                    job="General Practitioner"
+                    job={t("dr-general")}
                     str="3111100220155405"
                     titlelocation={t("practice-location")}
                     practiceLocation={[t("cepat-sehat")]}
@@ -254,7 +254,7 @@ const Home = () => {
                   />
                   <NurseCard
                     name="Andi Andriansyah S."
-                    str="1201512214112821"
+                    str="HA00000870437934"
                     isnurse={true}
                     image="assets/img/doctor/nurse-andi.png"
                   />
@@ -269,6 +269,12 @@ const Home = () => {
                     str="1401511224517960"
                     isnurse={true}
                     image="assets/img/doctor/nurse-irfan.png"
+                  />
+                  <NurseCard
+                    name="Dimas Catur Nugroho"
+                    str="ED00000360053713"
+                    isnurse={true}
+                    image="/assets/img/doctor/nurse-dimas.png"
                   />
                 </div>
               </div>
