@@ -11,9 +11,11 @@ import { useLocale, useTranslations } from "next-intl";
 const RemoteTelemedic = () => {
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
+  const locale = useLocale();
   const t = useTranslations("remote-telemedicine");
 
-  const [book, setBook] = useState("Book a visit at your place now");
+  const [book, setBook] = useState(t("form-book.title"));
+
   const [formData, setFormData] = useState({
     name: "",
     address: "",
@@ -22,24 +24,37 @@ const RemoteTelemedic = () => {
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
-      case "General Practitioner Online Consultation":
-        window.location.replace(
-          "https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum"
-        );
-        // setBook("Book for GP Consultation now");
-        break;
-      case "Medical Doctor Online Consultation":
+      case "Book for GP Consultation now":
         window.location.replace(
           "https://www.sehatcepat.com/payments/dr-lia/?camp=dranak"
         );
-        // setBook("Book for MD Consultation now");
         break;
-      case "Online Medical Prescription":
-        setBook("Request for online medical prescription now");
+      case "Book for MD Consultation now":
+        window.location.replace(
+          "https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum"
+        );
         break;
-      case "Online Sick Leave Letter":
+      case "Book a Medical Prescription now":
+        setBook(t("form-book-title.3"));
+        break;
+      case "Book a Sick Leave Letter now":
         window.location.replace("https://www.sickleave.cepatsehat.com/");
-        setBook("Request for online sick leave letter now");
+        break;
+      case "Pesan konsultasi dokter umum sekarang":
+        window.location.replace(
+          "https://www.sehatcepat.com/payments/dr-lia/?camp=dranak"
+        );
+        break;
+      case "Pesan konsultasi dokter spesialis sekarang":
+        window.location.replace(
+          "https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum"
+        );
+        break;
+      case "Pesan resep obat sekarang":
+        setBook(t("form-book-title.3"));
+        break;
+      case "Pesan surat sakit sekarang":
+        window.location.replace("https://www.sickleave.cepatsehat.com/");
         break;
     }
 
@@ -49,7 +64,36 @@ const RemoteTelemedic = () => {
     }));
     window.location.href = "#book";
   };
-  const lang = useSelector((state) => state.lang.value);
+
+  // const handleBook = (serviceSelect) => {
+  //   switch (serviceSelect) {
+  //     case "General Practitioner Online Consultation":
+  //       window.location.replace(
+  //         "https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum"
+  //       );
+  //       // setBook("Book for GP Consultation now");
+  //       break;
+  //     case "Medical Doctor Online Consultation":
+  //       window.location.replace(
+  //         "https://www.sehatcepat.com/payments/dr-lia/?camp=dranak"
+  //       );
+  //       // setBook("Book for MD Consultation now");
+  //       break;
+  //     case "Online Medical Prescription":
+  //       setBook("Request for online medical prescription now");
+  //       break;
+  //     case "Online Sick Leave Letter":
+  //       window.location.replace("https://www.sickleave.cepatsehat.com/");
+  //       setBook("Request for online sick leave letter now");
+  //       break;
+  //   }
+
+  //   setFormData((prevFormData) => ({
+  //     ...prevFormData,
+  //     service: serviceSelect,
+  //   }));
+  //   window.location.href = "#book";
+  // };
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
@@ -165,7 +209,7 @@ const RemoteTelemedic = () => {
                           </div>
                           <div
                             onClick={() => handleBook(t("form-book-title.1"))}
-                            id="doctor-visit"
+                            id="form-book-title-1"
                             className="btn btn-warning fs-14 ms-auto"
                           >
                             {t("book-button")}
@@ -230,8 +274,8 @@ const RemoteTelemedic = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook(t("form-book-title.1"))}
-                            id="doctor-visit"
+                            onClick={() => handleBook(t("form-book-title.2"))}
+                            id="form-book-title-2"
                             className="btn btn-warning fs-14 ms-auto"
                           >
                             {t("book-button")}
@@ -313,7 +357,7 @@ const RemoteTelemedic = () => {
                           </div>
                           <div
                             onClick={() => handleBook(t("form-book-title.3"))}
-                            id="doctor-visit"
+                            id="form-book-title-3"
                             className="btn btn-warning fs-14 ms-auto"
                           >
                             {t("book-button")}
@@ -394,10 +438,8 @@ const RemoteTelemedic = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() =>
-                              handleBook("Monitoring and Prevention")
-                            }
-                            id="doctor-visit"
+                            onClick={() => handleBook(t("form-book-title.4"))}
+                            id="form-book-title-4"
                             className="btn btn-warning fs-14 ms-auto"
                           >
                             {t("book-button")}
@@ -412,35 +454,36 @@ const RemoteTelemedic = () => {
           </div>
         </section>
 
+        {/* booking session */}
         <section className="book" id="book">
           <div className="container">
             <h3 className="title-section">{book}</h3>
-            <div>
+            <form>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">Name</label>
+                  <label className="form-label">{t("form-book.name")}</label>
                   <input
                     type="text"
                     className="form-control"
                     id="name"
-                    placeholder="Your Name"
+                    placeholder={t("form-book.name-label")}
                     value={formData.name}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Address</label>
+                  <label className="form-label">{t("form-book.address")}</label>
                   <input
+                    id="address"
                     type="text"
                     className="form-control"
-                    id="address"
-                    placeholder="Your Address"
+                    placeholder={t("form-book.address-label")}
                     value={formData.address}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Service Name</label>
+                  <label className="form-label">{t("form-book.service")}</label>
                   <select
                     id="service"
                     className="form-select form-control"
@@ -448,32 +491,38 @@ const RemoteTelemedic = () => {
                     value={formData.service}
                     onChange={handleChange}
                   >
-                    <option>Select Service</option>
-                    <option value="Wound Care">Wound Care</option>
-                    <option value="Monitoring and Prevention">
-                      Monitoring and Prevention
+                    <option value="Select Service" disabled>
+                      {t("form-book.service-label")}
+                    </option>
+                    <option value={t("service-menu.1.title")}>
+                      {t("service-menu.1.title")}
+                    </option>
+                    <option value={t("service-menu.2.title")}>
+                      {t("service-menu.2.title")}
+                    </option>
+                    <option value={t("service-menu.3.title")}>
+                      {t("service-menu.3.title")}
+                    </option>
+                    <option value={t("service-menu.4.title")}>
+                      {t("service-menu.4.title")}
                     </option>
                   </select>
                 </div>
               </div>
-              <div className="row g-3 justify-content-center">
-                <div className="col-6 col-md-3">
-                  <button
-                    onClick={redirectWa}
-                    className="btn btn-whatsapp w-100"
-                  >
-                    <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
-                  </button>
-                </div>
-                <div className="col-6 col-md-3">
-                  <button
-                    onClick={redirectTele}
-                    className="btn btn-telegram w-100"
-                  >
-                    <i className="fa-brands fa-telegram fs-18 me-2"></i>{" "}
-                    Telegram
-                  </button>
-                </div>
+            </form>
+            <div className="row g-3 justify-content-center">
+              <div className="col-6 col-md-3">
+                <button onClick={redirectWa} className="btn btn-whatsapp w-100">
+                  <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
+                </button>
+              </div>
+              <div className="col-6 col-md-3">
+                <button
+                  onClick={redirectTele}
+                  className="btn btn-telegram w-100"
+                >
+                  <i className="fa-brands fa-telegram fs-18 me-2"></i> Telegram
+                </button>
               </div>
             </div>
           </div>

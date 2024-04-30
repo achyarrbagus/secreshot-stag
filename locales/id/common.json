@@ -492,9 +492,12 @@
         }
       }
     },
+
     "form-book-title": {
-      "1": "Pesan perawatan luka sekarang",
-      "2": "Pesan pemantauan dan pencegahan medis sekarang"
+      "1": "Pesan konsultasi dokter umum sekarang",
+      "2": "Pesan konsultasi dokter spesialis sekarang",
+      "3": "Pesan resep obat sekarang",
+      "4": "Pesan surat sakit sekarang"
     },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",
@@ -517,7 +520,6 @@
       "address": "Alamat",
       "address-label": "Alamat Anda"
     },
-
     "detail": "Payment Details",
     "fee": "Fee",
     "discount": "Discount",

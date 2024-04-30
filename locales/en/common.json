@@ -482,6 +482,13 @@
     "cepat-sehat": "Cepat Sehat Clinic",
     "our-nurse": "Our Nurse",
 
+    "form-book-title": {
+      "1": "Book for GP Consultation now",
+      "2": "Book for MD Consultation now",
+      "3": "Book a Medical Prescription now",
+      "4": "Book a Sick Leave Letter now"
+    },
+
     "form-book": {
       "title": "Book a visit at your place now",
       "name": "Name",
@@ -688,11 +695,11 @@
         }
       }
     },
-
     "form-book-title": {
-      "1": "Book a doctor visit now",
-      "2": "Book a nurse visit now",
-      "3": "Book for medical check up now"
+      "1": "Book for GP Consultation now",
+      "2": "Book for MD Consultation now",
+      "3": "Book a Medical Prescription now",
+      "4": "Book a Sick Leave Letter now"
     },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",
