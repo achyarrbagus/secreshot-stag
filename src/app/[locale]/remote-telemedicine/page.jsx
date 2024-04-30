@@ -393,8 +393,8 @@ const RemoteTelemedic = () => {
                         <div className="price">
                           <div className="value-price">
                             <b>
-                              {t("service-menu.6.start-from")}:{" "}
-                              {t("service-menu.6.start-from-price")}
+                              {t("service-menu.4.start-from")}:{" "}
+                              {t("service-menu.4.start-from-price")}
                             </b>
                           </div>
                           <div
