@@ -7,6 +7,7 @@ import axios from "axios";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import useSWR from "swr";
+import { useLocale, useTranslations } from "next-intl";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
@@ -18,6 +19,9 @@ function Article() {
   const [cata, setData] = useState();
   const [id, setId] = React.useState(0);
   const [article, setArticle] = React.useState([]);
+  const locale = useLocale();
+
+  const t = useTranslations("home");
 
   const navStyle = {
     "--bs-breadcrumb-divider":
@@ -38,9 +42,7 @@ function Article() {
   };
 
   const { data: articles, error: articlesError } = useSWR(
-    `https://api.cepatsehat.com/api/v2/articles?locale=${searchParams.get(
-      "locale"
-    )}`,
+    `https://api.cepatsehat.com/api/v2/articles?locale=${locale}`,
     fetcher
   );
 
@@ -87,7 +89,7 @@ function Article() {
                     <Link
                       href={`/?locale=${searchParams.get(
                         "locale"
-                      )}&lang=${searchParams.get("locale")}`}
+                      )}&lang=${locale}`}
                     >
                       Home
                     </Link>
@@ -121,101 +123,46 @@ function Article() {
                     className="mt-2"
                     dangerouslySetInnerHTML={{ __html: article.description }}
                   />
-                  {/* <p className="summary fs-12">{article.intro}.</p> */}
-                  {/* {data?.SubArticle.map((item) => (
-                    <>
-                      <p className="title-p fw-bold">{item.Title}</p>
-                      <p className="fs-12">{item.Desc}</p>
-                    </>
-                  ))} */}
                 </div>
+                <>
+                  <div className="col-md-4">
+                    <h3 className="title-section text-start pt-0 fs-14">
+                      More Article
+                    </h3>
+                    <div className="list-article">
+                      {articles &&
+                        articles.slice(0, 15).map((item, index) => (
+                          <>
+                            <Link
+                              style={{ color: "#5B5A5A" }}
+                              href={`/article?id=${
+                                item.article_id_v2
+                              }&locale=${searchParams.get("locale")}`}
+                            >
+                              <butoon
+                                className="items-article"
+                                style={{ cursor: "pointer" }}
+                              >
+                                <img
+                                  src={`https://api.cepatsehat.com/uploads/${item.image}`}
+                                  alt="image"
+                                />
 
-                {(() => {
-                  switch (lang) {
-                    case "ID":
-                      return (
-                        <>
-                          <div className="col-md-4">
-                            <h3 className="title-section text-start pt-0 fs-14">
-                              More Article
-                            </h3>
-                            <div className="list-article">
-                              {articles &&
-                                articles.map((item, index) => (
-                                  <>
-                                    <Link
-                                      style={{ color: "#5B5A5A" }}
-                                      href={`/article?id=${
-                                        item.article_id_v2
-                                      }&locale=${searchParams.get("locale")}`}
-                                    >
-                                      <butoon
-                                        className="items-article"
-                                        style={{ cursor: "pointer" }}
-                                      >
-                                        <img
-                                          src={`https://api.cepatsehat.com/uploads/${item.image}`}
-                                          alt="image"
-                                        />
+                                <div className="name">
+                                  <h5>{item.title}</h5>
 
-                                        <div className="name">
-                                          <h5>{item.title}</h5>
-
-                                          <a className="text-muted fs-14">
-                                            read more
-                                            <i className="mdi mdi-arrow-right"></i>
-                                          </a>
-                                        </div>
-                                      </butoon>
-                                    </Link>
-                                  </>
-                                ))}
-                            </div>
-                          </div>
-                        </>
-                      );
-                    default:
-                      return (
-                        <div className="col-md-4">
-                          <h3 className="title-section text-start pt-0 fs-14">
-                            More Article
-                          </h3>
-                          <div className="list-article">
-                            {articles &&
-                              articles.map((item, index) => (
-                                <>
-                                  <Link
-                                    style={{ color: "#5B5A5A" }}
-                                    href={`/article?id=${
-                                      item.article_id_v2
-                                    }&locale=${searchParams.get("locale")}`}
-                                  >
-                                    <butoon
-                                      className="items-article"
-                                      style={{ cursor: "pointer" }}
-                                    >
-                                      <img
-                                        src={`https://api.cepatsehat.com/uploads/${item.image}`}
-                                        alt="image"
-                                      />
-
-                                      <div className="name">
-                                        <h5>{item.title}</h5>
-
-                                        <a className="text-muted fs-14">
-                                          read more
-                                          <i className="mdi mdi-arrow-right"></i>
-                                        </a>
-                                      </div>
-                                    </butoon>
-                                  </Link>
-                                </>
-                              ))}
-                          </div>
-                        </div>
-                      );
-                  }
-                })()}
+                                  <a className="text-muted fs-14">
+                                    read more
+                                    <i className="mdi mdi-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </butoon>
+                            </Link>
+                          </>
+                        ))}
+                    </div>
+                  </div>
+                </>
               </div>
             </div>
           </section>

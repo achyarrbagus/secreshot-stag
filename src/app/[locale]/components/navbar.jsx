@@ -2,6 +2,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next-intl/client";
 import { Dropdown, Nav, Container } from "react-bootstrap";
+import { useSearchParams } from "next/navigation";
 
 import React from "react";
 import Link from "next/link";
