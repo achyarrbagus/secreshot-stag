@@ -36,13 +36,13 @@ const DoctorHomeVisit = () => {
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
-      case "Doctor Home Visit":
+      case "Doctor Home Visit" || "Kunjungan Dokter Kerumah":
         setBook(t("form-book-title.1"));
         break;
-      case "Nurse Home Visit":
+      case "Nurse Home Visit" || "Kunjungan Perawat Kerumah":
         setBook(t("form-book-title.2"));
         break;
-      case "Medical Check Up":
+      case "Medical Check Up" || "Pemeriksaan Kesehatan":
         setBook(t("form-book-title.3"));
         break;
     }
@@ -550,7 +550,9 @@ const DoctorHomeVisit = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.1.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -632,7 +634,9 @@ const DoctorHomeVisit = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Nurse Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.2.title"))
+                            }
                             id="nurse-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -714,7 +718,9 @@ const DoctorHomeVisit = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Medical Check Up")}
+                            onClick={() =>
+                              handleBook(t("service-menu.3.title"))
+                            }
                             id="medical-check-up"
                             className="btn btn-warning fs-14 ms-auto"
                           >
