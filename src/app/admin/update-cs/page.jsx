@@ -3,7 +3,6 @@
 import { Container, Modal } from "react-bootstrap";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import "react-quill/dist/quill.snow.css";
 import NavbarAdmin from "../components/navbar";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
