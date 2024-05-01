@@ -4,24 +4,26 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import LayoutWrapper from "../components/layout-wrapper";
 import axios from "axios";
-import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import useSWR from "swr";
 import { useLocale, useTranslations } from "next-intl";
+import { usePathname } from "next-intl/client";
+import { Dropdown, Nav, Container } from "react-bootstrap";
+import { useSearchParams, useRouter } from "next/navigation";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
 function Article() {
   const lang = useSelector((state) => state.lang.value);
-  const router = useRouter();
-  const query = router.query;
   const searchParams = useSearchParams();
   const [cata, setData] = useState();
   const [id, setId] = React.useState(0);
   const [article, setArticle] = React.useState([]);
-  const locale = useLocale();
-
   const t = useTranslations("home");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const query = router.query;
 
   const navStyle = {
     "--bs-breadcrumb-divider":
@@ -49,6 +51,22 @@ function Article() {
   useEffect(() => {
     FetchArticle(searchParams.get("id"), searchParams.get("locale"));
   }, [searchParams]);
+
+  const onLocaleChange = (newLocale, id) => {
+    const params = new URLSearchParams();
+    params.append("id", id);
+    params.append("locale", newLocale);
+
+    // Dapatkan URL saat ini
+    const currentUrl = new URL(window.location.href);
+
+    // Tambahkan query string yang dibuat sebelumnya
+    currentUrl.search = params.toString();
+
+    // Ganti URL dengan query string baru
+    router.replace(currentUrl.toString());
+    // router.replace(pathname, { locale: newLocale });
+  };
 
   const dateToString = (dateString) => {
     const dt = new Date(dateString);
@@ -80,6 +98,73 @@ function Article() {
   return (
     article && (
       <>
+        {/* navbar */}
+        <Nav activeKey="/home" className="nav nav-top fixed-top">
+          <Container>
+            <div className="d-flex align-items-center gap-3">
+              <Link href={`/${locale}`}>
+                <div style={{ cursor: "pointer" }} className="nav-brand">
+                  <img src="/assets/img/logo.png" alt="" />
+                </div>
+              </Link>
+
+              <Dropdown className="btn-group ms-auto">
+                {(() => {
+                  switch (locale) {
+                    case "id":
+                      return (
+                        <Dropdown.Toggle
+                          variant=""
+                          className="btn btn-secondary dropdown-toggle"
+                          id="dropdown-basic"
+                        >
+                          <i className="mdi mdi-earth me-2"></i> ID
+                        </Dropdown.Toggle>
+                      );
+                    default:
+                      return (
+                        <Dropdown.Toggle
+                          variant=""
+                          className="btn btn-secondary dropdown-toggle"
+                          id="dropdown-basic"
+                        >
+                          <i className="mdi mdi-earth me-2"></i> EN
+                        </Dropdown.Toggle>
+                      );
+                  }
+                })()}
+
+                <Dropdown.Menu>
+                  <Dropdown.Item
+                    onClick={() => onLocaleChange("en", searchParams.get("id"))}
+                    className="d-flex gap-1"
+                  >
+                    <img
+                      src="/assets/img/flag/EN Flag_new.png"
+                      alt=""
+                      className="mt-1"
+                      width={25}
+                    />
+                    English
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    onClick={() => onLocaleChange("id", searchParams.get("id"))}
+                    className="d-flex gap-1"
+                  >
+                    <img
+                      src="/assets/img/flag/ID Flag_new.png"
+                      alt=""
+                      className="mt-1"
+                      width={25}
+                    />
+                    Indonesia
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+          </Container>
+        </Nav>
+
         <div className="content">
           <div className="nav-content">
             <div className="container">
@@ -135,9 +220,7 @@ function Article() {
                           <>
                             <Link
                               style={{ color: "#5B5A5A" }}
-                              href={`/article?id=${
-                                item.article_id_v2
-                              }&locale=${searchParams.get("locale")}`}
+                              href={`/${locale}/article?id=${item.article_id_v2}&locale=${locale}`}
                             >
                               <butoon
                                 className="items-article"
