@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
+import Form from "react-bootstrap/Form";
 
 const App = () => {
   const URL_API_V2 = "https://api.cepatsehat.com/api/v2/";
@@ -14,6 +15,8 @@ const App = () => {
 
   const router = useRouter();
   const [articles, setArticles] = useState("");
+  const [filteredArticles, setFilteredArticles] = useState("");
+  const [searchValue, setSearchValue] = useState("");
 
   const FetchArticle = async () => {
     axios
@@ -37,7 +40,7 @@ const App = () => {
     const token = Cookies.get("islogin");
     if (!token) {
       alert("token not found");
-      outer.push("/admin");
+      router.push("/admin");
       return;
     }
     Swal.fire({
@@ -74,6 +77,22 @@ const App = () => {
     });
   };
 
+  const handleChange = (event) => {
+    setSearchValue(event.target.value);
+    var data_filter = articles.filter((item) =>
+      item.title?.toLowerCase().includes(event.target.value.toLowerCase())
+    );
+    setFilteredArticles(data_filter);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    var data_filter = articles.filter((item) =>
+      item.title?.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    setFilteredArticles(data_filter);
+  };
+
   useEffect(() => {
     FetchArticle();
   }, []);
@@ -89,7 +108,6 @@ const App = () => {
       name: "Publish Date",
       selector: (row) => row.publish_date,
       sortable: true,
-      width: "110px",
     },
     {
       name: "Title",
@@ -101,19 +119,13 @@ const App = () => {
       name: "Locale",
       selector: (row) => row.locale,
       sortable: true,
-      width: "60px",
+      width: "100px",
     },
     {
       name: "Intro",
       selector: (row) => CutText(row.intro),
       sortable: true,
       width: "300px",
-    },
-    {
-      name: "Group Article",
-      selector: (row) => row.article_id_v2,
-      sortable: true,
-      width: "60px",
     },
     {
       name: "Add Lenguage",
@@ -136,13 +148,13 @@ const App = () => {
           )}
         </>
       ),
+      width: "100px",
       sortable: true,
-      width: "75px",
     },
     {
       name: "Action",
       selector: (row) => (
-        <div className="d-flex gap-2">
+        <div className="d-flex gap-2 mx-4">
           <Button
             variant="primary"
             onClick={() =>
@@ -163,8 +175,8 @@ const App = () => {
           </Button>
         </div>
       ),
+      width: "300px",
       sortable: true,
-      width: "14rem",
     },
     {
       name: "Created At",
@@ -184,10 +196,24 @@ const App = () => {
     <>
       <NavbarAdmin />
       <div className="container-fluid">
+        <div className="d-flex justify-content-end px-4">
+          <Form inline onSubmit={handleSubmit} className="d-flex gap-2">
+            <Form.Control
+              type="text"
+              placeholder="Filter by title"
+              className="mr-sm-4"
+              onChange={handleChange}
+              value={searchValue}
+            />
+            <Button size="xs" type="submit">
+              Search
+            </Button>
+          </Form>
+        </div>
         <DataTable
           title="List Article"
           columns={columns}
-          data={articles}
+          data={filteredArticles ? filteredArticles : articles}
           pagination
           highlightOnHover
         />
