@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
 
 const App = () => {
   const URL_API_V2 = "https://api.cepatsehat.com/api/v2/";
@@ -194,9 +195,16 @@ const App = () => {
 
   return (
     <>
-      <NavbarAdmin />
+      <NavbarAdmin path={"dashboard-v2"} />
       <div className="container-fluid">
-        <div className="d-flex justify-content-end px-4">
+        <div className="d-flex justify-content-end px-4 gap-4">
+          <Button
+            className="btn btn-success btn-sm"
+            size="sm"
+            onClick={() => router.push("/admin/create-article-v2")}
+          >
+            Create Article
+          </Button>
           <Form inline onSubmit={handleSubmit} className="d-flex gap-2">
             <Form.Control
               type="text"

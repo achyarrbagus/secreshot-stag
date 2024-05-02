@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useRouter } from "next/navigation";
 import { Button } from "flowbite-react";
 
-function NavbarAdmin({ menu }) {
+function NavbarAdmin({ menu, path }) {
   const router = useRouter();
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -33,24 +33,37 @@ function NavbarAdmin({ menu }) {
                 create article
               </Button>
             </Nav.Link> */}
-            <Nav.Link>
-              <Button
-                className="btn btn-success btn-sm"
-                size="sm"
-                onClick={() => router.push("/admin/create-article-v2")}
-              >
-                create article
-              </Button>
-            </Nav.Link>
-            <Nav.Link>
-              <Button
-                className="btn btn-warning btn-sm"
-                size="sm"
-                onClick={() => router.push("/admin/create-cs")}
-              >
-                Add Customer Service
-              </Button>
-            </Nav.Link>
+            {/* {path == "dashboard-v2" ? (
+              <>
+                <Nav.Link>
+                  <Button
+                    className="btn btn-success btn-sm"
+                    size="sm"
+                    onClick={() => router.push("/admin/create-article-v2")}
+                  >
+                    Create Article
+                  </Button>
+                </Nav.Link>
+              </>
+            ) : (
+              <></>
+            )} */}
+
+            {/* {path == "customer-service" ? (
+              <>
+                <Nav.Link>
+                  <Button
+                    className="btn btn-warning btn-sm"
+                    size="sm"
+                    onClick={() => router.push("/admin/create-cs")}
+                  >
+                    Create Customer Service
+                  </Button>
+                </Nav.Link>
+              </>
+            ) : (
+              <></>
+            )} */}
           </Nav>
         </Navbar.Collapse>
       </Container>

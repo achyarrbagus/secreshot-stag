@@ -127,16 +127,26 @@ const App = () => {
           </Button>
         </div>
       ),
+      width: "200px",
       sortable: true,
     },
   ];
 
   return (
     <>
-      <NavbarAdmin />
+      <NavbarAdmin path={"customer-service"} />
       <div className="container-fluid">
+        <div className="d-flex justify-content-end pe-2">
+          <Button
+            className="btn btn-warning btn-xs"
+            size="xs"
+            onClick={() => router.push("/admin/create-cs")}
+          >
+            Create Customer Service
+          </Button>
+        </div>
         <DataTable
-          title="CS List"
+          title="Customers Service List"
           columns={columns}
           data={cs}
           pagination
