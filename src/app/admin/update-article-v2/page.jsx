@@ -3,6 +3,7 @@
 import { Container, Modal } from "react-bootstrap";
 import React, { useEffect } from "react";
 import { useState } from "react";
+import "react-quill/dist/quill.snow.css";
 import NavbarAdmin from "../components/navbar";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
@@ -14,8 +15,7 @@ import * as yup from "yup";
 import { Suspense } from "react";
 import locale from "antd/es/date-picker/locale/en_US";
 
-import "react-quill/dist/quill.snow.css";
-import ReactQuill from "react-quill";
+const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -468,7 +468,7 @@ const Page = () => {
                 )}
               </div>
               <div className="mb-2">
-                <ReactQuill
+                <QuillEditor
                   theme="snow"
                   modules={modules}
                   formats={formats}

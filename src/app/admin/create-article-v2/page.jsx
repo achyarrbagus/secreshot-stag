@@ -3,7 +3,7 @@
 import { Container } from "react-bootstrap";
 import React, { useEffect } from "react";
 import { useState } from "react";
-
+import "react-quill/dist/quill.snow.css";
 import NavbarAdmin from "../components/navbar";
 import { useRouter, useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
@@ -13,8 +13,7 @@ import axios from "axios";
 import * as yup from "yup";
 import { Suspense } from "react";
 
-import "react-quill/dist/quill.snow.css";
-import ReactQuill from "react-quill";
+const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 const Page = () => {
   const URL_API_V2 = "https://api.cepatsehat.com/api/v2/";
@@ -399,10 +398,10 @@ const Page = () => {
                 )}
               </div>
               <div className="mb-2">
-                <ReactQuill
+                <QuillEditor
                   theme="snow"
-                  formats={formats}
                   modules={modules}
+                  formats={formats}
                   value={valueTextEditor}
                   onChange={setTextEditor}
                 />
