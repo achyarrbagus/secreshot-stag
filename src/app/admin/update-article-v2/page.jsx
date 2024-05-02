@@ -14,7 +14,8 @@ import * as yup from "yup";
 import { Suspense } from "react";
 import locale from "antd/es/date-picker/locale/en_US";
 
-const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
+import "react-quill/dist/quill.snow.css";
+import ReactQuill from "react-quill";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -467,7 +468,7 @@ const Page = () => {
                 )}
               </div>
               <div className="mb-2">
-                <QuillEditor
+                <ReactQuill
                   theme="snow"
                   modules={modules}
                   formats={formats}

@@ -13,7 +13,8 @@ import axios from "axios";
 import * as yup from "yup";
 import { Suspense } from "react";
 
-const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
+import "react-quill/dist/quill.snow.css";
+import ReactQuill from "react-quill";
 
 const Page = () => {
   const URL_API_V2 = "https://api.cepatsehat.com/api/v2/";
@@ -398,10 +399,10 @@ const Page = () => {
                 )}
               </div>
               <div className="mb-2">
-                <QuillEditor
+                <ReactQuill
                   theme="snow"
-                  modules={modules}
                   formats={formats}
+                  modules={modules}
                   value={valueTextEditor}
                   onChange={setTextEditor}
                 />
