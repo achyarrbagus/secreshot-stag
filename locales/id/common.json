@@ -213,7 +213,7 @@
         }
       },
       "6": {
-        "title": "Kunjungan Dokter THT",
+        "title": "Kunjungan Tenaga Kesehatan THT",
         "desc": "Kunjungan Dokter THT melibatkan perawatan medis khusus untuk kondisi telinga, hidung, dan tenggorokan, dilakukan dengan nyaman di rumah pasien.",
         "benefit": "Keuntungan",
         "start-from": "Mulai dari",
@@ -240,6 +240,39 @@
             "desc": "Kunjungan ke rumah mendorong dukungan keluarga dan pemahaman terhadap rencana perawatan."
           }
         }
+      },
+      "7": {
+        "title": "Perawatan DBD di Rumah",
+        "desc": "Perawatan DBD di Rumah melibatkan pengobatan dan manajemen gejala demam berdarah di rumah, memastikan kenyamanan dan pemulihan sambil mengurangi risiko penularan dan masalah terkait rumah sakit.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp500.000",
+        "list-benefit": {
+          "1": {
+            "title": "Lingkungan Pemulihan yang Nyaman",
+            "desc": "Lingkungan yang akrab membantu mengurangi stres dan mempromosikan pemulihan."
+          },
+          "2": {
+            "title": "Risiko Penularan yang Dikurangi",
+            "desc": "Pasien mengurangi penyebaran virus dengan tinggal di rumah."
+          },
+          "3": {
+            "title": "Pengobatan Personal",
+            "desc": "Rencana perawatan yang disesuaikan dan pemantauan gejala oleh caregiver meningkatkan efektivitas pengobatan."
+          },
+          "4": {
+            "title": "Pemantauan Teratur",
+            "desc": "Tindak lanjut rutin untuk memantau hitungan darah dan status hidrasi, tanda-tanda vital, dan kemajuan keseluruhan."
+          },
+          "5": {
+            "title": "Menghindari Risiko Rumah Sakit",
+            "desc": "Perawatan di rumah mencegah infeksi yang mungkin didapat di rumah sakit, membantu pemulihan lebih cepat."
+          },
+          "6": {
+            "title": "Efisiensi Biaya",
+            "desc": "Perawatan di rumah mengurangi biaya perawatan kesehatan sambil memastikan manajemen yang tepat terhadap gejala demam berdarah."
+          }
+        }
       }
     },
     "form-book": {
@@ -257,7 +290,8 @@
       "3": "Pesan pemeriksaan kesehatan sekarang",
       "4": "Pesan vaksin anak sekarang",
       "5": "Pesan kunjungan dokter anak sekarang",
-      "6": "Pesan kunjungan dokter tht sekarang"
+      "6": "Pesan kunjungan dokter tht sekarang",
+      "7": "Pesan Perawatan DBD dirumah sekarang"
     },
     "practice-location": "Lokasi Praktik",
     "our-doctors": "Dokter Kami",
@@ -341,45 +375,11 @@
             "desc": "Perawatan komprehensif untuk manajemen nyeri, pencegahan infeksi, dan mendorong proses pemulihan yang lebih cepat."
           }
         }
-      },
-      "3": {
-        "title": "Perawatan DBD di Rumah",
-        "desc": "Perawatan DBD di Rumah melibatkan pengobatan dan manajemen gejala demam berdarah di rumah, memastikan kenyamanan dan pemulihan sambil mengurangi risiko penularan dan masalah terkait rumah sakit.",
-        "benefit": "Keuntungan",
-        "start-from": "Mulai dari",
-        "start-from-price": "Rp500.000",
-        "list-benefit": {
-          "1": {
-            "title": "Lingkungan Pemulihan yang Nyaman",
-            "desc": "Lingkungan yang akrab membantu mengurangi stres dan mempromosikan pemulihan."
-          },
-          "2": {
-            "title": "Risiko Penularan yang Dikurangi",
-            "desc": "Pasien mengurangi penyebaran virus dengan tinggal di rumah."
-          },
-          "3": {
-            "title": "Pengobatan Personal",
-            "desc": "Rencana perawatan yang disesuaikan dan pemantauan gejala oleh caregiver meningkatkan efektivitas pengobatan."
-          },
-          "4": {
-            "title": "Pemantauan Teratur",
-            "desc": "Tindak lanjut rutin untuk memantau hitungan darah dan status hidrasi, tanda-tanda vital, dan kemajuan keseluruhan."
-          },
-          "5": {
-            "title": "Menghindari Risiko Rumah Sakit",
-            "desc": "Perawatan di rumah mencegah infeksi yang mungkin didapat di rumah sakit, membantu pemulihan lebih cepat."
-          },
-          "6": {
-            "title": "Efisiensi Biaya",
-            "desc": "Perawatan di rumah mengurangi biaya perawatan kesehatan sambil memastikan manajemen yang tepat terhadap gejala demam berdarah."
-          }
-        }
       }
     },
     "form-book-title": {
       "1": "Pesan perawatan luka sekarang",
-      "2": "Pesan pemantauan dan pencegahan medis sekarang",
-      "3": "Pesan Perawatan DBD dirumah sekarang"
+      "2": "Pesan pemantauan dan pencegahan medis sekarang"
     },
     "practice-location": "Lokasi Praktik",
     "our-doctors": "Dokter Kami",

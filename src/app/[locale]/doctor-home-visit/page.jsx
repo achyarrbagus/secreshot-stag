@@ -48,8 +48,11 @@ const DoctorHomeVisit = () => {
       case "Pediatrician Home Visit":
         setBook(t("form-book-title.5"));
         break;
-      case "Otolaryngologist Home Visit":
+      case "Otolaryngology Practitioner Home Visit":
         setBook(t("form-book-title.6"));
+        break;
+      case "Dengue Fever Home Care":
+        setBook(t("form-book-title.7"));
         break;
       case "Kunjungan Dokter Kerumah":
         setBook(t("form-book-title.1"));
@@ -63,8 +66,11 @@ const DoctorHomeVisit = () => {
       case "Kunjungan Dokter Anak":
         setBook(t("form-book-title.5"));
         break;
-      case t("Kunjungan Dokter THT"):
+      case "Kunjungan Tenaga Kesehatan THT":
         setBook(t("form-book-title.6"));
+        break;
+      case "Perawatan DBD di Rumah":
+        setBook(t("form-book-title.7"));
         break;
     }
 
@@ -1005,6 +1011,91 @@ const DoctorHomeVisit = () => {
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
+              <Accordion.Item className="accordion-item col-md-6" eventKey="7">
+                <Accordion.Header>
+                  <i className="icon-menu-icon-nursing me-2 fs-32"></i>{" "}
+                  {t("service-menu.7.title")}
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="/assets/img/home-nursing/img-home-nursing-sub03.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>{t("service-menu.7.desc")}</p>
+                        <h6 className="title-line">
+                          <span>{t("benefit")}</span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.1.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.1.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.2.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.2.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.3.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.3.desc")}
+                            </span>
+                          </li>
+
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.4.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.4.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.5.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.5.desc")}
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>
+                              {t("service-menu.7.start-from")}:{" "}
+                              {t("service-menu.7.start-from-price")}
+                            </b>
+                          </div>
+                          <div
+                            onClick={() =>
+                              handleBook(t("service-menu.7.title"))
+                            }
+                            id="nurse-visit"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            {t("book-button")}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
             </Accordion>
           </div>
         </section>
@@ -1070,6 +1161,9 @@ const DoctorHomeVisit = () => {
                     </option>
                     <option value={t("service-menu.6.title")}>
                       {t("service-menu.6.title")}
+                    </option>
+                    <option value={t("service-menu.7.title")}>
+                      {t("service-menu.7.title")}
                     </option>
                   </select>
                 </div>

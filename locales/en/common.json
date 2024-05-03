@@ -202,8 +202,8 @@
         }
       },
       "6": {
-        "title": "Otolaryngologist Home Visit",
-        "desc": "Otolaryngologist Home Visits involve specialized medical care for ear, nose, and throat conditions, conducted in the comfort of patients' homes.",
+        "title": "Otolaryngology Practitioner Home Visit",
+        "desc": "Otolaryngologist Home Visits involve specialized medical care for ear, nose, and throat conditions, conducted in the comfort of patients' homes",
         "benefit": "Benefit",
         "start-from": "Start From",
         "start-from-price": "Rp700.000",
@@ -227,6 +227,39 @@
           "5": {
             "title": "Family Involvement",
             "desc": "Home visits encourage family support and understanding of treatment plans."
+          }
+        }
+      },
+      "7": {
+        "title": "Dengue Fever Home Care",
+        "desc": "Dengue Fever Home Care entails treating and managing symptoms of dengue fever at home, ensuring comfort and recovery while reducing transmission risks and hospital-related issues.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp500.000",
+        "list-benefit": {
+          "1": {
+            "title": "Comfortable Recovery Environment",
+            "desc": "Familiar surroundings aid in stress reduction and promote recovery."
+          },
+          "2": {
+            "title": "Reduced Transmission Risk",
+            "desc": "Patients minimize the spread of the virus by staying at home."
+          },
+          "3": {
+            "title": "Personalized Treatment",
+            "desc": "Tailored care plans and symptom monitoring by caregivers enhance treatment effectiveness."
+          },
+          "4": {
+            "title": "Regular Monitoring",
+            "desc": "Regular follow-ups to monitor blood counts and hydration status, vital signs, and overall progress."
+          },
+          "5": {
+            "title": "Avoidance of Hospital Risks",
+            "desc": "Home care prevents potential hospital-acquired infections, aiding in faster recovery."
+          },
+          "6": {
+            "title": "Cost-Efficiency",
+            "desc": "Home care reduces healthcare expenses while ensuring proper management of dengue fever symptoms."
           }
         }
       }
@@ -258,7 +291,8 @@
       "3": "Book for medical check up now",
       "4": "Book a vaccine kids now",
       "5": "Book a pedictrician visit now",
-      "6": "Book a Otolaryngologist visit now"
+      "6": "Book a Otolaryngology Practitioner Home Visit",
+      "7": "Book a Dengue Fever Home Care"
     },
     "detail": "Payment Details",
     "fee": "Fee",
@@ -323,45 +357,11 @@
             "desc": "Minimized disease transmission, safeguarding patients and healthcare workers."
           }
         }
-      },
-      "3": {
-        "title": "Dengue Fever Home Care",
-        "desc": "Dengue Fever Home Care entails treating and managing symptoms of dengue fever at home, ensuring comfort and recovery while reducing transmission risks and hospital-related issues.",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp500.000",
-        "list-benefit": {
-          "1": {
-            "title": "Comfortable Recovery Environment",
-            "desc": "Familiar surroundings aid in stress reduction and promote recovery."
-          },
-          "2": {
-            "title": "Reduced Transmission Risk",
-            "desc": "Patients minimize the spread of the virus by staying at home."
-          },
-          "3": {
-            "title": "Personalized Treatment",
-            "desc": "Tailored care plans and symptom monitoring by caregivers enhance treatment effectiveness."
-          },
-          "4": {
-            "title": "Regular Monitoring",
-            "desc": "Regular follow-ups to monitor blood counts and hydration status, vital signs, and overall progress."
-          },
-          "5": {
-            "title": "Avoidance of Hospital Risks",
-            "desc": "Home care prevents potential hospital-acquired infections, aiding in faster recovery."
-          },
-          "6": {
-            "title": "Cost-Efficiency",
-            "desc": "Home care reduces healthcare expenses while ensuring proper management of dengue fever symptoms."
-          }
-        }
       }
     },
     "form-book-title": {
       "1": "Book a wound care now",
-      "2": "Book a monitoring & prevention now",
-      "3": "Dengue Fever Home Care"
+      "2": "Book a monitoring & prevention now"
     },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",
