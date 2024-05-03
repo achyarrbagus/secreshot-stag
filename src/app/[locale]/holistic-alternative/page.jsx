@@ -175,7 +175,9 @@ const HolisticAlternative = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.1.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -257,7 +259,9 @@ const HolisticAlternative = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.2.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -339,7 +343,9 @@ const HolisticAlternative = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.3.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -421,7 +427,9 @@ const HolisticAlternative = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.4.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -587,7 +595,9 @@ const HolisticAlternative = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.5.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
