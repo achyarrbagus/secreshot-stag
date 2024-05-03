@@ -1065,7 +1065,7 @@ const DoctorHomeVisit = () => {
                     ) : (
                       <></>
                     )}
-                    <option value={t("service-menu.5title")}>
+                    <option value={t("service-menu.5.title")}>
                       {t("service-menu.5.title")}
                     </option>
                     <option value={t("service-menu.6.title")}>
