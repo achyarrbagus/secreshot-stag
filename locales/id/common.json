@@ -184,7 +184,7 @@
         }
       },
       "5": {
-        "title": "Kunjungan Dokter Anak",
+        "title": "Kunjungan Tenaga Kesehatan Anak",
         "desc": "Kunjungan Dokter Anak membawa perawatan medis khusus langsung ke rumah, memastikan kenyamanan dan kemudahan sambil mengatasi kebutuhan kesehatan anak-anak.",
         "benefit": "Keuntungan",
         "start-from": "Mulai dari",
@@ -289,7 +289,7 @@
       "2": "Pesan kunjungan perawat sekarang",
       "3": "Pesan pemeriksaan kesehatan sekarang",
       "4": "Pesan vaksin anak sekarang",
-      "5": "Pesan kunjungan dokter anak sekarang",
+      "5": "Pesan kunjungan Tenaga Kesehatan Anak",
       "6": "Pesan kunjungan dokter tht sekarang",
       "7": "Pesan Perawatan DBD dirumah sekarang"
     },

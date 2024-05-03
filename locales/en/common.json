@@ -173,7 +173,7 @@
         }
       },
       "5": {
-        "title": "Pediatrician Home Visit",
+        "title": "Pediatric Practitioner Home Visit",
         "desc": "Pediatrician Home Visit brings specialized medical care directly to children in their own homes, ensuring comfort and convenience while addressing their healthcare needs.",
         "benefit": "Benefit",
         "start-from": "Start From",
@@ -290,7 +290,7 @@
       "2": "Book a nurse visit now",
       "3": "Book for medical check up now",
       "4": "Book a vaccine kids now",
-      "5": "Book a pedictrician visit now",
+      "5": "Book a Pediatric Practitioner Home Visit",
       "6": "Book a Otolaryngology Practitioner Home Visit",
       "7": "Book a Dengue Fever Home Care"
     },
