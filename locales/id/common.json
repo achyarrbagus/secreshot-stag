@@ -182,6 +182,64 @@
             "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
           }
         }
+      },
+      "5": {
+        "title": "Kunjungan Dokter Anak",
+        "desc": "Kunjungan Dokter Anak membawa perawatan medis khusus langsung ke rumah, memastikan kenyamanan dan kemudahan sambil mengatasi kebutuhan kesehatan anak-anak.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp700.000",
+        "list-benefit": {
+          "1": {
+            "title": "Kemudahan",
+            "desc": "Menghilangkan perjalanan bagi keluarga, memastikan rutinitas tanpa gangguan."
+          },
+          "2": {
+            "title": "Perawatan Personal",
+            "desc": "Saran medis yang disesuaikan berdasarkan observasi langsung terhadap lingkungan hidup anak."
+          },
+          "3": {
+            "title": "Mengurangi Stres",
+            "desc": "Memberikan perawatan di lingkungan yang akrab,  mengurangi kecemasan baik bagi anak-anak maupun orang tua."
+          },
+          "4": {
+            "title": "Peningkatan Kepatuhan",
+            "desc": "Kerjasama yang ditingkatkan dari anak-anak,menghasilkan ketaatan yang lebih baik terhadap rencana pengobatan."
+          },
+          "5": {
+            "title": "pengobatan",
+            "desc": "Keterlibatan Keluarga Mendorong partisipasi aktif dari anggota keluarga, membentuk lingkungan yang mendukung untuk pemulihan anak dan manajemen kesehatan jangka panjang."
+          }
+        }
+      },
+      "6": {
+        "title": "Kunjungan Dokter THT",
+        "desc": "Kunjungan Dokter THT melibatkan perawatan medis khusus untuk kondisi telinga, hidung, dan tenggorokan, dilakukan dengan nyaman di rumah pasien.",
+        "benefit": "Keuntungan",
+        "start-from": "Mulai dari",
+        "start-from-price": "Rp700.000",
+        "list-benefit": {
+          "1": {
+            "title": "Kemudahan",
+            "desc": "Perawatan ahli tanpa perjalanan ke klinik, ideal untuk mereka dengan masalah mobilitas."
+          },
+          "2": {
+            "title": "Perhatian Personal",
+            "desc": "Rencana perawatan yang disesuaikan di lingkungan rumah pasien."
+          },
+          "3": {
+            "title": "Kenyamanan",
+            "desc": "Lingkungan yang akrab mengurangi stres yang terkait dengan janji medis."
+          },
+          "4": {
+            "title": "Risiko Infeksi yang Dikurangi",
+            "desc": "Menghindari perawatan kesehatan yang ramai dan mempromosikan keselamatan."
+          },
+          "5": {
+            "title": "Keterlibatan Keluarga",
+            "desc": "Kunjungan ke rumah mendorong dukungan keluarga dan pemahaman terhadap rencana perawatan."
+          }
+        }
       }
     },
     "form-book": {
@@ -196,7 +254,10 @@
     "form-book-title": {
       "1": "Pesan kunjungan dokter sekarang",
       "2": "Pesan kunjungan perawat sekarang",
-      "3": "Pesan pemeriksaan kesehatan sekarang"
+      "3": "Pesan pemeriksaan kesehatan sekarang",
+      "4": "Pesan vaksin anak sekarang",
+      "5": "Pesan kunjungan dokter anak sekarang",
+      "6": "Pesan kunjungan dokter tht sekarang"
     },
     "practice-location": "Lokasi Praktik",
     "our-doctors": "Dokter Kami",
@@ -282,63 +343,43 @@
         }
       },
       "3": {
-        "title": "Medical Check Up",
-        "desc": "A Doctor Home Visit brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
-        "benefit": "Benefit",
-        "start-from": "Start From",
-        "start-from-price": "Rp250.000",
-        "list-benefit": {
-          "1": {
-            "title": "Convenience",
-            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
-          },
-          "2": {
-            "title": "Personalized Care",
-            "desc": "Tailored treatment plans considering home environment and lifestyle."
-          },
-          "3": {
-            "title": "Timely Intervention",
-            "desc": "Early detection and action to prevent complications."
-          },
-          "4": {
-            "title": "Enhanced Relationship",
-            "desc": "In-home visits foster better communication and trust."
-          },
-          "5": {
-            "title": "Accessibility",
-            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
-          }
-        }
-      },
-      "4": {
-        "title": "Vaksinasi Anak",
-        "desc": "Vaksinasi Anak adalah pemberian vaksin untuk melindungi anak dari penyakit seperti campak, gondongan, rubella, dan polio.",
+        "title": "Perawatan DBD di Rumah",
+        "desc": "Perawatan DBD di Rumah melibatkan pengobatan dan manajemen gejala demam berdarah di rumah, memastikan kenyamanan dan pemulihan sambil mengurangi risiko penularan dan masalah terkait rumah sakit.",
         "benefit": "Keuntungan",
         "start-from": "Mulai dari",
-        "start-from-price": "Rp150.000",
+        "start-from-price": "Rp500.000",
         "list-benefit": {
           "1": {
-            "title": "Perlindungan Kesehatan",
-            "desc": "Vaksin melindungi anak-anak dari penyakit serius."
+            "title": "Lingkungan Pemulihan yang Nyaman",
+            "desc": "Lingkungan yang akrab membantu mengurangi stres dan mempromosikan pemulihan."
           },
           "2": {
-            "title": "Pertahanan Nasional",
-            "desc": "Vaksinasi menghemat biaya pengobatan dengan mencegah penyakit parah."
+            "title": "Risiko Penularan yang Dikurangi",
+            "desc": "Pasien mengurangi penyebaran virus dengan tinggal di rumah."
           },
           "3": {
-            "title": "Akses Sekolah",
-            "desc": "Vaksinasi yang diwajibkan menjamin akses terhadap pendidikan di lingkungan yang lebih aman."
+            "title": "Pengobatan Personal",
+            "desc": "Rencana perawatan yang disesuaikan dan pemantauan gejala oleh caregiver meningkatkan efektivitas pengobatan."
           },
           "4": {
-            "title": "Kesehatan Global",
-            "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
+            "title": "Pemantauan Teratur",
+            "desc": "Tindak lanjut rutin untuk memantau hitungan darah dan status hidrasi, tanda-tanda vital, dan kemajuan keseluruhan."
+          },
+          "5": {
+            "title": "Menghindari Risiko Rumah Sakit",
+            "desc": "Perawatan di rumah mencegah infeksi yang mungkin didapat di rumah sakit, membantu pemulihan lebih cepat."
+          },
+          "6": {
+            "title": "Efisiensi Biaya",
+            "desc": "Perawatan di rumah mengurangi biaya perawatan kesehatan sambil memastikan manajemen yang tepat terhadap gejala demam berdarah."
           }
         }
       }
     },
     "form-book-title": {
       "1": "Pesan perawatan luka sekarang",
-      "2": "Pesan pemantauan dan pencegahan medis sekarang"
+      "2": "Pesan pemantauan dan pencegahan medis sekarang",
+      "3": "Pesan Perawatan DBD dirumah sekarang"
     },
     "practice-location": "Lokasi Praktik",
     "our-doctors": "Dokter Kami",
@@ -737,6 +778,14 @@
       "service-label": "Pilih Layanan",
       "address": "Alamat",
       "address-label": "Alamat Anda"
+    },
+    "form-book-title": {
+      "1": "Pesan Akupuntur sekarang",
+      "2": "Pesan Pijat Terapi sekarang",
+      "3": "Pesan Penyeimbang Reiki sekarang",
+      "4": "Pesan Bimbingan & Sesi Yoga sekarang",
+      "5": "Pesan Praktek Meditasi sekarang",
+      "6": "Pesan Osteopathy & Layanan Chiropractic sekarang"
     },
     "detail": "Payment Details",
     "fee": "Fee",

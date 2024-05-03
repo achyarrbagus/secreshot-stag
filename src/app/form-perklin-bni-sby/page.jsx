@@ -132,10 +132,12 @@ const perklinBniSby = () => {
       return (
         <button
           type="submit"
-          className={`btn btn-yellow w-100 mt-5 ${submitLoad ? 'disabled' : ''}`}
+          className={`btn btn-yellow w-100 mt-5 ${
+            submitLoad ? "disabled" : ""
+          }`}
           disabled={!isFilesSelected}
         >
-          {submitLoad ? 'Memuat...' : 'Daftar'}
+          {submitLoad ? "Memuat..." : "Daftar"}
         </button>
       );
     } else {
@@ -170,8 +172,8 @@ const perklinBniSby = () => {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Form Registrasi</title>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/pbs/style.css" />
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/pbs/style.css" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -187,7 +189,7 @@ const perklinBniSby = () => {
           </div>
         </div>
         <div className="title-kur">
-          <img src="assets/img/perklin-bni-sby/icon-regis.svg" alt="" />
+          <img src="/assets/img/perklin-bni-sby/icon-regis.svg" alt="" />
           <span>
             Pendaftaran KUR (Kredit Usaha Rakyat) BNI - Cepat Sehat & Perklin
           </span>

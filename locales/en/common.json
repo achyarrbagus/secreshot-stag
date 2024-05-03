@@ -171,6 +171,64 @@
             "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
           }
         }
+      },
+      "5": {
+        "title": "Pediatrician Home Visit",
+        "desc": "Pediatrician Home Visit brings specialized medical care directly to children in their own homes, ensuring comfort and convenience while addressing their healthcare needs.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp700.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Eliminating travel for families, ensuring uninterrupted routines."
+          },
+          "2": {
+            "title": "Personalized Care",
+            "desc": "Tailored medical advice based on direct observation of the child's living environment."
+          },
+          "3": {
+            "title": "Reduced Stress",
+            "desc": "Providing care in a familiar setting, reducing anxiety for both children and parents."
+          },
+          "4": {
+            "title": "Improved Compliance",
+            "desc": "Enhanced cooperation from children, leading to better adherence to treatment plans."
+          },
+          "5": {
+            "title": "Family Involvement",
+            "desc": "Encouraging active participation from family members, fostering a supportive environment for the child's recovery and long-term health management."
+          }
+        }
+      },
+      "6": {
+        "title": "Otolaryngologist Home Visit",
+        "desc": "Otolaryngologist Home Visits involve specialized medical care for ear, nose, and throat conditions, conducted in the comfort of patients' homes.",
+        "benefit": "Benefit",
+        "start-from": "Start From",
+        "start-from-price": "Rp700.000",
+        "list-benefit": {
+          "1": {
+            "title": "Convenience",
+            "desc": "Expert care without clinic travel, ideal for those with mobility issues."
+          },
+          "2": {
+            "title": "Personalized Care",
+            "desc": "Tailored treatment plans in the patient's home environment."
+          },
+          "3": {
+            "title": "Comfort",
+            "desc": "Familiar surroundings reduce stress associated with medical appointments."
+          },
+          "4": {
+            "title": "Reduced Infection Risk",
+            "desc": "Avoidance of crowded healthcare settings promotes safety."
+          },
+          "5": {
+            "title": "Family Involvement",
+            "desc": "Home visits encourage family support and understanding of treatment plans."
+          }
+        }
       }
     },
     "practice-location": "Practice Location",
@@ -197,7 +255,10 @@
     "form-book-title": {
       "1": "Book a doctor visit now",
       "2": "Book a nurse visit now",
-      "3": "Book for medical check up now"
+      "3": "Book for medical check up now",
+      "4": "Book a vaccine kids now",
+      "5": "Book a pedictrician visit now",
+      "6": "Book a Otolaryngologist visit now"
     },
     "detail": "Payment Details",
     "fee": "Fee",
@@ -264,59 +325,43 @@
         }
       },
       "3": {
-        "title": "Medical Check Up",
-        "desc": "A Doctor Home Visit brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
+        "title": "Dengue Fever Home Care",
+        "desc": "Dengue Fever Home Care entails treating and managing symptoms of dengue fever at home, ensuring comfort and recovery while reducing transmission risks and hospital-related issues.",
         "benefit": "Benefit",
         "start-from": "Start From",
-        "start-from-price": "Rp250.000",
+        "start-from-price": "Rp500.000",
         "list-benefit": {
           "1": {
-            "title": "Convenience",
-            "desc": "Healthcare delivered to your doorstep for time-saving and ease."
+            "title": "Comfortable Recovery Environment",
+            "desc": "Familiar surroundings aid in stress reduction and promote recovery."
           },
           "2": {
-            "title": "Personalized Care",
-            "desc": "Tailored treatment plans considering home environment and lifestyle."
+            "title": "Reduced Transmission Risk",
+            "desc": "Patients minimize the spread of the virus by staying at home."
           },
           "3": {
-            "title": "Timely Intervention",
-            "desc": "Early detection and action to prevent complications."
+            "title": "Personalized Treatment",
+            "desc": "Tailored care plans and symptom monitoring by caregivers enhance treatment effectiveness."
           },
           "4": {
-            "title": "Enhanced Relationship",
-            "desc": "In-home visits foster better communication and trust."
+            "title": "Regular Monitoring",
+            "desc": "Regular follow-ups to monitor blood counts and hydration status, vital signs, and overall progress."
           },
           "5": {
-            "title": "Accessibility",
-            "desc": "Easy access for vulnerable populations like the elderly and those with mobility issues"
-          }
-        }
-      },
-      "4": {
-        "title": "Vaksinasi Anak",
-        "desc": "Vaksinasi Anak adalah pemberian vaksin untuk melindungi anak dari penyakit seperti campak, gondongan, rubella, dan polio.",
-        "benefit": "Keuntungan",
-        "start-from": "Mulai dari",
-        "start-from-price": "Rp150.000",
-        "list-benefit": {
-          "1": {
-            "title": "Perlindungan Kesehatan",
-            "desc": "Vaksin melindungi anak-anak dari penyakit serius."
+            "title": "Avoidance of Hospital Risks",
+            "desc": "Home care prevents potential hospital-acquired infections, aiding in faster recovery."
           },
-          "2": {
-            "title": "Pertahanan Nasional",
-            "desc": "Vaksinasi menghemat biaya pengobatan dengan mencegah penyakit parah."
-          },
-          "3": {
-            "title": "Akses Sekolah",
-            "desc": "Vaksinasi yang diwajibkan menjamin akses terhadap pendidikan di lingkungan yang lebih aman."
-          },
-          "4": {
-            "title": "Kesehatan Global",
-            "desc": "Program vaksinasi berkontribusi pada upaya global melawan penyakit menular."
+          "6": {
+            "title": "Cost-Efficiency",
+            "desc": "Home care reduces healthcare expenses while ensuring proper management of dengue fever symptoms."
           }
         }
       }
+    },
+    "form-book-title": {
+      "1": "Book a wound care now",
+      "2": "Book a monitoring & prevention now",
+      "3": "Dengue Fever Home Care"
     },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",
@@ -1120,43 +1165,43 @@
           }
         }
       }
-    },
-    "practice-location": "Practice Location",
-    "our-doctors": "Our Doctors",
-    "dr-surgeon": "Surgeon",
-    "dr-general": "General Practitioner",
-    "dr-pediatrician": "Pediatrician",
-    "dr-asthetic": "Aesthetic Doctor",
-    "mayapada": "Mayapada Hospital",
-    "eka": "Eka Hospital",
-    "aysha": "Aysha Islamic Hospital",
-    "cepat-sehat": "Cepat Sehat Clinic",
-    "our-nurse": "Our Nurses",
-
-    "form-book": {
-      "title": "Book a visit at your place now",
-      "name": "Name",
-      "name-label": "Your Name",
-      "service": "Service",
-      "service-label": "Select Service",
-      "address": "Address",
-      "address-label": "Your Address"
-    },
-    "detail": "Payment Details",
-    "fee": "Fee",
-    "discount": "Discount",
-    "method": "Choose Payment Method",
-    "e_wallet": "E-Wallet",
-    "bank_transfer": "Bank Transfer",
-    "card": "Card",
-    "other": "OTC",
-    "promo": "Promo Code",
-    "input_promo": "Input Promo Code",
-    "apply_promo": "Apply",
-    "your": "Your payment",
-    "total": "Total",
-    "pay_confirm": "Confirm & Pay"
+    }
   },
+  "practice-location": "Practice Location",
+  "our-doctors": "Our Doctors",
+  "dr-surgeon": "Surgeon",
+  "dr-general": "General Practitioner",
+  "dr-pediatrician": "Pediatrician",
+  "dr-asthetic": "Aesthetic Doctor",
+  "mayapada": "Mayapada Hospital",
+  "eka": "Eka Hospital",
+  "aysha": "Aysha Islamic Hospital",
+  "cepat-sehat": "Cepat Sehat Clinic",
+  "our-nurse": "Our Nurses",
+
+  "form-book": {
+    "title": "Book a visit at your place now",
+    "name": "Name",
+    "name-label": "Your Name",
+    "service": "Service",
+    "service-label": "Select Service",
+    "address": "Address",
+    "address-label": "Your Address"
+  },
+  "detail": "Payment Details",
+  "fee": "Fee",
+  "discount": "Discount",
+  "method": "Choose Payment Method",
+  "e_wallet": "E-Wallet",
+  "bank_transfer": "Bank Transfer",
+  "card": "Card",
+  "other": "OTC",
+  "promo": "Promo Code",
+  "input_promo": "Input Promo Code",
+  "apply_promo": "Apply",
+  "your": "Your payment",
+  "total": "Total",
+  "pay_confirm": "Confirm & Pay",
   "question": {
     "help": "Any Question? Our team is ready to help you directly",
     "contact_whatsapp": "Contact via WhatsApp",

@@ -40,7 +40,9 @@
     "src/pages/page.jsx",
     "src/app/admin/update-article/page.jsx",
     "src/app/admin/page.jsx",
-    "src/pages/layout.tsx"
+    "src/pages/layout.tsx",
+    "src/app/form-perklin-bni-sby/layout.jsx",
+    "src/app/admin/layout.jsx"
   ],
   "exclude": ["node_modules"]
 }

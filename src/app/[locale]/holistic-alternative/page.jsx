@@ -18,23 +18,35 @@ const HolisticAlternative = () => {
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
-      case "Acupuncture":
-        setBook("Book acupunture now");
+      case "Doctor Home Visit":
+        setBook(t("form-book-title.1"));
         break;
-      case "Therapeutic Massage":
-        setBook("Book therapeutic massage now");
+      case "Nurse Home Visit":
+        setBook(t("form-book-title.2"));
         break;
-      case "Energy-Balancing Reiki":
-        setBook("Book energy-balancing reiki now");
+      case "Medical Check Up":
+        setBook(t("form-book-title.3"));
         break;
-      case "Yoga Guidance and Sessions":
-        setBook("Book yoga guidance now");
+      case "Pediatrician Home Visit":
+        setBook(t("form-book-title.5"));
         break;
-      case "Meditation Practices":
-        setBook("Book meditation practices now");
+      case "Otolaryngologist Home Visit":
+        setBook(t("form-book-title.6"));
         break;
-      case "Osteopathy and Chiropractic services":
-        setBook("Book osteopathy and chiropractic now");
+      case "Kunjungan Dokter Kerumah":
+        setBook(t("form-book-title.1"));
+        break;
+      case "Kunjungan Perawat Kerumah":
+        setBook(t("form-book-title.2"));
+        break;
+      case "Pemeriksaan Kesehatan":
+        setBook(t("form-book-title.3"));
+        break;
+      case "Kunjungan Dokter Anak":
+        setBook(t("form-book-title.5"));
+        break;
+      case t("Kunjungan Dokter THT"):
+        setBook(t("form-book-title.6"));
         break;
     }
 
@@ -491,7 +503,9 @@ const HolisticAlternative = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.5.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -626,21 +640,23 @@ const HolisticAlternative = () => {
                     onChange={handleChange}
                   >
                     <option>Select Service</option>
-                    <option value="Acupuncture">Acupuncture</option>
-                    <option value="Therapeutic Massage">
-                      Therapeutic Massage
+                    <option value={t("service-menu.1.title")}>
+                      {t("service-menu.1.title")}
                     </option>
-                    <option value="Energy-Balancing Reiki">
-                      Energy-Balancing Reiki
+                    <option value={t("service-menu.2.title")}>
+                      {t("service-menu.2.title")}
                     </option>
-                    <option value="Yoga Guidance and Sessions">
-                      Yoga Guidance and Sessions
+                    <option value={t("service-menu.3.title")}>
+                      {t("service-menu.3.title")}
                     </option>
-                    <option value="Meditation Practices">
-                      Meditation Practices
+                    <option value={t("service-menu.4.title")}>
+                      {t("service-menu.4.title")}
                     </option>
-                    <option value="Osteopathy and Chiropractic services">
-                      Osteopathy and Chiropractic services
+                    <option value={t("service-menu.5.title")}>
+                      {t("service-menu.5.title")}
+                    </option>
+                    <option value={t("service-menu.6.title")}>
+                      {t("service-menu.6.title")}
                     </option>
                   </select>
                 </div>
