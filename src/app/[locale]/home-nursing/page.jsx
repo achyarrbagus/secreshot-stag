@@ -310,9 +310,7 @@ const HomeNursing = () => {
                     <option value={t("service-menu.2.title")}>
                       {t("service-menu.2.title")}
                     </option>
-                    <option value={t("service-menu.3.title")}>
-                      {t("service-menu.3.title")}
-                    </option>
+
                     {/* {locale == "id" ? (
                       <option value={t("service-menu.4")}>
                         {t("service-menu.4.title")}
