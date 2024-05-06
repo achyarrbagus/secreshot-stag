@@ -27,7 +27,7 @@
     "book-button": "Pesan",
     "our-service": "Layanan Kami",
     "service-menu": {
-      "1": "Kunjungan Dokter Ke Rumah",
+      "1": "Layanan Perawatan Dirumah",
       "2": "Perawatan Dirumah Dan Perawatan Luka",
       "3": "Telemedis Jarak Jauh",
       "4": "Terapi Alternatif Holistic",
@@ -65,15 +65,15 @@
     }
   },
   "doctor-home-visit": {
-    "title-banner": "Kunjungan Dokter Ke Rumah",
+    "title-banner": "Layanan Perwatan Dirumah",
     "title-slogan": "Rasakan kemudahan konsultasi dengan dokter langsung di rumah Anda. Dengan jaminan klinik.",
     "benefit": "Keuntungan",
     "book-button": "Pesan",
     "sub-title": "Keutamaan kunjungan dokter ke rumah anda meliputi :",
     "service-menu": {
       "1": {
-        "title": "Kunjungan Dokter Kerumah",
-        "desc": "Kunjungan dokter ke rumah menghadirkan fasilitas perawatan medis ke rumah anda, memungkinkan pasien menerima pemeriksaan, diagnosis, resep, dan menerima konsultasi dalam kenyamanan rumah mereka sendiri.",
+        "title": "Perawatan Dokter Kerumah",
+        "desc": "Perawatan dokter ke rumah menghadirkan fasilitas perawatan medis ke rumah anda, memungkinkan pasien menerima pemeriksaan, diagnosis, resep, dan menerima konsultasi dalam kenyamanan rumah mereka sendiri.",
         "benefit": "Keuntungan",
         "start-from": "Mulai dari",
         "start-from-price": "Rp400.000",
@@ -130,8 +130,8 @@
         }
       },
       "3": {
-        "title": "Pemeriksaan Kesehatan",
-        "desc": "Pemeriksaan kesehatan adalah pertemuan rutin dengan ahli kesehatan untuk menilai kesehatan secara keseluruhan melalui pengukuran tanda vital, pemeriksaan fisik, dan jika perlu, pemeriksaan atau tes tambahan.",
+        "title": "Lab dan Vaksin di Rumah",
+        "desc": "Lab dan Vaksin di Rumah adalah pertemuan rutin dengan ahli kesehatan untuk menilai kesehatan secara keseluruhan melalui pengukuran tanda vital, pemeriksaan fisik, dan jika perlu, pemeriksaan atau tes tambahan.",
         "benefit": "Keuntungan",
         "start-from": "Mulai dari",
         "start-from-price": "Rp150.000",

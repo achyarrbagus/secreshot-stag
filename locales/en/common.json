@@ -16,7 +16,7 @@
     "book-button": "Book Now",
     "our-service": "Our Service",
     "service-menu": {
-      "1": "Doctor Home Visit",
+      "1": "Home Care Services",
       "2": "Home Nursing And Wound Care",
       "3": "Remote Telemedicine",
       "4": "Holistic Alternative Therapies",
@@ -54,15 +54,15 @@
     }
   },
   "doctor-home-visit": {
-    "title-banner": "Doctor Home Visit",
+    "title-banner": "Home Care Services",
     "title-slogan": "Experience the convenience of consultations with doctors right in your place. With a guarantee of a clinic.",
     "benefit": "Benefit",
     "book-button": "Book Now",
     "sub-title": "Our Primary physician home visits include :",
     "service-menu": {
       "1": {
-        "title": "Doctor Home Visit",
-        "desc": "A Doctor Home Visit brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
+        "title": "Doctor Home Care",
+        "desc": "A Doctor Home Care brings medical care to your doorstep, allowing patients to receive examinations, diagnoses, prescriptions, and advice in the comfort of their own homes",
         "benefit": "Benefit",
         "start-from": "Start From",
         "start-from-price": "Rp400.000",
@@ -119,8 +119,8 @@
         }
       },
       "3": {
-        "title": "Medical Check Up",
-        "desc": "A medical check-up is a routine appointment with a healthcare professional to assess overall health through vital sign measurements, a physical examination, and, if necessary, additional screenings or tests.",
+        "title": "In-Home Lab and Vaccine",
+        "desc": "In-Home Lab and Vaccine is a routine appointment with a healthcare professional to assess overall health through vital sign measurements, a physical examination, and, if necessary, additional screenings or tests.",
         "benefit": "Benefit",
         "start-from": "Start From",
         "start-from-price": "Rp150.000",
@@ -173,7 +173,7 @@
         }
       },
       "5": {
-        "title": "Pediatric Practitioner Home Visit",
+        "title": "Pediatric Home Care",
         "desc": "Pediatrician Home Visit brings specialized medical care directly to children in their own homes, ensuring comfort and convenience while addressing their healthcare needs.",
         "benefit": "Benefit",
         "start-from": "Start From",
@@ -202,7 +202,7 @@
         }
       },
       "6": {
-        "title": "Otolaryngology Practitioner Home Visit",
+        "title": "Otolaryngology Home Care",
         "desc": "Otolaryngologist Home Visits involve specialized medical care for ear, nose, and throat conditions, conducted in the comfort of patients' homes",
         "benefit": "Benefit",
         "start-from": "Start From",

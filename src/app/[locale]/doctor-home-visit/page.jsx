@@ -591,258 +591,6 @@ const DoctorHomeVisit = () => {
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
-              <Accordion.Item className="accordion-item col-md-6" eventKey="2">
-                <Accordion.Header>
-                  <i className="icon-menu-icon-homevisit02 me-2 fs-32"></i>
-                  {t("service-menu.2.title")}
-                </Accordion.Header>
-                <Accordion.Body>
-                  <div className="list-data-faq">
-                    <div className="row gy-3">
-                      <div className="col-12">
-                        <img
-                          src="/assets/img/homevisit/img-sub-homevisit02.png"
-                          className="w-100"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-12">
-                        <p>{t("service-menu.2.desc")}</p>
-                        <h6 className="title-line">
-                          <span>{t("benefit")}</span>
-                        </h6>
-                        <ul className="ps-3">
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.2.list-benefit.1.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.2.list-benefit.1.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.2.list-benefit.2.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.2.list-benefit.2.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.2.list-benefit.3.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.2.list-benefit.3.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.2.list-benefit.4.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.2.list-benefit.4.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.2.list-benefit.5.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.2.list-benefit.5.desc")}
-                            </span>
-                          </li>
-                        </ul>
-                        <div className="price">
-                          <div className="value-price">
-                            <b>
-                              {t("service-menu.2.start-from")}:{" "}
-                              {t("service-menu.2.start-from-price")}
-                            </b>
-                          </div>
-                          <div
-                            onClick={() =>
-                              handleBook(t("service-menu.2.title"))
-                            }
-                            id="nurse-visit"
-                            className="btn btn-warning fs-14 ms-auto"
-                          >
-                            {t("book-button")}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item className="accordion-item col-md-6" eventKey="3">
-                <Accordion.Header>
-                  <i className="icon-menu-icon-homevisit04 me-2 fs-32"></i>
-                  {t("service-menu.3.title")}
-                </Accordion.Header>
-                <Accordion.Body>
-                  <div className="list-data-faq">
-                    <div className="row gy-3">
-                      <div className="col-12">
-                        <img
-                          src="/assets/img/homevisit/img-sub-homevisit04.png"
-                          className="w-100"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-12">
-                        <p>{t("service-menu.3.desc")}</p>
-                        <h6 className="title-line">
-                          <span>{t("benefit")}</span>
-                        </h6>
-                        <ul className="ps-3">
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.3.list-benefit.1.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.3.list-benefit.1.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.3.list-benefit.2.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.3.list-benefit.2.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.3.list-benefit.3.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.3.list-benefit.3.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.3.list-benefit.4.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.3.list-benefit.4.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.3.list-benefit.5.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.3.list-benefit.5.desc")}
-                            </span>
-                          </li>
-                        </ul>
-                        <div className="price">
-                          <div className="value-price">
-                            <b>
-                              {t("service-menu.3.start-from")}:{" "}
-                              {t("service-menu.3.start-from-price")}
-                            </b>
-                          </div>
-                          <div
-                            onClick={() =>
-                              handleBook(t("service-menu.3.title"))
-                            }
-                            id="medical-check-up"
-                            className="btn btn-warning fs-14 ms-auto"
-                          >
-                            {t("book-button")}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Accordion.Body>
-              </Accordion.Item>
-              {locale == "id" ? (
-                <Accordion.Item
-                  className="accordion-item col-md-6"
-                  eventKey="4"
-                >
-                  <Accordion.Header>
-                    <i className="icon-menu-icon-homevisit03 me-2 fs-32"></i>
-                    {t("service-menu.4.title")}
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    <div className="list-data-faq">
-                      <div className="row gy-3">
-                        <div className="col-12">
-                          <img
-                            src="/assets/img/homevisit/img-sub-homevisit03.png"
-                            className="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-12">
-                          <p>{t("service-menu.3.desc")}</p>
-                          <h6 className="title-line">
-                            <span>{t("benefit")}</span>
-                          </h6>
-                          <ul className="ps-3">
-                            <li className="mb-2">
-                              <h6 className="mb-1">
-                                {t("service-menu.4.list-benefit.1.title")}
-                              </h6>
-                              <span>
-                                {t("service-menu.4.list-benefit.1.desc")}
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">
-                                {t("service-menu.4.list-benefit.2.title")}
-                              </h6>
-                              <span>
-                                {t("service-menu.4.list-benefit.2.desc")}
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">
-                                {t("service-menu.4.list-benefit.3.title")}
-                              </h6>
-                              <span>
-                                {t("service-menu.4.list-benefit.3.desc")}
-                              </span>
-                            </li>
-                            <li className="mb-2">
-                              <h6 className="mb-1">
-                                {t("service-menu.4.list-benefit.4.title")}
-                              </h6>
-                              <span>
-                                {t("service-menu.4.list-benefit.4.desc")}
-                              </span>
-                            </li>
-                          </ul>
-                          <div className="price">
-                            <div className="value-price">
-                              <b>
-                                {t("service-menu.4.start-from")}:{" "}
-                                {t("service-menu.4.start-from-price")}
-                              </b>
-                            </div>
-                            <div
-                              onClick={() =>
-                                (window.location.href =
-                                  "https://www.vaksindirumah.cepatsehat.com/")
-                              }
-                              id="doctor-visit"
-                              className="btn btn-warning fs-14 ms-auto"
-                            >
-                              {t("book-button")}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Accordion.Body>
-                </Accordion.Item>
-              ) : (
-                <></>
-              )}
               <Accordion.Item className="accordion-item col-md-6" eventKey="5">
                 <Accordion.Header>
                   <i className="icon-menu-icon-homevisit01 me-2 fs-32"></i>
@@ -1011,6 +759,260 @@ const DoctorHomeVisit = () => {
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
+              <Accordion.Item className="accordion-item col-md-6" eventKey="2">
+                <Accordion.Header>
+                  <i className="icon-menu-icon-homevisit02 me-2 fs-32"></i>
+                  {t("service-menu.2.title")}
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="/assets/img/homevisit/img-sub-homevisit02.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>{t("service-menu.2.desc")}</p>
+                        <h6 className="title-line">
+                          <span>{t("benefit")}</span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.2.list-benefit.1.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.2.list-benefit.1.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.2.list-benefit.2.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.2.list-benefit.2.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.2.list-benefit.3.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.2.list-benefit.3.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.2.list-benefit.4.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.2.list-benefit.4.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.2.list-benefit.5.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.2.list-benefit.5.desc")}
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>
+                              {t("service-menu.2.start-from")}:{" "}
+                              {t("service-menu.2.start-from-price")}
+                            </b>
+                          </div>
+                          <div
+                            onClick={() =>
+                              handleBook(t("service-menu.2.title"))
+                            }
+                            id="nurse-visit"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            {t("book-button")}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item className="accordion-item col-md-6" eventKey="3">
+                <Accordion.Header>
+                  <i className="icon-menu-icon-homevisit04 me-2 fs-32"></i>
+                  {t("service-menu.3.title")}
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="/assets/img/homevisit/img-sub-homevisit04.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>{t("service-menu.3.desc")}</p>
+                        <h6 className="title-line">
+                          <span>{t("benefit")}</span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.3.list-benefit.1.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.3.list-benefit.1.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.3.list-benefit.2.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.3.list-benefit.2.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.3.list-benefit.3.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.3.list-benefit.3.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.3.list-benefit.4.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.3.list-benefit.4.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.3.list-benefit.5.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.3.list-benefit.5.desc")}
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>
+                              {t("service-menu.3.start-from")}:{" "}
+                              {t("service-menu.3.start-from-price")}
+                            </b>
+                          </div>
+                          <div
+                            onClick={() =>
+                              handleBook(t("service-menu.3.title"))
+                            }
+                            id="medical-check-up"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            {t("book-button")}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+
+              {locale == "id" ? (
+                <Accordion.Item
+                  className="accordion-item col-md-6"
+                  eventKey="4"
+                >
+                  <Accordion.Header>
+                    <i className="icon-menu-icon-homevisit03 me-2 fs-32"></i>
+                    {t("service-menu.4.title")}
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <div className="list-data-faq">
+                      <div className="row gy-3">
+                        <div className="col-12">
+                          <img
+                            src="/assets/img/homevisit/img-sub-homevisit03.png"
+                            className="w-100"
+                            alt=""
+                          />
+                        </div>
+                        <div className="col-12">
+                          <p>{t("service-menu.3.desc")}</p>
+                          <h6 className="title-line">
+                            <span>{t("benefit")}</span>
+                          </h6>
+                          <ul className="ps-3">
+                            <li className="mb-2">
+                              <h6 className="mb-1">
+                                {t("service-menu.4.list-benefit.1.title")}
+                              </h6>
+                              <span>
+                                {t("service-menu.4.list-benefit.1.desc")}
+                              </span>
+                            </li>
+                            <li className="mb-2">
+                              <h6 className="mb-1">
+                                {t("service-menu.4.list-benefit.2.title")}
+                              </h6>
+                              <span>
+                                {t("service-menu.4.list-benefit.2.desc")}
+                              </span>
+                            </li>
+                            <li className="mb-2">
+                              <h6 className="mb-1">
+                                {t("service-menu.4.list-benefit.3.title")}
+                              </h6>
+                              <span>
+                                {t("service-menu.4.list-benefit.3.desc")}
+                              </span>
+                            </li>
+                            <li className="mb-2">
+                              <h6 className="mb-1">
+                                {t("service-menu.4.list-benefit.4.title")}
+                              </h6>
+                              <span>
+                                {t("service-menu.4.list-benefit.4.desc")}
+                              </span>
+                            </li>
+                          </ul>
+                          <div className="price">
+                            <div className="value-price">
+                              <b>
+                                {t("service-menu.4.start-from")}:{" "}
+                                {t("service-menu.4.start-from-price")}
+                              </b>
+                            </div>
+                            <div
+                              onClick={() =>
+                                (window.location.href =
+                                  "https://www.vaksindirumah.cepatsehat.com/")
+                              }
+                              id="doctor-visit"
+                              className="btn btn-warning fs-14 ms-auto"
+                            >
+                              {t("book-button")}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Accordion.Body>
+                </Accordion.Item>
+              ) : (
+                <></>
+              )}
+
               <Accordion.Item className="accordion-item col-md-6" eventKey="7">
                 <Accordion.Header>
                   <i className="icon-menu-icon-nursing me-2 fs-32"></i>{" "}
@@ -1021,7 +1023,7 @@ const DoctorHomeVisit = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/home-nursing/img-home-nursing-sub03.png"
+                          src="/assets/img/homevisit/img-sub-homevisit07.webp"
                           className="w-100"
                           alt=""
                         />
