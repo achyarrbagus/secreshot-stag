@@ -11,7 +11,7 @@ import LayoutWrapper from "../components/layout-wrapper";
 
 const DoctorHomeVisit = () => {
   const locale = useLocale();
-  const t = useTranslations("doctor-home-visit");
+  const t = useTranslations("home-care-services");
   const [formData, setFormData] = useState({
     name: "",
     address: "",
@@ -601,7 +601,7 @@ const DoctorHomeVisit = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homevisit/img-sub-homevisit05.png"
+                          src="/assets/img/homevisit/img-sub-homevisit05.webp"
                           className="w-100"
                           alt=""
                         />

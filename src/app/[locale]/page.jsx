@@ -10,6 +10,7 @@ import CardArticleSlide from "./components/card-article-slide";
 import "../../../public/assets/css/style.css";
 import "../../../public/assets/fontello/css/csehat.css";
 import LayoutWrapper from "./components/layout-wrapper";
+import CardService from "./components/card-service";
 
 import DoctorCard from "./components/card-doctor";
 import Helper from "../../../lib/helper/helper";
@@ -62,55 +63,36 @@ const Home = () => {
           <div className="container">
             <h3 className="title-section"> {t("our-service")} </h3>
             <div className="row g-3">
-              <div className="col-4">
-                <Link
-                  href={locale + "/doctor-home-visit"}
-                  className="box-service"
-                >
-                  <i className="icon-menu-doctor-home"></i>
-                  <span className="title-service"> {t("service-menu.1")} </span>
-                </Link>
-              </div>
-              <div className="col-4">
-                <Link href={locale + "/home-nursing"} className="box-service">
-                  <i className="icon-menu-home-nursing"></i>
-                  <span className="title-service">{t("service-menu.2")}</span>
-                </Link>
-              </div>
-              <div className="col-4">
-                <Link
-                  href={locale + "/remote-telemedicine"}
-                  className="box-service"
-                >
-                  <i className="icon-menu-remote-telemedicine"></i>
-                  <span className="title-service">{t("service-menu.3")}</span>
-                </Link>
-              </div>
-              <div className="col-4">
-                <Link
-                  href={locale + "/holistic-alternative"}
-                  className="box-service"
-                >
-                  <i className="icon-menu-holistic"></i>
-                  <span className="title-service">{t("service-menu.4")}</span>
-                </Link>
-              </div>
-              <div className="col-4">
-                <Link href={locale + "/inhome-therapy"} className="box-service">
-                  <i className="icon-menu-in-home-iv"></i>
-                  <span className="title-service">{t("service-menu.5")}</span>
-                </Link>
-              </div>
-
-              <div className="col-4">
-                <Link
-                  href={locale + "/alternative-telemedicine"}
-                  className="box-service"
-                >
-                  <i className="icon-menu-alternative-telemedicine"></i>
-                  <span className="title-service"> {t("service-menu.6")} </span>
-                </Link>
-              </div>
+              <CardService
+                link={locale + "/home-care-services"}
+                titleService={t("service-menu.1")}
+                icon={"icon-menu-doctor-home"}
+              />
+              <CardService
+                link={locale + "/home-nursing"}
+                titleService={t("service-menu.2")}
+                icon={"icon-menu-home-nursing"}
+              />
+              <CardService
+                link={locale + "/remote-telemedicine"}
+                titleService={t("service-menu.3")}
+                icon={"icon-menu-remote-telemedicine"}
+              />
+              <CardService
+                link={locale + "/holistic-alternative"}
+                titleService={t("service-menu.4")}
+                icon={"icon-menu-holistic"}
+              />
+              <CardService
+                link={locale + "/inhome-therapy"}
+                titleService={t("service-menu.5")}
+                icon={"icon-menu-in-home-iv"}
+              />
+              <CardService
+                link={locale + "/alternative-telemedicine"}
+                titleService={t("service-menu.6")}
+                icon={"icon-menu-alternative-telemedicine"}
+              />
             </div>
           </div>
         </section>

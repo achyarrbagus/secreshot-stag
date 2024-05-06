@@ -28,7 +28,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/article/[articleId]/page.jsx",
-    "src/app/[locale]/doctor-home-visit/page.jsx",
+    "src/app/[locale]/home-care-services/page.jsx",
     "src/app/[locale]/home-nursing/page.jsx",
     "src/app/[locale]/remote-telemedicine/page.jsx",
     "src/app/[locale]/holistic-alternative/page.jsx",

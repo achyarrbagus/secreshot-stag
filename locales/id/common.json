@@ -64,7 +64,7 @@
       "address-label": "Alamat Anda"
     }
   },
-  "doctor-home-visit": {
+  "home-care-services": {
     "title-banner": "Layanan Perwatan Dirumah",
     "title-slogan": "Rasakan kemudahan konsultasi dengan dokter langsung di rumah Anda. Dengan jaminan klinik.",
     "benefit": "Keuntungan",
@@ -185,7 +185,7 @@
       },
       "5": {
         "title": "Kunjungan Tenaga Kesehatan Anak",
-        "desc": "Kunjungan Dokter Anak membawa perawatan medis khusus langsung ke rumah, memastikan kenyamanan dan kemudahan sambil mengatasi kebutuhan kesehatan anak-anak.",
+        "desc": "Kunjungan Tenaga Kesehatan Anak membawa perawatan medis khusus langsung ke rumah, memastikan kenyamanan dan kemudahan sambil mengatasi kebutuhan kesehatan anak-anak.",
         "benefit": "Keuntungan",
         "start-from": "Mulai dari",
         "start-from-price": "Rp700.000",
@@ -214,7 +214,7 @@
       },
       "6": {
         "title": "Kunjungan Tenaga Kesehatan THT",
-        "desc": "Kunjungan Dokter THT melibatkan perawatan medis khusus untuk kondisi telinga, hidung, dan tenggorokan, dilakukan dengan nyaman di rumah pasien.",
+        "desc": "Kunjungan Tenaga Kesehatan THT melibatkan perawatan medis khusus untuk kondisi telinga, hidung, dan tenggorokan, dilakukan dengan nyaman di rumah pasien.",
         "benefit": "Keuntungan",
         "start-from": "Mulai dari",
         "start-from-price": "Rp700.000",

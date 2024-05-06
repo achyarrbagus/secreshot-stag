@@ -57,13 +57,17 @@ function Article() {
     params.append("id", id);
     params.append("locale", newLocale);
 
-    // Dapatkan URL saat ini
-    const currentUrl = new URL(window.location.href);
-
     // Tambahkan query string yang dibuat sebelumnya
     currentUrl.search = params.toString();
+    const currentUrl = new URL(window.location.href);
 
-    // Ganti URL dengan query string baru
+    // Ganti path dengan nilai baru
+    currentUrl.pathname = pathname;
+
+    // Tambahkan atau ganti locale dengan nilai baru
+    currentUrl.searchParams.set("locale", newLocale);
+
+    // Ganti URL dengan URL baru yang diperbarui
     router.replace(currentUrl.toString());
     // router.replace(pathname, { locale: newLocale });
   };
