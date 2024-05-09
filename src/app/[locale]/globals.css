@@ -294,6 +294,7 @@ a {
 .p-question {
   padding: 100px 0 !important;
 }
+
 @media (max-width: 575.98px) {
   .p-question {
     padding-bottom: 50px !important;
@@ -553,6 +554,27 @@ section.doctor.nurse .items-doctor .name {
 section.doctor .items-doctor .img-doctor {
   margin-bottom: -60px;
   text-align: center;
+}
+
+section.doctor .items-doctor .img-doctor {
+  margin-bottom: -60px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  section.doctor .items-doctor .img-doctor .img {
+    height: 184px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.doctor .items-doctor .img-doctor .img {
+    height: 200px;
+  }
+}
+
+section.doctor .items-doctor .img-doctor .img {
+  height: 220px;
 }
 section.doctor .items-doctor .img-doctor img {
   width: 80%;

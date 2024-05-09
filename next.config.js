@@ -5,6 +5,9 @@ const withPWA = require("next-pwa")({
   maximumFileSizeToCacheInBytes: 5000000,
 });
 const nextConfig = {
+  images: {
+    unoptimized: true,
+  },
   output: "export",
 };
 

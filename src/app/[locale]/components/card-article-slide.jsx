@@ -35,12 +35,21 @@ const CardArticleSlide = ({ path, item }) => {
   return (
     <>
       <div className="card-slide-article">
-        <img
-          src={"https://api.cepatsehat.com/uploads/" + path}
-          alt="Picture of the author"
-          layout="fill"
-          objectFit="cover"
-        />
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: 0,
+            paddingBottom: "calc(7/12 * 100%)" /* Mengatur rasio aspek 12:7 */,
+          }}
+        >
+          <Image
+            src={"https://api.cepatsehat.com/uploads/" + path}
+            layout="fill"
+            objectFit="cover"
+            alt="doctor"
+          />
+        </div>
 
         <div className="name-article">
           <h6>{CutText(item.title)}...</h6>

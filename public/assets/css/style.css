@@ -237,7 +237,6 @@ a {
   margin-top: 68px;
 }
 .hero-banner {
-  background: url("../img/banner-homepage.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -554,6 +553,21 @@ section.doctor .items-doctor .img-doctor {
   margin-bottom: -60px;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  section.doctor .items-doctor .img-doctor .img {
+    height: 184px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.doctor .items-doctor .img-doctor .img {
+    height: 200px;
+  }
+}
+
+section.doctor .items-doctor .img-doctor .img {
+  height: 220px;
+}
 section.doctor .items-doctor .img-doctor img {
   width: 80%;
 }
@@ -765,6 +779,11 @@ section.faq {
 .swiper-article .swiper-slide .card-slide-article {
   border-radius: 10px;
   overflow: hidden;
+}
+.swiper-article .swiper-slide .card-slide-article .img {
+  width: 100%;
+  aspect-ratio: 12/7;
+  object-fit: cover;
 }
 .swiper-article .swiper-slide .card-slide-article img {
   width: 100%;

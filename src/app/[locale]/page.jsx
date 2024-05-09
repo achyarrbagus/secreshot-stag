@@ -9,6 +9,12 @@ import useSWR from "swr";
 import CardArticleSlide from "./components/card-article-slide";
 import "../../../public/assets/css/style.css";
 import "../../../public/assets/fontello/css/csehat.css";
+import DrDewi from "../../../public/assets/img/doctor/dr-dewi-f.png";
+import DrDwi from "../../../public/assets/img/doctor/dr-dwi-s.png";
+import DrAyu from "../../../public/assets/img/doctor/dr-ayu-a.png";
+import DrErnita from "../../../public/assets/img/doctor/dr-ernita-r.png";
+import DrIrvan from "../../../public/assets/img/doctor/dr-irvan-r.png";
+import DrMel from "../../../public/assets/img/doctor/dr-melchisedek-a.png";
 import LayoutWrapper from "./components/layout-wrapper";
 import CardService from "./components/card-service";
 
@@ -59,6 +65,7 @@ const Home = () => {
           title={t("title-banner")}
           desc={t("title-slogan")}
           bookButton={t("book-button")}
+          backgroundImage={"/assets/img/banner-homepage.webp"}
         />
         <section className="service">
           <div className="container">
@@ -110,7 +117,7 @@ const Home = () => {
               <div className="list-why">
                 <div className="items-why">
                   <img
-                    src="assets/img/Protect.png"
+                    src="/assets/img/Protect.png"
                     className="img-list"
                     alt=""
                   />
@@ -120,7 +127,7 @@ const Home = () => {
               <div className="list-why">
                 <div className="items-why">
                   <img
-                    src="assets/img/Diploma.png"
+                    src="/assets/img/Diploma.png"
                     className="img-list"
                     alt=""
                   />
@@ -140,7 +147,7 @@ const Home = () => {
               <div className="list-why">
                 <div className="items-why">
                   <img
-                    src="assets/img/Globe Network.png"
+                    src="/assets/img/Globe Network.png"
                     className="img-list"
                     alt=""
                   />
@@ -158,7 +165,7 @@ const Home = () => {
               <div className="col-md-12 col-lg-8">
                 <div className="row g-3 g-md-5 justify-content-center">
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-dewi-f.png`}
+                    image={DrDewi}
                     name="dr. Dewi Fransiska, Sp.B"
                     job={t("dr-surgeon")}
                     str="3121101422105406"
@@ -166,7 +173,8 @@ const Home = () => {
                     practiceLocation={[t("mayapada"), t("eka")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-dwi-s.png`}
+                    // image={`/assets/img/doctor/dr-dwi-s.png`}
+                    image={DrDwi}
                     name="dr. Dwi Suryaning Ayu Aprilizia, Sp.A"
                     job={t("dr-pediatrician")}
                     str="3321201323154360"
@@ -174,37 +182,41 @@ const Home = () => {
                     practiceLocation={[t("aysha")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-ayu-a.png`}
+                    // image={`/assets/img/doctor/dr-ayu-a.png`}
                     name="dr. Ayu A. Istiana"
+                    image={DrAyu}
                     job={t("dr-asthetic")}
                     str="3321201323154360"
                     titlelocation={t("practice-location")}
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-ernita-r.png`}
+                    // image={`/assets/img/doctor/dr-ernita-r.png`}
                     name="dr. Ernita Rosyanti Dewi"
+                    image={DrErnita}
                     job={t("dr-general")}
                     str="3121100220145544"
                     titlelocation={t("practice-location")}
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-irvan-r.png`}
+                    // image={`/assets/img/doctor/dr-irvan-r.png`}
                     name="dr. Irvan Rizki Fitri"
+                    image={DrIrvan}
                     job={t("dr-general")}
                     str="3121100220145544"
                     titlelocation={t("practice-location")}
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-melchisedek-a.png`}
+                    // image={`/assets/img/doctor/dr-melchisedek-a.png`}
                     name="dr. Melchisedek A.V.P Marbun"
+                    image={DrMel}
                     job={t("dr-general")}
                     str="3111100220155405"
                     titlelocation={t("practice-location")}
                     practiceLocation={[t("cepat-sehat")]}
-                  />
+                  />{" "}
                 </div>
               </div>
             </div>

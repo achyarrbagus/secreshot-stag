@@ -1,7 +1,12 @@
-const HeroBanner = ({ title, desc, bookButton }) => {
+const HeroBanner = ({ title, desc, bookButton, backgroundImage }) => {
   return (
     <>
-      <div className="hero-banner">
+      <div
+        style={{
+          backgroundImage: `url('${backgroundImage}')`,
+        }}
+        className="hero-banner"
+      >
         <div className="container">
           <div className="text">
             <h3 className="title">{title} </h3>
