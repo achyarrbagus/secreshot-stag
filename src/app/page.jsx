@@ -1,10 +1,14 @@
+"use client";
+
 import { redirect } from "next/navigation";
+import { useEffect } from "react";
 
 export default function RootPage() {
-  if (window.location.hostname === "https://www.cepat-sehat.com/") {
-    window.location.replace("https://www.cepatsehat.com/");
-  }
+  useEffect(() => {
+    if (window.location.hostname === "www.cepat-sehat.com") {
+      window.location.replace("https://www.cepatsehat.com/");
+    }
+  }, []);
 
-  console.log(window.location.hostname);
-  redirect("/en");
+  return redirect("/en");
 }
