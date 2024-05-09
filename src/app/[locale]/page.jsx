@@ -403,7 +403,7 @@ export default function App() {
     if (window.location.hostname === "www.cepat-sehat.com") {
       window.location.replace("www.cepatsehat.com");
     }
-    console.log(window.location.hostname, "=====");
+    console.log(window.location.hostname, "==hell==");
   }, []);
 
   return (
