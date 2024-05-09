@@ -6,7 +6,7 @@ const NurseCard = ({ name, image, str }) => {
       <div className="col-6 col-md-3">
         <div className="items-doctor">
           <div className="img-doctor">
-            <Image src={image} className="img" />
+            <Image src={image} className="img" alt="nurse-img" />
           </div>
           <div className="name">
             <h5>{name}</h5>

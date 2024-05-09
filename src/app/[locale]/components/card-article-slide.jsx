@@ -47,7 +47,7 @@ const CardArticleSlide = ({ path, item }) => {
             src={"https://api.cepatsehat.com/uploads/" + path}
             layout="fill"
             objectFit="cover"
-            alt="doctor"
+            alt="article"
           />
         </div>
 

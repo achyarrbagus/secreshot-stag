@@ -15,7 +15,7 @@ const DoctorCard = ({
       <div className="col-6 col-md-4">
         <div className="items-doctor">
           <div className="img-doctor">
-            <Image src={image} className="img" />
+            <Image src={image} className="img" alt="doctor-img" />
           </div>
           <div className="name">
             <h5>{name}</h5>
