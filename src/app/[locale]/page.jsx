@@ -401,7 +401,7 @@ const Home = () => {
 export default function App() {
   useEffect(() => {
     if (window.location.hostname === "www.cepat-sehat.com") {
-      window.location.replace("www.cepatsehat.com");
+      window.location.replace("https://www.cepatsehat.com/en");
     }
     console.log(window.location.hostname, "==hell==");
   }, []);
