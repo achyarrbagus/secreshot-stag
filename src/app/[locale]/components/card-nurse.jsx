@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 const NurseCard = ({ name, image, str }) => {
   return (
     <>
       <div className="col-6 col-md-3">
         <div className="items-doctor">
           <div className="img-doctor">
-            <img src={image} alt="" />
+            <Image src={image} className="img" />
           </div>
           <div className="name">
             <h5>{name}</h5>

@@ -15,6 +15,13 @@ import DrAyu from "../../../public/assets/img/doctor/dr-ayu-a.png";
 import DrErnita from "../../../public/assets/img/doctor/dr-ernita-r.png";
 import DrIrvan from "../../../public/assets/img/doctor/dr-irvan-r.png";
 import DrMel from "../../../public/assets/img/doctor/dr-melchisedek-a.png";
+import NrSiti from "../../../public/assets/img/doctor/nurse-siti.png";
+import NrLois from "../../../public/assets/img/doctor/nurse-loisa.png";
+import NrSyarah from "../../../public/assets/img/doctor/nurse-syarah.png";
+import NrAndi from "../../../public/assets/img/doctor/nurse-andi.png";
+import NrMarsiani from "../../../public/assets/img/doctor/nurse-marsiani.png";
+import NrIrfan from "../../../public/assets/img/doctor/nurse-irfan.png";
+import NrDimas from "../../../public/assets/img/doctor/nurse-dimas.png";
 import LayoutWrapper from "./components/layout-wrapper";
 import CardService from "./components/card-service";
 
@@ -191,7 +198,6 @@ const Home = () => {
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    // image={`/assets/img/doctor/dr-ernita-r.png`}
                     name="dr. Ernita Rosyanti Dewi"
                     image={DrErnita}
                     job={t("dr-general")}
@@ -233,43 +239,43 @@ const Home = () => {
                     name="Siti Rahma Derlauw"
                     str="3101522234737239"
                     isnurse={true}
-                    image="assets/img/doctor/nurse-siti.png"
+                    image={NrSiti}
                   />
                   <NurseCard
                     name="Loisa Lakamai"
                     str="1701721213519681"
                     isnurse={true}
-                    image="assets/img/doctor/nurse-loisa.png"
+                    image={NrLois}
                   />
                   <NurseCard
                     name="Syarah Azzarah"
                     str="2601521224246624"
                     isnurse={true}
-                    image="assets/img/doctor/nurse-syarah.png"
+                    image={NrSyarah}
                   />
                   <NurseCard
                     name="Andi Andriansyah S."
                     str="HA00000870437934"
                     isnurse={true}
-                    image="assets/img/doctor/nurse-andi.png"
+                    image={NrAndi}
                   />
                   <NurseCard
                     name="Marsiani Talo"
                     str=" 190172122-4444051"
                     isnurse={true}
-                    image="assets/img/doctor/nurse-marsiani.png"
+                    image={NrMarsiani}
                   />
                   <NurseCard
                     name="Irfan Mustofa"
                     str="1401511224517960"
                     isnurse={true}
-                    image="assets/img/doctor/nurse-irfan.png"
+                    image={NrIrfan}
                   />
                   <NurseCard
                     name="Dimas Catur Nugroho"
                     str="ED00000360053713"
                     isnurse={true}
-                    image="/assets/img/doctor/nurse-dimas.png"
+                    image={NrDimas}
                   />
                 </div>
               </div>
