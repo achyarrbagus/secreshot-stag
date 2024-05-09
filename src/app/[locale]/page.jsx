@@ -400,8 +400,8 @@ const Home = () => {
 
 export default function App() {
   useEffect(() => {
-    if (window.location.hostname === "cepat-sehat.com") {
-      window.location.hostname = "cepatsehat.com";
+    if (window.location.hostname === "www.cepat-sehat.com") {
+      window.location.hostname = "www.cepatsehat.com";
     }
     console.log(window.location.hostname, "=====");
   }, []);
