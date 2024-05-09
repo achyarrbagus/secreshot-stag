@@ -18,6 +18,7 @@ import axios from "axios";
 import HeroBanner from "./components/hero-banner";
 import NurseCard from "./components/card-nurse";
 import { useLocale, useTranslations } from "next-intl";
+import { useEffect } from "react";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
@@ -398,6 +399,13 @@ const Home = () => {
 };
 
 export default function App() {
+  useEffect(() => {
+    if (window.location.hostname === "cepat-sehat.com") {
+      window.location.hostname = "cepatsehat.com";
+    }
+    console.log(window.location.hostname, "=====");
+  }, []);
+
   return (
     <>
       <LayoutWrapper>
