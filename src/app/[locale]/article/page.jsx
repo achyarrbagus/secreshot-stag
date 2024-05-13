@@ -52,26 +52,9 @@ function Article() {
     FetchArticle(searchParams.get("id"), searchParams.get("locale"));
   }, [searchParams]);
 
-  const onLocaleChange = (newLocale, id) => {
-    const params = new URLSearchParams();
-    params.append("id", id);
-    params.append("locale", newLocale);
-
-    // Tambahkan query string yang dibuat sebelumnya
-    currentUrl.search = params.toString();
-    const currentUrl = new URL(window.location.href);
-
-    // Ganti path dengan nilai baru
-    currentUrl.pathname = pathname;
-
-    // Tambahkan atau ganti locale dengan nilai baru
-    currentUrl.searchParams.set("locale", newLocale);
-
-    // Ganti URL dengan URL baru yang diperbarui
-    router.replace(currentUrl.toString());
-    // router.replace(pathname, { locale: newLocale });
+  const onLocaleChange = (newLocale) => {
+    router.replace(pathname, { locale: newLocale });
   };
-
   const dateToString = (dateString) => {
     const dt = new Date(dateString);
     const date = dt.getDate();

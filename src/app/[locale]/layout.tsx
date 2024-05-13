@@ -31,7 +31,15 @@ async function getMessages(locale: string) {
 
 //function to generate the routes for all the locales
 export async function generateStaticParams() {
-  return ["en", "id"].map((locale) => ({ locale }));
+  const locales = ["en", "id"];
+  const params = [];
+
+  locales.forEach((locale) => {
+    // Untuk setiap locale, tambahkan objek dengan properti id dan locale
+    params.push({ id: "your-id", locale }); // Ganti "your-id" dengan nilai id yang sesuai
+  });
+
+  return params;
 }
 
 export default async function RootLayout({
