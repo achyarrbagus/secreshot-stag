@@ -79,12 +79,12 @@ export default function LayoutWrapper({ children }) {
           </div>
         </div>
       </OverlayTrigger>
-      <iframe
+      {/* <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-PFX6ZWQ4"
         height="0"
         width="0"
         style={{ display: "display:none;visibility:hidden" }}
-      ></iframe>
+      ></iframe> */}
 
       <MyFooter />
       <MyScript />

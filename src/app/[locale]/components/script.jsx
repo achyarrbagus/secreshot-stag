@@ -5,8 +5,8 @@ const MyScript = () => {
   return (
     <>
       <Script type="module" src="/src/main.tsx" />
-      <Script src="assets/bootstrap/js/main.js" />
-      <Script src="assets/bootstrap/js/bootstrap.bundle.min.js" />
+      <Script src="/assets/bootstrap/js/main.js" />
+      <Script src="/assets/bootstrap/js/bootstrap.bundle.min.js" />
       <Script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         crossOrigin="anonymous"
