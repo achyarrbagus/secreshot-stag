@@ -8,6 +8,19 @@ import { useLocale, useTranslations } from "next-intl";
 import DoctorCard from "../components/card-doctor";
 import NurseCard from "../components/card-nurse";
 import LayoutWrapper from "../components/layout-wrapper";
+import DrDewi from "../../../../public/assets/img/doctor/dr-dewi-f.png";
+import DrDwi from "../../../../public/assets/img/doctor/dr-dwi-s.png";
+import DrAyu from "../../../../public/assets/img/doctor/dr-ayu-a.png";
+import DrErnita from "../../../../public/assets/img/doctor/dr-ernita-r.png";
+import DrIrvan from "../../../../public/assets/img/doctor/dr-irvan-r.png";
+import DrMel from "../../../../public/assets/img/doctor/dr-melchisedek-a.png";
+import NrSiti from "../../../../public/assets/img/doctor/nurse-siti.png";
+import NrLois from "../../../../public/assets/img/doctor/nurse-loisa.png";
+import NrSyarah from "../../../../public/assets/img/doctor/nurse-syarah.png";
+import NrAndi from "../../../../public/assets/img/doctor/nurse-andi.png";
+import NrMarsiani from "../../../../public/assets/img/doctor/nurse-marsiani.png";
+import NrIrfan from "../../../../public/assets/img/doctor/nurse-irfan.png";
+import NrDimas from "../../../../public/assets/img/doctor/nurse-dimas.png";
 
 const DoctorHomeVisit = () => {
   const locale = useLocale();
@@ -675,6 +688,91 @@ const DoctorHomeVisit = () => {
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
+              <Accordion.Item className="accordion-item col-md-6" eventKey="7">
+                <Accordion.Header>
+                  <i className="icon-menu-icon-nursing me-2 fs-32"></i>{" "}
+                  {t("service-menu.7.title")}
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="list-data-faq">
+                    <div className="row gy-3">
+                      <div className="col-12">
+                        <img
+                          src="/assets/img/homevisit/img-sub-homevisit07.webp"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div className="col-12">
+                        <p>{t("service-menu.7.desc")}</p>
+                        <h6 className="title-line">
+                          <span>{t("benefit")}</span>
+                        </h6>
+                        <ul className="ps-3">
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.1.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.1.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.2.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.2.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.3.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.3.desc")}
+                            </span>
+                          </li>
+
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.4.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.4.desc")}
+                            </span>
+                          </li>
+                          <li className="mb-2">
+                            <h6 className="mb-1">
+                              {t("service-menu.7.list-benefit.5.title")}
+                            </h6>
+                            <span>
+                              {t("service-menu.7.list-benefit.5.desc")}
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="price">
+                          <div className="value-price">
+                            <b>
+                              {t("service-menu.7.start-from")}:{" "}
+                              {t("service-menu.7.start-from-price")}
+                            </b>
+                          </div>
+                          <div
+                            onClick={() =>
+                              handleBook(t("service-menu.7.title"))
+                            }
+                            id="nurse-visit"
+                            className="btn btn-warning fs-14 ms-auto"
+                          >
+                            {t("book-button")}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
               <Accordion.Item className="accordion-item col-md-6" eventKey="6">
                 <Accordion.Header>
                   <i className="icon-menu-icon-homevisit01 me-2 fs-32"></i>
@@ -1012,92 +1110,6 @@ const DoctorHomeVisit = () => {
               ) : (
                 <></>
               )}
-
-              <Accordion.Item className="accordion-item col-md-6" eventKey="7">
-                <Accordion.Header>
-                  <i className="icon-menu-icon-nursing me-2 fs-32"></i>{" "}
-                  {t("service-menu.7.title")}
-                </Accordion.Header>
-                <Accordion.Body>
-                  <div className="list-data-faq">
-                    <div className="row gy-3">
-                      <div className="col-12">
-                        <img
-                          src="/assets/img/homevisit/img-sub-homevisit07.webp"
-                          className="w-100"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-12">
-                        <p>{t("service-menu.7.desc")}</p>
-                        <h6 className="title-line">
-                          <span>{t("benefit")}</span>
-                        </h6>
-                        <ul className="ps-3">
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.7.list-benefit.1.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.7.list-benefit.1.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.7.list-benefit.2.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.7.list-benefit.2.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.7.list-benefit.3.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.7.list-benefit.3.desc")}
-                            </span>
-                          </li>
-
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.7.list-benefit.4.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.7.list-benefit.4.desc")}
-                            </span>
-                          </li>
-                          <li className="mb-2">
-                            <h6 className="mb-1">
-                              {t("service-menu.7.list-benefit.5.title")}
-                            </h6>
-                            <span>
-                              {t("service-menu.7.list-benefit.5.desc")}
-                            </span>
-                          </li>
-                        </ul>
-                        <div className="price">
-                          <div className="value-price">
-                            <b>
-                              {t("service-menu.7.start-from")}:{" "}
-                              {t("service-menu.7.start-from-price")}
-                            </b>
-                          </div>
-                          <div
-                            onClick={() =>
-                              handleBook(t("service-menu.7.title"))
-                            }
-                            id="nurse-visit"
-                            className="btn btn-warning fs-14 ms-auto"
-                          >
-                            {t("book-button")}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Accordion.Body>
-              </Accordion.Item>
             </Accordion>
           </div>
         </section>
@@ -1196,7 +1208,7 @@ const DoctorHomeVisit = () => {
               <div className="col-md-12 col-lg-8">
                 <div className="row g-3 g-md-5 justify-content-center">
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-dewi-f.png`}
+                    image={DrDewi}
                     name="dr. Dewi Fransiska, Sp.B"
                     job={t("dr-surgeon")}
                     str="3121101422105406"
@@ -1204,7 +1216,7 @@ const DoctorHomeVisit = () => {
                     practiceLocation={[t("mayapada"), t("eka")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-dwi-s.png`}
+                    image={DrDwi}
                     name="dr. Dwi Suryaning Ayu Aprilizia, Sp.A"
                     job={t("dr-pediatrician")}
                     str="3321201323154360"
@@ -1212,7 +1224,7 @@ const DoctorHomeVisit = () => {
                     practiceLocation={[t("aysha")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-ayu-a.png`}
+                    image={DrAyu}
                     name="dr. Ayu A. Istiana"
                     job={t("dr-asthetic")}
                     str="3321201323154360"
@@ -1220,7 +1232,7 @@ const DoctorHomeVisit = () => {
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-ernita-r.png`}
+                    image={DrErnita}
                     name="dr. Ernita Rosyanti Dewi"
                     job={t("dr-general")}
                     str="3121100220145544"
@@ -1228,7 +1240,7 @@ const DoctorHomeVisit = () => {
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-irvan-r.png`}
+                    image={DrIrvan}
                     name="dr. Irvan Rizki Fitri"
                     job={t("dr-general")}
                     str="3121100220145544"
@@ -1236,7 +1248,7 @@ const DoctorHomeVisit = () => {
                     practiceLocation={[t("cepat-sehat")]}
                   />
                   <DoctorCard
-                    image={`/assets/img/doctor/dr-melchisedek-a.png`}
+                    image={DrMel}
                     name="dr. Melchisedek A.V.P Marbun"
                     job={t("dr-general")}
                     str="3111100220155405"
@@ -1259,43 +1271,43 @@ const DoctorHomeVisit = () => {
                     name="Siti Rahma Derlauw"
                     str="3101522234737239"
                     isnurse={true}
-                    image="/assets/img/doctor/nurse-siti.png"
+                    image={NrSiti}
                   />
                   <NurseCard
                     name="Loisa Lakamai"
                     str="1701721213519681"
                     isnurse={true}
-                    image="/assets/img/doctor/nurse-loisa.png"
+                    image={NrLois}
                   />
                   <NurseCard
                     name="Syarah Azzarah"
                     str="2601521224246624"
                     isnurse={true}
-                    image="/assets/img/doctor/nurse-syarah.png"
+                    image={NrSyarah}
                   />
                   <NurseCard
                     name="Andi Andriansyah S."
                     str="HA00000870437934"
                     isnurse={true}
-                    image="/assets/img/doctor/nurse-andi.png"
+                    image={NrAndi}
                   />
                   <NurseCard
                     name="Marsiani Talo"
                     str=" 190172122-4444051"
                     isnurse={true}
-                    image="/assets/img/doctor/nurse-marsiani.png"
+                    image={NrMarsiani}
                   />
                   <NurseCard
                     name="Irfan Mustofa"
                     str="1401511224517960"
                     isnurse={true}
-                    image="/assets/img/doctor/nurse-irfan.png"
+                    image={NrIrfan}
                   />
                   <NurseCard
                     name="Dimas Catur Nugroho"
                     str="ED00000360053713"
                     isnurse={true}
-                    image="/assets/img/doctor/nurse-dimas.png"
+                    image={NrDimas}
                   />
                 </div>
               </div>
