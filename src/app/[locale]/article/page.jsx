@@ -37,6 +37,15 @@ function Article() {
       console.log(resp);
       console.log(resp.data.data[0]);
 
+      if (resp.data.data[0].length === 0) {
+        let data = {
+          title: "article not ready in this language",
+          description: "<p>article not ready in this language</p>",
+        };
+        setArticle(data);
+        return;
+      }
+
       setArticle(resp.data.data[0]);
     } catch (error) {
       setArticle([]);
@@ -55,10 +64,23 @@ function Article() {
   const onLocaleChange = (newLocale, id) => {
     // router.replace(pathname, { locale: newLocale });
 
-    window.location.replace(
-      `https://www.cepatsehat.com/${newLocale}/article?id=${id}&locale=${newLocale}`
-    );
-    FetchArticle(id, newLocale);
+    // window.location.replace(
+    //   `https://www.cepatsehat.com/${newLocale}/article?id=${id}&locale=${newLocale}`
+    // );
+    // FetchArticle(id, newLocale);
+    const params = new URLSearchParams();
+    params.append("id", id);
+    params.append("locale", newLocale);
+
+    // Dapatkan URL saat ini
+    const currentUrl = new URL(window.location.href);
+
+    // Tambahkan query string yang dibuat sebelumnya
+    currentUrl.search = params.toString();
+
+    // Ganti URL dengan query string baru
+    router.replace(currentUrl.toString());
+    // router.replace(pathname, { locale: newLocale })
   };
   const dateToString = (dateString) => {
     const dt = new Date(dateString);
