@@ -266,9 +266,9 @@ const InHomeTherapy = () => {
                                 <li>
                                   {t("service-menu.2.list-benefit.2.desc.11")}
                                 </li>
-                                <li>
+                                {/* <li>
                                   {t("service-menu.2.list-benefit.2.desc.12")}
-                                </li>
+                                </li> */}
                               </ul>
                             </span>
                           </li>

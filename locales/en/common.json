@@ -822,7 +822,7 @@
       },
       "2": {
         "title": "Super Bali Belly IV",
-        "desc": "A turbocharged upgrade to our Standard Bali Belly. Infused with immune-empowering zinc, detoxifying glutathione, and gut-nourishing probiotics, this blend is designed for medical-grade resilience. Beyond addressing Bali belly symptoms, it stands as a robust solution, fortifying your well-being at a cellular level. Immunity, detoxification, and digestive health converge for your optimal vitality.",
+        "desc": "A turbocharged upgrade to our Standard Bali Belly. Infused with immune-empowering zinc, and gut-nourishing probiotics, this blend is designed for medical-grade resilience. Beyond addressing Bali belly symptoms, it stands as a robust solution, fortifying your well-being at a cellular level. Immunity, detoxification, and digestive health converge for your optimal vitality.",
         "benefit": "Composition",
         "start-from": "Start From",
         "start-from-price": "Rp2.380.000",
@@ -848,8 +848,7 @@
               "8": "Vitamin B12",
               "9": "Biotin",
               "10": "Seng (20mg)",
-              "11": "Glutathione",
-              "12": "Probiotik"
+              "11": "Probiotik"
             }
           }
         }

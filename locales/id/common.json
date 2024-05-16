@@ -842,7 +842,7 @@
       },
       "2": {
         "title": "Super Bali Belly IV",
-        "desc": "Peningkatan Standard Bali Belly kami. Diperkaya dengan zinc yang memperkuat kekebalan tubuh, detoksifikasi glutathione, dan probiotik yang memberi nutrisi pada usus, campuran ini dirancang untuk ketahanan tingkat medis. Selain mengatasi gejala perut buncit, ini juga merupakan solusi ampuh yang memperkuat pertumbuhan sel. Imunitas, detoksifikasi, dan kesehatan pencernaan untuk vitalitas optimal Anda.",
+        "desc": "Peningkatan Standard Bali Belly kami. Diperkaya dengan zinc yang memperkuat kekebalan tubuh, dan probiotik yang memberi nutrisi pada usus, campuran ini dirancang untuk ketahanan tingkat medis. Selain mengatasi gejala perut buncit, ini juga merupakan solusi ampuh yang memperkuat pertumbuhan sel. Imunitas, detoksifikasi, dan kesehatan pencernaan untuk vitalitas optimal Anda.",
         "benefit": "Komposisi",
         "start-from": "Mulai dari: ",
         "start-from-price": "Rp2.380.000",
@@ -868,8 +868,7 @@
               "8": "Vitamin B12",
               "9": "Biotin",
               "10": "Seng (20mg)",
-              "11": "Glutathione",
-              "12": "Probiotik"
+              "11": "Probiotik"
             }
           }
         }
