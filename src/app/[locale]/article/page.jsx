@@ -52,10 +52,10 @@ function Article() {
     FetchArticle(searchParams.get("id"), searchParams.get("locale"));
   }, [searchParams]);
 
-  const onLocaleChange = (newLocale) => {
+  const onLocaleChange = (newLocale, id) => {
     // router.replace(pathname, { locale: newLocale });
     window.location.replace(
-      `https://www.cepatsehat.com/${newLocale}/article?id=82&locale=${newLocale}`
+      `https://www.cepatsehat.com/${newLocale}/article?id=${id}&locale=${newLocale}`
     );
   };
   const dateToString = (dateString) => {
