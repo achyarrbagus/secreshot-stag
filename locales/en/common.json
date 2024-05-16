@@ -933,7 +933,7 @@
       },
       "5": {
         "title": "Super Immune Booster",
-        "desc": "This potent IV drip combines electrolytes, Glutathione, Zinc, and an extensive range of vitamins and minerals, including A, D, E, C, B1, B2, B6, B12, and B5. It provides a formidable immune enhancement and supports various bodily functions, including antioxidant defenses, immune function, wound healing, and energy production. This comprehensive approach contributes to overall health and vitality.",
+        "desc": "This potent IV drip combines electrolytes, NAC-Glutathione, Zinc, and an extensive range of vitamins and minerals, including A, D, E, C, B1, B2, B6, B12, and B5. It provides a formidable immune enhancement and supports various bodily functions, including antioxidant defenses, immune function, wound healing, and energy production. This comprehensive approach contributes to overall health and vitality.",
         "benefit": "Composition",
         "start-from": "Start From",
         "start-from-price": "Rp2.480.000",
@@ -942,7 +942,7 @@
             "title": "",
             "desc": {
               "1": "Elektrolit (500 ml)",
-              "2": "Glutathione (600 mg)",
+              "2": "NAC-Glutathione (30 mg)",
               "3": "Zinc (5 mg)",
               "4": "Retinol (3,500 IU)",
               "5": "Kolekalsiferol (220 IU)",
