@@ -13,7 +13,8 @@ class Helper {
         .post("https://api.cepatsehat.com/api/v1/book-service", formData)
         .then(function (response) {
           const numberPhone = response.data.data.number_whatsapp;
-          let url = `https://api.whatsapp.com/send/?phone=${numberPhone}&text=&type=phone_number&app_absent=0`;
+          let url = `https://api.whatsapp.com/send/?phone=${numberPhone}&text=Hello+CepatSehat.com+by+Cepat+Sehat+Clinic%2C+I+want+a+consultation&type=phone_number&app_absent=0`;
+          console.log("hello world");
           return url;
         })
         .catch(function (error) {
