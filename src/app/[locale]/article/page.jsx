@@ -53,7 +53,10 @@ function Article() {
   }, [searchParams]);
 
   const onLocaleChange = (newLocale) => {
-    router.replace(pathname, { locale: newLocale });
+    // router.replace(pathname, { locale: newLocale });
+    window.location.replace(
+      `https://www.cepatsehat.com/${newLocale}/article?id=82&locale=${newLocale}`
+    );
   };
   const dateToString = (dateString) => {
     const dt = new Date(dateString);
