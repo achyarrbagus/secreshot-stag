@@ -54,9 +54,11 @@ function Article() {
 
   const onLocaleChange = (newLocale, id) => {
     // router.replace(pathname, { locale: newLocale });
+
     window.location.replace(
       `https://www.cepatsehat.com/${newLocale}/article?id=${id}&locale=${newLocale}`
     );
+    FetchArticle(id, newLocale);
   };
   const dateToString = (dateString) => {
     const dt = new Date(dateString);
