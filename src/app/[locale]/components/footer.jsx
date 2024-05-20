@@ -59,7 +59,7 @@ function MyFooter() {
                     <i className="mdi mdi-facebook fs-24"></i>
                   </a>
                   <a
-                    href="https://www.instagram.com/sehatcepat.mobi/ "
+                    href="https://www.instagram.com/klinikcepatsehat/"
                     className="list-inline-item text-white"
                   >
                     <i className="mdi mdi-instagram fs-24"></i>
