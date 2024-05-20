@@ -7,20 +7,8 @@ import Accordion from "react-bootstrap/Accordion";
 import { useLocale, useTranslations } from "next-intl";
 import NurseCard from "../components/card-nurse";
 import DoctorCard from "../components/card-doctor";
-
-import DrDewi from "../../../../public/assets/img/doctor/dr-dewi-f.png";
-import DrDwi from "../../../../public/assets/img/doctor/dr-dwi-s.png";
-import DrAyu from "../../../../public/assets/img/doctor/dr-ayu-a.png";
-import DrErnita from "../../../../public/assets/img/doctor/dr-ernita-r.png";
-import DrIrvan from "../../../../public/assets/img/doctor/dr-irvan-r.png";
-import DrMel from "../../../../public/assets/img/doctor/dr-melchisedek-a.png";
-import NrSiti from "../../../../public/assets/img/doctor/nurse-siti.png";
-import NrLois from "../../../../public/assets/img/doctor/nurse-loisa.png";
-import NrSyarah from "../../../../public/assets/img/doctor/nurse-syarah.png";
-import NrAndi from "../../../../public/assets/img/doctor/nurse-andi.png";
-import NrMarsiani from "../../../../public/assets/img/doctor/nurse-marsiani.png";
-import NrIrfan from "../../../../public/assets/img/doctor/nurse-irfan.png";
-import NrDimas from "../../../../public/assets/img/doctor/nurse-dimas.png";
+import DoctorSection from "../components/doctor-serction";
+import NurseSection from "../components/nurse-section";
 
 const HomeNursing = () => {
   const [formData, setFormData] = useState({
@@ -353,118 +341,8 @@ const HomeNursing = () => {
             </div>
           </div>
         </section>
-        <section className="doctor nurse">
-          <div className="container">
-            <h3 className="title-section"> {t("our-nurse")} </h3>
-            <div className="row justify-content-center">
-              <div className="col-md-12 col-lg-8">
-                <div className="row g-3 g-md-4 justify-content-center">
-                  <NurseCard
-                    name="Siti Rahma Derlauw"
-                    str="3101522234737239"
-                    isnurse={true}
-                    image={NrSiti}
-                  />
-                  <NurseCard
-                    name="Loisa Lakamai"
-                    str="1701721213519681"
-                    isnurse={true}
-                    image={NrLois}
-                  />
-                  <NurseCard
-                    name="Syarah Azzarah"
-                    str="2601521224246624"
-                    isnurse={true}
-                    image={NrSyarah}
-                  />
-                  <NurseCard
-                    name="Andi Andriansyah S."
-                    str="HA00000870437934"
-                    isnurse={true}
-                    image={NrAndi}
-                  />
-                  <NurseCard
-                    name="Marsiani Talo"
-                    str=" 190172122-4444051"
-                    isnurse={true}
-                    image={NrMarsiani}
-                  />
-                  <NurseCard
-                    name="Irfan Mustofa"
-                    str="1401511224517960"
-                    isnurse={true}
-                    image={NrIrfan}
-                  />
-                  <NurseCard
-                    name="Dimas Catur Nugroho"
-                    str="ED00000360053713"
-                    isnurse={true}
-                    image={NrDimas}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="doctor">
-          <div className="container">
-            <h3 className="title-section">{t("our-doctors")} </h3>
-            <div className="row justify-content-center">
-              <div className="col-md-12 col-lg-8">
-                <div className="row g-3 g-md-5 justify-content-center">
-                  <DoctorCard
-                    image={DrDewi}
-                    name="dr. Dewi Fransiska, Sp.B"
-                    job={t("dr-surgeon")}
-                    str="3121101422105406"
-                    titlelocation={t("practice-location")}
-                    practiceLocation={[t("mayapada"), t("eka")]}
-                  />
-                  <DoctorCard
-                    image={DrDwi}
-                    name="dr. Dwi Suryaning Ayu Aprilizia, Sp.A"
-                    job={t("dr-pediatrician")}
-                    str="3321201323154360"
-                    titlelocation={t("practice-location")}
-                    practiceLocation={[t("aysha")]}
-                  />
-                  <DoctorCard
-                    image={DrAyu}
-                    name="dr. Ayu A. Istiana"
-                    job={t("dr-asthetic")}
-                    str="3321201323154360"
-                    titlelocation={t("practice-location")}
-                    practiceLocation={[t("cepat-sehat")]}
-                  />
-                  <DoctorCard
-                    image={DrErnita}
-                    name="dr. Ernita Rosyanti Dewi"
-                    job={t("dr-general")}
-                    str="3121100220145544"
-                    titlelocation={t("practice-location")}
-                    practiceLocation={[t("cepat-sehat")]}
-                  />
-                  <DoctorCard
-                    image={DrIrvan}
-                    name="dr. Irvan Rizki Fitri"
-                    job={t("dr-general")}
-                    str="3121100220145544"
-                    titlelocation={t("practice-location")}
-                    practiceLocation={[t("cepat-sehat")]}
-                  />
-                  <DoctorCard
-                    image={DrMel}
-                    name="dr. Melchisedek A.V.P Marbun"
-                    job={t("dr-general")}
-                    str="3111100220155405"
-                    titlelocation={t("practice-location")}
-                    practiceLocation={[t("cepat-sehat")]}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <NurseSection />
+        <DoctorSection />
       </div>
     </>
   );
