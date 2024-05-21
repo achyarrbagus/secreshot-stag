@@ -156,7 +156,7 @@ const RemoteTelemedic = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/remote-telemedicine/img-sub-remotetelemedicine01.png"
+                          src="/assets/img/remote-telemedicine/img-sub-remotetelemedicine01.webp"
                           className="w-100"
                           alt=""
                         />
@@ -230,7 +230,7 @@ const RemoteTelemedic = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/remote-telemedicine/img-sub-remotetelemedicine02.png"
+                          src="/assets/img/remote-telemedicine/img-sub-remotetelemedicine02.webp"
                           className="w-100"
                           alt=""
                         />
@@ -296,7 +296,7 @@ const RemoteTelemedic = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/remote-telemedicine/img-sub-remotetelemedicine03.png"
+                          src="/assets/img/remote-telemedicine/img-sub-remotetelemedicine03.webp"
                           className="w-100"
                           alt=""
                         />
@@ -378,7 +378,7 @@ const RemoteTelemedic = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/remote-telemedicine/img-sub-remotetelemedicine04.png"
+                          src="/assets/img/remote-telemedicine/img-sub-remotetelemedicine04.webp"
                           className="w-100"
                           alt=""
                         />

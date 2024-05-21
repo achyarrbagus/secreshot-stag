@@ -46,7 +46,8 @@ const InHomeDiagnostic = () => {
 
   const redirectWa = () => {
     const helper = new Helper();
- helper.RedirectToWa(formData, locale, true);  };
+    helper.RedirectToWa(formData, locale, true);
+  };
   const redirectTele = () => {
     const helper = new Helper();
     helper.RedirectToTele(formData);
@@ -98,7 +99,7 @@ const InHomeDiagnostic = () => {
                       <div className="row gy-3">
                         <div className="col-12">
                           <img
-                            src="/assets/img/alternative/img-sub-alternative01.png"
+                            src="/assets/img/alternative/img-sub-alternative01.webp"
                             className="w-100"
                             alt=""
                           />
@@ -184,7 +185,7 @@ const InHomeDiagnostic = () => {
                       <div className="row gy-3">
                         <div className="col-12">
                           <img
-                            src="/assets/img/alternative/img-sub-alternative02.png"
+                            src="/assets/img/alternative/img-sub-alternative02.webp"
                             className="w-100"
                             alt=""
                           />
@@ -270,7 +271,7 @@ const InHomeDiagnostic = () => {
                       <div className="row gy-3">
                         <div className="col-12">
                           <img
-                            src="/assets/img/alternative/img-sub-alternative03.png"
+                            src="/assets/img/alternative/img-sub-alternative03.webp"
                             className="w-100"
                             alt=""
                           />

@@ -102,7 +102,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv01.png"
+                          src="/assets/img/homeiv/img-sub-homeiv01.webp"
                           className="w-100"
                           alt=""
                         />
@@ -198,7 +198,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv02.png"
+                          src="/assets/img/homeiv/img-sub-homeiv02.webp"
                           className="w-100"
                           alt=""
                         />
@@ -303,7 +303,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv03.png"
+                          src="/assets/img/homeiv/img-sub-homeiv03.webp"
                           className="w-100"
                           alt=""
                         />
@@ -384,7 +384,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv04.png"
+                          src="/assets/img/homeiv/img-sub-homeiv04.webp"
                           className="w-100"
                           alt=""
                         />
@@ -462,7 +462,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv05.png"
+                          src="/assets/img/homeiv/img-sub-homeiv05.webp"
                           className="w-100"
                           alt=""
                         />
@@ -555,7 +555,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv06.png"
+                          src="/assets/img/homeiv/img-sub-homeiv06.webp"
                           className="w-100"
                           alt=""
                         />
@@ -615,7 +615,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv05.png"
+                          src="/assets/img/homeiv/img-sub-homeiv05.webp"
                           className="w-100"
                           alt=""
                         />
@@ -674,7 +674,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv08.png"
+                          src="/assets/img/homeiv/img-sub-homeiv08.webp"
                           className="w-100"
                           alt=""
                         />
@@ -733,7 +733,7 @@ const InHomeTherapy = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/homeiv/img-sub-homeiv09.png"
+                          src="/assets/img/homeiv/img-sub-homeiv09.webp"
                           className="w-100"
                           alt=""
                         />

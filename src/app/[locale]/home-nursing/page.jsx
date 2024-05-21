@@ -135,7 +135,7 @@ const HomeNursing = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/home-nursing/img-home-nursing-sub01.png"
+                          src="/assets/img/home-nursing/img-home-nursing-sub01.webp"
                           className="w-100"
                           alt=""
                         />
@@ -212,7 +212,7 @@ const HomeNursing = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/home-nursing/img-home-nursing-sub02.png"
+                          src="/assets/img/home-nursing/img-home-nursing-sub02.webp"
                           className="w-100"
                           alt=""
                         />

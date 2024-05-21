@@ -115,7 +115,7 @@ const HolisticAlternative = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/holistic/img-sub-holistic01.png"
+                          src="/assets/img/holistic/img-sub-holistic01.webp"
                           className="w-100"
                           alt=""
                         />
@@ -199,7 +199,7 @@ const HolisticAlternative = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/holistic/img-sub-holistic02.png"
+                          src="/assets/img/holistic/img-sub-holistic02.webp"
                           className="w-100"
                           alt=""
                         />
@@ -283,7 +283,7 @@ const HolisticAlternative = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/holistic/img-sub-holistic03.png"
+                          src="/assets/img/holistic/img-sub-holistic03.webp"
                           className="w-100"
                           alt=""
                         />
@@ -367,7 +367,7 @@ const HolisticAlternative = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/holistic/img-sub-holistic04.png"
+                          src="/assets/img/holistic/img-sub-holistic04.webp"
                           className="w-100"
                           alt=""
                         />
@@ -451,7 +451,7 @@ const HolisticAlternative = () => {
                     <div className="row gy-3">
                       <div className="col-12">
                         <img
-                          src="/assets/img/holistic/img-sub-holistic05.png"
+                          src="/assets/img/holistic/img-sub-holistic05.webp"
                           className="w-100"
                           alt=""
                         />
