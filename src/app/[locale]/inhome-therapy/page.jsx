@@ -6,36 +6,17 @@ import Helper from "../../../../lib/helper/helper";
 import { useLocale, useTranslations } from "next-intl";
 
 const InHomeTherapy = () => {
-  const [book, setBook] = useState("Book a visit at your place now");
   const t = useTranslations("inhome-therapy");
   const locale = useLocale();
+  const [book, setBook] = useState(t("form-book.title"));
 
   const handleBook = (serviceSelect) => {
-    switch (serviceSelect) {
-      case "Bali Belly Infusion":
-        setBook("Book bali belly infusion now");
-        break;
-      case "Super Bali Belly IV":
-        setBook("Book super bali belly infusion now");
-        break;
-      case "Basic Immnue Booster":
-        setBook("Book basic immune booster now");
-        break;
-      case "Super Immune Booster":
-        setBook("Book super immune booster now");
-        break;
-      case "Hangover Infusion":
-        setBook("Book hangover infusion now");
-        break;
-      case "Fever Infusion":
-        setBook("Book fever infusion now");
-        break;
-      case "Gerd / Gastritis Infusion":
-        setBook("Book gerd infusion now");
-        break;
-      case "Iron Infusion":
-        setBook("Book iron infusion now");
-        break;
+    if (locale == "en") {
+      let str = "Book a " + serviceSelect + " now";
+      setBook(str);
+    } else {
+      let str = "Pesan " + serviceSelect + " sekarang";
+      setBook(str);
     }
 
     setFormData((prevFormData) => ({
@@ -176,7 +157,9 @@ const InHomeTherapy = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() => handleBook("Doctor Home Visit")}
+                            onClick={() =>
+                              handleBook(t("service-menu.1.title"))
+                            }
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -773,7 +756,9 @@ const InHomeTherapy = () => {
                             {t("service-menu.9.start-from-price")}
                           </div>
                           <button
-                            onClick={() => handleBook("Super Bali Belly IV")}
+                            onClick={() =>
+                              handleBook(t("service-menu.9.title"))
+                            }
                             id="super-bali"
                             className="btn btn-warning fs-14 ms-auto"
                           >
@@ -826,27 +811,33 @@ const InHomeTherapy = () => {
                     onChange={handleChange}
                   >
                     <option>Select Service</option>
-                    <option value="Bali Belly Infusion">
-                      Bali Belly Infusion
+                    <option value={t("service-menu.1.title")}>
+                      {t("service-menu.1.title")}
                     </option>
-                    <option value="Super Bali Belly IV">
-                      Super Bali Belly IV
+                    <option value={t("service-menu.2.title")}>
+                      {t("service-menu.2.title")}
                     </option>
-                    <option value="Basic Immune Booster">
-                      Basic Immune Booster
+                    <option value={t("service-menu.3.title")}>
+                      {t("service-menu.3.title")}
                     </option>
-                    <option value="Standard Immune Booster">
-                      Standard Immune Booster
+                    <option value={t("service-menu.4.title")}>
+                      {t("service-menu.4.title")}
                     </option>
-                    <option value="Super Immune Booster">
-                      Super Immune Booster
+                    <option value={t("service-menu.5.title")}>
+                      {t("service-menu.5.title")}
                     </option>
-                    <option value="Hangover Infusion">Hangover Infusion</option>
-                    <option value="Fever Infusion">Fever Infusion</option>
-                    <option value="Gerd / Gastritis Infusion">
-                      Gerd / Gastritis Infusion
+                    <option value={t("service-menu.6.title")}>
+                      {t("service-menu.6.title")}
                     </option>
-                    <option value="Iron Infusion">Iron Infusion</option>
+                    <option value={t("service-menu.7.title")}>
+                      {t("service-menu.7.title")}
+                    </option>
+                    <option value={t("service-menu.8.title")}>
+                      {t("service-menu.8.title")}
+                    </option>
+                    <option value={t("service-menu.9.title")}>
+                      {t("service-menu.9.title")}
+                    </option>
                   </select>
                 </div>
               </div>

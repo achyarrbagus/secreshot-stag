@@ -11,19 +11,14 @@ const InHomeDiagnostic = () => {
 
   const t = useTranslations("alternative-telemedicine");
 
-  const [book, setBook] = useState("Book a visit at your place now");
-
+  const [book, setBook] = useState(t("form-book.title"));
   const handleBook = (serviceSelect) => {
-    switch (serviceSelect) {
-      case "Teeth Whitening":
-        setBook("Book teeth whitening now");
-        break;
-      case "Secretome and Stem Cells Therapy":
-        setBook("Book stem cell therapy now");
-        break;
-      case "Ozone Therapy":
-        setBook("Book ozone therapy now");
-        break;
+    if (locale == "en") {
+      let str = "Book a " + serviceSelect + " now";
+      setBook(str);
+    } else {
+      let str = "Pesan " + serviceSelect + " sekarang";
+      setBook(str);
     }
 
     setFormData((prevFormData) => ({
@@ -160,7 +155,9 @@ const InHomeDiagnostic = () => {
                               </b>
                             </div>
                             <div
-                              onClick={() => handleBook("Doctor Home Visit")}
+                              onClick={() =>
+                                handleBook(t("service-menu.1.title"))
+                              }
                               id="doctor-visit"
                               className="btn btn-warning fs-14 ms-auto"
                             >
@@ -246,8 +243,10 @@ const InHomeDiagnostic = () => {
                               </b>
                             </div>
                             <div
-                              onClick={() => handleBook("Doctor Home Visit")}
-                              id="doctor-visit"
+                              onClick={() =>
+                                handleBook(t("service-menu.2.title"))
+                              }
+                              id={t("service-menu.2.title")}
                               className="btn btn-warning fs-14 ms-auto"
                             >
                               {t("book-button")}
@@ -285,55 +284,57 @@ const InHomeDiagnostic = () => {
                           <ul className="ps-3">
                             <li className="mb-2">
                               <h6 className="mb-1">
-                                {t("service-menu.2.list-benefit.1.title")}
+                                {t("service-menu.3.list-benefit.1.title")}
                               </h6>
                               <span>
-                                {t("service-menu.2.list-benefit.1.desc")}
+                                {t("service-menu.3.list-benefit.1.desc")}
                               </span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">
-                                {t("service-menu.2.list-benefit.2.title")}
+                                {t("service-menu.3.list-benefit.2.title")}
                               </h6>
                               <span>
-                                {t("service-menu.2.list-benefit.2.desc")}
+                                {t("service-menu.3.list-benefit.2.desc")}
                               </span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">
-                                {t("service-menu.2.list-benefit.3.title")}
+                                {t("service-menu.3.list-benefit.3.title")}
                               </h6>
                               <span>
-                                {t("service-menu.2.list-benefit.3.desc")}
+                                {t("service-menu.3.list-benefit.3.desc")}
                               </span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">
-                                {t("service-menu.2.list-benefit.4.title")}
+                                {t("service-menu.3.list-benefit.4.title")}
                               </h6>
                               <span>
-                                {t("service-menu.2.list-benefit.4.desc")}
+                                {t("service-menu.3.list-benefit.4.desc")}
                               </span>
                             </li>
                             <li className="mb-2">
                               <h6 className="mb-1">
-                                {t("service-menu.2.list-benefit.5.title")}
+                                {t("service-menu.3.list-benefit.5.title")}
                               </h6>
                               <span>
-                                {t("service-menu.2.list-benefit.5.desc")}
+                                {t("service-menu.3.list-benefit.5.desc")}
                               </span>
                             </li>
                           </ul>
                           <div className="price">
                             <div className="value-price">
                               <b>
-                                {t("service-menu.2.start-from")}:{" "}
-                                {t("service-menu.2.start-from-price")}
+                                {t("service-menu.3.start-from")}:{" "}
+                                {t("service-menu.3.start-from-price")}
                               </b>
                             </div>
                             <div
-                              onClick={() => handleBook("Doctor Home Visit")}
-                              id="doctor-visit"
+                              onClick={() =>
+                                handleBook(t("service-menu.3.title"))
+                              }
+                              id={t("service-menu.3.title")}
                               className="btn btn-warning fs-14 ms-auto"
                             >
                               {t("book-button")}
@@ -386,11 +387,15 @@ const InHomeDiagnostic = () => {
                     onChange={handleChange}
                   >
                     <option>Select Service</option>
-                    <option value="Teeth Whitening">Teeth Whitening</option>
-                    <option value="Secretome and Stem Cells Therapy">
-                      Secretome and Stem Cells Therapy
+                    <option value={t("service-menu.1.title")}>
+                      {t("service-menu.1.title")}
                     </option>
-                    <option value="Ozone Therapy">Ozone Therapy</option>
+                    <option value={t("service-menu.2.title")}>
+                      {t("service-menu.2.title")}
+                    </option>
+                    <option value={t("service-menu.3.title")}>
+                      {t("service-menu.3.title")}
+                    </option>
                   </select>
                 </div>
               </div>

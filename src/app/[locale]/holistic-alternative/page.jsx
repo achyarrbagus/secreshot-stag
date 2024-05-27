@@ -18,34 +18,40 @@ const HolisticAlternative = () => {
 
   const handleBook = (serviceSelect) => {
     switch (serviceSelect) {
-      case "Doctor Home Visit":
+      case "Akupuntur":
         setBook(t("form-book-title.1"));
         break;
-      case "Nurse Home Visit":
+      case "Acupunture":
+        setBook(t("form-book-title.1"));
+        break;
+      case "Therapeutic Massage":
         setBook(t("form-book-title.2"));
         break;
-      case "Medical Check Up":
+      case "Pijat Terapi":
+        setBook(t("form-book-title.2"));
+        break;
+      case "Energy Balancing Reiki":
         setBook(t("form-book-title.3"));
         break;
-      case "Pediatrician Home Visit":
+      case "Penyeimbang Energy Reiki":
+        setBook(t("form-book-title.3"));
+        break;
+      case "Yoga Guidance & Sessions":
+        setBook(t("form-book-title.4"));
+        break;
+      case "Bimbingan & Sesi Yoga":
+        setBook(t("form-book-title.4"));
+        break;
+      case "Meditation Practices":
         setBook(t("form-book-title.5"));
         break;
-      case "Otolaryngologist Home Visit":
+      case "Praktik Meditasi":
+        setBook(t("form-book-title.5"));
+        break;
+      case "6":
         setBook(t("form-book-title.6"));
         break;
-      case "Kunjungan Dokter Kerumah":
-        setBook(t("form-book-title.1"));
-        break;
-      case "Kunjungan Perawat Kerumah":
-        setBook(t("form-book-title.2"));
-        break;
-      case "Pemeriksaan Kesehatan":
-        setBook(t("form-book-title.3"));
-        break;
-      case "Kunjungan Dokter Anak":
-        setBook(t("form-book-title.5"));
-        break;
-      case t("Kunjungan Dokter THT"):
+      case "6":
         setBook(t("form-book-title.6"));
         break;
     }
@@ -595,9 +601,7 @@ const HolisticAlternative = () => {
                             </b>
                           </div>
                           <div
-                            onClick={() =>
-                              handleBook(t("service-menu.5.title"))
-                            }
+                            onClick={() => handleBook("6")}
                             id="doctor-visit"
                             className="btn btn-warning fs-14 ms-auto"
                           >

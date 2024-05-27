@@ -741,10 +741,12 @@
       }
     },
     "form-book-title": {
-      "1": "Book for GP Consultation now",
-      "2": "Book for MD Consultation now",
-      "3": "Book a Medical Prescription now",
-      "4": "Book a Sick Leave Letter now"
+      "1": "Book Acupuntur now",
+      "2": "Book a Theurapetic Message now",
+      "3": "Book a Energi balancing Reiki now",
+      "4": "Book a Yoga guidance and sessions now",
+      "5": "Book a Meditation practices now",
+      "6": "Book a Osteopathy & Chiropractic Service now"
     },
     "practice-location": "Practice Location",
     "our-doctors": "Our Doctors",
