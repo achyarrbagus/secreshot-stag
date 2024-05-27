@@ -555,7 +555,7 @@ section.doctor .items-doctor .img-doctor {
 }
 @media only screen and (max-width: 600px) {
   section.doctor .items-doctor .img-doctor .img {
-    height: 184px;
+    height: 170px;
   }
 }
 
@@ -566,7 +566,7 @@ section.doctor .items-doctor .img-doctor {
 }
 
 section.doctor .items-doctor .img-doctor .img {
-  height: 220px;
+  height: 214px;
 }
 
 section.doctor .items-doctor .img-doctor img {

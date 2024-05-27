@@ -356,29 +356,30 @@ const InHomeDiagnostic = () => {
             <div>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">Name</label>
+                  <label className="form-label">{t("form-book.name")}</label>
+
                   <input
                     type="text"
                     className="form-control"
                     id="name"
-                    placeholder="Your Name"
+                    placeholder={t("form-book.name-label")}
                     value={formData.name}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Address</label>
+                  <label className="form-label">{t("form-book.address")}</label>
                   <input
                     type="text"
                     className="form-control"
                     id="address"
-                    placeholder="Your Address"
+                    placeholder={t("form-book.address-label")}
                     value={formData.address}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">Service Name</label>
+                  <label className="form-label">{t("form-book.service")}</label>
                   <select
                     id="service"
                     className="form-select form-control"
