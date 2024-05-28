@@ -1166,6 +1166,15 @@
           }
         }
       }
+    },
+    "form-book": {
+      "title": "Book a visit at your place now",
+      "name": "Name",
+      "name-label": "Your Name",
+      "service": "Service",
+      "service-label": "Select Service",
+      "address": "Address",
+      "address-label": "Your Address"
     }
   },
   "practice-location": "Practice Location",
