@@ -353,26 +353,18 @@
       },
       "2": {
         "title": "Pemantauan & Pencegahan",
-        "desc": "Layanan kesehatan komprehensif yang mencakup ahli perawatan luka dan ostomi, metode pembalutan luka canggih, operasi kecil yang tepat, dan perawatan pasca bedah menyeluruh untuk pemulihan optimal.",
+        "desc": "Memastikan kondisi pasien melalui pemantauan tanda-tanda vital secara terus menerus dan menerapkan tindakan pencegahan untuk mengurangi risiko infeksi.",
         "benefit": "Keuntungan",
         "start-from": "Mulai dari: ",
-        "start-from-price": "Rp200.000",
+        "start-from-price": "Rp250.000",
         "list-benefit": {
           "1": {
-            "title": "Perawatan Luka dan Ostomi",
-            "desc": "Perawatan khusus untuk penyembuhan lebih cepat, pencegahan komplikasi, dan peningkatan kondisi pasien."
+            "title": "Pemantauan Tanda Vital",
+            "desc": "Intervensi dini melalui pemantauan rutin dapat mendeteksi masalah kesehatan dengan cepat, sehingga meningkatkan kondisi pasien."
           },
           "2": {
-            "title": "Pembalutan Luka Tingkat Lanjut",
-            "desc": "Mempercepat penyembuhan, mengurangi risiko infeksi, dan memberikan kondisi optimal untuk pemulihan jaringan."
-          },
-          "3": {
-            "title": "Operasi Kecil",
-            "desc": "Perawatan yang efisien dan tepat, meminimalkan pasca-trauma dan memastikan pemulihan yang cepat."
-          },
-          "4": {
-            "title": "Perawatan Pasca Bedah",
-            "desc": "Perawatan komprehensif untuk manajemen nyeri, pencegahan infeksi, dan mendorong proses pemulihan yang lebih cepat."
+            "title": "Pencegahan Infeksi",
+            "desc": "Meminimalkan penularan penyakit, melindungi pasien dan petugas kesehatan."
           }
         }
       }
