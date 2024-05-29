@@ -60,6 +60,7 @@ const Home = () => {
       <div className="content">
         <HeroBanner
           title={t("title-banner")}
+          locale={locale}
           desc={t("title-slogan")}
           bookButton={t("book-button")}
           backgroundImage={"/assets/img/banner-homepage.webp"}
