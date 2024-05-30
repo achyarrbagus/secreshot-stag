@@ -56,22 +56,22 @@ const Home = () => {
     setFormData({ ...formData, [id]: value });
   };
 
-  const GetCity = async () => {
-    try {
-      const response = await axios.get(
-        "https://api.cepatsehat.com/api/v1/get-city"
-      );
-      setCity(response.data?.data?.city);
-      console.log(response.data?.data?.city);
-    } catch (error) {
-      console.error(error?.response?.data);
-      setCity("error");
-    }
-  };
+  // const GetCity = async () => {
+  //   try {
+  //     const response = await axios.get(
+  //       "https://api.cepatsehat.com/api/v1/get-city"
+  //     );
+  //     setCity(response.data?.data?.city);
+  //     console.log(response.data?.data?.city);
+  //   } catch (error) {
+  //     console.error(error?.response?.data);
+  //     setCity("error");
+  //   }
+  // };
 
-  useEffect(() => {
-    GetCity();
-  }, []);
+  // useEffect(() => {
+  //   GetCity();
+  // }, []);
 
   return (
     <>
