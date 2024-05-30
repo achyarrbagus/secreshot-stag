@@ -1,15 +1,12 @@
-"use client";
-import axios from "axios";
-const fetcher = (url) => axios.get(url).then((res) => res.data);
-import useSWR from "swr";
-
-const HeroBanner = ({ title, desc, bookButton, backgroundImage, locale }) => {
-  const { data, error } = useSWR(
-    `https://api.cepatsehat.com/api/v1/get-city`,
-    fetcher
-  );
-
-  console.log(data);
+const HeroBanner = ({
+  title,
+  desc,
+  bookButton,
+  backgroundImage,
+  locale,
+  city,
+}) => {
+  // ``
 
   return (
     <>
@@ -21,17 +18,16 @@ const HeroBanner = ({ title, desc, bookButton, backgroundImage, locale }) => {
       >
         <div className="container">
           <div className="text">
-            {error ? (
+            {city === "error" ? (
               locale === "id" ? (
-                <h3 className="title">
-                  {title} Bali, Jakarta, Surabaya & Bandung
-                </h3>
+                <h3 className="title">{title} Bali, Jakarta, Bandung</h3>
               ) : (
                 <h3 className="title">{title} Bali</h3>
               )
             ) : (
-              <h3 className="title">{title + (data && data.city)}</h3>
+              <h3 className="title">{title + " " + city}</h3>
             )}
+
             <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
               {desc}
             </p>

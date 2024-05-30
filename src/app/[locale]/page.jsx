@@ -27,6 +27,7 @@ const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 
 const Home = () => {
   const locale = useLocale();
+  const [city, setCity] = useState("error");
 
   const t = useTranslations("home");
 
@@ -55,12 +56,30 @@ const Home = () => {
     setFormData({ ...formData, [id]: value });
   };
 
+  const GetCity = async () => {
+    try {
+      const response = await axios.get(
+        "https://api.cepatsehat.com/api/v1/get-city"
+      );
+      setCity(response.data?.data?.city);
+      console.log(response.data?.data?.city);
+    } catch (error) {
+      console.error(error?.response?.data);
+      setCity("error");
+    }
+  };
+
+  useEffect(() => {
+    GetCity();
+  }, []);
+
   return (
     <>
       <div className="content">
         <HeroBanner
           title={t("title-banner")}
           locale={locale}
+          city={city}
           desc={t("title-slogan")}
           bookButton={t("book-button")}
           backgroundImage={"/assets/img/banner-homepage.webp"}
