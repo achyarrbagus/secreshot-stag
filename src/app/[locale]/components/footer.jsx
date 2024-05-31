@@ -31,6 +31,12 @@ function MyFooter() {
               </p>
               <div className="d-flex gap-2">
                 <img
+                  onClick={() =>
+                    window.location.replace(
+                      "https://maps.app.goo.gl/DxnKepuw5bjJTZhY8"
+                    )
+                  }
+                  style={{ cursor: "pointer" }}
                   src="/assets/img/maps.png"
                   className="img-fluid"
                   alt=""
@@ -39,13 +45,13 @@ function MyFooter() {
                 />
                 <a
                   style={{ fontWeight: "bold" }}
-                  className="text-white fs-14"
+                  className="text-white"
                   href="https://maps.app.goo.gl/DxnKepuw5bjJTZhY8"
                 >
                   <ins>Find Out Why Patients Love Us !</ins>
                 </a>
               </div>
-              <p className="mt-3"></p>
+              <p className="mt-4"></p>
               <h4 className="fs-14"> Jimbaran Address</h4>
               <p className="d-flex gap-2 text-white">
                 Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
@@ -55,19 +61,25 @@ function MyFooter() {
                 <img
                   src="/assets/img/maps.png"
                   className="img-fluid"
+                  onClick={() =>
+                    window.location.replace(
+                      "https://maps.app.goo.gl/f9WxZoFb382M9Lrb7"
+                    )
+                  }
+                  style={{ cursor: "pointer" }}
                   alt=""
                   width={20}
                   height={5}
                 />
                 <a
                   style={{ fontWeight: "bold" }}
-                  className="text-white fs-14"
+                  className="text-white"
                   href="https://maps.app.goo.gl/f9WxZoFb382M9Lrb7"
                 >
                   <ins> Discover Our Patient Stories!</ins>
                 </a>
               </div>
-              <p className="mt-3"></p>
+              <p className="mt-4"></p>
               <h4 className="fs-14">Jakarta Address</h4>
               <p className="d-flex gap-2 text-white">
                 Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm.
@@ -75,21 +87,28 @@ function MyFooter() {
               </p>
               <div className="d-flex gap-2">
                 <img
+                  onClick={() =>
+                    window.location.replace(
+                      "https://maps.app.goo.gl/vg2pST3uctFJmAMs7"
+                    )
+                  }
                   src="/assets/img/maps.png"
                   className="img-fluid"
                   alt=""
                   width={20}
                   height={5}
+                  style={{ cursor: "pointer" }}
                 />
                 <a
                   style={{ fontWeight: "bold" }}
-                  className="text-white fs-14"
+                  className="text-white"
                   href="https://maps.app.goo.gl/vg2pST3uctFJmAMs7"
                 >
                   <ins> What Patients Are Saying!</ins>
                 </a>
               </div>
             </div>
+            <p className="mt-2"></p>
             <div className="col-md-12">
               <div className="d-flex align-items-center">
                 <a
