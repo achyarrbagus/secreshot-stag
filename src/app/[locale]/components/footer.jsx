@@ -29,7 +29,7 @@ function MyFooter() {
               <p className="d-flex gap-2 text-white">
                 Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali 80361
               </p>
-              <div className="d-flex gap-2">
+              <div style={{ marginTop: "-10px" }} className="d-flex gap-2">
                 <img
                   onClick={() =>
                     window.location.replace(
@@ -57,7 +57,7 @@ function MyFooter() {
                 Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
                 80361
               </p>
-              <div className="d-flex gap-2">
+              <div style={{ marginTop: "-10px" }} className="d-flex gap-2">
                 <img
                   src="/assets/img/maps.png"
                   className="img-fluid"
@@ -85,7 +85,7 @@ function MyFooter() {
                 Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm.
                 Jakarta Timur, Provinsi DKI Jakarta 13510
               </p>
-              <div className="d-flex gap-2">
+              <div style={{ marginTop: "-10px" }} className="d-flex gap-2">
                 <img
                   onClick={() =>
                     window.location.replace(

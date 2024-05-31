@@ -70,13 +70,14 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
-    // Retrieve latitude & longitude coordinates from `navigator.geolocation` Web API
-    navigator.geolocation.getCurrentPosition(({ coords }) => {
-      const { latitude, longitude } = coords;
-      setLocation({ latitude, longitude });
-    });
-  }, []);
+  // stag
+  // useEffect(() => {
+  //   // Retrieve latitude & longitude coordinates from `navigator.geolocation` Web API
+  //   navigator.geolocation.getCurrentPosition(({ coords }) => {
+  //     const { latitude, longitude } = coords;
+  //     setLocation({ latitude, longitude });
+  //   });
+  // }, []);
 
   console.log(location, "======");
 
