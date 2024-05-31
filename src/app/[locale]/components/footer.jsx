@@ -112,10 +112,15 @@ function MyFooter() {
             <div className="col-md-12">
               <div className="d-flex align-items-center">
                 <a
-                  href="https://api.whatsapp.com/send/?phone=6285212500030&text&type=phone_number&app_absent=0"
+                  style={{ cursor: "pointer" }}
+                  href="https://api.whatsapp.com/send/?phone=6285212500030&text=Hello+CepatSehat.com+by+Cepat+Sehat+Clinic%2C+I+want+a+consultation&type=phone_number&app_absent=0"
                   className="phone text-white fs-14 d-flex align-items-center"
                 >
-                  <i className="mdi mdi-phone me-2 fs-24"></i> 6285212500030
+                  <i
+                    className="mdi mdi-phone me-2 fs-24"
+                    style={{ cursor: "pointer" }}
+                  ></i>
+                  6285212500030
                 </a>
                 <div className="sosmed list-inline ms-auto">
                   <a href="#" className="list-inline-item text-white">
