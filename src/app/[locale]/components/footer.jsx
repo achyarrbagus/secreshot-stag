@@ -26,24 +26,10 @@ function MyFooter() {
               <p>Registered Number 04102100035090001</p>
 
               <h4 className="fs-14">Seminyak Address</h4>
-              <a
-                href="https://maps.app.goo.gl/DxnKepuw5bjJTZhY8"
-                className="d-flex gap-2 text-white"
-              >
-                <img
-                  src="/assets/img/maps.png"
-                  className="img-fluid"
-                  alt=""
-                  width={20}
-                  height={5}
-                />
+              <p className="d-flex gap-2 text-white">
                 Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali 80361
-              </a>
-              <h4 className="fs-14"> Jimbaran Address</h4>
-              <a
-                href="https://maps.app.goo.gl/f9WxZoFb382M9Lrb7"
-                className="d-flex gap-2 text-white"
-              >
+              </p>
+              <div className="d-flex gap-2">
                 <img
                   src="/assets/img/maps.png"
                   className="img-fluid"
@@ -51,15 +37,21 @@ function MyFooter() {
                   width={20}
                   height={5}
                 />
+                <a
+                  style={{ fontWeight: "bold" }}
+                  className="text-white fs-14"
+                  href="https://maps.app.goo.gl/DxnKepuw5bjJTZhY8"
+                >
+                  <ins>Find Out Why Patients Love Us !</ins>
+                </a>
+              </div>
+              <p className="mt-3"></p>
+              <h4 className="fs-14"> Jimbaran Address</h4>
+              <p className="d-flex gap-2 text-white">
                 Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
                 80361
-              </a>
-              <h4 className="fs-14">Jakarta Address</h4>
-
-              <a
-                href="https://maps.app.goo.gl/vg2pST3uctFJmAMs7"
-                className="d-flex gap-2 text-white"
-              >
+              </p>
+              <div className="d-flex gap-2">
                 <img
                   src="/assets/img/maps.png"
                   className="img-fluid"
@@ -67,9 +59,36 @@ function MyFooter() {
                   width={20}
                   height={5}
                 />
+                <a
+                  style={{ fontWeight: "bold" }}
+                  className="text-white fs-14"
+                  href="https://maps.app.goo.gl/f9WxZoFb382M9Lrb7"
+                >
+                  <ins> Discover Our Patient Stories!</ins>
+                </a>
+              </div>
+              <p className="mt-3"></p>
+              <h4 className="fs-14">Jakarta Address</h4>
+              <p className="d-flex gap-2 text-white">
                 Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm.
                 Jakarta Timur, Provinsi DKI Jakarta 13510
-              </a>
+              </p>
+              <div className="d-flex gap-2">
+                <img
+                  src="/assets/img/maps.png"
+                  className="img-fluid"
+                  alt=""
+                  width={20}
+                  height={5}
+                />
+                <a
+                  style={{ fontWeight: "bold" }}
+                  className="text-white fs-14"
+                  href="https://maps.app.goo.gl/vg2pST3uctFJmAMs7"
+                >
+                  <ins> What Patients Are Saying!</ins>
+                </a>
+              </div>
             </div>
             <div className="col-md-12">
               <div className="d-flex align-items-center">
