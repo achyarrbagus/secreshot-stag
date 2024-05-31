@@ -26,19 +26,50 @@ function MyFooter() {
               <p>Registered Number 04102100035090001</p>
 
               <h4 className="fs-14">Seminyak Address</h4>
-              <p>
+              <a
+                href="https://maps.app.goo.gl/DxnKepuw5bjJTZhY8"
+                className="d-flex gap-2 text-white"
+              >
+                <img
+                  src="/assets/img/maps.png"
+                  className="img-fluid"
+                  alt=""
+                  width={20}
+                  height={5}
+                />
                 Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali 80361
-              </p>
+              </a>
               <h4 className="fs-14"> Jimbaran Address</h4>
-              <p>
+              <a
+                href="https://maps.app.goo.gl/f9WxZoFb382M9Lrb7"
+                className="d-flex gap-2 text-white"
+              >
+                <img
+                  src="/assets/img/maps.png"
+                  className="img-fluid"
+                  alt=""
+                  width={20}
+                  height={5}
+                />
                 Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
                 80361
-              </p>
+              </a>
               <h4 className="fs-14">Jakarta Address</h4>
-              <p>
+
+              <a
+                href="https://maps.app.goo.gl/vg2pST3uctFJmAMs7"
+                className="d-flex gap-2 text-white"
+              >
+                <img
+                  src="/assets/img/maps.png"
+                  className="img-fluid"
+                  alt=""
+                  width={20}
+                  height={5}
+                />
                 Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm.
                 Jakarta Timur, Provinsi DKI Jakarta 13510
-              </p>
+              </a>
             </div>
             <div className="col-md-12">
               <div className="d-flex align-items-center">

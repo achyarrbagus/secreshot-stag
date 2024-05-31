@@ -28,6 +28,7 @@ const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 const Home = () => {
   const locale = useLocale();
   const [city, setCity] = useState("error");
+  const [location, setLocation] = useState("");
 
   const t = useTranslations("home");
 
@@ -70,7 +71,13 @@ const Home = () => {
   };
 
   useEffect(() => {
-    GetCity();
+    if ("geolocation" in navigator) {
+      // Retrieve latitude & longitude coordinates from `navigator.geolocation` Web API
+      navigator.geolocation.getCurrentPosition(({ coords }) => {
+        const { latitude, longitude } = coords;
+        setLocation({ latitude, longitude });
+      });
+    }
   }, []);
 
   return (
