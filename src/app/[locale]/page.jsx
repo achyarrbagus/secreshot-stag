@@ -79,7 +79,7 @@ const Home = () => {
   //   });
   // }, []);
 
-  console.log(location, "======");
+  // console.log(location, "======");
 
   return (
     <>
