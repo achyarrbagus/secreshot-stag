@@ -71,15 +71,19 @@ const Home = () => {
   };
 
   // stag
-  // useEffect(() => {
-  //   // Retrieve latitude & longitude coordinates from `navigator.geolocation` Web API
-  //   navigator.geolocation.getCurrentPosition(({ coords }) => {
-  //     const { latitude, longitude } = coords;
-  //     setLocation({ latitude, longitude });
-  //   });
-  // }, []);
+  useEffect(() => {
+    // Retrieve latitude & longitude coordinates from `navigator.geolocation` Web API
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setLocation(position);
+      },
+      () => {
+        alert("failed to get location");
+      }
+    );
+  }, []);
 
-  // console.log(location, "======");
+  console.log(location, "======");
 
   return (
     <>
