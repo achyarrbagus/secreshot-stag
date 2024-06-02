@@ -86,9 +86,11 @@ const Home = () => {
 
   // stag
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(SuccessGetLocation, () => {
-      setCordinates("error");
-    });
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(SuccessGetLocation, () => {
+        setCordinates("error");
+      });
+    }
   }, []);
 
   return (
