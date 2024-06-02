@@ -6,7 +6,20 @@ const HeroBanner = ({
   locale,
   cordinates,
 }) => {
-  // ``
+  //bali city
+
+  const city = [
+    "Denpasar",
+    "Badung",
+    "Buleleng",
+    "Gianyar",
+    "Jembrana",
+    "Karangasem",
+    "Klungkung",
+    "Tabanan",
+    "Denpasar",
+  ];
+  city.includes(cordinates.cordinates?.city);
 
   return (
     <>
@@ -26,7 +39,11 @@ const HeroBanner = ({
               )
             ) : (
               <h3 className="title">
-                {title + " " + cordinates.cordinates?.city}
+                {title +
+                  " " +
+                  (cities.includes(coordinates.coordinates?.city)
+                    ? "Bali"
+                    : coordinates.coordinates?.city)}
               </h3>
             )}
 
