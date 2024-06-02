@@ -19,7 +19,9 @@ const HeroBanner = ({
     "Tabanan",
     "Denpasar",
   ];
-  console.log(city.includes(cordinates.cordinates?.city), "==");
+  let cty = city.includes(cordinates.cordinates?.city)
+    ? "Bali"
+    : cordinates.cordinates?.city;
 
   return (
     <>
@@ -38,13 +40,7 @@ const HeroBanner = ({
                 <h3 className="title">{title} Bali</h3>
               )
             ) : (
-              <h3 className="title">
-                {title +
-                  " " +
-                  (cities.includes(coordinates.coordinates?.city)
-                    ? "Bali"
-                    : coordinates.coordinates?.city)}
-              </h3>
+              <h3 className="title">{title + " " + cty}</h3>
             )}
 
             <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>
