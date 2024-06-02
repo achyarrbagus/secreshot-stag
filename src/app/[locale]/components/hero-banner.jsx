@@ -19,7 +19,7 @@ const HeroBanner = ({
     "Tabanan",
     "Denpasar",
   ];
-  city.includes(cordinates.cordinates?.city);
+  console.log(city.includes(cordinates.cordinates?.city), "==");
 
   return (
     <>
