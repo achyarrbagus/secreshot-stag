@@ -4,7 +4,7 @@ const HeroBanner = ({
   bookButton,
   backgroundImage,
   locale,
-  city,
+  cordinates,
 }) => {
   // ``
 
@@ -18,14 +18,16 @@ const HeroBanner = ({
       >
         <div className="container">
           <div className="text">
-            {city === "error" ? (
+            {cordinates === "error" ? (
               locale === "id" ? (
                 <h3 className="title">{title} Bali, Jakarta, Bandung</h3>
               ) : (
                 <h3 className="title">{title} Bali</h3>
               )
             ) : (
-              <h3 className="title">{title + " " + city}</h3>
+              <h3 className="title">
+                {title + " " + cordinates.cordinates?.city}
+              </h3>
             )}
 
             <p className="desc fw-semibold" style={{ color: "#FAFF03" }}>

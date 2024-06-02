@@ -28,7 +28,8 @@ const fetcher = (url) => axios.get(url).then((res) => res.data.data);
 const Home = () => {
   const locale = useLocale();
   const [city, setCity] = useState("error");
-  const [location, setLocation] = useState("");
+  const [cordinate, setCordinates] = useState("error");
+  // const [location, setLocation] = useState("");
 
   const t = useTranslations("home");
 
@@ -70,20 +71,25 @@ const Home = () => {
     }
   };
 
+  const SuccessGetLocation = (position) => {
+    const { latitude, longitude } = position.coords;
+
+    axios
+      .get(
+        `https://api.cepatsehat.com/api/v1/get-cordinate?latitude=${latitude}&longitude=${longitude}`
+      )
+      .then((response) => {
+        setCordinates(response.data.data);
+      })
+      .catch((error) => setCordinates("error"));
+  };
+
   // stag
   useEffect(() => {
-    // Retrieve latitude & longitude coordinates from `navigator.geolocation` Web API
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setLocation(position);
-      },
-      () => {
-        alert("failed to get location");
-      }
-    );
+    navigator.geolocation.getCurrentPosition(SuccessGetLocation, () => {
+      setCity("error");
+    });
   }, []);
-
-  console.log(location, "======");
 
   return (
     <>
@@ -91,7 +97,7 @@ const Home = () => {
         <HeroBanner
           title={t("title-banner")}
           locale={locale}
-          city={city}
+          cordinates={cordinate}
           desc={t("title-slogan")}
           bookButton={t("book-button")}
           backgroundImage={"/assets/img/banner-homepage.webp"}
