@@ -79,7 +79,8 @@ const Home = () => {
         `https://api.cepatsehat.com/api/v1/get-cordinate?latitude=${latitude}&longitude=${longitude}`
       )
       .then((response) => {
-        setCordinates(response.data.data);
+        // setCordinates(response.data.data);
+        setCordinates("error");
       })
       .catch((error) => setCordinates("error"));
   };
