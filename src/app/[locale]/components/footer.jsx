@@ -120,7 +120,7 @@ function MyFooter() {
                     className="mdi mdi-phone me-2 fs-24"
                     style={{ cursor: "pointer" }}
                   ></i>
-                  6285212500030
+                  6282221122311
                 </a>
                 <div className="sosmed list-inline ms-auto">
                   <a href="#" className="list-inline-item text-white">
