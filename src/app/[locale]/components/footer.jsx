@@ -132,7 +132,7 @@ function MyFooter() {
                   className="text-white"
                   href="https://maps.app.goo.gl/vg2pST3uctFJmAMs7"
                 >
-                  <ins> What Patients Are Saying!</ins>
+                  <ins> What Patients Are Saying !</ins>
                 </a>
               </div>
             </div>
