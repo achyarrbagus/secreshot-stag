@@ -104,7 +104,7 @@ function MyFooter() {
                   className="text-white"
                   href="https://maps.app.goo.gl/rMJYMrtMJEmFjs636"
                 >
-                  <ins> See Our Patient Experiences!!</ins>
+                  <ins> See Our Patient Experiences !</ins>
                 </a>
               </div>
               <p className="mt-4"></p>
