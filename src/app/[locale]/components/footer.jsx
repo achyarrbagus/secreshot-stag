@@ -80,6 +80,34 @@ function MyFooter() {
                 </a>
               </div>
               <p className="mt-4"></p>
+              <h4 className="fs-14"> Canggu Address</h4>
+              <p className="d-flex gap-2 text-white">
+                Jl. Raya Canggu No.12, Canggu, Kec. Kuta Utara, Kabupaten
+                Badung, Badung, Bali 80351
+              </p>
+              <div style={{ marginTop: "-10px" }} className="d-flex gap-2">
+                <img
+                  src="/assets/img/maps.png"
+                  className="img-fluid"
+                  onClick={() =>
+                    window.location.replace(
+                      "https://maps.app.goo.gl/rMJYMrtMJEmFjs636"
+                    )
+                  }
+                  style={{ cursor: "pointer" }}
+                  alt=""
+                  width={20}
+                  height={5}
+                />
+                <a
+                  style={{ fontWeight: "bold" }}
+                  className="text-white"
+                  href="https://maps.app.goo.gl/rMJYMrtMJEmFjs636"
+                >
+                  <ins> See Our Patient Experiences!!</ins>
+                </a>
+              </div>
+              <p className="mt-4"></p>
               <h4 className="fs-14">Jakarta Address</h4>
               <p className="d-flex gap-2 text-white">
                 Jalan Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm.
