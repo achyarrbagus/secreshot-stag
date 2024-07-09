@@ -31,7 +31,7 @@ const RemoteTelemedic = () => {
         break;
       case "Book for MD Consultation now":
         window.location.replace(
-          "https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum"
+          "https://www.sehatcepat.com/payments/dr-ayu-new/?camp=drumum"
         );
         break;
       case "Book a Medical Prescription now":
@@ -42,12 +42,12 @@ const RemoteTelemedic = () => {
         break;
       case "Pesan konsultasi dokter umum sekarang":
         window.location.replace(
-          "https://www.sehatcepat.com/payments/dr-lia/?camp=dranak"
+          "https://www.sehatcepat.com/payments/dr-ayu-new/?camp=drumum"
         );
         break;
       case "Pesan konsultasi dokter spesialis sekarang":
         window.location.replace(
-          "https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum"
+          "https://www.sehatcepat.com/payments/dr-lia/?camp=dranak"
         );
         break;
       case "Pesan resep obat sekarang":
@@ -69,7 +69,7 @@ const RemoteTelemedic = () => {
   //   switch (serviceSelect) {
   //     case "General Practitioner Online Consultation":
   //       window.location.replace(
-  //         "https://www.sehatcepat.com/payments/dr-ayu/?camp=drumum"
+  //         "https://www.sehatcepat.com/payments/dr-lia/?camp=dranak"
   //       );
   //       // setBook("Book for GP Consultation now");
   //       break;
