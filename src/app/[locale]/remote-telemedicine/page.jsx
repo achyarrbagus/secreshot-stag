@@ -38,7 +38,7 @@ const RemoteTelemedic = () => {
         setBook(t("form-book-title.3"));
         break;
       case "Book a Sick Leave Letter now":
-        window.location.replace("https://www.sickleave.cepatsehat.com/");
+        window.location.replace("https://www.suratsakit.cepatsehat.com/");
         break;
       case "Pesan konsultasi dokter umum sekarang":
         window.location.replace(
@@ -54,7 +54,7 @@ const RemoteTelemedic = () => {
         setBook(t("form-book-title.3"));
         break;
       case "Pesan surat sakit sekarang":
-        window.location.replace("https://www.sickleave.cepatsehat.com/");
+        window.location.replace("https://www.suratsakit.cepatsehat.com/");
         break;
     }
 
