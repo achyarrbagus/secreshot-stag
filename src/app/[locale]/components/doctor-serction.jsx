@@ -6,6 +6,8 @@ import DrAyu from "../../../../public/assets/img/doctor/dr-ayu-a.png";
 import DrErnita from "../../../../public/assets/img/doctor/dr-ernita-r.png";
 import DrIrvan from "../../../../public/assets/img/doctor/dr-irvan-r.png";
 import DrMel from "../../../../public/assets/img/doctor/dr-melchisedek-a.png";
+import DrCut from "../../../../public/assets/img/doctor/dr-cut.png";
+import DrYahya from "../../../../public/assets/img/doctor/dr-yahya.png";
 
 import { useLocale, useTranslations } from "next-intl";
 
@@ -21,14 +23,14 @@ const DoctorSection = () => {
           <div className="row justify-content-center">
             <div className="col-md-12 col-lg-8">
               <div className="row g-3 g-md-5 justify-content-center">
-                <DoctorCard
+                {/* <DoctorCard
                   image={DrDewi}
                   name="dr. Dewi Fransiska, Sp.B"
                   job={t("dr-surgeon")}
                   str="3121101422105406"
                   titlelocation={t("practice-location")}
                   practiceLocation={[t("mayapada"), t("eka")]}
-                />
+                /> */}
                 <DoctorCard
                   // image={`/assets/img/doctor/dr-dwi-s.png`}
                   image={DrDwi}
@@ -56,6 +58,14 @@ const DoctorSection = () => {
                   practiceLocation={[t("cepat-sehat")]}
                 />
                 <DoctorCard
+                  name="dr. Cut Fadmala Corry Amelia"
+                  image={DrCut}
+                  job={t("dr-general")}
+                  str="VC00000389023553"
+                  titlelocation={t("practice-location")}
+                  practiceLocation={[t("cepat-sehat")]}
+                />
+                <DoctorCard
                   // image={`/assets/img/doctor/dr-irvan-r.png`}
                   name="dr. Irvan Rizki Fitri"
                   image={DrIrvan}
@@ -70,6 +80,15 @@ const DoctorSection = () => {
                   image={DrMel}
                   job={t("dr-general")}
                   str="3111100220155405"
+                  titlelocation={t("practice-location")}
+                  practiceLocation={[t("cepat-sehat")]}
+                />{" "}
+                <DoctorCard
+                  // image={`/assets/img/doctor/dr-melchisedek-a.png`}
+                  name="dr. Yahya Albar, Sp. KKLP"
+                  image={DrYahya}
+                  job={t("dr-general")}
+                  str="9811809221170965"
                   titlelocation={t("practice-location")}
                   practiceLocation={[t("cepat-sehat")]}
                 />{" "}
