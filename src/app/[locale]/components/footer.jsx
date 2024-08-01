@@ -91,7 +91,7 @@ function MyFooter() {
                   className="img-fluid"
                   onClick={() =>
                     window.location.replace(
-                      "https://maps.app.goo.gl/rMJYMrtMJEmFjs636"
+                      "https://maps.app.goo.gl/JmcKg5kFWsdQPVnu5"
                     )
                   }
                   style={{ cursor: "pointer" }}
@@ -102,7 +102,7 @@ function MyFooter() {
                 <a
                   style={{ fontWeight: "bold" }}
                   className="text-white"
-                  href="https://maps.app.goo.gl/rMJYMrtMJEmFjs636"
+                  href="https://maps.app.goo.gl/JmcKg5kFWsdQPVnu5"
                 >
                   <ins> See Our Patient Experiences !</ins>
                 </a>
