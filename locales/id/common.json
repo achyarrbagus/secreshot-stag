@@ -18,7 +18,11 @@
     "mayapada": "RS Hospital",
     "eka": "RS Eka",
     "aysha": "RS Islam Aysha",
+    "aysha-bogor": "RS Islam Aysha, Bogor",
     "cepat-sehat": "Klinik Cepat Sehat",
+    "cepat-sehat-jakarta": "Klinik Cepat Sehat, Jakarta",
+    "cepat-sehat-bali": "Klinik Cepat Sehat, Bali",
+    "cepat-sehat-lombok": "Klinik Cepat Sehat, lombok",
     "our-nurse": "Perawat Kami"
   },
   "home": {
@@ -50,10 +54,14 @@
     "dr-asthetic": "Dokter Kecantikan",
     "mayapada": "RS Hospital",
     "eka": "RS Eka",
-    "aysha": "RS Islam Aysha",
-    "cepat-sehat": "Klinik Cepat Sehat",
     "our-nurse": "Perawat Kami",
     "article": "Artikel",
+    "aysha": "RS Islam Aysha",
+    "aysha-bogor": "RS Islam Aysha, Bogor",
+    "cepat-sehat": "Klinik Cepat Sehat",
+    "cepat-sehat-jakarta": "Klinik Cepat Sehat, Jakarta",
+    "cepat-sehat-bali": "Klinik Cepat Sehat, Bali",
+    "cepat-sehat-lombok": "Klinik Cepat Sehat, lombok",
     "form-book": {
       "title": "Pesan Sekarang Dari Rumah",
       "name": "Nama",

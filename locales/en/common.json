@@ -41,6 +41,11 @@
     "eka": "Eka Hospital",
     "aysha": "Aysha Islamic Hospital",
     "cepat-sehat": "Cepat Sehat Clinic",
+    "aysha-bogor": "Aysha Islamic Hospital, Bogor",
+    "cepat-sehat-jakarta": "Cepat Sehat Clinic, Jakarta",
+    "cepat-sehat-bali": "Cepat Sehat Clinic, Bali",
+    "cepat-sehat-lombok": "Cepat Sehat Clinic, lombok",
+
     "our-nurse": "Our Nurses",
     "article": "Articles",
     "form-book": {
@@ -273,7 +278,11 @@
     "mayapada": "Mayapada Hospital",
     "eka": "Eka Hospital",
     "aysha": "Aysha Islamic Hospital",
+    "aysha-bogor": "Aysha Islamic Hospital, Bogor",
     "cepat-sehat": "Cepat Sehat Clinic",
+    "cepat-sehat-jakarta": "Cepat Sehat Clinic, Jakarta",
+    "cepat-sehat-bali": "Cepat Sehat Clinic, Bali",
+    "cepat-sehat-lombok": "Cepat Sehat Clinic, lombok",
     "our-nurse": "Our Nurses",
 
     "form-book": {

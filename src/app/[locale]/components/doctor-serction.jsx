@@ -38,7 +38,7 @@ const DoctorSection = () => {
                   job={t("dr-pediatrician")}
                   str="3321201323154360"
                   titlelocation={t("practice-location")}
-                  practiceLocation={[t("aysha")]}
+                  practiceLocation={[t("aysha-bogor")]}
                 />
                 <DoctorCard
                   // image={`/assets/img/doctor/dr-ayu-a.png`}
@@ -47,7 +47,7 @@ const DoctorSection = () => {
                   job={t("dr-asthetic")}
                   str="3321201323154360"
                   titlelocation={t("practice-location")}
-                  practiceLocation={[t("cepat-sehat")]}
+                  practiceLocation={[t("cepat-sehat-jakarta")]}
                 />
                 <DoctorCard
                   name="dr. Ernita Rosyanti Dewi"
@@ -55,7 +55,7 @@ const DoctorSection = () => {
                   job={t("dr-general")}
                   str="3121100220145544"
                   titlelocation={t("practice-location")}
-                  practiceLocation={[t("cepat-sehat")]}
+                  practiceLocation={[t("cepat-sehat-jakarta")]}
                 />
                 <DoctorCard
                   name="dr. Cut Fadmala Corry Amelia"
@@ -63,7 +63,7 @@ const DoctorSection = () => {
                   job={t("dr-general")}
                   str="VC00000389023553"
                   titlelocation={t("practice-location")}
-                  practiceLocation={[t("cepat-sehat")]}
+                  practiceLocation={[t("cepat-sehat-bali")]}
                 />
                 <DoctorCard
                   // image={`/assets/img/doctor/dr-irvan-r.png`}
@@ -72,7 +72,7 @@ const DoctorSection = () => {
                   job={t("dr-general")}
                   str="3121100220145544"
                   titlelocation={t("practice-location")}
-                  practiceLocation={[t("cepat-sehat")]}
+                  practiceLocation={[t("cepat-sehat-jakarta")]}
                 />
                 <DoctorCard
                   // image={`/assets/img/doctor/dr-melchisedek-a.png`}
@@ -81,7 +81,7 @@ const DoctorSection = () => {
                   job={t("dr-general")}
                   str="3111100220155405"
                   titlelocation={t("practice-location")}
-                  practiceLocation={[t("cepat-sehat")]}
+                  practiceLocation={[t("cepat-sehat-jakarta")]}
                 />{" "}
                 <DoctorCard
                   // image={`/assets/img/doctor/dr-melchisedek-a.png`}
@@ -90,7 +90,7 @@ const DoctorSection = () => {
                   job={t("dr-general")}
                   str="9811809221170965"
                   titlelocation={t("practice-location")}
-                  practiceLocation={[t("cepat-sehat")]}
+                  practiceLocation={[t("cepat-sehat-lombok")]}
                 />{" "}
               </div>
             </div>
