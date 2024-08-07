@@ -26,12 +26,12 @@ const RemoteTelemedic = () => {
     switch (serviceSelect) {
       case "Book for GP Consultation now":
         window.location.replace(
-          "https://www.sehatcepat.com/payments/dr-lia/?camp=dranak"
+          "https://www.sehatcepat.com/payments/dr-ayu-new/?camp=drumum"
         );
         break;
       case "Book for MD Consultation now":
         window.location.replace(
-          "https://www.sehatcepat.com/payments/dr-ayu-new/?camp=drumum"
+          "https://www.sehatcepat.com/payments/dr-lia/?camp=dranak"
         );
         break;
       case "Book a Medical Prescription now":
