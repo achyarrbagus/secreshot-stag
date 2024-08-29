@@ -6,6 +6,10 @@ import NrAndi from "../../../../public/assets/img/doctor/nurse-andi.png";
 import NrMarsiani from "../../../../public/assets/img/doctor/nurse-marsiani.png";
 import NrIrfan from "../../../../public/assets/img/doctor/nurse-irfan.png";
 import NrDimas from "../../../../public/assets/img/doctor/nurse-dimas.png";
+import NrRina from "../../../../public/assets/img/doctor/nurse-rina.webp";
+import NrMusdalifa from "../../../../public/assets/img/doctor/nurse-musdalifa.webp";
+import NrSelamat from "../../../../public/assets/img/doctor/nurse-selamat.png";
+import NrSumarna from "../../../../public/assets/img/doctor/nurse-sumarna.webp";
 
 import { useLocale, useTranslations } from "next-intl";
 
@@ -52,10 +56,29 @@ const NurseSection = () => {
                   image={NrMarsiani}
                 />
                 <NurseCard
-                  name="Irfan Mustofa"
-                  str="1401511224517960"
+                  name="Rina Putri"
+                  str="0101521213497319"
                   isnurse={true}
-                  image={NrIrfan}
+                  image={NrRina}
+                />
+                <NurseCard
+                  name="Musdalifa"
+                  str="0501522220-3201328"
+                  isnurse={true}
+                  image={NrMusdalifa}
+                />
+                <NurseCard
+                  name="Selamat Hartanto"
+                  str="TJ00000324384379"
+                  isnurse={true}
+                  image={NrSelamat}
+                />
+                {/* STR:  */}
+                <NurseCard
+                  name="Sumarna"
+                  str="UG00000370743415"
+                  isnurse={true}
+                  image={NrSumarna}
                 />
                 <NurseCard
                   name="Dimas Catur Nugroho"
