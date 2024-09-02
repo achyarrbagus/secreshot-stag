@@ -13,6 +13,7 @@ const Index = () => {
 
   const redirectWa = (e) => {
     e.preventDefault();
+    const locale = useLocale();
 
     const name = document.getElementById("name");
     const address = document.getElementById("address");
