@@ -10,10 +10,10 @@ import { useLocale, useTranslations } from "next-intl";
 
 const Index = () => {
   // const isMobile = useSelector((state) => state.isMobile.value);
+  const locale = useLocale();
 
   const redirectWa = (e) => {
     e.preventDefault();
-    const locale = useLocale();
 
     const name = document.getElementById("name");
     const address = document.getElementById("address");
