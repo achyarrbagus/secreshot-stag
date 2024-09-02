@@ -29,9 +29,16 @@ async function getMessages(locale: string) {
   }
 }
 
-//function to generate the routes for all the locales
 export async function generateStaticParams() {
-  return ["en", "id"].map((locale) => ({ locale }));
+  const locales = ["en", "id"];
+  const pdfFiles = ["stemcell-for-hair-loss.pdf", "file2", "file3"]; // Nilai-nilai yang mungkin untuk parameter pdf
+
+  return locales.flatMap((locale) =>
+    pdfFiles.map((pdf) => ({
+      locale,
+      pdf,
+    }))
+  );
 }
 
 export default async function RootLayout({

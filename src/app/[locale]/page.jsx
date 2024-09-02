@@ -97,234 +97,273 @@ const Home = () => {
   return (
     <>
       <div className="content">
-        <HeroBanner
-          title={t("title-banner")}
-          locale={locale}
-          cordinates={cordinate}
-          desc={t("title-slogan")}
-          bookButton={t("book-button")}
-          backgroundImage={"/assets/img/banner-homepage.webp"}
-        />
-        <section className="service">
-          <div className="container">
-            <h3 className="title-section"> {t("our-service")} </h3>
-            <div className="row g-3">
-              <CardService
-                link={locale + "/home-care-services"}
-                titleService={t("service-menu.1")}
-                icon={"icon-menu-doctor-home"}
-              />
-              <CardService
-                link={locale + "/home-nursing"}
-                titleService={t("service-menu.2")}
-                icon={"icon-menu-home-nursing"}
-              />
-              <CardService
-                link={locale + "/remote-telemedicine"}
-                titleService={t("service-menu.3")}
-                icon={"icon-menu-remote-telemedicine"}
-              />
-              <CardService
-                link={locale + "/holistic-alternative"}
-                titleService={t("service-menu.4")}
-                icon={"icon-menu-holistic"}
-              />
-              <CardService
-                link={locale + "/inhome-therapy"}
-                titleService={t("service-menu.5")}
-                icon={"icon-menu-in-home-iv"}
-              />
-              <CardService
-                link={locale + "/alternative-telemedicine"}
-                titleService={t("service-menu.6")}
-                icon={"icon-menu-alternative-telemedicine"}
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="why">
+        <section className="banner-pages homepage">
           <div className="container">
             <div className="text">
-              <h3>{t("why")}</h3>
-              <div className="list-why">
-                <div className="items-why">
-                  <span>{t("why-slogan")}</span>
-                </div>
-              </div>
-              <div className="list-why">
-                <div className="items-why">
-                  <img
-                    src="/assets/img/Protect.png"
-                    className="img-list"
-                    alt=""
-                  />
-                  <span>{t("why-menu.1")}</span>
-                </div>
-              </div>
-              <div className="list-why">
-                <div className="items-why">
-                  <img
-                    src="/assets/img/Diploma.png"
-                    className="img-list"
-                    alt=""
-                  />
-                  <span>{t("why-menu.2")}</span>
-                </div>
-              </div>
-              <div className="list-why">
-                <div className="items-why">
-                  <img
-                    src="assets/img/Last 24 Hours.png"
-                    className="img-list"
-                    alt=""
-                  />
-                  <span>{t("why-menu.3")}</span>
-                </div>
-              </div>
-              <div className="list-why">
-                <div className="items-why">
-                  <img
-                    src="/assets/img/Globe Network.png"
-                    className="img-list"
-                    alt=""
-                  />
-                  <span>{t("why-menu.4")}</span>
-                </div>
-              </div>
+              <h3>
+                <span className="fw-normal"> Boost Your Body With </span> Stem
+                Cells Theraphy
+              </h3>
             </div>
           </div>
         </section>
 
-        <DoctorSection />
-        <NurseSection />
-
-        <section className="article">
+        <section className="banner-consult">
           <div className="container">
-            <h3 className="title-section text-white"> {t("article")} </h3>
-            <div className="swiper swiper-article mt-5">
-              <div className="swiper-wrapper">
-                <div className="swiper-wrapper">
-                  <Swiper
-                    loop
-                    modules={[Autoplay]}
-                    spaceBetween={30}
-                    slidesPerView={3.5}
-                    speed={1000}
-                    autoplay={{
-                      delay: 3000,
-                      disableOnInteraction: false,
-                    }}
-                    breakpoints={{
-                      320: {
-                        slidesPerView: 1.5,
-                      },
-                      480: {
-                        slidesPerView: 2.5,
-                      },
-                      768: {
-                        slidesPerView: 3.5,
-                      },
-                    }}
+            <div className="d-flex justify-content-end">
+              <div className="text">
+                <h3>
+                  <span className="fw-normal">
+                    Consult For Free With Our Medical Team
+                  </span>
+                </h3>
+                <a href="#book" className="btn btn-primary fs-14 w-75">
+                  Book Now
+                </a>
+                <h3 className="line">
+                  <span>Or</span>
+                </h3>
+                <h3 className="mt-3">I Experience one of those Symptoms</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="menus">
+          <div className="container">
+            <h3 className="title-line blue">
+              <span> Aesthetic </span>
+            </h3>
+            <div className="row g-3">
+              <div className="col-6">
+                <Link href={locale + "/acne"} className="button-menu blue">
+                  <img src="assets/img/icon/icon-acne.svg" alt="" />
+                  <h5>Acne</h5>
+                </Link>
+              </div>
+              <div className="col-6">
+                <Link
+                  href={locale + "/anti-aging"}
+                  className="button-menu blue"
+                >
+                  <img src="assets/img/icon/icon-antiaging.svg" alt="" />
+                  <h5>Anti Aging</h5>
+                </Link>
+              </div>
+              <div className="col-6">
+                <Link href={locale + "/hair-loss"} className="button-menu blue">
+                  <img src="assets/img/icon/icon-hairloss.svg" alt="" />
+                  <h5>Hair Loss</h5>
+                </Link>
+              </div>
+              <div className="col-6">
+                <Link href={locale + "/scars"} className="button-menu blue">
+                  <img src="assets/img/icon/icon-scars.svg" alt="" />
+                  <h5>Scars</h5>
+                </Link>
+              </div>
+            </div>
+
+            <h3 className="title-line warning">
+              <span> Fast Recovery </span>
+            </h3>
+            <div className="row g-3">
+              <div className="col-6">
+                <Link
+                  href={locale + `/arthritis`}
+                  className="button-menu warning"
+                >
+                  <img src="assets/img/icon/icon-arthritis.svg" alt="" />
+                  <h5>Arthritis</h5>
+                </Link>
+              </div>
+              <div className="col-6">
+                <Link
+                  href={locale + `/auto-immune`}
+                  className="button-menu warning"
+                >
+                  <img src="assets/img/icon/icon-autoimmune.svg" alt="" />
+                  <h5>Auto Immune</h5>
+                </Link>
+              </div>
+              <div className="col-6">
+                <Link
+                  href={locale + "/covid-19"}
+                  className="button-menu warning"
+                >
+                  <img src="assets/img/icon/icon-covid.svg" alt="" />
+                  <h5>Covid-19</h5>
+                </Link>
+              </div>
+              <div className="col-6">
+                <Link href={locale + "/stroke"} className="button-menu warning">
+                  <img src="assets/img/icon/icon-stroke.svg" alt="" />
+                  <h5>Stroke</h5>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <section className="potential bg-soft">
+          <div className="container">
+            <h3 className="title-section">
+              <span className="fw-normal">Potential Uses of</span> <br />
+              <span className="text-primary">Secretome and Stem Cells</span>
+            </h3>
+            <img src="assets/img/img-potential.png" className="w-100" alt="" />
+          </div>
+        </section> */}
+
+        <section className="potential bg-soft">
+          <div className="container">
+            <h3 className="title-section">
+              <span className="fw-normal">Potential Uses of</span> <br />
+              <span className="text-primary">Secretome and Stem Cells</span>
+            </h3>
+            <div className="d-flex justify-content-center">
+              <img
+                src="assets/img/img-potential.png"
+                className="img-potential"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="potential">
+          <div className="container">
+            <h3 className="title-section">Stem Cells Review From Experts</h3>
+            <div className="row justify-content-center">
+              <div className="col-md-8">
+                <div className="row g-3">
+                  <a
+                    href="https://www.youtube.com/embed/Ve2CL-eRlao?si=H4PDxfD_rhfWBTgQ"
+                    data-toggle="lightbox"
+                    data-gallery="youtubevideos"
+                    className="col-6 gallery-video"
                   >
-                    {articles &&
-                      articles.map((item, index) => (
-                        <SwiperSlide key={item.id}>
-                          <Link
-                            href={`/${locale}/article?id=${item.article_id_v2}&locale=${locale}`}
-                            scroll={true}
-                          >
-                            <CardArticleSlide item={item} path={item.image} />
-                          </Link>
-                        </SwiperSlide>
-                      ))}
-                  </Swiper>
+                    <img
+                      src="assets/img/img-video01.png"
+                      className="thumbnail-yt"
+                    />
+                    <div className="play-button">
+                      <img src="assets/img/circle-play.png" alt="" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/embed/SM3cH7FU3Q8?si=H4PDxfD_rhfWBTgQ"
+                    data-toggle="lightbox"
+                    data-gallery="youtubevideos"
+                    className="col-6 gallery-video"
+                  >
+                    <img
+                      src="assets/img/img-video02.png"
+                      className="thumbnail-yt"
+                    />
+                    <div className="play-button">
+                      <img src="assets/img/circle-play.png" alt="" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/embed/GIZp_DS2WvE?si=H4PDxfD_rhfWBTgQ"
+                    data-toggle="lightbox"
+                    data-gallery="youtubevideos"
+                    className="col-6 gallery-video"
+                  >
+                    <img
+                      src="assets/img/img-video03.png"
+                      className="thumbnail-yt"
+                    />
+                    <div className="play-button">
+                      <img src="assets/img/circle-play.png" alt="" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/embed/t9kWCxu7MR4?si=H4PDxfD_rhfWBTgQ"
+                    data-toggle="lightbox"
+                    data-gallery="youtubevideos"
+                    className="col-6 gallery-video"
+                  >
+                    <img
+                      src="assets/img/img-video04.png"
+                      className="thumbnail-yt"
+                    />
+                    <div className="play-button">
+                      <img src="assets/img/circle-play.png" alt="" />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* booking session */}
         <section className="book" id="book">
           <div className="container">
-            <h3 className="title-section">{t("form-book.title")}</h3>
+            <h3 className="title-section"> Book Now </h3>
             <form>
               <div className="row mb-3 g-3">
                 <div className="col-md-4">
-                  <label className="form-label">{t("form-book.name")}</label>
+                  <label className="form-label">Name</label>
                   <input
                     type="text"
                     className="form-control"
                     id="name"
-                    placeholder={t("form-book.name-label")}
-                    value={formData.name}
-                    onChange={handleChange}
+                    placeholder="Your Name"
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">{t("form-book.address")}</label>
+                  <label className="form-label">Address</label>
                   <input
-                    id="address"
                     type="text"
                     className="form-control"
-                    placeholder={t("form-book.address-label")}
-                    value={formData.address}
-                    onChange={handleChange}
+                    id="address"
+                    placeholder="Your Address"
                   />
                 </div>
                 <div className="col-md-4">
-                  <label className="form-label">{t("form-book.service")}</label>
+                  <label className="form-label">Service</label>
                   <select
                     id="service"
                     className="form-select form-control"
                     aria-label="Default select example"
-                    value={formData.service}
-                    onChange={handleChange}
                   >
-                    <option value="Select Service" disabled>
-                      {t("form-book.service-label")}
-                    </option>
-                    <option value={t("service-menu.1")}>
-                      {t("service-menu.1")}
-                    </option>
-                    <option value={t("service-menu.2")}>
-                      {t("service-menu.2")}
-                    </option>
-                    <option value={t("service-menu.3")}>
-                      {t("service-menu.3")}
-                    </option>
-                    <option value={t("service-menu.4")}>
-                      {t("service-menu.4")}
-                    </option>
-                    <option value={t("service-menu.5")}>
-                      {t("service-menu.5")}
-                    </option>
-                    <option value={t("service-menu.6")}>
-                      {t("service-menu.6")}
-                    </option>
+                    <option selected>Select Service</option>
+                    <option value="Acne">Acne</option>
+                    <option value="Hair Loss">Hair Loss</option>
+                    <option value="Anti Aging">Anti Aging</option>
+                    <option value="Scars">Scars</option>
+                    <option value="Arthritis">Arthritis</option>
+                    <option value="Auto Immune">Auto Immune</option>
+                    <option value="Covid-19">Covid-19</option>
+                    <option value="Stroke">Stroke</option>
                   </select>
                 </div>
               </div>
+              <div className="row g-3 justify-content-center">
+                <div className="col-6 col-md-3">
+                  <button
+                    type="submit"
+                    onClick={redirectWa}
+                    className="btn btn-whatsapp w-100"
+                  >
+                    <i className="mdi mdi-whatsapp fs-18 me-2"></i>
+                    Whatsapp
+                  </button>
+                </div>
+                <div className="col-6 col-md-3">
+                  <button
+                    type="submit"
+                    onClick={redirectTele}
+                    className="btn btn-telegram w-100"
+                  >
+                    <i className="fa-brands fa-telegram fs-18 me-2"></i>
+                    Telegram
+                  </button>
+                </div>
+              </div>
             </form>
-            <div className="row g-3 justify-content-center">
-              <div className="col-6 col-md-3">
-                <button
-                  onClick={() => redirectWa(locale)}
-                  className="btn btn-whatsapp w-100"
-                >
-                  <i className="mdi mdi-whatsapp fs-18 me-2"></i> Whatsapp
-                </button>
-              </div>
-              <div className="col-6 col-md-3">
-                <button
-                  onClick={redirectTele}
-                  className="btn btn-telegram w-100"
-                >
-                  <i className="fa-brands fa-telegram fs-18 me-2"></i> Telegram
-                </button>
-              </div>
-            </div>
           </div>
         </section>
       </div>
@@ -337,7 +376,6 @@ export default function App() {
     if (window.location.hostname === "www.cepat-sehat.com") {
       window.location.replace("https://www.cepatsehat.com");
     }
-    console.log(window.location.hostname, "==hell==");
   }, []);
 
   return (

@@ -5,12 +5,10 @@ function MyHead() {
   return (
     <>
       <head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
+        <title>Secretome</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {/* <!-- icons --> */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css"
@@ -25,18 +23,16 @@ function MyHead() {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossOrigin="anonymous"
-        />
 
-        {/* <!-- fontello --> */}
+        <link rel="icon" type="img/x-icon" href="/assets/img/favicon.svg" />
+
         <link rel="stylesheet" href="/assets/fontello/css/csehat.css" />
 
-        {/* <!-- custom --> */}
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="/assets/css/style.css"></link>
       </head>
       {/* Konten aplikasi Anda */}
     </>
