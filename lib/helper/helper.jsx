@@ -4,17 +4,17 @@ import { number } from "yup";
 class Helper {
   async RedirectToWa(form, lang, isForm) {
     if (!isForm) {
+      console.log(isForm);
       const formData = {
-        customer_name: form.name,
-        customer_address: form.address,
-        service_name: form.service,
+        customer_name: "no-input",
+        customer_address: "no-input",
+        service_name: "no-input",
       };
       let resp = await axios
         .post("https://api.cepatsehat.com/api/v1/book-service", formData)
         .then(function (response) {
           const numberPhone = response.data.data.number_whatsapp;
-          let url = `https://api.whatsapp.com/send/?phone=${numberPhone}&text=Hello+CepatSehat.com+by+Cepat+Sehat+Clinic%2C+I+want+a+consultation&type=phone_number&app_absent=0`;
-          console.log("hello world");
+          let url = `https://api.whatsapp.com/send/?phone=${numberPhone}&text=Hello%2C+Clinic+Cepat+Sehat%21+%F0%9F%A9%BA+I%E2%80%99m+looking+into+your+Stem+Cells+Therapy+and+would+love+to+know+more+about+the+treatments+and+who+it%E2%80%99s+best+suited+for.+Thanks%21+%E2%9C%A8`;
           return url;
         })
         .catch(function (error) {

@@ -3,41 +3,30 @@
 import React from "react";
 import { useEffect } from "react";
 import LayoutWrapper from "../components/layout-wrapper";
+import Helper from "../../../../lib/helper/helper";
 
 import { useLocale, useTranslations } from "next-intl";
 
 const Acne = () => {
+  const [formData, setFormData] = React.useState({
+    name: "",
+    address: "",
+    service: "Select Service",
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
   const redirectWa = (e) => {
     e.preventDefault();
-
-    const name = document.getElementById("name");
-    const address = document.getElementById("address");
-
-    const service = document.getElementById("service");
-
-    if (name?.value && address?.value && service?.value) {
-      if (service?.value == "Select Service") {
-        return alert("please fill form correcly");
-      }
-      const wardingWa = encodeURIComponent(`
-Hello CepatSehat.com by Cepat Sehat Clinic, i want a consultation 
-
-Name : ${name.value}
-Address : ${address.value} 
-Service : ${service.value}`);
-      let url = `https://api.whatsapp.com/send/?phone=6282211189009&text=${wardingWa}&type=phone_number&app_absent=0`;
-      window.location.href = url;
-
-      return;
-    } else {
-      alert("please fill form with correctly");
-    }
+    const helper = new Helper();
+    helper.RedirectToWa(formData, locale, false);
   };
 
-  const redirectTele = (e) => {
-    e.preventDefault();
-
-    window.location.replace("https://t.me/InfusionJakarta");
+  const redirectTele = () => {
+    const helper = new Helper();
+    helper.RedirectToTele(formData);
   };
 
   const t = useTranslations("holistic-alternative");
@@ -165,6 +154,7 @@ Service : ${service.value}`);
                     type="text"
                     className="form-control"
                     id="name"
+                    onChangeCapture={handleChange}
                     placeholder="Your Name"
                   />
                 </div>
@@ -173,6 +163,7 @@ Service : ${service.value}`);
                   <input
                     type="text"
                     className="form-control"
+                    onChange={handleChange}
                     id="address"
                     placeholder="Your Address"
                   />
@@ -183,6 +174,7 @@ Service : ${service.value}`);
                     className="form-select form-control"
                     aria-label="Default select example"
                     id="service"
+                    onChange={handleChange}
                   >
                     <option>Select Service</option>
                     <option selected value="Acne">

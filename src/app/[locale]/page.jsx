@@ -31,9 +31,10 @@ const Home = () => {
     fetcher
   );
 
-  const redirectWa = (locale) => {
+  const redirectWa = (e) => {
+    e.preventDefault();
     const helper = new Helper();
-    helper.RedirectToWa(formData, locale, true);
+    helper.RedirectToWa(formData, locale, false);
   };
 
   const redirectTele = () => {
@@ -303,6 +304,7 @@ const Home = () => {
                     type="text"
                     className="form-control"
                     id="name"
+                    onChange={handleChange}
                     placeholder="Your Name"
                   />
                 </div>
@@ -312,6 +314,7 @@ const Home = () => {
                     type="text"
                     className="form-control"
                     id="address"
+                    onChange={handleChange}
                     placeholder="Your Address"
                   />
                 </div>
@@ -319,6 +322,7 @@ const Home = () => {
                   <label className="form-label">Service</label>
                   <select
                     id="service"
+                    onChange={handleChange}
                     className="form-select form-control"
                     aria-label="Default select example"
                   >
