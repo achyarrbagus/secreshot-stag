@@ -88,6 +88,8 @@ const Home = () => {
     }
   }, []);
 
+  console.log("root");
+
   return (
     <>
       <div className="content">
