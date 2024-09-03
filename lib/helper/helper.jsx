@@ -14,7 +14,7 @@ class Helper {
         .post("https://api.cepatsehat.com/api/v1/book-service", formData)
         .then(function (response) {
           const numberPhone = response.data.data.number_whatsapp;
-          let url = `https://api.whatsapp.com/send/?phone=${numberPhone}&text=Hello%2C+Clinic+Cepat+Sehat%21+%F0%9F%A9%BA+I%E2%80%99m+looking+into+your+Stem+Cells+Therapy+and+would+love+to+know+more+about+the+treatments+and+who+it%E2%80%99s+best+suited+for.+Thanks%21+%E2%9C%A8`;
+          let url = `https://api.whatsapp.com/send/?phone=6282221122311&text=Hello%2C+Clinic+Cepat+Sehat%21+%F0%9F%A9%BA+I%E2%80%99m+looking+into+your+Stem+Cells+Therapy+and+would+love+to+know+more+about+the+treatments+and+who+it%E2%80%99s+best+suited+for.+Thanks%21+%E2%9C%A8`;
           return url;
         })
         .catch(function (error) {
