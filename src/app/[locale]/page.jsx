@@ -6,20 +6,13 @@ import React, { useState } from "react";
 import { Suspense } from "react";
 import { Autoplay } from "swiper/modules";
 import useSWR from "swr";
-import CardArticleSlide from "./components/card-article-slide";
 import "../../../public/assets/css/style.css";
 import "../../../public/assets/fontello/css/csehat.css";
-import NurseSection from "@/app/[locale]/components/nurse-section";
-import DoctorSection from "./components/doctor-serction";
 
 import LayoutWrapper from "./components/layout-wrapper";
-import CardService from "./components/card-service";
 
-import DoctorCard from "./components/card-doctor";
 import Helper from "../../../lib/helper/helper";
 import axios from "axios";
-import HeroBanner from "./components/hero-banner";
-import NurseCard from "./components/card-nurse";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect } from "react";
 

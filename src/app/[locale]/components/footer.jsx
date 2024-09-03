@@ -21,7 +21,7 @@ function MyFooter() {
             </a>
           </div>
           <div className="row mt-4">
-            <div className="col-md-8 text-white">
+            <div className="col-md-8" style={{ color: "white" }}>
               <h4 className="fs-16">Klinik Cepat Sehat Indonesia</h4>
               <p>Registered Number 04102100035090001</p>
 
@@ -140,12 +140,12 @@ function MyFooter() {
             <div className="col-md-12">
               <div className="d-flex align-items-center">
                 <a
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer", color: "white" }}
                   href="https://api.whatsapp.com/send/?phone=6285212500030&text=Hello+CepatSehat.com+by+Cepat+Sehat+Clinic%2C+I+want+a+consultation&type=phone_number&app_absent=0"
-                  className="phone text-white fs-14 d-flex align-items-center"
+                  className="phone text-white fs-14 d-flex align-items-center text-white"
                 >
                   <i
-                    className="mdi mdi-phone me-2 fs-24"
+                    className="mdi mdi-phone me-2 fs-24 "
                     style={{ cursor: "pointer" }}
                   ></i>
                   6282221122311

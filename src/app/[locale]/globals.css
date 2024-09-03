@@ -1031,10 +1031,13 @@ section.faq {
   padding-top: 24px;
 }
 .footer .logo {
-  width: 136px;
+  width: 100px;
+}
+.footer .logo-idi {
+  height: 60px;
 }
 .footer .logo-atensi {
-  width: 165px;
+  width: 160px;
 }
 .footer .footer-bottom {
   margin-top: 24px;
@@ -1044,6 +1047,7 @@ section.faq {
   padding: 12px 0;
   font-size: 12px;
 }
+
 .custom-tooltip {
   --bs-tooltip-bg: #e1e1e1;
   --bs-tooltip-color: $dark;
