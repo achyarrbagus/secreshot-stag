@@ -37,6 +37,7 @@
     },
     "forceConsistentCasingInFileNames": true
   },
+<<<<<<< HEAD
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -67,5 +68,8 @@
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.tsx"],
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/article/[artilceid]/page.jsx"],
+>>>>>>> c7a1ce90 (migrate to next js 14)
   "exclude": ["node_modules"]
 }

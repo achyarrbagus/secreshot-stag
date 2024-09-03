@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 
 .icon-menu-doctor-home { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
 .icon-menu-in-home-diagnostic { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
@@ -58,6 +61,7 @@
 .icon-menu-icon-alternative03 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe838;&nbsp;'); }
 .icon-menu-icon-alternative02 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe839;&nbsp;'); }
 .icon-menu-alternative-telemedicine { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83a;&nbsp;'); }
+<<<<<<< HEAD
 =======
 .icon-menu-doctor-home {
   *zoom: expression(
@@ -336,3 +340,5 @@
   );
 }
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)

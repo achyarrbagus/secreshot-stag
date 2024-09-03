@@ -1,5 +1,8 @@
 (function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
     var toggler = document.querySelector('.theme-toggler input[type="checkbox"]'),
         root = document.documentElement,
         currentTheme = localStorage.getItem('theme') || "dark";
@@ -21,6 +24,7 @@
 
         }
     }
+<<<<<<< HEAD
 })();
 =======
   var toggler = document.querySelector('.theme-toggler input[type="checkbox"]'),
@@ -44,3 +48,6 @@
   }
 })();
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+})();
+>>>>>>> c7a1ce90 (migrate to next js 14)

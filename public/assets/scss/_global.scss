@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 body {
     background: $white;
     font-family: $font-family;
@@ -88,7 +91,11 @@ a {
 }
 
 .content {
+<<<<<<< HEAD
     margin-top: 68px;
+=======
+    margin-top: 80px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 
 .hero-banner {
@@ -97,6 +104,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+<<<<<<< HEAD
     height: 75vh;
     display: flex;
     align-items: center;
@@ -108,6 +116,14 @@ a {
     @include breakpoint(lg, max) {
         aspect-ratio: 414/284;
         height: auto;
+=======
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(lg, max) {
+        height: 130vh;
+>>>>>>> c7a1ce90 (migrate to next js 14)
     }
 
     @include breakpoint(sm, max) {
@@ -227,6 +243,7 @@ section {
         display: flex;
         align-items: center;
 
+<<<<<<< HEAD
         @include breakpoint(xl, max) {
             height: 75vh;
         }
@@ -234,11 +251,18 @@ section {
         @include breakpoint(lg, max) {
             aspect-ratio: 414/284;
             height: auto;
+=======
+        @include breakpoint(lg, max) {
+            height: 100vh;
+>>>>>>> c7a1ce90 (migrate to next js 14)
         }
 
         @include breakpoint(sm, max) {
             height: auto;
+<<<<<<< HEAD
             aspect-ratio: auto;
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
             background-image: url('../img/bg-why-mobile.png');
         }
 
@@ -247,7 +271,11 @@ section {
         }
 
         h3 {
+<<<<<<< HEAD
             font-size: 38px;
+=======
+            font-size: 48px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
             font-weight: $bold;
             margin-bottom: 24px;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
@@ -281,7 +309,11 @@ section {
 
                 span {
                     margin-left: 8px;
+<<<<<<< HEAD
                     font-size: 20px;
+=======
+                    font-size: 24px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 
                     @include breakpoint(sm, max) {
                         font-size: 14px;
@@ -317,18 +349,27 @@ section {
 
     &.banner-pages {
         background: $primary;
+<<<<<<< HEAD
         background-position: top center;
+=======
+        background-position: center;
+>>>>>>> c7a1ce90 (migrate to next js 14)
         background-repeat: no-repeat;
         background-size: cover;
         padding: 24px 0;
         color: $white;
         position: relative;
+<<<<<<< HEAD
         height: 80vh;
+=======
+        height: 500px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
         width: 100%;
         overflow: hidden;
         display: flex;
         align-items: center;
 
+<<<<<<< HEAD
         @include breakpoint(xl, max) {
             height: 80vh;
         }
@@ -338,6 +379,13 @@ section {
         }
 
         @include breakpoint(sm, max) {
+=======
+        @include breakpoint(lg, max) {
+            height: 100vh;
+        }
+
+        @include breakpoint(md, max) {
+>>>>>>> c7a1ce90 (migrate to next js 14)
             height: auto;
         }
 
@@ -426,7 +474,11 @@ section {
                 padding: 70px 8px 8px 8px;
                 text-align: center;
                 border-radius: 10px;
+<<<<<<< HEAD
                 min-height: 292px;
+=======
+                min-height: 170px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 
                 @include breakpoint(sm, max) {
                     min-height: 300px;
@@ -704,6 +756,7 @@ section {
     padding-top: 24px;
 
     .logo {
+<<<<<<< HEAD
         width: 100px;
     }
 
@@ -714,6 +767,13 @@ section {
 
     .logo-atensi {
         width: 160px;
+=======
+        width: 136px;
+    }
+
+    .logo-atensi {
+        width: 104px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
     }
 
     .footer-bottom {
@@ -783,7 +843,11 @@ h3.text-primary {
 
 .title-line {
     position: relative;
+<<<<<<< HEAD
     font-size: 20px;
+=======
+    font-size: 24px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
     font-weight: $bold;
     margin-bottom: 16px;
 
@@ -810,6 +874,7 @@ h3.text-primary {
         padding-right: 8px;
         color: $muted;
     }
+<<<<<<< HEAD
 }
 =======
 body {
@@ -1871,3 +1936,6 @@ section {
   }
 }
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+}
+>>>>>>> c7a1ce90 (migrate to next js 14)

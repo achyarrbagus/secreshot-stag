@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 /*!
   * Bootstrap v5.3.2 (https://getbootstrap.com/)
   * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -6313,6 +6316,7 @@
 
 }));
 //# sourceMappingURL=bootstrap.bundle.js.map
+<<<<<<< HEAD
 =======
 /*!
  * Bootstrap v5.3.2 (https://getbootstrap.com/)
@@ -13653,3 +13657,5 @@
 });
 //# sourceMappingURL=bootstrap.bundle.js.map
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)

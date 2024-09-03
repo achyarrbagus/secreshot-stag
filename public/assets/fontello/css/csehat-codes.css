@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 
 .icon-menu-doctor-home:before { content: '\e800'; } /* '' */
 .icon-menu-in-home-diagnostic:before { content: '\e801'; } /* '' */
@@ -58,6 +61,7 @@
 .icon-menu-icon-alternative03:before { content: '\e838'; } /* '' */
 .icon-menu-icon-alternative02:before { content: '\e839'; } /* '' */
 .icon-menu-alternative-telemedicine:before { content: '\e83a'; } /* '' */
+<<<<<<< HEAD
 =======
 .icon-menu-doctor-home:before {
   content: "\e800";
@@ -198,3 +202,5 @@
   content: "\e82e";
 } /* '' */
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)

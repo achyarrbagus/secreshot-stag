@@ -1,7 +1,10 @@
 [
   {
     "Id": 1,
+<<<<<<< HEAD
     "created_at": "27 february 2024",
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
     "Title": "Unknowingly Habits Cause Gastric Disorders",
     "Desc": "You must be aware that when gastric disorders occur, this will greatly interfere with daily activities. Therefore, maintaining the digestive system, especially the stomach, is something you need to pay attention to. Moreover, there are also many people with gastric disorders such as dyspepsia, stomach acid, or gastric ulcers. If you have this disease, you must really run a healthy lifestyle. However, there are also some things that can unwittingly cause gastric disorders. What are these habits, here are some habits that can trigger stomach disorders",
     "DescCard": "You must be aware that when gastric disorders occur, this will greatly interfere with daily activities.",
@@ -34,7 +37,10 @@
     ]
   },
   {
+<<<<<<< HEAD
     "created_at": "28 february 2024",
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
     "Id": 2,
     "Title": "Don’t Underestimate Headache! These Are 7 Causes Back Headache",
     "Desc": "Headaches are one of the most common health problems for everyone. However, the location of the headache experienced tends to be different. There are several points of location that often feel pain when you have a headache, such as at the back of the head or also known as a back headache. Back headache can be mild or severe. If the condition is mild, the headache will subside on its own. However, for more severe conditions, headache usually does not go away and followed by other symptoms. In general, here are some causes of back headache that you need to know",
@@ -68,7 +74,10 @@
     ]
   },
   {
+<<<<<<< HEAD
     "created_at": "29 february 2024",
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
     "Id": 3,
     "Title": "Causes of Back Pain and Tips to Overcome It",
     "Desc": "Are you sure that back pain is only experienced by the elderly? You are wrong. There are many people in their productive age or even children who have to deal with back pain. How come? The causes range from injury to incorrect movement. Well, here are some things that can cause back pain",
@@ -141,7 +150,10 @@
     ]
   },
   {
+<<<<<<< HEAD
     "created_at": "1 march 2024",
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
     "Id": 4,
     "Title": "Most Common Symptoms of Too Much Stress",
     "Desc": "Stress is the body's reaction to certain conditions. Stress usually arises when a person faces a threat, pressure, or something new. Basically, the symptoms that often appear as a sign of stress can vary from one person to another, depending on the cause and the body's resistance. There are four things that can change and be a sign on the body when experiencing stress",
@@ -158,6 +170,17 @@
       },
       {
         "Title": "Cognitive Change",
+<<<<<<< HEAD
+=======
+        "Desc": "Stress is the body's reaction to certain conditions. Stress usually arises when a person faces a threat, pressure, or something new. This condition can also occur due to situations or feelings of nervousness, hopelessness, anger, or when you are feeling very excited. So, what are the signs that appear when someone is experiencing stress? When experiencing these situations, the body will show responses and changes in both physical and mental. This happens naturally, and causes the body to release hormones called adrenaline and cortisol. Actually, this reaction is a good thing and can be a sign and help someone to get out of trouble. But still, the stress that strikes should not be taken lightly. Everyone can experience stress, including children. Stress is usually only temporary and will end when the cause is addressed. However, in some conditions, prolonged stress can interfere with physical health and make the immune system weaker. When the immune system weakens, viruses or bacteria that cause disease become easier to attack. Stress that is left untreated can cause sufferers to experience digestive problems and sleep disturbances at night, aka insomnia. Basically, the symptoms that often appear as a sign of stress can vary from one person to another, depending on the cause and the body's resistance. There are four things that can change and be a sign on the body when experiencing stress, namely."
+      },
+      {
+        "Title": "Emotional Change",
+        "Desc": "Emotional changes are one of the most common signs that occur in people with stress. This condition causes a person to be easily irritated, frustrated, and mood swings. People who experience stress generally find it difficult to calm their minds, feel inferior, lonely, confused, avoid other people, have difficulty controlling themselves, and become depressed."
+      },
+      {
+        "Title": "Cognitive Change",
+>>>>>>> c7a1ce90 (migrate to next js 14)
         "Desc": "In addition to physical characteristics, stress can also cause a person to experience cognitive changes. This condition makes a person often forget, difficult to focus, always think negatively, pessimistically, and often make bad decisions."
       },
       {
@@ -165,6 +188,7 @@
         "Desc": "In severe levels, feeling depressed and stressed can cause a person to experience behavioural changes. This condition causes a decrease in appetite and focus, avoids responsibilities, nervous, gets angry easily, and looks for venting for example by consuming alcohol and smoking.Do not underestimate the stress that lasts for a long time especially if it appears repeatedly. If it happens, check with a doctor or psychiatrist immediately to deal with the stress. Examination is needed to find out exactly what causes stress symptoms to appear and prevent unwanted complications."
       }
     ]
+<<<<<<< HEAD
   },
   {
     "Id": 5,
@@ -421,5 +445,7 @@
         "Desc": "Bila timbul gejala stroke, segera bawa ke rumah sakit terdekat. Golden period adalah waktu yang tepat untuk menangani pasien stroke. Pada penyakit stroke, periode golden hour adalah empat setengah jam setelah seseorang mengalami gejala stroke. Tanpa adanya penanganan pada rentang waktu tersebut, pengidap stroke sangat mungkin mengalami kerusakan otak permanen. Semakin cepat mendapatkan penanganan, maka dampak stroke yang ditimbulkan dapat diminimalisir.n"
       }
     ]
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
   }
 ]

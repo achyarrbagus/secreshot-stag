@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
@@ -12030,6 +12033,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=bootstrap.rtl.css.map */
 =======
 @charset "UTF-8";
@@ -24672,3 +24676,6 @@ fieldset:disabled .btn {
 }
 /*# sourceMappingURL=bootstrap.rtl.css.map */
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+/*# sourceMappingURL=bootstrap.rtl.css.map */
+>>>>>>> c7a1ce90 (migrate to next js 14)

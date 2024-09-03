@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap");
 .btn {
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 14px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
   font-weight: 400;
   border-radius: 100px;
   border: none;
@@ -110,6 +114,7 @@
 .btn-float .btn-circle.telegram {
   background-color: #039be5;
 }
+<<<<<<< HEAD
 .button-menu {
   padding: 10px 18px;
   border-radius: 10px;
@@ -139,6 +144,8 @@
 .button-menu.warning {
   background: #ff8a00;
 }
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 .form-control {
   background-color: #f4f4f4;
   border-radius: 4px;
@@ -238,7 +245,11 @@ a {
   text-decoration: none;
 }
 .bg-soft {
+<<<<<<< HEAD
   background: #f0f0f0;
+=======
+  background: #e7f4f3;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 .text-dark {
   color: #5b5a5a !important;
@@ -294,6 +305,10 @@ a {
   font-weight: 700;
   font-size: 38px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
+=======
+  color: #f4ffc8;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 @media (max-width: 575.98px) {
   .hero-banner .text .title {
@@ -323,7 +338,11 @@ a {
   }
 }
 section {
+<<<<<<< HEAD
   padding-bottom: 42px;
+=======
+  padding-bottom: 32px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 section .title-section {
   padding-top: 42px;
@@ -337,6 +356,7 @@ section .title-section {
     font-size: 20px;
   }
 }
+<<<<<<< HEAD
 section .title-line {
   position: relative;
   margin-top: 42px;
@@ -437,6 +457,10 @@ section.detail-pages .title-line span {
 }
 section.service {
   background: #f0f0f0;
+=======
+section.service {
+  background: #e7f4f3;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 section.service .box-service {
   padding: 10px;
@@ -476,6 +500,13 @@ section.service .box-service .title-service {
 }
 section.why {
   background: #00b2ae;
+<<<<<<< HEAD
+=======
+  background-image: url("../img/bg-why.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+>>>>>>> c7a1ce90 (migrate to next js 14)
   padding: 24px 0;
   color: #fff;
   position: relative;
@@ -493,6 +524,10 @@ section.why {
 @media (max-width: 575.98px) {
   section.why {
     height: auto;
+<<<<<<< HEAD
+=======
+    background-image: url("../img/bg-why-mobile.png");
+>>>>>>> c7a1ce90 (migrate to next js 14)
   }
 }
 section.why .text {
@@ -503,6 +538,10 @@ section.why h3 {
   font-weight: 700;
   margin-bottom: 24px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
+=======
+  color: #f4ffc8;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 @media (max-width: 575.98px) {
   section.why h3 {
@@ -573,12 +612,17 @@ section.banner-pages {
   padding: 24px 0;
   color: #fff;
   position: relative;
+<<<<<<< HEAD
   height: 80vh;
+=======
+  height: 500px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
   width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
 section.banner-pages.homepage {
   background-image: url("../img/banner-homepage1.png");
   background-size: cover;
@@ -606,6 +650,16 @@ section.banner-pages.homepage {
   section.banner-pages {
     height: auto;
     aspect-ratio: 414/284;
+=======
+@media (max-width: 991.98px) {
+  section.banner-pages {
+    height: 100vh;
+  }
+}
+@media (max-width: 767.98px) {
+  section.banner-pages {
+    height: auto;
+>>>>>>> c7a1ce90 (migrate to next js 14)
   }
 }
 section.banner-pages .text {
@@ -616,17 +670,28 @@ section.banner-pages h3 {
   font-weight: 700;
   margin-bottom: 16px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
+=======
+  color: #f4ffc8;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 @media (max-width: 575.98px) {
   section.banner-pages h3 {
     font-size: 20px;
   }
 }
+<<<<<<< HEAD
 section.banner-pages .btn {
   margin-top: 18px;
 }
 section.banner-pages p {
   font-size: 20px;
+=======
+section.banner-pages p {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 54px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 575.98px) {
@@ -636,6 +701,7 @@ section.banner-pages p {
     margin-bottom: 14px;
   }
 }
+<<<<<<< HEAD
 section.banner-pages p b {
   font-size: 32px;
   font-weight: 700;
@@ -647,6 +713,8 @@ section.banner-pages p b {
     font-size: 20px;
   }
 }
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 section.banner-pages .img-bg {
   position: absolute;
   right: 0;
@@ -676,6 +744,7 @@ section.banner-pages .img-bg img {
     height: 100%;
   }
 }
+<<<<<<< HEAD
 section.banner-consult {
   background: #ff8a00;
   background-image: url("../img/banner-homepage2.png");
@@ -800,6 +869,10 @@ section.banner-consult .polygon {
   position: absolute;
   right: 10%;
   bottom: -10px;
+=======
+section.doctor {
+  background: #e7f4f3;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 section.doctor.nurse .items-doctor .name {
   min-height: 170px;
@@ -812,7 +885,11 @@ section.doctor .items-doctor .img-doctor img {
   width: 80%;
 }
 section.doctor .items-doctor .name {
+<<<<<<< HEAD
   background: #f0f0f0;
+=======
+  background: #fff;
+>>>>>>> c7a1ce90 (migrate to next js 14)
   padding: 70px 8px 8px 8px;
   text-align: center;
   border-radius: 10px;
@@ -837,6 +914,7 @@ section.doctor .items-doctor .name p {
   margin-bottom: 0;
 }
 section.article {
+<<<<<<< HEAD
   background: linear-gradient(
     to top,
     #f0f0f0 0%,
@@ -844,6 +922,15 @@ section.article {
     #00b2ae 40%,
     #00b2ae 100%
   );
+=======
+  background: #e7f4f3;
+  background-image: url("../img/bg-article.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 50%;
+  width: 100%;
+  object-fit: cover;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 section.question {
   background: #00b2ae;
@@ -897,7 +984,11 @@ section.question .img-question img {
   width: 100%;
 }
 section.faq {
+<<<<<<< HEAD
   background: #f0f0f0;
+=======
+  background: #e7f4f3;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 .accordion-custom {
   --bs-accordion-bg: transparent !important;
@@ -908,9 +999,15 @@ section.faq {
   margin-bottom: 14px;
 }
 .accordion-custom .accordion-button {
+<<<<<<< HEAD
   color: #00b2ae;
   font-weight: 500;
   background: #fff;
+=======
+  color: #fff;
+  font-weight: 500;
+  background: #00b2ae;
+>>>>>>> c7a1ce90 (migrate to next js 14)
   border-radius: 10px;
 }
 .accordion-custom .accordion-button:focus {
@@ -918,6 +1015,7 @@ section.faq {
   outline: none;
   box-shadow: none;
 }
+<<<<<<< HEAD
 .accordion-custom .accordion-button:not(.collapsed) {
   background: #fff;
   color: #00b2ae;
@@ -927,6 +1025,28 @@ section.faq {
   background: #e7fefd;
   color: #5b5a5a;
   border-radius: 0 0 10px 10px;
+=======
+.accordion-custom .accordion-button::after {
+  background-image: url("../img/expand-arrow.png") !important;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.accordion-custom .accordion-button:not(.collapsed) {
+  background: #00b2ae;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+.accordion-custom .accordion-body {
+  background: #fff;
+  color: #5b5a5a;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  padding-bottom: 70px;
+}
+.accordion-custom .list-data-faq {
+  color: #686868;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 .accordion-custom .list-data-faq .items-data-faq {
   display: flex;
@@ -944,6 +1064,7 @@ section.faq {
 .accordion-custom .list-data-faq p {
   font-size: 14px;
 }
+<<<<<<< HEAD
 .accordion-custom .list-data-faq .price {
   background: #fff;
   padding: 14px;
@@ -953,6 +1074,25 @@ section.faq {
 }
 .accordion-custom .list-data-faq .price .value-price {
   font-size: 14px;
+=======
+.accordion-custom .list-data-faq span {
+  font-size: 14px;
+}
+.accordion-custom .list-data-faq .price {
+  background: #01737f;
+  padding: 14px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.accordion-custom .list-data-faq .price .value-price {
+  font-size: 16px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 .swiper-pagination-bullets {
   position: static;
@@ -1033,7 +1173,11 @@ section.faq {
   width: 136px;
 }
 .footer .logo-atensi {
+<<<<<<< HEAD
   width: 165px;
+=======
+  width: 104px;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 }
 .footer .footer-bottom {
   margin-top: 24px;
@@ -1072,6 +1216,7 @@ section.faq {
   font-size: 14px;
   font-weight: bold;
 }
+<<<<<<< HEAD
 .gallery-video {
   position: relative;
 }
@@ -1139,3 +1284,46 @@ section.faq {
     width: 60%;
   }
 }
+=======
+.detail-article h3.text-primary {
+  color: #00b2ae !important;
+}
+h3.text-primary {
+  color: #7a7a7a !important;
+}
+@media (max-width: 575.98px) {
+  h3.text-primary {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+.title-line {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+@media (max-width: 575.98px) {
+  .title-line {
+    font-size: 20px;
+  }
+}
+.title-line::before {
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-top: 0;
+  position: absolute;
+  z-index: 0;
+  height: 0;
+  border-top: 2px dashed #686868;
+}
+.title-line span {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  padding-right: 8px;
+  color: #686868;
+}
+>>>>>>> c7a1ce90 (migrate to next js 14)

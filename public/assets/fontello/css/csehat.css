@@ -1,5 +1,8 @@
 @font-face {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
   font-family: 'csehat';
   src: url('../font/csehat.eot?99524924');
   src: url('../font/csehat.eot?99524924#iefix') format('embedded-opentype'),
@@ -7,6 +10,7 @@
        url('../font/csehat.woff?99524924') format('woff'),
        url('../font/csehat.ttf?99524924') format('truetype'),
        url('../font/csehat.svg?99524924#csehat') format('svg');
+<<<<<<< HEAD
 =======
   font-family: "csehat";
   src: url("../font/csehat.eot?51937181");
@@ -16,6 +20,8 @@
     url("../font/csehat.ttf?51937181") format("truetype"),
     url("../font/csehat.svg?51937181#csehat") format("svg");
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
   font-weight: normal;
   font-style: normal;
 }
@@ -26,11 +32,15 @@
   @font-face {
     font-family: 'csehat';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
     src: url('../font/csehat.svg?99524924#csehat') format('svg');
   }
 }
 */
 [class^="icon-menu-"]:before, [class*=" icon-menu-"]:before {
+<<<<<<< HEAD
 =======
     src: url('../font/csehat.svg?51937181#csehat') format('svg');
   }
@@ -39,6 +49,8 @@
 [class^="icon-menu-"]:before,
 [class*=" icon-menu-"]:before {
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
   font-family: "csehat";
   font-style: normal;
   font-weight: normal;
@@ -48,10 +60,14 @@
   text-decoration: inherit;
   width: 1em;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-right: .2em;
 =======
   margin-right: 0.2em;
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+  margin-right: .2em;
+>>>>>>> c7a1ce90 (migrate to next js 14)
   text-align: center;
   /* opacity: .8; */
 
@@ -65,10 +81,14 @@
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-left: .2em;
 =======
   margin-left: 0.2em;
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+  margin-left: .2em;
+>>>>>>> c7a1ce90 (migrate to next js 14)
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -82,6 +102,9 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 .icon-menu-doctor-home:before { content: '\e800'; } /* '' */
 .icon-menu-in-home-diagnostic:before { content: '\e801'; } /* '' */
 .icon-menu-in-home-iv:before { content: '\e802'; } /* '' */
@@ -140,6 +163,7 @@
 .icon-menu-icon-alternative03:before { content: '\e838'; } /* '' */
 .icon-menu-icon-alternative02:before { content: '\e839'; } /* '' */
 .icon-menu-alternative-telemedicine:before { content: '\e83a'; } /* '' */
+<<<<<<< HEAD
 =======
 .icon-menu-doctor-home:before {
   content: "\e800";
@@ -280,3 +304,5 @@
   content: "\e82e";
 } /* '' */
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)

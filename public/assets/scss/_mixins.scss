@@ -1,5 +1,8 @@
 @mixin breakpoint($breakpoint, $direction: min) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c7a1ce90 (migrate to next js 14)
 
     //check if the supplied breakpoint exists in our breakpoits map
     @if map-has-key($breakpoints, $breakpoint) {
@@ -37,6 +40,7 @@
             }
         }
     }
+<<<<<<< HEAD
 }
 =======
   //check if the supplied breakpoint exists in our breakpoits map
@@ -70,3 +74,6 @@
   }
 }
 >>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
+=======
+}
+>>>>>>> c7a1ce90 (migrate to next js 14)
