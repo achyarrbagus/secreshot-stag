@@ -121,6 +121,10 @@ a {
     display: flex;
     align-items: center;
 
+    @include breakpoint(xl, max) {
+        height: 75vh;
+    }
+
     @include breakpoint(lg, max) {
         height: 130vh;
 >>>>>>> c7a1ce90 (migrate to next js 14)

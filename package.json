@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "cepatsehat-v2-next",
-=======
-  "name": "sacretome",
->>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -50,7 +46,7 @@
     "swiper": "^11.0.5",
     "swr": "^2.2.5",
     "xlsx": "^0.18.5",
-    "yup": "^1.4.0"
+    "yup": "^1.4.0",
 =======
     "next": "14.1.0",
     "react": "^18",
