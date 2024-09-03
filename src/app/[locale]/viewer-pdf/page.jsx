@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 import { useEffect } from "react";
 import LayoutWrapper from "../components/layout-wrapper";
@@ -34,7 +35,9 @@ export default function App() {
   return (
     <>
       <LayoutWrapper>
-        <PdfPage />
+        <Suspense>
+          <PdfPage />
+        </Suspense>
       </LayoutWrapper>
     </>
   );

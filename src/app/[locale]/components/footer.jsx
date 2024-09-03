@@ -145,10 +145,15 @@ function MyFooter() {
                   className="phone text-white fs-14 d-flex align-items-center text-white"
                 >
                   <i
-                    className="mdi mdi-phone me-2 fs-24 "
+                    className="mdi mdi-phone me-2 fs-24 text-white-important"
                     style={{ cursor: "pointer" }}
                   ></i>
-                  6282221122311
+                  <span
+                    style={{ color: "white" }}
+                    className="text-white text-white-important"
+                  >
+                    6282221122311
+                  </span>
                 </a>
                 <div className="sosmed list-inline ms-auto">
                   <a href="#" className="list-inline-item text-white">

@@ -1026,6 +1026,10 @@ section.faq {
   font-size: 14px;
   color: #686868;
 }
+
+.text-white-important {
+  color: white !important;
+}
 .footer {
   background: #00b2ae;
   padding-top: 24px;

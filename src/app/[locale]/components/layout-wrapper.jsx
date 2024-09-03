@@ -54,7 +54,7 @@ export default function LayoutWrapper({ children }) {
 
   return (
     <>
-      <GoogleTagManager gtmId="GTM-PFX6ZWQ4" />
+      <GoogleTagManager gtmId="GTM-KZX64CKT" />
       <MyHead />
       <MyNavbar lang={lang} dispatch={dispatch} setLang={setLang} />
       {children}
@@ -79,12 +79,12 @@ export default function LayoutWrapper({ children }) {
           </div>
         </div>
       </OverlayTrigger>
-      {/* <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PFX6ZWQ4"
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KZX64CKT"
         height="0"
         width="0"
         style={{ display: "display:none;visibility:hidden" }}
-      ></iframe> */}
+      ></iframe>
 
       <MyFooter />
       <MyScript />
