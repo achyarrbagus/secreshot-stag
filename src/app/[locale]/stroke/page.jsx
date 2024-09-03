@@ -10,6 +10,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Helper from "../../../../lib/helper/helper";
 
 const Index = () => {
+  console.log("stroke");
   const locale = useLocale();
   const [formData, setFormData] = React.useState({
     name: "",

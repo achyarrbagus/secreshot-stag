@@ -16,15 +16,15 @@ if (!self.define) {
       })
   );
   self.define = (a, c) => {
-    const t =
+    const r =
       e ||
       ("document" in self ? document.currentScript.src : "") ||
       location.href;
-    if (s[t]) return;
-    let r = {};
-    const n = (e) => i(e, t),
-      o = { module: { uri: t }, exports: r, require: n };
-    s[t] = Promise.all(a.map((e) => o[e] || n(e))).then((e) => (c(...e), r));
+    if (s[r]) return;
+    let t = {};
+    const n = (e) => i(e, r),
+      o = { module: { uri: r }, exports: t, require: n };
+    s[r] = Promise.all(a.map((e) => o[e] || n(e))).then((e) => (c(...e), t));
   };
 }
 define(["./workbox-4754cb34"], function (e) {
@@ -36,51 +36,59 @@ define(["./workbox-4754cb34"], function (e) {
       [
         {
           url: "/_next/app-build-manifest.json",
-          revision: "7466a948960905058951ad5fabd73aee",
+          revision: "1961a7daf252a3f59d6be6656251a85c",
+        },
+        {
+          url: "/_next/static/OIKKjswNa5Qd1UxopnbHF/_buildManifest.js",
+          revision: "2b54d7db375d2b4c0e6af318090bebea",
+        },
+        {
+          url: "/_next/static/OIKKjswNa5Qd1UxopnbHF/_ssgManifest.js",
+          revision: "b6652df95db52feb4daf4eca35380933",
         },
         {
           url: "/_next/static/chunks/1208-e25c41561623a4e3.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/1474-9f5df92b94fbce2d.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/18050da9-65c3b0bf9a6aad13.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/1991-68df4adde29b5f82.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/21-33a27826c5a78fb7.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/2170a4aa-09b380695b9c3b9b.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/25386026-3f767ff4f7770b02.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/267c2b52-1d235c0d37caaa1b.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/3107-496af79891b84073.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/4034-ca00f4d3528a718a.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/41ade5dc-bf0af6f2f5901796.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/5615.cf44e10dbe340615.js",
@@ -88,175 +96,175 @@ define(["./workbox-4754cb34"], function (e) {
         },
         {
           url: "/_next/static/chunks/6059-02d97cfdb418cfb3.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/628-1fd1e53ef60613e1.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/66ec4792-135df1c7ce5641af.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/6751-6ceb49cc75471eca.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/7032-db225bef5399498c.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/7195-de655fdc98536b0c.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/8069-e6f151ae05715977.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/8650-8b617f174ace7832.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/8e1d74a4-de49d9718261a15a.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/9771-bd4ad66ac95470a1.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/acne/page-a305153076041aec.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/anti-aging/page-1b9e45490f3d59f1.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/arthritis/page-b5498d4e1b4f58de.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/auto-immune/page-d1795035a281b74e.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/covid-19/page-993d8f9cf6bfd205.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/hair-loss/page-fc54a15f5f7667b5.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/layout-6797a74061f955ce.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/page-918f87bcfbc7ecbc.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/scars/page-72a3c6ecb91d2e0f.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
-          url: "/_next/static/chunks/app/%5Blocale%5D/stroke/page-6c8848041d00c00e.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          url: "/_next/static/chunks/app/%5Blocale%5D/stroke/page-49d8494e91443641.js",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/%5Blocale%5D/viewer-pdf/page-788e1a30547475ee.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/_not-found-894fa15af2b190bf.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/booking-list/page-d12e7d0cedc353d9.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/create-article-v2/page-0966ec12be23b33e.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/create-article/page-99cc5474faafd5ba.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/create-cs/page-87a4fd3023e7a385.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/customer-service/page-c1ddb0784c4aa543.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/dashboard-v2/page-62cf0bbbaa232fb8.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/dashboard/page-31cba3591739b36c.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/kur-bni/page-8e9ba930bebb3264.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/layout-84e3107f77f8fc98.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/page-e9664e3fb3895ac0.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/update-article-v2/page-5dfe4d324fc7fc13.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/update-article/page-0b1097bdedc8340c.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/admin/update-cs/page-80574bfbaef3f92a.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/alternative-telemedicine/page-534fac92227fb8e5.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/doctor-home-visit/page-2646103c435ddb2b.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/holistic-alternative/page-1bbcece150633ffd.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/home-nursing/page-ddac194f3e3508e3.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/inhome-therapy/page-2edcb713a5e15d31.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/layout-c98fecb724421db0.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/page-40112b1829f90cd0.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/app/remote-telemedicine/page-b0a8fbf35d42417e.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/cff4c5fa.207450e88d223b4d.js",
@@ -264,31 +272,31 @@ define(["./workbox-4754cb34"], function (e) {
         },
         {
           url: "/_next/static/chunks/d7101eed-2c0322b6c4ba7e5c.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/fd9d1056-d272134e7e5f67de.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/framework-6230a0257f824fa3.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/main-app-abc3cb0ae9604b5f.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/main-f43e315ec0657d2a.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/pages/_app-57bdff7978360b1c.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/pages/_error-29037c284dd0eec6.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
@@ -296,7 +304,7 @@ define(["./workbox-4754cb34"], function (e) {
         },
         {
           url: "/_next/static/chunks/webpack-8cfaafb6e53e15b9.js",
-          revision: "xus-1KjRgFr3K_Gt1cGyt",
+          revision: "OIKKjswNa5Qd1UxopnbHF",
         },
         {
           url: "/_next/static/css/698889fc4fd504e9.css",
@@ -365,14 +373,6 @@ define(["./workbox-4754cb34"], function (e) {
         {
           url: "/_next/static/media/expand-arrow.c8109a29.png",
           revision: "c8109a29",
-        },
-        {
-          url: "/_next/static/xus-1KjRgFr3K_Gt1cGyt/_buildManifest.js",
-          revision: "2b54d7db375d2b4c0e6af318090bebea",
-        },
-        {
-          url: "/_next/static/xus-1KjRgFr3K_Gt1cGyt/_ssgManifest.js",
-          revision: "b6652df95db52feb4daf4eca35380933",
         },
         {
           url: "/assets/article/article.txt",
