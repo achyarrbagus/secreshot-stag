@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 [class^="icon-menu-"], [class*=" icon-menu-"] {
   font-family: 'csehat';
+=======
+[class^="icon-menu-"],
+[class*=" icon-menu-"] {
+  font-family: "csehat";
+>>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
   font-style: normal;
   font-weight: normal;
 
@@ -10,6 +16,7 @@
   /* font-size: 120%; */
 }
 
+<<<<<<< HEAD
 .icon-menu-doctor-home { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
 .icon-menu-in-home-diagnostic { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
 .icon-menu-in-home-iv { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
@@ -68,3 +75,281 @@
 .icon-menu-icon-alternative03 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe838;&nbsp;'); }
 .icon-menu-icon-alternative02 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe839;&nbsp;'); }
 .icon-menu-alternative-telemedicine { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83a;&nbsp;'); }
+=======
+.icon-menu-doctor-home {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe800;&nbsp;"
+  );
+}
+.icon-menu-in-home-diagnostic {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe801;&nbsp;"
+  );
+}
+.icon-menu-in-home-iv {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe802;&nbsp;"
+  );
+}
+.icon-menu-holistic {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe803;&nbsp;"
+  );
+}
+.icon-menu-remote-telemedicine {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe804;&nbsp;"
+  );
+}
+.icon-menu-home-nursing {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe805;&nbsp;"
+  );
+}
+.icon-menu-visit-diagnosis {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe806;&nbsp;"
+  );
+}
+.icon-menu-visit-routine {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe807;&nbsp;"
+  );
+}
+.icon-menu-visit-refferal {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe808;&nbsp;"
+  );
+}
+.icon-menu-visit-vaccination {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe809;&nbsp;"
+  );
+}
+.icon-menu-visit-prescription {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe80a;&nbsp;"
+  );
+}
+.icon-menu-icon-nursing-1 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe80b;&nbsp;"
+  );
+}
+.icon-menu-icon-nursing-3 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe80c;&nbsp;"
+  );
+}
+.icon-menu-icon-nursing-4 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe80d;&nbsp;"
+  );
+}
+.icon-menu-icon-nursing-5 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe80e;&nbsp;"
+  );
+}
+.icon-menu-icon-nursing {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe80f;&nbsp;"
+  );
+}
+.icon-menu-icon-nursing-2 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe810;&nbsp;"
+  );
+}
+.icon-menu-icon-telemedicine01 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe811;&nbsp;"
+  );
+}
+.icon-menu-icon-telemedicine02 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe812;&nbsp;"
+  );
+}
+.icon-menu-icon-telemedicine03 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe813;&nbsp;"
+  );
+}
+.icon-menu-icon-telemedicine04 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe814;&nbsp;"
+  );
+}
+.icon-menu-icon-telemedicine05 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe815;&nbsp;"
+  );
+}
+.icon-menu-icon-therapis05 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe816;&nbsp;"
+  );
+}
+.icon-menu-icon-therapis01 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe817;&nbsp;"
+  );
+}
+.icon-menu-icon-therapis02 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe818;&nbsp;"
+  );
+}
+.icon-menu-icon-therapis03 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe819;&nbsp;"
+  );
+}
+.icon-menu-icon-therapis04 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe81a;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv02 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe81b;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv03 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe81c;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv04 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe81d;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv05 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe81e;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv06 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe81f;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv01 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe820;&nbsp;"
+  );
+}
+.icon-menu-icon-diagnostic04 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe821;&nbsp;"
+  );
+}
+.icon-menu-icon-diagnostic05 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe822;&nbsp;"
+  );
+}
+.icon-menu-icon-diagnostic06 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe823;&nbsp;"
+  );
+}
+.icon-menu-icon-diagnostic01 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe824;&nbsp;"
+  );
+}
+.icon-menu-icon-diagnostic02 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe825;&nbsp;"
+  );
+}
+.icon-menu-icon-diagnostic03 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe826;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv12 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe827;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv08 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe829;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv09 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe82a;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv10 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe82b;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv11 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe82c;&nbsp;"
+  );
+}
+.icon-menu-icon-therapis06 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe82d;&nbsp;"
+  );
+}
+.icon-menu-icon-homeiv07 {
+  *zoom: expression(
+    this.runtimeStyle[ "zoom"] = "1",
+    this.innerHTML = "&#xe82e;&nbsp;"
+  );
+}
+>>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41

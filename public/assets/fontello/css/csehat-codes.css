@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .icon-menu-doctor-home:before { content: '\e800'; } /* '' */
 .icon-menu-in-home-diagnostic:before { content: '\e801'; } /* '' */
@@ -57,3 +58,143 @@
 .icon-menu-icon-alternative03:before { content: '\e838'; } /* '' */
 .icon-menu-icon-alternative02:before { content: '\e839'; } /* '' */
 .icon-menu-alternative-telemedicine:before { content: '\e83a'; } /* '' */
+=======
+.icon-menu-doctor-home:before {
+  content: "\e800";
+} /* '' */
+.icon-menu-in-home-diagnostic:before {
+  content: "\e801";
+} /* '' */
+.icon-menu-in-home-iv:before {
+  content: "\e802";
+} /* '' */
+.icon-menu-holistic:before {
+  content: "\e803";
+} /* '' */
+.icon-menu-remote-telemedicine:before {
+  content: "\e804";
+} /* '' */
+.icon-menu-home-nursing:before {
+  content: "\e805";
+} /* '' */
+.icon-menu-visit-diagnosis:before {
+  content: "\e806";
+} /* '' */
+.icon-menu-visit-routine:before {
+  content: "\e807";
+} /* '' */
+.icon-menu-visit-refferal:before {
+  content: "\e808";
+} /* '' */
+.icon-menu-visit-vaccination:before {
+  content: "\e809";
+} /* '' */
+.icon-menu-visit-prescription:before {
+  content: "\e80a";
+} /* '' */
+.icon-menu-icon-nursing-1:before {
+  content: "\e80b";
+} /* '' */
+.icon-menu-icon-nursing-3:before {
+  content: "\e80c";
+} /* '' */
+.icon-menu-icon-nursing-4:before {
+  content: "\e80d";
+} /* '' */
+.icon-menu-icon-nursing-5:before {
+  content: "\e80e";
+} /* '' */
+.icon-menu-icon-nursing:before {
+  content: "\e80f";
+} /* '' */
+.icon-menu-icon-nursing-2:before {
+  content: "\e810";
+} /* '' */
+.icon-menu-icon-telemedicine01:before {
+  content: "\e811";
+} /* '' */
+.icon-menu-icon-telemedicine02:before {
+  content: "\e812";
+} /* '' */
+.icon-menu-icon-telemedicine03:before {
+  content: "\e813";
+} /* '' */
+.icon-menu-icon-telemedicine04:before {
+  content: "\e814";
+} /* '' */
+.icon-menu-icon-telemedicine05:before {
+  content: "\e815";
+} /* '' */
+.icon-menu-icon-therapis05:before {
+  content: "\e816";
+} /* '' */
+.icon-menu-icon-therapis01:before {
+  content: "\e817";
+} /* '' */
+.icon-menu-icon-therapis02:before {
+  content: "\e818";
+} /* '' */
+.icon-menu-icon-therapis03:before {
+  content: "\e819";
+} /* '' */
+.icon-menu-icon-therapis04:before {
+  content: "\e81a";
+} /* '' */
+.icon-menu-icon-homeiv02:before {
+  content: "\e81b";
+} /* '' */
+.icon-menu-icon-homeiv03:before {
+  content: "\e81c";
+} /* '' */
+.icon-menu-icon-homeiv04:before {
+  content: "\e81d";
+} /* '' */
+.icon-menu-icon-homeiv05:before {
+  content: "\e81e";
+} /* '' */
+.icon-menu-icon-homeiv06:before {
+  content: "\e81f";
+} /* '' */
+.icon-menu-icon-homeiv01:before {
+  content: "\e820";
+} /* '' */
+.icon-menu-icon-diagnostic04:before {
+  content: "\e821";
+} /* '' */
+.icon-menu-icon-diagnostic05:before {
+  content: "\e822";
+} /* '' */
+.icon-menu-icon-diagnostic06:before {
+  content: "\e823";
+} /* '' */
+.icon-menu-icon-diagnostic01:before {
+  content: "\e824";
+} /* '' */
+.icon-menu-icon-diagnostic02:before {
+  content: "\e825";
+} /* '' */
+.icon-menu-icon-diagnostic03:before {
+  content: "\e826";
+} /* '' */
+.icon-menu-icon-homeiv12:before {
+  content: "\e827";
+} /* '' */
+.icon-menu-icon-homeiv08:before {
+  content: "\e829";
+} /* '' */
+.icon-menu-icon-homeiv09:before {
+  content: "\e82a";
+} /* '' */
+.icon-menu-icon-homeiv10:before {
+  content: "\e82b";
+} /* '' */
+.icon-menu-icon-homeiv11:before {
+  content: "\e82c";
+} /* '' */
+.icon-menu-icon-therapis06:before {
+  content: "\e82d";
+} /* '' */
+.icon-menu-icon-homeiv07:before {
+  content: "\e82e";
+} /* '' */
+>>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41

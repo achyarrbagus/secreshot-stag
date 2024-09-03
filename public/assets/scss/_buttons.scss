@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .btn {
     font-size: 14px;
     font-weight: $regular;
@@ -128,3 +129,170 @@
         }
     }
 }
+=======
+.btn {
+  font-size: 16px;
+  font-weight: $regular;
+  border-radius: 100px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  align-items: center;
+  padding: 8px 32px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+
+  &-primary {
+    background: $primary;
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: lighten($primary, 10) !important;
+      border: none;
+      color: $white;
+    }
+  }
+
+  &-warning {
+    background: $warning;
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: lighten($warning, 10) !important;
+      border: none;
+      color: $white;
+    }
+  }
+
+  &-whatsapp {
+    background: #48c857;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: lighten(#48c857, 10) !important;
+      border: 1px solid $white;
+      color: $white;
+    }
+  }
+
+  &-telegram {
+    background: #039be5;
+    color: $white;
+    border: 1px solid $white;
+    padding: 11px 32px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: lighten(#039be5, 10) !important;
+      border: 1px solid $white;
+      color: $white;
+    }
+  }
+
+  &-secondary {
+    background: #eeeeee;
+    color: #686868;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: darken(#eeeeee, 10) !important;
+      border: none;
+      color: #686868;
+    }
+  }
+
+  &-white {
+    background: $white;
+    color: $dark;
+
+    &:hover {
+      background: darken($white, 10);
+      color: $dark;
+    }
+  }
+
+  &-outline-white {
+    background: $bg-form;
+    border: 1px solid $white;
+    color: $white;
+
+    &:hover {
+      background: darken($bg-form, 10);
+    }
+  }
+
+  .disabled {
+    opacity: 0.7;
+  }
+}
+
+.btn-float {
+  position: fixed;
+  bottom: 50px;
+  right: 24px;
+  z-index: 999;
+
+  .btn-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+    &.whatsapp {
+      background-color: #48c857;
+      margin-bottom: 12px;
+    }
+
+    &.telegram {
+      background-color: #039be5;
+    }
+  }
+}
+
+.button-menu {
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  img {
+    height: 54px;
+    width: auto;
+    margin-right: 12px;
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  &.blue {
+    background: $primary;
+  }
+
+  &.warning {
+    background: $warning;
+  }
+}
+>>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41

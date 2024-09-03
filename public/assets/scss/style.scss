@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap');
 
@@ -18,3 +19,25 @@
 
 // import global
 @import "global.scss";
+=======
+// import font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap");
+
+// import variable
+@import "variables.scss";
+
+// import button
+@import "buttons.scss";
+
+// import form
+@import "form.scss";
+
+// import breakpoints
+@import "breakpoints.scss";
+
+// import mixins
+@import "mixins.scss";
+
+// import global
+@import "global.scss";
+>>>>>>> f50c9cf511023b582f6bff622673ff36a4b87d41
